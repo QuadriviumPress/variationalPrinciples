@@ -1,0 +1,1625 @@
+{
+  "book": {
+    "title": "Variational Principles in Classical Mechanics",
+    "authors": [
+      "Douglas Cline"
+    ],
+    "edition": "3",
+    "license": "CC-BY-NC-SA-4.0",
+    "source_url": "http://classicalmechanics.lib.rochester.edu/",
+    "libretexts_url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)",
+    "isbn": "978-0-9988372-3-9"
+  },
+  "front": [
+    {
+      "title": "TitlePage",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/01%3A_TitlePage",
+      "cache": "00__Front_Matter__01__TitlePage.html",
+      "slug": "titlepage"
+    },
+    {
+      "title": "InfoPage",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/02%3A_InfoPage",
+      "cache": "00__Front_Matter__02__InfoPage.html",
+      "slug": "infopage"
+    },
+    {
+      "title": "Table of Contents",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/03%3A_Table_of_Contents",
+      "cache": "00__Front_Matter__03__Table_of_Contents.html",
+      "slug": "table-of-contents"
+    },
+    {
+      "title": "Licensing",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/04%3A_Licensing",
+      "cache": "00__Front_Matter__04__Licensing.html",
+      "slug": "licensing"
+    },
+    {
+      "title": "Preface",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/04%3A_Preface",
+      "cache": "00__Front_Matter__04__Preface.html",
+      "slug": "preface"
+    },
+    {
+      "title": "Prologue",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/00%3A_Front_Matter/05%3A_Prologue",
+      "cache": "00__Front_Matter__05__Prologue.html",
+      "slug": "prologue"
+    }
+  ],
+  "chapters": [
+    {
+      "kind": "chapter",
+      "number": 1,
+      "title": "A brief History of Classical Mechanics",
+      "slug": "ch-01-a-brief-history-of-classical-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics",
+      "cache": "01__A_brief_History_of_Classical_Mechanics.html",
+      "sections": [
+        {
+          "title": "1.1: Introduction",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.01%3A_Introduction",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.01__Introduction.html",
+          "slug": "01-1-introduction"
+        },
+        {
+          "title": "1.2: Greek Antiquity",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.02%3A_Greek_Antiquity",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.02__Greek_Antiquity.html",
+          "slug": "01-2-greek-antiquity"
+        },
+        {
+          "title": "1.3: Middle Ages",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.03%3A_Middle_Ages",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.03__Middle_Ages.html",
+          "slug": "01-3-middle-ages"
+        },
+        {
+          "title": "1.4: Age of Enlightenment",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.04%3A_Age_of_Enlightenment",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.04__Age_of_Enlightenment.html",
+          "slug": "01-4-age-of-enlightenment"
+        },
+        {
+          "title": "1.5: Variational methods in physics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.05%3A_Variational_methods_in_physics",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.05__Variational_methods_in_physics.html",
+          "slug": "01-5-variational-methods-in-physics"
+        },
+        {
+          "title": "1.6: The 20th Century Revolution in Physics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/01%3A_A_brief_History_of_Classical_Mechanics/1.06%3A_The_20th_Century_Revolution_in_Physics",
+          "cache": "01__A_brief_History_of_Classical_Mechanics__1.06__The_20th_Century_Revolution_in_Physics.html",
+          "slug": "01-6-the-20th-century-revolution-in-physics"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 2,
+      "title": "Review of Newtonian Mechanics",
+      "slug": "ch-02-review-of-newtonian-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics",
+      "cache": "02__Review_of_Newtonian_Mechanics.html",
+      "sections": [
+        {
+          "title": "2.1: Introduction to Newtonian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.01%3A_Introduction_to_Newtonian_Mechanics",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.01__Introduction_to_Newtonian_Mechanics.html",
+          "slug": "02-1-introduction-to-newtonian-mechanics"
+        },
+        {
+          "title": "2.2: Newton's Laws of motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.02%3A_Newton's_Laws_of_motion",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.02__Newton_s_Laws_of_motion.html",
+          "slug": "02-2-newtons-laws-of-motion"
+        },
+        {
+          "title": "2.3: Inertial Frames of reference",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.03%3A_Inertial_Frames_of_reference",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.03__Inertial_Frames_of_reference.html",
+          "slug": "02-3-inertial-frames-of-reference"
+        },
+        {
+          "title": "2.4: First-order Integrals in Newtonian mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.04%3A_First-order_Integrals_in_Newtonian_mechanics",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.04__First-order_Integrals_in_Newtonian_mechanics.html",
+          "slug": "02-4-first-order-integrals-in-newtonian-mechanics"
+        },
+        {
+          "title": "2.5: Conservation Laws in Classical Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.05%3A_Conservation_Laws_in_Classical_Mechanics",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.05__Conservation_Laws_in_Classical_Mechanics.html",
+          "slug": "02-5-conservation-laws-in-classical-mechanics"
+        },
+        {
+          "title": "2.6: Motion of finite-sized and many-body systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.06%3A_Motion_of_finite-sized_and_many-body_systems",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.06__Motion_of_finite-sized_and_many-body_systems.html",
+          "slug": "02-6-motion-of-finite-sized-and-many-body-systems"
+        },
+        {
+          "title": "2.7: Center of Mass of a Many-Body System",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.07%3A_Center_of_Mass_of_a_Many-Body_System",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.07__Center_of_Mass_of_a_Many-Body_System.html",
+          "slug": "02-7-center-of-mass-of-a-many-body-system"
+        },
+        {
+          "title": "2.8: Total Linear Momentum of a Many-body System",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.08%3A_Total_Linear_Momentum_of_a_Many-body_System",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.08__Total_Linear_Momentum_of_a_Many-body_System.html",
+          "slug": "02-8-total-linear-momentum-of-a-many-body-system"
+        },
+        {
+          "title": "2.9: Angular Momentum of a Many-Body System",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.09%3A_Angular_Momentum_of_a_Many-Body_System",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.09__Angular_Momentum_of_a_Many-Body_System.html",
+          "slug": "02-9-angular-momentum-of-a-many-body-system"
+        },
+        {
+          "title": "2.10: Work and Kinetic Energy for a Many-Body System",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.10%3A_Work_and_Kinetic_Energy_for_a_Many-Body_System",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.10__Work_and_Kinetic_Energy_for_a_Many-Body_System.html",
+          "slug": "02-10-work-and-kinetic-energy-for-a-many-body-system"
+        },
+        {
+          "title": "2.11: Virial Theorem",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.11%3A_Virial_Theorem",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.11__Virial_Theorem.html",
+          "slug": "02-11-virial-theorem"
+        },
+        {
+          "title": "2.12: Applications of Newton's Equations of Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.12%3A_Applications_of_Newton's_Equations_of_Motion",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.12__Applications_of_Newton_s_Equations_of_Motion.html",
+          "slug": "02-12-applications-of-newtons-equations-of-motion"
+        },
+        {
+          "title": "2.13: Solution of many-body equations of motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.13%3A_Solution_of_many-body_equations_of_motion",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.13__Solution_of_many-body_equations_of_motion.html",
+          "slug": "02-13-solution-of-many-body-equations-of-motion"
+        },
+        {
+          "title": "2.14: Newton's Law of Gravitation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.14%3A_Newton's_Law_of_Gravitation",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.14__Newton_s_Law_of_Gravitation.html",
+          "slug": "02-14-newtons-law-of-gravitation"
+        },
+        {
+          "title": "2.E: Review of Newtonian Mechanics (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.E%3A_Review_of_Newtonian_Mechanics_(Exercises)",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.E__Review_of_Newtonian_Mechanics__Exercises_.html",
+          "slug": "02-e-review-of-newtonian-mechanics-exercises"
+        },
+        {
+          "title": "2.S: Newtonian Mechanics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/02%3A_Review_of_Newtonian_Mechanics/2.S%3A_Newtonian_Mechanics_(Summary)",
+          "cache": "02__Review_of_Newtonian_Mechanics__2.S__Newtonian_Mechanics__Summary_.html",
+          "slug": "02-s-newtonian-mechanics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 3,
+      "title": "Linear Oscillators",
+      "slug": "ch-03-linear-oscillators",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators",
+      "cache": "03__Linear_Oscillators.html",
+      "sections": [
+        {
+          "title": "3.1: Introduction to Linear Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.01%3A_Introduction_to_Linear_Oscillators",
+          "cache": "03__Linear_Oscillators__3.01__Introduction_to_Linear_Oscillators.html",
+          "slug": "03-1-introduction-to-linear-oscillators"
+        },
+        {
+          "title": "3.2: Linear Restoring Forces",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.02%3A_Linear_Restoring_Forces",
+          "cache": "03__Linear_Oscillators__3.02__Linear_Restoring_Forces.html",
+          "slug": "03-2-linear-restoring-forces"
+        },
+        {
+          "title": "3.3: Linearity and Superposition",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.03%3A_Linearity_and_Superposition",
+          "cache": "03__Linear_Oscillators__3.03__Linearity_and_Superposition.html",
+          "slug": "03-3-linearity-and-superposition"
+        },
+        {
+          "title": "3.4: Geometrical Representations of Dynamical Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.04%3A_Geometrical_Representations_of_Dynamical_Motion",
+          "cache": "03__Linear_Oscillators__3.04__Geometrical_Representations_of_Dynamical_Motion.html",
+          "slug": "03-4-geometrical-representations-of-dynamical-motion"
+        },
+        {
+          "title": "3.5: Linearly-damped Free Linear Oscillator",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.05%3A_Linearly-damped_Free_Linear_Oscillator",
+          "cache": "03__Linear_Oscillators__3.05__Linearly-damped_Free_Linear_Oscillator.html",
+          "slug": "03-5-linearly-damped-free-linear-oscillator"
+        },
+        {
+          "title": "3.6: Sinusoidally-driven, linearly-damped, linear oscillator",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.06%3A_Sinusoidally-driven_linearly-damped_linear_oscillator",
+          "cache": "03__Linear_Oscillators__3.06__Sinusoidally-driven_linearly-damped_linear_oscillator.html",
+          "slug": "03-6-sinusoidally-driven-linearly-damped-linear-oscillator"
+        },
+        {
+          "title": "3.7: Wave equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.07%3A_Wave_equation",
+          "cache": "03__Linear_Oscillators__3.07__Wave_equation.html",
+          "slug": "03-7-wave-equation"
+        },
+        {
+          "title": "3.8: Travelling and standing wave solutions of the wave equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.08%3A_Travelling_and_standing_wave_solutions_of_the_wave_equation",
+          "cache": "03__Linear_Oscillators__3.08__Travelling_and_standing_wave_solutions_of_the_wave_equation.html",
+          "slug": "03-8-travelling-and-standing-wave-solutions-of-the-wave-equation"
+        },
+        {
+          "title": "3.9: Waveform Analysis",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.09%3A_Waveform_Analysis",
+          "cache": "03__Linear_Oscillators__3.09__Waveform_Analysis.html",
+          "slug": "03-9-waveform-analysis"
+        },
+        {
+          "title": "3.10: Signal Processing",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.10%3A_Signal_Processing",
+          "cache": "03__Linear_Oscillators__3.10__Signal_Processing.html",
+          "slug": "03-10-signal-processing"
+        },
+        {
+          "title": "3.11: Wave Propagation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.11%3A_Wave_Propagation",
+          "cache": "03__Linear_Oscillators__3.11__Wave_Propagation.html",
+          "slug": "03-11-wave-propagation"
+        },
+        {
+          "title": "3.E: Linear Oscillators (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.E%3A_Linear_Oscillators_(Exercises)",
+          "cache": "03__Linear_Oscillators__3.E__Linear_Oscillators__Exercises_.html",
+          "slug": "03-e-linear-oscillators-exercises"
+        },
+        {
+          "title": "3.S: Linear Oscillators (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/03%3A_Linear_Oscillators/3.S%3A_Linear_Oscillators_(Summary)",
+          "cache": "03__Linear_Oscillators__3.S__Linear_Oscillators__Summary_.html",
+          "slug": "03-s-linear-oscillators-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 4,
+      "title": "Nonlinear Systems and Chaos",
+      "slug": "ch-04-nonlinear-systems-and-chaos",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos",
+      "cache": "04__Nonlinear_Systems_and_Chaos.html",
+      "sections": [
+        {
+          "title": "4.1: Introduction to Nonlinear Systems and Chaos",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.01%3A_Introduction_to_Nonlinear_Systems_and_Chaos",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.01__Introduction_to_Nonlinear_Systems_and_Chaos.html",
+          "slug": "04-1-introduction-to-nonlinear-systems-and-chaos"
+        },
+        {
+          "title": "4.2: Weak Nonlinearity",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.02%3A_Weak_Nonlinearity",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.02__Weak_Nonlinearity.html",
+          "slug": "04-2-weak-nonlinearity"
+        },
+        {
+          "title": "4.3: Bifurcation and Point Attractors",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.03%3A_Bifurcation_and_Point_Attractors",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.03__Bifurcation_and_Point_Attractors.html",
+          "slug": "04-3-bifurcation-and-point-attractors"
+        },
+        {
+          "title": "4.4: Limit Cycles",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.04%3A_Limit_Cycles",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.04__Limit_Cycles.html",
+          "slug": "04-4-limit-cycles"
+        },
+        {
+          "title": "4.5: Harmonically-driven, linearly-damped, plane pendulum",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.05%3A_Harmonically-driven_linearly-damped_plane_pendulum",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.05__Harmonically-driven_linearly-damped_plane_pendulum.html",
+          "slug": "04-5-harmonically-driven-linearly-damped-plane-pendulum"
+        },
+        {
+          "title": "4.6: Differentiation Between Ordered and Chaotic Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.06%3A_Differentiation_Between_Ordered_and_Chaotic_Motion",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.06__Differentiation_Between_Ordered_and_Chaotic_Motion.html",
+          "slug": "04-6-differentiation-between-ordered-and-chaotic-motion"
+        },
+        {
+          "title": "4.7: Wave Propagation for Non-linear Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.07%3A_Wave_Propagation_for_Non-linear_Systems",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.07__Wave_Propagation_for_Non-linear_Systems.html",
+          "slug": "04-7-wave-propagation-for-non-linear-systems"
+        },
+        {
+          "title": "4.E: Nonlinear Systems and Chaos (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.E%3A_Nonlinear_Systems_and_Chaos_(Exercises)",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.E__Nonlinear_Systems_and_Chaos__Exercises_.html",
+          "slug": "04-e-nonlinear-systems-and-chaos-exercises"
+        },
+        {
+          "title": "4.S: Nonlinear Systems and Chaos (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/04%3A_Nonlinear_Systems_and_Chaos/4.S%3A_Nonlinear_Systems_and_Chaos_(Summary)",
+          "cache": "04__Nonlinear_Systems_and_Chaos__4.S__Nonlinear_Systems_and_Chaos__Summary_.html",
+          "slug": "04-s-nonlinear-systems-and-chaos-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 5,
+      "title": "Calculus of Variations",
+      "slug": "ch-05-calculus-of-variations",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations",
+      "cache": "05__Calculus_of_Variations.html",
+      "sections": [
+        {
+          "title": "5.1: Introduction to the Calculus of Variations",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.01%3A_Introduction_to_the_Calculus_of_Variations",
+          "cache": "05__Calculus_of_Variations__5.01__Introduction_to_the_Calculus_of_Variations.html",
+          "slug": "05-1-introduction-to-the-calculus-of-variations"
+        },
+        {
+          "title": "5.2: Euler\u2019s Differential Equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.02%3A_Eulers_Differential_Equation",
+          "cache": "05__Calculus_of_Variations__5.02__Eulers_Differential_Equation.html",
+          "slug": "05-2-eulers-differential-equation"
+        },
+        {
+          "title": "5.3: Applications of Euler\u2019s Equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.03%3A_Applications_of_Eulers_Equation",
+          "cache": "05__Calculus_of_Variations__5.03__Applications_of_Eulers_Equation.html",
+          "slug": "05-3-applications-of-eulers-equation"
+        },
+        {
+          "title": "5.4: Selection of the Independent Variable",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.04%3A_Selection_of_the_Independent_Variable",
+          "cache": "05__Calculus_of_Variations__5.04__Selection_of_the_Independent_Variable.html",
+          "slug": "05-4-selection-of-the-independent-variable"
+        },
+        {
+          "title": "5.5: Functions with Several Independent Variables",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.05%3A_Functions_with_Several_Independent_Variables",
+          "cache": "05__Calculus_of_Variations__5.05__Functions_with_Several_Independent_Variables.html",
+          "slug": "05-5-functions-with-several-independent-variables"
+        },
+        {
+          "title": "5.6: Euler\u2019s Integral Equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.06%3A_Eulers_Integral_Equation",
+          "cache": "05__Calculus_of_Variations__5.06__Eulers_Integral_Equation.html",
+          "slug": "05-6-eulers-integral-equation"
+        },
+        {
+          "title": "5.7: Constrained Variational Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.07%3A_Constrained_Variational_Systems",
+          "cache": "05__Calculus_of_Variations__5.07__Constrained_Variational_Systems.html",
+          "slug": "05-7-constrained-variational-systems"
+        },
+        {
+          "title": "5.8: Generalized coordinates in Variational Calculus",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.08%3A_Generalized_coordinates_in_Variational_Calculus",
+          "cache": "05__Calculus_of_Variations__5.08__Generalized_coordinates_in_Variational_Calculus.html",
+          "slug": "05-8-generalized-coordinates-in-variational-calculus"
+        },
+        {
+          "title": "5.9: Lagrange multipliers for Holonomic Constraints",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.09%3A_Lagrange_multipliers_for_Holonomic_Constraints",
+          "cache": "05__Calculus_of_Variations__5.09__Lagrange_multipliers_for_Holonomic_Constraints.html",
+          "slug": "05-9-lagrange-multipliers-for-holonomic-constraints"
+        },
+        {
+          "title": "5.10: Geodesic",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.10%3A_Geodesic",
+          "cache": "05__Calculus_of_Variations__5.10__Geodesic.html",
+          "slug": "05-10-geodesic"
+        },
+        {
+          "title": "5.11: Variational Approach to Classical Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.11%3A_Variational_Approach_to_Classical_Mechanics",
+          "cache": "05__Calculus_of_Variations__5.11__Variational_Approach_to_Classical_Mechanics.html",
+          "slug": "05-11-variational-approach-to-classical-mechanics"
+        },
+        {
+          "title": "5.E: Calculus of Variations (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.E%3A_Calculus_of_Variations_(Exercises)",
+          "cache": "05__Calculus_of_Variations__5.E__Calculus_of_Variations__Exercises_.html",
+          "slug": "05-e-calculus-of-variations-exercises"
+        },
+        {
+          "title": "5.S: Calculus of Variations (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/05%3A_Calculus_of_Variations/5.S%3A_Calculus_of_Variations_(Summary)",
+          "cache": "05__Calculus_of_Variations__5.S__Calculus_of_Variations__Summary_.html",
+          "slug": "05-s-calculus-of-variations-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 6,
+      "title": "Lagrangian Dynamics",
+      "slug": "ch-06-lagrangian-dynamics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics",
+      "cache": "06__Lagrangian_Dynamics.html",
+      "sections": [
+        {
+          "title": "6.1: Introduction to Lagrangian Dynamics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.01%3A_Introduction_to_Lagrangian_Dynamics",
+          "cache": "06__Lagrangian_Dynamics__6.01__Introduction_to_Lagrangian_Dynamics.html",
+          "slug": "06-1-introduction-to-lagrangian-dynamics"
+        },
+        {
+          "title": "6.2: Newtonian plausibility argument for Lagrangian mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.02%3A_Newtonian_plausibility_argument_for_Lagrangian_mechanics",
+          "cache": "06__Lagrangian_Dynamics__6.02__Newtonian_plausibility_argument_for_Lagrangian_mechanics.html",
+          "slug": "06-2-newtonian-plausibility-argument-for-lagrangian-mechanics"
+        },
+        {
+          "title": "6.3: Lagrange Equations from d\u2019Alembert\u2019s Principle",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.03%3A_Lagrange_Equations_from_dAlemberts_Principle",
+          "cache": "06__Lagrangian_Dynamics__6.03__Lagrange_Equations_from_dAlemberts_Principle.html",
+          "slug": "06-3-lagrange-equations-from-dalemberts-principle"
+        },
+        {
+          "title": "6.4: Lagrange equations from Hamilton\u2019s Principle",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.04%3A_Lagrange_equations_from_Hamiltons_Principle",
+          "cache": "06__Lagrangian_Dynamics__6.04__Lagrange_equations_from_Hamiltons_Principle.html",
+          "slug": "06-4-lagrange-equations-from-hamiltons-principle"
+        },
+        {
+          "title": "6.5: Constrained Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.05%3A_Constrained_Systems",
+          "cache": "06__Lagrangian_Dynamics__6.05__Constrained_Systems.html",
+          "slug": "06-5-constrained-systems"
+        },
+        {
+          "title": "6.6: Applying the Euler-Lagrange equations to classical mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.06%3A_Applying_the_Euler-Lagrange_equations_to_classical_mechanics",
+          "cache": "06__Lagrangian_Dynamics__6.06__Applying_the_Euler-Lagrange_equations_to_classical_mechanics.html",
+          "slug": "06-6-applying-the-euler-lagrange-equations-to-classical-mechanics"
+        },
+        {
+          "title": "6.7: Applications to unconstrained systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.07%3A_Applications_to_unconstrained_systems",
+          "cache": "06__Lagrangian_Dynamics__6.07__Applications_to_unconstrained_systems.html",
+          "slug": "06-7-applications-to-unconstrained-systems"
+        },
+        {
+          "title": "6.8: Applications to systems involving holonomic constraints",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.08%3A_Applications_to_systems_involving_holonomic_constraints",
+          "cache": "06__Lagrangian_Dynamics__6.08__Applications_to_systems_involving_holonomic_constraints.html",
+          "slug": "06-8-applications-to-systems-involving-holonomic-constraints"
+        },
+        {
+          "title": "6.9: Applications involving Non-holonomic Constraints",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.09%3A_Applications_involving_Non-holonomic_Constraints",
+          "cache": "06__Lagrangian_Dynamics__6.09__Applications_involving_Non-holonomic_Constraints.html",
+          "slug": "06-9-applications-involving-non-holonomic-constraints"
+        },
+        {
+          "title": "6.10: Velocity-dependent Lorentz force",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.10%3A_Velocity-dependent_Lorentz_force",
+          "cache": "06__Lagrangian_Dynamics__6.10__Velocity-dependent_Lorentz_force.html",
+          "slug": "06-10-velocity-dependent-lorentz-force"
+        },
+        {
+          "title": "6.11: Time-dependent forces",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.11%3A_Time-dependent_forces",
+          "cache": "06__Lagrangian_Dynamics__6.11__Time-dependent_forces.html",
+          "slug": "06-11-time-dependent-forces"
+        },
+        {
+          "title": "6.12: Impulsive Forces",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.12%3A_Impulsive_Forces",
+          "cache": "06__Lagrangian_Dynamics__6.12__Impulsive_Forces.html",
+          "slug": "06-12-impulsive-forces"
+        },
+        {
+          "title": "6.13: The Lagrangian versus the Newtonian approach to classical mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.13%3A_The_Lagrangian_versus_the_Newtonian_approach_to_classical_mechanics",
+          "cache": "06__Lagrangian_Dynamics__6.13__The_Lagrangian_versus_the_Newtonian_approach_to_classical_mechanics.html",
+          "slug": "06-13-the-lagrangian-versus-the-newtonian-approach-to-classical-mechanics"
+        },
+        {
+          "title": "6.E: Lagrangian Dynamics (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.E%3A_Lagrangian_Dynamics_(Exercises)",
+          "cache": "06__Lagrangian_Dynamics__6.E__Lagrangian_Dynamics__Exercises_.html",
+          "slug": "06-e-lagrangian-dynamics-exercises"
+        },
+        {
+          "title": "6.S: Lagrangian Dynamics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/06%3A_Lagrangian_Dynamics/6.S%3A_Lagrangian_Dynamics_(Summary)",
+          "cache": "06__Lagrangian_Dynamics__6.S__Lagrangian_Dynamics__Summary_.html",
+          "slug": "06-s-lagrangian-dynamics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 7,
+      "title": "Symmetries, Invariance and the Hamiltonian",
+      "slug": "ch-07-symmetries-invariance-and-the-hamiltonian",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian",
+      "cache": "07__Symmetries_Invariance_and_the_Hamiltonian.html",
+      "sections": [
+        {
+          "title": "7.1: Introduction to Symmetries, Invariance, and the Hamiltonian",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.01%3A_Introduction_to_Symmetries_Invariance_and_the_Hamiltonian",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.01__Introduction_to_Symmetries_Invariance_and_the_Hamiltonian.html",
+          "slug": "07-1-introduction-to-symmetries-invariance-and-the-hamiltonian"
+        },
+        {
+          "title": "7.2: Generalized Momentum",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.02%3A_Generalized_Momentum",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.02__Generalized_Momentum.html",
+          "slug": "07-2-generalized-momentum"
+        },
+        {
+          "title": "7.3: Invariant Transformations and Noether\u2019s Theorem",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.03%3A_Invariant_Transformations_and_Noethers_Theorem",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.03__Invariant_Transformations_and_Noethers_Theorem.html",
+          "slug": "07-3-invariant-transformations-and-noethers-theorem"
+        },
+        {
+          "title": "7.4: Rotational invariance and conservation of angular momentum",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.04%3A_Rotational_invariance_and_conservation_of_angular_momentum",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.04__Rotational_invariance_and_conservation_of_angular_momentum.html",
+          "slug": "07-4-rotational-invariance-and-conservation-of-angular-momentum"
+        },
+        {
+          "title": "7.5: Cyclic Coordinates",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.05%3A_Cyclic_Coordinates",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.05__Cyclic_Coordinates.html",
+          "slug": "07-5-cyclic-coordinates"
+        },
+        {
+          "title": "7.6: Kinetic Energy in Generalized Coordinates",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.06%3A_Kinetic_Energy_in_Generalized_Coordinates",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.06__Kinetic_Energy_in_Generalized_Coordinates.html",
+          "slug": "07-6-kinetic-energy-in-generalized-coordinates"
+        },
+        {
+          "title": "7.7: Generalized Energy and the Hamiltonian Function",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.07%3A_Generalized_Energy_and_the_Hamiltonian_Function",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.07__Generalized_Energy_and_the_Hamiltonian_Function.html",
+          "slug": "07-7-generalized-energy-and-the-hamiltonian-function"
+        },
+        {
+          "title": "7.8: Generalized energy theorem",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.08%3A_Generalized_energy_theorem",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.08__Generalized_energy_theorem.html",
+          "slug": "07-8-generalized-energy-theorem"
+        },
+        {
+          "title": "7.9: Generalized energy and total energy",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.09%3A_Generalized_energy_and_total_energy",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.09__Generalized_energy_and_total_energy.html",
+          "slug": "07-9-generalized-energy-and-total-energy"
+        },
+        {
+          "title": "7.10: Hamiltonian Invariance",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.10%3A_Hamiltonian_Invariance",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.10__Hamiltonian_Invariance.html",
+          "slug": "07-10-hamiltonian-invariance"
+        },
+        {
+          "title": "7.11: Hamiltonian for Cyclic Coordinates",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.11%3A_Hamiltonian_for_Cyclic_Coordinates",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.11__Hamiltonian_for_Cyclic_Coordinates.html",
+          "slug": "07-11-hamiltonian-for-cyclic-coordinates"
+        },
+        {
+          "title": "7.12: Symmetries and Invariance",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.12%3A_Symmetries_and_Invariance",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.12__Symmetries_and_Invariance.html",
+          "slug": "07-12-symmetries-and-invariance"
+        },
+        {
+          "title": "7.13: Hamiltonian in Classical Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.13%3A_Hamiltonian_in_Classical_Mechanics",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.13__Hamiltonian_in_Classical_Mechanics.html",
+          "slug": "07-13-hamiltonian-in-classical-mechanics"
+        },
+        {
+          "title": "7.E: Symmetries, Invariance and the Hamiltonian (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.E%3A_Symmetries_Invariance_and_the_Hamiltonian_(Exercises)",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.E__Symmetries_Invariance_and_the_Hamiltonian__Exercises_.html",
+          "slug": "07-e-symmetries-invariance-and-the-hamiltonian-exercises"
+        },
+        {
+          "title": "7.S: Symmetries, Invariance and the Hamiltonian (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/07%3A_Symmetries_Invariance_and_the_Hamiltonian/7.S%3A_Symmetries_Invariance_and_the_Hamiltonian_(Summary)",
+          "cache": "07__Symmetries_Invariance_and_the_Hamiltonian__7.S__Symmetries_Invariance_and_the_Hamiltonian__Summary_.html",
+          "slug": "07-s-symmetries-invariance-and-the-hamiltonian-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 8,
+      "title": "Hamiltonian Mechanics",
+      "slug": "ch-08-hamiltonian-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics",
+      "cache": "08__Hamiltonian_Mechanics.html",
+      "sections": [
+        {
+          "title": "8.1: Introduction",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.01%3A_Introduction",
+          "cache": "08__Hamiltonian_Mechanics__8.01__Introduction.html",
+          "slug": "08-1-introduction"
+        },
+        {
+          "title": "8.2: Legendre Transformation between Lagrangian and Hamiltonian mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.02%3A_Legendre_Transformation_between_Lagrangian_and_Hamiltonian_mechanics",
+          "cache": "08__Hamiltonian_Mechanics__8.02__Legendre_Transformation_between_Lagrangian_and_Hamiltonian_mechanics.html",
+          "slug": "08-2-legendre-transformation-between-lagrangian-and-hamiltonian-mechanics"
+        },
+        {
+          "title": "8.3: Hamilton\u2019s Equations of Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.03%3A_Hamiltons_Equations_of_Motion",
+          "cache": "08__Hamiltonian_Mechanics__8.03__Hamiltons_Equations_of_Motion.html",
+          "slug": "08-3-hamiltons-equations-of-motion"
+        },
+        {
+          "title": "8.4: Hamiltonian in Different Coordinate Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.04%3A_Hamiltonian_in_Different_Coordinate_Systems",
+          "cache": "08__Hamiltonian_Mechanics__8.04__Hamiltonian_in_Different_Coordinate_Systems.html",
+          "slug": "08-4-hamiltonian-in-different-coordinate-systems"
+        },
+        {
+          "title": "8.5: Applications of Hamiltonian Dynamics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.05%3A_Applications_of_Hamiltonian_Dynamics",
+          "cache": "08__Hamiltonian_Mechanics__8.05__Applications_of_Hamiltonian_Dynamics.html",
+          "slug": "08-5-applications-of-hamiltonian-dynamics"
+        },
+        {
+          "title": "8.6: Routhian Reduction",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.06%3A_Routhian_Reduction",
+          "cache": "08__Hamiltonian_Mechanics__8.06__Routhian_Reduction.html",
+          "slug": "08-6-routhian-reduction"
+        },
+        {
+          "title": "8.7: Variable-mass systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.07%3A_Variable-mass_systems",
+          "cache": "08__Hamiltonian_Mechanics__8.07__Variable-mass_systems.html",
+          "slug": "08-7-variable-mass-systems"
+        },
+        {
+          "title": "8.E: Hamiltonian Mechanics (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.E%3A_Hamiltonian_Mechanics_(Exercises)",
+          "cache": "08__Hamiltonian_Mechanics__8.E__Hamiltonian_Mechanics__Exercises_.html",
+          "slug": "08-e-hamiltonian-mechanics-exercises"
+        },
+        {
+          "title": "8.S: Hamiltonian Mechanics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/08%3A_Hamiltonian_Mechanics/8.S%3A_Hamiltonian_Mechanics_(Summary)",
+          "cache": "08__Hamiltonian_Mechanics__8.S__Hamiltonian_Mechanics__Summary_.html",
+          "slug": "08-s-hamiltonian-mechanics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 9,
+      "title": "Hamilton's Action Principle",
+      "slug": "ch-09-hamiltons-action-principle",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle",
+      "cache": "09__Hamilton_s_Action_Principle.html",
+      "sections": [
+        {
+          "title": "9.1: Introduction to Hamilton's Action Principle",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle/9.01%3A_Introduction_to_Hamilton's_Action_Principle",
+          "cache": "09__Hamilton_s_Action_Principle__9.01__Introduction_to_Hamilton_s_Action_Principle.html",
+          "slug": "09-1-introduction-to-hamiltons-action-principle"
+        },
+        {
+          "title": "9.2: Hamilton's Principle of Stationary Action",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle/9.02%3A_Hamilton's_Principle_of_Stationary_Action",
+          "cache": "09__Hamilton_s_Action_Principle__9.02__Hamilton_s_Principle_of_Stationary_Action.html",
+          "slug": "09-2-hamiltons-principle-of-stationary-action"
+        },
+        {
+          "title": "9.3: Lagrangian",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle/9.03%3A_Lagrangian",
+          "cache": "09__Hamilton_s_Action_Principle__9.03__Lagrangian.html",
+          "slug": "09-3-lagrangian"
+        },
+        {
+          "title": "9.4: Application of Hamilton's Action Principle to Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle/9.04%3A_Application_of_Hamilton's_Action_Principle_to_Mechanics",
+          "cache": "09__Hamilton_s_Action_Principle__9.04__Application_of_Hamilton_s_Action_Principle_to_Mechanics.html",
+          "slug": "09-4-application-of-hamiltons-action-principle-to-mechanics"
+        },
+        {
+          "title": "9.S: Hamilton's Action Principle (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/09%3A_Hamilton's_Action_Principle/9.S%3A_Hamilton's_Action_Principle_(Summary)",
+          "cache": "09__Hamilton_s_Action_Principle__9.S__Hamilton_s_Action_Principle__Summary_.html",
+          "slug": "09-s-hamiltons-action-principle-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 10,
+      "title": "Nonconservative Systems",
+      "slug": "ch-10-nonconservative-systems",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems",
+      "cache": "10__Nonconservative_Systems.html",
+      "sections": [
+        {
+          "title": "10.1: Introduction to Nonconservative Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.01%3A_Introduction_to_Nonconservative_Systems",
+          "cache": "10__Nonconservative_Systems__10.01__Introduction_to_Nonconservative_Systems.html",
+          "slug": "10-1-introduction-to-nonconservative-systems"
+        },
+        {
+          "title": "10.2: Origins of Nonconservative Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.02%3A_Origins_of_Nonconservative_Motion",
+          "cache": "10__Nonconservative_Systems__10.02__Origins_of_Nonconservative_Motion.html",
+          "slug": "10-2-origins-of-nonconservative-motion"
+        },
+        {
+          "title": "10.3: Algebraic Mechanics for Nonconservative Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.03%3A_Algebraic_Mechanics_for_Nonconservative_Systems",
+          "cache": "10__Nonconservative_Systems__10.03__Algebraic_Mechanics_for_Nonconservative_Systems.html",
+          "slug": "10-3-algebraic-mechanics-for-nonconservative-systems"
+        },
+        {
+          "title": "10.4: Rayleigh\u2019s Dissipation Function",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.04%3A_Rayleighs_Dissipation_Function",
+          "cache": "10__Nonconservative_Systems__10.04__Rayleighs_Dissipation_Function.html",
+          "slug": "10-4-rayleighs-dissipation-function"
+        },
+        {
+          "title": "10.5: Dissipative Lagrangians",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.05%3A_Dissipative_Lagrangians",
+          "cache": "10__Nonconservative_Systems__10.05__Dissipative_Lagrangians.html",
+          "slug": "10-5-dissipative-lagrangians"
+        },
+        {
+          "title": "10.S: Nonconservative systems (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/10%3A_Nonconservative_Systems/10.S%3A_Nonconservative_systems_(Summary)",
+          "cache": "10__Nonconservative_Systems__10.S__Nonconservative_systems__Summary_.html",
+          "slug": "10-s-nonconservative-systems-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 11,
+      "title": "Conservative two-body Central Forces",
+      "slug": "ch-11-conservative-two-body-central-forces",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces",
+      "cache": "11__Conservative_two-body_Central_Forces.html",
+      "sections": [
+        {
+          "title": "11.1: Introduction to Conservative two-body Central Forces",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.01%3A_Introduction_to_Conservative_two-body_Central_Forces",
+          "cache": "11__Conservative_two-body_Central_Forces__11.01__Introduction_to_Conservative_two-body_Central_Forces.html",
+          "slug": "11-1-introduction-to-conservative-two-body-central-forces"
+        },
+        {
+          "title": "11.2: Equivalent one-body Representation for two-body motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.02%3A_Equivalent_one-body_Representation_for_two-body_motion",
+          "cache": "11__Conservative_two-body_Central_Forces__11.02__Equivalent_one-body_Representation_for_two-body_motion.html",
+          "slug": "11-2-equivalent-one-body-representation-for-two-body-motion"
+        },
+        {
+          "title": "11.3: Angular Momentum",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.03%3A_Angular_Momentum",
+          "cache": "11__Conservative_two-body_Central_Forces__11.03__Angular_Momentum.html",
+          "slug": "11-3-angular-momentum"
+        },
+        {
+          "title": "11.4: Equations of Motion",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.04%3A_Equations_of_Motion",
+          "cache": "11__Conservative_two-body_Central_Forces__11.04__Equations_of_Motion.html",
+          "slug": "11-4-equations-of-motion"
+        },
+        {
+          "title": "11.5: Differential Orbit Equation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.05%3A_Differential_Orbit_Equation",
+          "cache": "11__Conservative_two-body_Central_Forces__11.05__Differential_Orbit_Equation.html",
+          "slug": "11-5-differential-orbit-equation"
+        },
+        {
+          "title": "11.6: Hamiltonian",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.06%3A_Hamiltonian",
+          "cache": "11__Conservative_two-body_Central_Forces__11.06__Hamiltonian.html",
+          "slug": "11-6-hamiltonian"
+        },
+        {
+          "title": "11.7: General Features of the Orbit Solutions",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.07%3A_General_Features_of_the_Orbit_Solutions",
+          "cache": "11__Conservative_two-body_Central_Forces__11.07__General_Features_of_the_Orbit_Solutions.html",
+          "slug": "11-7-general-features-of-the-orbit-solutions"
+        },
+        {
+          "title": "11.8: Inverse-square, two-body, central force",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.08%3A_Inverse-square_two-body_central_force",
+          "cache": "11__Conservative_two-body_Central_Forces__11.08__Inverse-square_two-body_central_force.html",
+          "slug": "11-8-inverse-square-two-body-central-force"
+        },
+        {
+          "title": "11.9: Isotropic, linear, two-body, central force",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.09%3A_Isotropic_linear_two-body_central_force",
+          "cache": "11__Conservative_two-body_Central_Forces__11.09__Isotropic_linear_two-body_central_force.html",
+          "slug": "11-9-isotropic-linear-two-body-central-force"
+        },
+        {
+          "title": "11.10: Closed-orbit Stability",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.10%3A_Closed-orbit_Stability",
+          "cache": "11__Conservative_two-body_Central_Forces__11.10__Closed-orbit_Stability.html",
+          "slug": "11-10-closed-orbit-stability"
+        },
+        {
+          "title": "11.11: The Three-Body Problem",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.11%3A_The_Three-Body_Problem",
+          "cache": "11__Conservative_two-body_Central_Forces__11.11__The_Three-Body_Problem.html",
+          "slug": "11-11-the-three-body-problem"
+        },
+        {
+          "title": "11.12: Two-body Scattering",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.12%3A_Two-body_Scattering",
+          "cache": "11__Conservative_two-body_Central_Forces__11.12__Two-body_Scattering.html",
+          "slug": "11-12-two-body-scattering"
+        },
+        {
+          "title": "11.13: Two-body kinematics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.13%3A_Two-body_kinematics",
+          "cache": "11__Conservative_two-body_Central_Forces__11.13__Two-body_kinematics.html",
+          "slug": "11-13-two-body-kinematics"
+        },
+        {
+          "title": "11.E: Conservative two-body Central Forces (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.E%3A_Conservative_two-body_Central_Forces_(Exercises)",
+          "cache": "11__Conservative_two-body_Central_Forces__11.E__Conservative_two-body_Central_Forces__Exercises_.html",
+          "slug": "11-e-conservative-two-body-central-forces-exercises"
+        },
+        {
+          "title": "11.S: Conservative two-body Central Forces (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/11%3A_Conservative_two-body_Central_Forces/11.S%3A_Conservative_two-body_Central_Forces_(Summary)",
+          "cache": "11__Conservative_two-body_Central_Forces__11.S__Conservative_two-body_Central_Forces__Summary_.html",
+          "slug": "11-s-conservative-two-body-central-forces-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 12,
+      "title": "Non-inertial Reference Frames",
+      "slug": "ch-12-non-inertial-reference-frames",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames",
+      "cache": "12__Non-inertial_Reference_Frames.html",
+      "sections": [
+        {
+          "title": "12.1: Introduction to Non-inertial Reference Frames",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.01%3A_Introduction_to_Non-inertial_Reference_Frames",
+          "cache": "12__Non-inertial_Reference_Frames__12.01__Introduction_to_Non-inertial_Reference_Frames.html",
+          "slug": "12-1-introduction-to-non-inertial-reference-frames"
+        },
+        {
+          "title": "12.2: Translational acceleration of a reference frame",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.02%3A_Translational_acceleration_of_a_reference_frame",
+          "cache": "12__Non-inertial_Reference_Frames__12.02__Translational_acceleration_of_a_reference_frame.html",
+          "slug": "12-2-translational-acceleration-of-a-reference-frame"
+        },
+        {
+          "title": "12.3: Rotating Reference Frame",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.03%3A_Rotating_Reference_Frame",
+          "cache": "12__Non-inertial_Reference_Frames__12.03__Rotating_Reference_Frame.html",
+          "slug": "12-3-rotating-reference-frame"
+        },
+        {
+          "title": "12.4: Reference Frame Undergoing Rotation Plus Translation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.04%3A_Reference_Frame_Undergoing_Rotation_Plus_Translation",
+          "cache": "12__Non-inertial_Reference_Frames__12.04__Reference_Frame_Undergoing_Rotation_Plus_Translation.html",
+          "slug": "12-4-reference-frame-undergoing-rotation-plus-translation"
+        },
+        {
+          "title": "12.5: Newton\u2019s Law of Motion in a Non-Inertial Frame",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.05%3A_Newtons_Law_of_Motion_in_a_Non-Inertial_Frame",
+          "cache": "12__Non-inertial_Reference_Frames__12.05__Newtons_Law_of_Motion_in_a_Non-Inertial_Frame.html",
+          "slug": "12-5-newtons-law-of-motion-in-a-non-inertial-frame"
+        },
+        {
+          "title": "12.6: Lagrangian Mechanics in a Non-Inertial Frame",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.06%3A_Lagrangian_Mechanics_in_a_Non-Inertial_Frame",
+          "cache": "12__Non-inertial_Reference_Frames__12.06__Lagrangian_Mechanics_in_a_Non-Inertial_Frame.html",
+          "slug": "12-6-lagrangian-mechanics-in-a-non-inertial-frame"
+        },
+        {
+          "title": "12.7: Centrifugal Force",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.07%3A_Centrifugal_Force",
+          "cache": "12__Non-inertial_Reference_Frames__12.07__Centrifugal_Force.html",
+          "slug": "12-7-centrifugal-force"
+        },
+        {
+          "title": "12.8: Coriolis Force",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.08%3A_Coriolis_Force",
+          "cache": "12__Non-inertial_Reference_Frames__12.08__Coriolis_Force.html",
+          "slug": "12-8-coriolis-force"
+        },
+        {
+          "title": "12.9: Routhian Reduction for Rotating Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.09%3A_Routhian_Reduction_for_Rotating_Systems",
+          "cache": "12__Non-inertial_Reference_Frames__12.09__Routhian_Reduction_for_Rotating_Systems.html",
+          "slug": "12-9-routhian-reduction-for-rotating-systems"
+        },
+        {
+          "title": "12.10: Effective gravitational force near the surface of the Earth",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.10%3A_Effective_gravitational_force_near_the_surface_of_the_Earth",
+          "cache": "12__Non-inertial_Reference_Frames__12.10__Effective_gravitational_force_near_the_surface_of_the_Earth.html",
+          "slug": "12-10-effective-gravitational-force-near-the-surface-of-the-earth"
+        },
+        {
+          "title": "12.11: Free Motion on the Earth",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.11%3A_Free_Motion_on_the_Earth",
+          "cache": "12__Non-inertial_Reference_Frames__12.11__Free_Motion_on_the_Earth.html",
+          "slug": "12-11-free-motion-on-the-earth"
+        },
+        {
+          "title": "12.12: Weather systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.12%3A_Weather_systems",
+          "cache": "12__Non-inertial_Reference_Frames__12.12__Weather_systems.html",
+          "slug": "12-12-weather-systems"
+        },
+        {
+          "title": "12.13: Foucault pendulum",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.13%3A_Foucault_pendulum",
+          "cache": "12__Non-inertial_Reference_Frames__12.13__Foucault_pendulum.html",
+          "slug": "12-13-foucault-pendulum"
+        },
+        {
+          "title": "12.E: Non-inertial reference frames (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.E%3A_Non-inertial_reference_frames_(Exercises)",
+          "cache": "12__Non-inertial_Reference_Frames__12.E__Non-inertial_reference_frames__Exercises_.html",
+          "slug": "12-e-non-inertial-reference-frames-exercises"
+        },
+        {
+          "title": "12.S: Non-inertial reference frames (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/12%3A_Non-inertial_Reference_Frames/12.S%3A_Non-inertial_reference_frames_(Summary)",
+          "cache": "12__Non-inertial_Reference_Frames__12.S__Non-inertial_reference_frames__Summary_.html",
+          "slug": "12-s-non-inertial-reference-frames-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 13,
+      "title": "Rigid-body Rotation",
+      "slug": "ch-13-rigid-body-rotation",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation",
+      "cache": "13__Rigid-body_Rotation.html",
+      "sections": [
+        {
+          "title": "13.1: Introduction to Rigid-body Rotation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.01%3A_Introduction_to_Rigid-body_Rotation",
+          "cache": "13__Rigid-body_Rotation__13.01__Introduction_to_Rigid-body_Rotation.html",
+          "slug": "13-1-introduction-to-rigid-body-rotation"
+        },
+        {
+          "title": "13.2: Rigid-body Coordinates",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.02%3A_Rigid-body_Coordinates",
+          "cache": "13__Rigid-body_Rotation__13.02__Rigid-body_Coordinates.html",
+          "slug": "13-2-rigid-body-coordinates"
+        },
+        {
+          "title": "13.3: Rigid-body Rotation about a Body-Fixed Point",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.03%3A_Rigid-body_Rotation_about_a_Body-Fixed_Point",
+          "cache": "13__Rigid-body_Rotation__13.03__Rigid-body_Rotation_about_a_Body-Fixed_Point.html",
+          "slug": "13-3-rigid-body-rotation-about-a-body-fixed-point"
+        },
+        {
+          "title": "13.4: Inertia Tensor",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.04%3A_Inertia_Tensor",
+          "cache": "13__Rigid-body_Rotation__13.04__Inertia_Tensor.html",
+          "slug": "13-4-inertia-tensor"
+        },
+        {
+          "title": "13.5: Matrix and Tensor Formulations of Rigid-Body Rotation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.05%3A_Matrix_and_Tensor_Formulations_of_Rigid-Body_Rotation",
+          "cache": "13__Rigid-body_Rotation__13.05__Matrix_and_Tensor_Formulations_of_Rigid-Body_Rotation.html",
+          "slug": "13-5-matrix-and-tensor-formulations-of-rigid-body-rotation"
+        },
+        {
+          "title": "13.6: Principal Axis System",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.06%3A_Principal_Axis_System",
+          "cache": "13__Rigid-body_Rotation__13.06__Principal_Axis_System.html",
+          "slug": "13-6-principal-axis-system"
+        },
+        {
+          "title": "13.7: Diagonalize the Inertia Tensor",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.07%3A_Diagonalize_the_Inertia_Tensor",
+          "cache": "13__Rigid-body_Rotation__13.07__Diagonalize_the_Inertia_Tensor.html",
+          "slug": "13-7-diagonalize-the-inertia-tensor"
+        },
+        {
+          "title": "13.8: Parallel-Axis Theorem",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.08%3A_Parallel-Axis_Theorem",
+          "cache": "13__Rigid-body_Rotation__13.08__Parallel-Axis_Theorem.html",
+          "slug": "13-8-parallel-axis-theorem"
+        },
+        {
+          "title": "13.9: Perpendicular-axis Theorem for Plane Laminae",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.09%3A_Perpendicular-axis_Theorem_for_Plane_Laminae",
+          "cache": "13__Rigid-body_Rotation__13.09__Perpendicular-axis_Theorem_for_Plane_Laminae.html",
+          "slug": "13-9-perpendicular-axis-theorem-for-plane-laminae"
+        },
+        {
+          "title": "13.10: General Properties of the Inertia Tensor",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.10%3A_General_Properties_of_the_Inertia_Tensor",
+          "cache": "13__Rigid-body_Rotation__13.10__General_Properties_of_the_Inertia_Tensor.html",
+          "slug": "13-10-general-properties-of-the-inertia-tensor"
+        },
+        {
+          "title": "13.11: Angular Momentum and Angular Velocity Vectors",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.11%3A_Angular_Momentum_and_Angular_Velocity_Vectors",
+          "cache": "13__Rigid-body_Rotation__13.11__Angular_Momentum_and_Angular_Velocity_Vectors.html",
+          "slug": "13-11-angular-momentum-and-angular-velocity-vectors"
+        },
+        {
+          "title": "13.12: Kinetic Energy of Rotating Rigid Body",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.12%3A_Kinetic_Energy_of_Rotating_Rigid_Body",
+          "cache": "13__Rigid-body_Rotation__13.12__Kinetic_Energy_of_Rotating_Rigid_Body.html",
+          "slug": "13-12-kinetic-energy-of-rotating-rigid-body"
+        },
+        {
+          "title": "13.13: Euler Angles",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.13%3A_Euler_Angles",
+          "cache": "13__Rigid-body_Rotation__13.13__Euler_Angles.html",
+          "slug": "13-13-euler-angles"
+        },
+        {
+          "title": "13.14: Angular Velocity",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.14%3A_Angular_Velocity",
+          "cache": "13__Rigid-body_Rotation__13.14__Angular_Velocity.html",
+          "slug": "13-14-angular-velocity"
+        },
+        {
+          "title": "13.15: Kinetic energy in terms of Euler angular velocities",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.15%3A_Kinetic_energy_in_terms_of_Euler_angular_velocities",
+          "cache": "13__Rigid-body_Rotation__13.15__Kinetic_energy_in_terms_of_Euler_angular_velocities.html",
+          "slug": "13-15-kinetic-energy-in-terms-of-euler-angular-velocities"
+        },
+        {
+          "title": "13.16: Rotational Invariants",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.16%3A_Rotational_Invariants",
+          "cache": "13__Rigid-body_Rotation__13.16__Rotational_Invariants.html",
+          "slug": "13-16-rotational-invariants"
+        },
+        {
+          "title": "13.17: Euler\u2019s equations of motion for rigid-body rotation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.17%3A_Eulers_equations_of_motion_for_rigid-body_rotation",
+          "cache": "13__Rigid-body_Rotation__13.17__Eulers_equations_of_motion_for_rigid-body_rotation.html",
+          "slug": "13-17-eulers-equations-of-motion-for-rigid-body-rotation"
+        },
+        {
+          "title": "13.18: Lagrange equations of motion for rigid-body rotation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.18%3A_Lagrange_equations_of_motion_for_rigid-body_rotation",
+          "cache": "13__Rigid-body_Rotation__13.18__Lagrange_equations_of_motion_for_rigid-body_rotation.html",
+          "slug": "13-18-lagrange-equations-of-motion-for-rigid-body-rotation"
+        },
+        {
+          "title": "13.19: Hamiltonian equations of motion for rigid-body rotation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.19%3A_Hamiltonian_equations_of_motion_for_rigid-body_rotation",
+          "cache": "13__Rigid-body_Rotation__13.19__Hamiltonian_equations_of_motion_for_rigid-body_rotation.html",
+          "slug": "13-19-hamiltonian-equations-of-motion-for-rigid-body-rotation"
+        },
+        {
+          "title": "13.20: Torque-free rotation of an inertially-symmetric rigid rotor",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.20%3A_Torque-free_rotation_of_an_inertially-symmetric_rigid_rotor",
+          "cache": "13__Rigid-body_Rotation__13.20__Torque-free_rotation_of_an_inertially-symmetric_rigid_rotor.html",
+          "slug": "13-20-torque-free-rotation-of-an-inertially-symmetric-rigid-rotor"
+        },
+        {
+          "title": "13.21: Torque-free rotation of an asymmetric rigid rotor",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.21%3A_Torque-free_rotation_of_an_asymmetric_rigid_rotor",
+          "cache": "13__Rigid-body_Rotation__13.21__Torque-free_rotation_of_an_asymmetric_rigid_rotor.html",
+          "slug": "13-21-torque-free-rotation-of-an-asymmetric-rigid-rotor"
+        },
+        {
+          "title": "13.22: Stability of torque-free rotation of an asymmetric body",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.22%3A_Stability_of_torque-free_rotation_of_an_asymmetric_body",
+          "cache": "13__Rigid-body_Rotation__13.22__Stability_of_torque-free_rotation_of_an_asymmetric_body.html",
+          "slug": "13-22-stability-of-torque-free-rotation-of-an-asymmetric-body"
+        },
+        {
+          "title": "13.23: Symmetric rigid rotor subject to torque about a fixed point",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.23%3A_Symmetric_rigid_rotor_subject_to_torque_about_a_fixed_point",
+          "cache": "13__Rigid-body_Rotation__13.23__Symmetric_rigid_rotor_subject_to_torque_about_a_fixed_point.html",
+          "slug": "13-23-symmetric-rigid-rotor-subject-to-torque-about-a-fixed-point"
+        },
+        {
+          "title": "13.24: The Rolling Wheel",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.24%3A_The_Rolling_Wheel",
+          "cache": "13__Rigid-body_Rotation__13.24__The_Rolling_Wheel.html",
+          "slug": "13-24-the-rolling-wheel"
+        },
+        {
+          "title": "13.25: Dynamic balancing of wheels",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.25%3A_Dynamic_balancing_of_wheels",
+          "cache": "13__Rigid-body_Rotation__13.25__Dynamic_balancing_of_wheels.html",
+          "slug": "13-25-dynamic-balancing-of-wheels"
+        },
+        {
+          "title": "13.26: Rotation of Deformable Bodies",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.26%3A_Rotation_of_Deformable_Bodies",
+          "cache": "13__Rigid-body_Rotation__13.26__Rotation_of_Deformable_Bodies.html",
+          "slug": "13-26-rotation-of-deformable-bodies"
+        },
+        {
+          "title": "13.E: Rigid-body Rotation (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.E%3A_Rigid-body_Rotation_(Exercises)",
+          "cache": "13__Rigid-body_Rotation__13.E__Rigid-body_Rotation__Exercises_.html",
+          "slug": "13-e-rigid-body-rotation-exercises"
+        },
+        {
+          "title": "13.S: Rigid-body Rotation (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/13%3A_Rigid-body_Rotation/13.S%3A_Rigid-body_Rotation_(Summary)",
+          "cache": "13__Rigid-body_Rotation__13.S__Rigid-body_Rotation__Summary_.html",
+          "slug": "13-s-rigid-body-rotation-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 14,
+      "title": "Coupled Linear Oscillators",
+      "slug": "ch-14-coupled-linear-oscillators",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators",
+      "cache": "14__Coupled_Linear_Oscillators.html",
+      "sections": [
+        {
+          "title": "14.1: Introduction to Coupled Linear Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.01%3A_Introduction_to_Coupled_Linear_Oscillators",
+          "cache": "14__Coupled_Linear_Oscillators__14.01__Introduction_to_Coupled_Linear_Oscillators.html",
+          "slug": "14-1-introduction-to-coupled-linear-oscillators"
+        },
+        {
+          "title": "14.2: Two Coupled Linear Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.02%3A_Two_Coupled_Linear_Oscillators",
+          "cache": "14__Coupled_Linear_Oscillators__14.02__Two_Coupled_Linear_Oscillators.html",
+          "slug": "14-2-two-coupled-linear-oscillators"
+        },
+        {
+          "title": "14.3: Normal Modes",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.03%3A_Normal_Modes",
+          "cache": "14__Coupled_Linear_Oscillators__14.03__Normal_Modes.html",
+          "slug": "14-3-normal-modes"
+        },
+        {
+          "title": "14.4: Center of Mass Oscillations",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.04%3A_Center_of_Mass_Oscillations",
+          "cache": "14__Coupled_Linear_Oscillators__14.04__Center_of_Mass_Oscillations.html",
+          "slug": "14-4-center-of-mass-oscillations"
+        },
+        {
+          "title": "14.5: Weak Coupling",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.05%3A_Weak_Coupling",
+          "cache": "14__Coupled_Linear_Oscillators__14.05__Weak_Coupling.html",
+          "slug": "14-5-weak-coupling"
+        },
+        {
+          "title": "14.6: General Analytic Theory for Coupled Linear Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.06%3A_General_Analytic_Theory_for_Coupled_Linear_Oscillators",
+          "cache": "14__Coupled_Linear_Oscillators__14.06__General_Analytic_Theory_for_Coupled_Linear_Oscillators.html",
+          "slug": "14-6-general-analytic-theory-for-coupled-linear-oscillators"
+        },
+        {
+          "title": "14.7: Two-body coupled oscillator systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.07%3A_Two-body_coupled_oscillator_systems",
+          "cache": "14__Coupled_Linear_Oscillators__14.07__Two-body_coupled_oscillator_systems.html",
+          "slug": "14-7-two-body-coupled-oscillator-systems"
+        },
+        {
+          "title": "14.8: Three-body coupled linear oscillator systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.08%3A_Three-body_coupled_linear_oscillator_systems",
+          "cache": "14__Coupled_Linear_Oscillators__14.08__Three-body_coupled_linear_oscillator_systems.html",
+          "slug": "14-8-three-body-coupled-linear-oscillator-systems"
+        },
+        {
+          "title": "14.9: Molecular coupled oscillator systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.09%3A_Molecular_coupled_oscillator_systems",
+          "cache": "14__Coupled_Linear_Oscillators__14.09__Molecular_coupled_oscillator_systems.html",
+          "slug": "14-9-molecular-coupled-oscillator-systems"
+        },
+        {
+          "title": "14.10: Discrete Lattice Chain",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.10%3A_Discrete_Lattice_Chain",
+          "cache": "14__Coupled_Linear_Oscillators__14.10__Discrete_Lattice_Chain.html",
+          "slug": "14-10-discrete-lattice-chain"
+        },
+        {
+          "title": "14.11: Damped Coupled Linear Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.11%3A_Damped_Coupled_Linear_Oscillators",
+          "cache": "14__Coupled_Linear_Oscillators__14.11__Damped_Coupled_Linear_Oscillators.html",
+          "slug": "14-11-damped-coupled-linear-oscillators"
+        },
+        {
+          "title": "14.12: Collective Synchronization of Coupled Oscillators",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.12%3A_Collective_Synchronization_of_Coupled_Oscillators",
+          "cache": "14__Coupled_Linear_Oscillators__14.12__Collective_Synchronization_of_Coupled_Oscillators.html",
+          "slug": "14-12-collective-synchronization-of-coupled-oscillators"
+        },
+        {
+          "title": "14.E: Coupled linear oscillators (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.E%3A_Coupled_linear_oscillators_(Exercises)",
+          "cache": "14__Coupled_Linear_Oscillators__14.E__Coupled_linear_oscillators__Exercises_.html",
+          "slug": "14-e-coupled-linear-oscillators-exercises"
+        },
+        {
+          "title": "14.S: Coupled linear oscillators (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/14%3A_Coupled_Linear_Oscillators/14.S%3A_Coupled_linear_oscillators_(Summary)",
+          "cache": "14__Coupled_Linear_Oscillators__14.S__Coupled_linear_oscillators__Summary_.html",
+          "slug": "14-s-coupled-linear-oscillators-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 15,
+      "title": "Advanced Hamiltonian Mechanics",
+      "slug": "ch-15-advanced-hamiltonian-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics",
+      "cache": "15__Advanced_Hamiltonian_Mechanics.html",
+      "sections": [
+        {
+          "title": "15.1: Introduction to Advanced Hamiltonian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.01%3A_Introduction_to_Advanced_Hamiltonian_Mechanics",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.01__Introduction_to_Advanced_Hamiltonian_Mechanics.html",
+          "slug": "15-1-introduction-to-advanced-hamiltonian-mechanics"
+        },
+        {
+          "title": "15.2: Poisson bracket Representation of Hamiltonian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.02%3A_Poisson_bracket_Representation_of_Hamiltonian_Mechanics",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.02__Poisson_bracket_Representation_of_Hamiltonian_Mechanics.html",
+          "slug": "15-2-poisson-bracket-representation-of-hamiltonian-mechanics"
+        },
+        {
+          "title": "15.3: Canonical Transformations in Hamiltonian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.03%3A_Canonical_Transformations_in_Hamiltonian_Mechanics",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.03__Canonical_Transformations_in_Hamiltonian_Mechanics.html",
+          "slug": "15-3-canonical-transformations-in-hamiltonian-mechanics"
+        },
+        {
+          "title": "15.4: Hamilton-Jacobi Theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.04%3A_Hamilton-Jacobi_Theory",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.04__Hamilton-Jacobi_Theory.html",
+          "slug": "15-4-hamilton-jacobi-theory"
+        },
+        {
+          "title": "15.5: Action-angle Variables",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.05%3A_Action-angle_Variables",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.05__Action-angle_Variables.html",
+          "slug": "15-5-action-angle-variables"
+        },
+        {
+          "title": "15.6: Canonical Perturbation Theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.06%3A_Canonical_Perturbation_Theory",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.06__Canonical_Perturbation_Theory.html",
+          "slug": "15-6-canonical-perturbation-theory"
+        },
+        {
+          "title": "15.7: Symplectic Representation",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.07%3A_Symplectic_Representation",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.07__Symplectic_Representation.html",
+          "slug": "15-7-symplectic-representation"
+        },
+        {
+          "title": "15.8: Comparison of the Lagrangian and Hamiltonian Formulations",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.08%3A_Comparison_of_the_Lagrangian_and_Hamiltonian_Formulations",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.08__Comparison_of_the_Lagrangian_and_Hamiltonian_Formulations.html",
+          "slug": "15-8-comparison-of-the-lagrangian-and-hamiltonian-formulations"
+        },
+        {
+          "title": "15.E: Advanced Hamiltonian Mechanics (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.E%3A_Advanced_Hamiltonian_Mechanics_(Exercises)",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.E__Advanced_Hamiltonian_Mechanics__Exercises_.html",
+          "slug": "15-e-advanced-hamiltonian-mechanics-exercises"
+        },
+        {
+          "title": "15.S: Advanced Hamiltonian mechanics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/15%3A_Advanced_Hamiltonian_Mechanics/15.S%3A_Advanced_Hamiltonian_mechanics_(Summary)",
+          "cache": "15__Advanced_Hamiltonian_Mechanics__15.S__Advanced_Hamiltonian_mechanics__Summary_.html",
+          "slug": "15-s-advanced-hamiltonian-mechanics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 16,
+      "title": "Analytical Formulations for Continuous Systems",
+      "slug": "ch-16-analytical-formulations-for-continuous-systems",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems",
+      "cache": "16__Analytical_Formulations_for_Continuous_Systems.html",
+      "sections": [
+        {
+          "title": "16.1: Introduction",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.01%3A_Introduction",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.01__Introduction.html",
+          "slug": "16-1-introduction"
+        },
+        {
+          "title": "16.2: The Continuous Uniform Linear Chain",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.02%3A_The_Continuous_Uniform_Linear_Chain",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.02__The_Continuous_Uniform_Linear_Chain.html",
+          "slug": "16-2-the-continuous-uniform-linear-chain"
+        },
+        {
+          "title": "16.3: The Lagrangian density formulation for continuous systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.03%3A_The_Lagrangian_density_formulation_for_continuous_systems",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.03__The_Lagrangian_density_formulation_for_continuous_systems.html",
+          "slug": "16-3-the-lagrangian-density-formulation-for-continuous-systems"
+        },
+        {
+          "title": "16.4: The Hamiltonian density formulation for continuous systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.04%3A_The_Hamiltonian_density_formulation_for_continuous_systems",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.04__The_Hamiltonian_density_formulation_for_continuous_systems.html",
+          "slug": "16-4-the-hamiltonian-density-formulation-for-continuous-systems"
+        },
+        {
+          "title": "16.5: Linear Elastic Solids",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.05%3A_Linear_Elastic_Solids",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.05__Linear_Elastic_Solids.html",
+          "slug": "16-5-linear-elastic-solids"
+        },
+        {
+          "title": "16.6: Electromagnetic Field Theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.06%3A_Electromagnetic_Field_Theory",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.06__Electromagnetic_Field_Theory.html",
+          "slug": "16-6-electromagnetic-field-theory"
+        },
+        {
+          "title": "16.7: Ideal Fluid Dynamics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.07%3A_Ideal_Fluid_Dynamics",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.07__Ideal_Fluid_Dynamics.html",
+          "slug": "16-7-ideal-fluid-dynamics"
+        },
+        {
+          "title": "16.8: Viscous Fluid Dynamics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.08%3A_Viscous_Fluid_Dynamics",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.08__Viscous_Fluid_Dynamics.html",
+          "slug": "16-8-viscous-fluid-dynamics"
+        },
+        {
+          "title": "16.9: Summary and Implications",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/16%3A_Analytical_Formulations_for_Continuous_Systems/16.09%3A_Summary_and_implications",
+          "cache": "16__Analytical_Formulations_for_Continuous_Systems__16.09__Summary_and_implications.html",
+          "slug": "16-9-summary-and-implications"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 17,
+      "title": "Relativistic Mechanics",
+      "slug": "ch-17-relativistic-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics",
+      "cache": "17__Relativistic_Mechanics.html",
+      "sections": [
+        {
+          "title": "17.1: Introduction to Relativistic Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.01%3A_Introduction_to_Relativistic_Mechanics",
+          "cache": "17__Relativistic_Mechanics__17.01__Introduction_to_Relativistic_Mechanics.html",
+          "slug": "17-1-introduction-to-relativistic-mechanics"
+        },
+        {
+          "title": "17.2: Galilean Invariance",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.02%3A_Galilean_Invariance",
+          "cache": "17__Relativistic_Mechanics__17.02__Galilean_Invariance.html",
+          "slug": "17-2-galilean-invariance"
+        },
+        {
+          "title": "17.3: Special Theory of Relativity",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.03%3A_Special_Theory_of_Relativity",
+          "cache": "17__Relativistic_Mechanics__17.03__Special_Theory_of_Relativity.html",
+          "slug": "17-3-special-theory-of-relativity"
+        },
+        {
+          "title": "17.4: Relativistic Kinematics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.04%3A_Relativistic_Kinematics",
+          "cache": "17__Relativistic_Mechanics__17.04__Relativistic_Kinematics.html",
+          "slug": "17-4-relativistic-kinematics"
+        },
+        {
+          "title": "17.5: Geometry of Space-time",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.05%3A_Geometry_of_Space-time",
+          "cache": "17__Relativistic_Mechanics__17.05__Geometry_of_Space-time.html",
+          "slug": "17-5-geometry-of-space-time"
+        },
+        {
+          "title": "17.6: Lorentz-Invariant Formulation of Lagrangian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.06%3A_Lorentz-Invariant_Formulation_of_Lagrangian_Mechanics",
+          "cache": "17__Relativistic_Mechanics__17.06__Lorentz-Invariant_Formulation_of_Lagrangian_Mechanics.html",
+          "slug": "17-6-lorentz-invariant-formulation-of-lagrangian-mechanics"
+        },
+        {
+          "title": "17.7: Lorentz-invariant formulations of Hamiltonian Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.07%3A_Lorentz-invariant_formulations_of_Hamiltonian_Mechanics",
+          "cache": "17__Relativistic_Mechanics__17.07__Lorentz-invariant_formulations_of_Hamiltonian_Mechanics.html",
+          "slug": "17-7-lorentz-invariant-formulations-of-hamiltonian-mechanics"
+        },
+        {
+          "title": "17.8: The General Theory of Relativity",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.08%3A_The_General_Theory_of_Relativity",
+          "cache": "17__Relativistic_Mechanics__17.08__The_General_Theory_of_Relativity.html",
+          "slug": "17-8-the-general-theory-of-relativity"
+        },
+        {
+          "title": "17.9: Implications of Relativistic Theory to Classical Mechanics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.09%3A_Implications_of_Relativistic_Theory_to_Classical_Mechanics",
+          "cache": "17__Relativistic_Mechanics__17.09__Implications_of_Relativistic_Theory_to_Classical_Mechanics.html",
+          "slug": "17-9-implications-of-relativistic-theory-to-classical-mechanics"
+        },
+        {
+          "title": "17.E: Relativistic Mechanics (Exercises)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.E%3A_Relativistic_Mechanics_(Exercises)",
+          "cache": "17__Relativistic_Mechanics__17.E__Relativistic_Mechanics__Exercises_.html",
+          "slug": "17-e-relativistic-mechanics-exercises"
+        },
+        {
+          "title": "17.S: Relativistic Mechanics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/17%3A_Relativistic_Mechanics/17.S%3A_Relativistic_Mechanics_(Summary)",
+          "cache": "17__Relativistic_Mechanics__17.S__Relativistic_Mechanics__Summary_.html",
+          "slug": "17-s-relativistic-mechanics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 18,
+      "title": "The Transition to Quantum Physics",
+      "slug": "ch-18-the-transition-to-quantum-physics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics",
+      "cache": "18__The_Transition_to_Quantum_Physics.html",
+      "sections": [
+        {
+          "title": "18.1: Introduction to Quantum Physics",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.01%3A_Introduction_to_Quantum_Physics",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.01__Introduction_to_Quantum_Physics.html",
+          "slug": "18-1-introduction-to-quantum-physics"
+        },
+        {
+          "title": "18.2: Brief summary of the origins of quantum theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.02%3A_Brief_summary_of_the_origins_of_quantum_theory",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.02__Brief_summary_of_the_origins_of_quantum_theory.html",
+          "slug": "18-2-brief-summary-of-the-origins-of-quantum-theory"
+        },
+        {
+          "title": "18.3: Hamiltonian in Quantum Theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.03%3A_Hamiltonian_in_Quantum_Theory",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.03__Hamiltonian_in_Quantum_Theory.html",
+          "slug": "18-3-hamiltonian-in-quantum-theory"
+        },
+        {
+          "title": "18.4: Lagrangian Representation in Quantum Theory",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.04%3A_Lagrangian_Representation_in_Quantum_Theory",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.04__Lagrangian_Representation_in_Quantum_Theory.html",
+          "slug": "18-4-lagrangian-representation-in-quantum-theory"
+        },
+        {
+          "title": "18.5: Correspondence Principle",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.05%3A_Correspondence_Principle",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.05__Correspondence_Principle.html",
+          "slug": "18-5-correspondence-principle"
+        },
+        {
+          "title": "18.S: The Transition to Quantum Physics (Summary)",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/18%3A_The_Transition_to_Quantum_Physics/18.S%3A_The_Transition_to_Quantum_Physics_(Summary)",
+          "cache": "18__The_Transition_to_Quantum_Physics__18.S__The_Transition_to_Quantum_Physics__Summary_.html",
+          "slug": "18-s-the-transition-to-quantum-physics-summary"
+        }
+      ]
+    },
+    {
+      "kind": "chapter",
+      "number": 19,
+      "title": "Mathematical Methods for Classical Mechanics",
+      "slug": "ch-19-mathematical-methods-for-classical-mechanics",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics",
+      "cache": "19__Mathematical_Methods_for_Classical_Mechanics.html",
+      "sections": [
+        {
+          "title": "19.1: Introduction",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.01%3A_Introduction",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.01__Introduction.html",
+          "slug": "19-1-introduction"
+        },
+        {
+          "title": "19.2: Appendix - Matrix Algebra",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.02%3A_Appendix_-_Matrix_Algebra",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.02__Appendix_-_Matrix_Algebra.html",
+          "slug": "19-2-appendix-matrix-algebra"
+        },
+        {
+          "title": "19.3: Appendix - Vector algebra",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.03%3A_Appendix_-_Vector_algebra",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.03__Appendix_-_Vector_algebra.html",
+          "slug": "19-3-appendix-vector-algebra"
+        },
+        {
+          "title": "19.4: Appendix - Orthogonal Coordinate Systems",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.04%3A_Appendix_-_Orthogonal_Coordinate_Systems",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.04__Appendix_-_Orthogonal_Coordinate_Systems.html",
+          "slug": "19-4-appendix-orthogonal-coordinate-systems"
+        },
+        {
+          "title": "19.5: Appendix - Coordinate transformations",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.05%3A_Appendix_-_Coordinate_transformations",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.05__Appendix_-_Coordinate_transformations.html",
+          "slug": "19-5-appendix-coordinate-transformations"
+        },
+        {
+          "title": "19.6: Appendix - Tensor Algebra",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.06%3A_Appendix_-_Tensor_Algebra",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.06__Appendix_-_Tensor_Algebra.html",
+          "slug": "19-6-appendix-tensor-algebra"
+        },
+        {
+          "title": "19.7: Appendix - Aspects of Multivariate Calculus",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.07%3A_Appendix_-_Aspects_of_Multivariate_Calculus",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.07__Appendix_-_Aspects_of_Multivariate_Calculus.html",
+          "slug": "19-7-appendix-aspects-of-multivariate-calculus"
+        },
+        {
+          "title": "19.8: Appendix - Vector Differential Calculus",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.08%3A_Appendix_-_Vector_Differential_Calculus",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.08__Appendix_-_Vector_Differential_Calculus.html",
+          "slug": "19-8-appendix-vector-differential-calculus"
+        },
+        {
+          "title": "19.9: Appendix - Vector Integral Calculus",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.09%3A_Appendix_-_Vector_Integral_Calculus",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.09__Appendix_-_Vector_Integral_Calculus.html",
+          "slug": "19-9-appendix-vector-integral-calculus"
+        },
+        {
+          "title": "19.10: Appendix - Waveform analysis",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.10%3A_Appendix_-_Waveform_analysis",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.10__Appendix_-_Waveform_analysis.html",
+          "slug": "19-10-appendix-waveform-analysis"
+        },
+        {
+          "title": "19.11: Bibliography",
+          "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.11%3A_Bibliography",
+          "cache": "19__Mathematical_Methods_for_Classical_Mechanics__19.11__Bibliography.html",
+          "slug": "19-11-bibliography"
+        }
+      ]
+    }
+  ],
+  "back": [
+    {
+      "title": "Epilogue",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/zz%3A_Back_Matter/01%3A_Epilogue",
+      "cache": "zz__Back_Matter__01__Epilogue.html",
+      "slug": "epilogue"
+    },
+    {
+      "title": "Index",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/zz%3A_Back_Matter/10%3A_Index",
+      "cache": "zz__Back_Matter__10__Index.html",
+      "slug": "index"
+    },
+    {
+      "title": "Glossary",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/zz%3A_Back_Matter/20%3A_Glossary",
+      "cache": "zz__Back_Matter__20__Glossary.html",
+      "slug": "glossary"
+    },
+    {
+      "title": "Detailed Licensing",
+      "url": "https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/zz%3A_Back_Matter/30%3A_Detailed_Licensing",
+      "cache": "zz__Back_Matter__30__Detailed_Licensing.html",
+      "slug": "detailed-licensing"
+    }
+  ]
+}

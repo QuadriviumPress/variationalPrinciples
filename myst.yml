@@ -1,0 +1,62 @@
+version: 1
+project:
+  id: variational-principles
+  title: Variational Principles in Classical Mechanics
+  short_title: Variational Principles
+  subtitle: Third edition
+  description: >-
+    A web-native MyST edition of Douglas Cline's open textbook on
+    variational principles in classical mechanics.
+  authors:
+    - name: Douglas Cline
+      affiliations:
+        - institution: University of Rochester
+  date: 2021-08-19
+  license:
+    content: CC-BY-NC-SA-4.0
+  open_access: true
+  github: QuadriviumPress/variationalPrinciples
+  keywords:
+    - classical mechanics
+    - Lagrangian mechanics
+    - Hamiltonian mechanics
+    - variational principles
+  numbering:
+    heading_2: false
+    heading_3: false
+  toc:
+    - file: index.md
+    - file: front/preface.md
+    - file: front/prologue.md
+    - file: chapters/ch-01-a-brief-history-of-classical-mechanics.md
+    - file: chapters/ch-02-review-of-newtonian-mechanics.md
+    - file: chapters/ch-03-linear-oscillators.md
+    - file: chapters/ch-04-nonlinear-systems-and-chaos.md
+    - file: chapters/ch-05-calculus-of-variations.md
+    - file: chapters/ch-06-lagrangian-dynamics.md
+    - file: chapters/ch-07-symmetries-invariance-and-the-hamiltonian.md
+    - file: chapters/ch-08-hamiltonian-mechanics.md
+    - file: chapters/ch-09-hamiltons-action-principle.md
+    - file: chapters/ch-10-nonconservative-systems.md
+    - file: chapters/ch-11-conservative-two-body-central-forces.md
+    - file: chapters/ch-12-non-inertial-reference-frames.md
+    - file: chapters/ch-13-rigid-body-rotation.md
+    - file: chapters/ch-14-coupled-linear-oscillators.md
+    - file: chapters/ch-15-advanced-hamiltonian-mechanics.md
+    - file: chapters/ch-16-analytical-formulations-for-continuous-systems.md
+    - file: chapters/ch-17-relativistic-mechanics.md
+    - file: chapters/ch-18-the-transition-to-quantum-physics.md
+    - file: chapters/ch-19-mathematical-methods-for-classical-mechanics.md
+    - title: Closing
+      children:
+        - file: back/epilogue.md
+        - file: back/glossary.md
+site:
+  template: book-theme
+  title: Variational Principles in Classical Mechanics
+  options:
+    favicon: images/favicon.svg
+  actions:
+    - title: Original textbook
+      url: http://classicalmechanics.lib.rochester.edu/
+  nav: []
