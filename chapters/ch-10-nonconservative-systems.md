@@ -372,7 +372,7 @@ Therefore Bateman proposed a time-dependent, non-standard Lagrangian $L_{Damped}
 $$
 L_{Damped}=\frac{m}{2}e^{\Gamma t}\left[ \dot{x}^{2}-\omega _{0}^{2}x^{2} \right] \tag{$f$}
 $$
- This Lagrangian $L_{Dampes}$ corresponds to a harmonic oscillator for which the mass $m=m_{0}e^{\Gamma t}\$is accreting exponentially with time in order to mimic the exponential energy dissipation. Use of this Lagrangian in the Euler-Lagrange equations gives the solution
+ This Lagrangian $L_{Dampes}$ corresponds to a harmonic oscillator for which the mass $m=m_{0}e^{\Gamma t}$ is accreting exponentially with time in order to mimic the exponential energy dissipation. Use of this Lagrangian in the Euler-Lagrange equations gives the solution
 
 $$
 me^{\Gamma t}\left[ \ddot{x}+\Gamma \dot{x}+\omega _{0}^{2}x\right] =0 \tag{$g$}

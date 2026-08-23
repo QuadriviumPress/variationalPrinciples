@@ -51,6 +51,7 @@ project:
       children:
         - file: back/epilogue.md
         - file: back/glossary.md
+        - file: back/errata.md
 site:
   template: book-theme
   title: Variational Principles in Classical Mechanics

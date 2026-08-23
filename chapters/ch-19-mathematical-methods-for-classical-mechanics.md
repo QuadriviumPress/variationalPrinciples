@@ -814,10 +814,8 @@ This discussion has shown that in contrast to the time independence of the carte
 | --- | --- |
 | Distance element | $d\mathbf{s} = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}}$ |
 | Area element | $da = r dr d\theta$ |
-| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \cos \theta + \hat{j} \sin \theta$
-$\boldsymbol{\hat{\theta}} = -\hat{i} \sin \theta + \hat{j} \cos \theta$ |
-| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \dot{\theta} \boldsymbol{\hat{\theta}}$
-$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\dot{\theta} \mathbf{\hat{r}}$ |
+| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \cos \theta + \hat{j} \sin \theta$<br>$\boldsymbol{\hat{\theta}} = -\hat{i} \sin \theta + \hat{j} \cos \theta$ |
+| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \dot{\theta} \boldsymbol{\hat{\theta}}$<br>$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\dot{\theta} \mathbf{\hat{r}}$ |
 | Velocity | $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}}$ |
 | Kinetic energy | $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2\right)$ |
 | Acceleration | $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2\right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta}\right) \boldsymbol{\hat{\theta}}$ |
@@ -836,12 +834,8 @@ The three-dimensional cylindrical coordinates $(\rho , \phi , z)$ are obtained b
 | --- | --- |
 | Distance element | $d\mathbf{s} = d \rho \boldsymbol{\hat{\rho}} + \rho d\phi \boldsymbol{\hat{\phi}} + dz\mathbf{\hat{z}}$ |
 | Volume element | $dv = \rho d\rho d\phi dz$ |
-| Unit vectors | $\boldsymbol{\hat{\rho}} = \hat{i} \cos \phi + \hat{j} \sin \phi$
-$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$
-$\mathbf{\hat{z}} = \mathbf{\hat{k}}$ |
-| Time derivatives of unit vectors | $\frac{d\boldsymbol{\hat{\rho}}}{dt} = \dot{\phi} \boldsymbol{\hat{\phi}}$
-$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\dot{\phi} \boldsymbol{\hat{\rho}}$
-$\frac{d\mathbf{\hat{z}}}{dt} = 0$ |
+| Unit vectors | $\boldsymbol{\hat{\rho}} = \hat{i} \cos \phi + \hat{j} \sin \phi$<br>$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$<br>$\mathbf{\hat{z}} = \mathbf{\hat{k}}$ |
+| Time derivatives of unit vectors | $\frac{d\boldsymbol{\hat{\rho}}}{dt} = \dot{\phi} \boldsymbol{\hat{\phi}}$<br>$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\dot{\phi} \boldsymbol{\hat{\rho}}$<br>$\frac{d\mathbf{\hat{z}}}{dt} = 0$ |
 | Velocity | $\mathbf{v} = \dot{\rho} \boldsymbol{\hat{\rho}} + \rho \dot{\phi} \boldsymbol{\hat{\phi}} + \dot{z} \mathbf{\hat{z}}$ |
 | Kinetic energy | $\frac{m}{2} \left(\dot{\rho}^2 + \rho^2 \dot{\phi}^2 + \dot{z}^2 \right)$ |
 | Acceleration | $\mathbf{a} = \left(\ddot{\rho} - \rho \dot{\phi}^2\right)\boldsymbol{\hat{\rho}} + \left(\rho\ddot{\phi} + 2\dot{\rho}\dot{\phi}\right) \boldsymbol{\hat{\phi}} + \ddot{z}\mathbf{\hat{z}}$ |
@@ -860,12 +854,8 @@ The three dimensional spherical coordinates, can be treated the same way as for 
 | --- | --- |
 | Distance element | $ds = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}} + r \sin \theta d \phi \boldsymbol{\hat{\phi}}$ |
 | Volume element | $dv = r^2 \sin \theta drd\theta d\phi$ |
-| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \cos \phi + \mathbf{\hat{k}} \cos \theta$
-$\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$
-$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$ |
-| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \boldsymbol{\hat{\theta}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \sin \theta$
-$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\mathbf{\hat{r}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \cos \theta$
-$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\mathbf{\hat{r}}\dot{\phi}\sin \theta - \boldsymbol{\hat{\theta}} \dot{\phi} \cos \theta$ |
+| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \sin \phi + \mathbf{\hat{k}} \cos \theta$<br>$\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$<br>$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$ |
+| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \boldsymbol{\hat{\theta}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \sin \theta$<br>$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\mathbf{\hat{r}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \cos \theta$<br>$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\mathbf{\hat{r}}\dot{\phi}\sin \theta - \boldsymbol{\hat{\theta}} \dot{\phi} \cos \theta$ |
 | Velocity | $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}} + r \dot{\phi} \sin \theta \boldsymbol{\hat{\phi}}$ |
 | Kinetic energy | $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2 + r^2\sin^2 \theta \dot{\phi}^2 \right)$ |
 | Acceleration | $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2 - r\dot{\phi}^2 \sin^2 \theta \right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta} - r\dot{\phi}^2 \sin \theta \cos \theta \right) \boldsymbol{\hat{\theta}} + \left(r \ddot{\phi} \sin \theta + 2\dot{r}\dot{\phi} \sin \theta + 2r\dot{\theta}\dot{\phi} \cos \theta \right) \boldsymbol{\hat{\phi}}$ |
@@ -900,34 +890,8 @@ The curvature $\kappa = \frac{1}{ \rho}$ where $\rho$ is the radius of curvature
 
 | Distance element | $d\mathbf{s}(t) = \mathbf{\hat{t}} \left\| \frac{d\mathbf{r}(t)}{dt} \right\| dt = \mathbf{\hat{t}} v(t) dt$ |
 | --- | --- |
-| Unit vectors | $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left\| v(t) \right\|}$
-$\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left\| \mathbf{d\hat{t}}/dt \right\|}$
-$\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$ |
-| Time derivatives of unit vectors | $\frac{d}{d t} \begin{pmatrix}
-
- \mathbf{\hat{t}} \\
-
- \mathbf{\hat{n}} \\
-
- \mathbf{\hat{b}}
-
- \end{pmatrix} =\|v\|\begin{pmatrix}
-
- 0 & \kappa & 0 \\
-
- -\kappa & 0 & \tau \\
-
- 0 & -\tau & 0
-
- \end{pmatrix} \begin{pmatrix}
-
- \mathbf{\hat{t}} \\
-
- \mathbf{\hat{n}} \\
-
- \mathbf{\hat{b}}
-
- \end{pmatrix}$ |
+| Unit vectors | $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left\| v(t) \right\|}$<br>$\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left\| \mathbf{d\hat{t}}/dt \right\|}$<br>$\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$ |
+| Time derivatives of unit vectors | $\frac{d}{d t} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix} =\|v\|\begin{pmatrix} 0 & \kappa & 0 \\ -\kappa & 0 & \tau \\ 0 & -\tau & 0 \end{pmatrix} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix}$ |
 | Velocity | $\mathbf{v} (t) = \frac{d\mathbf{r}(t)}{dt}$ |
 | Acceleration | $\mathbf{a}(t) = \frac{dv}{dt} \mathbf{\hat{t}} + \kappa v^2 \mathbf{\hat{n}}$ |
 

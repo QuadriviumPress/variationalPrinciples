@@ -326,13 +326,26 @@ class HtmlToMyst:
         path = self._register_image(src)
         return f":::{{figure}} {path}\n:alt: {alt}\n\n{alt}\n:::"
 
+    def _table_cell_text(self, td: Tag) -> str:
+        text = self._inline(td).strip()
+        # Table cells must stay on one physical line: force any display math
+        # (\[...\]) to render inline instead of as a $$ block, and turn any
+        # remaining <br>-sourced or source newlines into <br> so multi-line
+        # cell content (stacked equations, matrices) doesn't get split into
+        # bogus extra table rows.
+        text = re.sub(
+            r"\\\[(.*?)\\\]", lambda m: f"${clean_math(m.group(1))}$", text, flags=re.S
+        )
+        text = re.sub(
+            r"\\\((.*?)\\\)", lambda m: f"${clean_math(m.group(1))}$", text, flags=re.S
+        )
+        text = re.sub(r"\s*\n\s*", "<br>", text.strip())
+        return text.replace("|", "\\|")
+
     def _table(self, node: Tag) -> str:
         rows = []
         for tr in node.find_all("tr"):
-            cells = [
-                self._inline(td).strip().replace("|", "\\|")
-                for td in tr.find_all(["th", "td"])
-            ]
+            cells = [self._table_cell_text(td) for td in tr.find_all(["th", "td"])]
             if cells:
                 rows.append(cells)
         if not rows:

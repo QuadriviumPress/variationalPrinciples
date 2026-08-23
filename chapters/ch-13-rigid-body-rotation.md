@@ -1104,7 +1104,7 @@ These are the **Euler equations for rigid body in a force field** expressed in t
 
 The motion of a rigid body depends on the structure of the body only via the three principal moments of inertia $I_1$, $I_2$, and $I_3$. Thus all bodies having the same principal moments of inertia will behave exactly the same even though the bodies may have very different shapes. As discussed earlier, the simplest geometrical shape of a body having three different principal moments is a homogeneous ellipsoid. Thus, the rigid-body motion often is described in terms of the equivalent ellipsoid that has the same principal moments.
 
-A deficiency of Euler’s equations is that the solutions yield the time variation of $\boldsymbol{\omega}$ as seen from the body-fixed reference frame axes, and not in the observers fixed inertial coordinate frame. Similarly the components of the external torques in the Euler equations are given with respect to the body-fixed axis system which implies that the orientation of the body is already known. Thus for non-zero external torques the problem cannot be solved until the the orientation is known in order to determine the components $N^{ext}_i$. However, these difficulties disappear when the external torques are zero, or if the motion of the body is known and it is required to compute the applied torques necessary to produce such motion.
+A deficiency of Euler’s equations is that the solutions yield the time variation of $\boldsymbol{\omega}$ as seen from the body-fixed reference frame axes, and not in the observers fixed inertial coordinate frame. Similarly the components of the external torques in the Euler equations are given with respect to the body-fixed axis system which implies that the orientation of the body is already known. Thus for non-zero external torques the problem cannot be solved until the orientation is known in order to determine the components $N^{ext}_i$. However, these difficulties disappear when the external torques are zero, or if the motion of the body is known and it is required to compute the applied torques necessary to produce such motion.
 
 ## 13.18: Lagrange equations of motion for rigid-body rotation
 
@@ -1612,10 +1612,10 @@ $$
 where $\lambda , \mu$ are very small. The Euler equations $(13.21.1)$ become
 
 $$
-\begin{aligned} (I_2 − I_3) \lambda \mu − I_1\dot{\omega}_1 = 0 \$I_3 − I_1) \mu \omega_1 − I_2\dot{\lambda} = 0 \\(I_1 − I_2) \omega_1 \lambda − I_3 \dot{\mu} = 0 \end{aligned}
+\begin{aligned} (I_2 − I_3) \lambda \mu − I_1\dot{\omega}_1 = 0 \\ (I_3 − I_1) \mu \omega_1 − I_2\dot{\lambda} = 0 \\ (I_1 − I_2) \omega_1 \lambda − I_3 \dot{\mu} = 0 \end{aligned}
 $$
 
-Assuming that the product \(\lambda \mu$ in the first equation is negligible, then $\dot{\omega}_1 = 0$, that is, $\omega_1$ is constant.
+Assuming that the product $\lambda \mu$ in the first equation is negligible, then $\dot{\omega}_1 = 0$, that is, $\omega_1$ is constant.
 
 The other two equations can be solved to give
 
@@ -2185,7 +2185,7 @@ $1$
 
 1. Calculate all elements of the inertia tensor. Be sure to specify the coordinate system used.
 2. Using the calculated inertia tensor find the angular momentum of the dumbbell in the laboratory frame as a function of time.
-3. Using the equation $L = r \times p$, calculate the angular momentum and show that it it is equal to the answer of part (b).
+3. Using the equation $L = r \times p$, calculate the angular momentum and show that it is equal to the answer of part (b).
 4. Calculate the torque on the axle as a function of time.
 5. Calculate the kinetic energy of the dumbbell.
 

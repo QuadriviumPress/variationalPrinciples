@@ -458,7 +458,7 @@ $$
 (\gamma _{n+1}-\gamma _{n})\simeq \frac{1}{\delta }(\gamma _{n}-\gamma _{n-1})
 $$
 
-where $\delta =4.6692016$, $\delta$ is called a Feigenbaum number. As $n\rightarrow \infty \$this cascading sequence goes to a limit $\gamma _{c}$ where 
+where $\delta =4.6692016$, $\delta$ is called a Feigenbaum number. As $n\rightarrow \infty$ this cascading sequence goes to a limit $\gamma _{c}$ where 
 $$
 \gamma _{c}=1.0829
 $$

@@ -648,7 +648,7 @@ $$
 L_{\alpha} = \frac{1}{2} m\dot{\alpha}^2 − \frac{1}{2} (k + \eta ) \alpha^2 L_{\beta} = \frac{1}{2} m\dot{\beta}^2 − \frac{1}{2} (k − \eta ) \beta^2 \nonumber
 $$
 
-This shows that that the transformation has separated the system into two normal modes that are harmonic oscillators with angular frequencies
+This shows that the transformation has separated the system into two normal modes that are harmonic oscillators with angular frequencies
 
 $$
 \omega_1 = \sqrt{\frac{k + \eta}{ m}} \quad \omega_2 = \sqrt{\frac{k − \eta}{ m}} \nonumber
@@ -1313,14 +1313,10 @@ Table 15.1 summarizes the time-dependent and time-independent forms of the Hamil
 | --- | --- | --- |
 | Transformed Hamiltonian | $\mathcal{H}= 0$ | $\mathcal{H}$ is cyclic |
 | Canonical transformed variables | All $Q_iP_i$ are constants of motion | All $P_i$ are constants of motion |
-| Transformed equations of motion | $\dot{Q}_i = \frac{\partial \mathcal{H}}{ \partial P_i} = 0$, therefore $Q_i = \beta_i$
-$\dot{P}_i = − \frac{\partial \mathcal{H}}{ \partial Q_i} = 0$, therefore $P_i = \alpha_i$ | $\dot{Q}_i = \frac{\partial \mathcal{H}}{ \partial P_i} = v_i$, therefore $Q_i = v_i t + \beta_i$
-$\dot{P}_i = − \frac{\partial \mathcal{H}} {\partial Q_i} = 0$, therefore $P_i = \alpha_i$ |
+| Transformed equations of motion | $\dot{Q}_i = \frac{\partial \mathcal{H}}{ \partial P_i} = 0$, therefore $Q_i = \beta_i$<br>$\dot{P}_i = − \frac{\partial \mathcal{H}}{ \partial Q_i} = 0$, therefore $P_i = \alpha_i$ | $\dot{Q}_i = \frac{\partial \mathcal{H}}{ \partial P_i} = v_i$, therefore $Q_i = v_i t + \beta_i$<br>$\dot{P}_i = − \frac{\partial \mathcal{H}} {\partial Q_i} = 0$, therefore $P_i = \alpha_i$ |
 | Generating function | Jacobi’s complete integral $S(\mathbf{q}, \mathbf{P}, t)$ | Characteristic Function $W(\mathbf{q}, \mathbf{P})$ |
 | Hamilton-Jacobi equation | $H(q_1, ...q_n; \frac{\partial S}{ \partial q_1 }, ..., \frac{\partial S} {\partial q_n} ;t)+\frac{\partial S}{ \partial t} = 0$ | $H(q_1, ...q_n; \frac{\partial W }{\partial q_1} , ..., \frac{\partial W}{ \partial q_n} ) = E$ |
-| Transformation equations | $p_i= \frac{\partial S}{ \partial q_i}$
-$Q_i= \frac{\partial S}{ \partial \alpha_i} = \beta_i$ | $p_i=\frac{\partial W}{ \partial q_i}$
-$Q_i=\frac{\partial W}{ \partial \alpha_i} = v_i t + \beta_i$ |
+| Transformation equations | $p_i= \frac{\partial S}{ \partial q_i}$<br>$Q_i= \frac{\partial S}{ \partial \alpha_i} = \beta_i$ | $p_i=\frac{\partial W}{ \partial q_i}$<br>$Q_i=\frac{\partial W}{ \partial \alpha_i} = v_i t + \beta_i$ |
 
 ### Separation of variables
 

@@ -980,7 +980,7 @@ $$
 G(\omega)_{output} = H(\omega , \phi) \cdot G(\omega)_{input} \label{3.111}
 $$
 
-Working in the time domain, the the low-pass system has an **impulse response** $I(t) = e^{-\frac{t}{\tau}}$, which is the Fourier transform of the transfer function $H(\omega , \phi )$. In the time domain
+Working in the time domain, the low-pass system has an **impulse response** $I(t) = e^{-\frac{t}{\tau}}$, which is the Fourier transform of the transfer function $H(\omega , \phi )$. In the time domain
 
 $$
 y(t)_{output} = \int^{\infty}_{-\infty} x(\tau ) \cdot I(t - \tau) d \tau \label{3.112}

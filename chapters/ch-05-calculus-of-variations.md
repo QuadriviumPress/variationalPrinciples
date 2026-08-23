@@ -791,7 +791,7 @@ $$
 g\left( y,z;x\right) =0 \tag{$B$} \label{5-B}
 $$
 
-Note that the variations $\frac{\partial y}{\partial \epsilon }$ and $\frac{\partial z}{\partial \epsilon }$ are no longer independent because of the constraint equation, thus the the two terms in the brackets of Equation \ref{5-A} are not separately equal to zero at the extremum. However, differentiating the constraint Equation \ref{5-B} gives
+Note that the variations $\frac{\partial y}{\partial \epsilon }$ and $\frac{\partial z}{\partial \epsilon }$ are no longer independent because of the constraint equation, thus the two terms in the brackets of Equation \ref{5-A} are not separately equal to zero at the extremum. However, differentiating the constraint Equation \ref{5-B} gives
 
 $$
 \frac{dg}{d\epsilon }=\left( \frac{\partial g}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial g}{\partial z}\frac{\partial z}{\partial \epsilon }\right) =0 \tag{$C$} \label{5-C}
@@ -1086,7 +1086,7 @@ J(x) = \int^{\pi}_0 (2x \sin t - \dot{x}^2) dt\nonumber
 $$
  that satisfies $x(o) = x(\pi) = 0$. Show that this extremal provides the global maximum of $J$.
 
-6. Find and describe the path $y = y(x)$ for which the the integral $\int^{x_2}_{x_1} \sqrt{x} \sqrt{1 + (y^{\prime})^2} dx$ is stationary.
+6. Find and describe the path $y = y(x)$ for which the integral $\int^{x_2}_{x_1} \sqrt{x} \sqrt{1 + (y^{\prime})^2} dx$ is stationary.
 
 7. Find the dimensions of the parallelepiped of maximum volume circumscribed by a sphere of radius $R$.
 

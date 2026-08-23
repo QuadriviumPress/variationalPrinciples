@@ -416,7 +416,7 @@ $$
 Define Jacobi’s **Generalized Energy*<sup>1</sup>*** $h(\mathbf{q},\mathbf{ \dot{q}},t)$ by
 
 $$
-h(\mathbf{q},\mathbf{ \dot{q}},t)\equiv \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q }_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}},t)
+h(\mathbf{q},\mathbf{ \dot{q}},t)\equiv \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q }_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}},t) \label{7.37}
 $$
 
 Jacobi’s generalized momentum, equation $7.2.3,$ can be used to express the generalized energy $h(q,\dot{q},t)$ in terms of the canonical coordinates $\dot{q}_{i}$ and $p_{i}$, plus time $t$. Define the **Hamiltonian function** to equal the generalized energy expressed in terms of the conjugate variables $(q_{j},p_{j})$, that is,
@@ -956,7 +956,7 @@ Use Noether’s theorem to find the conserved momentum.
 7.e.1.PNG
 :::
 Figure 7.2
-8. A cube of side $2b$ and center of mass $C$, is placed on a fixed horizontal cylinder of radius $r$ and center $O$ as shown in the figure. Originally the cube is placed such that $C$ is centered above $O$ but it can roll from side to side without slipping. (a) Assuming that $b<r$ use the Lagrangian approach to to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for $L$ before using the Lagrange-Euler equations. (b) What will be the motion if $b>r$ ? Note that the moment of inertia of the cube about the center of mass is $\frac{2}{3}mb^{2}$.
+8. A cube of side $2b$ and center of mass $C$, is placed on a fixed horizontal cylinder of radius $r$ and center $O$ as shown in the figure. Originally the cube is placed such that $C$ is centered above $O$ but it can roll from side to side without slipping. (a) Assuming that $b<r$ use the Lagrangian approach to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for $L$ before using the Lagrange-Euler equations. (b) What will be the motion if $b>r$ ? Note that the moment of inertia of the cube about the center of mass is $\frac{2}{3}mb^{2}$.
 :::{figure} ../images/lt-21397-7.e.2.png
 :alt: 7.e.2.PNG
 

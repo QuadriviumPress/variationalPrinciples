@@ -522,7 +522,7 @@ Note that, if the Poynting vector is time independent, then the second term in E
 
 Chapter $7.2$ showed that the electromagnetic field carries a linear momentum $q\mathbf{A}$ where $q$ is the charge on a body and $\mathbf{A}$ is the electromagnetic vector potential. It is useful to use the Maxwell stress tensor to express the momentum density directly in terms of the electric and magnetic fields.
 
-Newton’s law of motion can be used to write equation Equation \ref{16.75} as
+Newton’s law of motion can be used to write Equation \ref{16.75} as
 
 $$
 \mathbf{F}= \frac{d\mathbf{p}_{mech}}{ dt} = \oint \mathbf{T}\cdot d\mathbf{a}−\epsilon_0\mu_0 \frac{d}{dt} \int \mathbf{Sd}\boldsymbol{\tau} \label{16.76}
@@ -773,7 +773,7 @@ $$
 T_{ki} = T_{ik} = P \delta_{ik} + \rho v_i v_k \label{16.96}
 $$
 
-Note that the stress tensor gives the momentum flux density tensor, which involves a diagonal term proportional to pressure $P$, plus a viscous drag term that is is proportional to the product of two velocities.
+Note that the stress tensor gives the momentum flux density tensor, which involves a diagonal term proportional to pressure $P$, plus a viscous drag term that is proportional to the product of two velocities.
 
 The Navier-Stokes equations are the fundamental equations characterizing fluid flow. They are based on application of Newton’s second law of motion to fluids together with the assumption that the fluid stress is the sum of a diffusing viscous term plus a pressure term. Combining Euler’s equation, $(16.7.11)$, with \ref{16.95} gives the Navier-Stokes equation
 
