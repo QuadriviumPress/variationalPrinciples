@@ -5,9 +5,9 @@ label: ch-06-lagrangian-dynamics
 ---
 
 
-# 6. Lagrangian Dynamics
-
 (ch-6)=
+
+# 6. Lagrangian Dynamics
 
 ## 6.1: Introduction to Lagrangian Dynamics
 
@@ -16,21 +16,21 @@ Newtonian mechanics is based on vector observables such as momentum and force, a
 The Lagrangian approach to classical dynamics is based on the calculus of variations introduced in chapter $5$. It was shown that the calculus of variations determines the function $y_i(x)$ such that the scalar functional
 
 $$
-F = \int^{x_2}_{x_1} \sum^n_i f[y_i (x), y^{\prime}_i (x); x] dx \label{6.1}
+F = \int^{x_2}_{x_1} \sum^n_i f[y_i (x), y^{\prime}_i (x); x] dx \tag{6.1} \label{eq-6-1}
 $$
 
 is an extremum, that is, a maximum or minimum. Here $x$ is the independent variable, $y_i(x)$ are the $n$ dependent variables, and their derivatives $y^{\prime}_i \equiv \frac{dy_i}{dx}$, where $i = 1, 2, 3, ..n$. The function $f [ y_i(x), y^{\prime}_i (x); x]$ has an assumed dependence on $y_i$, $y^{\prime}_i$ and $x$. The calculus of variations determines the functional dependence of the dependent variables $y_i(x)$ on the independent variable $x$, that is needed to ensure that $F$ is an extremum. For $n$ *independent variables*, $F$ has a stationary point, which is presumed to be an extremum, that is determined by solution of **Euler’s differential equations**
 
 $$
-\frac{d}{dx}\frac{\partial f}{\partial y_{i}^{\prime }}-\frac{\partial f}{ \partial y_{i}}=0\label{6.2}
+\frac{d}{dx}\frac{\partial f}{\partial y_{i}^{\prime }}-\frac{\partial f}{ \partial y_{i}}=0\tag{6.2} \label{eq-6-2}
 $$
 
-If the coordinates $y_{i}(x)$ are independent, then the Euler equations, \ref{6.2}, for each coordinate $i$ are independent. However, for constrained motion, the constraints lead to auxiliary conditions that correlate the coordinates. As shown in chapter $5$, a transformation to *independent generalized coordinates* can be made such that the correlations induced by the constraint forces are embedded into the choice of the independent generalized coordinates. The use of generalized coordinates in Lagrangian mechanics simplifies derivation of the equations of motion for constrained systems. For example, for a system of $n$ coordinates, that involves $m$ holonomic constraints, there are $s=n-m$ independent generalized coordinates. For such holonomic constrained motion, it will be shown that the Euler equations can be solved using either of the following three alternative ways.
+If the coordinates $y_{i}(x)$ are independent, then the Euler equations, [6.2](#eq-6-2), for each coordinate $i$ are independent. However, for constrained motion, the constraints lead to auxiliary conditions that correlate the coordinates. As shown in chapter $5$, a transformation to *independent generalized coordinates* can be made such that the correlations induced by the constraint forces are embedded into the choice of the independent generalized coordinates. The use of generalized coordinates in Lagrangian mechanics simplifies derivation of the equations of motion for constrained systems. For example, for a system of $n$ coordinates, that involves $m$ holonomic constraints, there are $s=n-m$ independent generalized coordinates. For such holonomic constrained motion, it will be shown that the Euler equations can be solved using either of the following three alternative ways.
 
-1) The **minimal set of generalized coordinates** approach involves finding a set of $s=n-m$ independent generalized coordinates $q_{i}$ that satisfy the assumptions underlying \ref{6.2}. These generalized coordinates can be determined if the $m$ equations of constraint are holonomic, that is, related by algebraic equations of constraint
+1) The **minimal set of generalized coordinates** approach involves finding a set of $s=n-m$ independent generalized coordinates $q_{i}$ that satisfy the assumptions underlying [6.2](#eq-6-2). These generalized coordinates can be determined if the $m$ equations of constraint are holonomic, that is, related by algebraic equations of constraint
 
 $$
-g_{k}(q_{i};x)=0\label{6.3}
+g_{k}(q_{i};x)=0\tag{6.3} \label{eq-6-3}
 $$
 
 where $k=1,2,3,\dots .m.$ These equations uniquely determine the relationship between the $n$ correlated coordinates. This method has the advantage that it reduces the system of $n$ coordinates, subject to $m$ constraints, to $s=n-m$ independent generalized coordinates which reduces the dimension of the problem to be solved. However, it does not explicitly determine the forces of constraint which are effectively swept under the rug.
@@ -38,10 +38,10 @@ where $k=1,2,3,\dots .m.$ These equations uniquely determine the relationship be
 2) The **Lagrange multipliers** approach takes account of the correlation between the $n$ coordinates and $m$ holonomic constraints by introducing the Lagrange multipliers $\lambda _{k}(x)$. These $n$ generalized coordinates $q_{i}$ are correlated by the $m$ holonomic constraints.
 
 $$
-\frac{d}{dx}\frac{\partial f}{\partial q_{i}^{\prime }}-\frac{\partial f}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( x\right) \frac{\partial g_{k} }{\partial q_{i}}\label{6.4}
+\frac{d}{dx}\frac{\partial f}{\partial q_{i}^{\prime }}-\frac{\partial f}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( x\right) \frac{\partial g_{k} }{\partial q_{i}}\tag{6.4} \label{eq-6-4}
 $$
 
-where $i=1,2,3,\dots n$. The Lagrange multiplier approach has the advantage that Euler’s calculus of variations automatically use the $n$ Lagrange equations, plus the $m$ equations of constraint, to explicitly determine both the $n$ coordinates $q_{i}$ plus the $m$ forces of constraint which are related to the Lagrange multipliers $\lambda _{k}$ as given in Equation \ref{6.4}. Chapter $6.2$ shows that the $\sum_{k}^{m}\lambda _{k}\left( x\right) \frac{\partial g_{k}}{\partial y_{i}}$ terms are directly related to the holonomic forces of constraint.
+where $i=1,2,3,\dots n$. The Lagrange multiplier approach has the advantage that Euler’s calculus of variations automatically use the $n$ Lagrange equations, plus the $m$ equations of constraint, to explicitly determine both the $n$ coordinates $q_{i}$ plus the $m$ forces of constraint which are related to the Lagrange multipliers $\lambda _{k}$ as given in Equation [6.4](#eq-6-4). Chapter $6.2$ shows that the $\sum_{k}^{m}\lambda _{k}\left( x\right) \frac{\partial g_{k}}{\partial y_{i}}$ terms are directly related to the holonomic forces of constraint.
 
 3) The **generalized force** approach incorporates the forces of constraint explicitly as will be shown in chapter $6.5.4$. Incorporating the constraint forces explicitly allows use of holonomic, non-holonomic, and non-conservative constraint forces.
 
@@ -52,87 +52,87 @@ Understanding the Lagrange formulation of classical mechanics is facilitated by 
 Insight into the physics underlying Lagrange mechanics is given by showing the direct relationship between Newtonian and Lagrangian mechanics. The variational approaches to classical mechanics exploit the first-order spatial integral of the force, equation ($2.4.8$), which equals the work done between the initial and final conditions. The work done is a simple scalar quantity that depends on the initial and final location for conservative forces. Newton’s equation of motion is
 
 $$
-\label{6.5} \mathbf{F}=\frac{d\mathbf{p}}{dt}
+\tag{6.5} \label{eq-6-5} \mathbf{F}=\frac{d\mathbf{p}}{dt}
 $$
 
 The kinetic energy is given by
 
 $$
-\label{6.6} T=\frac{1}{2}mv^{2}=\frac{\mathbf{p}\cdot \mathbf{p}}{2m}=\frac{p_{x}^{2}}{2m }+\frac{p_{y}^{2}}{2m}+\frac{p_{z}^{2}}{2m} \notag
+\tag{6.6} \label{eq-6-6} T=\frac{1}{2}mv^{2}=\frac{\mathbf{p}\cdot \mathbf{p}}{2m}=\frac{p_{x}^{2}}{2m }+\frac{p_{y}^{2}}{2m}+\frac{p_{z}^{2}}{2m} \notag
 $$
 
 It can be seen that
 
 $$
-\label{6.7} \frac{\partial T}{\partial \dot{x}}=p_{x}
+\tag{6.7} \label{eq-6-7} \frac{\partial T}{\partial \dot{x}}=p_{x}
 $$
 
 and 
 $$
-\label{6.8} \frac{d}{dt}\frac{\partial T}{\partial \dot{x}}=\frac{dp_{x}}{dt}=F_{x}
+\tag{6.8} \label{eq-6-8} \frac{d}{dt}\frac{\partial T}{\partial \dot{x}}=\frac{dp_{x}}{dt}=F_{x}
 $$
 
 Consider that the force, acting on a mass $m,$ is arbitrarily separated into two components, one part that is conservative, and thus can be written as the gradient of a scalar potential $U$, plus the excluded part of the force, $F^{EX}$. The excluded part of the force $F^{EX}$ could include non-conservative frictional forces as well as forces of constraint which may be conservative or non-conservative. This separation allows the force to be written as
 
 $$
-\label{6.9} \mathbf{F}=-\mathbf{\nabla }U+\mathbf{F}^{EX}
+\tag{6.9} \label{eq-6-9} \mathbf{F}=-\mathbf{\nabla }U+\mathbf{F}^{EX}
 $$
 
 Along each of the $x_{i}$ axes,
 
 $$
-\label{6.10} \frac{d}{dt}\frac{\partial T}{\partial \dot{x}_{i}}=-\frac{\partial U}{ \partial x_{i}}+F_{x_{i}}^{EX}
+\tag{6.10} \label{eq-6-10} \frac{d}{dt}\frac{\partial T}{\partial \dot{x}_{i}}=-\frac{\partial U}{ \partial x_{i}}+F_{x_{i}}^{EX}
 $$
 
-Equation \ref{6.10} can be extended by transforming the cartesian coordinate $x_{i}$ to the generalized coordinates $q_{i}.$
+Equation [6.10](#eq-6-10) can be extended by transforming the cartesian coordinate $x_{i}$ to the generalized coordinates $q_{i}.$
 
 Define the standard Lagrangian to be the difference between the kinetic energy and the potential energy, which can be written in terms of the generalized coordinates $q_{i}$ as
 
 $$
-\label{6.11} L(q_{i},\dot{q}_{i})\equiv T(\dot{q}_{i})-U(q_{i})
+\tag{6.11} \label{eq-6-11} L(q_{i},\dot{q}_{i})\equiv T(\dot{q}_{i})-U(q_{i})
 $$
 
 Assume that the potential is only a function of the generalized coordinates $q_{i},$ that is $\frac{\partial U}{\partial \dot{q}_{i}}=0,$ then
 
 $$
-\label{6.12} \frac{\partial L}{\partial \dot{q}_{i}}=\frac{\partial T}{\partial \dot{q} _{i}}+\frac{\partial U}{\partial \dot{q}_{i}}=\frac{\partial T}{\partial \dot{q}_{i}}
+\tag{6.12} \label{eq-6-12} \frac{\partial L}{\partial \dot{q}_{i}}=\frac{\partial T}{\partial \dot{q} _{i}}+\frac{\partial U}{\partial \dot{q}_{i}}=\frac{\partial T}{\partial \dot{q}_{i}}
 $$
 
-Using the above equations allows Newton’s equation of motion \ref{6.10} to be expressed as
+Using the above equations allows Newton’s equation of motion [6.10](#eq-6-10) to be expressed as
 
 $$
-\label{6.13} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=F_{q_{i}}^{EX}
+\tag{6.13} \label{eq-6-13} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=F_{q_{i}}^{EX}
 $$
 
 The excluded force $F_{q_{i}}^{EX}$ can be partitioned into a holonomic constraint force $F_{q_{i}}^{HC},$ plus any remaining excluded forces $F^{EXC},$ as given by
 
 $$
-\label{6.14} F_{q_{i}}^{EX}=F_{q_{i}}^{HC}+F^{EXC}
+\tag{6.14} \label{eq-6-14} F_{q_{i}}^{EX}=F_{q_{i}}^{HC}+F^{EXC}
 $$
 
-A comparison of equations \ref{6.13} and $(6.1.4)$ shows that the holonomic constraint forces $F_{q_{i}}^{HC},$ that are contained in the excluded force $F^{EX},$ can be identified with the Lagrange multiplier term in equation $(6.1.4)$.
+A comparison of equations [6.13](#eq-6-13) and $(6.1.4)$ shows that the holonomic constraint forces $F_{q_{i}}^{HC},$ that are contained in the excluded force $F^{EX},$ can be identified with the Lagrange multiplier term in equation $(6.1.4)$.
 
 $$
-\label{6.15} F_{q_{i}}^{HC}\equiv \sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k}}{\partial q_{i}}
+\tag{6.15} \label{eq-6-15} F_{q_{i}}^{HC}\equiv \sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k}}{\partial q_{i}}
 $$
 
-That is the Lagrange multiplier terms can be used to account for holonomic constraint forces $F_{q_{i}}^{HC}$. Thus Equation \ref{6.13} can be written as
+That is the Lagrange multiplier terms can be used to account for holonomic constraint forces $F_{q_{i}}^{HC}$. Thus Equation [6.13](#eq-6-13) can be written as
 
 $$
-\label{6.16} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k} }{\partial q_{i}}+F_{q_{i}}^{EXC}
+\tag{6.16} \label{eq-6-16} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k} }{\partial q_{i}}+F_{q_{i}}^{EXC}
 $$
 
 where the Lagrange multiplier term accounts for holonomic constraint forces, and $F_{q_{i}}^{EXC}$ includes all the remaining forces that are not accounted for by the scalar potential $U$, or the Lagrange multiplier terms $F_{q_{i}}^{HC}$.
 
-For holonomic, conservative forces it is possible to absorb all the forces into the potential $U$ plus the Lagrange multiplier term, that is $F_{q_{i}}^{EXC}=0.$ Moreover, the use of a minimal set of generalized coordinates allows the holonomic constraint forces to be ignored by explicitly reducing the number of coordinates from $n$ dependent coordinates to $s=n-m$ independent generalized coordinates. That is, the correlations due to the constraint forces are embedded into the generalized coordinates. Then Equation \ref{6.17} reduces to the basic Euler differential equations. 
+For holonomic, conservative forces it is possible to absorb all the forces into the potential $U$ plus the Lagrange multiplier term, that is $F_{q_{i}}^{EXC}=0.$ Moreover, the use of a minimal set of generalized coordinates allows the holonomic constraint forces to be ignored by explicitly reducing the number of coordinates from $n$ dependent coordinates to $s=n-m$ independent generalized coordinates. That is, the correlations due to the constraint forces are embedded into the generalized coordinates. Then Equation [6.17](#eq-6-17) reduces to the basic Euler differential equations. 
 $$
-\label{6.17} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=0
+\tag{6.17} \label{eq-6-17} \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=0
 $$
 
-Note that Equation \ref{6.17} is identical to Euler’s equation ($5.8.1$), if the independent variable $x$ is replaced by time $t$. Thus Newton’s equation of motion are equivalent to minimizing the action integral $S= \int_{t_{1}}^{t_{2}}Ldt$, that is
+Note that Equation [6.17](#eq-6-17) is identical to Euler’s equation ($5.8.1$), if the independent variable $x$ is replaced by time $t$. Thus Newton’s equation of motion are equivalent to minimizing the action integral $S= \int_{t_{1}}^{t_{2}}Ldt$, that is
 
 $$
-\label{6.18} \delta S=\delta \int_{t_{1}}^{t_{2}}L(q_{i},\dot{q}_{i};t)dt=0
+\tag{6.18} \label{eq-6-18} \delta S=\delta \int_{t_{1}}^{t_{2}}L(q_{i},\dot{q}_{i};t)dt=0
 $$
 
 which is Hamilton’s Principle. Hamilton’s Principle underlies many aspects of physics as discussed in chapter $9$, and is used as the starting point for developing classical mechanics. Hamilton’ Principle was postulated $46$ years after Lagrange introduced Lagrangian mechanics.
@@ -148,18 +148,18 @@ The Principle of Virtual Work provides a basis for a rigorous derivation of Lagr
 Suppose that the system of $n$ particles is in equilibrium, that is, the total force on each particle $i$ is zero. The virtual work done by the force $\mathbf{F}_{i}$ moving a distance $\delta \mathbf{r}_{i}$ is given by the dot product $\mathbf{F}_{i}\cdot \delta \mathbf{r}_{i}$. For equilibrium, the sum of all these products for the $N$ bodies also must be zero
 
 $$
-\label{6.18-2}\sum_{i}^{N}\mathbf{F}_{i}\cdot \delta \mathbf{r}_{i}=0
+\tag{6.18}\sum_{i}^{N}\mathbf{F}_{i}\cdot \delta \mathbf{r}_{i}=0
 $$
 
 Decomposing the force $\mathbf{F}_{i}$ on particle $i$ into applied forces $\mathbf{F}_{i}^{A}$ and constraint forces $\mathbf{f}_{i}^{C}$ gives
 
 $$
-\label{6.19}\sum_{i}^{N}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}+\sum_{i}^{N} \mathbf{f}_{i}^{C}\cdot \delta \mathbf{r}_{i}=0
+\tag{6.19} \label{eq-6-19}\sum_{i}^{N}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}+\sum_{i}^{N} \mathbf{f}_{i}^{C}\cdot \delta \mathbf{r}_{i}=0
 $$
- The second term in Equation \ref{6.19} can be ignored if the virtual work due to the constraint forces is zero. This is rigorously true for rigid bodies and is valid for any forces of constraint where the constraint forces are perpendicular to the constraint surface and the virtual displacement is tangent to this surface. Thus if the constraint forces do no work, then \ref{6.19} reduces to
+ The second term in Equation [6.19](#eq-6-19) can be ignored if the virtual work due to the constraint forces is zero. This is rigorously true for rigid bodies and is valid for any forces of constraint where the constraint forces are perpendicular to the constraint surface and the virtual displacement is tangent to this surface. Thus if the constraint forces do no work, then [6.19](#eq-6-19) reduces to
 
 $$
-\label{6.20}\sum_{i}^{N}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}=0
+\tag{6.20} \label{eq-6-20}\sum_{i}^{N}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}=0
 $$
 
 This relation is the Bernoulli’s *Principle of Static Virtual Work* and is used to solve problems in statics.
@@ -167,172 +167,170 @@ This relation is the Bernoulli’s *Principle of Static Virtual Work* and is use
 Bernoulli introduced dynamics by using Newton’s Law to related force and momentum.
 
 $$
-\label{6.21}\mathbf{F}_{i}=\mathbf{ \dot{p}}_{i}
+\tag{6.21} \label{eq-6-21}\mathbf{F}_{i}=\mathbf{ \dot{p}}_{i}
 $$
 
-Equation \ref{6.21} can be rewritten as 
+Equation [6.21](#eq-6-21) can be rewritten as 
 $$
-\mathbf{F}_{i}-\mathbf{\dot{p}}_{i}=0\label{6.22}
+\mathbf{F}_{i}-\mathbf{\dot{p}}_{i}=0\tag{6.22} \label{eq-6-22}
 $$
 
 In 1742, d’Alembert developed the *Principle of Dynamic Virtual Work* in the form
 
 $$
-\sum^N_i (\mathbf{F}_i-\mathbf{\dot{p}}_i) \cdot \delta \mathbf{r}_i = 0 \label{6.23}
+\sum^N_i (\mathbf{F}_i-\mathbf{\dot{p}}_i) \cdot \delta \mathbf{r}_i = 0 \tag{6.23} \label{eq-6-23}
 $$
 
-Using equations \ref{6.19} plus \ref{6.23} gives
+Using equations [6.19](#eq-6-19) plus [6.23](#eq-6-23) gives
 
 $$
-\sum^N_i (\mathbf{F}^A_i-\mathbf{\dot{p}}_i) \cdot \delta \mathbf{r}_i + \sum^N_i (\mathbf{f}^C_i \cdot \delta \mathbf{r}_i = 0 \label{6.24}
+\sum^N_i (\mathbf{F}^A_i-\mathbf{\dot{p}}_i) \cdot \delta \mathbf{r}_i + \sum^N_i (\mathbf{f}^C_i \cdot \delta \mathbf{r}_i = 0 \tag{6.24} \label{eq-6-24}
 $$
 
-For the special case where the forces of constraint are zero, then Equation \ref{6.24} reduces to **d’Alembert’s Principle**
+For the special case where the forces of constraint are zero, then Equation [6.24](#eq-6-24) reduces to **d’Alembert’s Principle**
 
 $$
-\label{6.25}\sum_{i}^{N}(\mathbf{F}_{i}^{A}-\mathbf{ \dot{p}}_{i})\cdot \delta \mathbf{r}_{i}=0
+\tag{6.25} \label{eq-6-25}\sum_{i}^{N}(\mathbf{F}_{i}^{A}-\mathbf{ \dot{p}}_{i})\cdot \delta \mathbf{r}_{i}=0
 $$
 
 d’Alembert’s Principle, by a stroke of genius, cleverly transforms the principle of virtual work from the realm of statics to dynamics. Application of virtual work to statics primarily leads to algebraic equations between the forces, whereas d’Alembert’s principle applied to dynamics leads to differential equations.
 
 ### Transformation to generalized coordinates
 
-In classical mechanical systems the coordinates $\delta \mathbf{r}_{i}$ usually are not independent due to the forces of constraint and the constraint-force energy contributes to Equation \ref{6.24}. These problems can be eliminated by expressing d’Alembert’s Principle in terms of virtual displacements of $n$ *independent generalized coordinates* $q_{i \text{ }}$of the system for which the constraint force term $\sum_{i}^{n} \mathbf{f}_{i}^{C}\cdot \delta \mathbf{q}_{i}=0$. Then the individual variational coefficients $\delta q_{i}$ are independent and $(\mathbf{F} _{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{q}_{i}=0$ can be equated to zero for each value of $i$.
+In classical mechanical systems the coordinates $\delta \mathbf{r}_{i}$ usually are not independent due to the forces of constraint and the constraint-force energy contributes to Equation [6.24](#eq-6-24). These problems can be eliminated by expressing d’Alembert’s Principle in terms of virtual displacements of $n$ *independent generalized coordinates* $q_{i \text{ }}$of the system for which the constraint force term $\sum_{i}^{n} \mathbf{f}_{i}^{C}\cdot \delta \mathbf{q}_{i}=0$. Then the individual variational coefficients $\delta q_{i}$ are independent and $(\mathbf{F} _{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{q}_{i}=0$ can be equated to zero for each value of $i$.
 
 The transformation of the $N$-body system to $n$ independent generalized coordinates $q_{k}$ can be expressed as
 
 $$
-\label{6.26}\mathbf{r}_{i}=\mathbf{r}_{i}(q_{1},q_{2},q_{3} \dots ,q_{n},t)
+\tag{6.26} \label{eq-6-26}\mathbf{r}_{i}=\mathbf{r}_{i}(q_{1},q_{2},q_{3} \dots ,q_{n},t)
 $$
 
 Assuming $n$ independent coordinates, then the velocity $\mathbf{v}_{i}$ can be written in terms of general coordinates $q_{k}$ using the chain rule for partial differentiation.
 
 $$
-\label{6.27}\mathbf{v}_{i}\equiv \frac{d\mathbf{r}_{i}}{dt}=\sum_{j}^{n}\frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\dot{q}_{j}+\frac{\partial \mathbf{r}_{i}}{\partial t}
+\tag{6.27} \label{eq-6-27}\mathbf{v}_{i}\equiv \frac{d\mathbf{r}_{i}}{dt}=\sum_{j}^{n}\frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\dot{q}_{j}+\frac{\partial \mathbf{r}_{i}}{\partial t}
 $$
 
 The arbitrary virtual displacement $\delta \mathbf{r}_{i}$ can be related to the virtual displacement of the generalized coordinate $\delta q_{j}$ by
 
 $$
-\label{6.28}\delta \mathbf{r}_{i}=\sum_{j}^{n}\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\delta q_{j}
+\tag{6.28} \label{eq-6-28}\delta \mathbf{r}_{i}=\sum_{j}^{n}\frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\delta q_{j}
 $$
 
 Note that by definition, a virtual displacement considers only displacements of the coordinates, and no time variation $\delta t$ is involved.
 
-The above transformations can be used to express d’Alembert’s dynamical principle of virtual work in generalized coordinates. Thus the first term in d’Alembert’s Dynamical Principle, \ref{6.25} becomes
+The above transformations can be used to express d’Alembert’s dynamical principle of virtual work in generalized coordinates. Thus the first term in d’Alembert’s Dynamical Principle, [6.25](#eq-6-25) becomes
 
 $$
-\label{6.29}\sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}=\sum_{i,j}^{n} \mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\delta q_{j}=\sum_{j}^{n}Q_{j}\delta q_{j}
+\tag{6.29} \label{eq-6-29}\sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \delta \mathbf{r}_{i}=\sum_{i,j}^{n} \mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\delta q_{j}=\sum_{j}^{n}Q_{j}\delta q_{j}
 $$
 
-where $Q_{j}$ are called components of the *generalized force*,<sup>1</sup> defined as
+where $Q_{j}$ are called components of the *generalized force*,[^6-3-1] defined as
 
 $$
-\label{6.30}Q_{j}\equiv \sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}
+\tag{6.30} \label{eq-6-30}Q_{j}\equiv \sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}
 $$
 
 Note that just as the generalized coordinates $q_{j}$ need not have the dimensions of length, so the $Q_{j}$ do not necessarily have the dimensions of force, but the product $Q_{j}\delta q_{j}$ must have the dimensions of work. For example, $Q_{j}$ could be torque and $\delta q_{j}$ could be the corresponding infinitessimal rotation angle.
 
-The second term in d’Alembert’s Principle \ref{6.25} can be transformed using Equation \ref{6.28}
+The second term in d’Alembert’s Principle [6.25](#eq-6-25) can be transformed using Equation [6.28](#eq-6-28)
 
 $$
-\label{6.31}\sum_{i}^{n}\mathbf{\dot{p}}_{i}\cdot \delta \mathbf{r}_{i}=\sum_{i}^{n}m_{i} \mathbf{\ddot{r}}_{i}\cdot \delta \mathbf{r}_{i}=\left( \sum_{i}^{n}m_{i} \mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \right) \delta q_{j}
+\tag{6.31} \label{eq-6-31}\sum_{i}^{n}\mathbf{\dot{p}}_{i}\cdot \delta \mathbf{r}_{i}=\sum_{i}^{n}m_{i} \mathbf{\ddot{r}}_{i}\cdot \delta \mathbf{r}_{i}=\left( \sum_{i}^{n}m_{i} \mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}} \right) \delta q_{j}
 $$
 
-The right-hand side of \ref{6.31} can be rewritten as
+The right-hand side of [6.31](#eq-6-31) can be rewritten as
 
 $$
-\label{6.32}\left( \sum_{i}^{n}m_{i}\mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r} _{i}}{\partial q_{j}}\right) \delta q_{j}=\sum_{i}^{n}\left\{ \frac{d}{dt} \left( m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\right) -m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{d}{dt}\left( \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) \right\} \delta q_{j}
+\tag{6.32} \label{eq-6-32}\left( \sum_{i}^{n}m_{i}\mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r} _{i}}{\partial q_{j}}\right) \delta q_{j}=\sum_{i}^{n}\left\{ \frac{d}{dt} \left( m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\right) -m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{d}{dt}\left( \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) \right\} \delta q_{j}
 $$
- Note that Equation \ref{6.27} gives that
+ Note that Equation [6.27](#eq-6-27) gives that
 
 $$
-\label{6.33}\frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}=\frac{\partial \mathbf{r }_{i}}{\partial q_{j}}
+\tag{6.33} \label{eq-6-33}\frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}=\frac{\partial \mathbf{r }_{i}}{\partial q_{j}}
 $$
 
-therefore the first right-hand term in \ref{6.32} can be written as
+therefore the first right-hand term in [6.32](#eq-6-32) can be written as
 
 $$
-\label{6.34}\frac{d}{dt}\left( m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{\partial \mathbf{r} _{i}}{\partial q_{j}}\right) =\frac{d}{dt}\left( m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}\right)
+\tag{6.34} \label{eq-6-34}\frac{d}{dt}\left( m_{i}\mathbf{\dot{r}}_{i}\cdot \frac{\partial \mathbf{r} _{i}}{\partial q_{j}}\right) =\frac{d}{dt}\left( m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}}\right)
 $$
 
-The second right-hand term in \ref{6.32} can be rewritten by interchanging the order of the differentiation with respect to $t$ and $q_{j}$
+The second right-hand term in [6.32](#eq-6-32) can be rewritten by interchanging the order of the differentiation with respect to $t$ and $q_{j}$
 
 $$
-\label{6.35}\frac{d}{dt}\left( \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) = \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}
+\tag{6.35} \label{eq-6-35}\frac{d}{dt}\left( \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}\right) = \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}
 $$
 
-Substituting \ref{6.34} and \ref{6.35} into \ref{6.32} gives
+Substituting [6.34](#eq-6-34) and [6.35](#eq-6-35) into [6.32](#eq-6-32) gives
 
 $$
-\label{6.36}\sum_{i}^{n}\mathbf{\dot{p}}_{i}\cdot \delta \mathbf{r}_{i}=\left( \sum_{i}^{n}m_{i}\mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\right) \delta q_{j}=\sum_{i}^{N}\left\{ \frac{d}{dt}\left( m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}} \right) -m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}\right\} \delta q_{j}
+\tag{6.36} \label{eq-6-36}\sum_{i}^{n}\mathbf{\dot{p}}_{i}\cdot \delta \mathbf{r}_{i}=\left( \sum_{i}^{n}m_{i}\mathbf{\ddot{r}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}}\right) \delta q_{j}=\sum_{i}^{N}\left\{ \frac{d}{dt}\left( m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial \dot{q}_{j}} \right) -m_{i}\mathbf{v}_{i}\cdot \frac{\partial \mathbf{v}_{i}}{\partial q_{j}}\right\} \delta q_{j}
 $$
- Inserting \ref{6.29} and \ref{6.36} into d’Alembert’s Principle \ref{6.25} leads to the relation
+ Inserting [6.29](#eq-6-29) and [6.36](#eq-6-36) into d’Alembert’s Principle [6.25](#eq-6-25) leads to the relation
 
 $$
-\label{6.37}\sum_{i}^{n}(\mathbf{F}_{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{r} _{i}=-\sum_{j}^{N}\left\{ \frac{d}{dt}\left( \frac{\partial }{\partial \dot{q }_{j}}\left( \sum_{i}\frac{1}{2}m_{i}v_{i}^{2}\right) \right) -\frac{ \partial }{\partial q_{j}}\left( \sum_{i}^{N}\frac{1}{2}m_{i}v_{i}^{2} \right) -Q_{j}\right\} \delta q_{j}=0
+\tag{6.37} \label{eq-6-37}\sum_{i}^{n}(\mathbf{F}_{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{r} _{i}=-\sum_{j}^{N}\left\{ \frac{d}{dt}\left( \frac{\partial }{\partial \dot{q }_{j}}\left( \sum_{i}\frac{1}{2}m_{i}v_{i}^{2}\right) \right) -\frac{ \partial }{\partial q_{j}}\left( \sum_{i}^{N}\frac{1}{2}m_{i}v_{i}^{2} \right) -Q_{j}\right\} \delta q_{j}=0
 $$
 
 The $\sum_{i}^{n}\frac{1}{2}m_{i}v_{i}^{2}$ term can be identified with the system kinetic energy $T$. Thus d’Alembert Principle reduces to the relation
 
 $$
-\label{6.38}\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q}_{j}}\right) -\frac{\partial T}{\partial q_{j}}\right\} -Q_{j}\right] \delta q_{j}=0
+\tag{6.38} \label{eq-6-38}\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q}_{j}}\right) -\frac{\partial T}{\partial q_{j}}\right\} -Q_{j}\right] \delta q_{j}=0
 $$
 
 For cartesian coordinates $T$ is a function only of velocities $(\dot{x}, \dot{y},\dot{z})$ and thus the term $\frac{\partial T}{\partial q_{j}}=0.$ However, as discussed in appendix $19.3$, for curvilinear coordinates $\frac{\partial T}{\partial q_{j}}\neq 0$ due to the curvature of the coordinates as is illustrated for polar coordinates where $\mathbf{v=}\dot{r} \mathbf{\hat{r}}+r\dot{\theta}\mathbf{\hat{\theta}}$.
 
 $$
-\label{6.39}\left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q}_{j}}\right) - \frac{\partial T}{\partial q_{j}}\right\} =Q_{j}
+\tag{6.39} \label{eq-6-39}\left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q}_{j}}\right) - \frac{\partial T}{\partial q_{j}}\right\} =Q_{j}
 $$
 
-where $n\geq j\geq 1$. That is, this leads to $n$ Euler-Lagrange equations of motion for the generalized forces $Q_{j}$. As discussed in chapter $5.8,$ when $m$ holonomic constraint forces apply, it is possible to reduce the system to $s=n-m$ independent generalized coordinates for which Equation \ref{6.25} applies.
+where $n\geq j\geq 1$. That is, this leads to $n$ Euler-Lagrange equations of motion for the generalized forces $Q_{j}$. As discussed in chapter $5.8,$ when $m$ holonomic constraint forces apply, it is possible to reduce the system to $s=n-m$ independent generalized coordinates for which Equation [6.25](#eq-6-25) applies.
 
 In $1687$ Leibniz proposed minimizing the time integral of his “vis viva", which equals $2T.$ That is,
 
 $$
-\label{6.40}\delta \int_{t_{1}}^{t_{2}}Tdt=0
+\tag{6.40} \label{eq-6-40}\delta \int_{t_{1}}^{t_{2}}Tdt=0
 $$
 
-The variational Equation \ref{6.39} accomplishes the minimization of Equation \ref{6.40}. It is remarkable that Leibniz anticipated the basic variational concept prior to the birth of the developers of Lagrangian mechanics, i.e., d’Alembert, Euler, Lagrange, and Hamilton.
+The variational Equation [6.39](#eq-6-39) accomplishes the minimization of Equation [6.40](#eq-6-40). It is remarkable that Leibniz anticipated the basic variational concept prior to the birth of the developers of Lagrangian mechanics, i.e., d’Alembert, Euler, Lagrange, and Hamilton.
 
 ### Lagrangian
 
 The handling of both conservative and non-conservative generalized forces $Q_{j}$ is best achieved by assuming that the generalized force $Q_{j}=\sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{\bar{r}}_{i} }{\partial q_{j}}$ can be partitioned into a conservative velocity-independent term, that can be expressed in terms of the gradient of a scalar potential, $-\mathbf{\nabla }U_{i},$ plus an excluded generalized force $Q_{j}^{EX}$ which contains the non-conservative, velocity-dependent, and all the constraint forces not explicitly included in the potential $U_{j}$. That is,
 
 $$
-\label{6.41}Q_{j}=-\mathbf{\nabla }U_{j}+Q_{j}^{EX}
+\tag{6.41} \label{eq-6-41}Q_{j}=-\mathbf{\nabla }U_{j}+Q_{j}^{EX}
 $$
 
-Inserting \ref{6.41} into \ref{6.38}, and *assuming that the potential* $U$ *is velocity independent*, allows \ref{6.38} to be rewritten as
+Inserting [6.41](#eq-6-41) into [6.38](#eq-6-38), and *assuming that the potential* $U$ *is velocity independent*, allows [6.38](#eq-6-38) to be rewritten as
 
 $$
-\label{6.42}\sum_{j}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial (T-U)}{\partial \dot{q}_{j}}\right) -\frac{\partial (T-U)}{\partial q_{j}}\right\} -Q_{j}^{EX}\right] \delta q_{j}=0
+\tag{6.42} \label{eq-6-42}\sum_{j}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial (T-U)}{\partial \dot{q}_{j}}\right) -\frac{\partial (T-U)}{\partial q_{j}}\right\} -Q_{j}^{EX}\right] \delta q_{j}=0
 $$
 
 The standard definition of the **Lagrangian** is
 
 $$
-\label{6.43}L\equiv T-U
+\tag{6.43} \label{eq-6-43}L\equiv T-U
 $$
 
-then \ref{6.42} can be written as 
+then [6.42](#eq-6-42) can be written as 
 $$
-\label{6.44}\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0
+\tag{6.44} \label{eq-6-44}\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0
 $$
 
 Note that *if all the generalized coordinates are independent*, then the square bracket terms are zero for each value of $j$, which leads to the *general Euler-Lagrange equations of motion.*
 
 $$
-\label{6.45}\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =Q_{j}^{EX}
+\tag{6.45} \label{eq-6-45}\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =Q_{j}^{EX}
 $$
 
 where $n\geq j\geq 1$.
 
 Chapter $6.5.3$ will show that the holonomic constraint forces can be factored out of the generalized force term $Q_{j}^{EX}$ which simplifies derivation of the equations of motion using Lagrangian mechanics. The general Euler-Lagrange equations of motion are used extensively in classical mechanics because conservative forces play a ubiquitous role in classical mechanics.
 
----
-
-<sup>1</sup>This proof, plus the notation, conform with that used by Goldstein [Go50] and by other texts on classical mechanics.
+[^6-3-1]: This proof, plus the notation, conform with that used by Goldstein [Go50] and by other texts on classical mechanics.
 
 ## 6.4: Lagrange equations from Hamilton’s Principle
 
@@ -371,20 +369,20 @@ As discussed in chapter $5.8$, the flexibility and freedom for selection of gene
 
 The set of $n$ generalized coordinates $q_{i}$ are used to describe the motion of the system. No restrictions have been placed on the nature of the constraints other than they are workless for a virtual displacement. *If the* $m$ *constraints are holonomic,* then it is possible to find sets of $s=n-m$ *independent generalized coordinates* $q_{j}$ that contain the $m$ constraint conditions implicitly in the transformation equations 
 $$
-\label{6.49} \mathbf{r}_{i}=\mathbf{r}_{i}(q_{1},q_{2},q_{3}\dots ,q_{s},t)
+\tag{6.49} \label{eq-6-49} \mathbf{r}_{i}=\mathbf{r}_{i}(q_{1},q_{2},q_{3}\dots ,q_{s},t)
 $$
 
 For the case of $s=n-m$ unknowns, *any virtual displacement* $\delta q_{j}$ *is independent of*$\delta q_{k}$, therefore the only way for $(6.3.27)$ to hold is for the term in brackets to vanish for each value of $j$, that is
 
 $$
-\label{6.50} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}\right\} =Q_{j}^{EX}
+\tag{6.50} \label{eq-6-50} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}\right\} =Q_{j}^{EX}
 $$
  where $j=1,2,3,..$ $s.$ These are the **Lagrange equations** for the minimal set of $s$ *independent* generalized coordinates**.**
 
-If all the generalized forces are conservative plus velocity independent, and are included in the potential $U,$ and $Q_{j}^{EX}=0$, then \ref{6.50} simplifies to
+If all the generalized forces are conservative plus velocity independent, and are included in the potential $U,$ and $Q_{j}^{EX}=0$, then [6.50](#eq-6-50) simplifies to
 
 $$
-\label{6.51} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =0
+\tag{6.51} \label{eq-6-51} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =0
 $$
 
 This is Euler’s differential equation, derived earlier using the calculus of variations. Thus d’Alembert’s Principle leads to a solution that minimizes the action integral $\delta \int_{t_{1}}^{t_{2}}Ldt=0$ as stated by Hamilton’s Principle.
@@ -394,21 +392,21 @@ This is Euler’s differential equation, derived earlier using the calculus of v
 Equation $(6.3.27)$ sums over all $n$ coordinates for $N$ particles, providing $n$ equations of motion. If the $m$ constraints are holonomic they can be expressed by $m$ algebraic equations of constraint
 
 $$
-\label{6.52} g_{k}(q_{1},q_{2},..q_{n},t)=0
+\tag{6.52} \label{eq-6-52} g_{k}(q_{1},q_{2},..q_{n},t)=0
 $$
 
 where $k=1,2,3,\dots m.$ Kinematic constraints can be expressed in terms of the infinitessimal displacements of the form
 
 $$
-\label{6.53} \sum_{j=1}^{n} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0
+\tag{6.53} \label{eq-6-53} \sum_{j=1}^{n} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0
 $$
 
-where $k=1,2,3,\dots m$, $j=1,2,3,\dots n$, and where the $\frac{\partial g_{k}}{ \partial q_{j}}$, and $\frac{\partial g_{k}}{\partial t}$ are functions of the generalized coordinates $q_{j}$, described by the vector $\mathbf{q,}$ that are derived from the equations of constraint. As discussed in chapter $5.7$, if \ref{6.53} represents the total differential of a function, then it can be integrated to give a holonomic relation of the form of Equation \ref{6.52}. However, if \ref{6.53} is not the total differential, then it can be integrated only after having solved the full problem. If $\frac{\partial g_{k}}{\partial t}=0$ then the $k^{th}$ constraint is scleronomic.
+where $k=1,2,3,\dots m$, $j=1,2,3,\dots n$, and where the $\frac{\partial g_{k}}{ \partial q_{j}}$, and $\frac{\partial g_{k}}{\partial t}$ are functions of the generalized coordinates $q_{j}$, described by the vector $\mathbf{q,}$ that are derived from the equations of constraint. As discussed in chapter $5.7$, if [6.53](#eq-6-53) represents the total differential of a function, then it can be integrated to give a holonomic relation of the form of Equation [6.52](#eq-6-52). However, if [6.53](#eq-6-53) is not the total differential, then it can be integrated only after having solved the full problem. If $\frac{\partial g_{k}}{\partial t}=0$ then the $k^{th}$ constraint is scleronomic.
 
-The discussion of Lagrange multipliers in chapter $5.9.1$, showed that, for virtual displacements $\delta q_{j},$ the correlation of the generalized coordinates, due to the constraint forces, can be taken into account by multiplying \ref{6.53} by unknown Lagrange multipliers $\lambda _{k}$ and summing over all $m$ constraints. Generalized forces can be partitioned into a Lagrange multiplier term plus a remainder force. That is
+The discussion of Lagrange multipliers in chapter $5.9.1$, showed that, for virtual displacements $\delta q_{j},$ the correlation of the generalized coordinates, due to the constraint forces, can be taken into account by multiplying [6.53](#eq-6-53) by unknown Lagrange multipliers $\lambda _{k}$ and summing over all $m$ constraints. Generalized forces can be partitioned into a Lagrange multiplier term plus a remainder force. That is
 
 $$
-\label{6.54} Q_{j}^{EX}=\sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
+\tag{6.54} \label{eq-6-54} Q_{j}^{EX}=\sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
 $$
 
 since by definition $\delta t=0$ for virtual displacements.
@@ -416,46 +414,46 @@ since by definition $\delta t=0$ for virtual displacements.
 Chapter $5.9.1$ showed that holonomic forces of constraint can be taken into account by introducing the Lagrange undetermined multipliers approach, which is equivalent to defining an extended Lagrangian $L^{\prime }(\mathbf{q,\dot{ q},\lambda ,}t)$ where
 
 $$
-\label{6.55} L^{\prime }(\mathbf{q,\dot{q},\lambda ,}t)=L(\mathbf{q,\dot{q},} t)+\sum_{k=1}^{m}\sum_{j=1}^{n}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)
+\tag{6.55} \label{eq-6-55} L^{\prime }(\mathbf{q,\dot{q},\lambda ,}t)=L(\mathbf{q,\dot{q},} t)+\sum_{k=1}^{m}\sum_{j=1}^{n}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)
 $$
 
 Finding the extremum for the extended Lagrangian $L^{\prime }(\mathbf{q,\dot{ q},\lambda ,}t)$ using $(6.4.2)$ gives
 
 $$
-\label{6.56} \sum_{j}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
+\tag{6.56} \label{eq-6-56} \sum_{j}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
 $$
 
-where $Q_{j}^{EXC}$ is the remaining part of the generalized force $Q_{j}$ after subtracting both the part of the force absorbed in the potential energy $U$, which is buried in the Lagrangian $L$, as well as the holonomic constraint forces which are included in the Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)$. The $m$ Lagrange multipliers $\lambda _{k}$ can be chosen arbitrarily in \ref{6.56}. Utilizing the free choice of the $m$ Lagrange multipliers $\lambda _{k}$ allows them to be determined in such a way that the coefficients of the first $m$ infinitessimals, i.e. the square brackets vanish. Therefore the expression in the square bracket must vanish for each value of $\ 1\leq j\leq m$. Thus it follows that
+where $Q_{j}^{EXC}$ is the remaining part of the generalized force $Q_{j}$ after subtracting both the part of the force absorbed in the potential energy $U$, which is buried in the Lagrangian $L$, as well as the holonomic constraint forces which are included in the Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)$. The $m$ Lagrange multipliers $\lambda _{k}$ can be chosen arbitrarily in [6.56](#eq-6-56). Utilizing the free choice of the $m$ Lagrange multipliers $\lambda _{k}$ allows them to be determined in such a way that the coefficients of the first $m$ infinitessimals, i.e. the square brackets vanish. Therefore the expression in the square bracket must vanish for each value of $\ 1\leq j\leq m$. Thus it follows that
 
 $$
-\label{6.57} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
+\tag{6.57} \label{eq-6-57} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
 $$
 
-when $j=1,2,..m.$ Thus \ref{6.56} reduces to a sum over the remaining coordinates between $m+1\leq j\leq n$
+when $j=1,2,..m.$ Thus [6.56](#eq-6-56) reduces to a sum over the remaining coordinates between $m+1\leq j\leq n$
 
 $$
-\label{6.58} \sum_{j=m+1}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
+\tag{6.58} \label{eq-6-58} \sum_{j=m+1}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
 $$
 
-In Equation \ref{6.58} the $s=n-m$ infinitessimals $\delta q_{j}$ can be chosen freely since the $s=n-m$ degrees of freedom are *independent*. Therefore the expression in the square bracket must vanish for each value of $m+1\leq j\leq n$. Thus it follows that
+In Equation [6.58](#eq-6-58) the $s=n-m$ infinitessimals $\delta q_{j}$ can be chosen freely since the $s=n-m$ degrees of freedom are *independent*. Therefore the expression in the square bracket must vanish for each value of $m+1\leq j\leq n$. Thus it follows that
 
 $$
-\label{6.59} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
+\tag{6.59} \label{eq-6-59} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
 $$
 
-where $j=m+1,m+2,..n.$ Combining equations \ref{6.57} and \ref{6.59} then gives the important general relation that for $1\leq j\leq n$ 
+where $j=m+1,m+2,..n.$ Combining equations [6.57](#eq-6-57) and [6.59](#eq-6-59) then gives the important general relation that for $1\leq j\leq n$ 
 $$
-\label{6.60} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
+\tag{6.60} \label{eq-6-60} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
 $$
 
-To summarize, the Lagrange multiplier approach \ref{6.60} automatically solves the $n$ equations plus the $m$ holonomic equations of constraint, which determines the $n+m$ unknowns, that is, the $n$ coordinates plus the $m$ forces of constraint. The beauty of the Lagrange multipliers is that all $n$ variables, plus the $m$ constraint forces, are found simultaneously by using the calculus of variations to determine the extremum for the expanded Lagrangian $L^{\prime }(\mathbf{q, \dot{q},\lambda ,}t)$.
+To summarize, the Lagrange multiplier approach [6.60](#eq-6-60) automatically solves the $n$ equations plus the $m$ holonomic equations of constraint, which determines the $n+m$ unknowns, that is, the $n$ coordinates plus the $m$ forces of constraint. The beauty of the Lagrange multipliers is that all $n$ variables, plus the $m$ constraint forces, are found simultaneously by using the calculus of variations to determine the extremum for the expanded Lagrangian $L^{\prime }(\mathbf{q, \dot{q},\lambda ,}t)$.
 
 ### Generalized forces approach
 
-The two right-hand terms in \ref{6.60} can be understood to be those forces acting on the system that are not absorbed into the scalar potential $U$ component of the Lagrangian $L$. The Lagrange multiplier terms $\sum_{k=1}^{m} \lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ account for the holonomic forces of constraint that are not included in the conservative potential or in the generalized forces $Q_{j}^{EXC}$. The generalized force
+The two right-hand terms in [6.60](#eq-6-60) can be understood to be those forces acting on the system that are not absorbed into the scalar potential $U$ component of the Lagrangian $L$. The Lagrange multiplier terms $\sum_{k=1}^{m} \lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ account for the holonomic forces of constraint that are not included in the conservative potential or in the generalized forces $Q_{j}^{EXC}$. The generalized force
 
 $$
-\label{6.61}Q_{j}^{EXC}=\sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i} }{\partial q_{j}}
+\tag{6.61} \label{eq-6-61}Q_{j}^{EXC}=\sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i} }{\partial q_{j}}
 $$
 
 is the sum of the components in the $q_{j}$ direction for all external forces that have not been taken into account by the scalar potential or the Lagrange multipliers. Thus the non-conservative generalized force $Q_{j}^{EXC}$ contains non-holonomic constraint forces, including dissipative forces such as drag or friction, that are not included in $U,$ or used in the Lagrange multiplier terms to account for the holonomic constraint forces.
@@ -473,7 +471,7 @@ The concept of generalized forces is illustrated by the case of spherical coordi
 d’Alembert’s principle of virtual work has been used to derive the Euler-Lagrange equations, which also satisfy Hamilton’s Principle, and the Newtonian plausibility argument. These imply that the actual path taken in configuration space $(q_{i},\overset{.}{q_{i}},t)$ is the one that minimizes the action integral $\int_{t_{1}}^{t_{2}}L(q_{j}, \overset{.}{q_{j}};t)dt.$ As a consequence, the Euler equations for the calculus of variations lead to the Lagrange equations of motion.
 
 $$
-\label{6.60-2} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}\right\} \equiv \Lambda_j L =\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
+\tag{6.60} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}\right\} \equiv \Lambda_j L =\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}
 $$
 
 for $n$ variables, with $m$ equations of constraint. The generalized forces $Q_{j}^{EXC}$ are not included in the conservative, potential energy $U,$ or the Lagrange multipliers approach for holonomic equations of constraint.<sup>1</sup>
@@ -489,7 +487,9 @@ Select an optimum set of independent generalized coordinates as described in cha
 The active forces should be partitioned into the following three groups:
 
 1. **Conservative one-body forces plus the velocity-dependent electromagnetic force** which can be characterized by the scalar potential $U$, that is absorbed into the Lagrangian. The gravitational forces plus the velocity-dependent electromagnetic force can be absorbed into the potential $U$ as discussed in chapter $6.10$. This approach is by far the easiest way to account for such forces in Lagrangian mechanics.
+
 2. **Holonomic constraint forces** provide algebraic relations that couple some of the generalized coordinates. This coupling can be used either to reduce the number of generalized coordinates used, or to determine these holonomic constraint forces using the Lagrange multiplier approach.
+
 3. **Generalized forces** provide a mechanism for introducing non-conservative and non-holonomic constraint forces into Lagrangian mechanics. Typically general forces are used to introduce dissipative forces.
 
 Typical systems can involve a mixture of all three categories of active forces. For example, mechanical systems often include gravity, introduced as a potential, holonomic constraint forces are determined using Lagrange multipliers, and dissipative forces are included as generalized forces.
@@ -504,14 +504,16 @@ The Lagrangian is derived in terms of the generalized coordinates and including 
 
 ### 5) Derive the equations of motion:
 
-Equation \ref{6.60-2} is solved to determine the $n$ generalized coordinates, plus the $m$ Lagrange multipliers characterizing the holonomic constraint forces, plus any generalized forces that were included. The holonomic constraint forces then are given by evaluating the $\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ terms for the $m$ holonomic forces.
+Equation [6.60](#eq-6-60) is solved to determine the $n$ generalized coordinates, plus the $m$ Lagrange multipliers characterizing the holonomic constraint forces, plus any generalized forces that were included. The holonomic constraint forces then are given by evaluating the $\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ terms for the $m$ holonomic forces.
 
 In summary, in Lagrangian mechanics is based on energies which are scalars in contrast to Newtonian mechanics which is based on vector forces and momentum. As a consequence, Lagrange mechanics allows use of any set of independent generalized coordinates, which do not have to be orthogonal, and they can have very different units for different variables. The generalized coordinates can incorporate the correlations introduced by constraint forces.
 
 The active forces are split into the following three categories;
 
 1. Velocity-independent conservative forces are taken into account using scalar potentials $U_{i}$.
+
 2. Holonomic constraint forces can be determined using Lagrange multipliers.
+
 3. Non-holonomic constraints require use of generalized forces $Q_{j}^{EXC}$.
 
 Use of the concept of scalar potentials is a trivial and powerful way to incorporate conservative forces in Lagrangian mechanics. The Lagrange multipliers approach requires using the Euler-Lagrange equations for $n+m$ coordinates but determines both holonomic constraint forces and equations of motion simultaneously. Non-holonomic constraints and dissipative forces can be incorporated into Lagrangian mechanics via use of generalized forces which broadens the scope of Lagrangian mechanics.
@@ -532,7 +534,8 @@ where $\Lambda_j$ operates on the Lagrangian $L$. Then Euler’s equations can b
 
 Although most dynamical systems involve constrained motion, it is useful to consider examples of systems subject to conservative forces with no constraints . For no constraints, the Lagrange-Euler equations $(6.6.1)$ simplify to $\Lambda _{j}L=0$ where $j=1,2,..n,$ and the transformation to generalized coordinates is of no consequence.
 
-Example 6.1: Motion of a free particle, $U=0$
+::::{admonition} Example 6.7.1: Motion of a free particle, $U=0$
+:class: example
 
 The Lagrangian in cartesian coordinates is $L= \frac{1}{2}m(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}).$ Then
 
@@ -553,13 +556,17 @@ $$
 $$
 
 That is, this shows that the linear momentum is conserved if $U$ is a constant, that is, no forces apply. Note that momentum conservation has been derived without any direct reference to forces.
+::::
 
-Example 6.2: Motion in a uniform gravitational field
+::::{admonition} Example 6.7.2: Motion in a uniform gravitational field
+:class: example
 
 :::{figure} ../images/lt-21143-6.7.1.png
-:alt: 6.7.1.PNG
+:label: fig-6-7-1
+:enumerator: 6.7.1
+:alt: Motion in a gravitational field
 
-$1$: Motion in a gravitational field
+Motion in a gravitational field
 :::
 
 Consider the motion is in the $x-y$ plane. The kinetic energy $T= \frac{1}{2}m\left( \overset{.}{x}^{2}+\overset{.}{y}^{2}\right)$ while the potential energy is $U=mgy$ where $U(y=0)=0.$ Thus
@@ -619,8 +626,10 @@ $$
 $$
 
 These equations written in polar coordinates are more complicated than the result expressed in Cartesian coordinates. This is because the potential energy depends directly on the $y$ coordinate, whereas it is a function of both $r,\theta .$ This illustrates the freedom for using different generalized coordinates, plus the importance of choosing a sensible set of generalized coordinates.
+::::
 
-Example 6.3: Central forces
+::::{admonition} Example 6.7.3: Central forces
+:class: example
 
 Consider a mass $m$ moving under the influence of a spherically-symmetric, conservative, attractive, inverse-square force. The potential then is
 
@@ -661,17 +670,21 @@ $$
 $$
 
 Note that $p_{\theta }$ is a constant of motion if $p_{\phi }=0$ and only the radial coordinate is influenced by the radial form of the central potential.
+::::
 
 ## 6.8: Applications to systems involving holonomic constraints
 
 The equations of motion that result from the Lagrange-Euler algebraic approach are the same as those given by Newtonian mechanics. The solution of these equations of motion can be obtained mathematically using the chosen initial conditions. The following simple example of a disk rolling on an inclined plane, is useful for comparing the merits of the Newtonian method with Lagrange mechanics employing either minimal generalized coordinates, the Lagrange multipliers, or the generalized forces approaches.
 
-Example 6.1: Disk rolling on an inclined plane
+::::{admonition} Example 6.8.1: Disk rolling on an inclined plane
+:class: example
 
 :::{figure} ../images/lt-21358-7.8.1.png
-:alt: 7.8.1.PNG
+:label: fig-6-8-1
+:enumerator: 6.8.1
+:alt: Disk rolling without slipping on an inclined plane.
 
-$1$: Disk rolling without slipping on an inclined plane.
+Disk rolling without slipping on an inclined plane.
 :::
 
 Rolling constraint gives
@@ -735,15 +748,19 @@ F_{f}=-\frac{mg}{3}\sin \alpha\nonumber
 $$
 
 *The four methods for handling the equations of constraint all are equivalent and result in the same equations of motion. The scalar Lagrangian mechanics is able to calculate the vector forces acting in a direct and simple way. The Newton’s law approach is more intuitive for this simple case and the ease and power of the Lagrangian approach is not apparent for this simple system.*
+::::
 
 The following series of examples will gradually increase in complexity, and will illustrate the power, elegance, plus superiority of the Lagrangian approach compared with the Newtonian approach.
 
-Example 6.2: Two connected masses on frictionless inclined planes
+::::{admonition} Example 6.8.2: Two connected masses on frictionless inclined planes
+:class: example
 
 :::{figure} ../images/lt-21359-imageedit_5_5715609624.png
-:alt: 7.8.2.PNG
+:label: fig-6-8-2
+:enumerator: 6.8.2
+:alt: Two connected masses on frictionless inclined planes
 
-$2$: Two connected masses on frictionless inclined planes
+Two connected masses on frictionless inclined planes
 :::
 
 $$
@@ -776,13 +793,17 @@ $$
 $$
 
 *Note that this problem has been solved without any reference to the force in the rope or the normal constraint forces on the inclined planes.*
+::::
 
-Example 6.3: Block sliding on a movable frictionless inclined plane
+::::{admonition} Example 6.8.3: Block sliding on a movable frictionless inclined plane
+:class: example
 
 :::{figure} ../images/lt-21153-6.8.5.png
-:alt: 6.8.5.PNG
+:label: fig-6-8-3
+:enumerator: 6.8.3
+:alt: A block sliding on a frictionless movable inclined plane.
 
-$3$: A block sliding on a frictionless movable inclined plane.
+A block sliding on a frictionless movable inclined plane.
 :::
 
 The Lagrangian is 
@@ -793,7 +814,7 @@ $$
 Consider the Lagrange-Euler equation for the $x$ coordinate, $\Lambda_x L = 0$ which gives
 
 $$
-\frac{d}{dt}[m(\dot{x}+\dot{x}^{\prime }\cos \theta )+M\dot{x}]=0 \tag{$a$} \label{a2}
+\frac{d}{dt}[m(\dot{x}+\dot{x}^{\prime }\cos \theta )+M\dot{x}]=0 \tag{$a$} \label{eq-6-a2}
 $$
 
 *which states that* $[m(\dot{x}+\dot{x}^{\prime }\cos \theta )+M\dot{x }]$*is a constant of motion. This constant of motion is just the total linear momentum of the complete system in the* $x$*direction. That is, conservation of the linear momentum is satisfied automatically by the Lagrangian approach. The Newtonian approach also predicts conservation of the linear momentum since there are no external horizontal forces,*
@@ -805,8 +826,10 @@ $$
 $$
 
 *This example illustrates the flexibility of being able to use non-orthogonal displacement vectors to specify the scalar Lagrangian energy. Newtonian mechanics would require more thought to solve this problem.*
+::::
 
-Example 6.4: Sphere rolling without slipping down an inclined plane on a frictionless floor
+::::{admonition} Example 6.8.4: Sphere rolling without slipping down an inclined plane on a frictionless floor
+:class: example
 
 $$
 \begin{aligned} v_{x} &=& \dot{x}+R\dot{\theta}\cos \varphi \\ v_{y} &=&-R\dot{\theta}\sin \varphi\end{aligned}
@@ -818,9 +841,11 @@ L=\frac{M}{2}\dot{x}^{2}+\frac{m}{2}\left[ \dot{x}^{2}+r^{2}\dot{\theta} ^{2}+2r
 $$
 
 :::{figure} ../images/lt-21148-6.8.6.png
-:alt: 6.8.6.PNG
+:label: fig-6-8-4
+:enumerator: 6.8.4
+:alt: Solid sphere rolling without slipping on an inclined plane on a frictionless horizontal floor.
 
-$4$: Solid sphere rolling without slipping on an inclined plane on a frictionless horizontal floor.
+Solid sphere rolling without slipping on an inclined plane on a frictionless horizontal floor.
 :::
 
 $$
@@ -828,13 +853,17 @@ x=-\frac{mr\cos \varphi }{M+m}\theta =\frac{5m\sin \left( 2\varphi \right) }{ 4\
 $$
 
 *Note that these equations predict conservation of linear momentum for the block plus sphere.*
+::::
 
-Example 6.5: Mass sliding on a rotating straight frictionless rod.
+::::{admonition} Example 6.8.5: Mass sliding on a rotating straight frictionless rod.
+:class: example
 
 :::{figure} ../images/lt-21149-6.8.7.png
-:alt: 6.8.7.PNG
+:label: fig-6-8-5
+:enumerator: 6.8.5
+:alt: Mass sliding on a rotating straight frictionless rod.
 
-$5$: Mass sliding on a rotating straight frictionless rod.
+Mass sliding on a rotating straight frictionless rod.
 :::
 
 $$
@@ -852,13 +881,17 @@ $$
 $$
 
 *The* $\theta$*equation states that the angular momentum is conserved for this case which is what we expect since there are no external torques acting on the system. The* $r$*equation states that the centrifugal acceleration is* $\ddot{r}=r\omega ^{2}.$*These equations of motion were derived without reference to the forces between the rod and mass.*
+::::
 
-Example 6.6: Spherical pendulum
+::::{admonition} Example 6.8.6: Spherical pendulum
+:class: example
 
 :::{figure} ../images/lt-21154-6.8.8.png
-:alt: 6.8.8.PNG
+:label: fig-6-8-6
+:enumerator: 6.8.6
+:alt: Spherical pendulum
 
-$6$: Spherical pendulum
+Spherical pendulum
 :::
 
 $$
@@ -882,13 +915,17 @@ $$
 $$
 
 *There are many possible solutions depending on the initial conditions. The pendulum can just oscillate in the* $\theta$*direction, or rotate in the* $\phi$*direction or some combination of these. Note that if* $p_{\phi }$*is zero, then the equation reduces to the simple harmonic pendulum, while the other extreme is when* $\ddot{\theta}=0$*for which the motion is that of a conical pendulum that rotates at a constant angle* $\theta _{0}$*to the vertical axis.*
+::::
 
-Example 6.7: Mass constrained to move on the inside of a frictionless paraboloid
+::::{admonition} Example 6.8.7: Mass constrained to move on the inside of a frictionless paraboloid
+:class: example
 
 :::{figure} ../images/lt-21150-6.8.11.png
-:alt: 6.8.11.PNG
+:label: fig-6-8-7
+:enumerator: 6.8.7
+:alt: Mass constrained to slide on the inside of a frictionless paraboloid.
 
-$7$: Mass constrained to slide on the inside of a frictionless paraboloid.
+Mass constrained to slide on the inside of a frictionless paraboloid.
 :::
 
 $$
@@ -908,19 +945,19 @@ $$
 *For* $\Lambda _{\rho }L=\lambda \frac{\partial g}{\partial \rho }$
 
 $$
-\begin{align} \frac{d}{dt}\frac{\partial L}{\partial \dot{r}}-\frac{\partial L}{\partial r} &=&\lambda _{1}2\rho \tag{a} \label{a3} \\ m\left( \ddot{\rho}-\rho \dot{\phi}^{2}\right) &=&\lambda _{1}2\rho \notag\end{align}
+\begin{align} \frac{d}{dt}\frac{\partial L}{\partial \dot{r}}-\frac{\partial L}{\partial r} &=&\lambda _{1}2\rho \tag{a} \label{eq-6-a3} \\ m\left( \ddot{\rho}-\rho \dot{\phi}^{2}\right) &=&\lambda _{1}2\rho \notag\end{align}
 $$
 
 *For* $\Lambda _{\phi }L=\lambda \frac{\partial g}{\partial \phi }$
 
 $$
-\frac{d}{dt}\left( m\rho ^{2}\dot{\phi}\right) =\dot{p}_{\phi }=0 \tag{b} \label{6-b3-1}
+\frac{d}{dt}\left( m\rho ^{2}\dot{\phi}\right) =\dot{p}_{\phi }=0 \tag{b} \label{eq-6-b3}
 $$
 
 *Thus the angular momentum* $p_{\phi }$*is conserved, that is, it is a constant of motion.*
 
 $$
-2\rho \dot{\rho}-a\dot{z}=0 \tag{d} \label{d3}
+2\rho \dot{\rho}-a\dot{z}=0 \tag{d} \label{eq-6-d3}
 $$
 
 *The above four equations of motion can be used to determine* $r,\phi .z,\lambda _{1}.$
@@ -929,7 +966,7 @@ $$
 F_{c}=\lambda _{1}\frac{\partial g(\rho ,z)}{\partial \rho }=-\frac{mg}{a} 2\rho\nonumber
 $$
 
-*Assuming that* $\ddot{\rho}=0,$*then equation*\ref{a3}*for* $\dot{\phi}=\omega$*and* $\rho =\rho _{0}$*gives*
+*Assuming that* $\ddot{\rho}=0,$*then equation*[a3](#eq-6-a3)*for* $\dot{\phi}=\omega$*and* $\rho =\rho _{0}$*gives*
 
 $$
 F_{c}=-m\rho _{0}\omega ^{2}\nonumber
@@ -940,12 +977,17 @@ $$
 {\small \ }\dot{\phi}=\omega =\sqrt{\frac{2g}{a}}\nonumber
 $$
 
-Example 6.8: Mass on a frictionless plane connected to a plane pendulum
+::::
+
+::::{admonition} Example 6.8.8: Mass on a frictionless plane connected to a plane pendulum
+:class: example
 
 :::{figure} ../images/lt-21151-6.8.12.png
-:alt: 6.8.12.PNG
+:label: fig-6-8-8
+:enumerator: 6.8.8
+:alt: Mass m_2, hanging from a rope that is connected to m_1, which slides on a frictionless plane.
 
-$8$: Mass $m_2$, hanging from a rope that is connected to $m_1$, which slides on a frictionless plane.
+Mass $m_2$, hanging from a rope that is connected to $m_1$, which slides on a frictionless plane.
 :::
 
 *Two masses* $m_{1}$*and* $m_{2}$*are connected by a string of length* $l$*. Mass* $m_{1}$*is on a horizontal frictionless table and it is assumed that mass* $m_{2}$*moves in a vertical plane. This is another problem involving holonomic constrained motion. The constraints are:*
@@ -975,13 +1017,17 @@ $$
 $$
 
 *This last equation is a statement of the conservation of angular momentum. These three differential equations of motion can be solved for known initial conditions.*
+::::
 
-Example 6.9: Two connected masses constrained to slide along a moving rod
+::::{admonition} Example 6.8.9: Two connected masses constrained to slide along a moving rod
+:class: example
 
 :::{figure} ../images/lt-21152-6.8.13.png
-:alt: 6.8.13.PNG
+:label: fig-6-8-9
+:enumerator: 6.8.9
+:alt: Two identical masses m constrained to slide on a moving rod of mass M. The masses are attached to the center of the rod by identical springs each having a spring constant K.
 
-$9$: Two identical masses $m$ constrained to slide on a moving rod of mass $M$. The masses are attached to the center of the rod by identical springs each having a spring constant $K$.
+Two identical masses $m$ constrained to slide on a moving rod of mass $M$. The masses are attached to the center of the rod by identical springs each having a spring constant $K$.
 :::
 
 *Consider two identical masses* $m,$*constrained to move along the axis of a thin straight rod, of mass* $M$*and length* $l,$ *which is free to both translate and rotate. Two identical springs link the two masses to the central point of the rod. Consider only motions of the system for which the extended lengths of the two springs are equal and opposite such that the two masses always are equal distances from the center of the rod keeping the center of mass at the center of the rod. Find the equations of motion for this system.*
@@ -999,19 +1045,23 @@ $$
 $$
 
 *The first three equations show that the three components of the linear momentum of the center of mass are constants of motion. The fourth equation shows that the component of the angular momentum about the* $z^{\prime }$*axis is a constant of motion. Since the* $z_{1}$ *axis has been arbitrarily chosen then the total angular momentum must be conserved. The fifth and sixth equations give the radial and angular equations of motion of the oscillating masses* $m$*.*
+::::
 
 ## 6.9: Applications involving Non-holonomic Constraints
 
-In general, non-holonomic constraints can be handled by use of generalized forces $Q_{j}^{EXC}$ in the Lagrange-Euler equations $(6.5.12)$. The following examples, $6.1-6.4$, involve one-sided constraints which exhibit holonomic behavior for restricted ranges of the constraint surface in coordinate space, and this range is case specific. When the forces of constraint press the object against the constraint surface, then the system is holonomic, but the holonomic range of coordinate space is limited to situations where the constraint forces are positive. When the constraint force is negative, the object flies free from the constraint surface. In addition, when the frictional force $F>N\mu _{static}$ where $\mu _{static}$ is the static coefficient of friction, then the object slides negating any rolling constraint that assumes static friction.
+In general, non-holonomic constraints can be handled by use of generalized forces $Q_{j}^{EXC}$ in the Lagrange-Euler equations $(6.5.12)$. The following examples, $6.9.1-6.9.4$, involve one-sided constraints which exhibit holonomic behavior for restricted ranges of the constraint surface in coordinate space, and this range is case specific. When the forces of constraint press the object against the constraint surface, then the system is holonomic, but the holonomic range of coordinate space is limited to situations where the constraint forces are positive. When the constraint force is negative, the object flies free from the constraint surface. In addition, when the frictional force $F>N\mu _{static}$ where $\mu _{static}$ is the static coefficient of friction, then the object slides negating any rolling constraint that assumes static friction.
 
-Example 6.1: Mass sliding on a frictionless spherical shell
+::::{admonition} Example 6.9.1: Mass sliding on a frictionless spherical shell
+:class: example
 
 Consider a mass starts from rest at the top of a frictionless fixed spherical shell of radius $R$. The questions are what is the force of constraint and determine the angle $\theta$ at which the mass leaves the surface of the spherical shell. The coordinates $r,\theta$ shown are the obvious generalized coordinates to use.
 
 :::{figure} ../images/lt-21159-imageedit_1_8621905102.png
-:alt: 6.9.1.PNG
+:label: fig-6-9-1
+:enumerator: 6.9.1
+:alt: Mass m sliding on frictionless cylinder of radius R.
 
-$1$: Mass $m$ sliding on frictionless cylinder of radius $R$.
+Mass $m$ sliding on frictionless cylinder of radius $R$.
 :::
 
 The constraint will not apply if the force of constraint does not hold the mass against the surface of the spherical shell, that is, it is only holonomic in a restricted domain.
@@ -1047,11 +1097,11 @@ $$
 
 The Lagrange equation for $\theta$ gives $\Delta _{\theta }L=\lambda \frac{\partial g}{\partial \theta }=0$ since $\frac{\partial g}{\partial \theta }=0.$ Thus 
 $$
-mr^{2}\ddot{\theta}-mgr\sin \theta +2mr\dot{r}\dot{\theta}=0 \tag{b} \label{b2}
+mr^{2}\ddot{\theta}-mgr\sin \theta +2mr\dot{r}\dot{\theta}=0 \tag{b} \label{eq-6-b2}
 $$
 
 $$
-\dot{\theta}^{2}=\frac{2g}{R}\left( 1-\cos \theta \right) \tag{d} \label{6-d2}
+\dot{\theta}^{2}=\frac{2g}{R}\left( 1-\cos \theta \right) \tag{d} \label{eq-6-d2}
 $$
 
 assuming that $\dot{\theta}=0$ at $\theta =0.$
@@ -1074,15 +1124,19 @@ $$
 $$
 
 This occurs when $\cos \theta =\frac{2}{3}$. This is an unusual case where the Newtonian approach is the simplest.
+::::
 
-Example 6.2: Rolling solid sphere on a spherical shell
+::::{admonition} Example 6.9.2: Rolling solid sphere on a spherical shell
+:class: example
 
 This is a similar problem to the prior one with the added complication of rolling which is assumed to move in a vertical plane making it holonomic. Here we would like to determine the forces of constraint to see when the solid sphere flies off the spherical shell and when the friction is insufficient to stop the rolling sphere from slipping.
 
 :::{figure} ../images/lt-21158-imageedit_2_4283913900.png
-:alt: 6.9.2.PNG
+:label: fig-6-9-2
+:enumerator: 6.9.2
+:alt: Disk of mass m, radius a, rolling on a cylindrical surface of radius R.
 
-$2$: Disk of mass $m$, radius $a$, rolling on a cylindrical surface of radius $R$.
+Disk of mass $m$, radius $a$, rolling on a cylindrical surface of radius $R$.
 :::
 
 The best generalized coordinates are the distance of the center of the sphere from the center of the spherical shell, $r,\theta$ and $\phi .$ It is important to note that $\phi$ is measured with respect to the vertical, not the time-dependent vector $\mathbf{r}$. That is, the direction of the radius $r$ is $\theta$ which is time dependent and thus is not a useful reference to use to define the angle $\phi$. Let us assume that the sphere is uniform with a moment of inertia of $I= \frac{2}{5}ma^{2}.$ If the tangential frictional force $F$ is less than the limiting value $N\mu _{statics}$, with $N>0,$ then the sphere will roll without slipping on the surface of the cylinder and both constraints apply. Under these conditions the system is holonomic and the solution is solved using Lagrange multipliers and the equations of constraint are the following:
@@ -1103,7 +1157,7 @@ L=\frac{1}{2}m\left( \dot{r}^{2}+r^{2}\dot{\theta}^{2}\right) +\frac{1}{2}I \dot
 $$
 
 $$
-mr^{2}\ddot{\theta}+2mr\dot{r}\dot{\theta}-mgr\sin \theta =-\lambda _{2}\left( R+a\right) \tag{b} \label{6-b3-2}
+mr^{2}\ddot{\theta}+2mr\dot{r}\dot{\theta}-mgr\sin \theta =-\lambda _{2}\left( R+a\right) \tag{b} \label{eq-6-b3-2}
 $$
 
 $\Lambda _{\phi }L$ gives 
@@ -1129,8 +1183,10 @@ $$
 $$
 
 For $\mu =1$ the disk starts to slip when $\theta =47.54^{0}.$ Note that the sphere starts slipping before it flies off the cylinder since a normal force is required to support a frictional force and the difference depends on the coefficient of friction. The no-slipping constraint is not satisfied once the sphere starts slipping and the frictional force should equal $\mu _{kinetic}\lambda _{1}.$ Thus for the angles beyond $47.54^{o}$ the problem needs to be solved with the rolling constraint changed to a sliding non-conservative frictional force. This is best handled by including the frictional force and normal forces as generalized forces. Fortunately this will be a small correction. The friction will slightly change the exact angle at which the normal force becomes zero and the system transitions to free motion of the sphere in a gravitational field.
+::::
 
-Example 6.3: Solid sphere rolling plus slipping on a spherical shell
+::::{admonition} Example 6.9.3: Solid sphere rolling plus slipping on a spherical shell
+:class: example
 
 $$
 F=N\mu _{sliding}\nonumber
@@ -1157,15 +1213,19 @@ I\ddot{\phi}=aF\nonumber
 $$
 
 These can be solved by substituting the relation $F=N\mu _{sliding}$. The sphere flies off the spherical shell when $N\leq 0$ leading to free motion discussed in example $(7.7.2)$. The problem of a solid uniform sphere rolling inside a hollow sphere can be solved the same way.
+::::
 
-Example 6.4: Small body held by friction on the periphery of a rolling wheel
+::::{admonition} Example 6.9.4: Small body held by friction on the periphery of a rolling wheel
+:class: example
 
-Assume that a small body of mass $m$ is balanced on a rolling wheel of mass $M$ and radius $R$ as shown in the figure. The wheel rolls in a vertical plane without slipping on a horizontal surface. This example illustrates that it is possible to use simultaneously a mixture of holonomic constraints, partially-holonomic constraints, and generalized forces.<sup>3</sup>
+Assume that a small body of mass $m$ is balanced on a rolling wheel of mass $M$ and radius $R$ as shown in the figure. The wheel rolls in a vertical plane without slipping on a horizontal surface. This example illustrates that it is possible to use simultaneously a mixture of holonomic constraints, partially-holonomic constraints, and generalized forces.[^6-9-3]
 
 :::{figure} ../images/lt-21157-imageedit_3_7466148487.png
-:alt: 6.9.3.PNG
+:label: fig-6-9-3
+:enumerator: 6.9.3
+:alt: Small body of mass m held by friction on the periphery of a rolling wheel of mass M and radius R.
 
-$3$: Small body of mass $m$ held by friction on the periphery of a rolling wheel of mass $M$ and radius $R$.
+Small body of mass $m$ held by friction on the periphery of a rolling wheel of mass $M$ and radius $R$.
 :::
 
 Assume that at $t=0$ the wheel touches the floor at $x=y=0$ with the mass perched at the top of the wheel at $x=0$. Let the frictional force acting on the mass $m$ be $F$ and the reaction force of the periphery of the wheel on the mass be $N$. Let $\dot{\varphi}$ be the angular velocity of the wheel, and $\dot{x}$ the horizontal velocity of the center of the wheel. The polar coordinates $r,\theta$ of the mass $m$ are taken with $r$ measured from the center of the wheel with $\theta$ measured with respect to the vertical. Thus the cartesian coordinates of the small mass $m$ are $(x+r\sin \theta ,R+r\cos \theta )$ with respect to the origin at $x=y=0$.
@@ -1217,12 +1277,11 @@ Here the no-slip constraint is violated and thus one has to explicitly include t
 c) Reaction force $N$ is negative:
 
 Here the mass is not subject to any constraints and it is in free fall.
+::::
 
 The above example illustrates the flexibility provided by Lagrangian mechanics that allows simultaneous use of Lagrange multipliers, generalized forces, and scalar potential to handle combinations of several holonomic and nonholonomic constraints for a complicated problem.
 
----
-
-<sup>3</sup>This problem is solved in detail in example 3.19 of "Classical Mechanics and Relativity". by Muller-Kirsten $\left[ Mu06\right]$.
+[^6-9-3]: This problem is solved in detail in example 3.19 of "Classical Mechanics and Relativity". by Muller-Kirsten $\left[ Mu06\right]$.
 
 ## 6.10: Velocity-dependent Lorentz force
 
@@ -1266,37 +1325,37 @@ $$
 where $\Phi$ is the scalar electrostatic potential. This scalar potential $U$ can be employed in the Lagrange equations using the Lagrangian
 
 $$
-L=\frac{1}{2}m\mathbf{v}\cdot \mathbf{v}-q(\Phi -\mathbf{A\cdot v)} \label{6.67}
+L=\frac{1}{2}m\mathbf{v}\cdot \mathbf{v}-q(\Phi -\mathbf{A\cdot v)} \tag{6.67} \label{eq-6-67}
 $$
 
 The Lorentz force can be derived from this Lagrangian by considering the Lagrange equation for the cartesian coordinate $x$
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{x}}-\frac{\partial L}{\partial x} =0 \label{6.68}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{x}}-\frac{\partial L}{\partial x} =0 \tag{6.68} \label{eq-6-68}
 $$
 
-Using the above Lagrangian \ref{6.67} gives
+Using the above Lagrangian [6.67](#eq-6-67) gives
 
 $$
-m\ddot{x}+q\left[ \frac{dA_{x}}{dt}+\frac{\partial \Phi }{\partial x}-\frac{ \partial \mathbf{A}}{\partial x}\cdot \mathbf{v}\right] =0 \label{6.69}
+m\ddot{x}+q\left[ \frac{dA_{x}}{dt}+\frac{\partial \Phi }{\partial x}-\frac{ \partial \mathbf{A}}{\partial x}\cdot \mathbf{v}\right] =0 \tag{6.69} \label{eq-6-69}
 $$
 
 But
 
 $$
-\frac{dA_{x}}{dt}=\frac{\partial A_{x}}{\partial t}+\frac{\partial A_{x}}{ \partial x}\dot{x}+\frac{\partial A_{x}}{\partial y}\dot{y}+\frac{\partial A_{x}}{\partial z}\dot{z}\label{6.70}
+\frac{dA_{x}}{dt}=\frac{\partial A_{x}}{\partial t}+\frac{\partial A_{x}}{ \partial x}\dot{x}+\frac{\partial A_{x}}{\partial y}\dot{y}+\frac{\partial A_{x}}{\partial z}\dot{z}\tag{6.70} \label{eq-6-70}
 $$
 
 and
 
 $$
-\frac{\partial \mathbf{A}}{\partial x}\cdot \mathbf{v=}\frac{\partial A_{x}}{ \partial x}\dot{x}+\frac{\partial A_{y}}{\partial x}\dot{y}+\frac{\partial A_{z}}{\partial x}\dot{z}\label{6.71}
+\frac{\partial \mathbf{A}}{\partial x}\cdot \mathbf{v=}\frac{\partial A_{x}}{ \partial x}\dot{x}+\frac{\partial A_{y}}{\partial x}\dot{y}+\frac{\partial A_{z}}{\partial x}\dot{z}\tag{6.71} \label{eq-6-71}
 $$
 
-Inserting equations \ref{6.70} and \ref{6.71} into \ref{6.69} gives
+Inserting equations [6.70](#eq-6-70) and [6.71](#eq-6-71) into [6.69](#eq-6-69) gives
 
 $$
-F_{x}=m\ddot{x}=q\left[ \left( -\frac{\partial \Phi }{\partial x}-\frac{ \partial A_{x}}{\partial t}\right) +\left( \frac{\partial A_{y}}{\partial x}- \frac{\partial A_{x}}{\partial y}\right) \dot{y}-\left( \frac{\partial A_{x} }{\partial z}-\frac{\partial A_{z}}{\partial x}\right) \dot{z}\right] =q \left[ \mathbf{E+v}\times \mathbf{B}\right] _{x}\label{6.72}
+F_{x}=m\ddot{x}=q\left[ \left( -\frac{\partial \Phi }{\partial x}-\frac{ \partial A_{x}}{\partial t}\right) +\left( \frac{\partial A_{y}}{\partial x}- \frac{\partial A_{x}}{\partial y}\right) \dot{y}-\left( \frac{\partial A_{x} }{\partial z}-\frac{\partial A_{z}}{\partial x}\right) \dot{z}\right] =q \left[ \mathbf{E+v}\times \mathbf{B}\right] _{x}\tag{6.72} \label{eq-6-72}
 $$
 
 Corresponding expressions can be obtained for $F_{y}$ and $F_{z}$. Thus the total force is the well-known Lorentz force
@@ -1318,7 +1377,8 @@ All examples discussed in this chapter have assumed Lagrangians that are time in
 
 In principle it is trivial to incorporate time-dependent behavior into the equations of motion by introducing either a time dependent generalized force $Q(r,t)$, or allowing the Lagrangian to be time dependent. For example, in the rocket problem the mass is time dependent. In some cases the time dependent forces can be represented by a time-dependent potential energy rather than using a generalized force. Solutions for non-autonomous systems can be considerably more difficult to obtain, and can involve regions where the motion is stable and other regions where the motion is unstable or chaotic similar to the behavior discussed in chapter $4$. The following case of a simple pendulum, whose support is undergoing vertical oscillatory motion, illustrates the complexities that can occur for systems involving time-dependent forces.
 
-Example 6.1: Plane pendulum hanging from a vertically-oscillating support
+::::{admonition} Example 6.11.1: Plane pendulum hanging from a vertically-oscillating support
+:class: example
 
 *Consider a plane pendulum having a mass* $M$*fastened to a massless rigid rod of length* $L$*that is at an angle* $\theta (t)$ *to the vertical gravitational field* $g$. *The pendulum is attached to a support that is subject to a vertical oscillatory force* $F$ *such that the vertical position* $y$ *of the support is*
 
@@ -1338,6 +1398,7 @@ $$
 $$
 
 *The inverted pendulum has stable oscillations about* $\theta \approx \pi$ *if the bracket is negative, that is, if* $A\omega ^{2}\cos \omega t>g.$*This illustrates that nonautonomous dynamical systems can involve either stable or unstable motion.*
+::::
 
 ## 6.12: Impulsive Forces
 
@@ -1346,37 +1407,37 @@ Colliding bodies often involve large impulsive forces that act for a short time.
 The impact of the impulse on a system can be handled two ways. The first approach is to use the Euler-Lagrange equation during the impulse to determine the equations of motion
 
 $$
-\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}=Q_{j}^{EXC} \label{6.75}
+\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{ \partial L}{\partial q_{j}}=Q_{j}^{EXC} \tag{6.75} \label{eq-6-75}
 $$
 
-where the impulsive force is introduced using the generalized force $Q_{j}^{EXC}$. Knowing the initial conditions at time $t,$ the conditions at the time $t+\tau$ are given by integration of Equation \ref{6.75} over the duration $\tau$ of the impulse which gives
+where the impulsive force is introduced using the generalized force $Q_{j}^{EXC}$. Knowing the initial conditions at time $t,$ the conditions at the time $t+\tau$ are given by integration of Equation [6.75](#eq-6-75) over the duration $\tau$ of the impulse which gives
 
 $$
-\int_{t}^{t+\tau }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}} \right) d\tau -\int_{t}^{t+\tau }\frac{\partial L}{\partial q_{j}}d\tau =\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \label{6.76}
+\int_{t}^{t+\tau }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}} \right) d\tau -\int_{t}^{t+\tau }\frac{\partial L}{\partial q_{j}}d\tau =\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \tag{6.76} \label{eq-6-76}
 $$
 
 This integration determines the conditions at time $t+\tau$ which then are used as the initial conditions for the motion when the impulsive force $Q_{j}^{EXC}$ is zero.
 
-The second approach is to realize that Equation \ref{6.76} can be rewritten in the form
+The second approach is to realize that Equation [6.76](#eq-6-76) can be rewritten in the form
 
 $$
-\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) dt=\lim_{\tau \rightarrow 0}\left. \frac{ \partial L}{\partial \dot{q}_{j}}\right\vert _{t}^{t+\tau }=\Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\left( \left( \frac{ \partial L}{\partial q_{j}}\right) +Q_{j}^{EXC}\right) d\tau \label{6.77}
+\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) dt=\lim_{\tau \rightarrow 0}\left. \frac{ \partial L}{\partial \dot{q}_{j}}\right\vert _{t}^{t+\tau }=\Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\left( \left( \frac{ \partial L}{\partial q_{j}}\right) +Q_{j}^{EXC}\right) d\tau \tag{6.77} \label{eq-6-77}
 $$
 
 Note that in the limit that $\tau \rightarrow 0$ then the integral of the generalized momentum $p_{j}=\frac{\partial L}{\partial \dot{q}_{j}}$ simplifies to give the change in generalized momentum $\Delta p_{j}$. In addition, assuming that the non-impulsive forces $\left( \frac{\partial L}{ \partial q_{j}}\right)$ are finite and independent of the instantaneous impulsive force during the infinitessimal duration $\tau$, then the contribution of the non-impulsive forces $\int_{t}^{t+\tau }\left( \frac{ \partial L}{\partial q_{j}}\right) d\tau$ during the impulse can be neglected relative to the large impulsive force term; $\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau$. Thus it can be assumed that
 
 $$
-\Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau = \tilde{Q}_{j} \label{6.78}
+\Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau = \tilde{Q}_{j} \tag{6.78} \label{eq-6-78}
 $$
 
-where $\tilde{Q}_{j}$ is the generalized impulse associated with coordinate $j=1,2,3,....,n$. This generalized impulse can be derived from the time integral of the impulsive forces $\mathbf{P}_{i}$ given by equation $(2.12.49)$ using the time integral of Equation \ref{6.77}, that is 
+where $\tilde{Q}_{j}$ is the generalized impulse associated with coordinate $j=1,2,3,....,n$. This generalized impulse can be derived from the time integral of the impulsive forces $\mathbf{P}_{i}$ given by equation $(2.12.49)$ using the time integral of Equation [6.77](#eq-6-77), that is 
 $$
-\Delta p_{j}=\tilde{Q}_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \equiv \lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\sum_{i} \mathbf{P}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}d\tau =\sum_{i}\mathbf{\tilde{P}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}} \label{6.79}
+\Delta p_{j}=\tilde{Q}_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \equiv \lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\sum_{i} \mathbf{P}_{i} \cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}d\tau =\sum_{i}\mathbf{\tilde{P}}_{i}\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}} \tag{6.79} \label{eq-6-79}
 $$
 
 Note that the generalized impulse $\tilde{Q}_{j}$ can be a translational impulse $\mathbf{\tilde{P}}_{j}$ with corresponding translational variable $q_{j},$ or an angular impulsive torque $\mathbf{\tilde{\tau}}_{j}$ with corresponding angular variable $\phi _{j}$.
 
-Impulsive force problems usually are solved in two stages. Either equations \ref{6.76} or \ref{6.79} are used to determine the conditions of the system immediately following the impulse. If $\tau \rightarrow 0$ then impulse changes the generalized velocities $\dot{q}_{j}$ but not the generalized coordinates $q_{j}$. The subsequent motion then is determined using the Lagrangian equations of motion with the impulsive generalized force being zero, and assuming that the initial condition corresponds to the result of the impulse calculation.
+Impulsive force problems usually are solved in two stages. Either equations [6.76](#eq-6-76) or [6.79](#eq-6-79) are used to determine the conditions of the system immediately following the impulse. If $\tau \rightarrow 0$ then impulse changes the generalized velocities $\dot{q}_{j}$ but not the generalized coordinates $q_{j}$. The subsequent motion then is determined using the Lagrangian equations of motion with the impulsive generalized force being zero, and assuming that the initial condition corresponds to the result of the impulse calculation.
 
 ## 6.13: The Lagrangian versus the Newtonian approach to classical mechanics
 
@@ -1388,112 +1449,227 @@ The use of generalized coordinates in Lagrange’s equations of motion can be ap
 
 ## 6.E: Lagrangian Dynamics (Exercises)
 
-1. A disk of mass $M$ and radius $R$ rolls without slipping down a plane inclined from the horizontal by an angle $\alpha$. The disk has a short weightless axle of negligible radius. From this axis is suspended a simple pendulum of length $l<R$ and whose bob has a mass $m$. Assume that the motion of the pendulum takes place in the plane of the disk.
+1. A disk of mass
 
-What generalized coordinates would be appropriate for this situation?
-Are there any equations of constraint? If so, what are they?
-Find Lagrange’s equations for this system.
+   $M$
+
+   and radius
+
+   $R$
+
+   rolls without slipping down a plane inclined from the horizontal by an angle
+
+   $\alpha$
+
+   . The disk has a short weightless axle of negligible radius. From this axis is suspended a simple pendulum of length
+
+   $l<R$
+
+   and whose bob has a mass
+
+   $m$
+
+   . Assume that the motion of the pendulum takes place in the plane of the disk.
+
+   1. What generalized coordinates would be appropriate for this situation?
+
+   2. Are there any equations of constraint? If so, what are they?
+
+   3. Find Lagrange’s equations for this system.
+
 2. A Lagrangian for a particular system can be written as
 
+   
 $$
 L=\frac{m}{2}(a\dot{x}^{2}+2b\dot{x}\dot{y}+c\dot{y}^{2})-\frac{K}{2} (ax^{2}+2bxy+cy^{2})\nonumber
 $$
 
-where $a,b,$ and $c$ are arbitrary constants, but subject to the condition that $b^{2}-4ac\neq 0$.
+   where $a,b,$ and $c$ are arbitrary constants, but subject to the condition that $b^{2}-4ac\neq 0$.
 
-What are the equations of motion?
-Examine the case $a=0=c$. What physical system does this represent?
-Examine the case $b=0$ and $a=-c$. What physical system does this represent?
-Based on your answers to (b) and (c), determine the physical system represented by the Lagrangian given above.
-3. Consider a particle of mass $m$ moving in a plane and subject to an inverse square attractive force.
+   1. What are the equations of motion?
 
-Obtain the equations of motion.
-Is the angular momentum about the origin conserved?
-Obtain expressions for the generalized forces. Recall that the generalized forces are defined by 
+   2. Examine the case $a=0=c$. What physical system does this represent?
+
+   3. Examine the case $b=0$ and $a=-c$. What physical system does this represent?
+
+   4. Based on your answers to (b) and (c), determine the physical system represented by the Lagrangian given above.
+
+3. Consider a particle of mass
+
+   $m$
+
+   moving in a plane and subject to an inverse square attractive force.
+
+   1. Obtain the equations of motion.
+
+   2. Is the angular momentum about the origin conserved?
+
+   3. Obtain expressions for the generalized forces. Recall that the generalized forces are defined by 
 $$
 Q_{j}=\sum_{i}F_{i}\frac{\partial x_{i}}{\partial q_{j}}.\nonumber
 $$
 
-4. Consider a Lagrangian function of the form $L(q_{i},\dot{q_{i} },\ddot{q_{i}},t)$. Here the Lagrangian contains a time derivative of the generalized coordinates that is higher than the first. When working with such Lagrangians, the term “generalized mechanics” is used.
+4. Consider a Lagrangian function of the form
 
-Consider a system with one degree of freedom. By applying the methods of the calculus of variations, and assuming that Hamilton’s principle holds with respect to variations which keep both $q$ and $\dot{q}$ fixed at the end points, show that the corresponding Lagrange equation is
+   $L(q_{i},\dot{q_{i} },\ddot{q_{i}},t)$
 
+   . Here the Lagrangian contains a time derivative of the generalized coordinates that is higher than the first. When working with such Lagrangians, the term “generalized mechanics” is used.
+
+   1. Consider a system with one degree of freedom. By applying the methods of the calculus of variations, and assuming that Hamilton’s principle holds with respect to variations which keep both $q$ and $\dot{q}$ fixed at the end points, show that the corresponding Lagrange equation is
+      
 $$
 \frac{d^{2}}{dt^{2}}\left( \frac{\partial L}{\partial \ddot{q}}\right) - \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}}\right) +\frac{ \partial L}{\partial q}=0.\nonumber
 $$
 
-Such equations of motion have interesting applications in chaos theory.
+      Such equations of motion have interesting applications in chaos theory.
 
-Apply this result to the Lagrangian
-
+   2. Apply this result to the Lagrangian
+      
 $$
 L=-\frac{m}{2}q\ddot{q}-\frac{k}{2}q^{2}.\nonumber
 $$
 
-Do you recognize the equations of motion?
-5. A bead of mass $m$ slides under gravity along a smooth wire bent in the shape of a parabola $x^{2}=az$ in the vertical $(x,z)$ plane.
+      Do you recognize the equations of motion?
 
-What kind (holonomic, nonholonomic, scleronomic, rheonomic) of constraint acts on $m$?
-Set up Lagrange’s equation of motion for $x$ with the constraint embedded.
-Set up Lagrange’s equations of motion for both $x$ and $z$ with the constraint adjoined and a Lagrangian multiplier $\lambda$ introduced.
-Show that the same equation of motion for $x$ results from either of the methods used in part (b) or part (c).
-Express $\lambda$ in terms of $x$ and $\dot{x}$.
-What are the $x$ and $z$ components of the force of constraint in terms of $x$ and $\dot{x}$?
+5. A bead of mass
+
+   $m$
+
+   slides under gravity along a smooth wire bent in the shape of a parabola
+
+   $x^{2}=az$
+
+   in the vertical
+
+   $(x,z)$
+
+   plane.
+
+   1. What kind (holonomic, nonholonomic, scleronomic, rheonomic) of constraint acts on $m$?
+
+   2. Set up Lagrange’s equation of motion for $x$ with the constraint embedded.
+
+   3. Set up Lagrange’s equations of motion for both $x$ and $z$ with the constraint adjoined and a Lagrangian multiplier $\lambda$ introduced.
+
+   4. Show that the same equation of motion for $x$ results from either of the methods used in part (b) or part (c).
+
+   5. Express $\lambda$ in terms of $x$ and $\dot{x}$.
+
+   6. What are the $x$ and $z$ components of the force of constraint in terms of $x$ and $\dot{x}$?
+
 6. Consider the two Lagrangians
-
+   
 $$
 L(q,\dot{q};t) \quad \mathrm{and} \quad L^{\prime }(q,\dot{q};t)=L(q, \dot{q};t)+\frac{dF(q,t)}{dt}\nonumber
 $$
 
-where $F(q,t)$ is an arbitrary function of the generalized coordinates $q(t)$. Show that these two Lagrangians yield the same Euler-Lagrange equations. As a consequence two Lagrangians that differ only by an exact time derivative are said to be equivalent.
-7. Consider the double pendulum comprising masses $m_{1}$ and $m_{2}$ connected by inextensible strings as shown in the figure. Assume that the motion of the pendulum takes place in a vertical plane.
+   where $F(q,t)$ is an arbitrary function of the generalized coordinates $q(t)$. Show that these two Lagrangians yield the same Euler-Lagrange equations. As a consequence two Lagrangians that differ only by an exact time derivative are said to be equivalent.
 
-Are there any equations of constraint? If so, what are they?
-Find Lagrange’s equations for this system.
-:::{figure} ../images/lt-21162-6.w.1.png
-:alt: 6.w.1.PNG
+7. Consider the double pendulum comprising masses
 
-6.w.1.PNG
-:::
-Figure 6.1
-8. Consider the system shown in the figure which consists of a mass $m$ suspended via a constrained massless link of length $L$ where the point $A$ is acted upon by a spring of spring constant $k$. The spring is unstretched when the massless link is horizontal. Assume that the holonomic constraints at $A$ and $B$ are frictionless.
+   $m_{1}$
 
-Derive the equations of motion for the system using the method of Lagrange multipliers.
-:::{figure} ../images/lt-21163-6.w.2.png
-:alt: 6.w.2.PNG
+   and
 
-6.w.2.PNG
-:::
-Figure 6.2
-9. Consider a pendulum, with mass $m$, connected to a (horizontally) moveable support of mass $M$.
+   $m_{2}$
 
-Determine the Lagrangian of the system.
-Determine the equations of motion for $\theta \ll 1$.
-Find an equation of motion in $\theta$ alone. What is the frequency of oscillation?
-What is the frequency of oscillation for $M\gg m$? Does this make sense?
+   connected by inextensible strings as shown in the figure. Assume that the motion of the pendulum takes place in a vertical plane.
+
+   1. Are there any equations of constraint? If so, what are they?
+
+   2. Find Lagrange’s equations for this system.
+
+      :::{figure} ../images/lt-21162-6.w.1.png
+      :label: fig-6-E-1
+      :enumerator: 6.E.1
+      :alt: Figure
+      :::
+
+8. Consider the system shown in the figure which consists of a mass
+
+   $m$
+
+   suspended via a constrained massless link of length
+
+   $L$
+
+   where the point
+
+   $A$
+
+   is acted upon by a spring of spring constant
+
+   $k$
+
+   . The spring is unstretched when the massless link is horizontal. Assume that the holonomic constraints at
+
+   $A$
+
+   and
+
+   $B$
+
+   are frictionless.
+
+   1. Derive the equations of motion for the system using the method of Lagrange multipliers.
+
+      :::{figure} ../images/lt-21163-6.w.2.png
+      :label: fig-6-E-2
+      :enumerator: 6.E.2
+      :alt: Figure
+      :::
+
+9. Consider a pendulum, with mass
+
+   $m$
+
+   , connected to a (horizontally) moveable support of mass
+
+   $M$
+
+   .
+
+   1. Determine the Lagrangian of the system.
+
+   2. Determine the equations of motion for $\theta \ll 1$.
+
+   3. Find an equation of motion in $\theta$ alone. What is the frequency of oscillation?
+
+   4. What is the frequency of oscillation for $M\gg m$? Does this make sense?
+
 10. A sphere of radius $\rho$ is constrained to roll without slipping on the lower half of the inner surface of a hollow cylinder of radius $R.$ Determine the Lagrangian function, the equation of constraint, and the Lagrange equations of motion. Find the frequency of small oscillations.
+
 11. A particle moves in a plane under the influence of a force $f = −Ar^{\alpha - 1}$ directed toward the origin; $A$ and $\alpha (> 0)$ are constants. Choose generalized coordinates with the potential energy zero at the origin.
 
-Find the Lagrangian equations of motion.
-Is the angular momentum about the origin conserved?
-Is the total energy conserved?
+    1. Find the Lagrangian equations of motion.
+
+    2. Is the angular momentum about the origin conserved?
+
+    3. Is the total energy conserved?
+
 12. Two blocks, each of mass $M$, are connected by an extensionless, uniform string of length $l$. One block is placed on a frictionless horizontal surface, and the other block hangs over the side, the string passing over a frictionless pulley. Describe the motion of the system:
 
-when the mass of the string is negligible
-when the string has mass $m$.
+    1. when the mass of the string is negligible
+
+    2. when the string has mass $m$.
+
 13. Two masses $m_{1}$ and $m_{2}$ $(m_{1}\neq m_{2})$ are connected by a rigid rod of length $d$ and of negligible mass. An extensionless string of length $l_{1}$ is attached to $m_{1}$ and connected to a fixed point of the support $P$. Similarly a string of length $l_{2}$ $(l_{1}\neq l_{2})$ connects $m_{2}$ and $P$. Obtain the equation of motion describing the motion in the plane of $m_{1},m_{2},$ and $P$, and find the frequency of small oscillation around the equilibrium position.
+
 14. A thin uniform rigid rod of length $2L$ and mass $M$ is suspended by a massless string of length $l$. Initially the system is hanging vertically downwards in the gravitational field $g$. Use as generalized coordinates the angles given in the diagram.
 
-Derive the Lagrangian for the system.
-Use the Lagrangian to derive the equations of motion
-A horizontal impulsive force $F_{x}$ in the $x$ direction strikes the bottom end of the rod for an infinitessimal time $\tau$. Derive the initial conditions for the system immediately after the impulse has occurred.
-Draw a diagram showing the geometry of the pendulum shortly after the impulse when the displacement angles are significant.
-:::{figure} ../images/lt-21360-6.e.1.png
-:alt: 6.e.1.PNG
+    1. Derive the Lagrangian for the system.
 
-6.e.1.PNG
-:::
-Figure 6.3
+    2. Use the Lagrangian to derive the equations of motion
+
+    3. A horizontal impulsive force $F_{x}$ in the $x$ direction strikes the bottom end of the rod for an infinitessimal time $\tau$. Derive the initial conditions for the system immediately after the impulse has occurred.
+
+    4. Draw a diagram showing the geometry of the pendulum shortly after the impulse when the displacement angles are significant.
+
+       :::{figure} ../images/lt-21360-6.e.1.png
+       :label: fig-6-E-3
+       :enumerator: 6.E.3
+       :alt: Figure
+       :::
 
 ## 6.S: Lagrangian Dynamics (Summary)
 
@@ -1502,25 +1678,25 @@ Figure 6.3
 A justification for introducing the calculus of variations to classical mechanics becomes apparent when the concept of the Lagrangian $L\equiv T-U$ is used in the functional and time $t$ is the independent variable. It was shown that Newton’s equation of motion can be rewritten as
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=F_{q_{i}}^{EX} 
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=F_{q_{i}}^{EX} \tag{6.12}
 $$
 
 where $F_{y_{i}}^{EX}$ are the excluded forces of constraint plus any other conservative or non-conservative forces not included in the potential $U.$ This corresponds to the Euler-Lagrange equation for determining the minimum of the time integral of the Lagrangian.
 
-Equation \ref{6.12} can be written as
+Equation [6.12](#eq-6-12) can be written as
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k} }{\partial q_{i}}+F_{q_{i}}^{EXC}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k} }{\partial q_{i}}+F_{q_{i}}^{EXC}\tag{6.15}
 $$
 
-where the Lagrange multiplier term accounts for holonomic constraint forces, and $F_{q_{i}}^{EXC}$ includes all additional forces not accounted for by the scalar potential $U$, or the Lagrange multiplier terms $F_{q_{i}}^{HC}$. The constraint forces can be included explicitly as generalized forces in the excluded term $F_{q_{i}}^{EXC}$ of Equation \ref{6.15}.
+where the Lagrange multiplier term accounts for holonomic constraint forces, and $F_{q_{i}}^{EXC}$ includes all additional forces not accounted for by the scalar potential $U$, or the Lagrange multiplier terms $F_{q_{i}}^{HC}$. The constraint forces can be included explicitly as generalized forces in the excluded term $F_{q_{i}}^{EXC}$ of Equation \text{(6.15)}.
 
 #### d’Alembert’s Principle
 
 It was shown that d’Alembert’s Principle
 
 $$
-\sum_{i}^{N}(\mathbf{F}_{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{r} _{i}=0 
+\sum_{i}^{N}(\mathbf{F}_{i}^{A}-\mathbf{\dot{p}}_{i})\cdot \delta \mathbf{r} _{i}=0 \tag{6.25}
 $$
 
 cleverly transforms the principle of virtual work from the realm of statics to dynamics. Application of virtual work to statics primarily leads to algebraic equations between the forces, whereas d’Alembert’s principle applied to dynamics leads to differential equations.
@@ -1530,40 +1706,40 @@ cleverly transforms the principle of virtual work from the realm of statics to d
 After transforming to generalized coordinates, d’Alembert’s Principle leads to
 
 $$
-\sum_{j}^{N} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q} _{j}}\right) -\frac{\partial T}{\partial q_{j}}\right\} -Q_{j}\right] \delta q_{j}=0
+\sum_{j}^{N} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial T}{\partial \dot{q} _{j}}\right) -\frac{\partial T}{\partial q_{j}}\right\} -Q_{j}\right] \delta q_{j}=0\tag{6.38}
 $$
 
-If all the $n$ coordinates $q_{j}$ are independent, then Equation \ref{6.38} implies that the term in the square brackets is zero for each individual value of $j$. That is, this implies the basic Euler-Lagrange equations of motion.
+If all the $n$ coordinates $q_{j}$ are independent, then Equation \text{(6.38)} implies that the term in the square brackets is zero for each individual value of $j$. That is, this implies the basic Euler-Lagrange equations of motion.
 
 The handling of both conservative and non-conservative generalized forces $Q_j$ is best achieved by assuming that the generalized force $Q_j = \sum^n_i \mathbf{F}_i^A \cdot \frac{\partial \mathbf{\bar{r}}_i}{\partial q_j}$ can be partitioned into a conservative velocity-independent term, that can be expressed in terms of the gradient of a scalar potential, $-\nabla U_i$, plus an excluded generalized force $Q^{EX}_j$ which contains the non-conservative, velocity-dependent, and all the constraint forces not explicitly included in the potential $U_j$. That is,
 
 $$
-Q_j = -\nabla U_j + Q_j^{EX} 
+Q_j = -\nabla U_j + Q_j^{EX} \tag{6.41}
 $$
 
-Inserting \ref{6.41} into \ref{6.38}, and *assuming that the potential* $U$ *is velocity independent*, allows \ref{6.38} to be rewritten as
+Inserting \text{(6.41)} into \text{(6.38)}, and *assuming that the potential* $U$ *is velocity independent*, allows \text{(6.38)} to be rewritten as
 
 $$
-\sum_{j} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial (T - U)}{\partial \dot{q} _{j}}\right) -\frac{\partial (T - U)}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0
+\sum_{j} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial (T - U)}{\partial \dot{q} _{j}}\right) -\frac{\partial (T - U)}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0\tag{6.42}
 $$
 
 Expressed in terms of the standard Lagrangian $L = T - U$ this gives
 
 $$
-\sum_{j}^{N} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q} _{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0
+\sum_{j}^{N} \left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q} _{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EX} \right] \delta q_{j}=0\tag{6.44}
 $$
 
-Note that Equation \ref{6.44} contains the basic Euler-Lagrange Equation \ref{6.38} for the special case when $U = 0$. In addition, note that *if all the generalized coordinates are independent*, then the square bracket terms are zero for each value of $j$, which leads to the $n$ *general Euler-Lagrange equations of motion*
+Note that Equation \text{(6.44)} contains the basic Euler-Lagrange Equation \text{(6.38)} for the special case when $U = 0$. In addition, note that *if all the generalized coordinates are independent*, then the square bracket terms are zero for each value of $j$, which leads to the $n$ *general Euler-Lagrange equations of motion*
 
 $$
-\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q} _{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} = Q_{j}^{EX} 
+\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q} _{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} = Q_{j}^{EX} \tag{6.45}
 $$
 
 where $n \geq j \geq 1$. Newtonian mechanics has trouble handling constraint forces because they lead to coupling of the degrees of freedom. Lagrangian mechanics is more powerful since it provides the following three ways to handle such correlated motion.
 
 #### 1) Minimal set of generalized coordinates
 
-If the $n$ coordinates $q_j$ are independent, then the square bracket equals zero for each value of $j$ in Equation \ref{6.44}, which corresponds to Euler’s equation for each of the $n$ independent coordinates. If the $n$ generalized coordinates are coupled by $m$ constraints, then the coordinates can be transformed to a minimal set of $s = n − m$ independent coordinates which then can be solved by applying Equation \ref{6.45} to the minimal set of $s$ independent coordinates.
+If the $n$ coordinates $q_j$ are independent, then the square bracket equals zero for each value of $j$ in Equation \text{(6.44)}, which corresponds to Euler’s equation for each of the $n$ independent coordinates. If the $n$ generalized coordinates are coupled by $m$ constraints, then the coordinates can be transformed to a minimal set of $s = n − m$ independent coordinates which then can be solved by applying Equation \text{(6.45)} to the minimal set of $s$ independent coordinates.
 
 #### 2) Lagrange multipliers approach
 
@@ -1578,23 +1754,23 @@ where the velocity-independent conservative forces can be absorbed into a scalar
 Combining the above two equations gives
 
 $$
-\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EXC}-\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)\right] \delta q_{j}=0 
+\sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EXC}-\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)\right] \delta q_{j}=0 \tag{6.56}
 $$
 
 Use of the Lagrange multipliers to handle the $m$ constraint forces ensures that all $n$ infinitessimals $\delta q_{j}$ are independent implying that the expression in the square bracket must be zero for each of the $n$ values of $j$. This leads to $n$ Lagrange equations plus $m$ constraint relations
 
 $$
-\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t) 
+\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t) \tag{6.60}
 $$
 
 where $j = 1,2,3, \dots n.$
 
 #### 3) Generalized forces approach
 
-The two right-hand terms in \ref{6.60-2} can be understood to be those forces acting on the system that are not absorbed into the scalar potential $U$ component of the Lagrangian $L$. The Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ account for the holonomic forces of constraint that are not included in the conservative potential or in the generalized forces $Q_j^{EXC}$. The generalized force
+The two right-hand terms in \text{(6.60)} can be understood to be those forces acting on the system that are not absorbed into the scalar potential $U$ component of the Lagrangian $L$. The Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)$ account for the holonomic forces of constraint that are not included in the conservative potential or in the generalized forces $Q_j^{EXC}$. The generalized force
 
 $$
-Q^{EXC}_j = \sum^{n}_i \mathbf{F}^A_i \cdot \frac{\partial \mathbf{r}_i}{\partial p_j} 
+Q^{EXC}_j = \sum^{n}_i \mathbf{F}^A_i \cdot \frac{\partial \mathbf{r}_i}{\partial p_j} \tag{6.17}
 $$
 
 is the sum of the components in the $q_j$ direction for all external forces that have not been taken into account by the scalar potential or the Lagrange multipliers. Thus the non-conservative generalized force $Q^{EXC}_j$ contains non-holonomic constraint forces, including dissipative forces such as drag or friction, that are not included in $U$, or used in the Lagrange multiplier terms to account for the holonomic constraint forces.
@@ -1604,15 +1780,19 @@ is the sum of the components in the $q_j$ direction for all external forces that
 The optimal way to exploit Lagrangian mechanics is as follows:
 
 1. Select a set of independent generalized coordinates.
+
 2. Partition the active forces into three groups:
 
-Conservative one-body forces
+   1. Conservative one-body forces
 
-Holonomic constraint forces
+   2. Holonomic constraint forces
 
-Generalized forces
+   3. Generalized forces
+
 3. Minimize the number of generalized coordinates.
+
 4. Derive the Lagrangian
+
 5. Derive the equations of motion
 
 #### Velocity-dependent Lorentz force:
@@ -1620,7 +1800,7 @@ Generalized forces
 Usually velocity-dependent forces are non-holonomic. However, electromagnetism is a special case where the velocity-dependent Lorentz force $\mathbf{F}=q(\mathbf{E}+\mathbf{v\times B})$ can be obtained from a velocity-dependent potential function $U(q,\overset{.}{q},t)$. It was shown that the velocity-dependent potential
 
 $$
-U=q\Phi -q\mathbf{v}\cdot \mathbf{A} 
+U=q\Phi -q\mathbf{v}\cdot \mathbf{A} \tag{6.74} \label{eq-6-74}
 $$
 
 leads to the Lorentz force where $\Phi$ is the scalar electric potential and $\mathbf{A}$ the vector potential.
@@ -1633,7 +1813,7 @@ It was shown that time-dependent forces can lead to complicated motion having bo
 
 A generalized impulse $\tilde{Q}_{j}$ can be derived for an instantaneous impulsive force from the time integral of the impulsive forces $\mathbf{P} _{i}$ given by equation $(3.12.49)$ using the time integral of equation $(7.2.13)$, that is 
 $$
-\Delta p_{j}=\tilde{Q}_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \equiv \lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\sum_{i} \mathbf{F}_{i}^\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}d\tau =\sum_{i}\mathbf{\tilde{P}}_{i}^\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}} 
+\Delta p_{j}=\tilde{Q}_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau \equiv \lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\sum_{i} \mathbf{F}_{i}^\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}d\tau =\sum_{i}\mathbf{\tilde{P}}_{i}^\cdot \frac{\partial \mathbf{r}_{i}}{ \partial q_{j}} \tag{6.79}
 $$
 
 Note that the generalized impulse $\tilde{Q}_{j}$ can be a translational impulse $\mathbf{\tilde{P}}_{j}$ with corresponding translational variable $q_{j}$ or an angular impulsive torque $\mathbf{\tilde{T}}_{j}$ with corresponding angular variable $\phi _{j}$.

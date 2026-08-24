@@ -24,6 +24,7 @@ project:
   numbering:
     heading_2: false
     heading_3: false
+    equation: false
   toc:
     - file: index.md
     - file: front/preface.md

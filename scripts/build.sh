@@ -6,4 +6,4 @@ if [ ! -f outline.json ] || [ "${FORCE_CRAWL:-}" = "1" ]; then
   python3 scripts/crawl_libretexts.py
 fi
 python3 scripts/build_book.py
-python3 scripts/fix_myst_warnings.py
+python3 scripts/resolve_references.py

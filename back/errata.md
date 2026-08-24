@@ -18,14 +18,16 @@ corrected here for readability and correctness.
 
 These were artifacts of the automated HTML → MyST conversion, not the
 underlying textbook content. The `_table()` method in `scripts/html_to_myst.py`
-built table cells with `self._inline(td)`, which converts `<br>` to a literal
-newline, and the page-level `normalize_inline_math()` pass converted any
-`\[...\]` display math to a multi-line ` $$ ` block wherever it occurred —
+originally built table cells with `self._inline(td)`, which converts `<br>` to
+a literal newline, and the page-level `normalize_inline_math()` pass converted
+any `\[...\]` display math to a multi-line ` $$ ` block wherever it occurred —
 including inside table cells. Markdown pipe tables require one physical line
 per row, so any cell containing a `<br>` or block math broke the table into
-malformed extra rows. The generator (`_table()`/`_table_cell_text()`) has been
-patched to force inline math and `<br>`-join multi-line cell content so this
-does not recur on the next `npm run convert`.
+malformed extra rows. `_table()` has since been rewritten to force inline math
+and collapse multi-line cell content onto one physical line, rendering as a
+pipe table when every cell fits on one line and as a `list-table` directive
+(which tolerates richer cell content) otherwise, so this does not recur on the
+next `npm run convert`.
 
 - **`back/glossary.md`** — the entire glossary table (all 87 entries) was
   broken below the first entry that contained a formula. Eleven entries
@@ -45,13 +47,15 @@ does not recur on the next `npm run convert`.
   first glossary entry.
 - **`chapters/ch-15-advanced-hamiltonian-mechanics.md`** — Table 15.1
   (Hamilton–Jacobi summary table): three cells that each contain two stacked
-  equations were splitting the table; joined with `<br>`.
+  equations were splitting the table; now renders as a `list-table` with
+  each cell's equations collapsed onto one line.
 - **`chapters/ch-19-mathematical-methods-for-classical-mechanics.md`** — four
   tables of curvilinear-coordinate formulas (polar, cylindrical, spherical,
   and the Frenet–Serret/arc-length table) had "Unit vectors" and "Time
   derivatives of unit vectors" cells with 2–3 stacked equations each, and one
   cell containing a 3×3 rotation-matrix equation spread across ~14 lines with
-  blank-line padding; all joined onto single lines with `<br>` separators.
+  blank-line padding; all now render as `list-table` directives with each
+  cell's equations collapsed onto one line.
 - **`chapters/ch-13-rigid-body-rotation.md`** — a garbled aligned equation
   block for the perturbed Euler equations (§13.22): `\$I_3 − I_1)` should
   read `(I_3 − I_1)`, and a stray `\\(` between the second and third lines
@@ -63,41 +67,40 @@ does not recur on the next `npm run convert`.
   t}$), `chapters/ch-04-nonlinear-systems-and-chaos.md` ($n\to\infty$),
   `chapters/ch-11-conservative-two-body-central-forces.md` ($\mathbf{r}$),
   `chapters/ch-06-lagrangian-dynamics.md` ($F_{q_i}^{EXC}$).
-- **Duplicated words** from the source text, corrected in 13 places across
-  chapters 3, 5 (×2), 6, 7, 8, 11 (×2), 12 (×3), 13 (×2), 15, and 16 — e.g.
-  "the the", "to to", "it it", "frame frame", "equation Equation".
+- **Duplicated words** from the source text, corrected in 14 places across
+  chapters 3, 5 (×2), 6, 7, 8, 11 (×2), 12 (×4, including a figure `alt` text
+  that duplicated its caption), 13 (×2), 15, and 16 — e.g. "the the", "to to",
+  "it it", "frame frame", "equation Equation".
 
-## Unresolved broken cross-references
+## Broken cross-references
 
-Four `\ref{...}` citations in the text do not resolve to any `\label{...}` in
-the book (found by cross-checking all 602 `\ref` uses against all defined
-labels). These come from LibreTexts end-of-chapter "review" sections, which
-restate results using the *original* PDF's equation numbering scheme without
-re-attaching `\label` tags to the restated equations. Reconstructing the
-intended target requires reproducing the original book's equation-numbering
-sequence, which is not reliably inferable from the converted text alone, so
-these are left as-is rather than guessed:
-
-- `chapters/ch-13-rigid-body-rotation.md` — `\ref{13.103}` (chapter summary,
-  "Euler equations of motion for rigid-body motion"); most likely intends the
-  Lagrangian-derived Euler's equations trio in §13.17.
-- `chapters/ch-07-symmetries-invariance-and-the-hamiltonian.md` —
-  `\ref{7.38}` (chapter summary, "the bracket in Equation 7.38 is zero");
-  most likely intends the generalized energy theorem in §7.8.
-- `chapters/ch-09-hamiltons-action-principle.md` — `\ref{9.2}` ("the
-  Lagrangian is defined in terms of Hamilton's variational action principle
-  using Equation 9.2"); most likely intends the action integral
-  $S_A=\int L\,dt$ near the start of the chapter.
-- `chapters/ch-08-hamiltonian-mechanics.md` — `\ref{a}` (alongside a working
-  `\ref{8-c}`), for one line of a worked spherical-pendulum example.
-
-One resolvable case *was* fixed: `\ref{7.37}` (used in
+An audit of the original equation cross-reference macros found five citations
+that did not resolve to a defined target, from LibreTexts end-of-chapter
+"review" sections that restate results using the *original* PDF's equation
+numbering without re-attaching a label to the restated equations. One was
+fixed here directly: the citation to equation 7.37 (used in
 `chapters/ch-09-hamiltons-action-principle.md` for "Jacobi's Generalized
 Energy ... was defined in Equation 7.37") pointed at an equation in
 `chapters/ch-07-symmetries-invariance-and-the-hamiltonian.md` that had lost
 its label; the definition of $h(\mathbf{q},\dot{\mathbf{q}},t)$ in §7.7 is the
-only equation in the book matching that description, so `\label{7.37}` was
+only equation in the book matching that description, so the label was
 restored there.
+
+The book's subsequent full renumbering pass (which replaced the old
+cross-reference macros throughout with resolved MyST links) independently
+reconstructed the three other citations this pass had left unresolved —
+equation 13.103 (`chapters/ch-13-rigid-body-rotation.md`), equation 7.38
+(`chapters/ch-07-symmetries-invariance-and-the-hamiltonian.md`), and equation
+9.2 (`chapters/ch-09-hamiltons-action-principle.md`) all now link correctly.
+
+One case remains unresolved:
+
+- `chapters/ch-08-hamiltonian-mechanics.md` — "Equation (a)" (line ~475,
+  alongside a working link to equation `c`) has no equation tagged `(a)`
+  defined nearby in that worked example; the nearest similarly-tagged
+  equation (`eq-8-a1`) belongs to a different worked example later in the
+  chapter, so it isn't a safe fix. Left as plain text pending someone with
+  the source PDF confirming the intended target.
 
 ## Original-text corrections (fixed, tracked here)
 

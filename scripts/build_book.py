@@ -12,8 +12,16 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config import HTML_CACHE, IMAGES, OUTLINE, ROOT, USER_AGENT
+from config import BUILD, HTML_CACHE, IMAGES, OUTLINE, ROOT, USER_AGENT
 from html_to_myst import HtmlToMyst, slugify
+
+SECTION_NUM_RE = re.compile(r"^(\d+\.[0-9A-Za-z]+)\s*:")
+
+
+def section_number(title: str) -> str | None:
+    """"5.2: Euler's Differential Equation" -> "5.2"."""
+    m = SECTION_NUM_RE.match(title.strip())
+    return m.group(1) if m else None
 
 FRONT_SKIP = {
     "titlepage",
@@ -85,6 +93,7 @@ def convert_section(
     conv = HtmlToMyst(
         page_url=section["url"],
         chapter_num=chapter_num,
+        section_num=section_number(section["title"]),
         image_dir=Path(IMAGES),
         image_url_prefix="../images",
         image_map=image_map,
@@ -106,10 +115,11 @@ def write_chapter(ch: dict, image_map: dict) -> list:
     num = ch["number"]
     title = f"{num}. {ch['title']}"
     label = ch["slug"]
+    # A MyST target labels what *follows* it, so it has to precede the H1.
     parts = [
         front_matter(title, f"Chapter {num}", label),
-        f"# {title}\n",
         f"(ch-{num})=\n",
+        f"# {title}\n",
     ]
     pending: list = []
     for sec in ch["sections"]:
@@ -207,7 +217,7 @@ npm run start
 
 ## Table of contents
 
-::::{{toc}}
+:::{{toc}}
 :context: project
 :::
 """
@@ -230,7 +240,7 @@ def write_myst_yml(outline: dict) -> None:
         "    - name: Douglas Cline",
         "      affiliations:",
         "        - institution: University of Rochester",
-        "  date: 2021",
+        "  date: 2021-08-19",
         "  license:",
         "    content: CC-BY-NC-SA-4.0",
         "  open_access: true",
@@ -243,6 +253,10 @@ def write_myst_yml(outline: dict) -> None:
         "  numbering:",
         "    heading_2: false",
         "    heading_3: false",
+        # The book numbers its own equations; those numbers are carried through
+        # as \tag{}. Auto-numbering would renumber every display equation from
+        # 1 per page — including the ones marked \notag.
+        "    equation: false",
         "  toc:",
         "    - file: index.md",
     ]
@@ -289,7 +303,8 @@ def main() -> None:
     write_index(outline)
     write_myst_yml(outline)
     # persist image map for reruns
-    Path(ROOT, "build", "image_map.json").write_text(
+    Path(BUILD).mkdir(parents=True, exist_ok=True)
+    Path(BUILD, "image_map.json").write_text(
         json.dumps(image_map, indent=2), encoding="utf-8"
     )
     print(f"Done. {len(image_map)} images mapped.")
