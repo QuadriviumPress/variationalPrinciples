@@ -661,7 +661,7 @@ $$
 L_{\alpha} = \frac{1}{2} m\dot{\alpha}^2 − \frac{1}{2} (k + \eta ) \alpha^2 L_{\beta} = \frac{1}{2} m\dot{\beta}^2 − \frac{1}{2} (k − \eta ) \beta^2 \nonumber
 $$
 
-This shows that that the transformation has separated the system into two normal modes that are harmonic oscillators with angular frequencies
+This shows that the transformation has separated the system into two normal modes that are harmonic oscillators with angular frequencies
 
 $$
 \omega_1 = \sqrt{\frac{k + \eta}{ m}} \quad \omega_2 = \sqrt{\frac{k − \eta}{ m}} \nonumber

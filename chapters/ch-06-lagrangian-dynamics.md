@@ -1689,7 +1689,7 @@ $$
 \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{i}}-\frac{\partial L}{ \partial q_{i}}=\sum_{k}^{m}\lambda _{k}\left( t\right) \frac{\partial g_{k} }{\partial q_{i}}+F_{q_{i}}^{EXC}\tag{6.15}
 $$
 
-where the Lagrange multiplier term accounts for holonomic constraint forces, and $F_{q_{i}}^{EXC}$ includes all additional forces not accounted for by the scalar potential $U$, or the Lagrange multiplier terms $F_{q_{i}}^{HC}$. The constraint forces can be included explicitly as generalized forces in the excluded term $F_{q_{i}}^{EXC}\$ of Equation \text{(6.15)}.
+where the Lagrange multiplier term accounts for holonomic constraint forces, and $F_{q_{i}}^{EXC}$ includes all additional forces not accounted for by the scalar potential $U$, or the Lagrange multiplier terms $F_{q_{i}}^{HC}$. The constraint forces can be included explicitly as generalized forces in the excluded term $F_{q_{i}}^{EXC}$ of Equation \text{(6.15)}.
 
 #### d’Alembert’s Principle
 
@@ -1749,7 +1749,7 @@ $$
 Q_{j}=-\nabla U+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC} \nonumber
 $$
 
-where the velocity-independent conservative forces can be absorbed into a scalar potential $U$, the holonomic constraint forces can be handled using the Lagrange multiplier term $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k} }{\partial q_{j}}(\mathbf{q},t)$, and the remaining part of the active forces can be absorbed into the generalized force $Q_{j}^{EXC}$. The scalar potential energy $U$ is handled by absorbing it into the standard Lagrangian $L=T-U$. If the constraint forces are holonomic then these forces are easily and elegantly handled by use of Lagrange multipliers. All remaining forces, including dissipative forces, can be handled by including them explicitly in the the generalized force $Q_{j}^{EXC}$.
+where the velocity-independent conservative forces can be absorbed into a scalar potential $U$, the holonomic constraint forces can be handled using the Lagrange multiplier term $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k} }{\partial q_{j}}(\mathbf{q},t)$, and the remaining part of the active forces can be absorbed into the generalized force $Q_{j}^{EXC}$. The scalar potential energy $U$ is handled by absorbing it into the standard Lagrangian $L=T-U$. If the constraint forces are holonomic then these forces are easily and elegantly handled by use of Lagrange multipliers. All remaining forces, including dissipative forces, can be handled by including them explicitly in the generalized force $Q_{j}^{EXC}$.
 
 Combining the above two equations gives
 

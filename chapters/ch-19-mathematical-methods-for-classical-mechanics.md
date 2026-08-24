@@ -907,7 +907,7 @@ The three dimensional spherical coordinates, can be treated the same way as for 
 * - Volume element
   - $dv = r^2 \sin \theta drd\theta d\phi$
 * - Unit vectors
-  - $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \cos \phi + \mathbf{\hat{k}} \cos \theta$ $\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$ $\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$
+  - $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \sin \phi + \mathbf{\hat{k}} \cos \theta$ $\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$ $\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$
 * - Time derivatives of unit vectors
   - $\frac{d\mathbf{\hat{r}}}{dt} = \boldsymbol{\hat{\theta}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \sin \theta$ $\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\mathbf{\hat{r}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \cos \theta$ $\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\mathbf{\hat{r}}\dot{\phi}\sin \theta - \boldsymbol{\hat{\theta}} \dot{\phi} \cos \theta$
 * - Velocity
@@ -950,11 +950,11 @@ The curvature $\kappa = \frac{1}{ \rho}$ where $\rho$ is the radius of curvature
 
 ::::{list-table}
 * - Distance element
-  - $d\mathbf{s}(t) = \mathbf{\hat{t}} \left| \frac{d\mathbf{r}(t)}{dt} \right| dt = \mathbf{\hat{t}} v(t) dt$
+  - $d\mathbf{s}(t) = \mathbf{\hat{t}} \left\| \frac{d\mathbf{r}(t)}{dt} \right\| dt = \mathbf{\hat{t}} v(t) dt$
 * - Unit vectors
-  - $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left| v(t) \right|}$ $\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left| \mathbf{d\hat{t}}/dt \right|}$ $\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$
+  - $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left\| v(t) \right\|}$ $\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left\| \mathbf{d\hat{t}}/dt \right\|}$ $\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$
 * - Time derivatives of unit vectors
-  - $\frac{d}{d t} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix} =|v|\begin{pmatrix} 0 & \kappa & 0 \\ -\kappa & 0 & \tau \\ 0 & -\tau & 0 \end{pmatrix} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix}$
+  - $\frac{d}{d t} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix} =\|v\|\begin{pmatrix} 0 & \kappa & 0 \\ -\kappa & 0 & \tau \\ 0 & -\tau & 0 \end{pmatrix} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix}$
 * - Velocity
   - $\mathbf{v} (t) = \frac{d\mathbf{r}(t)}{dt}$
 * - Acceleration

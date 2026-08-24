@@ -1063,7 +1063,7 @@ $$
 
    $b<r$
 
-   use the Lagrangian approach to to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for
+   use the Lagrangian approach to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for
 
    $L$
 
