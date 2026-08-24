@@ -5,9 +5,9 @@ label: ch-05-calculus-of-variations
 ---
 
 
-# 5. Calculus of Variations
-
 (ch-5)=
+
+# 5. Calculus of Variations
 
 ## 5.1: Introduction to the Calculus of Variations
 
@@ -37,35 +37,35 @@ $$
 F=\int_{x_{1}}^{x_{2}}f\left[ y(x),y^{\prime }(x);x\right] dx
 $$
 
-Here $x$ is the independent variable, $y(x)$ the dependent variable, plus its first derivative $y^{\prime }\equiv \frac{dy}{dx}$. The quantity $f\left[ y(x),y^{\prime }(x);x\right]$ has some given dependence on $y,y^{\prime }$ and $x.$ The calculus of variations involves varying the function $y(x)$ until a stationary value of $F$ is found, which is presumed to be an extremum. This means that if a function $y=y(x)$ gives a minimum value for the scalar functional $F$, then any neighboring function, no matter how close to $y(x),$ must increase $F$. For all paths, the integral $F$ is taken between two fixed points, $x_{1},y_{1}$ and $x_{2},y_{2}$. Possible paths between the initial and final points are illustrated in Figure 5.1. Relative to any neighboring path, the functional $F$ must have a stationary value which is presumed to be the correct extremum path.
+Here $x$ is the independent variable, $y(x)$ the dependent variable, plus its first derivative $y^{\prime }\equiv \frac{dy}{dx}$. The quantity $f\left[ y(x),y^{\prime }(x);x\right]$ has some given dependence on $y,y^{\prime }$ and $x.$ The calculus of variations involves varying the function $y(x)$ until a stationary value of $F$ is found, which is presumed to be an extremum. This means that if a function $y=y(x)$ gives a minimum value for the scalar functional $F$, then any neighboring function, no matter how close to $y(x),$ must increase $F$. For all paths, the integral $F$ is taken between two fixed points, $x_{1},y_{1}$ and $x_{2},y_{2}$. Possible paths between the initial and final points are illustrated in [Figure 5.2.1](#fig-5-2-1). Relative to any neighboring path, the functional $F$ must have a stationary value which is presumed to be the correct extremum path.
 
 Define a neighboring function using a parametric representation $y(\epsilon ,x),$ such that for $\epsilon =0$, $y=y(0,x)=y(x)$ is the function that yields the extremum for $F$. Assume that an infinitesimally small fraction $\epsilon$ of the neighboring function $\eta (x)$ is added to the extremum path $y(x)$. That is, assume
 
 $$
-\begin{align} y(\epsilon ,x) & = y(0,x)+\epsilon \eta (x) \label{5.4} \\[4pt] y^{\prime }(\epsilon ,x) & \equiv \frac{dy(\epsilon ,x)}{dx}=\frac{dy(0,x)}{ dx}+\epsilon \frac{d\eta }{dx} \notag\end{align}
+\begin{align} y(\epsilon ,x) & = y(0,x)+\epsilon \eta (x) \tag{5.4} \label{eq-5-4} \\[4pt] y^{\prime }(\epsilon ,x) & \equiv \frac{dy(\epsilon ,x)}{dx}=\frac{dy(0,x)}{ dx}+\epsilon \frac{d\eta }{dx} \notag\end{align}
 $$
 
-where it is assumed that the extremum function $y(0,x)$ and the auxiliary function $\eta (x)$ are well behaved functions of $x$ with continuous first derivatives, and where $\eta (x)$ vanishes at $x_{1}$ and $x_{2},$ because, for all possible paths, the function $y(\epsilon ,x)$ must be identical with $y(x)$ at the end points of the path, i.e. $\eta (x_{1})=\eta (x_{2})=0$. The situation is depicted in Figure 5.1. It is possible to express any such parametric family of curves $F$ as a function of $\epsilon$
+where it is assumed that the extremum function $y(0,x)$ and the auxiliary function $\eta (x)$ are well behaved functions of $x$ with continuous first derivatives, and where $\eta (x)$ vanishes at $x_{1}$ and $x_{2},$ because, for all possible paths, the function $y(\epsilon ,x)$ must be identical with $y(x)$ at the end points of the path, i.e. $\eta (x_{1})=\eta (x_{2})=0$. The situation is depicted in [Figure 5.2.1](#fig-5-2-1). It is possible to express any such parametric family of curves $F$ as a function of $\epsilon$
 
 $$
-F(\epsilon )=\int_{x_{1}}^{x_{2}}f\left[ y(\epsilon ,x),y^{\prime }(\epsilon ,x);x\right] dx \label{5.5}
+F(\epsilon )=\int_{x_{1}}^{x_{2}}f\left[ y(\epsilon ,x),y^{\prime }(\epsilon ,x);x\right] dx \tag{5.5} \label{eq-5-5}
 $$
 
 The condition that the integral has a stationary (extremum) value is that $F$ be independent of $\epsilon$ to first order along the path. That is, the extremum value occurs for ($\epsilon =0$) where
 
 $$
-\left( \frac{dF}{d\epsilon }\right) _{\epsilon =0}=0 \label{5.6}
+\left( \frac{dF}{d\epsilon }\right) _{\epsilon =0}=0 \tag{5.6} \label{eq-5-6}
 $$
 
-for all functions $\eta (x).$ This is illustrated on the right side of Figure 5.1.
+for all functions $\eta (x).$ This is illustrated on the right side of [Figure 5.2.1](#fig-5-2-1).
 
-Applying condition \ref{5.6} to Equation \ref{5.5}, and since $x$ is independent of $\epsilon ,$ then
+Applying condition [5.6](#eq-5-6) to Equation [5.5](#eq-5-5), and since $x$ is independent of $\epsilon ,$ then
 
 $$
-\frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\left( \frac{ \partial f}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial f }{\partial y^{\prime }}\frac{\partial y^{\prime }}{\partial \epsilon } \right) dx=0 \label{5.7}
+\frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\left( \frac{ \partial f}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial f }{\partial y^{\prime }}\frac{\partial y^{\prime }}{\partial \epsilon } \right) dx=0 \tag{5.7} \label{eq-5-7}
 $$
 
-Since the limits of integration are fixed, the differential operation affects only the integrand. From equations \ref{5.4}, 
+Since the limits of integration are fixed, the differential operation affects only the integrand. From equations [5.4](#eq-5-4), 
 $$
 \frac{\partial y}{\partial \epsilon }=\eta (x)
 $$
@@ -81,9 +81,11 @@ $$
 $$
 
 :::{figure} ../images/lt-21142-5.2.1.png
-:alt: 5.2.1.PNG
+:label: fig-5-2-1
+:enumerator: 5.2.1
+:alt: The left shows the extremum y(x) and neighboring paths y(\epsilon, x) = y(x) + \epsilon \eta (x) between (x_1, y_1) and (x_2, y_2) that minimizes the function F = \int^{x_2}_{x_1} f[y(x), y^{\prime}(x); x] dx. The right shows the dependence of F as a function of the admixture coefficient \epsilon…
 
-$1$: The left shows the extremum $y(x)$ and neighboring paths $y(\epsilon, x) = y(x) + \epsilon \eta (x)$ between $(x_1, y_1)$ and $(x_2, y_2)$ that minimizes the function $F = \int^{x_2}_{x_1} f[y(x), y^{\prime}(x); x] dx$. The right shows the dependence of $F$ as a function of the admixture coefficient $\epsilon$ for a maximum (upper) or a minimum (lower) at $\epsilon = 0$.
+The left shows the extremum $y(x)$ and neighboring paths $y(\epsilon, x) = y(x) + \epsilon \eta (x)$ between $(x_1, y_1)$ and $(x_2, y_2)$ that minimizes the function $F = \int^{x_2}_{x_1} f[y(x), y^{\prime}(x); x] dx$. The right shows the dependence of $F$ as a function of the admixture coefficient $\epsilon$ for a maximum (upper) or a minimum (lower) at $\epsilon = 0$.
 :::
 
 Integrate by parts
@@ -102,7 +104,7 @@ $$
 \begin{align*} \frac{\partial F}{\partial \epsilon } &=\int_{x_{1}}^{x_{2}}\left( \frac{ \partial f}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial f }{\partial y^{\prime }}\frac{\partial y^{\prime }}{\partial \epsilon } \right) dx \\[4pt] &=\int_{x_{1}}^{x_{2}}\left( \frac{\partial f}{\partial y}\eta (x)-\eta (x)\frac{d}{dx}\left( \frac{\partial f}{\partial y^{\prime }} \right) \right) dx \end{align*}
 $$
 
-Thus Equation \ref{5.7} reduces to
+Thus Equation [5.7](#eq-5-7) reduces to
 
 $$
 \frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\left( \frac{ \partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }} \right) \eta (x)dx
@@ -124,14 +126,17 @@ where $y$ and $y^{\prime }$ are the original functions, independent of $\epsilon
 
 ## 5.3: Applications of Euler’s Equation
 
-Example 5.1: Shortest distance between two points
+::::{admonition} Example 5.3.1: Shortest distance between two points
+:class: example
 
 Consider the path lies in the $\mathit{x-y}$ plane.
 
 :::{figure} ../images/lt-21141-5.3.1.png
-:alt: 5.3.1.PNG
+:label: fig-5-3-1
+:enumerator: 5.3.1
+:alt: Shortest distance between two points in a plane.
 
-$1$: Shortest distance between two points in a plane.
+Shortest distance between two points in a plane.
 :::
 
 The infinitessimal length of arc is
@@ -190,15 +195,19 @@ $$
 which is the equation of a straight line in the plane. Thus the shortest path between two points in a plane is a straight line between these points, as is intuitively obvious. This stationary value obviously is a minimum.
 
 This trivial example of the use of Euler’s equation to determine an extremum value has given the obvious answer. It has been presented here because it provides a proof that a straight line is the shortest distance in a plane and illustrates the power of the calculus of variations to determine extremum paths.
+::::
 
-Example 5.2: Brachistochrone problem
+::::{admonition} Example 5.3.2: Brachistochrone problem
+:class: example
 
 The Brachistochrone problem involves finding the path having the minimum transit time between two points. The Brachistochrone problem stimulated the development of the calculus of variations by John Bernoulli and Euler. For simplicity, take the case of frictionless motion in the $x-y$ plane with a uniform gravitational field acting in the $\widehat{\mathbf{y}}$ direction, as shown in the adjacent figure. The question is what constrained path will result in the minimum transit time between two points $(x_{1}y_{1})$ and $(x_{2}y_{2}).$
 
 :::{figure} ../images/lt-21140-5.3.2.png
-:alt: 5.3.2.PNG
+:label: fig-5-3-2
+:enumerator: 5.3.2
+:alt: The Bachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
 
-$2$: The Bachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
+The Bachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
 :::
 
 Consider that the particle of mass $m$ starts at the origin $x_{1} = 0,y_{1} = 0$ with zero velocity. Since the problem conserves energy and assuming that initially $E = KE+PE = 0$ then
@@ -277,8 +286,10 @@ $$
 which is the form of the solution found. That is, the shortest time between two points is obtained by constraining the motion of the mass to follow a cycloid shape. Thus the mass first accelerates rapidly by falling down steeply and then follows the curve and coasts upward at the end. The elapsed time is obtained by inserting the above parametric relations for $x$ and $y,$ in terms of $\theta ,$ into the transit time integral giving $t = \sqrt{\frac{a}{g}}\theta$ where$\ a$ and $\theta$ are fixed by the end point coordinates. Thus the time to fall from starting with zero velocity at the cusp to the minimum of the cycloid is $\pi \sqrt{\frac{a}{g}}.$ If $y_{2} = y_{1} = 0$ then $x_{2} = 2\pi a$ which defines the shape of the cycloid and the minimum time is $2\pi \sqrt{\frac{a}{g}} = \sqrt{ \frac{2\pi x_{2}}{g}}.$ If the mass starts with a non-zero initial velocity, then the starting point is not at the cusp of the cycloid, but down a distance $d$ such that the kinetic energy equals the potential energy difference from the cusp.
 
 A modern application of the Brachistochrone problem is determination of the optimum shape of the low-friction emergency chute that passengers slide down to evacuate a burning aircraft. Bernoulli solved the problem of rapid evacuation of an aircraft two centuries before the first flight of a powered aircraft.
+::::
 
-Example 5.3: Minimal travel cost
+::::{admonition} Example 5.3.3: Minimal travel cost
+:class: example
 
 Assume that the cost of flying an aircraft at height $z$ is $e^{-\kappa z}$ per unit distance of flight-path, where $\kappa$ is a positive constant. Consider that the aircraft flies in the $(x,z)$-plane from the point $(-a,0)$ to the point $(a,0)$ where $z = 0$ corresponds to ground level, and where the $z$-axis points vertically upwards. Find the extremal for the problem of minimizing the total cost of the journey.
 
@@ -343,19 +354,23 @@ z(x) = \frac{1}{\kappa }\ln \left( \frac{\cos (\kappa x)}{\cos (\kappa a)} \righ
 $$
 
 This example is typical of problems encountered in economics.
+::::
 
 ## 5.4: Selection of the Independent Variable
 
 A wide selection of variables can be chosen as the independent variable for variational calculus. The derivation of Euler’s equation and example ($5.3.1$) both assumed that the independent variable is $x,$ whereas example ($5.3.2$) used $y$ as the independent variable, example ($5.3.3$) used $z$, and Lagrange mechanics uses time $t$ as the independent variable. Selection of which variable to use as the independent variable does not change the physics of a problem, but some selections can simplify the mathematics for obtaining an analytic solution. The following example of a cylindrically-symmetric soap-bubble surface formed by blowing a soap bubble that stretches between two circular hoops, illustrates the importance when selecting the independent variable.
 
-Example 5.1: Surface area of a cylindrically-symmetric soap bubble
+::::{admonition} Example 5.4.1: Surface area of a cylindrically-symmetric soap bubble
+:class: example
 
 Consider a cylindrically-symmetric soap-bubble surface formed by blowing a soap bubble that stretches between two circular hoops. The surface energy, that results from the surface tension of the soap bubble, is minimized when the surface area of the bubble is minimized. Assume that the axes of the two hoops lie along the $z$ axis as shown in the adjacent figure. It is intuitively obvious that the soap bubble having the minimum surface area that is bounded by the two hoops will have a circular cross section that is concentric with the symmetry axis, and the radius will be smaller between the two hoops. Therefore, intuition can be used to simplify the problem to finding the shape of the contour of revolution around the axis of symmetry that defines the shape of the surface of minimum surface area. Use cylindrical coordinates $(\rho ,\theta ,z)$ and assume that hoop $1$ at $z_{1}$ has radius $\rho _{1}$ and hoop $2$ at $z_{2}$ has radius $\rho _{2}$. Consider the cases where either $\rho$, or $z$, are selected to be the independent variable.
 
 :::{figure} ../images/lt-21139-5.4.1.png
-:alt: 5.4.1.PNG
+:label: fig-5-4-1
+:enumerator: 5.4.1
+:alt: Cylindrically-symmetric surface formed by rotation about the z axis of a soap bubble suspended between two identical hoops centred on the z axis.
 
-$1$: Cylindrically-symmetric surface formed by rotation about the $z$ axis of a soap bubble suspended between two identical hoops centred on the $z$ axis.
+Cylindrically-symmetric surface formed by rotation about the $z$ axis of a soap bubble suspended between two identical hoops centred on the $z$ axis.
 :::
 
 The differential arc-length element of the circular annulus at constant $\theta$ between $z$ and $z+dz$ is given by $ds=\sqrt{dz^{2}+d\rho ^{2}}$. Therefore the area of the infinitessimal circular annulus is $dS=2\pi \rho ds$ which can be integrated to give the area of the surface $S$ of the soap bubble bounded by the two circular hoops as 
@@ -378,6 +393,7 @@ $$
 $$
 
 which is the equation of a catenary. The catenary is the shape of a uniform flexible cable hung in a uniform gravitational field. The constants $a$ and $b$ are given by the end points. The physics of the solution must be identical for either choice of independent variable. However, mathematically one case is easier to solve than the other because, in the latter case, one term in Euler’s equation is zero.
+::::
 
 ## 5.5: Functions with Several Independent Variables
 
@@ -394,10 +410,10 @@ where $i=1,2,3,....,N.$
 By analogy with the one dimensional problem, define neighboring functions $\eta _{i}$ for each variable. Then
 
 $$
-\begin{align} y_{i}(\epsilon ,x) &=&y_{i}(0,x)+\epsilon \eta _{i}(x) \label{5.17} \\ y_{i}^{\prime }(\epsilon ,x) &\equiv &\frac{dy_{i}(\epsilon ,x)}{dx}=\frac{ dy_{i}(0,x)}{dx}+\epsilon \frac{d\eta _{i}}{dx} \notag\end{align}
+\begin{align} y_{i}(\epsilon ,x) &=&y_{i}(0,x)+\epsilon \eta _{i}(x) \tag{5.17} \label{eq-5-17} \\ y_{i}^{\prime }(\epsilon ,x) &\equiv &\frac{dy_{i}(\epsilon ,x)}{dx}=\frac{ dy_{i}(0,x)}{dx}+\epsilon \frac{d\eta _{i}}{dx} \notag\end{align}
 $$
 
-where $\eta _{i}$ are independent functions of $x$ that vanish at $x_{1}$ and $x_{2}.$ Using equations ($5.2.10$) and \ref{5.17} leads to the requirements for an extremum value to be 
+where $\eta _{i}$ are independent functions of $x$ that vanish at $x_{1}$ and $x_{2}.$ Using equations ($5.2.10$) and [5.17](#eq-5-17) leads to the requirements for an extremum value to be 
 $$
 \frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\sum_{i}^{N}\left( \frac{\partial f}{\partial y_{i}}\frac{\partial y_{i}}{\partial \epsilon }+\frac{\partial f}{\partial y_{i}^{\prime }}\frac{\partial y_{i}^{\prime }}{ \partial \epsilon }\right) dx=\int_{x_{1}}^{x_{2}}\sum_{i}^{N}\left( \frac{ \partial f}{\partial y_{i}}-\frac{d}{dx}\frac{\partial f}{\partial y_{i}^{\prime }}\right) \eta _{i}(x)dx=0
 $$
@@ -410,16 +426,19 @@ $$
 
 where $i=1,2,3..N.$ Thus, each of the $N$*equations can be solved independently when the* $N$*variables are independent.* Euler’s equation involves partial derivatives for the dependent variables $y_{i}$, $y_{i\text{ }}^{\prime }$and the total derivative for the independent variable $x$.
 
-Example 5.1: Fermat's Principle
+::::{admonition} Example 5.5.1: Fermat's Principle
+:class: example
 
 In $\mathit{1662}$ Fermat’s proposed that the propagation of light obeyed the generalized principle of least transit time. In optics, Fermat’s principle, or the principle of least time, is the principle that the path taken between two points by a ray of light is the path that can be traversed in the least time. Historically, the proof of Fermat’s principle by Johann Bernoulli was one of the first triumphs of the calculus of variations, and served as a guiding principle in the formulation of physical laws using variational calculus.
 
 Consider the geometry shown in the figure, where the light travels from the point $P_{1}(0,y_{1},0)$ to the point $P_{2}(x_{2},-y_{2},0)$. The light beam intersects a plane glass interface at the point $Q(x,0,z)$.
 
 :::{figure} ../images/lt-21138-5.5.1.png
-:alt: 5.5.1.PNG
+:label: fig-5-5-1
+:enumerator: 5.5.1
+:alt: Light incident upon a plane glass interface in the (x, y) plane at y = 0.
 
-$1$: Light incident upon a plane glass interface in the $(x, y)$ plane at $y = 0$.
+Light incident upon a plane glass interface in the $(x, y)$ plane at $y = 0$.
 :::
 
 The French mathematician Fermat discovered that the required path travelled by light is the path for which the travel time $t$ is a minimum. That is, the transit time from the initial point $P_{1}$ to the final point $P_{2}$ is given by
@@ -489,8 +508,10 @@ n_{1}\sin \theta _{1}=n_{2}\sin \theta _{2}\nonumber
 $$
 
 Fermat’s principle has shown that the refracted light is given by Snell’s Law, and is in a plane normal to the surface. The laws of reflection also are given since then $n_{1}=n_{2}=n$ and the angle of reflection equals the angle of incidence.
+::::
 
-Example 5.2: Minimum of $(\nabla \phi)^2$ in a volume
+::::{admonition} Example 5.5.2: Minimum of $(\nabla \phi)^2$ in a volume
+:class: example
 
 Find the function $\phi (x_{1},x_{2},x_{3})$ that has the minimum value of $\left( \nabla \phi \right) ^{2}$ per unit volume. For the volume $V$ it is desired to minimize the following
 
@@ -523,6 +544,7 @@ $$
 $$
 
 Therefore $\phi$ must satisfy Laplace’s equation in order that the functional $J$ be a minimum.
+::::
 
 ## 5.6: Euler’s Integral Equation
 
@@ -553,10 +575,10 @@ $$
 which vanishes when the Euler equation is satisfied. Therefore the above equation simplifies to
 
 $$
-\frac{\partial f}{\partial x}-\frac{d}{dx}\left( f-y^{\prime }\frac{\partial f}{\partial y^{\prime }}\right) =0 \label{5.24}
+\frac{\partial f}{\partial x}-\frac{d}{dx}\left( f-y^{\prime }\frac{\partial f}{\partial y^{\prime }}\right) =0 \tag{5.24} \label{eq-5-24}
 $$
 
-This integral form of Euler’s equation is especially useful *when* $\frac{\partial f}{\partial x}=0,$*that is, when* $f$*does not depend explicitly on the independent variable* $x$. Then the first integral of Equation \ref{5.24} is a constant, i.e.
+This integral form of Euler’s equation is especially useful *when* $\frac{\partial f}{\partial x}=0,$*that is, when* $f$*does not depend explicitly on the independent variable* $x$. Then the first integral of Equation [5.24](#eq-5-24) is a constant, i.e.
 
 $$
 f-y^{\prime }\frac{\partial f}{\partial y^{\prime }}=\text{constant}
@@ -569,15 +591,18 @@ This is Euler’s integral variational equation. Note that the shortest distance
 Imposing a constraint on a variational system implies:
 
 1. The $N$ constrained coordinates $y_{i}(x)$ are correlated which violates the assumption made in chapter $5.5$ that the $N$ variables are independent.
+
 2. Constrained motion implies that constraint forces must be acting to account for the correlation of the variables. These constraint forces must be taken into account in the equations of motion.
 
 :::{figure} ../images/lt-21137-5.7.1.png
-:alt: 5.7.1.PNG
+:label: fig-5-7-1
+:enumerator: 5.7.1
+:alt: A disk rolling down an inclined plane.
 
-$1$: A disk rolling down an inclined plane.
+A disk rolling down an inclined plane.
 :::
 
-For example, for a disk rolling down an inclined plane without slipping, there are three coordinates $x$ [perpendicular to the wedge], $y$, [Along the surface of the wedge], and the rotation angle $\theta$ shown in Figure 5.1. The constraint forces, $\mathbf{F}_{f}$ $\mathbf{N}$, lead to the correlation of the variables such that $x=R$, while $y=R\theta$. Basically there is only one independent variable, which can be either $y$ or $\theta$. The use of only one independent variable essentially buries the constraint forces under the rug, which is fine if you only need to know the equation of motion. If you need to determine the forces of constraint then it is necessary to include all coordinates explicitly in the equations of motion as discussed below.
+For example, for a disk rolling down an inclined plane without slipping, there are three coordinates $x$ [perpendicular to the wedge], $y$, [Along the surface of the wedge], and the rotation angle $\theta$ shown in [Figure 5.7.1](#fig-5-7-1). The constraint forces, $\mathbf{F}_{f}$ $\mathbf{N}$, lead to the correlation of the variables such that $x=R$, while $y=R\theta$. Basically there is only one independent variable, which can be either $y$ or $\theta$. The use of only one independent variable essentially buries the constraint forces under the rug, which is fine if you only need to know the equation of motion. If you need to determine the forces of constraint then it is necessary to include all coordinates explicitly in the equations of motion as discussed below.
 
 ### Holonomic constraints
 
@@ -588,7 +613,7 @@ Most systems involve restrictions or constraints that couple the coordinates. Fo
 Geometric constraints can be expressed in the form of algebraic relations that directly specify the shape of the surface of constraint in coordinate space $q_{1},q_{2,}\dots ,q_{j},..q_{n}.$
 
 $$
-g_{k}(q_{1},q_{2},..q_{j},..q_{n};t)=0 \label{5.26}
+g_{k}(q_{1},q_{2},..q_{j},..q_{n};t)=0 \tag{5.26} \label{eq-5-26}
 $$
 
 where $j=1,2,3,\dots n$. There can be $m$ such equations of constraint where $0\leq k\leq m$. An example of such a geometric constraint is when the motion is confined to the surface of a sphere of radius $R$ in coordinate space which can be written in the form $g=x^{2}+y^{2}+z^{2}-R^{2}=0.$ Such algebraic constraint equations are called **Holonomic** which allows use of generalized coordinates as well as Lagrange multipliers to handle both the constraint forces and the correlation of the coordinates.
@@ -598,10 +623,10 @@ where $j=1,2,3,\dots n$. There can be $m$ such equations of constraint where $0\
 The $m$ constraint equations also can be expressed in terms of the infinitessimal displacements of the form
 
 $$
-\sum_{j=1}^{n}\frac{\partial g_{k}}{\partial q_{j}}dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0 \label{5.27}
+\sum_{j=1}^{n}\frac{\partial g_{k}}{\partial q_{j}}dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0 \tag{5.27} \label{eq-5-27}
 $$
 
-where $k=1,2,3,\dots m$, $j=1,2,3,\dots n$. If Equation \ref{5.27} represents the total differential of a function then it can be integrated to give a holonomic relation of the form of Equation \ref{5.26}. However, if Equation \ref{5.27} is not the total differential, then it is non-holonomic and can be integrated only after having solved the full problem.
+where $k=1,2,3,\dots m$, $j=1,2,3,\dots n$. If Equation [5.27](#eq-5-27) represents the total differential of a function then it can be integrated to give a holonomic relation of the form of Equation [5.26](#eq-5-26). However, if Equation [5.27](#eq-5-27) is not the total differential, then it is non-holonomic and can be integrated only after having solved the full problem.
 
 An example of differential constraint equations is for a wheel rolling on a plane without slipping which is non-holonomic and more complicated than might be expected. The wheel moving on a plane has five degrees of freedom since the height $z$ is fixed. That is, the motion of the center of mass requires two coordinates $\left( x,y\right)$ plus there are three angles $(\phi ,\theta ,\psi )$ where $\phi$ is the rotation angle for the wheel, $\theta$ is the pivot angle of the axis, and $\psi$ is the tilt angle of the wheel. If the wheel slides then all five degrees of freedom are active. If the axis of rotation of the wheel is horizontal, that is, the tilt angle $\psi =0$ is constant, then this kinematic system leads to three differential constraint equations The wheel can roll with angular velocity $\dot{\phi}$, as well as pivot which corresponds to a change in $\theta .$ Combining these leads to two *differential* equations of constraint
 
@@ -609,7 +634,7 @@ $$
 dx-a\sin \theta d\phi =0\hspace{1in}dy+a\cos \theta d\phi =0
 $$
 
-These constraints are insufficient to provide finite relations between all the coordinates. That is, the constraints cannot be reduced by integration to the form of Equation \ref{5.26} because there is no functional relation between $\phi$ and the other three variables, $x,y,\theta$. Many rolling trajectories are possible between any two points of contact on the plane that are related to different pivot angles. That is, the point of contact of the disk could pivot plus roll in a circle returning to the same point where $x,y,\theta$ are unchanged whereas the value of $\phi$ depends on the circumference of the circle. As a consequence the rolling constraint is non-holonomic except for the case where the disk rolls in a straight line and remains vertical.
+These constraints are insufficient to provide finite relations between all the coordinates. That is, the constraints cannot be reduced by integration to the form of Equation [5.26](#eq-5-26) because there is no functional relation between $\phi$ and the other three variables, $x,y,\theta$. Many rolling trajectories are possible between any two points of contact on the plane that are related to different pivot angles. That is, the point of contact of the disk could pivot plus roll in a circle returning to the same point where $x,y,\theta$ are unchanged whereas the value of $\phi$ depends on the circumference of the circle. As a consequence the rolling constraint is non-holonomic except for the case where the disk rolls in a straight line and remains vertical.
 
 ### Isoperimetric (integral) equations of constraint
 
@@ -636,7 +661,7 @@ where $l$ is a fixed length. This integral constraint is geometric and holonomic
 Geometric constraints can be expressed in the form of an algebraic equation that directly specifies the shape of the surface of constraint
 
 $$
-g(y_{1},y_{2},y_{3},\dots ;x)=0 \label{5.31}
+g(y_{1},y_{2},y_{3},\dots ;x)=0 \tag{5.31} \label{eq-5-31}
 $$
 
 Such a system is called **holonomic** since there is a direct relation between the coupled variables. An example of such a holonomic geometric constraint is if the motion is confined to the surface of a sphere of radius $R$ which can be written in the form 
@@ -646,7 +671,7 @@ $$
 
 #### Non-holonomic constraints
 
-There are many classifications of non-holonomic constraints that exist if Equation \ref{5.31} is not satisfied. The algebraic approach is difficult to handle when the constraint is an inequality, such as the requirement that the location is restricted to lie inside a spherical shell of radius $R$ which can be expressed as
+There are many classifications of non-holonomic constraints that exist if Equation [5.31](#eq-5-31) is not satisfied. The algebraic approach is difficult to handle when the constraint is an inequality, such as the requirement that the location is restricted to lie inside a spherical shell of radius $R$ which can be expressed as
 
 $$
 g=x^{2}+y^{2}+z^{2}-R^{2}\leq 0
@@ -696,117 +721,118 @@ The above three approaches exploit generalized coordinates to handle constraint 
 
 ### Algebraic equations of constraint
 
-The Lagrange multiplier technique provides a powerful, and elegant, way to handle holonomic constraints using Euler’s equations<sup>1</sup>. The general method of Lagrange multipliers for $n$ variables, with $m$ constraints, is best introduced using Bernoulli’s ingenious exploitation of virtual infinitessimal displacements, which Lagrange signified by the symbol $\delta$. The term "virtual" refers to an intentional variation of the generalized coordinates $\delta q_{i}$ in order to elucidate the local sensitivity of a function $F(q_{i},x)$ to variation of the variable. Contrary to the usual infinitessimal interval in differential calculus, where an actual displacement $dq_{i}$ occurs during a time $dt$, a virtual displacement is imagined to be an instantaneous, infinitessimal, displacement of a coordinate, not an actual displacement, in order to elucidate the local dependence of $F$ on the coordinate. The local dependence of any functional $F,$ to virtual displacements of all $n$ coordinates, is given by taking the partial differentials of $F$.
+The Lagrange multiplier technique provides a powerful, and elegant, way to handle holonomic constraints using Euler’s equations[^5-9-1]. The general method of Lagrange multipliers for $n$ variables, with $m$ constraints, is best introduced using Bernoulli’s ingenious exploitation of virtual infinitessimal displacements, which Lagrange signified by the symbol $\delta$. The term "virtual" refers to an intentional variation of the generalized coordinates $\delta q_{i}$ in order to elucidate the local sensitivity of a function $F(q_{i},x)$ to variation of the variable. Contrary to the usual infinitessimal interval in differential calculus, where an actual displacement $dq_{i}$ occurs during a time $dt$, a virtual displacement is imagined to be an instantaneous, infinitessimal, displacement of a coordinate, not an actual displacement, in order to elucidate the local dependence of $F$ on the coordinate. The local dependence of any functional $F,$ to virtual displacements of all $n$ coordinates, is given by taking the partial differentials of $F$.
 
 $$
-\delta F=\sum_{i}^{n}\frac{\partial F}{\partial q_{i}}\delta q_{i} \label{5.35}
+\delta F=\sum_{i}^{n}\frac{\partial F}{\partial q_{i}}\delta q_{i} \tag{5.35} \label{eq-5-35}
 $$
 
-The function $F$ is stationary, that is an extremum, if Equation \ref{5.35} equals zero. The extremum of the functional $F$, given by equation ($5.5.1$), can be expressed in a compact form using the virtual displacement formalism as 
+The function $F$ is stationary, that is an extremum, if Equation [5.35](#eq-5-35) equals zero. The extremum of the functional $F$, given by equation ($5.5.1$), can be expressed in a compact form using the virtual displacement formalism as 
 $$
-\delta F=\delta \int_{x_{1}}^{x_{2}}\sum_{i}^{n}f\left[ q_{i}(x),q_{i}^{\prime }(x);x\right] dx=\sum_{i}^{n}\frac{\partial F}{\partial q_{i}}\delta q_{i}=0\label{5.36}
+\delta F=\delta \int_{x_{1}}^{x_{2}}\sum_{i}^{n}f\left[ q_{i}(x),q_{i}^{\prime }(x);x\right] dx=\sum_{i}^{n}\frac{\partial F}{\partial q_{i}}\delta q_{i}=0\tag{5.36} \label{eq-5-36}
 $$
 
 The auxiliary conditions, due to the $m$ holonomic algebraic constraints for the $n$ variables $q_{i}$, can be expressed by the $m$ equations
 
 $$
-g_{k}(\mathbf{q})=0\label{5.37}
+g_{k}(\mathbf{q})=0\tag{5.37} \label{eq-5-37}
 $$
 
 where $1\leq k\leq m$ and $1\leq i\leq n$ with $m<n$. The variational problem for the $m$ holonomic constraint equations also can be written in terms of $m$ differential equations where $1\leq k\leq m$ 
 $$
-\delta g_{k}=\sum_{i=1}^{n}\frac{\partial g_{k}}{\partial q_{i}}\delta q_{i}=0\label{5.38}
+\delta g_{k}=\sum_{i=1}^{n}\frac{\partial g_{k}}{\partial q_{i}}\delta q_{i}=0\tag{5.38} \label{eq-5-38}
 $$
 
-Since equations \ref{5.36} and \ref{5.38} both equal zero, the $m$ equations \ref{5.38} can be multiplied by arbitrary undetermined factors $\lambda _{k},$ and added to equations \ref{5.36} to give.
+Since equations [5.36](#eq-5-36) and [5.38](#eq-5-38) both equal zero, the $m$ equations [5.38](#eq-5-38) can be multiplied by arbitrary undetermined factors $\lambda _{k},$ and added to equations [5.36](#eq-5-36) to give.
 
 $$
-\delta F(q_{i},x)+\lambda _{1}\delta g_{1}+\lambda _{2}\delta g_{2}\cdot \cdot \lambda _{k}\delta g_{k}\cdot \cdot \lambda _{m}\delta g_{m}=0\label{5.39}
+\delta F(q_{i},x)+\lambda _{1}\delta g_{1}+\lambda _{2}\delta g_{2}\cdot \cdot \lambda _{k}\delta g_{k}\cdot \cdot \lambda _{m}\delta g_{m}=0\tag{5.39} \label{eq-5-39}
 $$
 
 Note that this is not trivial in that although the sum of the constraint equations for each $y_{i\text{ }}$is zero; the individual terms of the sum are not zero.
 
-Insert equations \ref{5.36} plus \ref{5.38} into \ref{5.39}, and collect all $n$ terms, gives 
+Insert equations [5.36](#eq-5-36) plus [5.38](#eq-5-38) into [5.39](#eq-5-39), and collect all $n$ terms, gives 
 $$
-\sum_{i}^{n}\left( \frac{\partial F}{\partial q_{i}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}\right) \delta q_{i}=0\label{5.40}
+\sum_{i}^{n}\left( \frac{\partial F}{\partial q_{i}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}\right) \delta q_{i}=0\tag{5.40} \label{eq-5-40}
 $$
 
 Note that all the $\delta q_{i}$ are free independent variations and thus the terms in the brackets, which are the coefficients of each $\delta q_{i}$, individually must equal zero. For each of the $n$ values of $i$, the corresponding bracket implies
 
 $$
-\frac{\partial F}{\partial q_{i}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0\label{5.41}
+\frac{\partial F}{\partial q_{i}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0\tag{5.41} \label{eq-5-41}
 $$
 
 This is equivalent to what would be obtained from the variational principle
 
 $$
-\delta F+\sum_{k=1}^{m}\lambda _{k}\delta g_{k}=0\label{5.42}
+\delta F+\sum_{k=1}^{m}\lambda _{k}\delta g_{k}=0\tag{5.42} \label{eq-5-42}
 $$
 
-Equation \ref{5.42} is equivalent to a variational problem for finding the stationary value of $F^{\prime }$
+Equation [5.42](#eq-5-42) is equivalent to a variational problem for finding the stationary value of $F^{\prime }$
 
 $$
-\delta \left( F^{\prime }\right) =\delta \left( F+\sum_{k}^{m}\lambda _{k}g_{k}\right) =0\label{5.43}
+\delta \left( F^{\prime }\right) =\delta \left( F+\sum_{k}^{m}\lambda _{k}g_{k}\right) =0\tag{5.43} \label{eq-5-43}
 $$
 
 where $F^{\prime }$ is defined to be
 
 $$
-F^{\prime }\equiv \left( F+\sum_{k=1}^{m}\lambda _{k}g_{k}\right)\label{5.44}
+F^{\prime }\equiv \left( F+\sum_{k=1}^{m}\lambda _{k}g_{k}\right)\tag{5.44} \label{eq-5-44}
 $$
 
-The solution to Equation \ref{5.43} can be found using Euler’s differential equation ($5.5.4$) of variational calculus. At the extremum $\delta \left( F^{\prime }\right) =0$ corresponds to following contours of constant $F^{\prime }$ which are in the surface that is perpendicular to the gradients of the terms in $F^{\prime }$. The Lagrange multiplier constants are required because, although these gradients are parallel at the extremum, the magnitudes of the gradients are not equal.
+The solution to Equation [5.43](#eq-5-43) can be found using Euler’s differential equation ($5.5.4$) of variational calculus. At the extremum $\delta \left( F^{\prime }\right) =0$ corresponds to following contours of constant $F^{\prime }$ which are in the surface that is perpendicular to the gradients of the terms in $F^{\prime }$. The Lagrange multiplier constants are required because, although these gradients are parallel at the extremum, the magnitudes of the gradients are not equal.
 
 The beauty of the Lagrange multipliers approach is that the auxiliary conditions do not have to be handled explicitly, since they are handled automatically as $m$ additional free variables during solution of Euler’s equations for a variational problem with $n+m$ unknowns fit to $n+m$ equations. That is, the $n$ variables $q_{i}$ are determined by the variational procedure using the $n$ variational equations
 
 $$
-\frac{d}{dx}(\frac{\partial F^{\prime }}{\partial q_{i}^{\prime }})-(\frac{\partial F^{\prime }}{\partial q_{i}})=\frac{d}{dx}(\frac{\partial F}{\partial q_{i}^{\prime }})-(\frac{\partial F}{\partial q_{i}})-\sum_{k}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0 \label{5.45}
+\frac{d}{dx}(\frac{\partial F^{\prime }}{\partial q_{i}^{\prime }})-(\frac{\partial F^{\prime }}{\partial q_{i}})=\frac{d}{dx}(\frac{\partial F}{\partial q_{i}^{\prime }})-(\frac{\partial F}{\partial q_{i}})-\sum_{k}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0 \tag{5.45} \label{eq-5-45}
 $$
 
 simultaneously with the $m$ variables $\lambda _{k}$ which are determined by the $m$ variational equations
 
 $$
-\frac{d}{dx}(\frac{\partial F^{\prime }}{\partial \lambda _{k}^{\prime }})-(\frac{\partial F^{\prime }}{\partial \lambda _{k}})=0\label{5.46}
+\frac{d}{dx}(\frac{\partial F^{\prime }}{\partial \lambda _{k}^{\prime }})-(\frac{\partial F^{\prime }}{\partial \lambda _{k}})=0\tag{5.46} \label{eq-5-46}
 $$
 
-Equation \ref{5.45} usually is expressed as
+Equation [5.45](#eq-5-45) usually is expressed as
 
 $$
-(\frac{\partial F}{\partial q_{i}})-\frac{d}{dx}(\frac{\partial F}{\partial q_{i}^{\prime }})+\sum_{k}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0 \label{5.47}
+(\frac{\partial F}{\partial q_{i}})-\frac{d}{dx}(\frac{\partial F}{\partial q_{i}^{\prime }})+\sum_{k}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}=0 \tag{5.47} \label{eq-5-47}
 $$
 
 The elegance of Lagrange multipliers is that a single variational approach allows simultaneous determination of all $n+m$ unknowns. Chapter $6.2$ shows that the forces of constraint are given directly by the $\lambda _{k}\frac{\partial g_{k}}{\partial q_{i}}$ terms.
 
-Example 5.1: Two dependent variables coupled by one holonomic constraint
+::::{admonition} Example 5.9.1: Two dependent variables coupled by one holonomic constraint
+:class: example
 
 The powerful, and generally applicable, Lagrange multiplier technique is illustrated by considering the case of only two dependent variables, $y(x),$ and $z\left( x\right) ,$ with the function $f(y(x),y^{\prime }(x),z(x),z(x)^{\prime };x)$ and with one holonomic equation of constraint coupling these two dependent variables. The extremum is given by requiring
 
 $$
-\frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) \frac{\partial y}{\partial \epsilon }+\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \frac{\partial z}{\partial \epsilon }\right] dx=0 \tag{$A$} \label{5-A}
+\frac{\partial F}{\partial \epsilon }=\int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) \frac{\partial y}{\partial \epsilon }+\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \frac{\partial z}{\partial \epsilon }\right] dx=0 \tag{$A$} \label{eq-5-a}
 $$
 
 with the constraint expressed by the auxiliary condition
 
 $$
-g\left( y,z;x\right) =0 \tag{$B$} \label{5-B}
+g\left( y,z;x\right) =0 \tag{$B$} \label{eq-5-b}
 $$
 
-Note that the variations $\frac{\partial y}{\partial \epsilon }$ and $\frac{\partial z}{\partial \epsilon }$ are no longer independent because of the constraint equation, thus the the two terms in the brackets of Equation \ref{5-A} are not separately equal to zero at the extremum. However, differentiating the constraint Equation \ref{5-B} gives
+Note that the variations $\frac{\partial y}{\partial \epsilon }$ and $\frac{\partial z}{\partial \epsilon }$ are no longer independent because of the constraint equation, thus the the two terms in the brackets of Equation [A](#eq-5-a) are not separately equal to zero at the extremum. However, differentiating the constraint Equation [B](#eq-5-b) gives
 
 $$
-\frac{dg}{d\epsilon }=\left( \frac{\partial g}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial g}{\partial z}\frac{\partial z}{\partial \epsilon }\right) =0 \tag{$C$} \label{5-C}
+\frac{dg}{d\epsilon }=\left( \frac{\partial g}{\partial y}\frac{\partial y}{\partial \epsilon }+\frac{\partial g}{\partial z}\frac{\partial z}{\partial \epsilon }\right) =0 \tag{$C$} \label{eq-5-c}
 $$
 
 No $\frac{\partial g}{\partial x}$ term applies because, for the independent variable, $\frac{\partial x}{\partial \epsilon }$ $=0.$ Introduce the neighboring paths by adding the auxiliary functions
 
 $$
-\begin{align} y(\epsilon ,x) &=&y(x)+\epsilon \eta _{1}(x) \tag{$D$} \label{5-D} \\ z(\epsilon ,x) &=&z(x)+\epsilon \eta _{2}(x) \tag{$E$} \label{E}\end{align}
+\begin{align} y(\epsilon ,x) &=&y(x)+\epsilon \eta _{1}(x) \tag{$D$} \label{eq-5-d} \\ z(\epsilon ,x) &=&z(x)+\epsilon \eta _{2}(x) \tag{$E$} \end{align}
 $$
 
-Insert the differentials of equations \ref{5-D} and \ref{E} , into \ref{5-C} gives
+Insert the differentials of equations [D](#eq-5-d) and [E](#eq-5-d) , into [C](#eq-5-c) gives
 
 $$
-\frac{dg}{d\epsilon }=\left( \frac{\partial g}{\partial y}\eta _{1}(x)+\frac{\partial g}{\partial z}\eta _{2}(x)\right) =0 \tag{$F$} \label{F}
+\frac{dg}{d\epsilon }=\left( \frac{\partial g}{\partial y}\eta _{1}(x)+\frac{\partial g}{\partial z}\eta _{2}(x)\right) =0 \tag{$F$} \label{eq-5-f}
 $$
 
 implying that
@@ -815,13 +841,13 @@ $$
 \eta _{2}(x)=-\frac{\frac{\partial g}{\partial y}}{\frac{\partial g}{\partial z}}\eta _{1}(x) \nonumber
 $$
 
-Equation \ref{5-A} can be rewritten as
+Equation [A](#eq-5-a) can be rewritten as
 
 $$
-\begin{align} \int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) \eta _{1}(x)+\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \eta _{2}(x)\right] dx &=&0 \notag \\ \int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) -\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \frac{\frac{\partial g}{\partial y}}{\frac{\partial g}{\partial z}}\right] \eta _{1}(x)dx &=&0 \tag{$G$} \label{G}\end{align}
+\begin{align} \int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) \eta _{1}(x)+\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \eta _{2}(x)\right] dx &=&0 \notag \\ \int_{x_{1}}^{x_{2}}\left[ \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) -\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \frac{\frac{\partial g}{\partial y}}{\frac{\partial g}{\partial z}}\right] \eta _{1}(x)dx &=&0 \tag{$G$} \label{eq-5-g}\end{align}
 $$
 
-Equation \ref{G} now contains only a single arbitrary function $\eta _{1}(x)$ that is not restricted by the constraint. Thus the bracket in the integrand of Equation \ref{G} must equal zero for the extremum. That is
+Equation [G](#eq-5-g) now contains only a single arbitrary function $\eta _{1}(x)$ that is not restricted by the constraint. Thus the bracket in the integrand of Equation [G](#eq-5-g) must equal zero for the extremum. That is
 
 $$
 \left( \frac{\partial f}{\partial y}-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}\right) \left( \frac{\partial g}{\partial y}\right) ^{-1}=\left( \frac{\partial f}{\partial z}-\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}\right) \left( \frac{\partial g}{\partial z}\right) ^{-1}\equiv -\lambda (x) \notag
@@ -830,10 +856,11 @@ $$
 Now the left-hand side of this equation is only a function of $f$ and $g$ with respect to $y$ and $y^{\prime }$ while the right-hand side is a function of $f$ and $g$ with respect to $z$ and $z^{\prime }.$ Because both sides are functions of $x$ then each side can be set equal to a function $-\lambda (x).$ Thus the above equations can be written as
 
 $$
-\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}-\frac{\partial f}{\partial y}=\lambda \left( x\right) \frac{\partial g}{\partial y}\hspace{1in}\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}-\frac{\partial f}{\partial z}=\lambda \left( x\right) \frac{\partial g}{\partial z} \tag{$H$} \label{H}
+\frac{d}{dx}\frac{\partial f}{\partial y^{\prime }}-\frac{\partial f}{\partial y}=\lambda \left( x\right) \frac{\partial g}{\partial y}\hspace{1in}\frac{d}{dx}\frac{\partial f}{\partial z^{\prime }}-\frac{\partial f}{\partial z}=\lambda \left( x\right) \frac{\partial g}{\partial z} \tag{$H$} \label{eq-5-h}
 $$
 
-The complete solution of the three unknown functions. $y(x),z(x),$ and $\lambda (x).$ is obtained by solving the two equations, \ref{H}, plus the equation of constraint \ref{F}. The Lagrange multiplier $\lambda (x)$ is related to the force of constraint. This example of two variables coupled by one holonomic constraint conforms with the general relation for many variables and constraints given by Equation \ref{5.47}.
+The complete solution of the three unknown functions. $y(x),z(x),$ and $\lambda (x).$ is obtained by solving the two equations, [H](#eq-5-h), plus the equation of constraint [F](#eq-5-f). The Lagrange multiplier $\lambda (x)$ is related to the force of constraint. This example of two variables coupled by one holonomic constraint conforms with the general relation for many variables and constraints given by Equation [5.47](#eq-5-47).
+::::
 
 ### Integral equations of constraint
 
@@ -848,7 +875,7 @@ $$
 G(y)=\int_{x_{1}}^{x_{2}}g(q,q^{\prime };x)dx=l
 $$
 
-Analogous to \ref{5.44} these two functionals can be combined requiring that
+Analogous to [5.44](#eq-5-44) these two functionals can be combined requiring that
 
 $$
 \delta K(q,x,\lambda )\equiv \delta \left[ F(q)+\lambda G(q)\right] =\delta \int_{x_{1}}^{x_{2}}[f+\lambda g]dx=0
@@ -857,19 +884,22 @@ $$
 That is, it is an extremum for both $q(x)$ and the Lagrange multiplier $\lambda$. This effectively involves finding the extremum path for the function $K(q,x,\lambda )=F(q,x)+\lambda G(q,x)$ where both $q(x)$ and $\lambda$ are the minimized variables. Therefore the curve $q(x)$ must satisfy the differential equation
 
 $$
-\frac{d}{dx}\frac{\partial f}{\partial q_{i}^{\prime }}-\frac{\partial f}{\partial q_{i}}+\lambda \left[ \frac{d}{dx}\frac{\partial g}{\partial q_{i}^{\prime }}-\frac{\partial g}{\partial q_{i}}\right] =0 \label{5.51}
+\frac{d}{dx}\frac{\partial f}{\partial q_{i}^{\prime }}-\frac{\partial f}{\partial q_{i}}+\lambda \left[ \frac{d}{dx}\frac{\partial g}{\partial q_{i}^{\prime }}-\frac{\partial g}{\partial q_{i}}\right] =0 \tag{5.51} \label{eq-5-51}
 $$
 
 subject to the boundary conditions $q(x_{1})=a,$ $q(x_{2})=b,$ and $G(q)=l$.
 
-Example 5.2: Catenary
+::::{admonition} Example 5.9.2: Catenary
+:class: example
 
 One isoperimetric problem is the catenary which is the shape a uniform rope or chain of fixed length $l$ that minimizes the gravitational potential energy. Let the rope have a uniform mass per unit length of $\sigma$ kg/m$.$
 
 :::{figure} ../images/lt-21136-5.9.1.png
-:alt: 5.9.1.PNG
+:label: fig-5-9-1
+:enumerator: 5.9.1
+:alt: The catenary
 
-$1$: The catenary
+The catenary
 :::
 
 The gravitational potential energy is
@@ -886,7 +916,7 @@ $$
 
 Thus the function is $f(y,y^{\prime };x)=y\sqrt{1+y^{\prime 2}}$ while the integral constraint sets $g=\sqrt{1+y^{\prime 2}}$
 
-These need to be inserted into the Euler Equation \ref{5.51} by defining
+These need to be inserted into the Euler Equation [5.51](#eq-5-51) by defining
 
 $$
 F=f+\lambda g=(y+\lambda )\sqrt{1+y^{\prime 2}}\nonumber
@@ -917,8 +947,10 @@ z=c\cosh \left( \frac{x+b}{c}\right)\nonumber
 $$
 
 where $b$ and $c$ are arbitrary constants fixed by the locations of the two fixed ends of the rope.
+::::
 
-Example 5.3: The Queen Dido problem
+::::{admonition} Example 5.9.3: The Queen Dido problem
+:class: example
 
 A famous constrained isoperimetric legend is that of Dido, first Queen of Carthage. Legend says that, when Dido landed in North Africa, she persuaded the local chief to sell her as much land as an oxhide could contain. She cut an oxhide into narrow strips and joined them to make a continuous thread more than four kilometers in length which was sufficient to enclose the land adjoining the coast on which Carthage was built. Her problem was to enclose the maximum area for a given perimeter. Let us assume that the coast line is straight and the ends of the thread are at $\pm a$ on the coast line. The enclosed area is given by
 
@@ -932,7 +964,7 @@ $$
 \int_{-a}^{a}\sqrt{1+y^{\prime 2}}dx=l\nonumber
 $$
 
-Thus we have that the functional $f(y,y^{\prime },x)=y$ and $g(y,y^{\prime },x)=\sqrt{1+y^{\prime 2}}$. Then $\frac{\partial f}{\partial y}=1,\frac{\partial f}{\partial y^{\prime }}=0,\frac{\partial g}{\partial y}=0$ and $\frac{\partial g}{\partial y^{\prime }}=\frac{y^{\prime }}{\sqrt{1+y^{\prime 2}}}.$ Insert these into the Euler-Lagrange Equation \ref{5.51} gives
+Thus we have that the functional $f(y,y^{\prime },x)=y$ and $g(y,y^{\prime },x)=\sqrt{1+y^{\prime 2}}$. Then $\frac{\partial f}{\partial y}=1,\frac{\partial f}{\partial y^{\prime }}=0,\frac{\partial g}{\partial y}=0$ and $\frac{\partial g}{\partial y^{\prime }}=\frac{y^{\prime }}{\sqrt{1+y^{\prime 2}}}.$ Insert these into the Euler-Lagrange Equation [5.51](#eq-5-51) gives
 
 $$
 1-\lambda \frac{d}{dx}\left[ \frac{y^{\prime }}{\sqrt{1+y^{\prime 2}}}\right] =0\nonumber
@@ -969,10 +1001,9 @@ $$
 $$
 
 This is the equation of a circle centered at $(b,c)$. Setting the bounds to be $\left( -a,0\right)$ to $\left( a,0\right)$ gives that $b=c=0$ and the circle radius is $\lambda .$ Thus the length of the thread must be $l=\pi \lambda$. Assuming that $l=4km$ then $\lambda =1.27km$ and Queen Dido could buy an area of $2.53km^{2}.$
+::::
 
----
-
-<sup>1</sup>This textbook uses the symbol $q_i$ to designate a generalized coordinate, and $q^{\prime}_i$ to designate the corresponding first derivative with respect to the independent variable, in order to differentiate the spatial coordinates from the more powerful generalized coordinates.
+[^5-9-1]: This textbook uses the symbol $q_i$ to designate a generalized coordinate, and $q^{\prime}_i$ to designate the corresponding first derivative with respect to the independent variable, in order to differentiate the spatial coordinates from the more powerful generalized coordinates.
 
 ## 5.10: Geodesic
 
@@ -1066,16 +1097,23 @@ that satisfies $x(1) = 3$ and $x(2) = 18$. Show that this extremal provides the 
 2. Consider the use of equations of constraint.
 
 1. A particle is constrained to move on the surface of a sphere. What are the equations of constraint for this system?
+
 2. A disk of mass $m$ and radius $R$ rolls without slipping on the outside surface of a half-cylinder of radius $5R$. What are the equations of constraint for this system?
+
 3. What are holonomic constraints? Which of the equations of constraint that you found above are holonomic?
+
 4. Equations of constraint that do not explicitly contain time are said to be scleronomic. Moving constraints are rheonomic. Are the equations of constraint that you found above scleronomic or rheonomic?
 
 3. For each of the following systems, describe the generalized coordinates that would work best. There may be more than one answer for each system.
 
 1. An inclined plane of mass $M$ is sliding on a smooth horizontal surface, while a particle of mass $m$ is sliding on the smooth inclined surface.
+
 2. A disk rolls without slipping across a horizontal plane. The plane of the disk remains vertical, but it is free to rotate about a vertical axis.
+
 3. A double pendulum consisting of two simple pendula, with one pendulum suspended from the bob of the other. The two pendula have equal lengths and have bobs of equal mass. Both pendula are confined to move in the same plane.
+
 4. A particle of mass $m$ is constrained to move on a circle of radius $R$. The circle rotates in space about one point on the circle, which is fixed. The rotation takes place in the plane of the circle, with constant angular speed $\omega$, in the absence of a gravitational force.
+
 5. A particle of mass $m$ is attracted toward a given point by a force of magnitude $k/r^2$, where $k$ is a constant.
 
 4. Looking back at the systems in problem $3$, which ones could have equations of constraint? How would you classify the equations of constraint (holonomic, scleronomic, rheonomic, etc.)?
@@ -1093,9 +1131,9 @@ $$
 8. Consider a single loop of the cycloid having a fixed value of $a$ as shown in the figure. A car released from rest at any point $P_0$ anywhere on the track between $O$ and the lowest point $P$, that is, $P_0$ has a parameter $0 < \theta_0 < \pi$.
 
 :::{figure} ../images/lt-21135-5.e.1.png
-:alt: 5.e.1.PNG
-
-$1$
+:label: fig-5-E-1
+:enumerator: 5.E.1
+:alt: Figure
 :::
 
 1. Show that the time $T$ for the cart to slide from $P_0$ to $P$ is given by the integral 
@@ -1104,6 +1142,7 @@ T(P_0 \rightarrow P) = \sqrt{\frac{a}{g}} \int^{\pi}_{\theta_0} \sqrt{\frac{1 �
 $$
 
 2. Prove that this time $T$ is equal to $\pi \sqrt{a/g}$ which is independent of the position $P_0$.
+
 3. Explain qualitatively how this surprising result can possibly be true.
 
 9. Consider a medium for which the refractive index $n = \frac{a}{r^2}$ where $a$ is a constant and $r$ is the distance from the origin. Use Fermat’s Principle to find the path of a ray of light travelling in a plane containing the origin. Hint, use two-dimensional polar coordinates with $\phi = \phi (r)$. Show that the resulting path is a circle through the origin.

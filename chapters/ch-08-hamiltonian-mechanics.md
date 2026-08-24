@@ -5,16 +5,18 @@ label: ch-08-hamiltonian-mechanics
 ---
 
 
-# 8. Hamiltonian Mechanics
-
 (ch-8)=
+
+# 8. Hamiltonian Mechanics
 
 ## 8.1: Introduction
 
 The three major formulations of classical mechanics are
 
 1. **Newtonian mechanics** which is the most intuitive vector formulation used in classical mechanics.
+
 2. **Lagrangian mechanics** is a powerful algebraic formulation of classical mechanics derived using either d’Alembert’s Principle, or Hamilton’s Principle. The latter states *”A dynamical system follows a path that minimizes the time integral of the difference between the kinetic and potential energies”.*
+
 3. **Hamiltonian mechanics** has a beautiful superstructure that, like Lagrangian mechanics, is built upon variational calculus, Hamilton’s principle, and Lagrangian mechanics.
 
 Hamiltonian mechanics is introduced at this juncture since it is closely interwoven with Lagrange mechanics. Hamiltonian mechanics plays a fundamental role in modern physics, but the discussion of the important role it plays in modern physics will be deferred until chapters $15$ and $18$ where applications to modern physics are addressed.
@@ -31,16 +33,16 @@ Note that, as discussed in chapter $7.2$, if the potential is velocity dependent
 
 Jacobi’s **generalized energy function** $h(\mathbf{q,\dot{q}},t)$ was introduced where 
 $$
-h(\mathbf{q,\dot{q}},t)=\sum_{i}^{n}\left( \dot{q}_{i}\frac{\partial L}{ \partial \dot{q}_{i}}\right) -L(\mathbf{q,\dot{q}},t) \label{8.2}
+h(\mathbf{q,\dot{q}},t)=\sum_{i}^{n}\left( \dot{q}_{i}\frac{\partial L}{ \partial \dot{q}_{i}}\right) -L(\mathbf{q,\dot{q}},t) \tag{8.2} \label{eq-8-2}
 $$
 
-The **Hamiltonian function** was defined to be given by expressing the generalized energy function, Equation \ref{8.2}, in terms of the generalized momentum. That is, the Hamiltonian $H(\mathbf{q,p},t)$ is expressed as
+The **Hamiltonian function** was defined to be given by expressing the generalized energy function, Equation [8.2](#eq-8-2), in terms of the generalized momentum. That is, the Hamiltonian $H(\mathbf{q,p},t)$ is expressed as
 
 $$
-H\left( \mathbf{q},\mathbf{p},t\right) =\sum_{i}^{n}p_{i}\dot{q}_{i}-L( \mathbf{q},\mathbf{\dot{q}},t) \label{8.3}
+H\left( \mathbf{q},\mathbf{p},t\right) =\sum_{i}^{n}p_{i}\dot{q}_{i}-L( \mathbf{q},\mathbf{\dot{q}},t) \tag{8.3} \label{eq-8-3}
 $$
 
-The symbols $\mathbf{q}$, $\mathbf{p}$, designate vectors of $n$ generalized coordinates, $\mathbf{q}\equiv (q_{1},q_{2},..q_{n}),$ $\mathbf{p}\equiv (p_{1},p_{2},..p_{n})$. Equation \ref{8.3} can be written compactly in a symmetric form using the scalar product $\mathbf{p\cdot \dot{q}=} \sum_{i}p_{i}\dot{q}_{i}$. 
+The symbols $\mathbf{q}$, $\mathbf{p}$, designate vectors of $n$ generalized coordinates, $\mathbf{q}\equiv (q_{1},q_{2},..q_{n}),$ $\mathbf{p}\equiv (p_{1},p_{2},..p_{n})$. Equation [8.3](#eq-8-3) can be written compactly in a symmetric form using the scalar product $\mathbf{p\cdot \dot{q}=} \sum_{i}p_{i}\dot{q}_{i}$. 
 $$
 H\left( \mathbf{q},\mathbf{p},t\right) +L(\mathbf{q},\mathbf{\dot{q}},t)= \mathbf{p\cdot \dot{q}}
 $$
@@ -54,19 +56,19 @@ Hamiltonian mechanics can be derived directly from Lagrange mechanics by conside
 As described in appendix $19.6.4$, consider transformations between two functions $F(\mathbf{u,w})$ and $G(\mathbf{v,w),}$ where $\mathbf{u}$ and $\mathbf{v}$ are the active variables related by the functional form
 
 $$
-\mathbf{v=\nabla }_{\mathbf{u}}F(\mathbf{u,w}) \label{8.5}
+\mathbf{v=\nabla }_{\mathbf{u}}F(\mathbf{u,w}) \tag{8.5} \label{eq-8-5}
 $$
 
 and where $\mathbf{w}$ designates passive variables. The function $\mathbf{ \nabla }_{\mathbf{u}}F(\mathbf{u,w})$ is the first-order derivative, (gradient) of $F(\mathbf{u,w})$ with respect to the components of the vector $\mathbf{u}$. The Legendre transform states that the inverse formula can always be written as a first-order derivative
 
 $$
-\mathbf{u=\nabla }_{\mathbf{v}}G(\mathbf{v,w})\label{8.6}
+\mathbf{u=\nabla }_{\mathbf{v}}G(\mathbf{v,w})\tag{8.6} \label{eq-8-6}
 $$
 
 The function $G(\mathbf{v,w})$ is related to $F(\mathbf{u,w})$ by the symmetric relation
 
 $$
-G(\mathbf{v,w)+}F\mathbf{(\mathbf{u,w})=u\cdot v}\label{8.7}
+G(\mathbf{v,w)+}F\mathbf{(\mathbf{u,w})=u\cdot v}\tag{8.7} \label{eq-8-7}
 $$
 
 where the scalar product $\mathbf{u\cdot v}=\sum_{i=1}^{N}u_{i}v_{i}$.
@@ -74,7 +76,7 @@ where the scalar product $\mathbf{u\cdot v}=\sum_{i=1}^{N}u_{i}v_{i}$.
 Furthermore the first-order derivatives with respect to all the passive variables $w_{i}$ are related by
 
 $$
-\mathbf{\nabla }_{\mathbf{w}}F(\mathbf{u,w)=-\nabla }_{\mathbf{w}}G(\mathbf{ v,w)}\label{8.8}
+\mathbf{\nabla }_{\mathbf{w}}F(\mathbf{u,w)=-\nabla }_{\mathbf{w}}G(\mathbf{ v,w)}\tag{8.8} \label{eq-8-8}
 $$
 
 The relationship between the functions $F(\mathbf{u,w})$ and $G(\mathbf{v,w})$ is symmetrical and each is said to be the Legendre transform of the other.
@@ -82,75 +84,75 @@ The relationship between the functions $F(\mathbf{u,w})$ and $G(\mathbf{v,w})$ i
 The general Legendre transform can be used to relate the Lagrangian and Hamiltonian by identifying the active variables $\mathbf{v}$****with $\mathbf{p,}$ and $\mathbf{u}$ with $\mathbf{\dot{q},}$ the passive variable $\mathbf{w}$ with $\mathbf{q,}t$, and the corresponding functions $F(\mathbf{ u,w)=}L(\mathbf{q,\dot{q},}t)$ and $G(\mathbf{v,w)=}H(\mathbf{q,p,}t )$. Thus the generalized momentum $(8.1.1)$ corresponds to
 
 $$
-\mathbf{p=\nabla }_{\mathbf{\dot{q}}}L(\mathbf{q,\dot{q},}t)\label{8.9}
+\mathbf{p=\nabla }_{\mathbf{\dot{q}}}L(\mathbf{q,\dot{q},}t)\tag{8.9} \label{eq-8-9}
 $$
 
 where $(\mathbf{q,}t)$ are the passive variables. Then the Legendre transform states that the transformed variable $\mathbf{\dot{q}}$ is given by the relation 
 $$
-\mathbf{\dot{q}=\nabla }_{\mathbf{p}}H(\mathbf{q,p,}t)\label{8.10}
+\mathbf{\dot{q}=\nabla }_{\mathbf{p}}H(\mathbf{q,p,}t)\tag{8.10} \label{eq-8-10}
 $$
 
 Since the functions $L(\mathbf{q,\dot{q},}t)$ and $H(\mathbf{q,p,}t )$ are the Legendre transforms of each other, they satisfy the relation
 
 $$
-H\left( \mathbf{q},\mathbf{p},t\right) \mathbf{+}L(\mathbf{q},\mathbf{\dot{q} },t)=\mathbf{p\cdot \dot{q}}\label{8.11}
+H\left( \mathbf{q},\mathbf{p},t\right) \mathbf{+}L(\mathbf{q},\mathbf{\dot{q} },t)=\mathbf{p\cdot \dot{q}}\tag{8.11} \label{eq-8-11}
 $$
 
-The function $H\left( \mathbf{q},\mathbf{p},t\right)$, which is the Legendre transform of the Lagrangian $L(\mathbf{q},\mathbf{\dot{q}},t),$ is called the **Hamiltonian function** and Equation \ref{8.11} is identical to our original definition of the Hamiltonian given by equation $(8.1.3)$. The variables $\mathbf{q}$ and $t$ are passive variables thus Equation \ref{8.8} gives that
+The function $H\left( \mathbf{q},\mathbf{p},t\right)$, which is the Legendre transform of the Lagrangian $L(\mathbf{q},\mathbf{\dot{q}},t),$ is called the **Hamiltonian function** and Equation [8.11](#eq-8-11) is identical to our original definition of the Hamiltonian given by equation $(8.1.3)$. The variables $\mathbf{q}$ and $t$ are passive variables thus Equation [8.8](#eq-8-8) gives that
 
 $$
-\mathbf{\nabla }_{\mathbf{q}}L(\mathbf{\dot{q},q,}t\mathbf{)=-\nabla }_{ \mathbf{q}}H(\mathbf{p,q},t)\label{8.12}
+\mathbf{\nabla }_{\mathbf{q}}L(\mathbf{\dot{q},q,}t\mathbf{)=-\nabla }_{ \mathbf{q}}H(\mathbf{p,q},t)\tag{8.12} \label{eq-8-12}
 $$
 
-Written in component form Equation \ref{8.12} gives the partial derivative relations 
+Written in component form Equation [8.12](#eq-8-12) gives the partial derivative relations 
 $$
-\begin{align} \label{8.13}\frac{\partial L(\mathbf{\dot{q},q,}t)}{\partial q_{i}} &=&-\frac{ \partial H(\mathbf{p,q},t)}{\partial q_{i}} \\ \frac{\partial L(\mathbf{\dot{q},q,}t)}{\partial t} &=&-\frac{ \partial H(\mathbf{p,q},t)}{\partial t}\label{8.14}\end{align}
+\begin{align} \tag{8.13} \label{eq-8-13}\frac{\partial L(\mathbf{\dot{q},q,}t)}{\partial q_{i}} &=&-\frac{ \partial H(\mathbf{p,q},t)}{\partial q_{i}} \\ \frac{\partial L(\mathbf{\dot{q},q,}t)}{\partial t} &=&-\frac{ \partial H(\mathbf{p,q},t)}{\partial t}\tag{8.14}\end{align}
 $$
 
-Note that equations \ref{8.13} and \ref{8.14} are strictly a result of the Legendre transformation. To complete the transformation from Lagrangian to Hamiltonian mechanics it is necessary to invoke the calculus of variations via the Lagrange-Euler equations. The symmetry of the Legendre transform is illustrated by Equation \ref{8.11}.
+Note that equations [8.13](#eq-8-13) and [8.14](#eq-8-13) are strictly a result of the Legendre transformation. To complete the transformation from Lagrangian to Hamiltonian mechanics it is necessary to invoke the calculus of variations via the Lagrange-Euler equations. The symmetry of the Legendre transform is illustrated by Equation [8.11](#eq-8-11).
 
-Equation $7.6.16$ gives that the scalar product $\mathbf{p\cdot \dot{q}=} 2T_{2}.$ For scleronomic systems, with velocity independent potentials $U,$ the standard Lagrangian $\,L=T-U$ and $H=2T-T+U=T+U$. Thus, for this simple case, Equation \ref{8.11} reduces to an identity $H+L=2T$.
+Equation $7.6.16$ gives that the scalar product $\mathbf{p\cdot \dot{q}=} 2T_{2}.$ For scleronomic systems, with velocity independent potentials $U,$ the standard Lagrangian $\,L=T-U$ and $H=2T-T+U=T+U$. Thus, for this simple case, Equation [8.11](#eq-8-11) reduces to an identity $H+L=2T$.
 
 ## 8.3: Hamilton’s Equations of Motion
 
 The explicit form of the Legendre transform $(8.2.6)$ gives that the time derivative of the generalized coordinate $q_{j}$ is
 
 $$
-\dot{q}_{j}\mathbf{=}\frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}}\label{8.15}
+\dot{q}_{j}\mathbf{=}\frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}}\tag{8.15} \label{eq-8-15}
 $$
 
 The Euler-Lagrange equation $(6.6.1)$ is
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}-\frac{\partial L}{ \partial q_{j}}=\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\label{8.16}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}-\frac{\partial L}{ \partial q_{j}}=\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\tag{8.16} \label{eq-8-16}
 $$
 
 This gives the corresponding Hamilton equation for the time derivative of $p_{i}$ to be
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}=\dot{p}_{j}=\frac{ \partial L}{\partial q_{j}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{ \partial q_{j}}+Q_{j}^{EXC}\label{8.17}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}=\dot{p}_{j}=\frac{ \partial L}{\partial q_{j}}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{ \partial q_{j}}+Q_{j}^{EXC}\tag{8.17} \label{eq-8-17}
 $$
 
-Substitute equation $(8.2.9)$ into Equation \ref{8.17} leads to the second Hamilton equation of motion 
+Substitute equation $(8.2.9)$ into Equation [8.17](#eq-8-17) leads to the second Hamilton equation of motion 
 $$
-\dot{p}_{j}=-\frac{\partial H(\mathbf{q,p,}t)}{\partial q_{j}} +\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\label{8.18}
+\dot{p}_{j}=-\frac{\partial H(\mathbf{q,p,}t)}{\partial q_{j}} +\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\tag{8.18} \label{eq-8-18}
 $$
 
 One can explore further the implications of Hamiltonian mechanics by taking the time differential of $(8.1.3)$ giving.
 
 $$
-\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \dot{q}_{j}\frac{dp_{j} }{dt}+p_{j}\frac{d\dot{q}_{j}}{dt}-\frac{\partial L}{\partial q_{j}}\frac{ dq_{j}}{dt}-\frac{\partial L}{\partial \dot{q}_{j}}\frac{d\dot{q}_{j}}{dt} \right) -\frac{\partial L}{\partial t}\label{8.19}
+\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \dot{q}_{j}\frac{dp_{j} }{dt}+p_{j}\frac{d\dot{q}_{j}}{dt}-\frac{\partial L}{\partial q_{j}}\frac{ dq_{j}}{dt}-\frac{\partial L}{\partial \dot{q}_{j}}\frac{d\dot{q}_{j}}{dt} \right) -\frac{\partial L}{\partial t}\tag{8.19} \label{eq-8-19}
 $$
 
-Inserting the conjugate momenta $p_{i}\equiv \frac{\partial L}{\partial \dot{ q}_{i}}$ and Equation \ref{8.17} into Equation \ref{8.19} results in
+Inserting the conjugate momenta $p_{i}\equiv \frac{\partial L}{\partial \dot{ q}_{i}}$ and Equation [8.17](#eq-8-17) into Equation [8.19](#eq-8-19) results in
 
 $$
-\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \dot{q}_{j}\dot{p} _{j}+p_{j}\frac{d\dot{q}_{j}}{dt}-\left[ \dot{p}_{j}-\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}-Q_{j}^{EXC}\right] \dot{q} _{j}-p_{j}\frac{d\dot{q}_{j}}{dt}\right) -\frac{\partial L}{\partial t}\label{8.20}
+\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \dot{q}_{j}\dot{p} _{j}+p_{j}\frac{d\dot{q}_{j}}{dt}-\left[ \dot{p}_{j}-\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}-Q_{j}^{EXC}\right] \dot{q} _{j}-p_{j}\frac{d\dot{q}_{j}}{dt}\right) -\frac{\partial L}{\partial t}\tag{8.20} \label{eq-8-20}
 $$
  The second and fourth terms cancel as well as the $\dot{q}_{j}\dot{p}_{j}$ terms, leaving
 
 $$
-\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L}{\partial t}\label{8.21}
+\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L}{\partial t}\tag{8.21} \label{eq-8-21}
 $$
 
 This is the **generalized energy theorem** given by equation $(7.8.1)$.
@@ -158,38 +160,38 @@ This is the **generalized energy theorem** given by equation $(7.8.1)$.
 The total differential of the Hamiltonian also can be written as
 
 $$
-\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \frac{\partial H}{ \partial p_{j}}\dot{p}_{j}+\frac{\partial H}{\partial q_{j}}\dot{q} _{j}\right) +\frac{\partial H}{\partial t}\label{8.22}
+\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \frac{\partial H}{ \partial p_{j}}\dot{p}_{j}+\frac{\partial H}{\partial q_{j}}\dot{q} _{j}\right) +\frac{\partial H}{\partial t}\tag{8.22} \label{eq-8-22}
 $$
 
-Use equations \ref{8.15} and \ref{8.18} to substitute for $\frac{\partial H}{ \partial p_{j}}$ and $\frac{\partial H}{\partial q_{j}}$ in Equation \ref{8.22} gives
+Use equations [8.15](#eq-8-15) and [8.18](#eq-8-18) to substitute for $\frac{\partial H}{ \partial p_{j}}$ and $\frac{\partial H}{\partial q_{j}}$ in Equation [8.22](#eq-8-22) gives
 
 $$
-\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) +\frac{\partial H(\mathbf{q,p,}t)}{ \partial t}\label{8.23}
+\frac{dH(\mathbf{q,p,}t)}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) +\frac{\partial H(\mathbf{q,p,}t)}{ \partial t}\tag{8.23} \label{eq-8-23}
 $$
 
-Note that Equation \ref{8.23} must equal the generalized energy theorem, i.e. Equation \ref{8.21}. Therefore,
+Note that Equation [8.23](#eq-8-23) must equal the generalized energy theorem, i.e. Equation [8.21](#eq-8-21). Therefore,
 
 $$
-\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}\label{8.24}
+\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}\tag{8.24} \label{eq-8-24}
 $$
 
 In summary, **Hamilton’s equations of motion** are given by
 
 $$
-\begin{align} \dot{q}_{j} &= \frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}} \label{8.25}\\[4pt] \dot{p}_{j} &=-\frac{\partial H(\mathbf{q,p,}t)}{\partial q_{j}}+ \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}} +Q_{j}^{EXC}\right] \label{8.26}\\[4pt] \frac{dH(\mathbf{q,p,}t)}{dt} &= \sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L(\mathbf{q,\dot{q},}t)}{ \partial t}\label{8.27}\end{align}
+\begin{align} \dot{q}_{j} &= \frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}} \tag{8.25} \label{eq-8-25}\\[4pt] \dot{p}_{j} &=-\frac{\partial H(\mathbf{q,p,}t)}{\partial q_{j}}+ \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}} +Q_{j}^{EXC}\right] \tag{8.26}\\[4pt] \frac{dH(\mathbf{q,p,}t)}{dt} &= \sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L(\mathbf{q,\dot{q},}t)}{ \partial t}\tag{8.27}\end{align}
 $$
 
 The symmetry of Hamilton’s equations of motion is illustrated when the Lagrange multiplier and generalized forces are zero. Then
 
 $$
-\begin{align} \dot{q}_{j} &= \frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}} \label{8.28}\\[4pt] \dot{p}_{j} &= -\frac{\partial H(\mathbf{p,q},t)}{\partial q_{j}} \label{8.29}\\[4pt] \frac{dH(\mathbf{p,q},t)}{dt} &= \frac{\partial H(\mathbf{p,q},t )}{\partial t}=-\frac{\partial L(\mathbf{\dot{q},q,}t)}{ \partial t}\end{align}\label{8.30}
+\begin{align} \dot{q}_{j} &= \frac{\partial H(\mathbf{q,p,}t)}{\partial p_{j}} \tag{8.28} \label{eq-8-28}\\[4pt] \dot{p}_{j} &= -\frac{\partial H(\mathbf{p,q},t)}{\partial q_{j}} \tag{8.29}\\[4pt] \frac{dH(\mathbf{p,q},t)}{dt} &= \frac{\partial H(\mathbf{p,q},t )}{\partial t}=-\frac{\partial L(\mathbf{\dot{q},q,}t)}{ \partial t}\end{align}\tag{8.30}
 $$
 
 This simplified form illustrates the symmetry of Hamilton’s equations of motion. Many books present the Hamiltonian only for this special simplified case where it is holonomic, conservative, and generalized coordinates are used.
 
 ### Canonical Equations of Motion
 
-Hamilton’s equations of motion, summarized in equations \ref{8.25}-\ref{8.27} use either a minimal set of generalized coordinates, or the Lagrange multiplier terms, to account for holonomic constraints, or generalized forces $Q_{j}^{EXC}$ to account for non-holonomic or other forces. Hamilton’s equations of motion usually are called the **canonical equations of motion**. Note that the term "canonical" has nothing to do with religion or canon law; the reason for this name has bewildered many generations of students of classical mechanics. The term was introduced by Jacobi in $1837$ to designate a simple and fundamental set of conjugate variables and equations. Note the symmetry of Hamilton’s two canonical equations, plus the fact that the canonical variables $p_{k},q_{k}$ are treated as independent canonical variables. The Lagrange mechanics coordinates $(\mathbf{q, \dot{q},}t)$ are replaced by the Hamiltonian mechanics coordinates $(\mathbf{ q,p,}t),$ *where the conjugate momenta* $\mathbf{p}$*are taken to be independent of the coordinate* $\mathbf{q}$.
+Hamilton’s equations of motion, summarized in equations [8.25](#eq-8-25)-[8.27](#eq-8-25) use either a minimal set of generalized coordinates, or the Lagrange multiplier terms, to account for holonomic constraints, or generalized forces $Q_{j}^{EXC}$ to account for non-holonomic or other forces. Hamilton’s equations of motion usually are called the **canonical equations of motion**. Note that the term "canonical" has nothing to do with religion or canon law; the reason for this name has bewildered many generations of students of classical mechanics. The term was introduced by Jacobi in $1837$ to designate a simple and fundamental set of conjugate variables and equations. Note the symmetry of Hamilton’s two canonical equations, plus the fact that the canonical variables $p_{k},q_{k}$ are treated as independent canonical variables. The Lagrange mechanics coordinates $(\mathbf{q, \dot{q},}t)$ are replaced by the Hamiltonian mechanics coordinates $(\mathbf{ q,p,}t),$ *where the conjugate momenta* $\mathbf{p}$*are taken to be independent of the coordinate* $\mathbf{q}$.
 
 Lagrange was the first to derive the canonical equations but he did not recognize them as a basic set of equations of motion. Hamilton derived the canonical equations of motion from his fundamental variational principle, chapter $9.2$, and made them the basis for a far-reaching theory of dynamics. Hamilton’s equations give $2s$ first-order differential equations for $p_{k},q_{k}$ for each of the $s=n-m$ degrees of freedom. Lagrange’s equations give $s$ second-order differential equations for the $s$ independent generalized coordinates $q_{k},\dot{q}_{k}.$
 
@@ -212,16 +214,16 @@ $$
 Using appendix table $19.3.3,$ the Lagrangian can be written in cylindrical coordinates as
 
 $$
-\begin{align} L &=T-U \\[4pt] &= \frac{m}{2}\left( \dot{\rho}^{2}+\rho ^{2}\dot{\phi}^{2}+\dot{z}^{2}\right) -U(\rho ,z,\phi ) \label{8.32}\end{align}
+\begin{align} L &=T-U \\[4pt] &= \frac{m}{2}\left( \dot{\rho}^{2}+\rho ^{2}\dot{\phi}^{2}+\dot{z}^{2}\right) -U(\rho ,z,\phi ) \tag{8.32} \label{eq-8-32}\end{align}
 $$
 
 The conjugate momenta are
 
 $$
-\begin{align} p_{\rho } &= \frac{\partial L}{\partial \dot{\rho}}=m\dot{\rho} \\ p_{\phi } &= \frac{\partial L}{\partial \dot{\phi}}=m\rho ^{2}\dot{\phi} \\ p_{z} &= \frac{\partial L}{\partial \dot{z}}=m\dot{z} \label{8.35}\end{align}
+\begin{align} p_{\rho } &= \frac{\partial L}{\partial \dot{\rho}}=m\dot{\rho} \\ p_{\phi } &= \frac{\partial L}{\partial \dot{\phi}}=m\rho ^{2}\dot{\phi} \\ p_{z} &= \frac{\partial L}{\partial \dot{z}}=m\dot{z} \tag{8.35} \label{eq-8-35}\end{align}
 $$
 
-Assume a conservative force, then $H$ is conserved. Since the transformation from Cartesian to non-rotating generalized cylindrical coordinates is time independent, then $H=E.$ Then using Equations \ref{8.32}-\ref{8.35} gives the Hamiltonian in cylindrical coordinates to be
+Assume a conservative force, then $H$ is conserved. Since the transformation from Cartesian to non-rotating generalized cylindrical coordinates is time independent, then $H=E.$ Then using Equations [8.32](#eq-8-32)-[8.35](#eq-8-35) gives the Hamiltonian in cylindrical coordinates to be
 
 $$
 \begin{align} H\left( \mathbf{q},\mathbf{p},t\right) &= \sum_{i}p_{i}\dot{q}_{i}-L(\mathbf{ q},\mathbf{\dot{q}},t) \\ &= \left( p_{\rho }\dot{\rho}+p_{\phi }\dot{\phi}+p_{z}\dot{z}\right) -\frac{ m}{2}\left( \overset{.}{\rho }^{2}+\rho ^{2}\overset{.}{\phi }^{2}+\overset{. }{z}^{2}\right) +U(\rho ,z,\phi ) \notag \\ &= \frac{1}{2m}\left( p_{\rho }^{2}+\frac{p_{\phi }^{2}}{\rho ^{2}} +p_{z}^{2}\right) +U(\rho ,z,\phi )\end{align}
@@ -250,10 +252,10 @@ $$
 
 The conjugate momenta are 
 $$
-\begin{align} \label{8.46} p_{r} &= \frac{\partial L}{\partial \overset{.}{r}}=m\dot{r} \\ p_{\theta } &= \frac{\partial L}{\partial \overset{.}{\theta }}=mr^{2}\dot{ \theta} \\ p_{\phi } &= \frac{\partial L}{\partial \overset{.}{\phi }}=mr^{2}\sin ^{2}\theta \dot{\phi} \label{8.48} \end{align}
+\begin{align} \tag{8.46} \label{eq-8-46} p_{r} &= \frac{\partial L}{\partial \overset{.}{r}}=m\dot{r} \\ p_{\theta } &= \frac{\partial L}{\partial \overset{.}{\theta }}=mr^{2}\dot{ \theta} \\ p_{\phi } &= \frac{\partial L}{\partial \overset{.}{\phi }}=mr^{2}\sin ^{2}\theta \dot{\phi} \tag{8.48} \end{align}
 $$
 
-Assuming a conservative force then $H$ is conserved. Since the transformation from cartesian to generalized spherical coordinates is time independent, then $H=E.$ Thus using \ref{8.46}-\ref{8.48} the Hamiltonian is given in spherical coordinates by 
+Assuming a conservative force then $H$ is conserved. Since the transformation from cartesian to generalized spherical coordinates is time independent, then $H=E.$ Thus using [8.46](#eq-8-46)-[8.48](#eq-8-46) the Hamiltonian is given in spherical coordinates by 
 $$
 \begin{align} H\left( \mathbf{q},\mathbf{p},t\right) &= \sum_{i}p_{i}\dot{q}_{i}-L(\mathbf{ q},\mathbf{\dot{q}},t) \\ &= \left( p_{r}\dot{r}+p_{\theta }\dot{\theta}+p_{\phi }\dot{\phi}\right) - \frac{m}{2}\left( \dot{r}^{2}+r^{2}\dot{\theta}^{2}+r^{2}\sin ^{2}\theta \dot{\phi}^{2}\right) +U(r,\theta ,\phi ) \\ &= \frac{1}{2m}\left( p_{r}^{2}+\frac{p_{\theta }^{2}}{r^{2}}+\frac{p_{\phi }^{2}}{r^{2}\sin ^{2}\theta }\right) +U(r,\theta ,\phi )\end{align}
 $$
@@ -274,15 +276,21 @@ The equations of motion of a system can be derived using the Hamiltonian coupled
 Formally the Hamiltonian is constructed from the Lagrangian. That is
 
 1. Select a set of independent generalized coordinates $q_{i}$
+
 2. Partition the active forces.
+
 3. Construct the Lagrangian $L(q_{i}, \dot{q}_{i},t)$
+
 4. Derive the conjugate generalized momenta via $p_{i}=\frac{\partial L}{ \partial \dot{q}_{i}}$
+
 5. Knowing $L,\dot{q}_{i},p_{i}$ derive $H=\sum_{i}p_{i}\dot{q}_{i}-L$
+
 6. Derive $\dot{q}_{k}=\frac{\partial H}{\partial p_{k}}$ and $\dot{p}_{j}=- \frac{\partial H(\mathbf{q,p,}t\mathbf{)}}{\partial q_{j}} +\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}} +Q_{j}^{EXC}.$
 
 This procedure appears to be unnecessarily complicated compared to just using the Lagrangian plus Lagrangian mechanics to derive the equations of motion. Fortunately the above lengthy procedure often can be bypassed for conservative systems. That is, if the following conditions are satisfied;
 
 1. $L=T(\overset{.}{q})-U(q)$, that is, $U\left( q\right)$ is independent of the velocity $\dot{q}$.
+
 2. the generalized coordinates are time independent.
 
 then it is possible to use the fact that
@@ -293,7 +301,8 @@ $$
 
 The following five examples illustrate the use of Hamiltonian mechanics to derive the equations of motion.
 
-Example 8.1: Motion in a uniform gravitational field
+::::{admonition} Example 8.5.1: Motion in a uniform gravitational field
+:class: example
 
 Consider a mass $m$ in a uniform gravitational field acting in the $-\mathbf{z}$ direction. The Lagrangian for this simple case is
 
@@ -315,8 +324,10 @@ $$
 $$
 
 Combining these gives that $\ddot{x}=0,$ $\ddot{y}=0, \ddot{z}=-g$. Note that the linear momenta $p_{x}$ and $p_{y}$ are constants of motion whereas the rate of change of $p_{z}$ is given by the gravitational force $mg$. Note also that $H=T+U$ for this conservative system.
+::::
 
-Example 8.2: One-dimensional harmonic oscillator
+::::{admonition} Example 8.5.2: One-dimensional harmonic oscillator
+:class: example
 
 Consider a mass $m$ subject to a linear restoring force with spring constant $k.$ The Lagrangian $L=T-U$ equals
 
@@ -361,8 +372,10 @@ $$
 $$
 
 which is the equation of motion for the harmonic oscillator.
+::::
 
-Example 8.3: Plane pendulum
+::::{admonition} Example 8.5.3: Plane pendulum
+:class: example
 
 The plane pendulum, in a uniform gravitational field $g,$ is an interesting system to consider. There is only one generalized coordinate, $\theta$ and the Lagrangian for this system is
 
@@ -401,21 +414,27 @@ $$
 where $E$ is a constant of motion. Note that the angular momentum $p_{\theta }$ is not a constant of motion since $\dot{p} _{\theta }$ explicitly depends on $\theta$.
 
 :::{figure} ../images/lt-21176-8.5.1.png
-:alt: 8.5.1.PNG
+:label: fig-8-5-1
+:enumerator: 8.5.1
+:alt: Phase-space diagrams for the plane pendulum. The separatrix (bold line) separates the oscillatory solutions from the rolling solutions. The upper (a) shows one complete cycle while the lower (b) shows two complete cycles.
 
-$1$: Phase-space diagrams for the plane pendulum. The separatrix (bold line) separates the oscillatory solutions from the rolling solutions. The upper (a) shows one complete cycle while the lower (b) shows two complete cycles.
+Phase-space diagrams for the plane pendulum. The separatrix (bold line) separates the oscillatory solutions from the rolling solutions. The upper (a) shows one complete cycle while the lower (b) shows two complete cycles.
 :::
 
 The solutions for the plane pendulum on a $\left( \theta ,p_{\theta }\right)$ phase diagram, shown in the adjacent figure, illustrate the motion. The upper phase-space plot shows the range $\left( \theta =\pm \pi ,p_{\theta }\right)$. Note that the $\theta =+\pi$ and $-\pi$ correspond to the same physical point, that is the phase diagram should be rolled into a cylinder connected along the dashed lines. The lower phase space plot shows two cycles for $\theta$ to better illustrate the cyclic nature of the phase diagram. The corresponding state-space diagram is shown in Figure $3.4.2$. The trajectories are ellipses for low energy $-mgl<E\,<mgl$ corresponding to oscillations of the pendulum about $\theta =0$. The center of the ellipse $\left( 0,0\right)$ is a stable equilibrium point for the oscillation. However, there is a phase change to rotational motion about the horizontal axis when $\left\vert E\right\vert >mgl$, that is, the pendulum swings around a circle continuously, i.e. it rotates continuously in one direction about the horizontal axis. The phase change occurs at $E=mgl.$ and is designated by the separatrix trajectory.
 
 The plot of $p_{\theta }$ versus $\theta$ for the plane pendulum is better presented on a cylindrical phase space representation since $\theta$ is a cyclic variable that cycles around the cylinder, whereas $p_{\theta }$ oscillates equally about zero having both positive and negative values. When wrapped around a cylinder then the unstable and stable equilibrium points will be at diametrically opposite locations on the surface of the cylinder at $p_{\theta }=0$. For small oscillations about equilibrium, also called librations, the correlation between $p_{\theta }$ and $\theta$ is given by the clockwise closed ellipses wrapped on the cylindrical surface, whereas for energies $\left\vert E\right\vert >mgl$ the positive $p_{\theta }$ corresponds to counterclockwise rotations while the negative $p_{\theta }$ corresponds to clockwise rotations.
+::::
 
-Example 8.4: Hooke's law force constrained to the surface of a cylinder
+::::{admonition} Example 8.5.4: Hooke's law force constrained to the surface of a cylinder
+:class: example
 
 :::{figure} ../images/lt-21175-8.5.2.png
-:alt: 8.5.2.PNG
+:label: fig-8-5-2
+:enumerator: 8.5.2
+:alt: Mass attracted to origin by force proportional to distance from origin with the motion constrained to the surface of a cylinder.
 
-$2$: Mass attracted to origin by force proportional to distance from origin with the motion constrained to the surface of a cylinder.
+Mass attracted to origin by force proportional to distance from origin with the motion constrained to the surface of a cylinder.
 :::
 
 Consider the case where a mass $m$ is attracted by a force directed toward the origin and proportional to the distance from the origin. Determine the Hamiltonian if the mass is constrained to move on the surface of a cylinder defined by
@@ -439,7 +458,7 @@ $$
 This is independent of $\theta ,$ and thus $\theta$ is cyclic.
 
 $$
-p_{z}=\frac{\partial L}{\partial \dot{z}}=m\dot{z} \tag{b} \label{8-b}
+p_{z}=\frac{\partial L}{\partial \dot{z}}=m\dot{z} \tag{b} \label{eq-8-b}
 $$
 
 The system is conservative, and the transformation from rectangular to cylindrical coordinates does not depend explicitly on time. Therefore the Hamiltonian is conserved and equals the total energy. That is
@@ -450,10 +469,10 @@ $$
 
 The equations of motion then are given by the canonical equations 
 $$
-\begin{align} \dot{p}_{\theta } &=&-\frac{\partial H}{\partial \theta }=0\hspace{1in}\dot{ \theta}=\frac{\partial H}{\partial p_{\theta }}=\frac{p_{\theta }}{mR^{2}} \tag{c} \label{8-c} \\ \dot{p}_{z} &=&-\frac{\partial H}{\partial z}=-kz\mathit{\hspace{0.8in}}\dot{ z}=\frac{\partial H}{\partial p_{z}}=\frac{p_{z}}{m} \tag{d} \label{8-d}\end{align}
+\begin{align} \dot{p}_{\theta } &=&-\frac{\partial H}{\partial \theta }=0\hspace{1in}\dot{ \theta}=\frac{\partial H}{\partial p_{\theta }}=\frac{p_{\theta }}{mR^{2}} \tag{c} \label{eq-8-c} \\ \dot{p}_{z} &=&-\frac{\partial H}{\partial z}=-kz\mathit{\hspace{0.8in}}\dot{ z}=\frac{\partial H}{\partial p_{z}}=\frac{p_{z}}{m} \tag{d} \end{align}
 $$
 
-Equation \ref{a} and \ref{8-c} imply that
+Equation (a) and [c](#eq-8-c) imply that
 
 $$
 p_{\theta }=\frac{\partial L}{\partial \overset{.}{\theta }}=mR^{2}\dot{ \theta}=\text{constant}\nonumber
@@ -461,15 +480,17 @@ $$
 
 Thus the angular momentum about the axis of the cylinder is conserved, that is, it is a cyclic variable.
 
-Combining equations \ref{8-b} and \ref{8-d} implies that
+Combining equations [b](#eq-8-b) and [d](#eq-8-c) implies that
 
 $$
 \ddot{z}+\frac{k}{m}z=0\nonumber
 $$
 
 This is the equation for simple harmonic motion with angular frequency $\omega =\sqrt{\frac{k}{m}}$. The symmetries imply that this problem has the same solutions for the $z$ coordinate as the harmonic oscillator, while the $\theta$ coordinate moves with constant angular velocity.
+::::
 
-Example 8.5: Electron motion in a cylindrical magnetron
+::::{admonition} Example 8.5.5: Electron motion in a cylindrical magnetron
+:class: example
 
 A magnetron comprises a hot cylindrical wire cathode that emits electrons and is at a high negative voltage. It is surrounded by a larger diameter concentric cylindrical anode at ground potential. A uniform magnetic field runs parallel to the cylindrical axis of the magnetron. The electron beam excites a multiple set of microwave cavities located around the circumference of the cylindrical wall of the anode. The magnetron was invented in England during World War 2 to generate microwaves required for the development of radar.
 
@@ -536,6 +557,7 @@ $$
 $$
 
 Note that if $B<B_{c}$ then $p_{r}$ is real at $r=R$. However, if $B>B_{c}$ then $p_{r}$ is imaginary at $r=R$ implying that there must be a maximum orbit radius $r_{0}$ for the electron where $r_{0}<R$. That is, the electron trajectories are confined spatially to coaxial cylindrical orbits concentric with the magnetron electromagnetic fields. These closed electron trajectories excite the microwave cavities located in the nearby outer cylindrical wall of the anode.
+::::
 
 ## 8.6: Routhian Reduction
 
@@ -585,7 +607,7 @@ $$
 
 which is expressed as the complete Hamiltonian minus the kinetic energy term for the noncyclic coordinates. The Routhian $R_{cyclic}$ behaves like a Hamiltonian for the $m$ cyclic coordinates and behaves like a negative Lagrangian $L_{noncyclic\text{ }}$for all the $s=n-m$ noncyclic coordinates$\ i=1, 2, ..., s.$ Thus the equations of motion for the $s$ non-cyclic variables are given using Lagrange’s equations of motion, while the Routhian behaves like a Hamiltonian $H_{cyclic}$ for the $m$ ignorable cyclic variables $i=s+1, ..., n.$
 
-Ignoring both the Lagrange multiplier and generalized forces, then the partitioned equations of motion for the non-cyclic and cyclic generalized coordinates are given in Table 8.1.
+Ignoring both the Lagrange multiplier and generalized forces, then the partitioned equations of motion for the non-cyclic and cyclic generalized coordinates are given in Table 8.6.1.
 
 |  | Lagrange equations | Hamilton equations |
 | --- | --- | --- |
@@ -609,10 +631,10 @@ $$
 It can be written in a frequently used form
 
 $$
-\begin{align} R_{noncyclic}(q_{1}, ..., q_{n};p_{1}, ..., p_{s};\dot{q}_{s+1}, ...., \dot{q} _{n};t) &\equiv &\sum_{noncyclic}^{s}p_{i}\dot{q}_{i}-L=\sum_{i=1}^{n}p_{i} \dot{q}_{i}-L-\sum_{cyclic}^{m}p_{i}\dot{q}_{i} \notag \\ &=&H-\sum_{cyclic}^{m}p_{i}\dot{q}_{i} \label{8.68} \end{align}
+\begin{align} R_{noncyclic}(q_{1}, ..., q_{n};p_{1}, ..., p_{s};\dot{q}_{s+1}, ...., \dot{q} _{n};t) &\equiv &\sum_{noncyclic}^{s}p_{i}\dot{q}_{i}-L=\sum_{i=1}^{n}p_{i} \dot{q}_{i}-L-\sum_{cyclic}^{m}p_{i}\dot{q}_{i} \notag \\ &=&H-\sum_{cyclic}^{m}p_{i}\dot{q}_{i} \tag{8.68} \label{eq-8-68} \end{align}
 $$
 
-This Routhian behaves like a Hamiltonian for the $s$ non-cyclic variables which are expressed in terms of $q$ and $p$ appropriate for a Hamiltonian. This Routhian writes the $m$ cyclic coordinates in terms of $q$, and $\dot{q} ,$ appropriate for a Lagrangian, which are treated assuming the Routhian $R_{cyclic}$ is a negative Lagrangian for these cyclic variables as summarized in table 8.2.
+This Routhian behaves like a Hamiltonian for the $s$ non-cyclic variables which are expressed in terms of $q$ and $p$ appropriate for a Hamiltonian. This Routhian writes the $m$ cyclic coordinates in terms of $q$, and $\dot{q} ,$ appropriate for a Lagrangian, which are treated assuming the Routhian $R_{cyclic}$ is a negative Lagrangian for these cyclic variables as summarized in table 8.6.2.
 
 |  | Hamilton equations | Lagrange equations |
 | --- | --- | --- |
@@ -629,12 +651,15 @@ The Lagrangian and Hamiltonian are the fundamental algebraic approaches to class
 
 Note that the Lagrangian, Hamiltonian, plus both the $R_{noncyclic}$ and $R_{noncyclic}$ Routhian’s, all are scalars under rotation, that is, they are rotationally invariant. However, they may be expressed in terms of the coordinates in either the stationary or a rotating frame. The major difference is that the Routhian includes only subsets of the kinetic energy term $\sum_{j}p_{j}\dot{q}_{j}$. The relative merits of using Lagrangian, Hamiltonian, and both the $R_{noncyclic}$ and $R_{noncyclic}$ Routhian reduction methods, are illustrated by the following examples.
 
-Example 8.1: Spherical pendulum using Hamiltonian mechanics
+::::{admonition} Example 8.6.1: Spherical pendulum using Hamiltonian mechanics
+:class: example
 
 :::{figure} ../images/lt-21177-8.6.1.png
-:alt: 8.6.1.PNG
+:label: fig-8-6-1
+:enumerator: 8.6.1
+:alt: Spherical pendulum
 
-$1$: Spherical pendulum
+Spherical pendulum
 :::
 
 The spherical pendulum provides a simple test case for comparison of the use of Lagrangian mechanics, Hamiltonian mechanics, and both approaches to Routhian reduction. The Lagrangian mechanics solution of the spherical pendulum is described in example $6.8.7$. The solution using Hamiltonian mechanics is given in this example followed by solutions using both of the Routhian reduction approaches.
@@ -665,34 +690,36 @@ $$
 
 The equations of motion are 
 $$
-\overset{.}{\dot{p}_{\theta }=-\frac{\partial H}{\partial \theta }=\frac{ p_{\phi }^{2}\cos \theta }{2mb^{2}\sin ^{3}\theta }}-mgb\sin \theta \tag{$a$} \label{8-a1}
+\overset{.}{\dot{p}_{\theta }=-\frac{\partial H}{\partial \theta }=\frac{ p_{\phi }^{2}\cos \theta }{2mb^{2}\sin ^{3}\theta }}-mgb\sin \theta \tag{$a$} \label{eq-8-a1}
 $$
 
 $$
-\mathit{\dot{p}}_{\phi }\mathit{=-}\frac{\partial H}{\partial \phi }\mathit{ =0} \tag{$b$} \label{8-b1}
+\mathit{\dot{p}}_{\phi }\mathit{=-}\frac{\partial H}{\partial \phi }\mathit{ =0} \tag{$b$} \label{eq-8-b1}
 $$
 
 $$
-\mathit{\dot{\theta}=}\frac{\partial H}{\partial p_{\theta }}\mathit{=}\frac{ p_{\theta }}{mb^{2}} \tag{$c$} \label{8-c1}
+\mathit{\dot{\theta}=}\frac{\partial H}{\partial p_{\theta }}\mathit{=}\frac{ p_{\theta }}{mb^{2}} \tag{$c$} \label{eq-8-c1}
 $$
 
 $$
 \dot{\phi}=\frac{\partial H}{\partial p_{\phi }}=\frac{p_{\phi }}{mb^{2}\sin ^{2}\theta } \tag{$d$}
 $$
- Take the time derivative of Equation \ref{8-c1} and use \ref{8-a1} to substitute for $\dot{p}_{\theta }$ gives that 
+ Take the time derivative of Equation [c1](#eq-8-c1) and use [a1](#eq-8-a1) to substitute for $\dot{p}_{\theta }$ gives that 
 $$
 \ddot{\theta}-\frac{p_{\phi }^{2}\cos \theta }{m^{2}b^{4}\sin ^{3}\theta }+ \frac{g}{b}\sin \theta =0 \tag{$e$}
 $$
 
-Note that Equation \ref{8-b1} shows that $\phi$ is a cyclic coordinate. Thus
+Note that Equation [b1](#eq-8-b1) shows that $\phi$ is a cyclic coordinate. Thus
 
 $$
 p_{\phi }=mb^{2}\sin ^{2}\theta \dot{\phi}=\text{constant}\nonumber
 $$
 
 that is the angular momentum about the vertical axis is conserved. Note that although $p_{\phi }$ is a constant of motion, $\dot{\phi }=\frac{p_{\phi }}{mb^{2}\sin ^{2}\theta }$ is a function of $\theta ,$ and thus in general it is not conserved. There are various solutions depending on the initial conditions. If $p_{\phi }=0$ then the pendulum is just the simple pendulum discussed previously that can oscillate, or rotate in the $\theta$ direction. The opposite extreme is where $p_{\theta }=0$ where the pendulum rotates in the $\phi$ direction with constant $\theta$. In general the motion is a complicated coupling of the $\theta$ and $\phi$ motions.
+::::
 
-Example 8.2: Spherical pendulum using $R_{cyclic}(r, \theta , \phi , \dot{r}, \dot{\theta}, p_{\phi})$
+::::{admonition} Example 8.6.2: Spherical pendulum using $R_{cyclic}(r, \theta , \phi , \dot{r}, \dot{\theta}, p_{\phi})$
+:class: example
 
 The Lagrangian for the spherical pendulum is
 
@@ -726,7 +753,7 @@ $$
 
 These two equations show that $p_{\phi }$ is a constant of motion given by 
 $$
-mb^{2}\sin ^{2}\theta \dot{\phi}=p_{\phi }=\text{ constant} \label{8-alpha} \tag{$\alpha $}
+mb^{2}\sin ^{2}\theta \dot{\phi}=p_{\phi }=\text{ constant} \label{eq-8-alpha} \tag{$\alpha $}
 $$
 
 Note that the Hamiltonian only includes the kinetic energy for the $\phi$ motion which is a constant of motion, but this energy does not equal the total energy. This solution is what is predicted by Noether’s theorem due to the symmetry of the Lagrangian about the vertical $\phi$ axis.
@@ -745,12 +772,14 @@ $$
 
 that is 
 $$
-\ddot{\theta}-\frac{p_{\phi }^{2}\cos \theta }{m^{2}b^{4}\sin ^{3}\theta }+ \frac{g}{b}\sin \theta =0 \tag{$\beta $} \label{8-beta}
+\ddot{\theta}-\frac{p_{\phi }^{2}\cos \theta }{m^{2}b^{4}\sin ^{3}\theta }+ \frac{g}{b}\sin \theta =0 \tag{$\beta $} \label{eq-8-beta}
 $$
 
-This result is identical to the one obtained using Lagrangian mechanics in example $7.8.7$ and Hamiltonian mechanics given in Example 8.1. The Routhian $R_{cyclic}$ simplified the problem to one degree of freedom $\theta$ by absorbing into the Hamiltonian the ignorable cyclic $\phi$ coordinate and its conserved conjugate momentum $p_{\phi }$. Note that the central term in Equation \ref{8-beta} is the centrifugal term which is due to rotation about the vertical axis. This term is zero for plane pendulum motion when $p_{\phi }=0$.
+This result is identical to the one obtained using Lagrangian mechanics in example $7.8.7$ and Hamiltonian mechanics given in example 8.6.1. The Routhian $R_{cyclic}$ simplified the problem to one degree of freedom $\theta$ by absorbing into the Hamiltonian the ignorable cyclic $\phi$ coordinate and its conserved conjugate momentum $p_{\phi }$. Note that the central term in Equation [$\beta$](#eq-8-beta) is the centrifugal term which is due to rotation about the vertical axis. This term is zero for plane pendulum motion when $p_{\phi }=0$.
+::::
 
-Example 8.3: Spherical pendulum using $R_{noncyclic} (r, \theta , p_r , p_{\theta}, \dot{\phi})$
+::::{admonition} Example 8.6.3: Spherical pendulum using $R_{noncyclic} (r, \theta , p_r , p_{\theta}, \dot{\phi})$
+:class: example
 
 For a rotational system the Routhian $R_{noncyclic}(r, \theta , \phi , p_{r}, p_{\theta }, \dot{\phi})$ also can be used to project out the Hamiltonian for the active variables in the rotating body-fixed frame of reference. Consider the spherical pendulum where the rotating frame is rotating with angular velocity $\dot{\phi}$. The Lagrangian for the spherical pendulum is
 
@@ -775,10 +804,10 @@ The total Hamiltonian is given by
 $$
 H(r, \theta , \phi , p_{r}, p_{\theta }, p_{\phi })=\sum_{i}p_{i}\dot{q}_{i}-L= \frac{p_{\theta }^{2}}{2mb^{2}}+\frac{p_{\phi }^{2}}{2mb^{2}\sin ^{2}\theta } -mgb\cos \theta\nonumber
 $$
- The Routhian for the rotating frame of reference $H_{rot}$ is given by Equation \ref{8.68}, that is
+ The Routhian for the rotating frame of reference $H_{rot}$ is given by Equation [8.68](#eq-8-68), that is
 
 $$
-\begin{align} R_{noncyclic}(r, \theta , \phi , p_{r}, p_{\theta }, \dot{\phi}) &=&\sum_{i=1}^{n}p_{i}\dot{q}_{i}-p_{\phi }\dot{\phi}-L=H-p_{\phi }\dot{\phi} \notag \\ &=&\frac{p_{\theta }^{2}}{2mb^{2}}+\frac{p_{\phi }^{2}}{2mb^{2}\sin ^{2}\theta }-mgb\cos \theta -p_{\phi }\dot{\phi} \notag \\ &=&\frac{p_{\theta }^{2}}{2mb^{2}}-\frac{1}{2}mb^{2}\sin ^{2}\theta \dot{\phi }^{2}-mgb\cos \theta \label{8-gamma} \tag{$\gamma $}\end{align}
+\begin{align} R_{noncyclic}(r, \theta , \phi , p_{r}, p_{\theta }, \dot{\phi}) &=&\sum_{i=1}^{n}p_{i}\dot{q}_{i}-p_{\phi }\dot{\phi}-L=H-p_{\phi }\dot{\phi} \notag \\ &=&\frac{p_{\theta }^{2}}{2mb^{2}}+\frac{p_{\phi }^{2}}{2mb^{2}\sin ^{2}\theta }-mgb\cos \theta -p_{\phi }\dot{\phi} \notag \\ &=&\frac{p_{\theta }^{2}}{2mb^{2}}-\frac{1}{2}mb^{2}\sin ^{2}\theta \dot{\phi }^{2}-mgb\cos \theta \label{eq-8-gamma} \tag{$\gamma $}\end{align}
 $$
 
 This behaves like a negative Lagrangian for $\phi$ and a Hamiltonian for $\theta$. The conjugate momenta are
@@ -792,26 +821,28 @@ that is, $p_{\phi }$ is a constant of motion.
 Hamilton’s equations of motion give
 
 $$
-\begin{align} \dot{\theta} &=&\frac{\partial R_{noncyclic}}{\partial p_{\theta }}=\frac{ p_{\theta }}{mb^{2}} \tag{$\delta $} \label{delta} \\ -\dot{p}_{\theta } &=&\frac{\partial R_{noncyclic}}{\partial \theta }=-\frac{ p_{\phi }^{2}\cos \theta }{mb^{2}\sin ^{3}\theta }+mgb\sin \theta \tag{$\epsilon $} \label{epsilon} \end{align}
+\begin{align} \dot{\theta} &=&\frac{\partial R_{noncyclic}}{\partial p_{\theta }}=\frac{ p_{\theta }}{mb^{2}} \tag{$\delta $} \label{eq-8-delta} \\ -\dot{p}_{\theta } &=&\frac{\partial R_{noncyclic}}{\partial \theta }=-\frac{ p_{\phi }^{2}\cos \theta }{mb^{2}\sin ^{3}\theta }+mgb\sin \theta \tag{$\epsilon $}  \end{align}
 $$
 
-Equation \ref{delta} gives that
+Equation [delta](#eq-8-delta) gives that
 
 $$
 \frac{\partial }{\partial t}\dot{\theta}=\ddot{\theta}=\frac{\dot{p}_{\theta }}{mb^{2}}\nonumber
 $$
 
-Inserting this into Equation \ref{epsilon} gives
+Inserting this into Equation [epsilon](#eq-8-delta) gives
 
 $$
 \ddot{\theta}-\frac{p_{\phi }^{2}\cos \theta }{m^{2}b^{4}\sin ^{3}\theta }+ \frac{g}{b}\sin \theta =0\nonumber
 $$
 
-which is identical to the equation of motion \ref{8-alpha} derived using $R_{cyclic}$. The Hamiltonian in the rotating frame is a constant of motion given by \ref{8-gamma}, but it does not include the total energy.
+which is identical to the equation of motion [alpha](#eq-8-alpha) derived using $R_{cyclic}$. The Hamiltonian in the rotating frame is a constant of motion given by [gamma](#eq-8-gamma), but it does not include the total energy.
 
-Note that these examples show that both forms of the Routhian, as well as the complete Lagrangian formalism, shown in example $7.8.7$, and complete Hamiltonian formalism, shown in Example 8.1, all give the same equations of motion. This illustrates that the Lagrangian, Hamiltonian, and Routhian mechanics all give the same equations of motion and this applies both in the static inertial frame as well as a rotating frame since the Lagrangian, Hamiltonian and Routhian all are scalars under rotation, that is, they are rotationally invariant.
+Note that these examples show that both forms of the Routhian, as well as the complete Lagrangian formalism, shown in example $7.8.7$, and complete Hamiltonian formalism, shown in example 8.6.1, all give the same equations of motion. This illustrates that the Lagrangian, Hamiltonian, and Routhian mechanics all give the same equations of motion and this applies both in the static inertial frame as well as a rotating frame since the Lagrangian, Hamiltonian and Routhian all are scalars under rotation, that is, they are rotationally invariant.
+::::
 
-Example 8.4: Single particle moving in a vertical plane under the influence of an inverse-square central force
+::::{admonition} Example 8.6.4: Single particle moving in a vertical plane under the influence of an inverse-square central force
+:class: example
 
 The Lagrangian for a single particle of mass $m,$ moving in a vertical plane and subject to a central inverse square central force, is specified by two generalized coordinates, $r,$ and $\theta .$
 
@@ -853,6 +884,7 @@ m\ddot{r}-\frac{p_{\theta }^{2}}{mr^{3}}+\frac{k}{r^{2}}=0\nonumber
 $$
 
 where $p_{\theta }=l$ which is a constant of motion in the centrifugal term. Thus the problem has been reduced to a one-dimensional problem in radius $r$ that is in a rotating frame of reference.
+::::
 
 ## 8.7: Variable-mass systems
 
@@ -870,16 +902,17 @@ The first term is the usual mass times acceleration, while the second term arise
 
 ### Moving chains:
 
-The motion of a flexible, frictionless, heavy chain that is falling in a gravitational field, often can be split into two coupled variable-mass partitions that have different chain-link velocities. These partitions are coupled at the moving intersection between the chain partitions. That is, these partitions share time-dependent fractions of the total chain mass. Moving chains were discussed first by Caley in $1857$ and since then the moving chain problem has had a controversial history due to the frequent erroneous assumption that, in the gravitational field, the chain partitions fall with acceleration $g$ rather than applying the correct energy conservation assumption for this conservative system. The following two examples of conservative falling-chain systems illustrate solutions obtained using variational principles applied to a single chain that is partitioned into two variable length sections.<sup>1</sup>
+The motion of a flexible, frictionless, heavy chain that is falling in a gravitational field, often can be split into two coupled variable-mass partitions that have different chain-link velocities. These partitions are coupled at the moving intersection between the chain partitions. That is, these partitions share time-dependent fractions of the total chain mass. Moving chains were discussed first by Caley in $1857$ and since then the moving chain problem has had a controversial history due to the frequent erroneous assumption that, in the gravitational field, the chain partitions fall with acceleration $g$ rather than applying the correct energy conservation assumption for this conservative system. The following two examples of conservative falling-chain systems illustrate solutions obtained using variational principles applied to a single chain that is partitioned into two variable length sections.[^8-7-1]
 
 Consider the following two possible scenarios for motion of a flexible, heavy, frictionless, chain located in a uniform gravitational field $g$. The first scenario is the "folded chain" system which assumes that one end of the chain is held fixed, while the adjacent free end is released at the same altitude as the top of the fixed arm, and this free end is allowed to fall in the constant gravitational field $g$. The second "falling chain", scenario assumes that one end of the chain is hanging down through a hole in a frictionless, smooth, rigid, horizontal table, with the stationary partition of the chain sitting on the table surrounding the hole. The falling section of this chain is being pulled out of the stationary pile by the hanging partition. Both of these systems are conservative since it is assumed that the total mass of the chain is fixed, and no dissipative forces are acting. The chains are assumed to be inextensible, flexible, and frictionless, and subject to a uniform gravitational field $g$ in the vertical $y$ direction. In both examples, the chain, with mass $M$ and length $L,$ is partitioned into a stationary segment, plus a moving segment, where the mass per unit length of the chain is $\mu =\frac{M}{L}$. These partitions are strongly coupled at their intersection which propagates downward with time for the "folded chain" and propagates upward, relative to the lower end of the falling chain, for the "falling chain". For the "folded chain", the chain links are transferred from the moving segment to the stationary segment as the moving section falls. By contrast, for the "falling system", the chain links are transferred from the stationary upper section to the moving lower segment of the chain.
 
-Example 8.1: Folded chain
+::::{admonition} Example 8.7.1: Folded chain
+:class: example
 
 :::{figure} ../images/lt-21606-9.7.1.png
-:alt: 9.7.1.PNG
-
-$1$
+:label: fig-8-7-1
+:enumerator: 8.7.1
+:alt: Figure
 :::
 
 The folded chain of length $L$ and mass-per-unit-length $\mu =\frac{M}{L}$ hangs vertically downwards in a gravitational field $g$ with both ends held initially at the same height. The fixed end is attached to a fixed support while the free end of the chain is dropped at time $t=0$ with the free end at the same height and adjacent to the fixed end. Let $y$ be the distance the falling free end is below the fixed end. Using an idealized one-dimensional assumption, the Lagrangian $\mathcal{L}$ is given by
@@ -912,10 +945,10 @@ $$
  Solve for $\dot{y}^{2}$ gives
 
 $$
-\dot{y}^{2}=g\frac{(2Ly-y^{2})}{L-y} \label{8.74}
+\dot{y}^{2}=g\frac{(2Ly-y^{2})}{L-y} \tag{8.74} \label{eq-8-74}
 $$
 
-The acceleration of the falling arm, $\ddot{y},$ is given by taking the time derivative of Equation \ref{8.74}
+The acceleration of the falling arm, $\ddot{y},$ is given by taking the time derivative of Equation [8.74](#eq-8-74)
 
 $$
 \ddot{y}=g+\frac{g\left( 2Ly-y^{2}\right) }{2\left( L-y\right) }
@@ -924,25 +957,27 @@ $$
 The rate of change in linear momentum for the moving right side of the chain, $\dot{p}_{R}$, is given by
 
 $$
-\dot{p}_{R}=m_{R}\ddot{y}+\dot{m}_{R}\dot{y}=m_{R}g+m_{R}g\frac{(2Ly-y^{2})}{ 2\left( L-y\right) } \label{8.76}
+\dot{p}_{R}=m_{R}\ddot{y}+\dot{m}_{R}\dot{y}=m_{R}g+m_{R}g\frac{(2Ly-y^{2})}{ 2\left( L-y\right) } \tag{8.76} \label{eq-8-76}
 $$
 
 For this energy-conserving chain, the tension in the chain $T_{0}$ at the fixed end of the chain is given by
 
 $$
-T_{0}=\frac{\mu g}{2}\left( L+y\right) +\frac{1}{4}\mu \dot{y}^{2} \label{8.77}
+T_{0}=\frac{\mu g}{2}\left( L+y\right) +\frac{1}{4}\mu \dot{y}^{2} \tag{8.77} \label{eq-8-77}
 $$
 
-Equations \ref{8.74} and \ref{8.76}, imply that the tension $T_{o}$ diverges to infinity when $y\rightarrow L$. Calkin and March measured the $y$ dependence of the chain tension at the support for the folded chain and observed the predicted $y$ dependence. The maximum tension was $\simeq$ $25Mg,$ which is consistent with that predicted using Equation \ref{8.77} after taking into account the finite size and mass of individual links in the chain. This result is very different from that obtained using the erroneous assumption that the right arm falls with the free-fall acceleration $g$, which implies a maximum tension $T_{0}=$ $2Mg$. Thus the free-fall assumption disagrees with the experimental results, in addition to violating energy conservation and the tenets of Lagrangian and Hamiltonian mechanics. That is, the experimental result demonstrates unambiguously that the energy conservation predictions apply in contradiction with the erroneous free-fall assumption.
+Equations [8.74](#eq-8-74) and [8.76](#eq-8-76), imply that the tension $T_{o}$ diverges to infinity when $y\rightarrow L$. Calkin and March measured the $y$ dependence of the chain tension at the support for the folded chain and observed the predicted $y$ dependence. The maximum tension was $\simeq$ $25Mg,$ which is consistent with that predicted using Equation [8.77](#eq-8-77) after taking into account the finite size and mass of individual links in the chain. This result is very different from that obtained using the erroneous assumption that the right arm falls with the free-fall acceleration $g$, which implies a maximum tension $T_{0}=$ $2Mg$. Thus the free-fall assumption disagrees with the experimental results, in addition to violating energy conservation and the tenets of Lagrangian and Hamiltonian mechanics. That is, the experimental result demonstrates unambiguously that the energy conservation predictions apply in contradiction with the erroneous free-fall assumption.
 
-The unusual feature of variable mass problems, such as the folded chain problem, is that the rate of change of momentum in Equation \ref{8.76} includes two contributions to the force and rate of change of momentum, that is, it includes both the acceleration term $m_{R}\ddot{y}$ plus the variable mass term $\dot{m}_{R}\dot{y}$ that accounts for the transfer of matter at the intersection of the moving and stationary partitions of the chain. At the transition point of the chain, moving links are transferred from the moving section and are added to the stationary subsection. Since this moving section is falling downwards, and the stationary section is stationary, then the transferred momentum is in a downward direction corresponding to an increased effective downward force. Thus the measured acceleration of the moving arm actually is faster than $g$. A related phenomenon is the loud cracking sound heard when cracking a whip.
+The unusual feature of variable mass problems, such as the folded chain problem, is that the rate of change of momentum in Equation [8.76](#eq-8-76) includes two contributions to the force and rate of change of momentum, that is, it includes both the acceleration term $m_{R}\ddot{y}$ plus the variable mass term $\dot{m}_{R}\dot{y}$ that accounts for the transfer of matter at the intersection of the moving and stationary partitions of the chain. At the transition point of the chain, moving links are transferred from the moving section and are added to the stationary subsection. Since this moving section is falling downwards, and the stationary section is stationary, then the transferred momentum is in a downward direction corresponding to an increased effective downward force. Thus the measured acceleration of the moving arm actually is faster than $g$. A related phenomenon is the loud cracking sound heard when cracking a whip.
+::::
 
-Example 8.2: Falling chain
+::::{admonition} Example 8.7.2: Falling chain
+:class: example
 
 :::{figure} ../images/lt-21607-9.7.2.png
-:alt: 9.7.2.PNG
-
-$2$
+:label: fig-8-7-2
+:enumerator: 8.7.2
+:alt: Figure
 :::
 
 The "falling chain", scenario assumes that one end of the chain is hanging down through a hole in a frictionless, smooth, rigid, horizontal table, with the stationary partition of the chain lying on the frictionless table surrounding the hole. The falling section of this chain is being pulled out of the stationary pile by the hanging partition. The analysis for the problem of the falling chain behaves differently from the folded chain. For the "falling- chain" let $y$ be the falling distance of the lower end of the chain measured with respect to the table top. The Lagrangian and Hamiltonian are given by 
@@ -964,10 +999,9 @@ $$
 The important difference between the folded chain and falling chain is that the moving component of the falling chain is gaining mass with time rather than losing mass. Also the tension in the chain $T_{0}$ reduces the acceleration of the falling chain making it less than the free-fall value $g$. This is in contrast to that for the folded chain system where the acceleration exceeds $g$.
 
 The above discussion shows that Lagrangian and Hamiltonian can be applied to variable-mass systems if both the donor and receptor degrees of freedom are included to ensure that the total mass is conserved.
+::::
 
----
-
-<sup>1</sup>Discussions with Professor Frank Wolfs stimulated inclusion of these two examples of moving chains.
+[^8-7-1]: Discussions with Professor Frank Wolfs stimulated inclusion of these two examples of moving chains.
 
 ## 8.E: Hamiltonian Mechanics (Exercises)
 
@@ -1018,7 +1052,9 @@ d) The Hamiltonian is not conserved and does not equal the mechanical total ener
 5. Compare the Lagrangian formalism and the Hamiltonian formalism by creating a two-column chart. Label one side “ Lagrangian” and the other side “ Hamiltonian” and discuss the similarities and differences. Here are some ideas to get you started:
 
 - What are the basic variables in each formalism?
+
 - What are the form and number of the equations of motion derived in each case?
+
 - How does the Lagrangian “state space” compare to the Hamiltonian “phase space”?
 
 6. It can be shown that if $L(q,\dot{q},t)$ is the Lagrangian of a particle moving in one dimension, then $L=L^{\prime }$ where $L^{\prime }(q,\dot{q},t)=L(q,\dot{q},t)+\frac{df}{dt}$ and $f(q,t)$ is an arbitrary function. This problem explores the consequences of this on the Hamiltonian formalism.
@@ -1074,9 +1110,9 @@ d) The Hamiltonian is not conserved and does not equal the mechanical total ener
 (c) What is the natural frequency of vibration?
 
 :::{figure} ../images/lt-21608-8.e.1.png
-:alt: 8.e.1.PNG
-
-$1$
+:label: fig-8-E-1
+:enumerator: 8.E.1
+:alt: Figure
 :::
 
 12. . A fly-ball governor comprises two masses $m$ connected by 4 hinged arms of length $l$ to a vertical shaft and to a mass $M$ which can slide up or down the shaft without friction in a uniform vertical gravitational field as shown in the figure The assembly is constrained to rotate around the axis of the vertical shaft with same angular velocity as that of the vertical shaft. Neglect the mass of the arms, air friction, and assume that the mass $M$ has a negligible moment of inertia. Assume that the whole system is constrained to rotate with a constant angular velocity $\omega _{0}$.
@@ -1094,9 +1130,9 @@ $1$
 (f) Suppose that the shaft and assembly are not constrained to rotate at a constant angular velocity $\omega _{0}$, that is, it is allowed to rotate freely at angular velocity $\dot{\varphi}$. What is the difference in the overall motion?
 
 :::{figure} ../images/lt-21612-8.e.2.png
-:alt: 8.e.2.PNG
-
-$2$
+:label: fig-8-E-2
+:enumerator: 8.E.2
+:alt: Figure
 :::
 
 13. A rigid straight, frictionless, massless, rod rotates about the $z$ axis at an angular velocity $\dot{\theta}$. A mass $m$ slides along the frictionless rod and is attached to the rod by a massless spring of spring constant $\kappa$.
@@ -1112,9 +1148,9 @@ $2$
 (e) Use the non-cyclic Routhian $R_{noncyclic}$ to derive the radial equation of motion in the rotating frame of reference for the cranked system with $\dot{\theta}=\omega$.
 
 :::{figure} ../images/lt-21609-8.e.3.png
-:alt: 8.e.3.PNG
-
-$3$
+:label: fig-8-E-3
+:enumerator: 8.E.3
+:alt: Figure
 :::
 
 14. A thin uniform rod of length $2L$ and mass $M$ is suspended from a massless string of length $l$ tied to a nail. Initially the rod hangs vertically. A weak horizontal force $F$ is applied to the rod’s free end.
@@ -1126,9 +1162,9 @@ $3$
 (c) Draw a diagram to illustrate the initial motion of the rod.
 
 :::{figure} ../images/lt-21610-8.e.4.png
-:alt: 8.e.4.PNG
-
-$4$
+:label: fig-8-E-4
+:enumerator: 8.E.4
+:alt: Figure
 :::
 
 15. A uniform ladder of mass $M$ and length $2L$ is leaning against a frictionless vertical wall with its feet on a frictionless horizontal floor. Initially the stationary ladder is released at an angle $\theta _{0}=60^{\circ }$ to the floor. Assume that gravitation field $g=9.81m/s^{2}$ acts vertically downward and that the moment of inertia of the ladder about its midpoint is $I=\frac{1}{3}ML^{2}$.
@@ -1144,9 +1180,9 @@ $4$
 (e) Derive the angle $\theta$ at which the ladder loses contact with the vertical wall?
 
 :::{figure} ../images/lt-21611-8.e.5.png
-:alt: 8.e.5.PNG
-
-$5$
+:label: fig-8-E-5
+:enumerator: 8.E.5
+:alt: Figure
 :::
 
 16. The classical mechanics exam induces Jacob to try his hand at bungee jumping. Assume Jacob’s mass $m$ is suspended in a gravitational field by the bungee of unstretched length $b$ and spring constant $k$. Besides the longitudinal oscillations due to the bungee jump, Jacob also swings with plane pendulum motion in a vertical plane. Use polar coordinates $r,\phi$, neglect air drag, and assume that the bungee always is under tension.
@@ -1172,28 +1208,28 @@ $5$
 Inserting the generalized momentum into Jacobi’s generalized energy relation was used to define the Hamiltonian function to be
 
 $$
-H\left( \mathbf{q},\mathbf{p},t\right) =\mathbf{p\cdot \dot{q}-}L(\mathbf{q}, \mathbf{\dot{q}},t) 
+H\left( \mathbf{q},\mathbf{p},t\right) =\mathbf{p\cdot \dot{q}-}L(\mathbf{q}, \mathbf{\dot{q}},t) \tag{8.3}
 $$
 
 The Legendre transform of the Lagrange-Euler equations, led to Hamilton’s equations of motion.
 
 $$
-\dot{q}_{j} = \frac{\partial H}{\partial p_{j}} 
+\dot{q}_{j} = \frac{\partial H}{\partial p_{j}} \tag{8.25}
 $$
 
 $$
-\dot{p}_{j} = -\frac{\partial H}{\partial q_{j}}+\left[ \sum_{k=1}^{m} \lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\right] 
+\dot{p}_{j} = -\frac{\partial H}{\partial q_{j}}+\left[ \sum_{k=1}^{m} \lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC}\right] \tag{8.26}
 $$
 
 The generalized energy equation $(8.8.1)$ gives the time dependence
 
 $$
-\frac{dH(\mathbf{q,p,}t\mathbf{)}}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L(\mathbf{q,\dot{q},}t\mathbf{)}}{ \partial t} 
+\frac{dH(\mathbf{q,p,}t\mathbf{)}}{dt}=\sum_{j}\left( \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}+Q_{j}^{EXC} \right] \dot{q}_{j}\right) -\frac{\partial L(\mathbf{q,\dot{q},}t\mathbf{)}}{ \partial t} \tag{8.27}
 $$
 
 where 
 $$
-\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t} 
+\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t} \tag{8.24}
 $$
 
 The $p_{k},q_{k}$ are treated as independent canonical variables. Lagrange was the first to derive the canonical equations but he did not recognize them as a basic set of equations of motion. Hamilton derived the canonical equations of motion from his fundamental variational principle and made them the basis for a far-reaching theory of dynamics. Hamilton’s equations give $2s$ first-order differential equations for $p_{k},q_{k}$ for each of the $s$ degrees of freedom. Lagrange’s equations give $s$ second-order differential equations for the variables $q_{k},\dot{q}_{k}.$
@@ -1203,11 +1239,11 @@ The $p_{k},q_{k}$ are treated as independent canonical variables. Lagrange was t
 The Routhian reduction technique is a hybrid of Lagrangian and Hamiltonian mechanics that exploits the advantages of both approaches for solving problems involving cyclic variables. It is especially useful for solving motion in rotating systems in science and engineering. Two Routhians are used frequently for solving the equations of motion of rotating systems. Assuming that the variables between $1\leq i\leq s$ are non-cyclic, while the $m$ variables between $s+1\leq i\leq n$ are ignorable cyclic coordinates, then the two Routhians are:
 
 $$
-R_{cyclic}(q_{1},\dots ,q_{n};\dot{q}_{1},\dots ,\dot{q}_{s};p_{s+1},\dots .,p_{n};t) = \sum_{cyclic}^{m}p_{i}\dot{q}_{i}-L=H-\sum_{noncyclic}^{s}p_{i}\dot{q}_{i} 
+R_{cyclic}(q_{1},\dots ,q_{n};\dot{q}_{1},\dots ,\dot{q}_{s};p_{s+1},\dots .,p_{n};t) = \sum_{cyclic}^{m}p_{i}\dot{q}_{i}-L=H-\sum_{noncyclic}^{s}p_{i}\dot{q}_{i} \tag{8.65} \label{eq-8-65}
 $$
 
 $$
-R_{noncyclic}(q_{1},\dots ,q_{n};p_{1},\dots ,p_{s};\dot{q}_{s+1},\dots .,\dot{q} _{n};t) = \sum_{noncyclic}^{s}p_{i}\dot{q}_{i}-L=H-\sum_{cyclic}^{m}p_{i} \dot{q}_{i} 
+R_{noncyclic}(q_{1},\dots ,q_{n};p_{1},\dots ,p_{s};\dot{q}_{s+1},\dots .,\dot{q} _{n};t) = \sum_{noncyclic}^{s}p_{i}\dot{q}_{i}-L=H-\sum_{cyclic}^{m}p_{i} \dot{q}_{i} \tag{8.68}
 $$
 
 The Routhian $R_{cyclic}$ is a negative Lagrangian for the non-cyclic variables between $1\leq i\leq s$, where $s=n-m,$ and is a Hamiltonian for the $m$ cyclic variables between $s+1\leq i\leq n$. Since the cyclic variables are constants of the Hamiltonian, their solution is trivial, and the number of variables included in the Lagrangian is reduced from $n$ to $s=n-m$. The Routhian $R_{cyclic}$ is useful for solving some problems in classical mechanics. The Routhian $R_{noncyclic}$ is a Hamiltonian for the non-cyclic variables between $1\leq i\leq s$, and is a negative Lagrangian for the $m$ cyclic variables between $s+1\leq i\leq n$. Since the cyclic variables are constants of motion, the Routhian $R_{noncyclic}$ also is a constant of motion but it does not equal the total energy since the coordinate transformation is time dependent. The Routhian $R_{noncyclic}$ is especially valuable for solving rotating many-body systems such as galaxies, molecules, or nuclei, since the Routhian $R_{noncyclic}$ is the Hamiltonian in the rotating body-fixed coordinate frame.

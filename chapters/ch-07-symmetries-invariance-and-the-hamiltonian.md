@@ -5,9 +5,9 @@ label: ch-07-symmetries-invariance-and-the-hamiltonian
 ---
 
 
-# 7. Symmetries, Invariance and the Hamiltonian
-
 (ch-7)=
+
+# 7. Symmetries, Invariance and the Hamiltonian
 
 ## 7.1: Introduction to Symmetries, Invariance, and the Hamiltonian
 
@@ -20,49 +20,50 @@ Chapter $7$ will explore the remarkable connection between symmetry and invarian
 Consider a holonomic system of $N$ masses under the influence of conservative forces that depend on position $q_{j}$ but not velocity $\dot{q}_{j}$, that is, the potential is velocity independent. Then for the $x$ coordinate of particle $i$ for $N$ particles
 
 $$
-\begin{align} \frac{\partial L}{\partial \dot{x}_{i}} &= \frac{\partial T}{\partial \dot{x} _{i}}-\frac{\partial U}{\partial \dot{x}_{i}}=\frac{\partial T}{\partial \dot{x}_{i}} \label{7.1}\\[4pt] &= \frac{\partial }{\partial \dot{x}_{i}}\sum_{i=1}^{N}\frac{1}{2} m_{i}\left( \dot{x}_{i}^{2}+\dot{y}_{i}^{2}+\dot{z}_{i}^{2}\right) \notag\\[4pt] &= m_{i}\dot{x}_{i}=p_{i,x} \notag\end{align}
+\begin{align} \frac{\partial L}{\partial \dot{x}_{i}} &= \frac{\partial T}{\partial \dot{x} _{i}}-\frac{\partial U}{\partial \dot{x}_{i}}=\frac{\partial T}{\partial \dot{x}_{i}} \tag{7.1} \label{eq-7-1}\\[4pt] &= \frac{\partial }{\partial \dot{x}_{i}}\sum_{i=1}^{N}\frac{1}{2} m_{i}\left( \dot{x}_{i}^{2}+\dot{y}_{i}^{2}+\dot{z}_{i}^{2}\right) \notag\\[4pt] &= m_{i}\dot{x}_{i}=p_{i,x} \notag\end{align}
 $$
 
 Thus for a holonomic, conservative, velocity-independent potential we have
 
 $$
-\frac{\partial L}{\partial \dot{x}_{i}}=p_{i,x} \label{7.2}
+\frac{\partial L}{\partial \dot{x}_{i}}=p_{i,x} \tag{7.2} \label{eq-7-2}
 $$
  which is the $x$ component of the linear momentum for the $i^{th}$ particle.
 
 This result suggests an obvious extension of the concept of momentum to generalized coordinates. The **generalized momentum** associated with the coordinate $q_{j}$ is defined to be
 
 $$
-\frac{\partial L}{\partial \dot{q}_{j}}\equiv p_{j}\label{7.3}
+\frac{\partial L}{\partial \dot{q}_{j}}\equiv p_{j}\tag{7.3} \label{eq-7-3}
 $$
- Note that $p_{j}$ also is called the **conjugate momentum** or**canonical momentum** to $q_{j}$ where $q_{j},p_{j}$ are conjugate, or canonical, variables. Remember that the linear momentum $p_{j}$ is the first-order time integral given by equation $(2.4.1)$. If $q_{j}$ is not a spatial coordinate, then $p_{j}$ is the generalized momentum, not the kinematic linear momentum. For example, if $q_{j}$ is an angle, then $p_{j}$ will be angular momentum. That is, the generalized momentum may differ from the usual linear or angular momentum since the definition \ref{7.3} is more general than the usual $p_{x}=m \dot{x}$ definition of linear momentum in classical mechanics. This is illustrated by the case of a moving charged particles $m_{j},e_{j}$ in an electromagnetic field. Chapter $6$ showed that electromagnetic forces on a charge $e_{j}$ can be described in terms of a scalar potential $U_{j}$ where
+ Note that $p_{j}$ also is called the **conjugate momentum** or**canonical momentum** to $q_{j}$ where $q_{j},p_{j}$ are conjugate, or canonical, variables. Remember that the linear momentum $p_{j}$ is the first-order time integral given by equation $(2.4.1)$. If $q_{j}$ is not a spatial coordinate, then $p_{j}$ is the generalized momentum, not the kinematic linear momentum. For example, if $q_{j}$ is an angle, then $p_{j}$ will be angular momentum. That is, the generalized momentum may differ from the usual linear or angular momentum since the definition [7.3](#eq-7-3) is more general than the usual $p_{x}=m \dot{x}$ definition of linear momentum in classical mechanics. This is illustrated by the case of a moving charged particles $m_{j},e_{j}$ in an electromagnetic field. Chapter $6$ showed that electromagnetic forces on a charge $e_{j}$ can be described in terms of a scalar potential $U_{j}$ where
 
 $$
-U_{j}=e_{j}(\Phi -\mathbf{A\cdot v}_{j}\mathbf{)}\label{7.4}
+U_{j}=e_{j}(\Phi -\mathbf{A\cdot v}_{j}\mathbf{)}\tag{7.4} \label{eq-7-4}
 $$
 
 Thus the Lagrangian for the electromagnetic force can be written as
 
 $$
-L=\sum_{j=1}^{N}\left[ \frac{1}{2}m_{j}\mathbf{v}_{j}\cdot \mathbf{v} _{j}-e_{j}(\Phi -\mathbf{A\cdot v}_{j}\mathbf{)}\right]\label{7.5}
+L=\sum_{j=1}^{N}\left[ \frac{1}{2}m_{j}\mathbf{v}_{j}\cdot \mathbf{v} _{j}-e_{j}(\Phi -\mathbf{A\cdot v}_{j}\mathbf{)}\right]\tag{7.5} \label{eq-7-5}
 $$
 
 The generalized momentum to the coordinate $x_{j}$ for charge $e_{j},$ and mass $m_{j},$ is given by the above Lagrangian
 
 $$
-p_{j,x}=\frac{\partial L}{\partial \dot{x}_{j}}=m_{j}\dot{x}_{j}+e_{j}A_{x}\label{7.6}
+p_{j,x}=\frac{\partial L}{\partial \dot{x}_{j}}=m_{j}\dot{x}_{j}+e_{j}A_{x}\tag{7.6} \label{eq-7-6}
 $$
 
 Note that this includes both the mechanical linear momentum plus the correct electromagnetic momentum. The fact that the electromagnetic field carries momentum should not be a surprise since electromagnetic waves also carry energy as is illustrated by the transmission of radiant energy from the sun.
 
-Example 7.1: Feynman’s angular-momentum paradox
+::::{admonition} Example 7.2.1: Feynman’s angular-momentum paradox
+:class: example
 
 Feynman posed the following paradox [Fey84]. A circular insulating disk$,$ mounted on frictionless bearings, has a circular ring of total charge $q$ uniformly distributed around the perimeter of the circular disk at the radius $R$. A superconducting long solenoid of radius $s$, where $s<R$, is fixed to the disk and is mounted coaxial with the bearings. The moment of inertia of the system about the rotation axis is $I$. Initially the disk plus superconducting solenoid are stationary with a steady current producing a uniform magnetic field $B_{0}$ inside the solenoid. Assume that a rise in temperature of the solenoid destroys the superconductivity leading to a rapid dissipation of the electric current and resultant magnetic field. Assume that the system is free to rotate, no other forces or torques are acting on the system, and that the charge carriers in the solenoid have zero mass and thus do not contribute to the angular momentum. Does the system rotate when the current in the solenoid stops?
 
 :::{figure} ../images/lt-21165-imageedit_1_5939913120.png
-:alt: 7.2.1.PNG
-
-$1$
+:label: fig-7-2-1
+:enumerator: 7.2.1
+:alt: Figure
 :::
 
 Initially the system is stationary with zero mechanical angular momentum. Faraday’s Law states that, when the magnetic field dissipates from $B_{0}$ to zero, there will be a torque $\mathbf{N}$ acting on the circumferential charge $q$ at radius $R$ due to the change in magnetic flux $\Phi$.
@@ -77,7 +78,7 @@ $$
 \mathbf{L}_{final}^{MECH}=\mathbf{T=}\int_{t}\mathbf{N}(t)dt=qR\mathbf{\Phi }\nonumber
 $$
 
-The initial angular momentum in the electromagnetic field can be derived using Equation \ref{7.6}, plus Stoke’s theorem (Appendix $19.8.3$) . Equation $2.12.56$ gives that the final angular momentum equals the angular impulse
+The initial angular momentum in the electromagnetic field can be derived using Equation [7.6](#eq-7-6), plus Stoke’s theorem (Appendix $19.8.3$) . Equation $2.12.56$ gives that the final angular momentum equals the angular impulse
 
 $$
 \mathbf{L}_{initial}^{EM}=R\int_{t}\oint r\dot{p}_{\phi }dldt=R\oint rp_{\phi }dl=qR\oint A_{\phi }dl=qR\int \mathbf{B\cdot dS=}qR\mathbf{\Phi }\nonumber
@@ -96,6 +97,7 @@ $$
 $$
 
 Note that the total angular momentum is conserved. That is, initially all the angular momentum is stored in the electromagnetic field, whereas the final angular momentum is all mechanical. This explains the paradox that the mechanical angular momentum is not conserved, only the total angular momentum of the system is conserved, that is, the sum of the mechanical and electromagnetic angular momenta.
+::::
 
 ## 7.3: Invariant Transformations and Noether’s Theorem
 
@@ -142,19 +144,22 @@ $$
 In this case the Lagrange equation reduces to
 
 $$
-\dot{p}_{j}=\frac{dp_{j}}{dt}=0 \label{7.13}
+\dot{p}_{j}=\frac{dp_{j}}{dt}=0 \tag{7.13} \label{eq-7-13}
 $$
 
-Equation \ref{7.13} corresponds to $p_{j}$ being a constant of motion. Stated in words, *the generalized momentum* $p_{i}$*is a constant of motion if the Lagrangian is invariant to a spatial translation of* $q_{i}$, *and the constraint plus generalized force terms are zero*. Expressed another way, if the Lagrangian does not contain a given coordinate $q_{i}$ and the corresponding constraint plus generalized forces are zero, then the generalized momentum associated with this coordinate is conserved. Note that this example of Noether’s theorem applies to any component of $\mathbf{q}$. For example, in the uniform gravitational field at the surface of the earth, the Lagrangian does not depend on the $x$ and $y$ coordinates in the horizontal plane, thus $p_{x}$ and $p_{y}$ are conserved, whereas, due to the gravitational force, the Lagrangian does depend on the vertical $z$ axis and thus $p_{z}$ is not conserved.
+Equation [7.13](#eq-7-13) corresponds to $p_{j}$ being a constant of motion. Stated in words, *the generalized momentum* $p_{i}$*is a constant of motion if the Lagrangian is invariant to a spatial translation of* $q_{i}$, *and the constraint plus generalized force terms are zero*. Expressed another way, if the Lagrangian does not contain a given coordinate $q_{i}$ and the corresponding constraint plus generalized forces are zero, then the generalized momentum associated with this coordinate is conserved. Note that this example of Noether’s theorem applies to any component of $\mathbf{q}$. For example, in the uniform gravitational field at the surface of the earth, the Lagrangian does not depend on the $x$ and $y$ coordinates in the horizontal plane, thus $p_{x}$ and $p_{y}$ are conserved, whereas, due to the gravitational force, the Lagrangian does depend on the vertical $z$ axis and thus $p_{z}$ is not conserved.
 
-Example 7.1: Atwoods machine
+::::{admonition} Example 7.3.1: Atwoods machine
+:class: example
 
 Assume that the linear momentum is conserved for the Atwood’s machine shown in the figure below.
 
 :::{figure} ../images/lt-21166-7.3.1.png
-:alt: 7.3.1.PNG
+:label: fig-7-3-1
+:enumerator: 7.3.1
+:alt: Example of an Atwood’s machine
 
-$1$: Example of an Atwood’s machine
+Example of an Atwood’s machine
 :::
 
 Let the left mass rise a distance $x$ and the right mass rise a distance $y$. Then the middle mass must drop by $x+y$ to conserve the length of the string. The Lagrangian of the system is
@@ -190,25 +195,29 @@ $$
 $$
 
 This is the result obtained directly using Noether’s theorem.
+::::
 
 ## 7.4: Rotational invariance and conservation of angular momentum
 
 The arguments, used above, apply equally well to conjugate momenta $p_{\theta }$ and $\theta$ for rotation about any axis. The Lagrange equation is
 
 $$
-\left\{ \frac{d}{dt}p_{\theta }-\frac{\partial L}{\partial \theta }\right\} =\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial \theta }(\mathbf{q} ,t)+Q_{\theta }^{EXC} \label{7.14}
+\left\{ \frac{d}{dt}p_{\theta }-\frac{\partial L}{\partial \theta }\right\} =\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial \theta }(\mathbf{q} ,t)+Q_{\theta }^{EXC} \tag{7.14} \label{eq-7-14}
 $$
 
-If no constraint or generalized torques act on the system, then the right-hand side of Equation \ref{7.14} is zero. Moreover if the Lagrangian in not an explicit function of $\theta ,$ then $\frac{\partial L}{\partial \theta }=0,$ and assuming that the constraint plus generalized torques are zero, then $p_{\theta }$ is a constant of motion.
+If no constraint or generalized torques act on the system, then the right-hand side of Equation [7.14](#eq-7-14) is zero. Moreover if the Lagrangian in not an explicit function of $\theta ,$ then $\frac{\partial L}{\partial \theta }=0,$ and assuming that the constraint plus generalized torques are zero, then $p_{\theta }$ is a constant of motion.
 
 Noether’s Theorem illustrates this general result which can be stated as, *if the Lagrangian is rotationally invariant about some axis, then the component of the angular momentum along that axis is conserved*. Also this is true for the more general case where the Lagrangian is invariant to rotation about any axis, which leads to conservation of the total angular momentum.
 
-Example 7.1: Conservation of angular momentum for rotational invariance
+::::{admonition} Example 7.4.1: Conservation of angular momentum for rotational invariance
+:class: example
 
 :::{figure} ../images/lt-21167-7.4.1.png
-:alt: 7.4.1.PNG
+:label: fig-7-4-1
+:enumerator: 7.4.1
+:alt: Infinitessimal rotation
 
-$1$: Infinitessimal rotation
+Infinitessimal rotation
 :::
 
 The Noether theorem result for rotational-invariance about an axis also can be derived using cartesian coordinates as shown below. As discussed in appendix $19.4$, it is necessary to limit discussion of rotation to infinitessimal rotation angles in order to represent the rotation by a vector. Consider an infinitessimal rotation $\delta \theta$ about some axis, which is a vector. As illustrated in the adjacent figure, this can be expressed as
@@ -232,7 +241,7 @@ $$
 then the expression that the Lagrangian does not change due to an infinitesimal rotation $\delta \theta$ about this axis can be expressed as
 
 $$
-\delta L=\sum_{i}\frac{\partial L}{\partial x_{i}}\delta x_{i}+\sum_{i}\frac{ \partial L}{\partial \dot{x}_{i}}\delta \dot{x}_{i}=0 \tag{$A$} \label{7-a1}
+\delta L=\sum_{i}\frac{\partial L}{\partial x_{i}}\delta x_{i}+\sum_{i}\frac{ \partial L}{\partial \dot{x}_{i}}\delta \dot{x}_{i}=0 \tag{$A$} \label{eq-7-a1}
 $$
 
 where cartesian coordinates have been used.
@@ -255,7 +264,7 @@ $$
 \dot{p}_{i}=\frac{\partial L}{\partial x_{i}}\nonumber
 $$
 
-Inserting this into Equation \ref{7-a1} gives
+Inserting this into Equation [a1](#eq-7-a1) gives
 
 $$
 \delta L=\sum_{i}^{3}\dot{p}\delta x_{i}+\sum_{i}^{3}p_{i}\delta \dot{x} _{i}=0\nonumber
@@ -292,12 +301,15 @@ $$
 $$
 
 This proves the Noether’ theorem that the angular momentum about any axis is conserved if the Lagrangian is rotationally invariant about that axis
+::::
 
-Example 7.1: Diatomic molecules and axially-symmetric nuclei
+::::{admonition} Example 7.4.1: Diatomic molecules and axially-symmetric nuclei
+:class: example
 
 An interesting example of Noether’s theorem applies to diatomic molecules such as $H_{2},N_{2},F_{2},O_{2},Cl_{2}$ and $Br_{2}$. The electric field produced by the two charged nuclei of the diatomic molecule has cylindrical symmetry about the axis through the two nuclei. Electrons are bound to this dumbbell arrangement of the two nuclear charges which may be rotating and vibrating in free space. Assuming that there are no external torques acting on the diatomic molecule in free space, then the angular momentum about any fixed axis in free space must be conserved according to Noether’s theorem. If no external torques are applied, then the component of the angular momentum about any fixed axis is conserved, that is, the total angular momentum is conserved. What is especially interesting is that since the electrostatic potential, and thus the Lagrangian, of the diatomic molecule has cylindrical symmetry, that is $\frac{\partial L}{\partial \phi }=0$, then the component of the angular momentum with respect to this symmetry axis also is conserved irrespective of how the diatomic molecule rotates or vibrates in free space. That is, an additional symmetry has been identified that leads to an additional conservation law that applies to the angular momentum.
 
 An example of Noether’s theorem is in nuclear physics where some nuclei have a spheroidal shape similar to an american football or a rugby ball. This spheroidal shape has an axis of symmetry along the long axis. The Lagrangian is rotationally invariant about the symmetry axis resulting in the angular momentum about the symmetry axis being conserved in addition to conservation of the total angular momentum.
+::::
 
 ## 7.5: Cyclic Coordinates
 
@@ -320,7 +332,7 @@ that is, $\ p_{k}$*is a constant of motion if the conjugate coordinate* $q_{k}$*
 Application of Noether’s theorem to the conservation of energy requires the kinetic energy to be expressed in generalized coordinates. In terms of fixed rectangular coordinates, the kinetic energy for $N$ bodies, each having three degrees of freedom, is expressed as
 
 $$
-T=\frac{1}{2}\sum_{\alpha =1}^{N}\sum_{i=1}^{3}m_{\alpha }\dot{x}_{\alpha ,i}^{2}\label{7.17}
+T=\frac{1}{2}\sum_{\alpha =1}^{N}\sum_{i=1}^{3}m_{\alpha }\dot{x}_{\alpha ,i}^{2}\tag{7.17} \label{eq-7-17}
 $$
 
 These can be expressed in terms of generalized coordinates as $x_{\alpha ,i}=x_{\alpha ,i}(q_{j},t)$ and in terms of generalized velocities
@@ -342,7 +354,7 @@ $$
 where
 
 $$
-\begin{align} \label{7.21} T_{2}(\mathbf{q},\mathbf{\dot{q}},t) &=&\sum_{\alpha }\sum_{i,j,k}\frac{1}{2} m_{\alpha }\frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{\partial q_{k}}\dot{q}_{j}\dot{q}_{k}=\sum_{j,k}a_{jk}\dot{q} _{j}\dot{q}_{k} \\ T_{1}(\mathbf{q},\mathbf{\dot{q}},t) &=&\sum_{\alpha }\sum_{i,j}m_{\alpha } \frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial t}\dot{q}_{j}=\sum_{j,k}b_{j}\dot{q}_{j} \\ T_{0}(\mathbf{q},t) &=&\sum_{\alpha }\sum_{i}\frac{1}{2}m_{\alpha }\left( \frac{\partial x_{\alpha ,i}}{\partial t}\right) ^{2}\end{align}
+\begin{align} \tag{7.21} \label{eq-7-21} T_{2}(\mathbf{q},\mathbf{\dot{q}},t) &=&\sum_{\alpha }\sum_{i,j,k}\frac{1}{2} m_{\alpha }\frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{\partial q_{k}}\dot{q}_{j}\dot{q}_{k}=\sum_{j,k}a_{jk}\dot{q} _{j}\dot{q}_{k} \\ T_{1}(\mathbf{q},\mathbf{\dot{q}},t) &=&\sum_{\alpha }\sum_{i,j}m_{\alpha } \frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial t}\dot{q}_{j}=\sum_{j,k}b_{j}\dot{q}_{j} \\ T_{0}(\mathbf{q},t) &=&\sum_{\alpha }\sum_{i}\frac{1}{2}m_{\alpha }\left( \frac{\partial x_{\alpha ,i}}{\partial t}\right) ^{2}\end{align}
 $$
 
 where 
@@ -352,10 +364,10 @@ $$
 
 When the transformed system is scleronomic, time does not appear explicitly in the transformation equations to generalized coordinates since**$\frac{\partial x_{\alpha ,i}}{\partial t}=0$*.* Then $T_{1}=T_{0}=0$, and the kinetic energy reduces to a homogeneous quadratic function of the generalized velocities 
 $$
-T(\mathbf{q},\mathbf{ \dot{q}},t)=T_{2}(\mathbf{q},\mathbf{\dot{q}},t) \label{7.25}
+T(\mathbf{q},\mathbf{ \dot{q}},t)=T_{2}(\mathbf{q},\mathbf{\dot{q}},t) \tag{7.25} \label{eq-7-25}
 $$
 
-A useful relation can be derived by taking the differential of Equation \ref{7.21} with respect to $\dot{q}_{l}$. That is
+A useful relation can be derived by taking the differential of Equation [7.21](#eq-7-21) with respect to $\dot{q}_{l}$. That is
 
 $$
 \frac{\partial T_{2}(\mathbf{q},\mathbf{\dot{q}},t)}{\partial \dot{q}_{l}} =\sum_{k}a_{lk}\dot{q}_{k}+\sum_{j}a_{jl}\dot{q}_{j}
@@ -369,16 +381,16 @@ $$
 
 Similarly, the products of the generalized velocities $\dot{q},$ with the corresponding derivatives of $T_{1}$ and $T_{0}$ give 
 $$
-\begin{align} \label{7.27} \sum_{l}\dot{q}_{l}\frac{\partial T_{2}}{\partial \dot{q}_{l}} &=&2T_{2} \\ \sum_{l}\dot{q}_{l}\frac{\partial T_{1}(\mathbf{q},\mathbf{\dot{q}},t)}{ \partial \dot{q}_{l}} &=&T_{1}(\mathbf{q},\mathbf{\dot{q}},t) \\ \sum_{l}\dot{q}_{l}\frac{\partial T_{0}(\mathbf{q},t)}{\partial \dot{q}_{l}} &=&0\end{align}
+\begin{align} \tag{7.27} \label{eq-7-27} \sum_{l}\dot{q}_{l}\frac{\partial T_{2}}{\partial \dot{q}_{l}} &=&2T_{2} \\ \sum_{l}\dot{q}_{l}\frac{\partial T_{1}(\mathbf{q},\mathbf{\dot{q}},t)}{ \partial \dot{q}_{l}} &=&T_{1}(\mathbf{q},\mathbf{\dot{q}},t) \\ \sum_{l}\dot{q}_{l}\frac{\partial T_{0}(\mathbf{q},t)}{\partial \dot{q}_{l}} &=&0\end{align}
 $$
 
-Equation \ref{7.25} gives that $T=T_{2}$ when the transformed system is scleronomic, i.e. $\frac{\partial x_{\alpha ,i}}{\partial t}=0,$ and then the kinetic energy is a quadratic function of the generalized velocities $\dot{q}_{j}$. Using the definition of the generalized momentum equation $(7.2.3)$, assuming $T=T_{2}$, and that the potential $U$ is velocity independent, gives that
+Equation [7.25](#eq-7-25) gives that $T=T_{2}$ when the transformed system is scleronomic, i.e. $\frac{\partial x_{\alpha ,i}}{\partial t}=0,$ and then the kinetic energy is a quadratic function of the generalized velocities $\dot{q}_{j}$. Using the definition of the generalized momentum equation $(7.2.3)$, assuming $T=T_{2}$, and that the potential $U$ is velocity independent, gives that
 
 $$
 p_{l}\equiv \frac{\partial L}{\partial \dot{q}_{l}}=\frac{\partial T}{\partial \dot{q} _{l}}-\frac{\partial U}{\partial \dot{q}_{l}}=\frac{\partial T_{2}}{\partial \dot{q}_{l}}
 $$
 
-Then Equation \ref{7.27} reduces to the useful relation that
+Then Equation [7.27](#eq-7-27) reduces to the useful relation that
 
 $$
 T_{2}=\frac{1}{2}\sum_{l}\dot{q}_{l}p_{l}=\frac{1}{2}\mathbf{\dot{q}\cdot p}
@@ -391,18 +403,18 @@ where, for compactness, the summation is abbreviated as a scalar product.
 Consider the time derivative of the Lagrangian, plus the fact that time is the independent variable in the Lagrangian. Then the total time derivative is
 
 $$
-\frac{dL}{dt}=\sum_{j}\frac{\partial L}{\partial q_{j}}\dot{q}_{j}+\sum_{j} \frac{\partial L}{\partial \dot{q}_{j}}\ddot{q}_{j}+\frac{\partial L}{ \partial t} \label{7.32}
+\frac{dL}{dt}=\sum_{j}\frac{\partial L}{\partial q_{j}}\dot{q}_{j}+\sum_{j} \frac{\partial L}{\partial \dot{q}_{j}}\ddot{q}_{j}+\frac{\partial L}{ \partial t} \tag{7.32} \label{eq-7-32}
 $$
 
 The Lagrange equations for a conservative force are given by equation $(6.5.12)$ to be
 
 $$
-\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}-\frac{\partial L}{ \partial q_{j}}=Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{ \partial q_{j}}(\mathbf{q},t) \label{7.33}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}-\frac{\partial L}{ \partial q_{j}}=Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{ \partial q_{j}}(\mathbf{q},t) \tag{7.33} \label{eq-7-33}
 $$
 
 The holonomic constraints can be accounted for using the Lagrange multiplier terms while the generalized force $Q_{j}^{EXC}$ includes non-holonomic forces or other forces not included in the potential energy term of the Lagrangian, or holonomic forces not accounted for by the Lagrange multiplier terms.
 
-Substituting Equation \ref{7.33} into Equation \ref{7.32} gives
+Substituting Equation [7.33](#eq-7-33) into Equation [7.32](#eq-7-32) gives
 
 $$
 \begin{align} \frac{dL}{dt} &=&\sum_{j}\dot{q}_{j}\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}-\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\right] +\sum_{j}\frac{ \partial L}{\partial \dot{q}_{j}}\ddot{q}_{j}+\frac{\partial L}{\partial t} \notag \\ &=&\sum_{j}\frac{d}{dt}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q} _{j}}\right) -\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\right] +\frac{ \partial L}{\partial t}\end{align}
@@ -413,7 +425,7 @@ $$
 \frac{d}{dt}\left[ \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{ q}_{j}}\right) -L\right] =\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t) \right] -\frac{\partial L}{\partial t}
 $$
 
-Define Jacobi’s **Generalized Energy*<sup>1</sup>*** $h(\mathbf{q},\mathbf{ \dot{q}},t)$ by
+Define Jacobi’s **Generalized Energy*[^7-7-1]*** $h(\mathbf{q},\mathbf{ \dot{q}},t)$ by
 
 $$
 h(\mathbf{q},\mathbf{ \dot{q}},t)\equiv \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q }_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}},t)
@@ -427,9 +439,7 @@ $$
 
 This Hamiltonian $H\left( \mathbf{q,p,}t\right)$ underlies Hamiltonian mechanics which plays a profoundly important role in most branches of physics as illustrated in chapters $8,15$ and $18$.
 
----
-
-<sup>1</sup>Most textbooks call the function $h(\mathbf{q},\mathbf{\dot{q}},t)$ *Jacobi’s energy integral.* This book adopts the more descriptive name *Generalized energy* in analogy with use of generalized coordinates $\mathbf{q}$ and generalized momentum $\mathbf{p}$.
+[^7-7-1]: Most textbooks call the function $h(\mathbf{q},\mathbf{\dot{q}},t)$ *Jacobi’s energy integral.* This book adopts the more descriptive name *Generalized energy* in analogy with use of generalized coordinates $\mathbf{q}$ and generalized momentum $\mathbf{p}$.
 
 ## 7.8: Generalized energy theorem
 
@@ -464,10 +474,10 @@ $$
 If the potential energy $U$ does not depend explicitly on velocities $\dot{q }_{i}$ or time, then
 
 $$
-\label{7.42} p_{j}=\frac{\partial L}{\partial \dot{q}_{j}}=\frac{\partial \left( T-U\right) }{\partial \dot{q}_{j}}=\frac{\partial T}{\partial \dot{q}_{j}}
+\tag{7.42} \label{eq-7-42} p_{j}=\frac{\partial L}{\partial \dot{q}_{j}}=\frac{\partial \left( T-U\right) }{\partial \dot{q}_{j}}=\frac{\partial T}{\partial \dot{q}_{j}}
 $$
 
-Equation \ref{7.42} can be used to write the **Hamiltonian**, equation $(7.7.6)$, as
+Equation [7.42](#eq-7-42) can be used to write the **Hamiltonian**, equation $(7.7.6)$, as
 
 $$
 H\left( \mathbf{q,p,}t\right) =\sum_{i}\left( \dot{q}_{j}\frac{\partial T_{2} }{\partial \dot{q}_{j}}\right) +\sum_{i}\left( \dot{q}_{j}\frac{\partial T_{1}}{\partial \dot{q}_{j}}\right) +\sum_{i}\left( \dot{q}_{j}\frac{ \partial T_{0}}{\partial \dot{q}_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}} ,t)
@@ -476,10 +486,10 @@ $$
 Using equations $(7.6.12)$, $(7.6.13)$, $(7.6.14)$ gives that the total generalized Hamiltonian $H\left( \mathbf{q,p,}t\right)$ equals
 
 $$
-H\left( \mathbf{q,p,}t\right) =2T_{2}+T_{1}-(T_{2}+T_{1}+T_{0}-U)=T_{2}-T_{0}+U \label{7.44}
+H\left( \mathbf{q,p,}t\right) =2T_{2}+T_{1}-(T_{2}+T_{1}+T_{0}-U)=T_{2}-T_{0}+U \tag{7.44} \label{eq-7-44}
 $$
 
-But the sum of the kinetic and potential energies equals the total energy. Thus Equation \ref{7.44} can be rewritten in the form
+But the sum of the kinetic and potential energies equals the total energy. Thus Equation [7.44](#eq-7-44) can be rewritten in the form
 
 $$
 H\left( \mathbf{q,p,}t\right) =(T+U)-(T_{1}+2T_{0})=E-(T_{1}+2T_{0})
@@ -496,7 +506,7 @@ Chapters $7.8,7.9$ addressed two important and independent features of the Hamil
 The generalized energy theorem $(7.8.1)$ was given as
 
 $$
-\dfrac{dH\left( \mathbf{q,p,}t\right) }{dt}=\dfrac{dh(\mathbf{q},\mathbf{\dot{q }},t)}{dt}=\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k} \dfrac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\right] -\dfrac{\partial L( \mathbf{q},\mathbf{\dot{q}},t)}{\partial t} \label{7.46}
+\dfrac{dH\left( \mathbf{q,p,}t\right) }{dt}=\dfrac{dh(\mathbf{q},\mathbf{\dot{q }},t)}{dt}=\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k} \dfrac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\right] -\dfrac{\partial L( \mathbf{q},\mathbf{\dot{q}},t)}{\partial t} \tag{7.46} \label{eq-7-46}
 $$
 
 Note that when
@@ -505,10 +515,10 @@ $$
 \sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\dfrac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\right] =0, \nonumber
 $$
 
-then Equation \ref{7.46} reduces to
+then Equation [7.46](#eq-7-46) reduces to
 
 $$
-\dfrac{dH}{dt}=-\dfrac{\partial L}{\partial t}\label{7.47}
+\dfrac{dH}{dt}=-\dfrac{\partial L}{\partial t}\tag{7.47} \label{eq-7-47}
 $$
 
 Also, when
@@ -524,16 +534,17 @@ and if the Lagrangian is not an explicit function of time, then the Hamiltonian 
 If the following two requirements are satisfied
 
 1. The kinetic energy has a homogeneous quadratic dependence on the generalized velocities, that is, the transformation to generalized coordinates is independent of time,**$\dfrac{\partial x_{\alpha ,i}}{\partial t}=0.$
+
 2. The**potential energy is not velocity dependent,**thus the terms $\dfrac{\partial U}{\partial \dot{q}_{i}}=0.$
 
 Then equation $(7.9.5)$ implies that the Hamiltonian equals the total mechanical energy, that is, 
 $$
-H=T+U=E\label{7.48}
+H=T+U=E\tag{7.48} \label{eq-7-48}
 $$
 
 Expressed in words, the generalized energy (Hamiltonian) equals the total energy if the constraints are time independent and the potential energy is velocity independent.**This is equivalent to stating that, *if the constraints, or generalized coordinates, for the system are time independent, then*$H=E$.
 
-The four combinations of the above two independent conditions, assuming that the external forces term in Equation \ref{7.46} is zero, are summarized in table 7.1.
+The four combinations of the above two independent conditions, assuming that the external forces term in Equation [7.46](#eq-7-46) is zero, are summarized in table 7.10.1.
 
 | Hamiltonian | Constraints and coordinate transformation | Constraints and coordinate transformation |
 | --- | --- | --- |
@@ -544,21 +555,28 @@ The four combinations of the above two independent conditions, assuming that the
 Note the following general facts regarding the Lagrangian and the Hamiltonian.
 
 1. the Lagrangian is indefinite with respect to addition of a constant to the scalar potential,
+
 2. the Lagrangian is indefinite with respect to addition of a constant velocity,
+
 3. there is no unique choice of generalized coordinates.
+
 4. the Hamiltonian is a scalar function that is derived from the Lagrangian scalar function.
+
 5. the generalized momentum is derived from the Lagrangian.
 
 These facts, plus the ability to recognize the conditions under which $H$ is conserved, and when $H=E,$ can greatly facilitate solving problems as shown by the following two examples.
 
-Example 7.1: Linear harmonix oscillator on a cart moving at constant velocity
+::::{admonition} Example 7.10.1: Linear harmonix oscillator on a cart moving at constant velocity
+:class: example
 
-Consider a linear harmonic oscillator located on a cart that is moving with constant velocity $v_{0}$ in the $x$ direction (Figure 7.1). Let the laboratory frame be the unprimed frame, and the cart frame be designated the primed frame. Assume that $x=x^{\prime }$ at $t=0.$ Then
+Consider a linear harmonic oscillator located on a cart that is moving with constant velocity $v_{0}$ in the $x$ direction ([Figure 7.10.1](#fig-7-10-1). Let the laboratory frame be the unprimed frame, and the cart frame be designated the primed frame. Assume that $x=x^{\prime }$ at $t=0.$ Then
 
 :::{figure} ../images/lt-32797-imageedit_2_2132646178.png
-:alt: imageedit_2_2132646178.png
+:label: fig-7-10-1
+:enumerator: 7.10.1
+:alt: Harmonic oscillator on cart moving at uniform velocity v_0.
 
-$1$: Harmonic oscillator on cart moving at uniform velocity $v_0$.
+Harmonic oscillator on cart moving at uniform velocity $v_0$.
 :::
 
 $$
@@ -627,15 +645,19 @@ H(x^{\prime },p^{\prime },t)=\dot{x}^{\prime }\dfrac{\partial L}{\partial \dot{x
 $$
 
 Note that the Lagrangian and Hamiltonian expressed in terms of the coordinates in the cart frame of reference are not explicitly time dependent, therefore $H$ is conserved. However, the cart-frame Hamiltonian does not equal the total energy since the coordinate transformation is time dependent. Actually the first two terms in the above Hamiltonian are the energy of the harmonic oscillator in the cart frame. This example shows that the Hamiltonians differ when expressed in terms of either the laboratory or cart frames of reference
+::::
 
-Example 7.2: Isotropic central force in a rotating frame
+::::{admonition} Example 7.10.2: Isotropic central force in a rotating frame
+:class: example
 
-Consider a mass subject to a central isotropic radial force $U(r)$ as shown in Figure 7.2. Compare the Hamiltonian $H$ in the fixed frame of reference $S$, with the Hamiltonian $H^{\prime }$ in a frame of reference $S^{\prime }$ that is rotating about the center of the force with constant angular velocity $\omega$.
+Consider a mass subject to a central isotropic radial force $U(r)$ as shown in [Figure 7.10.2](#fig-7-10-2). Compare the Hamiltonian $H$ in the fixed frame of reference $S$, with the Hamiltonian $H^{\prime }$ in a frame of reference $S^{\prime }$ that is rotating about the center of the force with constant angular velocity $\omega$.
 
 :::{figure} ../images/lt-21169-7.10.2.png
-:alt: 7.10.2.PNG
+:label: fig-7-10-2
+:enumerator: 7.10.2
+:alt: Mass subject to radial force
 
-$2$: Mass subject to radial force
+Mass subject to radial force
 :::
 
 Restrict this case to rotation about one axis so that only two polar coordinates $r$ and $\phi$ need to be considered. The transformations are
@@ -694,14 +716,19 @@ $$
 \dot{p}_{\phi }^{\prime }=\dfrac{\partial H}{\partial \phi ^{\prime }}=-\dfrac{ \partial L}{\partial \phi ^{\prime }}=0\nonumber
 $$
 
-Example 7.3: The plane pendulum
+::::
+
+::::{admonition} Example 7.10.3: The plane pendulum
+:class: example
 
 The simple plane pendulum in a uniform gravitational field $g$ is an example that illustrates Hamiltonian invariance.
 
 :::{figure} ../images/lt-21170-7.10.3.png
-:alt: 7.10.3.PNG
+:label: fig-7-10-3
+:enumerator: 7.10.3
+:alt: The plane pendulum constrained to oscillate in a vertical plane in a uniform gravitational field.
 
-$3$: The plane pendulum constrained to oscillate in a vertical plane in a uniform gravitational field.
+The plane pendulum constrained to oscillate in a vertical plane in a uniform gravitational field.
 :::
 
 There is only one generalized coordinate, $\theta$ and the Lagrangian for this system is
@@ -734,14 +761,17 @@ $$
 H=\dfrac{p_{\theta }^{2}}{2ml^{2}}-mgl\cos \theta =E \nonumber
 $$
 
-Example 7.4: Oscillating cylinder in a cylindrical bowl
+::::
+
+::::{admonition} Example 7.10.4: Oscillating cylinder in a cylindrical bowl
+:class: example
 
 It is important to correctly account for constraint forces when using Noether’s theorem for constrained systems. Noether’s theorem assumes the variables are independent. This is illustrated by considering the example of a solid cylinder rolling in a fixed cylindrical bowl. Assume that a uniform cylinder of radius $\rho$ and mass $m$ is constrained to roll without slipping on the inner surface of the lower half of a hollow cylinder of radius $R$. The motion is constrained to ensure that the axes of both cylinders remain parallel and $\rho <R$.
 
 :::{figure} ../images/lt-21171-7.10.4.png
-:alt: 7.10.4.PNG
-
-$4$
+:label: fig-7-10-4
+:enumerator: 7.10.4
+:alt: Figure
 :::
 
 The generalized coordinates are taken to be the angles $\theta$ and $\phi$ which are measured with respect to a fixed vertical axis. Then the kinetic energy and potential energy are
@@ -833,6 +863,7 @@ H=p_{\theta }\dot{\theta}+p_{\phi }\dot{\phi}-L=\dfrac{p_{\theta }^{2}}{ 2m\left
 $$
 
 Note that the transformation to generalized coordinates is time independent and the potential is not velocity dependent, thus the Hamiltonian also equals the total energy. Also the Hamiltonian is conserved since $\dfrac{dH}{dt}=0$.
+::::
 
 ## 7.11: Hamiltonian for Cyclic Coordinates
 
@@ -860,7 +891,7 @@ that is, the Hamiltonian includes only $n-1$ degrees of freedom. Thus the dimens
 
 ## 7.12: Symmetries and Invariance
 
-This chapter has shown that the *symmetries* of a system lead to *invariance* of physical quantities as was proposed by Noether. The symmetry properties of the Lagrangian can lead to the conservation laws summarized in Table 7.1.
+This chapter has shown that the *symmetries* of a system lead to *invariance* of physical quantities as was proposed by Noether. The symmetry properties of the Lagrangian can lead to the conservation laws summarized in Table 7.12.1.
 
 | Symmetry | Lagrange property | Conserved quantity |
 | --- | --- | --- |
@@ -893,90 +924,212 @@ Hamiltonian mechanics will be derived two other ways. Chapter $8$ uses the Legen
 
 ## 7.E: Symmetries, Invariance and the Hamiltonian (Exercises)
 
-1. Consider a particle of mass $m$ moving in a plane and subject to an inverse square attractive force.
+1. Consider a particle of mass
 
-Obtain the equations of motion.
-Is the angular momentum about the origin conserved?
-Obtain expressions for the generalized forces.
-2. Consider a Lagrangian function of the form $L(q_{i},\dot{q_{i}},\ddot{q_{i}},t)$. Here the Lagrangian contains a time derivative of the generalized coordinates that is higher than the first. When working with such Lagrangians, the term “generalized mechanics” is used.
+   $m$
 
-Consider a system with one degree of freedom. By applying the methods of the calculus of variations, and assuming that Hamilton’s principle holds with respect to variations which keep both $q$ and $\dot{q}$ fixed at the end points, show that the corresponding Lagrange equation is
+   moving in a plane and subject to an inverse square attractive force.
 
+   1. Obtain the equations of motion.
+
+   2. Is the angular momentum about the origin conserved?
+
+   3. Obtain expressions for the generalized forces.
+
+2. Consider a Lagrangian function of the form
+
+   $L(q_{i},\dot{q_{i} },\ddot{q_{i}},t)$
+
+   . Here the Lagrangian contains a time derivative of the generalized coordinates that is higher than the first. When working with such Lagrangians, the term “generalized mechanics” is used.
+
+   1. Consider a system with one degree of freedom. By applying the methods of the calculus of variations, and assuming that Hamilton’s principle holds with respect to variations which keep both $q$ and $\dot{q}$ fixed at the end points, show that the corresponding Lagrange equation is
+      
 $$
-\frac{d^{2}}{dt^{2}}\left( \frac{\partial L}{\partial \ddot{q}}\right) - \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}}\right) +\frac{\partial L}{\partial q}=0.
+\frac{d^{2}}{dt^{2}}\left( \frac{\partial L}{\partial \ddot{q}}\right) - \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}}\right) +\frac{ \partial L}{\partial q}=0.
 $$
 
-Such equations of motion have interesting applications in chaos theory.
+      Such equations of motion have interesting applications in chaos theory.
 
-Apply this result to the Lagrangian
-
+   2. Apply this result to the Lagrangian
+      
 $$
 L=-\frac{m}{2}q\ddot{q}-\frac{k}{2}q^{2}.
 $$
 
-Do you recognize the equations of motion?
-3. A uniform solid cylinder of radius $R$ and mass $M$ rests on a horizontal plane and an identical cylinder rests on it touching along the top of the first cylinder with the axes of both cylinders parallel. The upper cylinder is given an infinitessimal displacement so that both cylinders roll without slipping in the directions shown by the arrows.
+      Do you recognize the equations of motion?
 
-Find Lagrangian for this system
-What are the constants of motion?
-Show that as long as the cylinders remain in contact then
+3. A uniform solid cylinder of radius
 
+   $R$
+
+   and mass
+
+   $M$
+
+   rests on a horizontal plane and an identical cylinder rests on it touching along the top of the first cylinder with the axes of both cylinders parallel. The upper cylinder is given an infinitessimal displacement so that both cylinders roll without slipping in the directions shown by the arrows.
+
+   1. Find Lagrangian for this system
+
+   2. What are the constants of motion?
+
+   3. Show that as long as the cylinders remain in contact then
+
+      
 $$
 \dot{\theta}^{2}=\frac{12g\left( 1-\cos \theta \right) }{R\left( 17+4\cos \theta -4\cos ^{2}\theta \right) }
 $$
 
-:::{figure} ../images/lt-21164-7.w.1.png
-:alt: 7.w.1.PNG
+      :::{figure} ../images/lt-21164-7.w.1.png
+      :label: fig-7-E-1
+      :enumerator: 7.E.1
+      :alt: Figure
+      :::
 
-7.w.1.PNG
-:::
-Figure 7.1
 4. Consider a diatomic molecule which has a symmetry axis along the line through the center of the two atoms comprising the molecule. Consider that this molecule is rotating about an axis perpendicular to the symmetry axis and that there are no external forces acting on the molecule. Use Noether’s Theorem to answer the following questions:
 
-Is the total angular momentum conserved?
-Is the projection of the total angular momentum along a space-fixed $z$ axis conserved?
-Is the projection of the angular momentum along the symmetry axis of the rotating molecule conserved?
-Is the projection of the angular momentum perpendicular to the rotating symmetry axis conserved?
-5. A bead of mass $m$ slides under gravity along a smooth wire bent in the shape of a parabola $x^{2}=az$ in the vertical $(x,z)$ plane.
+   1. Is the total angular momentum conserved?
 
-What kind (holonomic, nonholonomic, scleronomic, rheonomic) of constraint acts on $m$?
-Set up Lagrange’s equation of motion for $x$ with the constraint embedded.
-Set up Lagrange’s equations of motion for both $x$ and $z$ with the constraint adjoined and a Lagrangian multiplier $\lambda$ introduced.
-Show that the same equation of motion for $x$ results from either of the methods used in part (b) or part (c).
-Express $\lambda$ in terms of $x$ and $\dot{x}$
-What are the $x$ and $z$ components of the force of constraint in terms of $x$ and $\dot{x}$ ?
+   2. Is the projection of the total angular momentum along a space-fixed $z$ axis conserved?
+
+   3. Is the projection of the angular momentum along the symmetry axis of the rotating molecule conserved?
+
+   4. Is the projection of the angular momentum perpendicular to the rotating symmetry axis conserved?
+
+5. A bead of mass
+
+   $m$
+
+   slides under gravity along a smooth wire bent in the shape of a parabola
+
+   $x^{2}=az$
+
+   in the vertical
+
+   $(x,z)$
+
+   plane.
+
+   1. What kind (holonomic, nonholonomic, scleronomic, rheonomic) of constraint acts on $m$?
+
+   2. Set up Lagrange’s equation of motion for $x$ with the constraint embedded.
+
+   3. Set up Lagrange’s equations of motion for both $x$ and $z$ with the constraint adjoined and a Lagrangian multiplier $\lambda$ introduced.
+
+   4. Show that the same equation of motion for $x$ results from either of the methods used in part (b) or part (c).
+
+   5. Express $\lambda$ in terms of $x$ and $\dot{x}$
+
+   6. What are the $x$ and $z$ components of the force of constraint in terms of $x$ and $\dot{x}$ ?
+
 6. Let the horizontal plane be the $x-y$ plane. A bead of mass $m$ is constrained to slide with speed $v$ along a curve described by the function $y=f(x)$. What force does the curve apply to the bead? (Ignore gravity)
+
 7. Consider the Atwoods machine shown. The masses are $4m$, $5m$, and $3m$. Let $x$ and $y$ be the heights of the right two masses relative to their initial positions.
 
-Solve this problem using the Euler-Lagrange equations b) Use Noether’s theorem to find the conserved momentum.
-Use Noether’s theorem to find the conserved momentum.
-:::{figure} ../images/lt-21394-7.e.1.png
-:alt: 7.e.1.PNG
+   1. Solve this problem using the Euler-Lagrange equations b) Use Noether’s theorem to find the conserved momentum.
 
-7.e.1.PNG
-:::
-Figure 7.2
-8. A cube of side $2b$ and center of mass $C$, is placed on a fixed horizontal cylinder of radius $r$ and center $O$ as shown in the figure. Originally the cube is placed such that $C$ is centered above $O$ but it can roll from side to side without slipping. (a) Assuming that $b<r$ use the Lagrangian approach to to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for $L$ before using the Lagrange-Euler equations. (b) What will be the motion if $b>r$ ? Note that the moment of inertia of the cube about the center of mass is $\frac{2}{3}mb^{2}$.
-:::{figure} ../images/lt-21397-7.e.2.png
-:alt: 7.e.2.PNG
+   2. Use Noether’s theorem to find the conserved momentum.
 
-7.e.2.PNG
-:::
-Figure 7.3
-9. Two equal masses of mass $m$ are glued to a massless hoop of radius $R$ is free to rotate about its center in a vertical plane. The angle between the masses is $2\theta$, as shown. Find the frequency of oscillations.
-:::{figure} ../images/lt-21396-7.e.3.png
-:alt: 7.e.3.PNG
+      :::{figure} ../images/lt-21394-7.e.1.png
+      :label: fig-7-E-2
+      :enumerator: 7.E.2
+      :alt: Figure
+      :::
 
-7.e.3.PNG
-:::
-Figure 7.4
-10. Three massless sticks each of length $2r$, and mass $m$ with the center of mass at the center of each stick, are hinged at their ends as shown. The bottom end of the lower stick is hinged at the ground. They are held so that the lower two sticks are vertical, and the upper one is tilted at a small angle $\varepsilon$ with respect to the vertical. They are then released. At the instant of release what are the three equations of motion derived from the Lagrangian derived assuming that $\varepsilon$ is small$?$ Use these to determine the initial angular accelerations of the three sticks.
-:::{figure} ../images/lt-21395-7.e.4.png
-:alt: 7.e.4.PNG
+8. A cube of side
 
-7.e.4.PNG
-:::
-Figure 7.5
+   $2b$
+
+   and center of mass
+
+   $C$
+
+   , is placed on a fixed horizontal cylinder of radius
+
+   $r$
+
+   and center
+
+   $O$
+
+   as shown in the figure. Originally the cube is placed such that
+
+   $C$
+
+   is centered above
+
+   $O$
+
+   but it can roll from side to side without slipping. (a) Assuming that
+
+   $b<r$
+
+   use the Lagrangian approach to to find the frequency for small oscillations about the top of the cylinder. For simplicity make the small angle approximation for
+
+   $L$
+
+   before using the Lagrange-Euler equations. (b) What will be the motion if
+
+   $b>r$
+
+   ? Note that the moment of inertia of the cube about the center of mass is
+
+   $\frac{2}{3}mb^{2}$
+
+   .
+
+   :::{figure} ../images/lt-21397-7.e.2.png
+   :label: fig-7-E-3
+   :enumerator: 7.E.3
+   :alt: Figure
+   :::
+
+9. Two equal masses of mass
+
+   $m$
+
+   are glued to a massless hoop of radius
+
+   $R$
+
+   is free to rotate about its center in a vertical plane. The angle between the masses is
+
+   $2\theta$
+
+   , as shown. Find the frequency of oscillations.
+
+   :::{figure} ../images/lt-21396-7.e.3.png
+   :label: fig-7-E-4
+   :enumerator: 7.E.4
+   :alt: Figure
+   :::
+
+10. Three massless sticks each of length
+
+    $2r$
+
+    , and mass
+
+    $m$
+
+    with the center of mass at the center of each stick, are hinged at their ends as shown. The bottom end of the lower stick is hinged at the ground. They are held so that the lower two sticks are vertical, and the upper one is tilted at a small angle
+
+    $\varepsilon$
+
+    with respect to the vertical. They are then released. At the instant of release what are the three equations of motion derived from the Lagrangian derived assuming that
+
+    $\varepsilon$
+
+    is small
+
+    $?$
+
+    Use these to determine the initial angular accelerations of the three sticks.
+
+    :::{figure} ../images/lt-21395-7.e.4.png
+    :label: fig-7-E-5
+    :enumerator: 7.E.5
+    :alt: Figure
+    :::
 
 ## 7.S: Symmetries, Invariance and the Hamiltonian (Summary)
 
@@ -997,7 +1150,7 @@ Noether’s theorem is of importance since it underlies the relation between sym
 The generalized momentum associated with the coordinate $q_{j}$ is defined to be
 
 $$
-\frac{\partial L}{\partial \dot{q}_{j}}\equiv p_{j} 
+\frac{\partial L}{\partial \dot{q}_{j}}\equiv p_{j} \tag{7.3}
 $$
  where $p_{j}$ is also called the **conjugate momentum (**or**canonical momentum)** to $q_{j}$ where $q_{j},p_{j}$ are conjugate, or canonical, variables. Remember that the linear momentum $p_{j}$ is the first-order time integral given by equation $(3.4.1)$. Note that if $q_{j}$ is not a spatial coordinate, then $p_{j}$ is not linear momentum, but is the conjugate momentum. For example, if $q_{j}$ is an angle, then $p_{j}$ will be angular momentum.
 
@@ -1005,26 +1158,26 @@ $$
 
 It was shown that the kinetic energy can be expressed in terms of generalized coordinates by 
 $$
-\begin{align} T(\mathbf{q},\mathbf{ \dot{q}},t) &=&\sum_{\alpha }\sum_{i,j,k}\frac{1}{2}m_{\alpha }\frac{ \partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial q_{k}}\dot{q}_{j}\dot{q}_{k}+\sum_{\alpha }\sum_{i,j}m_{\alpha } \frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial t}\dot{q}_{j}+\sum_{\alpha }\sum_{i}\frac{1}{2}m_{\alpha }\left( \frac{\partial x_{\alpha ,i}}{\partial t}\right) ^{2}  \\ &=&T_{2}(\mathbf{q},\mathbf{\dot{q}},t)+T_{1}(\mathbf{q},\mathbf{\dot{q}} ,t)+T_{0}(\mathbf{q},t)\end{align}
+\begin{align} T(\mathbf{q},\mathbf{ \dot{q}},t) &=&\sum_{\alpha }\sum_{i,j,k}\frac{1}{2}m_{\alpha }\frac{ \partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial q_{k}}\dot{q}_{j}\dot{q}_{k}+\sum_{\alpha }\sum_{i,j}m_{\alpha } \frac{\partial x_{\alpha ,i}}{\partial q_{j}}\frac{\partial x_{\alpha ,i}}{ \partial t}\dot{q}_{j}+\sum_{\alpha }\sum_{i}\frac{1}{2}m_{\alpha }\left( \frac{\partial x_{\alpha ,i}}{\partial t}\right) ^{2} \tag{7.19} \label{eq-7-19} \\ &=&T_{2}(\mathbf{q},\mathbf{\dot{q}},t)+T_{1}(\mathbf{q},\mathbf{\dot{q}} ,t)+T_{0}(\mathbf{q},t)\end{align}
 $$
 
 For scleronomic systems with a potential that is velocity independent, then the kinetic energy can be expressed as 
 $$
-T=T_{2}=\frac{1}{2}\sum_{l}\dot{q}_{l}p_{l}=\frac{1}{2}\mathbf{\dot{q}\cdot p } 
+T=T_{2}=\frac{1}{2}\sum_{l}\dot{q}_{l}p_{l}=\frac{1}{2}\mathbf{\dot{q}\cdot p } \tag{7.31} \label{eq-7-31}
 $$
 
 ### Generalized energy
 
 Jacobi’s **Generalized Energy** $h(\mathbf{q},\dot{q},t)$ was defined as 
 $$
-h(\mathbf{q},\mathbf{ \dot{q}},t)\equiv \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q }_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}},t) 
+h(\mathbf{q},\mathbf{ \dot{q}},t)\equiv \sum_{j}\left( \dot{q}_{j}\frac{\partial L}{\partial \dot{q }_{j}}\right) -L(\mathbf{q},\mathbf{\dot{q}},t) \tag{7.36} \label{eq-7-36}
 $$
 
 ### Hamiltonian function
 
 The Hamiltonian $H\left( \mathbf{q,p,}t\right)$ was defined in terms of the generalized energy $h(\mathbf{q},\mathbf{\dot{q}},t)$ and by introducing the generalized momentum. That is 
 $$
-H\left( \mathbf{q,p,}t\right) \equiv h(\mathbf{q},\mathbf{\dot{q}} ,t)=\sum_{j}p_{j}\dot{q}_{j}-L(\mathbf{q},\mathbf{\dot{q}},t)=\mathbf{p\cdot \dot{q}-}L(\mathbf{q},\mathbf{\dot{q}},t) 
+H\left( \mathbf{q,p,}t\right) \equiv h(\mathbf{q},\mathbf{\dot{q}} ,t)=\sum_{j}p_{j}\dot{q}_{j}-L(\mathbf{q},\mathbf{\dot{q}},t)=\mathbf{p\cdot \dot{q}-}L(\mathbf{q},\mathbf{\dot{q}},t) \tag{7.37} \label{eq-7-37}
 $$
 
 ### Generalized energy theorem
@@ -1032,10 +1185,10 @@ $$
 The equations of motion lead to the generalized energy theorem which states that the time dependence of the Hamiltonian is related to the time dependence of the Lagrangian.
 
 $$
-\frac{dH\left( \mathbf{q,p,}t\right) }{dt}=\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)\right] -\frac{\partial L(\mathbf{q},\mathbf{\dot{q}},t)}{ \partial t} 
+\frac{dH\left( \mathbf{q,p,}t\right) }{dt}=\sum_{j}\dot{q}_{j}\left[ Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)\right] -\frac{\partial L(\mathbf{q},\mathbf{\dot{q}},t)}{ \partial t} \tag{7.38} \label{eq-7-38}
 $$
 
-Note that if all the generalized non-potential forces are zero, then the bracket in Equation \ref{7.38} is zero, and if the Lagrangian is not an explicit function of time, then the Hamiltonian is a constant of motion.
+Note that if all the generalized non-potential forces are zero, then the bracket in Equation [7.38](#eq-7-38) is zero, and if the Lagrangian is not an explicit function of time, then the Hamiltonian is a constant of motion.
 
 ### Generalized energy and total energy:
 

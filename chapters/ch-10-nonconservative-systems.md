@@ -5,9 +5,9 @@ label: ch-10-nonconservative-systems
 ---
 
 
-# 10. Nonconservative Systems
-
 (ch-10)=
+
+# 10. Nonconservative Systems
 
 ## 10.1: Introduction to Nonconservative Systems
 
@@ -38,7 +38,9 @@ The above example illustrates the importance of including all active degrees of 
 Since Lagrangian and Hamiltonian formulations are invalid for the nonconservative degrees of freedom, the following three approaches are used to include nonconservative degrees of freedom directly in the Lagrangian and Hamiltonian formulations of mechanics.
 
 1. Expand the number of degrees of freedom used to include all active degrees of freedom for the system, so that the expanded system is conservative. This is the preferred approach when it is viable. Hamilton’s action principle based on initial conditions, introduced in chapter $9.2.4$, doubles the number of degrees of freedom, which can be used to account for the dissipative forces providing one approach to solve nonconservative systems. However, this approach typically is impractical for handling dissipated processes because of the large number of degrees of freedom that are involved in thermal dissipation.
+
 2. Nonconservative forces can be introduced directly at the equations of motion stage as generalized forces $Q_{j}^{EXC}$. This approach is used extensively. For the case of linear velocity dependence, the Rayleigh’s dissipation function provides an elegant and powerful way to express the generalized forces in terms of scalar potential energies.
+
 3. New degrees of freedom or effective forces can be postulated that are then incorporated into the Lagrangian or the Hamiltonian in order to mimic the effects of the nonconservative forces.
 
 Examples that exploit the above three ways to introduce nonconservative dissipative forces in algebraic formulations are given below.
@@ -60,10 +62,10 @@ In $1881$ Lord Rayleigh showed that if a dissipative force $\mathbf{F}$ depends 
 Consider $n$ equations of motion for the $n$ degrees of freedom, and assume that the dissipation depends linearly on velocity. Then, allowing all possible cross coupling of the equations of motion for $q_{j},$ the equations of motion can be written in the form
 
 $$
-\sum_{i=1}^{n}\left[ m_{ij} \ddot{q}_{j}+b_{ij}\dot{q}_{j}+c_{ij}q_{j}-Q_{i}(t)\right] =0 \label{10.5}
+\sum_{i=1}^{n}\left[ m_{ij} \ddot{q}_{j}+b_{ij}\dot{q}_{j}+c_{ij}q_{j}-Q_{i}(t)\right] =0 \tag{10.5} \label{eq-10-5}
 $$
 
-Multiplying Equation \ref{10.5} by $\dot{q}_{i}$, take the time integral, and sum over $i,j$, gives the following energy equation 
+Multiplying Equation [10.5](#eq-10-5) by $\dot{q}_{i}$, take the time integral, and sum over $i,j$, gives the following energy equation 
 $$
 \sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}m_{ij}\ddot{q}_{j}\dot{q} _{i}dt+\sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}b_{ij}\dot{q}_{j}\dot{q} _{i}dt+\sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}c_{ij}q_{j}\dot{q} _{i}dt=\sum_{i}^{n}\int_{0}^{t}Q_{i}(t)\dot{q}_{i}dt
 $$
@@ -120,10 +122,10 @@ $$
 
 Using equations $(6.3.11)$ and $7.3.12$, the $j$ component of the generalized frictional force $Q_{j}^{f}$ is given by 
 $$
-Q_{j}^{f}=\sum_{i=1}^{n}\mathbf{F}_{i}^{f}\cdot \frac{\partial \mathbf{r}_{i} }{\partial q_{j}}=\sum_{i=1}^{n}\mathbf{F}_{i}^{f}\cdot \frac{\partial \mathbf{\dot{r}}_{i}}{\partial \dot{q}_{j}}=-\sum_{i=1}^{n}\nabla _{v_{i}} \mathcal{R}(\mathbf{\dot{q}})\cdot \frac{\partial \mathbf{\dot{r}}_{i}}{ \partial \dot{q}_{j}}=-\frac{\partial \mathcal{R}(\mathbf{\dot{q}})}{ \partial \dot{q}_{j}}\label{10.15}
+Q_{j}^{f}=\sum_{i=1}^{n}\mathbf{F}_{i}^{f}\cdot \frac{\partial \mathbf{r}_{i} }{\partial q_{j}}=\sum_{i=1}^{n}\mathbf{F}_{i}^{f}\cdot \frac{\partial \mathbf{\dot{r}}_{i}}{\partial \dot{q}_{j}}=-\sum_{i=1}^{n}\nabla _{v_{i}} \mathcal{R}(\mathbf{\dot{q}})\cdot \frac{\partial \mathbf{\dot{r}}_{i}}{ \partial \dot{q}_{j}}=-\frac{\partial \mathcal{R}(\mathbf{\dot{q}})}{ \partial \dot{q}_{j}}\tag{10.15} \label{eq-10-15}
 $$
 
-Equation \ref{10.15} provides an elegant expression for the generalized dissipative force $Q_{j}^{f}$ in terms of the Rayleigh’s scalar dissipation potential $\mathcal{R}$.
+Equation [10.15](#eq-10-15) provides an elegant expression for the generalized dissipative force $Q_{j}^{f}$ in terms of the Rayleigh’s scalar dissipation potential $\mathcal{R}$.
 
 ### Generalized dissipative forces for nonlinear velocity dependence
 
@@ -143,10 +145,10 @@ This generalized Rayleigh’s dissipation function eliminates the prior restrict
 
 ### Lagrange equations of motion
 
-Linear dissipative forces can be directly, and elegantly, included in Lagrangian mechanics by using Rayleigh’s dissipation function as a generalized force $Q_{j}^{f}$. Inserting Rayleigh dissipation function \ref{10.15} in the generalized Lagrange equations of motion $(6.5.12)$ gives
+Linear dissipative forces can be directly, and elegantly, included in Lagrangian mechanics by using Rayleigh’s dissipation function as a generalized force $Q_{j}^{f}$. Inserting Rayleigh dissipation function [10.15](#eq-10-15) in the generalized Lagrange equations of motion $(6.5.12)$ gives
 
 $$
-\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\left[ \sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] - \frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j} }\label{10.18}
+\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\left[ \sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] - \frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j} }\tag{10.18} \label{eq-10-18}
 $$
 
 where $Q_{j}^{EXC}$ corresponds to the generalized forces remaining after removal of the generalized linear, velocity-dependent, frictional force $Q_{j}^{f}$.
@@ -155,7 +157,7 @@ The holonomic forces of constraint are absorbed into the Lagrange multiplier ter
 
 ### Hamiltonian mechanics
 
-If the nonconservative forces depend linearly on velocity, and are derivable from Rayleigh’s dissipation function according to Equation \ref{10.15}, then using the definition of generalized momentum gives
+If the nonconservative forces depend linearly on velocity, and are derivable from Rayleigh’s dissipation function according to Equation [10.15](#eq-10-15), then using the definition of generalized momentum gives
 
 $$
 \begin{align} \dot{p}_{i} &=&\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}=\frac{ \partial L}{\partial q_{i}}+\left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j}} \\ \dot{p}_{i} &=&-\frac{\partial H(\mathbf{p,q},t\mathbf{)}}{\partial q_{i}}+ \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q}, \mathbf{\dot{q}})}{\partial \dot{q}_{j}}\end{align}
@@ -169,14 +171,17 @@ $$
 
 The Rayleigh dissipation function $\mathcal{R(}\mathbf{q},\mathbf{\dot{q}})$ provides an elegant and convenient way to account for dissipative forces in both Lagrangian and Hamiltonian mechanics.
 
-Example 10.1: Driven, Linearly-Damped, Coupled Linear Oscillators
+::::{admonition} Example 10.4.1: Driven, Linearly-Damped, Coupled Linear Oscillators
+:class: example
 
 Consider the two identical, linearly damped, coupled oscillators (damping constant $\beta$) shown in the figure.
 
 :::{figure} ../images/lt-21615-imageedit_1_4324574508.png
-:alt: 8.7.1.PNG
+:label: fig-10-4-1
+:enumerator: 10.4.1
+:alt: Harmonically-driven, linearly-damped, coupled linear oscillators.
 
-$1$: Harmonically-driven, linearly-damped, coupled linear oscillators.
+Harmonically-driven, linearly-damped, coupled linear oscillators.
 :::
 
 A periodic force $F=F_{0}\cos (\omega t)$ is applied to the left-hand mass $m$. The kinetic energy of the system is
@@ -207,7 +212,7 @@ $$
 Q_{1}^{\prime }=F_{o}\cos \left( \omega t\right) \hspace{1in}Q_{2}^{\prime }=0\nonumber
 $$
 
-Use the Euler-Lagrange equations \ref{10.18} to derive the equations of motion
+Use the Euler-Lagrange equations [10.18](#eq-10-18) to derive the equations of motion
 
 $$
 \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} +\frac{\partial \mathcal{F}}{ \partial \dot{q}_{j}}=Q_{j}^{\prime }+\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)\nonumber
@@ -247,8 +252,10 @@ $$
 $$
 
 This solution is a superposition of two independent, linearly-damped, driven normal modes $\eta _{1}$ and $\eta _{2}$ that have different natural frequencies $\omega _{1}$ and $\omega _{2}$. For weak damping these two driven normal modes each undergo damped oscillatory motion with the $\eta _{1}$ and $\eta _{2}$ normal modes exhibiting resonances at $\omega _{1}^{\prime }=\sqrt{\omega _{1}^{2}-2\left( \frac{\Gamma }{2}\right) ^{2}}$ and $\omega _{2}^{\prime }=\sqrt{\omega _{2}^{2}-2\left( \frac{ \Gamma }{2}\right) ^{2}}$
+::::
 
-Example 10.2: Kirchhoff’s Rules for Electrical Circuits
+::::{admonition} Example 10.4.2: Kirchhoff’s Rules for Electrical Circuits
+:class: example
 
 The mathematical equations governing the behavior of mechanical systems and $LRC$ electrical circuits have a close similarity. Thus variational methods can be used to derive the analogous behavior for electrical circuits. For example, for a system of $n$ separate circuits, the magnetic flux $\Phi _{ik \text{ }}$through circuit $i,$ due to electrical current $I_{k}=\dot{q}_{k}$ flowing in circuit $k,$ is given by
 
@@ -276,22 +283,22 @@ $$
 Thus the standard Lagrangian for this electric system is given by
 
 $$
-L=T-U=\frac{1}{2}\sum_{i=1}^{n}\sum_{k=1}^{n}\left[ M_{ik}\dot{q}_{i}\dot{q} _{k}-\frac{q_{i}q_{k}}{C_{ik}}\right] \tag{$\alpha $} \label{10-alpha}
+L=T-U=\frac{1}{2}\sum_{i=1}^{n}\sum_{k=1}^{n}\left[ M_{ik}\dot{q}_{i}\dot{q} _{k}-\frac{q_{i}q_{k}}{C_{ik}}\right] \tag{$\alpha $} \label{eq-10-alpha}
 $$
 
 Assuming that Ohm’s Law is obeyed, that is, the dissipation force depends linearly on velocity, then the Rayleigh dissipation function can be written in the form
 
 $$
-\mathcal{R\equiv }\frac{1}{2}\sum_{i=1}^{n}\sum_{k=1}^{n}R_{ik}\dot{q}_{i} \dot{q}_{k} \tag{$\beta $} \label{10-beta}
+\mathcal{R\equiv }\frac{1}{2}\sum_{i=1}^{n}\sum_{k=1}^{n}R_{ik}\dot{q}_{i} \dot{q}_{k} \tag{$\beta $} \label{eq-10-beta}
 $$
 
 where $R_{ik}$ is the resistance matrix. Thus the dissipation force, expressed in volts, is given by
 
 $$
-F_{i}=-\frac{\partial \mathcal{R}}{\partial \dot{q}_{j}}=\frac{1}{2} \sum_{k=1}^{n}R_{ik}\dot{q}_{k} \label{10-gamma} \tag{$\gamma $}
+F_{i}=-\frac{\partial \mathcal{R}}{\partial \dot{q}_{j}}=\frac{1}{2} \sum_{k=1}^{n}R_{ik}\dot{q}_{k} \label{eq-10-gamma} \tag{$\gamma $}
 $$
 
-Inserting equations \ref{10-alpha}, \ref{10-beta}, and \ref{10-gamma} into Equation \ref{10.18}, plus making the assumption that an additional generalized electrical force $Q_{i}=\xi _{i}(t)$ volts is acting on circuit $i,$ then the Euler-Lagrange equations give the following equations of motion.
+Inserting equations [alpha](#eq-10-alpha), [beta](#eq-10-beta), and [gamma](#eq-10-gamma) into Equation [10.18](#eq-10-18), plus making the assumption that an additional generalized electrical force $Q_{i}=\xi _{i}(t)$ volts is acting on circuit $i,$ then the Euler-Lagrange equations give the following equations of motion.
 
 $$
 \sum_{k=1}^{n}\left[ M_{ik}\ddot{q}_{k}+R_{ik}\dot{q}_{k}+\frac{q_{k}}{C_{ik} }\right] =\xi _{i}(t)\nonumber
@@ -304,20 +311,24 @@ $$
 $$
 
 This sum of the voltages is identical to the usual expression for Kirchhoff’s loop rule. This example illustrates the power of variational methods when applied to fields beyond classical mechanics.
+::::
 
 ## 10.5: Dissipative Lagrangians
 
 The prior discussion of nonconservative systems mentioned the following three ways to incorporate dissipative processes into Lagrangian or Hamiltonian mechanics.
 
 1. Expand the number of degrees of freedom to include all the active dissipative active degrees of freedom as well as the conservative ones.
+
 2. Use generalized forces to incorporate dissipative processes.
+
 3. Add dissipative terms to the Lagrangian or Hamiltonian to mimic dissipation.
 
 The following illustrates the use of dissipative Lagrangians.
 
 Bateman pointed out that an isolated dissipative system is physically incomplete, that is, a complete system must comprise at least two coupled subsystems where energy is transferred from a dissipating subsystem to an absorbing subsystem. A complete system should comprise both the dissipating and absorbing systems to ensure that the total system Lagrangian and Hamiltonian are conserved, as is assumed in conventional Lagrangian and Hamiltonian mechanics. Both Bateman and Dekker have illustrated that the equations of motion for a linearly-damped, free, one-dimensional harmonic oscillator are derivable using the Hamilton variational principle via introduction of a fictitious complementary subsystem that mimics dissipative processes. The following example illustrate that deriving the equations of motion for the linearly-damped, linear oscillator may be handled by three alternative equivalent non-standard Lagrangians that assume either: (1) a multidimensional system, (2) explicit time dependent Lagrangians and Hamiltonians, or (3) complex non-standard Lagrangians.
 
-Example 10.1: The linearly-damped, linear oscillator
+::::{admonition} Example 10.5.1: The linearly-damped, linear oscillator
+:class: example
 
 Three toy dynamical models have been used to describe the linearly-damped, linear oscillator employing very different non-standard Lagrangians to generate the required Hamiltonians, and to derive the correct equations of motion.
 
@@ -334,16 +345,16 @@ $$
 where $\Gamma =\frac{\lambda }{m}$ is the damping coefficient. Minimizing by variation of the auxiliary variable $y$, that is, $\Lambda _{y}L=0$, leads to the uncoupled equation of motion for $x$
 
 $$
-\frac{m}{2}\left[ \ddot{x}+\Gamma \dot{x}+\omega _{0}^{2}x\right] =0 \tag{$b$}\label{10-b1}
+\frac{m}{2}\left[ \ddot{x}+\Gamma \dot{x}+\omega _{0}^{2}x\right] =0 \tag{$b$}\label{eq-10-b1}
 $$
 
 Similarly minimizing by variation of the primary variable $x,$ that is $\Lambda _{x}L=0,$ leads to the uncoupled equation of motion for $y\qquad$
 
 $$
-\frac{m}{2}\left[ \ddot{y}-\Gamma \dot{y}+\omega _{0}^{2}y\right] =0 \tag{$c$}\label{10-c1}
+\frac{m}{2}\left[ \ddot{y}-\Gamma \dot{y}+\omega _{0}^{2}y\right] =0 \tag{$c$}\label{eq-10-c1}
 $$
 
-Note that equation of motion \ref{10-b1}, which was obtained by variation of the auxiliary variable $y,$ corresponds to that for the usual free, linearly-damped, one-dimensional harmonic oscillator for the $x$ variable which dissipates energy as is discussed in chapter $3.5$. The equation of motion \ref{10-c1} is obtained by variation of the primary variable $x$ and corresponds to a free linear, one-dimensional, oscillator for the $y$ variable that is absorbing the energy dissipated by the dissipating $x$ system.
+Note that equation of motion [b1](#eq-10-b1), which was obtained by variation of the auxiliary variable $y,$ corresponds to that for the usual free, linearly-damped, one-dimensional harmonic oscillator for the $x$ variable which dissipates energy as is discussed in chapter $3.5$. The equation of motion [c1](#eq-10-c1) is obtained by variation of the primary variable $x$ and corresponds to a free linear, one-dimensional, oscillator for the $y$ variable that is absorbing the energy dissipated by the dissipating $x$ system.
 
 The generalized momenta,
 
@@ -357,7 +368,7 @@ $$
 \begin{align} H_{Dual}(x,p_{x},y,p_{y}) &=\left[ p_{x}\dot{x}+p_{y}\dot{y}-L\right] \nonumber\\[4pt] &=\frac{ p_{x}p_{y}}{2m}-\frac{\Gamma }{2}\left[ xp_{x}-yp_{y}\right] +\frac{m}{2} \left( \omega _{0}^{2}-\left( \frac{\Gamma }{2}\right) ^{2}\right) xy \tag{$d$} \end{align}
 $$
 
-Note that this Hamiltonian is time independent, and thus is conserved for this complete dual-variable system. Using Hamilton’s equations of motion gives the same two uncoupled equations of motion as obtained using the Lagrangian, i.e. \ref{10-b1} and \ref{10-c1}.
+Note that this Hamiltonian is time independent, and thus is conserved for this complete dual-variable system. Using Hamilton’s equations of motion gives the same two uncoupled equations of motion as obtained using the Lagrangian, i.e. [b1](#eq-10-b1) and [c1](#eq-10-c1).
 
 ### 2: Time-dependent Lagrangian: $L_{Damped}$
 
@@ -415,16 +426,16 @@ $$
 Substituting this complex variable into the relation
 
 $$
-\dot{q}+\left[ i\omega +\frac{\Gamma }{2}\right] q=0 \tag{$m$}\label{10-m}
+\dot{q}+\left[ i\omega +\frac{\Gamma }{2}\right] q=0 \tag{$m$}\label{eq-10-m}
 $$
 
 leads to the second-order equation for the real variable $x$ of
 
 $$
-\ddot{x}+\Gamma \dot{x}+\omega _{0}^{2}=0 \tag{$n$}\label{10-n}
+\ddot{x}+\Gamma \dot{x}+\omega _{0}^{2}=0 \tag{$n$}\label{eq-10-n}
 $$
 
-This is the desired equation of motion for the linearly-damped harmonic oscillator. This result also can be shown by taking the time derivative of Equation \ref{10-m} and taking only the real part, i.e.
+This is the desired equation of motion for the linearly-damped harmonic oscillator. This result also can be shown by taking the time derivative of Equation \text{(m)} and taking only the real part, i.e.
 
 $$
 \ddot{q}+i\omega \dot{q}+\frac{\Gamma }{2}\dot{q}=\ddot{q}+\left( i\omega - \frac{\Gamma }{2}\right) \dot{q}+\Gamma \dot{q}=\ddot{q}+\Gamma \dot{q} +\omega _{0}^{2}x=0 \tag{$o$}
@@ -436,7 +447,7 @@ $$
 L_{Complex}=\frac{i}{2}\left( q^{\ast }\dot{q}-q\dot{q}^{\ast }\right) - \left[ \omega -i\frac{\Gamma }{2}\right] q^{\ast }q \tag{$p$}
 $$
 
-where $\omega ^{2}\equiv \omega _{0}^{2}-\left( \frac{\Gamma }{2} \right) ^{2}$. The Lagrangian $L_{Complex}$ is real for a conservative system and complex for a dissipative system. Using the Lagrange-Euler equation for variation of $q^{\ast }$, that is, $\Lambda _{q^{\ast }}L_{Complex}=0$, gives Equation \ref{10-m} which leads to the required equation of motion \ref{10-n}.
+where $\omega ^{2}\equiv \omega _{0}^{2}-\left( \frac{\Gamma }{2} \right) ^{2}$. The Lagrangian $L_{Complex}$ is real for a conservative system and complex for a dissipative system. Using the Lagrange-Euler equation for variation of $q^{\ast }$, that is, $\Lambda _{q^{\ast }}L_{Complex}=0$, gives Equation \text{(m)} which leads to the required equation of motion \text{(n)}.
 
 The canonical conjugate momenta are given by
 
@@ -451,6 +462,7 @@ $$
 $$
 
 These Hamiltonians give Hamilton equations of motion that lead to the correct equations of motion for $q$ and $q^{\ast }$
+::::
 
 The above examples have shown that three very different, non-standard, Lagrangians, plus their corresponding Hamiltonians, all lead to the correct equation of motion for the linearly-damped harmonic oscillator. This illustrates the power of using non-standard Lagrangians to describe dissipative motion in classical mechanics. However, postulating non-standard Lagrangians to produce the required equations of motion appears to be of questionable usefulness. A fundamental approach is needed to build a firm foundation upon which non-standard Lagrangian mechanics can be based. Non-standard Lagrangian mechanics remains an active, albeit narrow, frontier of classical mechanics
 
@@ -463,7 +475,9 @@ Dissipative drag forces are non-conservative and usually are velocity dependent.
 Since Lagrangian and Hamiltonian formulations are invalid for the nonconservative degrees of freedom, the following three approaches are used to include nonconservative degrees of freedom directly in the Lagrangian and Hamiltonian formulations of mechanics.
 
 1. Expand the number of degrees of freedom used to include all active degrees of freedom for the system, so that the expanded system is conservative. This is the preferred approach when it is viable. Unfortunately this approach typically is impractical for handling dissipated processes because of the large number of degrees of freedom that are involved in thermal dissipation.
+
 2. Nonconservative forces can be introduced directly at the equations of motion stage as generalized forces $Q_{j}^{EXC}$. This approach is used extensively. For the case of linear velocity dependence, the Rayleigh’s dissipation function provides an elegant and powerful way to express the generalized forces in terms of scalar potential energies.
+
 3. New degrees of freedom or effective forces can be postulated that are then incorporated into the Lagrangian or the Hamiltonian in order to mimic the effects of the nonconservative forces.
 
 ### Rayleigh’s Dissipation Function
@@ -471,19 +485,19 @@ Since Lagrangian and Hamiltonian formulations are invalid for the nonconservativ
 Generalized dissipative forces that have a linear velocity dependence can be easily handled in Lagrangian or Hamiltonian mechanics by introducing the powerful Rayleigh’s dissipation function $\mathcal{R}(\mathbf{ \dot{q}})$ where
 
 $$
-\mathcal{R}(\mathbf{\dot{q}})\mathcal{\equiv }\frac{1}{2}\sum_{i=1}^{n} \sum_{j=1}^{n}b_{ij}\dot{q}_{i}\dot{q}_{j} 
+\mathcal{R}(\mathbf{\dot{q}})\mathcal{\equiv }\frac{1}{2}\sum_{i=1}^{n} \sum_{j=1}^{n}b_{ij}\dot{q}_{i}\dot{q}_{j} \tag{10.7} \label{eq-10-7}
 $$
 
 This approach is used extensively in physics. This approach has been generalized by defining a linear velocity dependent Rayleigh dissipation function
 
 $$
-\mathbf{F}_{i}^{f}=-\frac{\partial R(\mathbf{q},\mathbf{\dot{q}})}{\partial \mathbf{\dot{q}}} 
+\mathbf{F}_{i}^{f}=-\frac{\partial R(\mathbf{q},\mathbf{\dot{q}})}{\partial \mathbf{\dot{q}}} \tag{10.16} \label{eq-10-16}
 $$
 
 where the generalized Rayleigh dissipation function $\mathcal{R(}\mathbf{q}, \mathbf{\dot{q}})$ satisfies the general Lagrange mechanics relation
 
 $$
-\frac{\delta L}{\delta q}-\frac{\partial R}{\partial \dot{q}}=0 
+\frac{\delta L}{\delta q}-\frac{\partial R}{\partial \dot{q}}=0 \tag{10.17} \label{eq-10-17}
 $$
 
 This generalized Rayleigh’s dissipation function eliminates the prior restriction to linear dissipation processes, which greatly expands the range of validity for using Rayleigh’s dissipation function.
@@ -493,7 +507,7 @@ This generalized Rayleigh’s dissipation function eliminates the prior restrict
 Linear dissipative forces can be directly, and elegantly, included in Lagrangian mechanics by using Rayleigh’s dissipation function as a generalized force $Q_{j}^{f}$. Inserting Rayleigh dissipation function $(10.4.12)$ in the generalized Lagrange equations of motion $(6.5.12)$ gives
 
 $$
-\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\left[ \sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] - \frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j} } 
+\left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =\left[ \sum_{k=1}^{m}\lambda _{k} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] - \frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j} } \tag{10.18}
 $$
 
 Where $Q_{j}^{EXC}$ corresponds to the generalized forces remaining after removal of the generalized linear, velocity-dependent, frictional force $Q_{j}^{f}$. The holonomic forces of constraint are absorbed into the Lagrange multiplier term.
@@ -503,17 +517,17 @@ Where $Q_{j}^{EXC}$ corresponds to the generalized forces remaining after remova
 If the nonconservative forces depend linearly on velocity, and are derivable from Rayleigh’s dissipation function according to equation $(10.4.12)$, then using the definition of generalized momentum gives
 
 $$
-\begin{align} \dot{p}_{i} &=&\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}=\frac{ \partial L}{\partial q_{i}}+\left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j}}  \\ \dot{p}_{i} &=&-\frac{\partial H(\mathbf{p,q},t\mathbf{)}}{\partial q_{i}}+ \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q}, \mathbf{\dot{q}})}{\partial \dot{q}_{j}} \end{align}
+\begin{align} \dot{p}_{i} &=&\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_{j}}=\frac{ \partial L}{\partial q_{i}}+\left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j}} \tag{10.19} \label{eq-10-19} \\ \dot{p}_{i} &=&-\frac{\partial H(\mathbf{p,q},t\mathbf{)}}{\partial q_{i}}+ \left[ \sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)+Q_{j}^{EXC}\right] -\frac{\partial \mathcal{R(}\mathbf{q}, \mathbf{\dot{q}})}{\partial \dot{q}_{j}} \tag{10.20}\end{align}
 $$
 
 Thus Hamilton’s equations become
 
 $$
-\dot{q}_{i} = \frac{\partial H}{\partial p_{i}} 
+\dot{q}_{i} = \frac{\partial H}{\partial p_{i}} \tag{10.21} \label{eq-10-21}
 $$
 
 $$
-\begin{align}\dot{p}_{i} &=&-\frac{\partial H}{\partial q_{i}}+\left[ \sum_{k=1}^{m} \lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC} \right] -\frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j}} \end{align}
+\begin{align}\dot{p}_{i} &=&-\frac{\partial H}{\partial q_{i}}+\left[ \sum_{k=1}^{m} \lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)+Q_{j}^{EXC} \right] -\frac{\partial \mathcal{R(}\mathbf{q},\mathbf{\dot{q}})}{\partial \dot{q}_{j}} \tag{10.22} \label{eq-10-22}\end{align}
 $$
 
 The Rayleigh dissipation function $\mathcal{R(}\mathbf{q},\mathbf{\dot{q}})$ provides an elegant and convenient way to account for dissipative forces in both Lagrangian and Hamiltonian mechanics.

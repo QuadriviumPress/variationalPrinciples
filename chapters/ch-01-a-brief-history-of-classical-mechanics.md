@@ -5,9 +5,9 @@ label: ch-01-a-brief-history-of-classical-mechanics
 ---
 
 
-# 1. A brief History of Classical Mechanics
-
 (ch-1)=
+
+# 1. A brief History of Classical Mechanics
 
 ## 1.1: Introduction
 
@@ -48,9 +48,11 @@ The Age of Enlightenment is a term used to describe a phase in Western philosoph
 **Gottfried Leibniz (1646-1716)** was a brilliant German philosopher, a contemporary of Newton, who worked on both calculus and mechanics. Leibniz started development of calculus in 1675, ten years after Newton, but Leibniz published his work in 1684, which was three years before Newton’s Principia. Leibniz made significant contributions to integral calculus and developed the notation currently used in calculus. He introduced the name calculus based on the Latin word for the small stone used for counting. Newton and Leibniz were involved in a protracted argument over who originated calculus. It appears that Leibniz saw drafts of Newton’s work on calculus during a visit to England. Throughout their argument Newton was the ghost writer of most of the articles in support of himself and he had them published under nonde-plume of his friends. Leibniz made the tactical error of appealing to the Royal Society to intercede on his behalf. Newton, as president of the Royal Society, appointed his friends to an “impartial” committee to investigate this issue, then he wrote the committee’s report that accused Leibniz of plagiarism of Newton’s work on calculus, after which he had it published by the Royal Society. Still unsatisfied he then wrote an anonymous review of the report in the Royal Society’s own periodical. This bitter dispute lasted until the death of Leibniz. When Leibniz died his work was largely discredited. The fact that he falsely claimed to be a nobleman and added the prefix “von” to his name, coupled with Newton’s vitriolic attacks, did not help his credibility. Newton is reported to have declared that he took great satisfaction in “breaking Leibniz’s heart.” Studies during the 20$^{th}$ century have largely revived the reputation of Leibniz and he is recognized to have made major contributions to the development of calculus.
 
 :::{figure} ../images/lt-21301-1.4.1.png
-:alt: 1.4.1.PNG
+:label: fig-1-4-1
+:enumerator: 1.4.1
+:alt: Chronological roadmap of the parallel development of the Newtonian and Variational-principles approaches to classical mechanics.
 
-$1$: Chronological roadmap of the parallel development of the Newtonian and Variational-principles approaches to classical mechanics.
+Chronological roadmap of the parallel development of the Newtonian and Variational-principles approaches to classical mechanics.
 :::
 
 ## 1.5: Variational methods in physics
@@ -61,7 +63,7 @@ $1$: Chronological roadmap of the parallel development of the Newtonian and Vari
 
 **Johann Bernoulli (1667-1748)**was a Swiss mathematician who was a student of Leibniz’s calculus, and sided with Leibniz in the Newton-Leibniz dispute over the credit for developing calculus. Also Bernoulli sided with the Descartes’ vortex theory of gravitation which delayed acceptance of Newton’s theory of gravitation in Europe. Bernoulli pioneered development of the calculus of variations by solving the problems of the catenary, the brachistochrone, and Fermat’s principle. Johann Bernoulli’s son Daniel played a significant role in the development of the well-known Bernoulli Principle in hydrodynamics.
 
-**Pierre Louis Maupertuis (1698-1759)** was a student of Johann Bernoulli and conceived the universal hypothesis that in nature there is a certain quantity called action which is minimized. Although this bold assumption correctly anticipates the development of the variational approach to classical mechanics, he obtained his hypothesis by an entirely incorrect method. He was a dilettante whose mathematical prowess was behind the high standards of that time, and he could not establish satisfactorily the quantity to be minimized. His teleological<sup>1</sup> argument was influenced by Fermat’s principle and the corpuscle theory of light that implied a close connection between optics and mechanics.
+**Pierre Louis Maupertuis (1698-1759)** was a student of Johann Bernoulli and conceived the universal hypothesis that in nature there is a certain quantity called action which is minimized. Although this bold assumption correctly anticipates the development of the variational approach to classical mechanics, he obtained his hypothesis by an entirely incorrect method. He was a dilettante whose mathematical prowess was behind the high standards of that time, and he could not establish satisfactorily the quantity to be minimized. His teleological[^1-5-1] argument was influenced by Fermat’s principle and the corpuscle theory of light that implied a close connection between optics and mechanics.
 
 **Leonhard Euler (1707-1783)**was the preeminent Swiss mathematician of the 18$^{th}$ century and was a student of Johann Bernoulli. Euler developed, with full mathematical rigor, the calculus of variations following in the footsteps of Johann Bernoulli. Euler used variational calculus to solve minimum/maximum isoperimetric problems that had attracted and challenged the early developers of calculus, Newton, Leibniz, and Bernoulli. Euler also was the first to solve the rigid-body rotation problem using the three components of the angular velocity as kinematical variables. Euler became blind in both eyes by 1766 but that did not hinder his prolific output in mathematics due to his remarkable memory and mental capabilities. Euler’s contributions to mathematics are remarkable in quality and quantity; for example during 1775 he published one mathematical paper per week in spite of being blind. Euler implicitly implied the principle of least action using vis visa which is not the exact form explicitly developed by Lagrange.
 
@@ -97,9 +99,7 @@ The zenith in development of the variational approach to classical mechanics occ
 
 The last two decades of the 19$^{th}$ century saw the culmination of classical physics and several important discoveries that led to a revolution in science that toppled classical physics from its throne. The end of the 19$^{th}$ century was a time during which tremendous technological progress occurred; flight, the automobile, and turbine-powered ships were developed, Niagara Falls was harnessed for power, etc. During this period, **Heinrich Hertz (1857-1894)** produced electromagnetic waves confirming their derivation using Maxwell’s equations. Simultaneously he discovered the photoelectric effect which was crucial evidence in support of quantum physics. Technical developments, such as photography, the induction spark coil, and the vacuum pump played a significant role in scientific discoveries made during the 1890’s. At the end of the 19$^{th}$ century, scientists thought that the basic laws were understood and worried that future physics would be in the fifth decimal place; some scientists worried that little was left for them to discover. However, there remained a few, presumed minor, unexplained discrepancies plus new discoveries that led to the revolution in science that occurred at the beginning of the 20$^{th}$ century.
 
----
-
-<sup>1</sup>Teleology is any philosophical account that holds that final causes exist in nature, analogous to purposes found in human actions, nature inherently tends toward definite ends.
+[^1-5-1]: Teleology is any philosophical account that holds that final causes exist in nature, analogous to purposes found in human actions, nature inherently tends toward definite ends.
 
 ## 1.6: The 20th Century Revolution in Physics
 

@@ -5,9 +5,9 @@ label: ch-12-non-inertial-reference-frames
 ---
 
 
-# 12. Non-inertial Reference Frames
-
 (ch-12)=
+
+# 12. Non-inertial Reference Frames
 
 ## 12.1: Introduction to Non-inertial Reference Frames
 
@@ -16,27 +16,29 @@ Newton’s Laws of motion apply only to inertial frames of reference. Inertial f
 ## 12.2: Translational acceleration of a reference frame
 
 :::{figure} ../images/lt-21205-10.2.1.png
-:alt: 10.2.1.PNG
+:label: fig-12-2-1
+:enumerator: 12.2.1
+:alt: Inertial reference frame (unprimed), and translational accelerating frame (primed).
 
-$1$: Inertial reference frame (unprimed), and translational accelerating frame (primed).
+Inertial reference frame (unprimed), and translational accelerating frame (primed).
 :::
 
-Consider an inertial system $(x_{fix},y_{fix},z_{fix})$ which is fixed in space, and a non-inertial system $(x^{\prime}_{mov}, y^{\prime}_{mov}, z^{\prime}_{mov})$ that is moving in a direction relative to the fixed frame such as to maintain constant orientations of the axes relative to the fixed frame, as illustrated in Figure 12.1. The fixed frame is designated to be the unprimed frame and, to avoid confusion the subscript $fix$ is attached to the fixed coordinates taken with respect to the fixed coordinate frame. Similarly, the translating reference frame, which is undergoing translational acceleration, has the subscript $mov$ attached to the coordinates taken with respect to the translating frame of reference. Newton’s Laws of motion are obeyed only in the inertial (unprimed) reference frame. The respective position vectors are related by
+Consider an inertial system $(x_{fix},y_{fix},z_{fix})$ which is fixed in space, and a non-inertial system $(x^{\prime}_{mov}, y^{\prime}_{mov}, z^{\prime}_{mov})$ that is moving in a direction relative to the fixed frame such as to maintain constant orientations of the axes relative to the fixed frame, as illustrated in [Figure 12.2.1](#fig-12-2-1). The fixed frame is designated to be the unprimed frame and, to avoid confusion the subscript $fix$ is attached to the fixed coordinates taken with respect to the fixed coordinate frame. Similarly, the translating reference frame, which is undergoing translational acceleration, has the subscript $mov$ attached to the coordinates taken with respect to the translating frame of reference. Newton’s Laws of motion are obeyed only in the inertial (unprimed) reference frame. The respective position vectors are related by
 
 $$
-\mathbf{r}_{fix} = \mathbf{R}_{fix}+\mathbf{r}^{\prime}_{mov} \label{12.1}
+\mathbf{r}_{fix} = \mathbf{R}_{fix}+\mathbf{r}^{\prime}_{mov} \tag{12.1} \label{eq-12-1}
 $$
 
-where $\mathbf{r}_{fix}$ is the vector relative to the fixed frame, $\mathbf{r}^{\prime}_{mov}$ is the vector relative to the translationally accelerating frame and $\mathbf{R}_{fix}$ is the vector from the origin of the fixed frame to the origin of the accelerating frame. Differentiating Equation \ref{12.1} gives the velocity vector relation
+where $\mathbf{r}_{fix}$ is the vector relative to the fixed frame, $\mathbf{r}^{\prime}_{mov}$ is the vector relative to the translationally accelerating frame and $\mathbf{R}_{fix}$ is the vector from the origin of the fixed frame to the origin of the accelerating frame. Differentiating Equation [12.1](#eq-12-1) gives the velocity vector relation
 
 $$
-\mathbf{v}_{fix} = \mathbf{V}_{fix}+ \mathbf{v}^{\prime}_{mov} \label{12.2}
+\mathbf{v}_{fix} = \mathbf{V}_{fix}+ \mathbf{v}^{\prime}_{mov} \tag{12.2} \label{eq-12-2}
 $$
 
 where $\mathbf{v}_{fix} = \frac{d\mathbf{r}_{fix}}{dt}$, $\mathbf{v}^{\prime}_{mov} = \frac{d\mathbf{r}^{\prime}_{mov}}{dt}$ and $\mathbf{V}_{fix} = \frac{d\mathbf{R}_{fix}}{dt}$. Similarly the acceleration vector relation is
 
 $$
-\mathbf{a}_{fix} = \mathbf{A}_{fix}+ \mathbf{a}^{\prime}_{mov} \label{12.3}
+\mathbf{a}_{fix} = \mathbf{A}_{fix}+ \mathbf{a}^{\prime}_{mov} \tag{12.3} \label{eq-12-3}
 $$
 
 where $\mathbf{a}_{fix} = \frac{d^2\mathbf{r}_{fix}}{dt^2}$, $\mathbf{a}^{\prime}_{mov} = \frac{d^2\mathbf{r}^{\prime}_{mov}}{dt^2}$ and $\mathbf{A}_{fix} = \frac{d^2\mathbf{R}_{fix}}{dt^2}$.
@@ -44,19 +46,19 @@ where $\mathbf{a}_{fix} = \frac{d^2\mathbf{r}_{fix}}{dt^2}$, $\mathbf{a}^{\prime
 In the fixed frame, Newton’s laws give that
 
 $$
-\mathbf{F}_{fix} = m\mathbf{a}_{fix} \label{12.4}
+\mathbf{F}_{fix} = m\mathbf{a}_{fix} \tag{12.4} \label{eq-12-4}
 $$
 
 The force in the fixed frame can be separated into two terms, the acceleration of the accelerating frame of reference $\mathbf{A}_{fix}$ plus the acceleration with respect to the accelerating frame $\mathbf{a}^{\prime}_{mov}$.
 
 $$
-\mathbf{F}_{fix} = m\mathbf{A}_{fix}+ m\mathbf{a}^{\prime}_{mov} \label{12.5}
+\mathbf{F}_{fix} = m\mathbf{A}_{fix}+ m\mathbf{a}^{\prime}_{mov} \tag{12.5} \label{eq-12-5}
 $$
 
 Relative to the accelerating reference frame the acceleration is given by
 
 $$
-m\mathbf{a}^{\prime}_{mov} = \mathbf{F}_{fix} - m\mathbf{A}_{fix} \label{12.6}
+m\mathbf{a}^{\prime}_{mov} = \mathbf{F}_{fix} - m\mathbf{A}_{fix} \tag{12.6} \label{eq-12-6}
 $$
 
 The accelerating frame of reference can exploit Newton’s Laws of motion using an effective translational force $\mathbf{F}^{\prime}_{tran} \equiv \mathbf{F}_{fix} − m\mathbf{A}_{fix}$. The additional $-m\mathbf{A}_{fix}$ term is called an inertial force; it can be altered by choosing a different non-inertial frame of reference, that is, it is dependent on the frame of reference in which the observer is situated.
@@ -70,32 +72,35 @@ Consider a rotating frame of reference which will be designated as the double-pr
 For simplicity assume that $\mathbf{R}_{fix} = \mathbf{V}_{fix} = 0$, that is, the primed reference frame is stationary and identical to the fixed stationary unprimed frame. The double-primed (rotating) frame is a non-inertial frame rotating with respect to the origin of the fixed primed frame.
 
 :::{figure} ../images/lt-21206-10.3.1.png
-:alt: 10.3.1.PNG
+:label: fig-12-3-1
+:enumerator: 12.3.1
+:alt: Infinitessimal displacement in the non rotating primed frame and in the rotating double-primed reference frame frame.
 
-$1$: Infinitessimal displacement in the non rotating primed frame and in the rotating double-primed reference frame frame.
+Infinitessimal displacement in the non rotating primed frame and in the rotating double-primed reference frame frame.
 :::
 
 Appendix $19.4.2C$ shows that an infinitessimal rotation $d\theta$ about an instantaneous axis of rotation leads to an infinitessimal displacement $d\mathbf{r}^{R}$ where
 
 $$
-d\mathbf{r}^{R} = d \theta \times \mathbf{r}^{\prime}_{mov} \label{12.7}
+d\mathbf{r}^{R} = d \theta \times \mathbf{r}^{\prime}_{mov} \tag{12.7} \label{eq-12-7}
 $$
 
-Consider that during a time $dt$, the position vector in the fixed primed reference frame moves by an arbitrary infinitessimal distance $d\mathbf{r}^{\prime}_{mov}$. As illustrated in Figure 12.1, this infinitessimal distance in the primed non-rotating frame can be split into two parts:
+Consider that during a time $dt$, the position vector in the fixed primed reference frame moves by an arbitrary infinitessimal distance $d\mathbf{r}^{\prime}_{mov}$. As illustrated in [Figure 12.3.1](#fig-12-3-1), this infinitessimal distance in the primed non-rotating frame can be split into two parts:
 
 1. $d\mathbf{r}^{R} = d\theta \times \mathbf{r}^{\prime}_{mov}$ which is due to rotation of the rotating frame with respect to the translating primed frame.
+
 2. $(d\mathbf{r}^{\prime\prime}_{rot})$ which is the motion *with respect to the rotating (double-primed) frame*.
 
 That is, the motion has been arbitrarily divided into a part that is due to the rotation of the double-primed frame, plus the vector displacement measured in this rotating (double-primed) frame. It is always possible to make such a decomposition of the displacement as long as the vector sum can be written as
 
 $$
-d\mathbf{r}^{\prime}_{mov} = d\mathbf{r}^{\prime\prime}_{rot} + d\theta \times \mathbf{r}^{\prime}_{mov} \label{12.8}
+d\mathbf{r}^{\prime}_{mov} = d\mathbf{r}^{\prime\prime}_{rot} + d\theta \times \mathbf{r}^{\prime}_{mov} \tag{12.8} \label{eq-12-8}
 $$
 
-Since $d\theta = \omega dt$ then the time differential of the displacement, Equation \ref{12.8}, can be written as
+Since $d\theta = \omega dt$ then the time differential of the displacement, Equation [12.8](#eq-12-8), can be written as
 
 $$
-\left( \frac{d\mathbf{r}^{\prime}}{dt}\right)_{mov} = \left(\frac{d\mathbf{r}^{\prime\prime}}{dt}\right)_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \label{12.9}
+\left( \frac{d\mathbf{r}^{\prime}}{dt}\right)_{mov} = \left(\frac{d\mathbf{r}^{\prime\prime}}{dt}\right)_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \tag{12.9} \label{eq-12-9}
 $$
 
 The important conclusion is that a velocity measured in a non-rotating reference frame $\left(\frac{d\mathbf{r}^{\prime}}{dt}\right)_{mov}$ can be expressed as the sum of the velocity $\left(\frac{d\mathbf{r}^{\prime\prime}}{dt}\right)_{rot}$, measured relative to a rotating frame, plus the term $\omega \times \mathbf{r}^{\prime}_{mov}$ which accounts for the rotation of the frame. The division of the $d\mathbf{r}^{\prime}_{rot}$ vector into two parts, a part due to rotation of the frame plus a part with respect to the rotating frame, is valid for any vector as shown below.
@@ -105,51 +110,51 @@ The important conclusion is that a velocity measured in a non-rotating reference
 Consider an arbitrary vector $\mathbf{G}$ which can be expressed in terms of components along the three unit vector basis $\hat{\mathbf{e}}^{fix}_i$ in the fixed inertial frame as
 
 $$
-\mathbf{G} = \sum^{3}_{i=1} G^{fix}_i \hat{\mathbf{e}}_i^{fix} \label{12.10}
+\mathbf{G} = \sum^{3}_{i=1} G^{fix}_i \hat{\mathbf{e}}_i^{fix} \tag{12.10} \label{eq-12-10}
 $$
 
 Neglecting translational motion, then it can be expressed in terms of the three unit vectors in the non-inertial rotating frame unit vector basis $\hat{\mathbf{e}}^{rot}_i$ as
 
 $$
-\mathbf{G} = \sum^{3}_{i=1} (G_i)_{rot} \hat{\mathbf{e}}^{rot}_i \label{12.11}
+\mathbf{G} = \sum^{3}_{i=1} (G_i)_{rot} \hat{\mathbf{e}}^{rot}_i \tag{12.11} \label{eq-12-11}
 $$
 
 Since the unit basis vectors $\hat{\mathbf{e}}^{rot}_i$ are constant in the rotating frame, that is,
 
 $$
-\left(\frac{d\hat{\mathbf{e}}^{rot}_i}{dt}\right)_{rot} = 0 \label{12.12}
+\left(\frac{d\hat{\mathbf{e}}^{rot}_i}{dt}\right)_{rot} = 0 \tag{12.12} \label{eq-12-12}
 $$
 
 then the time derivatives of $\mathbf{G}$ in the rotating coordinate system $\hat{\mathbf{e}}^{rot}_i$ can be written as
 
 $$
-\left(\frac{d\mathbf{G}}{dt}\right)_{rot} = \sum^3_{i-1} \left(\frac{dG_i}{dt}\right)_{rot} \hat{\mathbf{e}}^{rot}_i \label{12.13}
+\left(\frac{d\mathbf{G}}{dt}\right)_{rot} = \sum^3_{i-1} \left(\frac{dG_i}{dt}\right)_{rot} \hat{\mathbf{e}}^{rot}_i \tag{12.13} \label{eq-12-13}
 $$
 
-The inertial-frame time derivative taken with components along the rotating coordinate basis $\hat{\mathbf{e}}^{rot}_i$, Equation \ref{12.11}, is
+The inertial-frame time derivative taken with components along the rotating coordinate basis $\hat{\mathbf{e}}^{rot}_i$, Equation [12.11](#eq-12-11), is
 
 $$
-\left(\frac{d\mathbf{G}}{dt}\right)_{fix} = \sum^3_{i-1} \left(\frac{dG_i}{dt}\right)_{rot} \hat{\mathbf{e}}^{rot}_i + (G_i)_{rot} \frac{d\hat{\mathbf{e}}^{rot}_i }{dt} \label{12.14}
+\left(\frac{d\mathbf{G}}{dt}\right)_{fix} = \sum^3_{i-1} \left(\frac{dG_i}{dt}\right)_{rot} \hat{\mathbf{e}}^{rot}_i + (G_i)_{rot} \frac{d\hat{\mathbf{e}}^{rot}_i }{dt} \tag{12.14} \label{eq-12-14}
 $$
 
-Substitute the unit vector $\hat{\mathbf{e}}^{rot}$ for $\mathbf{r}^{\prime}_{mov}$ in Equation \ref{12.9}, plus using Equation \ref{12.12}, gives that
+Substitute the unit vector $\hat{\mathbf{e}}^{rot}$ for $\mathbf{r}^{\prime}_{mov}$ in Equation [12.9](#eq-12-9), plus using Equation [12.12](#eq-12-12), gives that
 
 $$
-\left(\frac{d\hat{\mathbf{e}}^{rot}}{dt}\right)_{fix} = \omega \times \hat{\mathbf{e}}^{rot} \label{12.15}
+\left(\frac{d\hat{\mathbf{e}}^{rot}}{dt}\right)_{fix} = \omega \times \hat{\mathbf{e}}^{rot} \tag{12.15} \label{eq-12-15}
 $$
 
-Substitute this into the second term of Equation \ref{12.14} gives
+Substitute this into the second term of Equation [12.14](#eq-12-14) gives
 
 $$
-\left(\frac{d\mathbf{G}}{dt}\right)_{fix} = \left(\frac{d\mathbf{G}}{dt}\right)_{rot} + \omega \times \mathbf{G} \label{12.16}
+\left(\frac{d\mathbf{G}}{dt}\right)_{fix} = \left(\frac{d\mathbf{G}}{dt}\right)_{rot} + \omega \times \mathbf{G} \tag{12.16} \label{eq-12-16}
 $$
 
-This important identity relates the time derivatives of any vector expressed in both the inertial frame and the rotating non-inertial frame bases. Note that the $\omega \times \mathbf{G}$ term originates from the fact that the unit basis vectors of the rotating reference frame are time dependent with respect to the non-rotating frame basis vectors as given by Equation \ref{12.15}. Equation \ref{12.16} is used extensively for problems involving rotating frames. For example, for the special case where $\mathbf{G} = \mathbf{r}^{\prime}$, then Equation \ref{12.16} relates the velocity vectors in the fixed and rotating frames as given in Equation \ref{12.9}.
+This important identity relates the time derivatives of any vector expressed in both the inertial frame and the rotating non-inertial frame bases. Note that the $\omega \times \mathbf{G}$ term originates from the fact that the unit basis vectors of the rotating reference frame are time dependent with respect to the non-rotating frame basis vectors as given by Equation [12.15](#eq-12-15). Equation [12.16](#eq-12-16) is used extensively for problems involving rotating frames. For example, for the special case where $\mathbf{G} = \mathbf{r}^{\prime}$, then Equation [12.16](#eq-12-16) relates the velocity vectors in the fixed and rotating frames as given in Equation [12.9](#eq-12-9).
 
 Another example is the vector $\mathbf{\dot{\omega}}$
 
 $$
-\mathbf{\dot{\omega}} = \left(\frac{d\omega}{dt}\right)_{fix} = \left(\frac{d\omega}{dt}\right)_{rot} + \omega \times \omega = \left(\frac{d\omega}{dt}\right)_{rot} = \mathbf{\dot{\omega}} \label{12.17}
+\mathbf{\dot{\omega}} = \left(\frac{d\omega}{dt}\right)_{fix} = \left(\frac{d\omega}{dt}\right)_{rot} + \omega \times \omega = \left(\frac{d\omega}{dt}\right)_{rot} = \mathbf{\dot{\omega}} \tag{12.17} \label{eq-12-17}
 $$
 
 That is, the angular acceleration $\dot{\omega}$ has the same value in both the fixed and rotating frames of reference.
@@ -159,36 +164,39 @@ That is, the angular acceleration $\dot{\omega}$ has the same value in both the 
 Consider the case where the system is accelerating in translation as well as rotating, that is, the primed frame is the non-rotating translating frame. The position vector $\mathbf{r}_{fix}$ is taken with respect to the inertial fixed unprimed frame which can be written in terms of the fixed unit basis vectors $(\widehat{\mathbf{i}}_{fix}, \widehat{\mathbf{j}}_{fix}, \widehat{\mathbf{k}}_{fix})$. This $\mathbf{r}_{fix}$ vector can be written as the vector sum of the translational motion $\mathbf{R}_{fix}$ of the origin of the rotating system with respect to the fixed frame, plus the position $\mathbf{r}^{\prime}_{mov}$ with respect to this translating primed frame basis
 
 $$
-\mathbf{r}_{fix} = \mathbf{R}_{fix} + \mathbf{r}^{\prime}_{mov} \label{12.18}
+\mathbf{r}_{fix} = \mathbf{R}_{fix} + \mathbf{r}^{\prime}_{mov} \tag{12.18} \label{eq-12-18}
 $$
 
 The time differential is
 
 $$
-\left(\frac{d\mathbf{r}}{dt}\right)_{fix} = \left(\frac{d\mathbf{R}}{dt}\right)_{fix} + \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right) \label{12.19}
+\left(\frac{d\mathbf{r}}{dt}\right)_{fix} = \left(\frac{d\mathbf{R}}{dt}\right)_{fix} + \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right) \tag{12.19} \label{eq-12-19}
 $$
 
 The vector $d\mathbf{r}^{\prime}$ is the position with respect to the translating frame of reference which can be expressed in terms of the unit vectors $\left(\widehat{\mathbf{i}^{\prime}}_{mov}, \widehat{\mathbf{j}^{\prime}}_{mov}, \widehat{\mathbf{k}^{\prime}}_{mov}\right)$.
 
-Equation \ref{12.19} takes into account the translational motion of the moving primed frame basis. Now, assuming that the double primed frame rotates about the origin of the moving primed frame, then the net displacement with respect to the original inertial frame basis can be combined with equation $(12.3.3)$ leading to the relation
+Equation [12.19](#eq-12-19) takes into account the translational motion of the moving primed frame basis. Now, assuming that the double primed frame rotates about the origin of the moving primed frame, then the net displacement with respect to the original inertial frame basis can be combined with equation $(12.3.3)$ leading to the relation
 
 $$
-\left(\frac{d\mathbf{r}}{dt}\right)_{fix} = \left(\frac{d\mathbf{R}}{dt}\right)_{fix} + \left(\frac{d\mathbf{r}^{\prime\prime}}{dt}\right)_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \label{12.20}
+\left(\frac{d\mathbf{r}}{dt}\right)_{fix} = \left(\frac{d\mathbf{R}}{dt}\right)_{fix} + \left(\frac{d\mathbf{r}^{\prime\prime}}{dt}\right)_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \tag{12.20} \label{eq-12-20}
 $$
 
 Here the double-primed frame is both rotating and translating. Vectors in this frame are expressed in terms of the unit basis vectors $\left(\widehat{\mathbf{i}^{\prime\prime}}_{rot}, \widehat{\mathbf{j}^{\prime\prime}}_{rot}, \widehat{\mathbf{k}^{\prime\prime}}_{rot}\right)$.
 
-Expressed as velocities, Equation \ref{12.20} can be written as
+Expressed as velocities, Equation [12.20](#eq-12-20) can be written as
 
 $$
-\mathbf{v}_{fix} = \mathbf{V}_{fix} + \mathbf{v}^{\prime\prime}_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \label{12.21}
+\mathbf{v}_{fix} = \mathbf{V}_{fix} + \mathbf{v}^{\prime\prime}_{rot} + \omega \times \mathbf{r}^{\prime}_{mov} \tag{12.21} \label{eq-12-21}
 $$
 
 where:
 
 - $\mathbf{v}_{fix}$ is the velocity measured with respect to the inertial (unprimed) frame basis.
+
 - $\mathbf{V}_{fix}$ is the velocity of the origin of the non-inertial translating (primed) frame basis with respect to the origin of the inertial (unprimed) frame basis.
+
 - $\mathbf{v}^{\prime\prime}_{rot}$ is the velocity of the particle with respect to the non-inertial rotating (double-primed) frame basis the origin of which is both translating and rotating.
+
 - $\omega \times \mathbf{r}^{\prime}_{mov}$ is the motion of the rotating (double-primed) frame with respect to the linearly-translating (primed) frame basis. Thus this relation takes into account both the translational velocity plus rotation of the reference coordinate frame basis vectors.
 
 ## 12.5: Newton’s Law of Motion in a Non-Inertial Frame
@@ -196,19 +204,19 @@ where:
 The acceleration of the system in the rotating inertial frame can be derived by differentiating the general velocity relation for $\mathbf{v}$, Equation $12.4.4$, in the fixed frame basis which gives
 
 $$
-\begin{align} \mathbf{a}_{fix} &= \left(\frac{d\mathbf{v}_{fix}}{dt}\right)_{fixed} \\[4pt] &= \left(\frac{d\mathbf{V}_{fix}}{dt}\right)_{fixed} + \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{fixed} + \left(\frac{d\omega}{dt}\right)_{fixed} \times \mathbf{r}^{\prime}_{mov} + \omega \times \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right)_{fixed} \label{12.22} \end{align}
+\begin{align} \mathbf{a}_{fix} &= \left(\frac{d\mathbf{v}_{fix}}{dt}\right)_{fixed} \\[4pt] &= \left(\frac{d\mathbf{V}_{fix}}{dt}\right)_{fixed} + \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{fixed} + \left(\frac{d\omega}{dt}\right)_{fixed} \times \mathbf{r}^{\prime}_{mov} + \omega \times \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right)_{fixed} \tag{12.22} \label{eq-12-22} \end{align}
 $$
 
 Now we wish to use the general transformation to a rotating frame basis which requires inclusion of the time dependence of the unit vectors in the rotating frame, that is,
 
 $$
-\begin{align} \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{fixed} &= \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{rotating} + \omega \times \mathbf{v}^{\prime\prime}_{rot} \label{12.23} \\[4pt] \left(\frac{d\omega}{dt}\right)_{fixed} \times \mathbf{r}^{\prime}_{mov} &= \left(\frac{d\omega}{dt}\right)_{rot} \times \mathbf{r}^{\prime}_{mov} \label{12.24} \\[4pt] \omega \times \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right)_{fixed} &= \omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) \label{12.25} \end{align}
+\begin{align} \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{fixed} &= \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{rotating} + \omega \times \mathbf{v}^{\prime\prime}_{rot} \tag{12.23} \label{eq-12-23} \\[4pt] \left(\frac{d\omega}{dt}\right)_{fixed} \times \mathbf{r}^{\prime}_{mov} &= \left(\frac{d\omega}{dt}\right)_{rot} \times \mathbf{r}^{\prime}_{mov} \tag{12.24} \\[4pt] \omega \times \left(\frac{d\mathbf{r}^{\prime}_{mov}}{dt}\right)_{fixed} &= \omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) \tag{12.25} \end{align}
 $$
 
-Using Equations \ref{12.23}, \ref{12.24}, \ref{12.25} gives
+Using Equations [12.23](#eq-12-23), [12.24](#eq-12-23), [12.25](#eq-12-23) gives
 
 $$
-\mathbf{a}_{fix} = \mathbf{A}_{fix} + \mathbf{a}^{\prime\prime}_{rot} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov} \label{12.26}
+\mathbf{a}_{fix} = \mathbf{A}_{fix} + \mathbf{a}^{\prime\prime}_{rot} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov} \tag{12.26} \label{eq-12-26}
 $$
 
 where the acceleration in the rotating frame is $\mathbf{a}^{\prime\prime}_{rot} = \left(\frac{d\mathbf{v}^{\prime\prime}_{rot}}{dt}\right)_{rot}$ while the velocity is $\mathbf{v}^{\prime\prime}_{rot} = \left(\frac{\mathbf{r}^{\prime\prime}_{rot}}{dt}\right)_{rot}$ and $\mathbf{A}_{fix}$ is with respect to the fixed frame.
@@ -216,13 +224,13 @@ where the acceleration in the rotating frame is $\mathbf{a}^{\prime\prime}_{rot}
 Newton’s laws of motion are obeyed in the inertial frame, that is
 
 $$
-\begin{align} \mathbf{F}_{fix} &= m\mathbf{a}_{fix} \\[4pt] &= m(\mathbf{A}_{fix} + \mathbf{a}^{\prime\prime}_{rot} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov}) \label{12.27} \end{align}
+\begin{align} \mathbf{F}_{fix} &= m\mathbf{a}_{fix} \\[4pt] &= m(\mathbf{A}_{fix} + \mathbf{a}^{\prime\prime}_{rot} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov}) \tag{12.27} \label{eq-12-27} \end{align}
 $$
 
 In the double-primed frame, which may be both rotating and accelerating in translation, one can ascribe an effective force $\mathbf{F}^{eff}_{rot}$ that obeys an effective Newton’s law for the acceleration $\mathbf{a}^{\prime\prime}_{rot}$ in the rotating frame
 
 $$
-\begin{align}\mathbf{F}^{eff}_{rot} &= m\mathbf{a}^{\prime\prime}_{rot} \\[4pt] &= \mathbf{F}_{fix} - m(\mathbf{A}_{fix} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov}) \label{12.28} \end{align}
+\begin{align}\mathbf{F}^{eff}_{rot} &= m\mathbf{a}^{\prime\prime}_{rot} \\[4pt] &= \mathbf{F}_{fix} - m(\mathbf{A}_{fix} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) + \dot{\omega} \times \mathbf{r}^{\prime}_{mov}) \tag{12.28} \label{eq-12-28} \end{align}
 $$
 
 Note that the effective force $\mathbf{F}^{eff}_{rot}$ comprises the physical force $\mathbf{F}_{fixed}$ minus four non-inertial forces that are introduced to correct for the fact that the rotating reference frame is a non-inertial frame.
@@ -234,60 +242,63 @@ The above derivation of the equations of motion in the rotating frame is based o
 The Lagrangian in any frame is given by
 
 $$
-L = \frac{1}{2} m \mathbf{v} \cdot \mathbf{v} - U(r) \label{12.29}
+L = \frac{1}{2} m \mathbf{v} \cdot \mathbf{v} - U(r) \tag{12.29} \label{eq-12-29}
 $$
 
 The scalar product $\mathbf{v} \cdot \mathbf{v}$ is the same in any rotated frame and can be evaluated in terms of the rotating frame variables using the same decomposition of the translational plus rotational motion as used previously and given in equation $(12.4.4)$.
 
-Equation $(12.4.4)$ decomposes the velocity in the fixed inertial frame $\mathbf{v}_{fix}$ into four vector terms, the translational velocity $\mathbf{V}_{fix}$ of the translating frame, the velocity in the rotating-translating frame $\mathbf{v}^{\prime\prime}_{rot}$, and rotational velocity $(\omega \times \mathbf{r}^{\prime}_{mov})$. Using equations \ref{12.29} and $(12.4.4)$, plus appendix equation $19.2.21$ for the triple products, gives that the Lagrangian evaluated using $\mathbf{v}_{fix}\cdot \mathbf{v}_{fix}$ equals
+Equation $(12.4.4)$ decomposes the velocity in the fixed inertial frame $\mathbf{v}_{fix}$ into four vector terms, the translational velocity $\mathbf{V}_{fix}$ of the translating frame, the velocity in the rotating-translating frame $\mathbf{v}^{\prime\prime}_{rot}$, and rotational velocity $(\omega \times \mathbf{r}^{\prime}_{mov})$. Using equations [12.29](#eq-12-29) and $(12.4.4)$, plus appendix equation $19.2.21$ for the triple products, gives that the Lagrangian evaluated using $\mathbf{v}_{fix}\cdot \mathbf{v}_{fix}$ equals
 
 $$
-L = \frac{1}{2} m \left[ \mathbf{V}_{fix}\cdot \mathbf{V}_{fix} + \mathbf{v}^{\prime\prime}_{rot} \cdot \mathbf{v}^{\prime\prime}_{rot} + 2\mathbf{V}_{fix} \cdot \mathbf{v}^{\prime\prime}_{rot} + 2\mathbf{V}_{fix} \cdot (\omega \times \mathbf{r}^{\prime}_{mov})+2\mathbf{v}^{\prime\prime}_{rot} \cdot (\omega \times \mathbf{r}^{\prime}_{mov})+(\omega \times \mathbf{r}^{\prime}_{mov})^2 \right] −U(r) \label{12.30}
+L = \frac{1}{2} m \left[ \mathbf{V}_{fix}\cdot \mathbf{V}_{fix} + \mathbf{v}^{\prime\prime}_{rot} \cdot \mathbf{v}^{\prime\prime}_{rot} + 2\mathbf{V}_{fix} \cdot \mathbf{v}^{\prime\prime}_{rot} + 2\mathbf{V}_{fix} \cdot (\omega \times \mathbf{r}^{\prime}_{mov})+2\mathbf{v}^{\prime\prime}_{rot} \cdot (\omega \times \mathbf{r}^{\prime}_{mov})+(\omega \times \mathbf{r}^{\prime}_{mov})^2 \right] −U(r) \tag{12.30} \label{eq-12-30}
 $$
 
 This can be used to derive the canonical momentum in the rotating frame
 
 $$
-\mathbf{p}^{\prime\prime}_{rot} = \frac{\partial L}{\partial \mathbf{v}^{\prime\prime}_{rot}} = m [\mathbf{V}_{fix}+\mathbf{v}^{\prime\prime}_{rot} + \omega \times \mathbf{r}^{\prime}_{mov}] \label{12.31}
+\mathbf{p}^{\prime\prime}_{rot} = \frac{\partial L}{\partial \mathbf{v}^{\prime\prime}_{rot}} = m [\mathbf{V}_{fix}+\mathbf{v}^{\prime\prime}_{rot} + \omega \times \mathbf{r}^{\prime}_{mov}] \tag{12.31} \label{eq-12-31}
 $$
 
 The Lagrange equations can be used to derive the equations of motion in terms of the variables evaluated in the rotating reference frame. The required Lagrange derivatives are
 
 $$
-\frac{d}{dr}\frac{\partial L}{\partial \mathbf{v}^{\prime\prime}_{rot}} = m [\mathbf{A}_{fix}+\mathbf{a}^{\prime\prime}_{rot} + (\omega \times \mathbf{v}^{\prime\prime}_{rot})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})]_{rot} \label{12.32}
+\frac{d}{dr}\frac{\partial L}{\partial \mathbf{v}^{\prime\prime}_{rot}} = m [\mathbf{A}_{fix}+\mathbf{a}^{\prime\prime}_{rot} + (\omega \times \mathbf{v}^{\prime\prime}_{rot})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})]_{rot} \tag{12.32} \label{eq-12-32}
 $$
 
 and
 
 $$
-\frac{\partial L}{ \partial \mathbf{r}^{\prime}} = −m [(\omega \times \mathbf{V}_{fix}) − (\omega \times \mathbf{v}^{\prime\prime}_{rot}) − \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})]_{rot} − \nabla U \label{12.33}
+\frac{\partial L}{ \partial \mathbf{r}^{\prime}} = −m [(\omega \times \mathbf{V}_{fix}) − (\omega \times \mathbf{v}^{\prime\prime}_{rot}) − \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})]_{rot} − \nabla U \tag{12.33} \label{eq-12-33}
 $$
 
 where the scalar triple product, equation $19.2.21$, has been used. Thus the Lagrange equations give for the rotating frame basis that
 
 $$
-m\mathbf{a}^{\prime\prime}_{rot} = −\nabla U − m[\mathbf{A}_{fix}+ (\omega \times\mathbf{V}_{fix}) +2 (\omega \times \mathbf{v}^{\prime\prime}_{rot}) + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})]_{rot} \label{12.34}
+m\mathbf{a}^{\prime\prime}_{rot} = −\nabla U − m[\mathbf{A}_{fix}+ (\omega \times\mathbf{V}_{fix}) +2 (\omega \times \mathbf{v}^{\prime\prime}_{rot}) + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})]_{rot} \tag{12.34} \label{eq-12-34}
 $$
 
 The external force is identified as $\mathbf{F}_{fixed} = −\nabla U$. Equation $(12.3.7)$ can be used to transform between the fixed and the rotating bases.
 
 $$
-\mathbf{A}_{fix} = \left[ \mathbf{A}_{fix} + (\omega \times \mathbf{V})_{fix}\right]_{rot} \label{12.35}
+\mathbf{A}_{fix} = \left[ \mathbf{A}_{fix} + (\omega \times \mathbf{V})_{fix}\right]_{rot} \tag{12.35} \label{eq-12-35}
 $$
 
 This leads to an effective force in the non-inertial translating plus rotating frame that corresponds to an effective Newtonian force of
 
 $$
-\mathbf{F}^{eff}_{rot} = m\mathbf{a}^{\prime\prime}_{rot} = \mathbf{F} − m[\mathbf{A}_{fix} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})] \label{12.36}
+\mathbf{F}^{eff}_{rot} = m\mathbf{a}^{\prime\prime}_{rot} = \mathbf{F} − m[\mathbf{A}_{fix} + 2\omega \times \mathbf{v}^{\prime\prime}_{rot} + \omega \times (\omega \times \mathbf{r}^{\prime}_{mov})+(\dot{\omega} \times \mathbf{r}^{\prime}_{mov})] \tag{12.36} \label{eq-12-36}
 $$
 
-where $\mathbf{A}_{fix}$ is expressed in the fixed frame. The derivation of Equation \ref{12.36} using Lagrangian mechanics, confirms the identical formula \ref{12.29} derived using Newtonian mechanics.
+where $\mathbf{A}_{fix}$ is expressed in the fixed frame. The derivation of Equation [12.36](#eq-12-36) using Lagrangian mechanics, confirms the identical formula [12.29](#eq-12-29) derived using Newtonian mechanics.
 
 The four correction terms for the non-inertial frame basis correspond to the following effective forces.
 
 - **Translational acceleration**: $\mathbf{F}^{eff}_{mov} = −m\mathbf{A}_{fix}$ is the usual inertial force experienced in a linearly accelerating frame of reference, and where $\mathbf{A}_{fix}$ is with respect to the fixed frame.
+
 - **Coriolis force:** $\mathbf{F}^{eff}_{cor} = −2m\omega \times \mathbf{v}^{\prime\prime}_{rot}$ This is a new type of inertial force that is present only when a particle is moving in the rotating frame. This force is proportional to the velocity in the rotating frame and is independent of the position in the rotating frame
+
 - **Centrifugal force**: $\mathbf{F}^{eff}_{ef} = −m\omega \times (\omega \times \mathbf{r}^{\prime}_{mov})$ This is due to the centripetal acceleration of the particle owing to the rotation of the moving axis about the axis of rotation.
+
 - **Transverse (azimuthal) force**: $\mathbf{F}^{eff}_{az} = −m\dot{\omega} \times \mathbf{r}^{\prime}_{mov}$ This is a straightforward term due to acceleration of the particle due to the angular acceleration of the rotating axes.
 
 The above inertial forces are correction terms arising from trying to extend Newton’s laws of motion to a non-inertial frame involving both translation and rotation. These correction forces are often referred to as “fictitious” forces. However, these non-inertial forces are very real when located in the non-inertial frame. Since the centrifugal and Coriolis terms are unusual they are discussed below.
@@ -297,33 +308,35 @@ The above inertial forces are correction terms arising from trying to extend New
 The centrifugal force was defined as
 
 $$
-\mathbf{F}_{cf} = −m\omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) \label{12.37}
+\mathbf{F}_{cf} = −m\omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) \tag{12.37} \label{eq-12-37}
 $$
 
 Note that
 
 $$
-\omega \cdot \mathbf{F}_{cf} = 0 \label{12.38}
+\omega \cdot \mathbf{F}_{cf} = 0 \tag{12.38} \label{eq-12-38}
 $$
 
 therefore the centrifugal force is perpendicular to the axis of rotation. Using the vector identity, equation $19.2.25$ allows the centrifugal force to be written as
 
 $$
-\mathbf{F}_{cf} = −m [ (\omega \cdot \mathbf{r}^{\prime}_{mov}) \omega − \omega^2\mathbf{r}^{\prime}_{mov}] \label{12.39}
+\mathbf{F}_{cf} = −m [ (\omega \cdot \mathbf{r}^{\prime}_{mov}) \omega − \omega^2\mathbf{r}^{\prime}_{mov}] \tag{12.39} \label{eq-12-39}
 $$
 
 For the case where the radius $\mathbf{r}^{\prime}$ is perpendicular to $\omega$ then $\omega \cdot \mathbf{r}^{\prime} = 0$ and thus for this special case
 
 $$
-\mathbf{F}_{cf} = m\omega^2\mathbf{r}^{\prime}_{mov} \label{12.40}
+\mathbf{F}_{cf} = m\omega^2\mathbf{r}^{\prime}_{mov} \tag{12.40} \label{eq-12-40}
 $$
 
 The centrifugal force is experienced when riding in a car driven rapidly around a bend. The passenger experiences an apparent centrifugal (center fleeing) force that thrusts them to the outside of the bend relative to the inside of the turning car. In reality, relative to the fixed inertial frame, i.e. the road, the friction between the car tires and the road is changing the direction of the car towards the inside of the bend and the car seat is causing the centripetal (center seeking) acceleration of the passenger. A bucket of water attached to a rope can be swung around in a vertical plane without spilling any water if the centrifugal force exceeds the gravitation force at the top of the trajectory.
 
 :::{figure} ../images/lt-21207-10.7.1.png
-:alt: 10.7.1.PNG
+:label: fig-12-7-1
+:enumerator: 12.7.1
+:alt: Centrifugal force.
 
-$1$: Centrifugal force.
+Centrifugal force.
 :::
 
 ## 12.8: Coriolis Force
@@ -331,7 +344,7 @@ $1$: Centrifugal force.
 The Coriolis force was defined to be
 
 $$
-\mathbf{F}_{cor} = -2m\omega \times \mathbf{v}^{\prime\prime}_{rot} \label{12.41}
+\mathbf{F}_{cor} = -2m\omega \times \mathbf{v}^{\prime\prime}_{rot} \tag{12.41} \label{eq-12-41}
 $$
 
 where $\mathbf{v}^{\prime\prime}$ is the velocity measured in the rotating (double-primed) frame. The Coriolis force is an interesting force; it is perpendicular to both the axis of rotation and the velocity vector in the rotating frame, that is, it is analogous to the $q\mathbf{v} \times \mathbf{B}$ Lorentz magnetic force.
@@ -339,29 +352,32 @@ where $\mathbf{v}^{\prime\prime}$ is the velocity measured in the rotating (doub
 The understanding of the Coriolis effect is facilitated by considering the physics of a hockey puck sliding on a rotating frictionless table. Assume that the table rotates with constant angular frequency $\omega = \omega \widehat{\mathbf{k}}$ about the $z$ axis. For this system the origin of the rotating system is fixed, and the angular frequency is constant, thus $\mathbf{A}$ and $\dot{\omega} \times \mathbf{r}^{\prime}$ are zero. Also it is assumed that there are no external forces acting on the hockey puck, thus the net acceleration of the puck sliding on the table, as seen in the rotating frame, simplifies to
 
 $$
-\mathbf{a}^{\prime\prime}_{rot} = -2\omega \times \mathbf{v}^{\prime\prime}_{rot} − \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) = −2\omega \widehat{\mathbf{k}} \times \mathbf{v}^{\prime\prime}_{rot} + \omega^2\mathbf{r}^{\prime}_{mov} \label{12.42}
+\mathbf{a}^{\prime\prime}_{rot} = -2\omega \times \mathbf{v}^{\prime\prime}_{rot} − \omega \times (\omega \times \mathbf{r}^{\prime}_{mov}) = −2\omega \widehat{\mathbf{k}} \times \mathbf{v}^{\prime\prime}_{rot} + \omega^2\mathbf{r}^{\prime}_{mov} \tag{12.42} \label{eq-12-42}
 $$
 
 The centrifugal acceleration $+\omega^2\mathbf{r}^{\prime}_{mov}$ is radially outwards while the Coriolis acceleration $−2\omega \widehat{\mathbf{k}} \times \mathbf{v}^{\prime\prime}_{rot}$ is to the right. Integration of the equations of motion can be used to calculate the trajectories in the rotating frame of reference.
 
 :::{figure} ../images/lt-21208-10.8.1.png
-:alt: 10.8.1.PNG
+:label: fig-12-8-1
+:enumerator: 12.8.1
+:alt: Free-force motion of a hockey puck sliding on a rotating frictionless table of radius R that is rotating with constant angular frequency \omega out of the page.
 
-$1$: Free-force motion of a hockey puck sliding on a rotating frictionless table of radius $R$ that is rotating with constant angular frequency $\omega$ out of the page.
+Free-force motion of a hockey puck sliding on a rotating frictionless table of radius $R$ that is rotating with constant angular frequency $\omega$ out of the page.
 :::
 
-Figure 12.1 illustrates trajectories of the hockey puck in the rotating reference frame when no external forces are acting, that is, in the inertial frame the puck moves in a straight line with constant velocity $\mathbf{v}_0$. In the rotating reference frame the Coriolis force accelerates the puck to the right leading to trajectories that exhibit spiral motion. The apparent complicated trajectories are a result of the observer being in the rotating frame for which that the straight inertial-frame trajectories of the moving puck exhibit a spiralling trajectory in the rotating-frame.
+[Figure 12.8.1](#fig-12-8-1) illustrates trajectories of the hockey puck in the rotating reference frame when no external forces are acting, that is, in the inertial frame the puck moves in a straight line with constant velocity $\mathbf{v}_0$. In the rotating reference frame the Coriolis force accelerates the puck to the right leading to trajectories that exhibit spiral motion. The apparent complicated trajectories are a result of the observer being in the rotating frame for which that the straight inertial-frame trajectories of the moving puck exhibit a spiralling trajectory in the rotating-frame.
 
 The Coriolis force is the reason that winds circulate in an anticlockwise direction about low-pressure regions in the Earth’s northern hemisphere. It also has important consequences in many activities on earth such as ballet dancing, ice skating, acrobatics, nuclear and molecular rotation, and the motion of missiles.
 
-Example 12.1: Accelerating spring plane pendulum
+::::{admonition} Example 12.8.1: Accelerating spring plane pendulum
+:class: example
 
 Comparison of the relative merits of using a non-inertial frame versus an inertial frame is given by a spring pendulum attached to an accelerating fulcrum. As shown in the figure, the spring pendulum comprises a mass $m$ attached to a massless spring that has a rest length $r_0$ and spring constant $k$. The system is in a vertical gravitational field $g$ and the fulcrum of the pendulum is accelerating vertically upwards with a constant acceleration $a$. Assume that the spring pendulum oscillates only in the vertical $\theta$ plane.
 
 :::{figure} ../images/lt-21209-10.8.2.png
-:alt: 10.8.2.PNG
-
-$2$
+:label: fig-12-8-2
+:enumerator: 12.8.2
+:alt: Figure
 :::
 
 ### Inertial frame
@@ -457,13 +473,15 @@ H_{fulcrum}=\tilde{p}_{r} \dot{r}+\tilde{p}_{\theta} \dot{\theta}-L_{fulcrum}=\f
 $$
 
 Both $L_{fulcrum}$ and $H_{fulcrum}$ are time independent and thus the fulcrum Hamiltonian $H_{fulcrum}$ is a constant of motion in the fulcrum frame. However, $H_{fulcrum}$ does not equal the total energy which is increasing with time due to the acceleration of the fulcrum frame relative to the inertial frame. This example illustrates that use of non-inertial frames can simplify solution of accelerating systems.
+::::
 
-Example 12.2: Surface of rotating liquid
+::::{admonition} Example 12.8.2: Surface of rotating liquid
+:class: example
 
 :::{figure} ../images/lt-21210-10.8.3.png
-:alt: 10.8.3.PNG
-
-$3$
+:label: fig-12-8-3
+:enumerator: 12.8.3
+:alt: Figure
 :::
 
 Find the shape of the surface of liquid in a bucket that rotates with angular speed $\omega$ as shown in the adjacent figure. Assume that the liquid is at rest in the frame of the bucket. Therefore, in the coordinate system rotating with the bucket of liquid, the centrifugal force is important whereas the Coriolis, translational, and transverse forces are zero. The external force
@@ -503,8 +521,10 @@ z = \frac{\omega^2}{2g} \rho^2 + \text{ constant} \nonumber
 $$
 
 This is the equation of a paraboloid and corresponds to a parabolic gravitational equipotential energy surface. Astrophysicists build large parabolic mirrors for telescopes by continuously spinning a large vat of glass while it solidifies. This is much easier than grinding a large cylindrical block of glass into a parabolic shape.
+::::
 
-Example 12.3: The pirouette
+::::{admonition} Example 12.8.3: The pirouette
+:class: example
 
 An interesting application of the Coriolis force is the problem of a spinning ice skater or ballet dancer. Her angular frequency increases when she draws in her arms. The conventional explanation is that angular momentum is conserved in the absence of any external forces which is correct. Thus since her moment of inertia decreases when she retracts her arms, her angular velocity must increase to maintain a constant angular momentum $\mathbf{L} = I \omega$. But this explanation does not address the question as to what are the forces that cause the angular frequency to increase? The real radial forces the skater feels when she retracts her arms cannot directly lead to angular acceleration since radial forces are perpendicular to the rotation. The following derivation shows that the Coriolis force $−2m\omega \times \mathbf{v}^{\prime\prime}_{rot}$ acts tangentially to the radial retraction velocity of her arms leading to the angular acceleration required to maintain constant angular momentum.
 
@@ -517,7 +537,7 @@ $$
 This Coriolis force leads to an angular acceleration of the mass of
 
 $$
-\dot{\omega} = -\frac{2\omega \times \mathbf{\dot{r}}^{\prime\prime}_{rot}}{r^{\prime\prime}} \label{12-alpha-1} \tag{$\alpha$}
+\dot{\omega} = -\frac{2\omega \times \mathbf{\dot{r}}^{\prime\prime}_{rot}}{r^{\prime\prime}} \label{eq-12-alpha} \tag{$\alpha$}
 $$
 
 that is, the rotational frequency decreases if the radius is increased. Note that, as shown in equation $(12.3.11)$, $\dot{\omega} = \dot{\omega}^{\prime\prime}$. This nonzero value of $\dot{\omega}$ obviously leads to an azimuthal force in addition to the Coriolis force. Consider the rate of change of angular momentum for the rotating mass $m$ assuming that the angular momentum comes purely from the rotation $\omega$. Then in the rotating frame
@@ -526,7 +546,7 @@ $$
 \mathbf{\dot{p}}_{\theta^{\prime\prime}} = \frac{d}{dt} (m r^{\prime\prime 2} \omega ) = 2mr^{\prime\prime} \dot{r}^{\prime\prime} \omega + mr^{\prime\prime 2} \mathbf{\dot{\omega}} \nonumber
 $$
 
-Substituting Equation \ref{12-alpha-1} for $\dot{\omega}$ in the second term gives
+Substituting Equation [alpha](#eq-12-alpha) for $\dot{\omega}$ in the second term gives
 
 $$
 \mathbf{\dot{p}}_{\theta ''} = 2mr^{\prime\prime} \dot{r}^{\prime\prime} \omega - 2mr^{\prime\prime} \dot{r}^{\prime\prime} \omega = 0 \nonumber
@@ -553,6 +573,7 @@ E_{rot} = \frac{p^{2}_{\theta}}{2I} = \frac{l^2}{2I} \nonumber
 $$
 
 Therefore the rotational energy actually increases as the moment of inertia decreases when the ice skater pulls her arms close to her body. This increase in rotational energy is provided by the work done as the dancer pulls her arms inward against the centrifugal force.
+::::
 
 ## 12.9: Routhian Reduction for Rotating Systems
 
@@ -561,7 +582,7 @@ The Routhian reduction technique, that was introduced in chapter $8.6$, is a hyb
 As mentioned in chapter $8.6$, there are two possible Routhians that are useful for handling rotation frames of reference. For rotating systems the cyclic Routhian $R_{cyclic}$ simplifies to
 
 $$
-R_{cyclic}\left(q_{1}, \ldots, q_{n} ; \dot{q}_{1}, \ldots, \dot{q}_{s} ; p_{s+1}, \ldots, p_{n} ; t\right)=H_{cyclic}-L_{noncyclic}=\boldsymbol{\omega} \cdot \mathbf{J}-L \label{12.43}
+R_{cyclic}\left(q_{1}, \ldots, q_{n} ; \dot{q}_{1}, \ldots, \dot{q}_{s} ; p_{s+1}, \ldots, p_{n} ; t\right)=H_{cyclic}-L_{noncyclic}=\boldsymbol{\omega} \cdot \mathbf{J}-L \tag{12.43} \label{eq-12-43}
 $$
 
 This Routhian behaves like a Hamiltonian for the ignorable cyclic coordinates $\omega, \mathbf{J}$. Simultaneously it behaves like a negative Lagrangian $L_{noncyclic}$ for all the other coordinates.
@@ -569,37 +590,40 @@ This Routhian behaves like a Hamiltonian for the ignorable cyclic coordinates $\
 The non-cyclic Routhian $R_{noncyclic}$ complements $R_{cyclic}$ in that it is defined as
 
 $$
-R_{noncyclic}\left(q_{1}, \ldots, q_{n} ; p_{1}, \ldots, p_{s} ; \dot{q}_{s+1}, \ldots, \dot{q}_{n} ; t\right)=H_{noncyclic}-L_{cyclic}=H - \boldsymbol{\omega} \cdot \mathbf{J} \label{12.44}
+R_{noncyclic}\left(q_{1}, \ldots, q_{n} ; p_{1}, \ldots, p_{s} ; \dot{q}_{s+1}, \ldots, \dot{q}_{n} ; t\right)=H_{noncyclic}-L_{cyclic}=H - \boldsymbol{\omega} \cdot \mathbf{J} \tag{12.44} \label{eq-12-44}
 $$
 
 This non-cyclic Routhian behaves like a Hamiltonian for all the non-cyclic variables and behaves like a negative Lagrangian for the two cyclic variables $\omega , p_{\omega}$. Since the cyclic variables are constants of motion, then $R_{noncyclic}$ is a constant of motion that equals the energy in the rotating frame if $H$ is a constant of motion. However, $R_{noncyclic}$ does not equal the total energy since the coordinate transformation is time dependent, that is, the Routhian $R_{noncyclic}$ corresponds to the energy of the non-cyclic parts of the motion.
 
-For example, the Routhian $R_{noncyclic}$ for a system that is being cranked about the $\phi$ axis at some fixed angular frequency $\dot{\phi} = \omega$, with corresponding total angular momentum $\mathbf{p}\phi = \mathbf{J}$, can be written as<sup>1</sup>
+For example, the Routhian $R_{noncyclic}$ for a system that is being cranked about the $\phi$ axis at some fixed angular frequency $\dot{\phi} = \omega$, with corresponding total angular momentum $\mathbf{p}\phi = \mathbf{J}$, can be written as[^12-9-1]
 
 $$
-\begin{align} R_{noncyclic} & = & H − \boldsymbol{\omega} \cdot \mathbf{J} \label{12.45} \\ & = & \frac{1}{2} m \left[ \mathbf{V} \cdot \mathbf{V} + \mathbf{v}^{\prime\prime} \cdot \mathbf{v}^{\prime\prime}+2\mathbf{V} \cdot \mathbf{v}^{\prime\prime}+2\mathbf{V} \cdot (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )+2v^{\prime\prime} \cdot (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )+(\boldsymbol{\omega} \times \mathbf{r}^{\prime} )^2 \right] − \boldsymbol{\omega} \cdot \mathbf{J} + U(r) \notag \end{align}
+\begin{align} R_{noncyclic} & = & H − \boldsymbol{\omega} \cdot \mathbf{J} \tag{12.45} \label{eq-12-45} \\ & = & \frac{1}{2} m \left[ \mathbf{V} \cdot \mathbf{V} + \mathbf{v}^{\prime\prime} \cdot \mathbf{v}^{\prime\prime}+2\mathbf{V} \cdot \mathbf{v}^{\prime\prime}+2\mathbf{V} \cdot (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )+2v^{\prime\prime} \cdot (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )+(\boldsymbol{\omega} \times \mathbf{r}^{\prime} )^2 \right] − \boldsymbol{\omega} \cdot \mathbf{J} + U(r) \notag \end{align}
 $$
 
 Note that $R_{noncyclic}$ is a constant of motion if $\frac{\partial L}{\partial t} = 0$, which is the case when the system is being cranked at a constant angular frequency. However the Hamiltonian in the rotating frame $H_{rot} = H − \boldsymbol{\omega} \cdot \mathbf{J}$ is given by $R_{noncyclic} = H_{rot} \neq E$ since the coordinate transformation is time dependent. The canonical Hamilton equations for the fourth and fifth terms in the bracket can be identified with the Coriolis force $2m\boldsymbol{\omega} \times \mathbf{v}^{\prime\prime}$, while the last term in the bracket is identified with the centrifugal force. That is, define
 
 $$
-U_{cf} \equiv - \frac{1}{2} m (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )^2 \label{12.46}
+U_{cf} \equiv - \frac{1}{2} m (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )^2 \tag{12.46} \label{eq-12-46}
 $$
 
 where the gradient of $U_{cf}$ gives the usual centrifugal force.
 
 $$
-\mathbf{F}_{c f}=-\nabla U_{c f}=\frac{m}{2} \nabla\left[\omega^{2} r^{\prime 2}-\left(\boldsymbol{\omega} \cdot \mathbf{r}^{\prime}\right)^{2}\right]=m\left[\omega^{2} \mathbf{r}^{\prime}-\left(\boldsymbol{\omega} \cdot \mathbf{r}^{\prime}\right) \boldsymbol{\omega}\right]=-m \boldsymbol{\omega} \times\left(\boldsymbol{\omega} \times \mathbf{r}^{\prime}\right)\label{12.47}
+\mathbf{F}_{c f}=-\nabla U_{c f}=\frac{m}{2} \nabla\left[\omega^{2} r^{\prime 2}-\left(\boldsymbol{\omega} \cdot \mathbf{r}^{\prime}\right)^{2}\right]=m\left[\omega^{2} \mathbf{r}^{\prime}-\left(\boldsymbol{\omega} \cdot \mathbf{r}^{\prime}\right) \boldsymbol{\omega}\right]=-m \boldsymbol{\omega} \times\left(\boldsymbol{\omega} \times \mathbf{r}^{\prime}\right)\tag{12.47} \label{eq-12-47}
 $$
 
 The Routhian reduction method is used extensively in science and engineering to describe rotational motion of rigid bodies, molecules, deformed nuclei, and astrophysical objects. The cyclic variables describe the rotation of the frame and thus the Routhian $R_{noncyclic} = H_{rot}$ corresponds to the Hamiltonian for the non-cyclic variables in the rotating frame.
 
-Example 12.1: Cranked plane pendulum
+::::{admonition} Example 12.9.1: Cranked plane pendulum
+:class: example
 
 :::{figure} ../images/lt-21213-10.9.1.png
-:alt: 10.9.1.PNG
+:label: fig-12-9-1
+:enumerator: 12.9.1
+:alt: Cranked plane pendulum that is cranked around the vertical axis with angular velocity \dot{\phi} = \omega.
 
-$1$: Cranked plane pendulum that is cranked around the vertical axis with angular velocity $\dot{\phi} = \omega$.
+Cranked plane pendulum that is cranked around the vertical axis with angular velocity $\dot{\phi} = \omega$.
 :::
 
 The cranked plane pendulum, which is also called the rotating plane pendulum, comprises a plane pendulum that is cranked around a vertical axis at a constant angular velocity $\dot{\phi} = \omega$ as determined by some external drive mechanism. The parameters are illustrated in the adjacent figure. The cranked pendulum nicely illustrates the advantages of working in a non-inertial rotating frame for a driven rotating system. Although the cranked plane pendulum looks similar to the spherical pendulum, there is one very important difference; for the spherical pendulum $p_{\phi} = ml^2 \sin^2 \theta \dot{\phi}$ is a constant of motion and thus the angular velocity varies with $\theta$, i.e. $\dot{\phi} = \frac{p_{\phi}}{ml^2 \sin^2 \theta}$, whereas for the cranked plane pendulum, the constant of motion is $\dot{\phi} = \omega$ and thus the angular momentum varies with $\theta$, i.e. $p_{\phi} = l \sin^2 \theta \omega$. For the cranked plane pendulum, the energy must flow into and out of the cranking drive system that is providing the constraint force to satisfy the equation of constraint
@@ -643,31 +667,37 @@ $$
 Since $\dot{p}_{\theta} = m;^2 \ddot{\theta}$, then the equation of motion is
 
 $$
-\ddot{\theta} + \frac{g}{l} \sin \theta \left[ 1 − \frac{l}{g} \cos \theta \omega^2 \right] = 0 \label{12-alpha-2} \tag{$\alpha$}
+\ddot{\theta} + \frac{g}{l} \sin \theta \left[ 1 − \frac{l}{g} \cos \theta \omega^2 \right] = 0 \label{eq-12-alpha-2} \tag{$\alpha$}
 $$
 
-Assuming that $\sin \theta \approx \theta$, then Equation \ref{12-alpha-2} leads to linear harmonic oscillator solutions about a minimum at $\theta = 0$ if the term in brackets is positive. That is, when the bracket $\left[ 1 − \frac{l}{g} \cos \theta \omega^2 \right] > 0$ then equation {eq}`12-alpha-2` corresponds to a harmonic oscillator with angular velocity $\Omega$ given by
+Assuming that $\sin \theta \approx \theta$, then Equation [alpha](#eq-12-alpha) leads to linear harmonic oscillator solutions about a minimum at $\theta = 0$ if the term in brackets is positive. That is, when the bracket $\left[ 1 − \frac{l}{g} \cos \theta \omega^2 \right] > 0$ then equation [alpha](#eq-12-alpha) corresponds to a harmonic oscillator with angular velocity $\Omega$ given by
 
 $$
 \Omega^2 = \frac{g}{l} \sin \theta \left[ 1 − \frac{l}{g} \cos \theta \omega^2 \right] \notag
 $$
 
-The adjacent figure shows the phase-space diagrams for a plane pendulum rotating about a vertical axis at angular velocity $\omega$ for (a) $\omega < \sqrt{\frac{g}{l}}$ and (b) $\omega > \sqrt{\frac{g}{l}}$. The upper phase plot shows small $\omega$ when the square bracket of Equation \ref{12-alpha-2} is positive and the the phase space trajectories are ellipses around the stable equilibrium point $(0, 0)$. As $\omega$ increases the bracket becomes smaller and changes sign when $\omega^2 \cos \theta = \frac{g}{l}$. For larger $\omega$ the bracket is negative leading to hyperbolic phase space trajectories around the $(\theta , p_{\theta} ) = (0, 0)$ equilibrium point, that is, an unstable equilibrium point. However, new stable equilibrium points now occur at angles $(\theta , p_{\theta} ) =(\pm \theta_0, 0)$ where $\cos \theta_0 = \frac{g}{l \omega^2}$. That is, the equilibrium point $(0, 0)$ undergoes bifurcation as illustrated in the lower figure. These new equilibrium points are stable as illustrated by the elliptical trajectories around these points. It is interesting that these new equilibrium points $\pm \theta_0$ move to larger angles given by $\cos \theta_0 = \frac{g}{l\omega^2}$ beyond the bifurcation point at $\frac{g}{l\omega^2} = 1$. For low energy the mass oscillates about the minimum at $\theta = \theta_0$ whereas the motion becomes more complicated for higher energy. The bifurcation corresponds to symmetry breaking since, under spatial reflection, the equilibrium point is unchanged at low rotational frequencies but it transforms from $+\theta_0$ to $−\theta_0$ once the solution bifurcates, that is, the symmetry is broken. Also chaos can occur at the separatrix that separates the bifurcation. Note that either the Lagrange multiplier approach, or the generalized force approach, can be used to determine the applied torque required to ensure a constant $\omega$ for the cranked pendulum.
+The adjacent figure shows the phase-space diagrams for a plane pendulum rotating about a vertical axis at angular velocity $\omega$ for (a) $\omega < \sqrt{\frac{g}{l}}$ and (b) $\omega > \sqrt{\frac{g}{l}}$. The upper phase plot shows small $\omega$ when the square bracket of Equation [alpha](#eq-12-alpha) is positive and the the phase space trajectories are ellipses around the stable equilibrium point $(0, 0)$. As $\omega$ increases the bracket becomes smaller and changes sign when $\omega^2 \cos \theta = \frac{g}{l}$. For larger $\omega$ the bracket is negative leading to hyperbolic phase space trajectories around the $(\theta , p_{\theta} ) = (0, 0)$ equilibrium point, that is, an unstable equilibrium point. However, new stable equilibrium points now occur at angles $(\theta , p_{\theta} ) =(\pm \theta_0, 0)$ where $\cos \theta_0 = \frac{g}{l \omega^2}$. That is, the equilibrium point $(0, 0)$ undergoes bifurcation as illustrated in the lower figure. These new equilibrium points are stable as illustrated by the elliptical trajectories around these points. It is interesting that these new equilibrium points $\pm \theta_0$ move to larger angles given by $\cos \theta_0 = \frac{g}{l\omega^2}$ beyond the bifurcation point at $\frac{g}{l\omega^2} = 1$. For low energy the mass oscillates about the minimum at $\theta = \theta_0$ whereas the motion becomes more complicated for higher energy. The bifurcation corresponds to symmetry breaking since, under spatial reflection, the equilibrium point is unchanged at low rotational frequencies but it transforms from $+\theta_0$ to $−\theta_0$ once the solution bifurcates, that is, the symmetry is broken. Also chaos can occur at the separatrix that separates the bifurcation. Note that either the Lagrange multiplier approach, or the generalized force approach, can be used to determine the applied torque required to ensure a constant $\omega$ for the cranked pendulum.
 
 :::{figure} ../images/lt-21718-13.9.1.png
-:alt: 13.9.1.PNG
+:label: fig-12-9-2
+:enumerator: 12.9.2
+:alt: Phase-space diagrams for the plane pendulum cranked at angular velocity \omega about a vertical axis. [Figure 12.9.2a](#fig-12-9-2) is for \omega < \frac{g}{l} while 12.9.2b is for \omega > \frac{g}{l}.
 
-$2$: Phase-space diagrams for the plane pendulum cranked at angular velocity $\omega$ about a vertical axis. Figure 12.2a is for $\omega < \frac{g}{l}$ while 12.2b is for $\omega > \frac{g}{l}$.
+Phase-space diagrams for the plane pendulum cranked at angular velocity $\omega$ about a vertical axis. [Figure 12.9.2a](#fig-12-9-2) is for $\omega < \frac{g}{l}$ while 12.9.2b is for $\omega > \frac{g}{l}$.
 :::
+::::
 
-Example 12.2: Nucleon orbits in deformed nuclei
+::::{admonition} Example 12.9.2: Nucleon orbits in deformed nuclei
+:class: example
 
 Consider the rotation of axially-symmetric, prolate-deformed nucleus. Many nuclei have a prolate spheroidal shape, (the shape of a rugby ball) and they rotate perpendicular to the symmetry axis. In the non-inertial body-fixed frame, pairs of nucleons, each with angular momentum $j$, are bound in orbits with the projection of the angular momentum along the symmetry axis being conserved with value $\Omega = K$, which is a cyclic variable. Since the nucleus is of dimensions $10^{−14}$ $m$, quantization is important and the quantized binding energies of the individual nucleons are separated by spacings $\leq 500$ $keV$.
 
 :::{figure} ../images/lt-21212-10.9.3.png
-:alt: 10.9.3.PNG
+:label: fig-12-9-3
+:enumerator: 12.9.3
+:alt: Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of I on the symmetry axis is K, and the projection of j is \Omega. For axial symmetry Noether’s theroem gives that the projection of the angular momentum K on the symmetry axis is a conserved quantity.
 
-$3$: Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of $I$ on the symmetry axis is $K$, and the projection of $j$ is $\Omega$. For axial symmetry Noether’s theroem gives that the projection of the angular momentum $K$ on the symmetry axis is a conserved quantity.
+Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of $I$ on the symmetry axis is $K$, and the projection of $j$ is $\Omega$. For axial symmetry Noether’s theroem gives that the projection of the angular momentum $K$ on the symmetry axis is a conserved quantity.
 :::
 
 The Lagrangian and Hamiltonian are scalars and can be evaluated in any coordinate frame of reference. It is most useful to calculate the Hamiltonian for a deformed body in the non-inertial rotating body-fixed frame of reference. The bodyfixed Hamiltonian corresponds to the Routhian $R_{noncyclic}$
@@ -679,22 +709,23 @@ $$
 where it is assumed that the deformed nucleus has the symmetry axis along the $z$ direction and rotates about the $x$ axis. Since the Routhian is for a non-inertial rotating frame of reference it does not include the total energy but, if the shape is constant in time, then $R_{noncyclic}$ and the corresponding body-fixed Hamiltonian are conserved and the energy levels for the nucleons bound in the spheroidal potential well can be calculated using a conventional quantum mechanical model.
 
 For a prolate spheroidal deformed potential well, the nucleon orbits that have the angular momentum nearly aligned to the symmetry axis correspond to nucleon trajectories that are restricted to the narrowest part of the spheroid, whereas trajectories with the angular momentum vector close to perpendicular to the symmetry axis have trajectories that probe the largest radii of the spheroid. The Heisenberg Uncertainty Principle, mentioned in chapter $3.11.3$, describes how orbits restricted to the smallest dimension will have the highest linear momentum, and corresponding kinetic energy, and vise versa for the larger sized orbits. Thus the binding energy of different nucleon trajectories in the spheroidal potential well depends on the angle between the angular momentum vector and the symmetry axis of the spheroid as well as the deformation of the spheroid. A quantal nuclear model Hamiltonian is solved for assumed spheroidal-shaped potential wells. The corresponding orbits each have angular momenta $\mathbf{j}_i$ for which the projection of the angular momentum along the symmetry axis $\Omega_i$ is conserved, but the projection of $\mathbf{j}_i$ in the laboratory frame $j_z$ is not conserved since the potential well is not spherically symmetric. However, the total Hamiltonian is spherically symmetric in the laboratory frame, which is satisfied by allowing the deformed spheroidal potential well to rotate freely in the laboratory frame, and then $j^2_i$, $j_{i,z}$, and $\Omega_i$ all are conserved quantities. The attractive residual nucleon-nucleon pairing interaction results in pairs of nucleons being bound in time-reversed orbits $(j \times j)^0$, that is, with resultant total spin zero, in this spheroidal nuclear potential. Excitation of an even-even nucleus can break one pair and then the total projection of the angular momentum along the symmetry axis is $K = |\Omega_1 \pm \Omega_2|$, depending on whether the projections are parallel or antiparallel. More excitation energy can break several pairs and the projections continue to be additive. The binding energies calculated in the spheroidal potential well must be added to the rotational energy $E_{rot} = \frac{\mathcal{J}}{2} \omega^2$ to get the total energy, where $\mathcal{J}$ is the moment of inertia. Nuclear structure measurements are in good agreement with the predictions of nuclear structure calculations that employ the Routhian approach.
+::::
 
----
-
-<sup>1</sup>For clarity sections $(12.2)$ to $(12.8)$ of this chapter adopted a naming convention that uses unprimed coordinates with the subscript $fix$ for the inertial frame of reference, primed coordinates with the subscript $mov$ for the translating coordinates, and double-primed coordinates with the subscript $rot$ for the translating plus rotating frame. For brevity the subsequent discussion omits the redundant subscripts $fix$, $mov$, $rot$ since the single and double prime superscripts completely define the moving and rotating frames of reference.
+[^12-9-1]: For clarity sections $(12.2)$ to $(12.8)$ of this chapter adopted a naming convention that uses unprimed coordinates with the subscript $fix$ for the inertial frame of reference, primed coordinates with the subscript $mov$ for the translating coordinates, and double-primed coordinates with the subscript $rot$ for the translating plus rotating frame. For brevity the subsequent discussion omits the redundant subscripts $fix$, $mov$, $rot$ since the single and double prime superscripts completely define the moving and rotating frames of reference.
 
 ## 12.10: Effective gravitational force near the surface of the Earth
 
 Consider that the translational acceleration of the center of the Earth can be neglected, and thus a set of non-rotating axes through the center of the Earth can be assumed to be approximately an inertial frame. The effects of the motion of the Earth around the Sun, or the motion of the Solar system in our Galaxy, are small compared with the effects due to the rotation of the Earth.
 
 :::{figure} ../images/lt-21215-10.10.1.png
-:alt: 10.10.1.PNG
+:label: fig-12-10-1
+:enumerator: 12.10.1
+:alt: Rotating frame at the surface of the Earth.
 
-$1$: Rotating frame at the surface of the Earth.
+Rotating frame at the surface of the Earth.
 :::
 
-Consider a rotating frame attached to the surface of the earth as shown in Figure 12.1. The vector with respect to the center of the Earth $\mathbf{r}$ can be decomposed into a vector to the origin of the reference frame fixed to the surface of the Earth $\mathbf{R}$, plus the vector with respect to this surface reference frame $\mathbf{r}^{\prime}$.
+Consider a rotating frame attached to the surface of the earth as shown in [Figure 12.10.1](#fig-12-10-1). The vector with respect to the center of the Earth $\mathbf{r}$ can be decomposed into a vector to the origin of the reference frame fixed to the surface of the Earth $\mathbf{R}$, plus the vector with respect to this surface reference frame $\mathbf{r}^{\prime}$.
 
 $$
 \mathbf{r} = \mathbf{R} + \mathbf{r}^{\prime}
@@ -727,23 +758,25 @@ $$
 where $\mathbf{r}$ is with respect to the center of the Earth. This is as expected directly from equation $(12.6.8)$. Since the angular frequency of the earth is a constant then $\dot{\omega} \times \mathbf{r}^{\prime} = 0$. Thus the acceleration can be written as
 
 $$
-\mathbf{a}^{\prime} = \frac{\mathbf{F}}{m} + [\mathbf{g} − \boldsymbol{\omega} \times (\boldsymbol{\omega} \times \mathbf{ r})] − 2\boldsymbol{\omega} \times \mathbf{v}^{\prime} \label{12.52}
+\mathbf{a}^{\prime} = \frac{\mathbf{F}}{m} + [\mathbf{g} − \boldsymbol{\omega} \times (\boldsymbol{\omega} \times \mathbf{ r})] − 2\boldsymbol{\omega} \times \mathbf{v}^{\prime} \tag{12.52} \label{eq-12-52}
 $$
 
 The term in the square brackets combines the gravitational acceleration plus the centrifugal acceleration.
 
-A measurement of the Earth’s gravitational acceleration actually measures the term in the square brackets in Equation \ref{12.52}, that is, an effective gravitational acceleration where
+A measurement of the Earth’s gravitational acceleration actually measures the term in the square brackets in Equation [12.52](#eq-12-52), that is, an effective gravitational acceleration where
 
 $$
 \mathbf{g}_{eff} = \mathbf{g} − \boldsymbol{\omega} \times (\boldsymbol{\omega} \times \mathbf{ r})
 $$
 
-near the surface of the earth $\mathbf{r} \approx \mathbf{R}$. The effective gravitational force does not point towards the center of the Earth as shown in Figure 12.2. A plumb line points, or an object falls, in the direction of $\mathbf{g}_{eff}$. The shape of the earth is such that the Earth’s surface is perpendicular to $\mathbf{g}_{eff}$. This is the reason why the earth is distorted into an oblate ellipsoid, that is, it is flattened at the poles.
+near the surface of the earth $\mathbf{r} \approx \mathbf{R}$. The effective gravitational force does not point towards the center of the Earth as shown in [Figure 12.10.2](#fig-12-10-2). A plumb line points, or an object falls, in the direction of $\mathbf{g}_{eff}$. The shape of the earth is such that the Earth’s surface is perpendicular to $\mathbf{g}_{eff}$. This is the reason why the earth is distorted into an oblate ellipsoid, that is, it is flattened at the poles.
 
 :::{figure} ../images/lt-32773-12.10.2.png
-:alt: 12.10.2.PNG
+:label: fig-12-10-2
+:enumerator: 12.10.2
+:alt: Effective gravitational acceleration.
 
-$2$: Effective gravitational acceleration.
+Effective gravitational acceleration.
 :::
 
 The angle $\alpha$ between $\mathbf{g}_{eff}$ and the line pointing to the center of the earth is dependent on the latitude $\lambda = \frac{\pi}{2} −\theta$. Note that the colatitude $\theta$ is taken to be zero at the North pole whereas the latitude $\lambda$ is taken to be zero at the equator. The angle $\alpha$ can be estimated by assuming that $r^{\prime} << R$, then the centrifugal term then can be approximated by
@@ -777,18 +810,20 @@ This has a maximum value at $\lambda = 45^{\circ}$ which is $\alpha = 0.0088^{\c
 The calculation of trajectories for objects as they move near the surface of the earth is frequently required for many applications. Such calculations require inclusion of the noninertial Coriolis force.
 
 :::{figure} ../images/lt-21218-10.11.1.png
-:alt: 10.11.1.PNG
+:label: fig-12-11-1
+:enumerator: 12.11.1
+:alt: Rotating frame fixed on the surface of the Earth.
 
-$1$: Rotating frame fixed on the surface of the Earth.
+Rotating frame fixed on the surface of the Earth.
 :::
 
 In the frame of reference fixed to the earth’s surface, assuming that air resistance and other forces can be neglected, then the acceleration equals
 
 $$
-\mathbf{a}^{\prime} = \mathbf{g}_{eff} − 2\boldsymbol{\omega} \times \mathbf{v}^{\prime} \label{12.58}
+\mathbf{a}^{\prime} = \mathbf{g}_{eff} − 2\boldsymbol{\omega} \times \mathbf{v}^{\prime} \tag{12.58} \label{eq-12-58}
 $$
 
-Neglect the centrifugal correction term since it is very small, that is, let $\mathbf{g}_{eff} = \mathbf{g}$. Using the coordinate axis shown in Figure 12.1, the surface-frame vectors have components
+Neglect the centrifugal correction term since it is very small, that is, let $\mathbf{g}_{eff} = \mathbf{g}$. Using the coordinate axis shown in [Figure 12.11.1](#fig-12-11-1), the surface-frame vectors have components
 
 $$
 \boldsymbol{\omega} = 0\widehat{\mathbf{i}^{\prime}} + \omega \cos \lambda \widehat{\mathbf{j}^{\prime}} + \omega \sin \lambda \widehat{\mathbf{k}^{\prime}}
@@ -844,7 +879,8 @@ $$
 
 Consider the following special cases;
 
-Example 12.1: Free fall from rest
+::::{admonition} Example 12.11.1: Free fall from rest
+:class: example
 
 Assume that an object falls a height $h$ starting from rest at $t = 0$, $x = 0$, $y = 0$, $z = h$. Then
 
@@ -867,8 +903,10 @@ x^{\prime} = \frac{1}{3} \omega \cos \lambda \sqrt{\frac{8h^3}{g}} \notag
 $$
 
 Thus the object drifts eastward as a consequence of the earth’s rotation. Note that relative to the fixed frame it is obvious that the angular velocity of the body must increase as it falls to compensate for the reduced distance from the axis of rotation in order to ensure that the angular momentum is conserved.
+::::
 
-Example 12.2: Projectile fired vertically upwards
+::::{admonition} Example 12.11.2: Projectile fired vertically upwards
+:class: example
 
 An upward fired projectile with initial velocities $\dot{x}^{\prime}_0 = \dot{y}^{\prime}_0 = 0$ and $\dot{z}^{\prime}_0 = v_0$ leads to the relations
 
@@ -897,8 +935,10 @@ x^{\prime} = −\frac{4}{3} \omega \cos \lambda \sqrt{\frac{8h^3}{g}} \notag
 $$
 
 Thus the body drifts westwards.
+::::
 
-Example 12.3: Motion parallel to Earth's surface
+::::{admonition} Example 12.11.3: Motion parallel to Earth's surface
+:class: example
 
 For motion in the horizontal $x^{\prime} −y^{\prime}$ plane the deflection is always to the right in the northern hemisphere of the Earth since the vertical component of $\omega$ is upwards and thus $−2 \overrightarrow{\boldsymbol{\omega}} \times \overrightarrow{\mathbf{v}^{\prime}}$ points to the right. In the southern hemisphere the vertical component of $\omega$ is downward and thus $−2 \overrightarrow{\boldsymbol{\omega}} \times \overrightarrow{\mathbf{v}^{\prime}}$ points to the left. This is also shown using the above relations for the case of a projectile fired upwards in an easterly direction with components $\dot{x}^{\prime}_0, 0, \dot{z}^{\prime}_0$. The resultant displacements are
 
@@ -919,6 +959,7 @@ $$
 The trajectory is non-planar and, in the northern hemisphere, the projectile drifts to the right, that is southerly.
 
 In the battle of the River de la Plata, during World War 2, the gunners on the British light cruisers Exeter, Ajax and Achilles found that their accurately aimed salvos against the German pocket battleship Graf Spee were falling 100 yards to the left. The designers of the gun sighting mechanisms had corrected for the Coriolis effect assuming the ships would fight at latitudes near 50$^{\circ}$ north, not 50$^{\circ}$ south.
+::::
 
 ## 12.12: Weather systems
 
@@ -927,7 +968,7 @@ Weather systems on Earth provide a classic example of motion in a rotating coord
 For a fluid or gas, equation****$(12.6.8)$ can be written in terms of the fluid density $\rho$ in the form
 
 $$
-\rho \mathbf{a}" = −\boldsymbol{\nabla}P − \rho [2\boldsymbol{\omega} \times \mathbf{v}" − \boldsymbol{\omega} \times (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )] \label{12.68}
+\rho \mathbf{a}" = −\boldsymbol{\nabla}P − \rho [2\boldsymbol{\omega} \times \mathbf{v}" − \boldsymbol{\omega} \times (\boldsymbol{\omega} \times \mathbf{r}^{\prime} )] \tag{12.68} \label{eq-12-68}
 $$
 
 where the translational acceleration $\mathbf{A}$, the gravitational force, and the azimuthal acceleration $(\boldsymbol{\dot{\omega}} \times \mathbf{r}^{\prime})$ terms are ignored. The external force per unit volume equals the pressure gradient $−\boldsymbol{\nabla}P$ while $\boldsymbol{\omega}$ is the rotation vector of the earth.
@@ -942,7 +983,7 @@ For large dimensional pressure systems in the atmosphere, e.g. $L \simeq 1000$ $
 
 ### Low-pressure systems:
 
-It is interesting to analyze the motion of air circulating around a low pressure region at large radii where the motion is tangential. As shown in Figure 12.1, a parcel of air circulating anticlockwise around the low with velocity $v$ involves a pressure difference $\Delta P$ acting on the surface area $S$, plus the centrifugal and Coriolis forces. Assuming that these forces are balanced such that $\mathbf{a}" \simeq 0$, then Equation \ref{12.68} simplifies to
+It is interesting to analyze the motion of air circulating around a low pressure region at large radii where the motion is tangential. As shown in [Figure 12.12.1](#fig-12-12-1), a parcel of air circulating anticlockwise around the low with velocity $v$ involves a pressure difference $\Delta P$ acting on the surface area $S$, plus the centrifugal and Coriolis forces. Assuming that these forces are balanced such that $\mathbf{a}" \simeq 0$, then Equation [12.68](#eq-12-68) simplifies to
 
 $$
 \frac{v^2}{r} = \frac{1}{\rho} \nabla P - 2 v \omega \sin \lambda
@@ -957,9 +998,11 @@ $$
 It is apparent that the combined outward Coriolis force plus outward centrifugal force, acting on the circulating air, can support a large pressure gradient.
 
 :::{figure} ../images/lt-21216-10.12.1.png
-:alt: 10.12.1.PNG
+:label: fig-12-12-1
+:enumerator: 12.12.1
+:alt: Air flow and pressures around a lowpressure region.
 
-$1$: Air flow and pressures around a lowpressure region.
+Air flow and pressures around a lowpressure region.
 :::
 
 The tangential velocity $v$ can be obtained by solving this equation to give
@@ -977,14 +1020,16 @@ $$
 which occurs at the wall of the eye of the circulating low-pressure system.
 
 :::{figure} ../images/lt-21217-10.12.2.png
-:alt: 10.12.2.PNG
+:label: fig-12-12-2
+:enumerator: 12.12.2
+:alt: Hurricane Katrina over the Gulf of Mexico on 28 August 2005. [Published by the NOAA]
 
-$2$: Hurricane Katrina over the Gulf of Mexico on 28 August 2005. [Published by the NOAA]
+Hurricane Katrina over the Gulf of Mexico on 28 August 2005. [Published by the NOAA]
 :::
 
 Low pressure regions are produced by heating of air causing it to rise and resulting in an inflow of air to replace the rising air. Hurricanes form over warm water when the temperature exceeds 26$^{\circ}$$C$ and the moisture levels are above average. They are created at latitudes between 10$^{\circ}$ −15$^{\circ}$ where the sea is warmest, but not closer to the equator where the Coriolis force drops to zero. About 90% of the heating of the air comes from the latent heat of vaporization due to the rising warm moist air condensing into water droplets in the cloud similar to what occurs in thunderstorms. For hurricanes in the northern hemisphere, the air circulates anticlockwise inwards. Near the wall of the eye of the hurricane, the air rises rapidly to high altitudes at which it then flows clockwise and outwards and subsequently back down in the outer reaches of the hurricane. Both the wind velocity and pressure are low inside the eye which can be cloud free. The strongest winds are in vortex surrounding the eye of the hurricane, while weak winds exist in the counter-rotating vortex of sinking air that occurs far outside the hurricane.
 
-Figure 12.2 shows the satellite picture of the hurricane Katrina, recorded on 28 August 2005. The eye of the hurricane is readily apparent in this picture. The central pressure was 90200 $N/m^2$ (902 $mb$) compared with the standard atmospheric pressure of 101300 $N/m^2$ (1013 $mb$). This 111 $mb$ pressure difference produced steady winds in Katrina of 280 $km/hr$ ( 175 $mph$) with gusts up to 344 $km/hr$ which resulted in 1833 fatalities.
+[Figure 12.12.2](#fig-12-12-2) shows the satellite picture of the hurricane Katrina, recorded on 28 August 2005. The eye of the hurricane is readily apparent in this picture. The central pressure was 90200 $N/m^2$ (902 $mb$) compared with the standard atmospheric pressure of 101300 $N/m^2$ (1013 $mb$). This 111 $mb$ pressure difference produced steady winds in Katrina of 280 $km/hr$ ( 175 $mph$) with gusts up to 344 $km/hr$ which resulted in 1833 fatalities.
 
 Tornadoes are another example of a vortex low-pressure system that are the opposite extreme in both size and duration compared with a hurricane. Tornadoes may last only $\sim 10$ minutes and be quite small in radius. Pressure drops of up to 100 $mb$ have been recorded, but since they may only be a few 100 meters in diameter, the pressure gradient can be much higher than for hurricanes leading to localized winds thought to approach 500 $km/hr$. Unfortunately, the instrumentation and buildings hit by a tornado often are destroyed making study difficult. Note that the the pressure gradient in small diameter of rope tornadoes is much more destructive than for larger 1/4 mile diameter tornadoes, which results in stronger winds.
 
@@ -1019,12 +1064,14 @@ Reliable prediction of weather is an extremely difficult, complicated and challe
 A classic example of motion in non-inertial frames is the rotation of the **Foucault pendulum** on the surface of the earth. The Foucault pendulum is a spherical pendulum with a long suspension that oscillates in the $x-y$ plane with sufficiently small amplitude that the vertical velocity $\dot{z}$ is negligible.
 
 :::{figure} ../images/lt-21219-10.13.1.png
-:alt: 10.13.1.PNG
+:label: fig-12-13-1
+:enumerator: 12.13.1
+:alt: Foucault pendulum.
 
-$1$: Foucault pendulum.
+Foucault pendulum.
 :::
 
-Assume that the pendulum is a simple pendulum of length $l$ and mass $m$ as shown in Figure 12.1. The equation of motion is given by
+Assume that the pendulum is a simple pendulum of length $l$ and mass $m$ as shown in [Figure 12.13.1](#fig-12-13-1). The equation of motion is given by
 
 $$
 \mathbf{\ddot{r}} = \mathbf{g} + \frac{\mathbf{T}}{m} − 2\boldsymbol{\Omega} \times \mathbf{\dot{r}}
@@ -1033,12 +1080,12 @@ $$
 where $\frac{T}{m}$ is the acceleration produced by the tension in the pendulum suspension and the rotation vector of the earth is designated by $\boldsymbol{\Omega}$ to avoid confusion with the oscillation frequency of the pendulum $\omega$. The effective gravitational acceleration $\mathbf{g}$ is given by
 
 $$
-\mathbf{g} = \mathbf{g}_0 − \boldsymbol{\Omega} \times [\boldsymbol{\Omega} \times (\mathbf{r} + \mathbf{R})] \label{12.78}
+\mathbf{g} = \mathbf{g}_0 − \boldsymbol{\Omega} \times [\boldsymbol{\Omega} \times (\mathbf{r} + \mathbf{R})] \tag{12.78} \label{eq-12-78}
 $$
 
 that is, the true gravitational field $\mathbf{g}_0$ corrected for the centrifugal force.
 
-Assume the small angle approximation for the pendulum deflection angle $\beta$, then $T_z = T \cos \beta \simeq T$ and $T_z = mg$, thus $T \simeq mg$. Then has shown in Figure 12.1, the horizontal components of the restoring force are
+Assume the small angle approximation for the pendulum deflection angle $\beta$, then $T_z = T \cos \beta \simeq T$ and $T_z = mg$, thus $T \simeq mg$. Then has shown in [Figure 12.13.1](#fig-12-13-1), the horizontal components of the restoring force are
 
 $$
 T_z = −mg \frac{x}{l}
@@ -1048,14 +1095,14 @@ $$
 T_y = −mg \frac{y}{l}
 $$
 
-Since $\mathbf{g}$ is vertical, and neglecting terms involving $\dot{z}$, then evaluating the cross product in Equation \ref{12.78} simplifies to
+Since $\mathbf{g}$ is vertical, and neglecting terms involving $\dot{z}$, then evaluating the cross product in Equation [12.78](#eq-12-78) simplifies to
 
 $$
-\ddot{x} = −g\frac{x}{l} + 2\dot{y}\Omega \cos \theta \label{12.81}
+\ddot{x} = −g\frac{x}{l} + 2\dot{y}\Omega \cos \theta \tag{12.81} \label{eq-12-81}
 $$
 
 $$
-\ddot{y} = −g\frac{y}{l} + 2\dot{x}\Omega \cos \theta \label{12.82}
+\ddot{y} = −g\frac{y}{l} + 2\dot{x}\Omega \cos \theta \tag{12.82} \label{eq-12-82}
 $$
 
 where $\theta$ is the colatitude which is related to the latitude $\lambda$ by
@@ -1076,10 +1123,10 @@ $$
 \Omega_z = \Omega \ cos \theta
 $$
 
-Thus equations \ref{12.81} and \ref{12.82} can be written as
+Thus equations [12.81](#eq-12-81) and [12.82](#eq-12-82) can be written as
 
 $$
-\begin{align} \notag \ddot{x} - 2\Omega_z \dot{y} + \omega^2_0 x = 0 \\ \ddot{y} - 2\Omega_z \dot{x} + \omega^2_0 y = 0 \label{12.86} \end{align}
+\begin{align} \notag \ddot{x} - 2\Omega_z \dot{y} + \omega^2_0 x = 0 \\ \ddot{y} - 2\Omega_z \dot{x} + \omega^2_0 y = 0 \tag{12.86} \label{eq-12-86} \end{align}
 $$
 
 These are two coupled equations that can be solved by making a coordinate transformation.
@@ -1090,7 +1137,7 @@ $$
 \eta = x + iy
 $$
 
-Multiply the second of the coupled equations \ref{12.86} by $i$ and add to the first equation gives
+Multiply the second of the coupled equations [12.86](#eq-12-86) by $i$ and add to the first equation gives
 
 $$
 (\ddot{x} + i \ddot{y})+2i\Omega_z (\dot{x} + i\dot{y}) + \omega^2_0 (x + iy)=0 \notag
@@ -1099,16 +1146,16 @@ $$
 which can be written as a differential equation for $\eta$
 
 $$
-\ddot{\eta} + 2i\Omega_z \dot{\eta} + \omega^2_0 \eta = 0 \label{12.88}
+\ddot{\eta} + 2i\Omega_z \dot{\eta} + \omega^2_0 \eta = 0 \tag{12.88} \label{eq-12-88}
 $$
 
-Note that the complex number $\eta$ contains the same information regarding the position in the $x−y$ plane as equations \ref{12.86}. The plot of $\eta$ in the complex plane, the Argand diagram, is a birds-eye view of the position coordinates $(x,y)$ of the pendulum. This second-order homogeneous differential equation has two independent solutions that can be derived by guessing a solution of the form
+Note that the complex number $\eta$ contains the same information regarding the position in the $x−y$ plane as equations [12.86](#eq-12-86). The plot of $\eta$ in the complex plane, the Argand diagram, is a birds-eye view of the position coordinates $(x,y)$ of the pendulum. This second-order homogeneous differential equation has two independent solutions that can be derived by guessing a solution of the form
 
 $$
-\eta (t) = A_e^{−i\alpha t} \label{12.89}
+\eta (t) = A_e^{−i\alpha t} \tag{12.89} \label{eq-12-89}
 $$
 
-Substituting Equation \ref{12.89} into \ref{12.88} gives that
+Substituting Equation [12.89](#eq-12-89) into [12.88](#eq-12-88) gives that
 
 $$
 \alpha^2 − 2\Omega_z \alpha − \omega^2_o = 0 \notag
@@ -1149,37 +1196,55 @@ At the north pole the earth rotates under the pendulum with angular velocity $\O
 ## 12.E: Non-inertial reference frames (Exercises)
 
 1. Consider a fixed reference frame $S$ and a rotating frame $S^{\prime}$. The origins of the two coordinate systems always coincide. By carefully drawing a diagram, derive an expression relating the coordinates of a point $P$ in the two systems. (This was covered in Chapter $2$, but it is worth reviewing now.
+
 2. The effective force observed in a rotating coordinate system is given by equation $(12.5.7)$.
 
-What is the significance of each term in this expression?
-Suppose you wanted to measure the gravitational force, both magnitude and direction, on a body of mass $m$ at rest on the surface of the Earth. What terms in the effective force can be neglected?
-Suppose you wanted to calculate the deflection of a projectile fired horizontally along the Earth’s surface. What terms in the effective force can be neglected?
-Suppose you wanted to calculate the effective force on a small block of mass $m$ placed on a frictionless turntable rotating with a time-dependent angular velocity $\omega (t)$. What terms in the effective force can be neglected?
+   1. What is the significance of each term in this expression?
+
+   2. Suppose you wanted to measure the gravitational force, both magnitude and direction, on a body of mass $m$ at rest on the surface of the Earth. What terms in the effective force can be neglected?
+
+   3. Suppose you wanted to calculate the deflection of a projectile fired horizontally along the Earth’s surface. What terms in the effective force can be neglected?
+
+   4. Suppose you wanted to calculate the effective force on a small block of mass $m$ placed on a frictionless turntable rotating with a time-dependent angular velocity $\omega (t)$. What terms in the effective force can be neglected?
+
 3. A plumb line is carried along in a moving train, with $m$ the mass of the plumb bob. Neglect any effects due to the rotation of the Earth and work in the noninertial frame of reference of the train.
 
-Find the tension in the cord and the deflection from the local vertical if the train is moving with constant acceleration $a_0$.
-Find the tension in the cord and the deflection from the local vertical if the train is rounding a curve of radius $\rho$ with constant speed $v_0$.
+   1. Find the tension in the cord and the deflection from the local vertical if the train is moving with constant acceleration $a_0$.
+
+   2. Find the tension in the cord and the deflection from the local vertical if the train is rounding a curve of radius $\rho$ with constant speed $v_0$.
+
 4. A bead on a rotating rod is free to slide without friction. The rod has a length $L$ and rotates about its end with angular velocity $\omega$. The bead is initially released from rest (relative to the rod) at the midpoint of the rod.
 
-Find the displacement of the bead along the wire as a function of time.
-Find the time when the bead leaves the end of the rod.
-Find the velocity (relative to the rod) of the bead when it leaves the end of the rod.
+   1. Find the displacement of the bead along the wire as a function of time.
+
+   2. Find the time when the bead leaves the end of the rod.
+
+   3. Find the velocity (relative to the rod) of the bead when it leaves the end of the rod.
+
 5. Here is a “thought experiment” for you to consider. Suppose you are in a small sailboat of mass $M$ at the Earth’s equator. At the equator there is very little wind (this is known as the “equatorial doldrums”), so your sailboat is, more or less, sitting still. You have a small anchor of mass $m$ on deck and a single mast of height $h$ in the middle of the boat. How can you use the anchor to put the boat into motion? In which direction will the boat move?
+
 6. Does water really flow in the other direction when you flush a toilet in the southern hemisphere? What (if anything) does the Coriolis force have to do with this?
+
 7. We are presently at a latitude $\lambda$ (with respect to the equator) and Earth is rotating with constant angular velocity $\omega$. Consider the following two scenarios: Scenario A: A particle is thrown upward with initial speed $v_0$. Scenario B: An identical particle is dropped (at rest) from the maximum height of the particle in Scenario A. Circle all the true statements regarding the Coriolis deflection assuming that the particles have landed for a) and b), .
 
-(a) The magnitude is greater in A than in B.
-(b) The direction in A and B are the same.
-(c) The direction in A does not change throughout flight.
+   1. (a) The magnitude is greater in A than in B.
+
+   2. (b) The direction in A and B are the same.
+
+   3. (c) The direction in A does not change throughout flight.
+
 8. If a projectile is fired due east from a point on the surface of the Earth at a northern latitude $\lambda$ with a velocity of magnitude $V_0$ and at an inclination to the horizontal of $\alpha$, show that the lateral deflection when the projectile strikes the Earth is
- 
+    
 $$
 d = \frac{4V^3_0}{g^2} \omega \sin \lambda \sin^2 \alpha \cos \alpha
 $$
 
-where $\omega$ is the rotation frequency of the Earth.
+   where $\omega$ is the rotation frequency of the Earth.
+
 9. Obtain an expression for the angular deviation of a particle projected from the North Pole in a path that lies close to the surface of the earth. Is the deviation significant for a missile that makes a 4800-km flight in 10 minutes? What is the ”miss distance” if the missile is aimed directly at the target? Is the miss difference greater for a 19300-km flight at the same velocity?
+
 10. An automobile drag racer drives a car with acceleration $a$ and instantaneous velocity $v$. The tires of radius $r_0$ are not slipping. Derive which point on the tire has the greatest acceleration relative to the ground. What is this acceleration?
+
 11. Shot towers were popular in the eighteenth and nineteenth centuries for dropping melted lead down tall towers to form spheres for bullets. The lead solidified while falling and often landed in water to cool the lead bullets. Many such shot towers were built in New York State. Assume a shot tower was constructed at latitude $42^{\circ}$ $N$, and that the lead fell a distance of $27$ $m$. In what direction and by how far did the lead bullets land from the direct vertical?
 
 ## 12.S: Non-inertial reference frames (Summary)
