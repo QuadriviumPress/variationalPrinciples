@@ -9,9 +9,8 @@ label: prologue
 Two dramatically different philosophical approaches to science were developed in the field of classical mechanics during the 17$^{th}$ - 18$^{th}$ centuries. This time period coincided with the Age of Enlightenment in Europe during which remarkable intellectual and philosophical developments occurred. This was a time when both philosophical and causal arguments were equally acceptable in science, in contrast with current convention where there appears to be tacit agreement to discourage use of philosophical arguments in science.
 
 :::{figure} ../images/lt-21088-0.1.png
-:alt: 0.1.PNG
-
-0.1.PNG
+:enumerated: false
+:alt: Figure
 :::
 
 ### Snell's Law
@@ -19,7 +18,7 @@ Two dramatically different philosophical approaches to science were developed in
 The genesis of two contrasting philosophical approaches to science relates back to early studies of the reflection and refraction of light. The velocity of light in a medium of refractive index $\textit{n}$ equals $\mathit{v = \frac{c}{n} }$. Thus a light beam incident at an angle $\theta_1$ to the normal of a plane interface between medium 1 and medium 2 is refracted at an angle $\theta_2$ in medium 2 where the angles are related by Snell’s Law.
 
 $$
-\label{eq:Snell's Law}\tag{Snell's Law}
+\label{eq-snell-s-law}\tag{Snell's Law}
 
 \frac{\sin \theta_1}{\sin \theta_2} = \frac{v_1}{v_2} = \frac{n_2}{n_1}
 $$
@@ -35,7 +34,7 @@ $$
 
 \tau= \int_{t_A}^{t_B}dt = \frac{1}{c} \int_A^Bn(s)ds
 
-\label{eq:Fermat's Principle}
+\label{eq-fermat-s-principle}
 $$
 
 Fermat’s Principle leads to the derivation of Snell’s Law.
@@ -67,9 +66,10 @@ $$
 In the simplest form, the Lagrangian $L({\bf q}, {\bf \dot{q}}, t )$ equals the difference between the kinetic energy $T$ and the potential energy $U$. Hamilton’s Least Action Principle underlies Lagrangian mechanics. This Lagrangian is a function of $n$ generalized coordinates $q_i$ plus their corresponding velocities $\dot{q}_i$. Hamilton also developed the premier variational approach, called Hamiltonian mechanics, that is based on the Hamiltonian $H({\bf q}, {\bf p}, t)$ which is a function of the $n$ fundamental position $q_i$ plus the conjugate momentum $p_i$ variables. In 1843 Jacobi provided the mathematical framework required to fully exploit the power of Hamiltonian mechanics. Note that the Lagrangian, Hamiltonian, and the action integral, all are scalar quantities which simplifies derivation of the equations of motion compared with the vector calculus used by Newtonian mechanics.
 
 :::{figure} ../images/lt-21300-0.2n.png
-:alt: 0.2n.PNG
+:enumerated: false
+:alt: 2: Philosophical road map of the hierarchy of stages involved in analytical mechanics. Hamilton’s Action Principle is the foundation of analytical mechanics. Stage 1 uses Hamilton’s Principle to derive the Lagrangian and Hamiltonian. Stage 2 uses either the Lagrangian or Hamiltonian to derive the…
 
-$2$: Philosophical road map of the hierarchy of stages involved in analytical mechanics. Hamilton’s Action Principle is the foundation of analytical mechanics. Stage 1 uses Hamilton’s Principle to derive the Lagrangian and Hamiltonian. Stage 2 uses either the Lagrangian or Hamiltonian to derive the equations of motion for the system. Stage 3 uses these equations of motion to solve for the actual motion using the assumed initial conditions. The Lagrangian approach can be derived directly based on d’Alembert’s Principle. Newtonian mechanics can be derived directly based on Newton’s Laws of Motion. The advantages and power of Hamilton’s Action Principle are unavailable if the Laws of Motion are derived using either d’Alembert’s Principle or Newton’s Laws of Motion.
+2: Philosophical road map of the hierarchy of stages involved in analytical mechanics. Hamilton’s Action Principle is the foundation of analytical mechanics. Stage 1 uses Hamilton’s Principle to derive the Lagrangian and Hamiltonian. Stage 2 uses either the Lagrangian or Hamiltonian to derive the equations of motion for the system. Stage 3 uses these equations of motion to solve for the actual motion using the assumed initial conditions. The Lagrangian approach can be derived directly based on d’Alembert’s Principle. Newtonian mechanics can be derived directly based on Newton’s Laws of Motion. The advantages and power of Hamilton’s Action Principle are unavailable if the Laws of Motion are derived using either d’Alembert’s Principle or Newton’s Laws of Motion.
 :::
 
 Figure 2 presents a philosophical roadmap illustrating the hierarchy of philosophical approaches based on Hamilton’s Action Principle, that are available for deriving the equations of motion of a system. The primary ${\bf Stage1}$ uses Hamilton’s Action functional, $S = \int^{t_f}_{t_i} L ({\bf q}, {\bf \dot{q}}, t) dt$ to derive the Lagrangian, and Hamiltonian functionals which provide the most fundamental and sophisticated level of understanding. ${\bf Stage1}$ involves specifying all the active degrees of freedom, as well as the interactions involved. ${\bf Stage2}$ uses the Lagrangian or Hamiltonian functionals, derived at ${\bf Stage1}$, in order to derive the equations of motion for the system of interest. ${\bf Stage3}$ then uses these derived equations of motion to solve for the motion of the system subject to a given set of initial boundary conditions. Note that Lagrange first derived Lagrangian mechanics based on d’ Alembert’s Principle, while Newton’s Laws of Motion specify the equations of motion used in Newtonian mechanics.

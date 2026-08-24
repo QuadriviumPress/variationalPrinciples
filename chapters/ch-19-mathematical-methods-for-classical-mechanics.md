@@ -5,9 +5,9 @@ label: ch-19-mathematical-methods-for-classical-mechanics
 ---
 
 
-# 19. Mathematical Methods for Classical Mechanics
-
 (ch-19)=
+
+# 19. Mathematical Methods for Classical Mechanics
 
 ## 19.1: Introduction
 
@@ -30,13 +30,13 @@ Most applications of matrix algebra in this book are restricted to real, symmetr
 A matrix is a rectangular array of numbers with $M$ rows and $N$ columns. The notation used for an element of a matrix is $A_{ij}$ where $i$ designates the row and $j$ designates the column of this matrix element in the matrix $\mathbf{A}$. Convention denotes a matrix $\mathbf{A}$ as
 
 $$
-\mathbf{A} \equiv \begin{pmatrix} A_{11} & A_{12} & \dots & A_{1(N−1)} & A_{1N} \\ A_{21} & A_{22} & .. & A_{2(N−1)} & A_{2N} \\ : & : & A_{ij} & : & : \\ A_{(M−1)1} & A_{(M−1)2} & .. & A_{(M−1)(N−1)} & A_{(M−1)N} \\ A_{M1} & A_{M2} & \dots & A_{M(N−1)} & A_{MN} \end{pmatrix} \label{A.1}
+\mathbf{A} \equiv \begin{pmatrix} A_{11} & A_{12} & \dots & A_{1(N−1)} & A_{1N} \\ A_{21} & A_{22} & .. & A_{2(N−1)} & A_{2N} \\ : & : & A_{ij} & : & : \\ A_{(M−1)1} & A_{(M−1)2} & .. & A_{(M−1)(N−1)} & A_{(M−1)N} \\ A_{M1} & A_{M2} & \dots & A_{M(N−1)} & A_{MN} \end{pmatrix} \tag{A.1} \label{eq-a-1}
 $$
 
 Matrices can be square, $M = N$, or rectangular $M \neq N$. Matrices having only one row or column are called row or column vectors respectively, and need only a single subscript label. For example,
 
 $$
-\mathbf{A} = \begin{pmatrix} A_1 \\ A_2 \\ : \\ A_{M−1} \\ A_M \end{pmatrix} \label{A.2}
+\mathbf{A} = \begin{pmatrix} A_1 \\ A_2 \\ : \\ A_{M−1} \\ A_M \end{pmatrix} \tag{A.2} \label{eq-a-2}
 $$
 
 #### Matrix manipulation
@@ -46,23 +46,23 @@ Matrices are defined to obey certain rules for matrix manipulation as given belo
 1) Multiplication of a matrix by a scalar $\lambda$ simply multiplies each matrix element by $\lambda$.
 
 $$
-C_{ij} = \lambda A_{ij} \label{A.3}
+C_{ij} = \lambda A_{ij} \tag{A.3} \label{eq-a-3}
 $$
 
 2) Addition of two matrices $\mathbf{A}$ and $\mathbf{B}$ having the same rank, i.e. the number of columns, is given by
 
 $$
-C_{ij} = A_{ij} + B_{ij} \label{A.4}
+C_{ij} = A_{ij} + B_{ij} \tag{A.4} \label{eq-a-4}
 $$
 
 3) Multiplication of a matrix $\mathbf{A}$ by a matrix $\mathbf{B}$ is defined only if the number of columns in $\mathbf{A}$ equals the number of rows in $\mathbf{B}$. The product matrix $\mathbf{C}$ is given by the **matrix product**
 
 $$
-\mathbf{C} = \mathbf{A} \cdot \mathbf{B} \label{A.5}
+\mathbf{C} = \mathbf{A} \cdot \mathbf{B} \tag{A.5} \label{eq-a-5}
 $$
 
 $$
-C_{ij} = [AB]_{ij} = \sum_k A_{ik}B_{kj} \label{A.6}
+C_{ij} = [AB]_{ij} = \sum_k A_{ik}B_{kj} \tag{A.6} \label{eq-a-6}
 $$
 
 For example, if both $\mathbf{A}$ and $\mathbf{B}$ are rank three symmetric matrices then
@@ -74,7 +74,7 @@ $$
 In general, multiplication of matrices $\mathbf{A}$ and $\mathbf{B}$ is noncommutative, i.e.
 
 $$
-\mathbf{A} \cdot \mathbf{B} \neq \mathbf{B} \cdot \mathbf{A} \label{A.7}
+\mathbf{A} \cdot \mathbf{B} \neq \mathbf{B} \cdot \mathbf{A} \tag{A.7} \label{eq-a-7}
 $$
 
 In the special case when $\mathbf{A} \cdot \mathbf{B} = \mathbf{B} \cdot \mathbf{A}$ then the matrices are said to commute.
@@ -84,7 +84,7 @@ In the special case when $\mathbf{A} \cdot \mathbf{B} = \mathbf{B} \cdot \mathbf
 The *transpose* of a matrix $\mathbf{A}$ will be denoted by $\mathbf{A}^T$ and is given by interchanging rows and columns, that is
 
 $$
-\left( A^T \right)_{ij} = A_{ji} \label{A.8}
+\left( A^T \right)_{ij} = A_{ji} \tag{A.8} \label{eq-a-8}
 $$
 
 The transpose of a column vector is a row vector. Note that older texts use the symbol $\mathbf{\tilde{A}}$ for the transpose.
@@ -94,13 +94,13 @@ The transpose of a column vector is a row vector. Note that older texts use the 
 The *identity (unity) matrix* $\mathbb{I}$ is diagonal with diagonal elements equal to 1, that is
 
 $$
-\mathbb{I}_{ij} = \delta_{ij} \label{A.9}
+\mathbb{I}_{ij} = \delta_{ij} \tag{A.9} \label{eq-a-9}
 $$
 
 where the Kronecker delta symbol is defined by
 
 $$
-\begin{align} \delta_{ik} & = 0 && \text{ if } i \neq k \label{A.10} \\ & = 1 && \text{ if } i = k \nonumber\end{align}
+\begin{align} \delta_{ik} & = 0 && \text{ if } i \neq k \tag{A.10} \label{eq-a-10} \\ & = 1 && \text{ if } i = k \nonumber\end{align}
 $$
 
 #### Inverse matrix $\mathbf{A}^{−1}$
@@ -108,7 +108,7 @@ $$
 If a matrix is non-singular, that is, its determinant is non-zero, then it is possible to define an *inverse* matrix $\mathbf{A}^{−1}$. A square matrix has an inverse matrix for which the product
 
 $$
-\mathbf{A} \cdot \mathbf{A}^{−1} = \mathbb{I} \label{A.11}
+\mathbf{A} \cdot \mathbf{A}^{−1} = \mathbb{I} \tag{A.11} \label{eq-a-11}
 $$
 
 #### Orthogonal matrix
@@ -116,13 +116,13 @@ $$
 A matrix with *real elements* is *orthogonal* if
 
 $$
-\mathbf{A}^T = \mathbf{A}^{−1} \label{A.12}
+\mathbf{A}^T = \mathbf{A}^{−1} \tag{A.12} \label{eq-a-12}
 $$
 
 That is
 
 $$
-\sum_k \left( A^T \right)_{ik} A_{kj} = \sum_k A_{ki}A_{kj} = \delta_{ij} \label{A.13}
+\sum_k \left( A^T \right)_{ik} A_{kj} = \sum_k A_{ki}A_{kj} = \delta_{ij} \tag{A.13} \label{eq-a-13}
 $$
 
 #### Adjoint matrix $A^{\dagger}$
@@ -130,7 +130,7 @@ $$
 For a matrix with *complex elements*, the *adjoint* matrix, denoted by $A^{\dagger}$ is defined as the transpose of the complex conjugate
 
 $$
-\left( A^{\dagger}\right)_{ij} = A^{*}_{ji} \label{A.14}
+\left( A^{\dagger}\right)_{ij} = A^{*}_{ji} \tag{A.14} \label{eq-a-14}
 $$
 
 #### Hermitian matrix
@@ -138,25 +138,25 @@ $$
 The *Hermitian conjugate* of a complex matrix $\mathbf{H}$ is denoted as $\mathbf{H}^{\dagger}$ and is defined as
 
 $$
-\mathbf{H}^{\dagger} = \left( \mathbf{H}^T \right)^{*} = (\mathbf{H}^{*})^T \label{A.15}
+\mathbf{H}^{\dagger} = \left( \mathbf{H}^T \right)^{*} = (\mathbf{H}^{*})^T \tag{A.15} \label{eq-a-15}
 $$
 
 Therefore
 
 $$
-H^{\dagger}_{ij} = H^{*}_{ji} \label{A.16}
+H^{\dagger}_{ij} = H^{*}_{ji} \tag{A.16} \label{eq-a-16}
 $$
 
 A matrix is *Hermitian* if it is equal to its adjoint
 
 $$
-\mathbf{H}^{\dagger} = \mathbf{H} \label{A.17}
+\mathbf{H}^{\dagger} = \mathbf{H} \tag{A.17} \label{eq-a-17}
 $$
 
 that is
 
 $$
-H^{\dagger}_{ij} = H^{*}_{ji} = H_{ij} \label{A.18}
+H^{\dagger}_{ij} = H^{*}_{ji} = H_{ij} \tag{A.18} \label{eq-a-18}
 $$
 
 A matrix that is both Hermitian and has real elements is a symmetric matrix since complex conjugation has no effect.
@@ -166,23 +166,23 @@ A matrix that is both Hermitian and has real elements is a symmetric matrix sinc
 A matrix with *complex* elements is *unitary* if its inverse is equal to the adjoint matrix
 
 $$
-\mathbf{U}^{\dagger} = \mathbf{U}^{−1} \label{A.19}
+\mathbf{U}^{\dagger} = \mathbf{U}^{−1} \tag{A.19} \label{eq-a-19}
 $$
 
 which is equivalent to
 
 $$
-\mathbf{U}^{\dagger}\mathbf{U} = \mathbb{I} \label{A.20}
+\mathbf{U}^{\dagger}\mathbf{U} = \mathbb{I} \tag{A.20} \label{eq-a-20}
 $$
 
-A unitary matrix with real elements is an orthogonal matrix as given in Equation \ref{A.12}.
+A unitary matrix with real elements is an orthogonal matrix as given in Equation [A.12](#eq-a-12).
 
 #### Trace of a square matrix $Tr \mathbf{A}$
 
 The *trace* of a square matrix, denoted by $Tr\mathbf{A}$, is defined as the sum of the diagonal matrix elements.
 
 $$
-Tr\mathbf{A} = \sum^N_{i=1} A_{ii} \label{A.21}
+Tr\mathbf{A} = \sum^N_{i=1} A_{ii} \tag{A.21} \label{eq-a-21}
 $$
 
 #### Inner product of column vectors
@@ -192,29 +192,29 @@ $$
 The generalization of the scalar (dot) product in Euclidean space is called the **inner product**. Exploiting the rules of matrix multiplication requires taking the transpose of the first column vector to form a row vector which then is multiplied by the second column vector using the conventional rules for matrix multiplication. That is, for rank $N$ vectors
 
 $$
-[\mathbf{X}] \cdot [\mathbf{Y}] = \begin{pmatrix} X_1 \\ X_2 \\ : \\ X_N \end{pmatrix} \cdot \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_N \end{pmatrix} = [\mathbf{X}]^T [\mathbf{Y}] = \begin{pmatrix} X_1 & X_2 & .. & X_N \end{pmatrix} \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_N \end{pmatrix} = \sum^N_{i=1} X_iY_i \label{A.22}
+[\mathbf{X}] \cdot [\mathbf{Y}] = \begin{pmatrix} X_1 \\ X_2 \\ : \\ X_N \end{pmatrix} \cdot \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_N \end{pmatrix} = [\mathbf{X}]^T [\mathbf{Y}] = \begin{pmatrix} X_1 & X_2 & .. & X_N \end{pmatrix} \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_N \end{pmatrix} = \sum^N_{i=1} X_iY_i \tag{A.22} \label{eq-a-22}
 $$
 
 For rank $N = 3$ this inner product agrees with the conventional definition of the scalar product and gives a result that is a scalar. For the special case when $[\mathbf{A}] \cdot [\mathbf{B}]=0$ then the two matrices are called *orthogonal*. The magnitude squared of a column vector is given by the inner product
 
 $$
-[\mathbf{X}] \cdot [\mathbf{X}] = \sum^N_{i=1} (X_i)^2 \geq 0 \label{A.23}
+[\mathbf{X}] \cdot [\mathbf{X}] = \sum^N_{i=1} (X_i)^2 \geq 0 \tag{A.23} \label{eq-a-23}
 $$
 
 Note that this is only positive.
 
 ##### Complex vectors
 
-For vectors having complex matrix elements the inner product is generalized to a form that is consistent with Equation \ref{A.22} when the column vector matrix elements are real.
+For vectors having complex matrix elements the inner product is generalized to a form that is consistent with Equation [A.22](#eq-a-22) when the column vector matrix elements are real.
 
 $$
-[\mathbf{X}]^{*} \cdot [\mathbf{Y}]=[\mathbf{X}]^{\dagger} [\mathbf{Y}] = \begin{pmatrix} X^{*}_1 & X^{*}_2 & .. & X^{*}_{N−1} & X^{*}_N \end{pmatrix} \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_{N−1} \\ Y_N \end{pmatrix} = \sum^N_{i=1} X^{*}_i Y_i \label{A.24}
+[\mathbf{X}]^{*} \cdot [\mathbf{Y}]=[\mathbf{X}]^{\dagger} [\mathbf{Y}] = \begin{pmatrix} X^{*}_1 & X^{*}_2 & .. & X^{*}_{N−1} & X^{*}_N \end{pmatrix} \begin{pmatrix} Y_1 \\ Y_2 \\ : \\ Y_{N−1} \\ Y_N \end{pmatrix} = \sum^N_{i=1} X^{*}_i Y_i \tag{A.24} \label{eq-a-24}
 $$
 
 For the special case
 
 $$
-[\mathbf{X}]^{*} \cdot [\mathbf{X}]=[\mathbf{X}]^{\dagger} [\mathbf{X}] = \sum^N_{i=1} X^{*}_i X_i \geq 0 \label{A.25}
+[\mathbf{X}]^{*} \cdot [\mathbf{X}]=[\mathbf{X}]^{\dagger} [\mathbf{X}] = \sum^N_{i=1} X^{*}_i X_i \geq 0 \tag{A.25} \label{eq-a-25}
 $$
 
 ### Determinants
@@ -224,7 +224,7 @@ $$
 The determinant of a square matrix with $N$ rows equals a single number derived using the matrix elements of the matrix. The determinant is denoted as $\det \mathbf{A}$ or $|\mathbf{A}|$ where
 
 $$
-|\mathbf{A}| = \sum^N_{j=1} \varepsilon (j_1, j_2, \dots .j_N )A_{1j_1}A_{2j_2} \dots A_{Nj_N} \label{A.26}
+|\mathbf{A}| = \sum^N_{j=1} \varepsilon (j_1, j_2, \dots .j_N )A_{1j_1}A_{2j_2} \dots A_{Nj_N} \tag{A.26} \label{eq-a-26}
 $$
 
 where $\varepsilon (j_1, j_2, \dots .j_N )$ is the permutation index which is either even or odd depending on the number of permutations required to go from the normal order $(1, 2, 3, \dots N)$ to the sequence $(j_1j_2j_3\dots j_N )$.
@@ -232,26 +232,37 @@ where $\varepsilon (j_1, j_2, \dots .j_N )$ is the permutation index which is ei
 For example for $N = 3$ the determinant is
 
 $$
-|\mathbf{A}| = A_{11}A_{22}A_{33} + A_{12}A_{23}A_{31} + A_{13}A_{21}A_{32} − A_{13}A_{22}A_{31} − A_{11}A_{23}A_{32} − A_{12}A_{21}A_{33} \label{A.27}
+|\mathbf{A}| = A_{11}A_{22}A_{33} + A_{12}A_{23}A_{31} + A_{13}A_{21}A_{32} − A_{13}A_{22}A_{31} − A_{11}A_{23}A_{32} − A_{12}A_{21}A_{33} \tag{A.27} \label{eq-a-27}
 $$
 
 #### Properties
 
 1. The value of a determinant $|A| = 0$, if
 
-all elements of a row (column) are zero.
-all elements of a row (column) are identical with, or multiples of, the corresponding elements of another row (column).
+   1. all elements of a row (column) are zero.
+
+   2. all elements of a row (column) are identical with, or multiples of, the corresponding elements of another row (column).
+
 2. The value of a determinant is unchanged if
 
-rows and columns are interchanged.
-a linear combination of any number of rows is added to any one row.
+   1. rows and columns are interchanged.
+
+   2. a linear combination of any number of rows is added to any one row.
+
 3. The value of a determinant changes sign if two rows, or any two columns, are interchanged.
+
 4. Transposing a square matrix does not change its determinant. $\left|\mathbf{A}^T\right| = |\mathbf{A}|$
+
 5. If any row (column) is multiplied by a constant factor then the value of the determinant is multiplied by the same factor.
+
 6. The determinant of a diagonal matrix equals the product of the diagonal matrix elements. That is, when $A_{ij} = \lambda i\delta_{ij}$ then $|\mathbf{A}| = \lambda_1\lambda_2\lambda_3\dots \lambda_N$
+
 7. The determinant of the identity (unity) matrix $|\mathbb{I}| = 1$.
+
 8. The determinant of the null matrix, for which all matrix elements are zero, $|\mathbf{0}| = 0$
+
 9. A *singular* matrix has a determinant equal to zero.
+
 10. If each element of any row (column) appears as the sum (difference) of two or more quantities, then the determinant can be written as a sum (difference) of two or more determinants of the same order. For example for order $N = 2$, 
 $$
 \begin{vmatrix} A_{11} \pm B_{11} & A_{12} \pm B_{12} \\ A_{21} & A_{22} \end{vmatrix} = \begin{vmatrix} A_{11} & A_{12} \\ A_{21} & A_{22} \end{vmatrix} \pm \begin{vmatrix} B_{11} & B_{12} \\ A_{21} & A_{22} \end{vmatrix} \nonumber
@@ -264,13 +275,13 @@ $$
 For a square matrix having $N$ rows the cofactor is obtained by removing the $i^{th}$ row and the $j^{th}$ column and then collapsing the remaining matrix elements into a square matrix with $N − 1$ rows while preserving the order of the matrix elements. This is called the complementary minor which is denoted as $A^{(ij)}$. The matrix elements of the cofactor square matrix $\mathbf{a}$ are obtained by multiplying the determinant of the $(ij)$ complementary minor by the phase factor $(−1)^{i+j}$. That is
 
 $$
-a_{ij} = (−1)^{i+j} \left| A^{(ij)} \right| \label{A.28}
+a_{ij} = (−1)^{i+j} \left| A^{(ij)} \right| \tag{A.28} \label{eq-a-28}
 $$
 
 The cofactor matrix has the property that
 
 $$
-\sum^N_{k=1} A_{ik}a_{jk} = \delta_{ij} |\mathbf{A}| = \sum^N_{k=1} A_{ki}a_{kj} \label{A.29}
+\sum^N_{k=1} A_{ik}a_{jk} = \delta_{ij} |\mathbf{A}| = \sum^N_{k=1} A_{ki}a_{kj} \tag{A.29} \label{eq-a-29}
 $$
 
 Cofactors are used to expand the determinant of a square matrix in order to evaluate the determinant.
@@ -280,61 +291,61 @@ Cofactors are used to expand the determinant of a square matrix in order to eval
 The $(i, j)$ matrix elements of the inverse matrix $\mathbf{A}^{−1}$ of a non-singular matrix $\mathbf{A}$ are given by the ratio of the cofactor $a_{ji}$ and the determinant $|\mathbf{A}|$, that is
 
 $$
-\mathbf{A}^{−1}_{ij} = \frac{1}{ |\mathbf{A}|} a_{ji} \label{A.30}
+\mathbf{A}^{−1}_{ij} = \frac{1}{ |\mathbf{A}|} a_{ji} \tag{A.30} \label{eq-a-30}
 $$
 
-Equations \ref{A.28} and \ref{A.29} can be used to evaluate the $i, j$ element of the matrix product $\left( \mathbf{A}^{−1}\mathbf{A}\right)$
+Equations [A.28](#eq-a-28) and [A.29](#eq-a-29) can be used to evaluate the $i, j$ element of the matrix product $\left( \mathbf{A}^{−1}\mathbf{A}\right)$
 
 $$
-\left( \mathbf{A}^{−1}\mathbf{A}\right)_{ij} = \sum^N_{k=1} \mathbf{A}^{−1}_{ik} A_{kj} = \frac{1}{ |\mathbf{A}|} \sum^N_{k=1} a_{ji}A_{kj} = \frac{1}{ |\mathbf{A}|} \delta_{ji} |\mathbf{A}| = \delta_{ij} = \mathbb{I}_{ij} \label{A.31}
+\left( \mathbf{A}^{−1}\mathbf{A}\right)_{ij} = \sum^N_{k=1} \mathbf{A}^{−1}_{ik} A_{kj} = \frac{1}{ |\mathbf{A}|} \sum^N_{k=1} a_{ji}A_{kj} = \frac{1}{ |\mathbf{A}|} \delta_{ji} |\mathbf{A}| = \delta_{ij} = \mathbb{I}_{ij} \tag{A.31} \label{eq-a-31}
 $$
 
-This agrees with Equation \ref{A.11} that $\mathbf{A} \cdot \mathbf{A}^{−1} = \mathbb{I}$.
+This agrees with Equation [A.11](#eq-a-11) that $\mathbf{A} \cdot \mathbf{A}^{−1} = \mathbb{I}$.
 
 The inverse of rank 2 or 3 matrices is required frequently when determining the eigen-solutions for rigidbody rotation, or coupled oscillator, problems in classical mechanics as described in chapters $11$ and $12$. Therefore it is convenient to list explicitly the inverse matrices for both rank 2 and rank 3 matrices.
 
 #### Inverse for rank 2 matrices:
 
 $$
-\mathbf{A}^{−1} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}^{−1} = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} d & −b \\ −c & a \end{bmatrix} = \frac{1}{ (a d − bc)} \begin{bmatrix} d & −b \\ −c & a \end{bmatrix} \label{A.32}
+\mathbf{A}^{−1} = \begin{bmatrix} a & b \\ c & d \end{bmatrix}^{−1} = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} d & −b \\ −c & a \end{bmatrix} = \frac{1}{ (a d − bc)} \begin{bmatrix} d & −b \\ −c & a \end{bmatrix} \tag{A.32} \label{eq-a-32}
 $$
 
-where the determinant of $\mathbf{A}$ is written explicitly in Equation \ref{A.32}.
+where the determinant of $\mathbf{A}$ is written explicitly in Equation [A.32](#eq-a-32).
 
 #### Inverse for rank 3 matrices:
 
 $$
-\mathbf{A}^{−1} =\begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}^{−1} = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} A & B & C \\ D & E & F \\ G & H & I \end{bmatrix}^T = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} A & D & G \\ B & E & H \\ C & F & I \end{bmatrix} \\ = \frac{1}{ a A + bB + cC} \begin{bmatrix} A = (ei − fh) & D = − (bi − ch) & G = (bf − ce) \\ B = − (di − fg) & E = (a i − cg) & H = − (a f − cd) \\ C = (dh − eg) & F = − (a h − bg) & I = (a e − bd) \end{bmatrix} \label{A.33}
+\mathbf{A}^{−1} =\begin{bmatrix} a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}^{−1} = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} A & B & C \\ D & E & F \\ G & H & I \end{bmatrix}^T = \frac{1}{ |\mathbf{A}|} \begin{bmatrix} A & D & G \\ B & E & H \\ C & F & I \end{bmatrix} \\ = \frac{1}{ a A + bB + cC} \begin{bmatrix} A = (ei − fh) & D = − (bi − ch) & G = (bf − ce) \\ B = − (di − fg) & E = (a i − cg) & H = − (a f − cd) \\ C = (dh − eg) & F = − (a h − bg) & I = (a e − bd) \end{bmatrix} \tag{A.33} \label{eq-a-33}
 $$
 
-where the functions $A, B, C, D, E, F, G, H, I$, are equal to rank 2 determinants listed in Equation \ref{A.33}.
+where the functions $A, B, C, D, E, F, G, H, I$, are equal to rank 2 determinants listed in Equation [A.33](#eq-a-33).
 
 ### Reduction of a matrix to diagonal form
 
 Solving coupled linear equations can be reduced to diagonalization of a matrix. Consider the matrix $\mathbf{A}$ operating on the vector $\mathbf{X}$ to produce a vector $\mathbf{Y}$, that are expressed as components with respect to the unprimed coordinate frame, i.e.
 
 $$
-\mathbf{A} \cdot \mathbf{X} = \mathbf{Y} \label{A.34}
+\mathbf{A} \cdot \mathbf{X} = \mathbf{Y} \tag{A.34} \label{eq-a-34}
 $$
 
 Consider that the unitary real matrix $\mathbf{R}$ with rank $n$, rotates the $n$-dimensional un-primed coordinate frame into the primed coordinate frame such that $\mathbf{A}$, $\mathbf{X}$ and $\mathbf{Y}$ are transformed to $\mathbf{A}^{\prime}$, $\mathbf{X}^{\prime}$ and $\mathbf{Y}^{\prime}$ in the rotated primed coordinate frame. Then
 
 $$
-\mathbf{X}^{\prime} = \mathbf{R} \cdot \mathbf{X} \\ \mathbf{Y}^{\prime} = \mathbf{R} \cdot \mathbf{Y} \label{A.35}
+\mathbf{X}^{\prime} = \mathbf{R} \cdot \mathbf{X} \\ \mathbf{Y}^{\prime} = \mathbf{R} \cdot \mathbf{Y} \tag{A.35} \label{eq-a-35}
 $$
 
-With respect to the primed coordinate frame Equation \ref{A.34} becomes
+With respect to the primed coordinate frame Equation [A.34](#eq-a-34) becomes
 
 $$
-\mathbf{R}\cdot(\mathbf{A} \cdot \mathbf{X}) = \mathbf{R} \cdot \mathbf{Y} \label{A.36}
-$$
-
-$$
-\mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^{−1} \cdot \mathbf{R} \cdot \mathbf{X} = \mathbf{R} \cdot \mathbf{Y} \label{A.37}
+\mathbf{R}\cdot(\mathbf{A} \cdot \mathbf{X}) = \mathbf{R} \cdot \mathbf{Y} \tag{A.36} \label{eq-a-36}
 $$
 
 $$
-\mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^{−1} \cdot \mathbf{X}^{\prime} = \mathbf{A}^{\prime} \cdot \mathbf{X}^{\prime} = \mathbf{Y}^{\prime} \label{A.38}
+\mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^{−1} \cdot \mathbf{R} \cdot \mathbf{X} = \mathbf{R} \cdot \mathbf{Y} \tag{A.37} \label{eq-a-37}
+$$
+
+$$
+\mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^{−1} \cdot \mathbf{X}^{\prime} = \mathbf{A}^{\prime} \cdot \mathbf{X}^{\prime} = \mathbf{Y}^{\prime} \tag{A.38} \label{eq-a-38}
 $$
 
 using the fact that the identity matrix $\mathbf{I} = \mathbf{R} \cdot \mathbf{R}^{−1} = \mathbf{R} \cdot \mathbf{R}^T$ since the rotation matrix in $n$ dimensions is orthogonal.
@@ -342,43 +353,43 @@ using the fact that the identity matrix $\mathbf{I} = \mathbf{R} \cdot \mathbf{R
 Thus we have that the rotated matrix
 
 $$
-\mathbf{A}^{\prime} = \mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^T \label{A.39}
+\mathbf{A}^{\prime} = \mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^T \tag{A.39} \label{eq-a-39}
 $$
 
 Let us assume that this transformed matrix is diagonal, then it can be written as the product of the unit matrix $\mathbb{I}$ and a vector of scalar numbers called the characteristic roots $\lambda$ as
 
 $$
-\mathbf{A}^{\prime} = \mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^T = \lambda \mathbb{I} \label{A.40}
+\mathbf{A}^{\prime} = \mathbf{R} \cdot \mathbf{A} \cdot \mathbf{R}^T = \lambda \mathbb{I} \tag{A.40} \label{eq-a-40}
 $$
 
 using the fact that $\mathbf{R}^T= \mathbf{R}^{−1}$ then gives
 
 $$
-\mathbf{R}^T \cdot (\lambda \mathbb{I}) = \mathbf{A}^{\prime} \cdot \mathbf{R}^T \label{A.41}
+\mathbf{R}^T \cdot (\lambda \mathbb{I}) = \mathbf{A}^{\prime} \cdot \mathbf{R}^T \tag{A.41} \label{eq-a-41}
 $$
 
-Let both sides of Equation \ref{A.41} act on $\mathbf{X}^{\prime}$ which gives
+Let both sides of Equation [A.41](#eq-a-41) act on $\mathbf{X}^{\prime}$ which gives
 
 $$
-\lambda \mathbb{I} \cdot \mathbf{X}^{\prime} = \mathbf{A}^{\prime} \cdot\mathbf{X}^{\prime} \label{A.42}
+\lambda \mathbb{I} \cdot \mathbf{X}^{\prime} = \mathbf{A}^{\prime} \cdot\mathbf{X}^{\prime} \tag{A.42} \label{eq-a-42}
 $$
 
 or
 
 $$
-[ \lambda \mathbb{I}−\mathbf{A}^{\prime} ] \mathbf{X}^{\prime} = 0 \label{A.43}
+[ \lambda \mathbb{I}−\mathbf{A}^{\prime} ] \mathbf{X}^{\prime} = 0 \tag{A.43} \label{eq-a-43}
 $$
 
-This represents a set of $n$ homogeneous linear algebraic equations in $n$ unknowns $\mathbf{X}^{\prime}$ where $\lambda$ is a set of characteristic roots, (eigenvalues) with corresponding eigenfunctions $\mathbf{X}^{\prime}$. Ignoring the trivial case of $\mathbf{X}^{\prime}$ being zero, then \ref{A.43} requires that the *secular determinant* of the bracket be zero, that is
+This represents a set of $n$ homogeneous linear algebraic equations in $n$ unknowns $\mathbf{X}^{\prime}$ where $\lambda$ is a set of characteristic roots, (eigenvalues) with corresponding eigenfunctions $\mathbf{X}^{\prime}$. Ignoring the trivial case of $\mathbf{X}^{\prime}$ being zero, then [A.43](#eq-a-43) requires that the *secular determinant* of the bracket be zero, that is
 
 $$
-|\lambda \mathbb{I}−\mathbf{A}^{\prime}| = 0 \label{A.44}
+|\lambda \mathbb{I}−\mathbf{A}^{\prime}| = 0 \tag{A.44} \label{eq-a-44}
 $$
 
 The determinant can be expanded and factored into the form
 
 $$
-(\lambda − \lambda_1) (\lambda − \lambda_2) (\lambda − \lambda_3)\dots .(\lambda − \lambda_n)=0 \label{A.45}
+(\lambda − \lambda_1) (\lambda − \lambda_2) (\lambda − \lambda_3)\dots .(\lambda − \lambda_n)=0 \tag{A.45} \label{eq-a-45}
 $$
 
 where the $n$ eigenvalues are $\lambda = \lambda_1, \lambda_2, \dots \lambda_n$ of the matrix $\mathbf{A}^{\prime}$.
@@ -386,7 +397,7 @@ where the $n$ eigenvalues are $\lambda = \lambda_1, \lambda_2, \dots \lambda_n$ 
 The eigenvectors $\mathbf{X}^{\prime}$ corresponding to each eigenvalue are determined by substituting a given eigenvalue $\lambda_i$ into the relation
 
 $$
-\mathbf{X}^{\prime T} \cdot \mathbf{A}^{\prime} \cdot \mathbf{X}^{\prime} = [\lambda_i \delta_{ij} ] \label{A.46}
+\mathbf{X}^{\prime T} \cdot \mathbf{A}^{\prime} \cdot \mathbf{X}^{\prime} = [\lambda_i \delta_{ij} ] \tag{A.46} \label{eq-a-46}
 $$
 
 If all the eigenvalues are distinct, i.e. different, then this set of $n$ equations completely determines the ratio of the components of each eigenvector along the axes of the coordinate frame. However, when two or more eigenvalues are identical, then the reduction to a true diagonal form is not possible and one has the freedom to select an appropriate eigenvector that is orthogonal to the remaining axes.
@@ -402,28 +413,29 @@ In summary, the matrix can only be fully diagonalized if
 A frequent application of matrices in classical mechanics is for solving a system of homogeneous linear equations of the form
 
 $$
-\begin{matrix} A_{11}x_1 & +A_{12}x_2 & \dots \dots & +A_{1n}x_n & = & 0 \\ A_{11}x_1 & +A_{12}x_2 & \dots \dots & +A_{1n}x_n & = & 0 \\ \dots .. & \dots \dots & \dots .. & \dots .. & = & \dots . \\ A_{n1}x_1 & +A_{n2}x_2 & \dots .. & +A_{nn}x_n & = & 0 \end{matrix} \label{A.47}
+\begin{matrix} A_{11}x_1 & +A_{12}x_2 & \dots \dots & +A_{1n}x_n & = & 0 \\ A_{11}x_1 & +A_{12}x_2 & \dots \dots & +A_{1n}x_n & = & 0 \\ \dots .. & \dots \dots & \dots .. & \dots .. & = & \dots . \\ A_{n1}x_1 & +A_{n2}x_2 & \dots .. & +A_{nn}x_n & = & 0 \end{matrix} \tag{A.47} \label{eq-a-47}
 $$
 
 Making the following definitions
 
 $$
-\mathbf{A} = \begin{pmatrix} A_{11} & A_{12} & \dots & A_{1n} \\ A_{21} & A_{22} & \dots & A_{2n} \\ \dots & \dots & \dots & \dots \\ A_{n1} & A_{n2} & \dots & A_{nn} \end{pmatrix} \label{A.48}
+\mathbf{A} = \begin{pmatrix} A_{11} & A_{12} & \dots & A_{1n} \\ A_{21} & A_{22} & \dots & A_{2n} \\ \dots & \dots & \dots & \dots \\ A_{n1} & A_{n2} & \dots & A_{nn} \end{pmatrix} \tag{A.48} \label{eq-a-48}
 $$
 
 $$
-\mathbf{X} = \begin{pmatrix} x_1 \\ x_2 \\ \dots \\ x_n \end{pmatrix} \label{A.49}
+\mathbf{X} = \begin{pmatrix} x_1 \\ x_2 \\ \dots \\ x_n \end{pmatrix} \tag{A.49} \label{eq-a-49}
 $$
 
 Then the set of linear equations can be written in a compact form using the matrices
 
 $$
-\mathbf{A} \cdot \mathbf{X} =0 \label{A.50}
+\mathbf{A} \cdot \mathbf{X} =0 \tag{A.50} \label{eq-a-50}
 $$
 
-which can be solved using Equation \ref{A.43}. Ensure that you are able to diagonalize a matrices with rank 2 and 3. You can use Mathematica, Maple, MatLab, or other such mathematical computer programs to diagonalize larger matrices.
+which can be solved using Equation [A.43](#eq-a-43). Ensure that you are able to diagonalize a matrices with rank 2 and 3. You can use Mathematica, Maple, MatLab, or other such mathematical computer programs to diagonalize larger matrices.
 
-Example 19.1: Eigenvalues and eigenvectors of a real symmetric matrix
+::::{admonition} Example 19.2.1: Eigenvalues and eigenvectors of a real symmetric matrix
+:class: example
 
 Consider the matrix
 
@@ -431,7 +443,7 @@ $$
 \mathbf{A} = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}\nonumber
 $$
 
-The secular determinant is given by \ref{A.42}
+The secular determinant is given by [A.42](#eq-a-42)
 
 $$
 \begin{vmatrix} −\lambda & 1 & 0 \\ 1 & −\lambda & 0 \\ 0 & 0 & −\lambda \end{vmatrix} = 0 \nonumber
@@ -445,13 +457,14 @@ $$
 
 Thus the three eigen values are $\lambda = −1, 0, 1$.
 
-To find each eigenvectors we substitute the corresponding eigenvalue into Equation \ref{A.48}.
+To find each eigenvectors we substitute the corresponding eigenvalue into Equation [A.48](#eq-a-48).
 
 $$
 \begin{pmatrix} −\lambda & 1 & 0 \\ 1 & −\lambda & 0 \\ 0 & 0 & −\lambda \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix} \nonumber
 $$
 
 The eigenvalue $\lambda = −1$ yields $x + y = 0$ and $z = 0$. Thus the eigen vector is $r_1 = ( \frac{1}{\sqrt{2}}, \frac{-1}{\sqrt{2}}, 0)$. The eigenvalue $\lambda = 0$ yields $x = 0$ and $y = 0$. Thus the eigen vector is $r_2 = (0, 0, 1)$. The eigenvalue $\lambda = 1$ yields $−x + y = 0$ and $z = 0$. Thus the eigen vector is $r_3 = ( \frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0)$. The orthogonality of these three eigen vectors, which correspond to three distinct eigenvalues, can be verified.
+::::
 
 ## 19.3: Appendix - Vector algebra
 
@@ -462,7 +475,7 @@ The important force fields in classical mechanics, namely, gravitation, electric
 A vector $\mathbf{a}$ has both a magnitude $|a|$ and a direction defined by the *unit vector* $\mathbf{\hat{e}}_a$, that is, the vector can be written as a bold character $\mathbf{a}$ where
 
 $$
-\mathbf{a} =a \cdot \mathbf{\hat{e}}_a \label{B.1}
+\mathbf{a} =a \cdot \mathbf{\hat{e}}_a \tag{B.1} \label{eq-b-1}
 $$
 
 where by convention the implied modulus sign is omitted. The hat symbol on the vector $\mathbf{\hat{e}}_a$ designates that this is a unit vector with modulus $|\mathbf{\hat{e}}_a| = 1$.
@@ -470,7 +483,7 @@ where by convention the implied modulus sign is omitted. The hat symbol on the v
 Vector force fields are assumed to be linear, and consequently they obey the principle of superposition, are commutative, associative, and distributive as illustrated below for three vectors $\mathbf{a}, \mathbf{b}, \mathbf{c}$ plus a scalar multiplier $\gamma$.
 
 $$
-\begin{align} \mathbf{a} \pm \mathbf{b} &= \pm \mathbf{b} + \mathbf{a} \label{B.2} \\[4pt] \mathbf{a}+ (\mathbf{b} + \mathbf{c}) &= (\mathbf{a} + \mathbf{b}) +\mathbf{c} \\[4pt] \gamma (\mathbf{a} + \mathbf{b}) &= \gamma \mathbf{a}+\gamma \mathbf{b} \end{align}
+\begin{align} \mathbf{a} \pm \mathbf{b} &= \pm \mathbf{b} + \mathbf{a} \tag{B.2} \label{eq-b-2} \\[4pt] \mathbf{a}+ (\mathbf{b} + \mathbf{c}) &= (\mathbf{a} + \mathbf{b}) +\mathbf{c} \\[4pt] \gamma (\mathbf{a} + \mathbf{b}) &= \gamma \mathbf{a}+\gamma \mathbf{b} \end{align}
 $$
 
 The manipulation of vectors is greatly facilitated by use of components along an orthogonal coordinate system defined by three orthogonal unit vectors $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$. For example the cartesian coordinate system is defined by three unit vectors which, by convention, are called $(\mathbf{\hat{i}},\mathbf{\hat{j}}, \mathbf{\hat{k}})$.
@@ -482,39 +495,39 @@ Multiplication of two vectors can produce a 9−component tensor that can be rep
 The *scalar product* of two vectors is defined to be
 
 $$
-\mathbf{a} \cdot \mathbf{b} = |a| |b| \cos \theta \label{B.3}
+\mathbf{a} \cdot \mathbf{b} = |a| |b| \cos \theta \tag{B.3} \label{eq-b-3}
 $$
 
 where $\theta$ is the angle between the two vectors. It is a scalar and thus is independent of the orientation of the coordinate axis system. Note that the scalar product commutes, is distributive, and associative with a scalar multiplier, that is
 
 $$
-\mathbf{a} \cdot\mathbf{ b} = \mathbf{b} \cdot \mathbf{a} \label{B.4} \\ \mathbf{a}\cdot (\mathbf{b} + \mathbf{c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c} \\ (\lambda \mathbf{a})\cdot \mathbf{b} = \lambda (\mathbf{b} \cdot \mathbf{a})
+\mathbf{a} \cdot\mathbf{ b} = \mathbf{b} \cdot \mathbf{a} \tag{B.4} \label{eq-b-4} \\ \mathbf{a}\cdot (\mathbf{b} + \mathbf{c}) = \mathbf{a} \cdot \mathbf{b} + \mathbf{a} \cdot \mathbf{c} \\ (\lambda \mathbf{a})\cdot \mathbf{b} = \lambda (\mathbf{b} \cdot \mathbf{a})
 $$
 
 Note that $\mathbf{a} \cdot \mathbf{a} = |a|^2$ and if $\mathbf{a}$ and $\mathbf{b}$ are perpendicular then $\cos \theta = 0$ and thus $\mathbf{a} \cdot \mathbf{b} =0$
 
-If the three unit vectors $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$ form an orthonormal basis, that is, they are orthogonal unit vectors, then from equations \ref{B.3} and \ref{B.4}
+If the three unit vectors $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$ form an orthonormal basis, that is, they are orthogonal unit vectors, then from equations [B.3](#eq-b-3) and [B.4](#eq-b-4)
 
 $$
-\mathbf{\hat{e}}_i \cdot \mathbf{\hat{e}}_k = \delta_{ik} \label{B.5}
+\mathbf{\hat{e}}_i \cdot \mathbf{\hat{e}}_k = \delta_{ik} \tag{B.5} \label{eq-b-5}
 $$
 
 If $\mathbf{\hat{a}}$ is the unit vector for the vector $\mathbf{a}$ then the scalar product of a vector $\mathbf{a}$ with one of these unit vectors $\mathbf{\hat{e}}_n$ gives the cosine of the angle between the vector $\mathbf{a}$ and $\mathbf{\hat{e}}_n$, that is
 
 $$
-\mathbf{a} \cdot \mathbf{\hat{e}}_1 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_1) = |a| \cos \alpha \label{B.6} \\ \mathbf{a} \cdot \mathbf{\hat{e}}_2 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_2) = |a| \cos \beta \\ \mathbf{a} \cdot \mathbf{\hat{e}}_3 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_3) = |a| \cos \gamma
+\mathbf{a} \cdot \mathbf{\hat{e}}_1 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_1) = |a| \cos \alpha \tag{B.6} \label{eq-b-6} \\ \mathbf{a} \cdot \mathbf{\hat{e}}_2 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_2) = |a| \cos \beta \\ \mathbf{a} \cdot \mathbf{\hat{e}}_3 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_3) = |a| \cos \gamma
 $$
 
 where the cosines are called the direction cosines since they define the direction of the vector a with respect to each orthogonal basis unit vector. Moreover, $\mathbf{a} \cdot \mathbf{\hat{e}}_1 = |a| \mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_1 = |a| \cos \alpha$ is the component of $\mathbf{a}$ along the $\mathbf{\hat{e}}_1$ axis. Thus the three components of the vector $\mathbf{a}$ is fully defined by the magnitude $|a|$ and the direction cosines, corresponding to the angles $\alpha, \beta, \gamma$. That is,
 
 $$
-a_1 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_1) = |a| \cos \alpha \label{B.7} \\ a_2 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_2) = |a| \cos \beta \\ a_3 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_3) = |a| \cos \gamma
+a_1 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_1) = |a| \cos \alpha \tag{B.7} \label{eq-b-7} \\ a_2 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_2) = |a| \cos \beta \\ a_3 = |a|(\mathbf{\hat{a}} \cdot \mathbf{\hat{e}}_3) = |a| \cos \gamma
 $$
 
 If the three unit vectors $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$ form an orthonormal basis then the vector is fully defined by
 
 $$
-\mathbf{a} = a_1\mathbf{\hat{e}}_1 + a_2\mathbf{\hat{e}}_2 + a_3\mathbf{\hat{e}}_3 \label{B.8}
+\mathbf{a} = a_1\mathbf{\hat{e}}_1 + a_2\mathbf{\hat{e}}_2 + a_3\mathbf{\hat{e}}_3 \tag{B.8} \label{eq-b-8}
 $$
 
 Consider two vectors
@@ -527,22 +540,22 @@ $$
 \mathbf{b} = b_1\mathbf{\hat{e}}_1 + b_2\mathbf{\hat{e}}_2 + b_3\mathbf{\hat{e}}_3 \nonumber
 $$
 
-Then using \ref{B.5}
+Then using [B.5](#eq-b-5)
 
 $$
-\mathbf{a} \cdot \mathbf{b} =a_1b_1 + a_2b_2 + a_3b_3 = |a| |b| \cos \theta \label{B.9}
+\mathbf{a} \cdot \mathbf{b} =a_1b_1 + a_2b_2 + a_3b_3 = |a| |b| \cos \theta \tag{B.9} \label{eq-b-9}
 $$
 
-where $\theta$ is the angle between the two vectors. In particular, since the direction cosine $\cos \alpha_a = \frac{ a_1}{ |a|}$, then Equation \ref{B.9} gives
+where $\theta$ is the angle between the two vectors. In particular, since the direction cosine $\cos \alpha_a = \frac{ a_1}{ |a|}$, then Equation [B.9](#eq-b-9) gives
 
 $$
-\cos \theta = \cos \alpha_a \cos \alpha_b + \cos \beta_a \cos \beta_b + \cos \gamma_a \cos \gamma_b \label{B.10}
+\cos \theta = \cos \alpha_a \cos \alpha_b + \cos \beta_a \cos \beta_b + \cos \gamma_a \cos \gamma_b \tag{B.10} \label{eq-b-10}
 $$
 
-Note that when $\theta = 0$ then \ref{B.10} gives
+Note that when $\theta = 0$ then [B.10](#eq-b-10) gives
 
 $$
-\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1 \label{B.11}
+\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1 \tag{B.11} \label{eq-b-11}
 $$
 
 ### Vector product
@@ -550,7 +563,7 @@ $$
 The vector product of two vectors is defined to be
 
 $$
-\mathbf{c} = \mathbf{a} \times \mathbf{b }= |a| |b| \sin \theta \mathbf{\hat{n}} \label{B.12}
+\mathbf{c} = \mathbf{a} \times \mathbf{b }= |a| |b| \sin \theta \mathbf{\hat{n}} \tag{B.12} \label{eq-b-12}
 $$
 
 where $\theta$ is the angle between the vectors and $\mathbf{\hat{n}}$ is a unit vector perpendicular to the plane defined by $\mathbf{a}$ and $\mathbf{b}$ such that the unit vectors $\left( \mathbf{\hat{a}}, \mathbf{\hat{b}}, \mathbf{\hat{n}} \right)$ obey a right-handed screw rule. The vector product acts like a pseudovector which comprises a normal vector multiplied by a sign factor that depends on the handedness of the system as described in appendix $19.4.3$.
@@ -558,35 +571,35 @@ where $\theta$ is the angle between the vectors and $\mathbf{\hat{n}}$ is a unit
 The components of $\mathbf{c}$ are defined by the relation
 
 $$
-c_i \equiv \sum_{jk} \varepsilon_{ijk}a_j b_k \label{B.13}
+c_i \equiv \sum_{jk} \varepsilon_{ijk}a_j b_k \tag{B.13} \label{eq-b-13}
 $$
 
 where the (Levi-Civita) permutation symbol $\varepsilon_{ijk}$ has the following properties
 
 $$
-\begin{align} \varepsilon_{ijk} = 0 && \text{ if an index is equal to any another index} \nonumber\\ \varepsilon_{ijk} = +1 && \text{ if } i,j,k, \text{ form an even permutation of } 1, 2, 3 \label{B.14}\\ \varepsilon_{ijk} = −1 && \text{ if } i,j,k, \text{ form an odd permutation of }1, 2, 3 \nonumber \end{align}
+\begin{align} \varepsilon_{ijk} = 0 && \text{ if an index is equal to any another index} \nonumber\\ \varepsilon_{ijk} = +1 && \text{ if } i,j,k, \text{ form an even permutation of } 1, 2, 3 \tag{B.14} \label{eq-b-14}\\ \varepsilon_{ijk} = −1 && \text{ if } i,j,k, \text{ form an odd permutation of }1, 2, 3 \nonumber \end{align}
 $$
 
 For example, if the three unit vectors $(\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \mathbf{\hat{e}}_3)$ form an orthonormal basis, then $\mathbf{\hat{e}}_i \equiv \sum_{jk} \varepsilon_{ijk}\mathbf{\hat{e}}_j\mathbf{\hat{e}}_k$, i.e.
 
 $$
-\begin{align} \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_2 = \mathbf{\hat{e}}_3 && \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_3 = \mathbf{\hat{e}}_1 && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_1 = \mathbf{\hat{e}}_2 \label{B.15}\\ \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_1 = −\mathbf{\hat{e}}_3 && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_2 = −\mathbf{\hat{e}}_1 && \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_3 = −\mathbf{\hat{e}}_2 \label{B.16}\\ \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_1 = \mathbf{0} && \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_2 = \mathbf{0} && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_0 = \mathbf{0} \label{B.17}\end{align}
+\begin{align} \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_2 = \mathbf{\hat{e}}_3 && \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_3 = \mathbf{\hat{e}}_1 && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_1 = \mathbf{\hat{e}}_2 \tag{B.15} \label{eq-b-15}\\ \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_1 = −\mathbf{\hat{e}}_3 && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_2 = −\mathbf{\hat{e}}_1 && \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_3 = −\mathbf{\hat{e}}_2 \tag{B.16}\\ \mathbf{\hat{e}}_1 \times \mathbf{\hat{e}}_1 = \mathbf{0} && \mathbf{\hat{e}}_2 \times \mathbf{\hat{e}}_2 = \mathbf{0} && \mathbf{\hat{e}}_3 \times \mathbf{\hat{e}}_0 = \mathbf{0} \tag{B.17}\end{align}
 $$
 
 The vector product anticommutes in that
 
 $$
-\mathbf{a} \times \mathbf{b} = −\mathbf{b} \times \mathbf{a} \label{B.18}
+\mathbf{a} \times \mathbf{b} = −\mathbf{b} \times \mathbf{a} \tag{B.18} \label{eq-b-18}
 $$
 
 However, it is distributive and associative with a scalar multiplier
 
 $$
-\mathbf{a}\times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c} \label{B.19}
+\mathbf{a}\times (\mathbf{b} + \mathbf{c}) = \mathbf{a} \times \mathbf{b} + \mathbf{a} \times \mathbf{c} \tag{B.19} \label{eq-b-19}
 $$
 
 $$
-(\lambda \mathbf{a}) \times \mathbf{b} = \lambda (\mathbf{a} \times \mathbf{b}) \label{B.20}
+(\lambda \mathbf{a}) \times \mathbf{b} = \lambda (\mathbf{a} \times \mathbf{b}) \tag{B.20} \label{eq-b-20}
 $$
 
 Note that when $\sin \theta = 0$ then $\mathbf{a} \times \mathbf{b} = 0$ and in particular, $\mathbf{a} \times \mathbf{a} = 0$.
@@ -601,7 +614,7 @@ $$
 \mathbf{b} = b_1\mathbf{\hat{e}}_1 + b_2\mathbf{\hat{e}}_2 + b_3\mathbf{\hat{e}}_3 \nonumber
 $$
 
-Then using equations \ref{B.12} and \ref{B.15} − \ref{B.17}
+Then using equations [B.12](#eq-b-12) and [B.15](#eq-b-15) − [B.17](#eq-b-15)
 
 $$
 \mathbf{a} \times \mathbf{b} = |a| |b| \sin \theta = \begin{vmatrix} \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}_3 \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} = \mathbf{\hat{e}}_1 (a_2b_3 − a_3b_2) + \mathbf{\hat{e}}_2 (a_3b_1 − a_1b_3) + \mathbf{\hat{e}}_3 (a_1b_2 − a_2b_1) \nonumber
@@ -618,7 +631,7 @@ The following scalar and vector triple products can be formed from the product o
 There are several permutations of scalar triple products of three vectors $[\mathbf{a},\mathbf{b}, \mathbf{c}]$ that are identical.
 
 $$
-\mathbf{a}\cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{c}\cdot (\mathbf{a} \times \mathbf{b}) = \mathbf{b}\cdot (\mathbf{c} \times \mathbf{a})=(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} = −\mathbf{a}\cdot (\mathbf{c} \times \mathbf{b}) \label{B.21}
+\mathbf{a}\cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{c}\cdot (\mathbf{a} \times \mathbf{b}) = \mathbf{b}\cdot (\mathbf{c} \times \mathbf{a})=(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} = −\mathbf{a}\cdot (\mathbf{c} \times \mathbf{b}) \tag{B.21} \label{eq-b-21}
 $$
 
 That is, the scalar product is invariant to cyclic permutations of the three vectors but changes sign for interchange of two vectors. The scalar product is unchanged by swapping the scalar $(dot)$ and vector $(cross)$.
@@ -626,13 +639,13 @@ That is, the scalar product is invariant to cyclic permutations of the three vec
 Because of the symmetry the scalar triple product can be denoted as $[ \mathbf{ a}, \mathbf{b}, \mathbf{c}]$ and
 
 $$
-\begin{align} [\mathbf{a}, \mathbf{b}, \mathbf{c}] > 0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is right-handed} \nonumber\\ [\mathbf{a}, \mathbf{b}, \mathbf{c}]=0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is coplanar} \label{B.22} \\ [\mathbf{a}, \mathbf{b}, \mathbf{c}] < 0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is left-handed} \nonumber\end{align}
+\begin{align} [\mathbf{a}, \mathbf{b}, \mathbf{c}] > 0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is right-handed} \nonumber\\ [\mathbf{a}, \mathbf{b}, \mathbf{c}]=0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is coplanar} \tag{B.22} \label{eq-b-22} \\ [\mathbf{a}, \mathbf{b}, \mathbf{c}] < 0 && \text{ if } [\mathbf{a}, \mathbf{b}, \mathbf{c}] \text{ is left-handed} \nonumber\end{align}
 $$
 
 The scalar triple product can be written in terms of the components using a determinant
 
 $$
-[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix} \label{B.23}
+[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix} \tag{B.23} \label{eq-b-23}
 $$
 
 #### Vector triple product
@@ -640,26 +653,40 @@ $$
 The vector triple product $\mathbf{a}\times (\mathbf{b} \times \mathbf{c})$ is a vector. Since $(\mathbf{b} \times \mathbf{c})$ is perpendicular to the plane of $\mathbf{b}, \mathbf{c}$, then $\mathbf{a}\times (\mathbf{b} \times \mathbf{c})$ must lie in the plane containing $\mathbf{b}, \mathbf{c}$. Therefore the triple product can be expanded in terms of $\mathbf{b}, \mathbf{c}$, as given by the following identity
 
 $$
-\mathbf{a} \times (\mathbf{b} \times \mathbf{c})=(\mathbf{a} \cdot \mathbf{c}) \mathbf{b} − (\mathbf{a} \cdot \mathbf{ b}) \mathbf{c} \label{B.24}
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c})=(\mathbf{a} \cdot \mathbf{c}) \mathbf{b} − (\mathbf{a} \cdot \mathbf{ b}) \mathbf{c} \tag{B.24} \label{eq-b-24}
 $$
 
 ### Problems
 
 1. Partition the following exercises among your collaborators. Once you have completed your problem, check with a classmate before writing it on the board. After you have verified that you have found the correct solution, write your answer in the space provided on the board, taking care to include the steps that you used to arrive at your solution. The following information is needed.
 
-| $\mathbf{a} = 3\mathbf{i} + 2\mathbf{j} − 9\mathbf{k}$ | $\mathbf{b} = −2\mathbf{i} + 3\mathbf{k}$ | $\mathbf{c} = −2\mathbf{i} + \mathbf{j} − 6\mathbf{k}$ | $\mathbf{d} = \mathbf{i} + 9\mathbf{j} + 4\mathbf{k}$ |
-| --- | --- | --- | --- |
-| $\mathbf{E} = \begin{pmatrix} 2 & 7 & −4 \\ 3 & 1 & −2 \\ −2 & 0 & 5 \end{pmatrix}$ | $\mathbf{F} = \begin{pmatrix} 3 & 4 \\ 5 & 6 \end{pmatrix}$ | $\mathbf{G} = \begin{pmatrix} 2 & −4 \\ 7 & 1 \\ −1 & 1 \end{pmatrix}$ | $\mathbf{H} = \begin{pmatrix} −8 & −1 & −3 \\ −4 & 2 & −2 \\ −1 & 0 & 0 \end{pmatrix}$ |
+::::{list-table}
+* - $\mathbf{a} = 3\mathbf{i} + 2\mathbf{j} − 9\mathbf{k}$
+  - $\mathbf{b} = −2\mathbf{i} + 3\mathbf{k}$
+  - $\mathbf{c} = −2\mathbf{i} + \mathbf{j} − 6\mathbf{k}$
+  - $\mathbf{d} = \mathbf{i} + 9\mathbf{j} + 4\mathbf{k}$
+* - $\mathbf{E} = \begin{pmatrix} 2 & 7 & −4 \\ 3 & 1 & −2 \\ −2 & 0 & 5 \end{pmatrix}$
+  - $\mathbf{F} = \begin{pmatrix} 3 & 4 \\ 5 & 6 \end{pmatrix}$
+  - $\mathbf{G} = \begin{pmatrix} 2 & −4 \\ 7 & 1 \\ −1 & 1 \end{pmatrix}$
+  - $\mathbf{H} = \begin{pmatrix} −8 & −1 & −3 \\ −4 & 2 & −2 \\ −1 & 0 & 0 \end{pmatrix}$
+::::
 
 Calculate each of the following
 
-| 1. $\|\mathbf{a} − (\mathbf{b} + \mathbf{3c})\|$ | 7. $(\mathbf{EH})^T$ |
-| --- | --- |
-| 2. Component of $\mathbf{c}$ along $\mathbf{a}$ | 8. $\|\mathbf{HE}\|$ |
-| 3. Angle between $\mathbf{c}$ and $\mathbf{d}$ | 9. $\mathbf{EHG}$ |
-| 4. $(\mathbf{b} \times \mathbf{d}) \cdot \mathbf{a}$ | 10. $\mathbf{EG} − \mathbf{HG}$ |
-| 5. $(\mathbf{b} \times \mathbf{d}) \times \mathbf{a}$ | 11. $\mathbf{EH} − \mathbf{H}^T \mathbf{E}^T$ |
-| 6. $\mathbf{b}\times (\mathbf{d} \times \mathbf{a})$ | 12. $\mathbf{F}^{−1}$ |
+::::{list-table}
+* - 1. $|\mathbf{a} − (\mathbf{b} + \mathbf{3c})|$
+  - 7. $(\mathbf{EH})^T$
+* - 2. Component of $\mathbf{c}$ along $\mathbf{a}$
+  - 8. $|\mathbf{HE}|$
+* - 3. Angle between $\mathbf{c}$ and $\mathbf{d}$
+  - 9. $\mathbf{EHG}$
+* - 4. $(\mathbf{b} \times \mathbf{d}) \cdot \mathbf{a}$
+  - 10. $\mathbf{EG} − \mathbf{HG}$
+* - 5. $(\mathbf{b} \times \mathbf{d}) \times \mathbf{a}$
+  - 11. $\mathbf{EH} − \mathbf{H}^T \mathbf{E}^T$
+* - 6. $\mathbf{b}\times (\mathbf{d} \times \mathbf{a})$
+  - 12. $\mathbf{F}^{−1}$
+::::
 
 2. For what values of $a$ are the vectors $\mathbf{A} = 2a\hat{i} − 2\hat{j} + a\hat{k}$ and $\mathbf{B} = a\hat{i} + 2a\hat{j}+ 2\hat{k}$ perpendicular?
 
@@ -686,11 +713,11 @@ The methods of vector analysis provide a convenient representation of physical l
 Cartesian coordinates (rectangular) provide the simplest orthogonal rectangular coordinate system. The unit vectors specifying the direction along the three orthogonal axes are taken to be $(\mathbf{\hat{i}},\mathbf{\hat{j}}, \mathbf{\hat{k}})$. In cartesian coordinates scalar and vector functions are written as
 
 $$
-\phi = \phi (x, y, z) \label{C.1}
+\phi = \phi (x, y, z) \tag{C.1} \label{eq-c-1}
 $$
 
 $$
-\mathbf{r} = x\mathbf{\hat{i}}+y\mathbf{\hat{j}}+z\mathbf{\hat{k}} \label{C.2}
+\mathbf{r} = x\mathbf{\hat{i}}+y\mathbf{\hat{j}}+z\mathbf{\hat{k}} \tag{C.2} \label{eq-c-2}
 $$
 
 Calculation of the time derivatives of the position vector is especially simple using cartesian coordinates because the unit vectors $(\mathbf{\hat{i}},\mathbf{\hat{j}}, \mathbf{\hat{k}})$ are constant and independent in time. That is;
@@ -702,13 +729,13 @@ $$
 Since the time derivatives of the unit vectors are all zero then the velocity $\mathbf{\dot{r}} = \frac{d\mathbf{r}}{ dt}$ reduces to the partial time derivatives of $x$, $y$, and $z$. That is,
 
 $$
-\mathbf{\dot{r}} = \dot{x} \mathbf{\hat{i}} + \dot{y} \mathbf{\hat{j}} + \dot{z} \mathbf{\hat{k}} \label{C.3}
+\mathbf{\dot{r}} = \dot{x} \mathbf{\hat{i}} + \dot{y} \mathbf{\hat{j}} + \dot{z} \mathbf{\hat{k}} \tag{C.3} \label{eq-c-3}
 $$
 
 Similarly the acceleration is given by
 
 $$
-\mathbf{\ddot{r}} = \ddot{x} \mathbf{\hat{i}} + \ddot{y} \mathbf{\hat{j}} + \ddot{z} \mathbf{\hat{k}} \label{C.4}
+\mathbf{\ddot{r}} = \ddot{x} \mathbf{\hat{i}} + \ddot{y} \mathbf{\hat{j}} + \ddot{z} \mathbf{\hat{k}} \tag{C.4} \label{eq-c-4}
 $$
 
 ### Curvilinear coordinate systems
@@ -720,16 +747,16 @@ Curvilinear coordinate systems introduce a complication in that the *unit vector
 Each of the three axes $q_i$ in curvilinear coordinate systems can be expressed in cartesian coordinates $(x, y, z)$ as surfaces of constant $q_i$ given by the function
 
 $$
-q_i = f_i (x, y, z) \label{C.5}
+q_i = f_i (x, y, z) \tag{C.5} \label{eq-c-5}
 $$
 
 where $i = 1$, $2$, or $3$. An element of length $ds_i$ perpendicular to the surface $q_i$ is the distance between the surfaces $q_i$ and $q_i + dq_i$ which can be expressed as
 
 $$
-ds_i = h_idq_i \label{C.6}
+ds_i = h_idq_i \tag{C.6} \label{eq-c-6}
 $$
 
-where $h_i$ is a function of $(q_1, q_2, q_3)$. In cartesian coordinates $h_1$, $h_2$, and $h_3$ are all unity. The unit-length vectors $\hat{q}_1$, $\hat{q}_2$, $\hat{q}_3$, are perpendicular to the respective $q_1$, $q_2$, $q_3$ surfaces, and are oriented to have increasing indices such that $\mathbf{\hat{q}}_1 \times \mathbf{\hat{q}}_2 = \mathbf{\hat{q}}_3$. The correspondence of the curvilinear coordinates, unit vectors, and transform coefficients to cartesian, polar, cylindrical and spherical coordinates is given in Table 19.1.
+where $h_i$ is a function of $(q_1, q_2, q_3)$. In cartesian coordinates $h_1$, $h_2$, and $h_3$ are all unity. The unit-length vectors $\hat{q}_1$, $\hat{q}_2$, $\hat{q}_3$, are perpendicular to the respective $q_1$, $q_2$, $q_3$ surfaces, and are oriented to have increasing indices such that $\mathbf{\hat{q}}_1 \times \mathbf{\hat{q}}_2 = \mathbf{\hat{q}}_3$. The correspondence of the curvilinear coordinates, unit vectors, and transform coefficients to cartesian, polar, cylindrical and spherical coordinates is given in Table 19.4.1.
 
 | Curvilinear | $q_1$ | $q_2$ | $q_3$ | $\mathbf{\hat{q}}_1$ | $\mathbf{\hat{q}}_2$ | $\mathbf{\hat{q}}_3$ | $h_1$ | $h_2$ | $h_3$ |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -741,11 +768,11 @@ where $h_i$ is a function of $(q_1, q_2, q_3)$. In cartesian coordinates $h_1$, 
 The differential distance and volume elements are given by
 
 $$
-d\mathbf{s} = ds_1\mathbf{\hat{q}}_1 + ds_2\mathbf{\hat{q}}_2 + ds_3\mathbf{\hat{q}}_3 = h_1dq_1\mathbf{\hat{q}}_1 + h_2dq_2\mathbf{\hat{q}}_2 + h_3dq_3\mathbf{\hat{q}}_3 \label{C.7}
+d\mathbf{s} = ds_1\mathbf{\hat{q}}_1 + ds_2\mathbf{\hat{q}}_2 + ds_3\mathbf{\hat{q}}_3 = h_1dq_1\mathbf{\hat{q}}_1 + h_2dq_2\mathbf{\hat{q}}_2 + h_3dq_3\mathbf{\hat{q}}_3 \tag{C.7} \label{eq-c-7}
 $$
 
 $$
-d \tau = ds_1ds_2ds_3 = h_1h_2h_3(dq_1dq_2dq_3) \label{C.8}
+d \tau = ds_1ds_2ds_3 = h_1h_2h_3(dq_1dq_2dq_3) \tag{C.8} \label{eq-c-8}
 $$
 
 These are evaluated below for polar, cylindrical, and spherical coordinates.
@@ -754,12 +781,12 @@ These are evaluated below for polar, cylindrical, and spherical coordinates.
 
 The complication and implications of time-dependent unit vectors are best illustrated by considering twodimensional polar coordinates which is the simplest curvilinear coordinate system. Polar coordinates are a special case of cylindrical coordinates, when $z$ is held fixed, or a special case of spherical coordinate system, when $\phi$ is held fixed.
 
-Consider the motion of a point $P$ as it moves along a curve $\mathbf{s}(t)$ such that in the time interval $dt$ it moves from $P^{(1)}$ to $P^{(2)}$ as shown in Figure 19.1. The two-dimensional polar coordinates have *unit vectors* $\mathbf{\hat{r}}, \boldsymbol{\hat{\theta}}$, which are orthogonal and change from $\mathbf{\hat{r}}_1, \boldsymbol{\hat{\theta}}_1$, to $\mathbf{\hat{r}}_2, \boldsymbol{\hat{\theta}}_2$, in the time $dt$. Note that for these polar coordinates the angle unit vector $\boldsymbol{\hat{\theta}}$ is taken to be *tangential* to the rotation since this is the direction of motion of a point on the circumference at radius $r$.
+Consider the motion of a point $P$ as it moves along a curve $\mathbf{s}(t)$ such that in the time interval $dt$ it moves from $P^{(1)}$ to $P^{(2)}$ as shown in [Figure 19.4.1](#fig-19-4-1). The two-dimensional polar coordinates have *unit vectors* $\mathbf{\hat{r}}, \boldsymbol{\hat{\theta}}$, which are orthogonal and change from $\mathbf{\hat{r}}_1, \boldsymbol{\hat{\theta}}_1$, to $\mathbf{\hat{r}}_2, \boldsymbol{\hat{\theta}}_2$, in the time $dt$. Note that for these polar coordinates the angle unit vector $\boldsymbol{\hat{\theta}}$ is taken to be *tangential* to the rotation since this is the direction of motion of a point on the circumference at radius $r$.
 
-The net changes shown in figure of Table 19.2 are
+The net changes shown in figure of Table 19.4.2 are
 
 $$
-d\mathbf{\hat{r}} = \mathbf{\hat{r}}_2 − \mathbf{\hat{r}}_1 = d\mathbf{\hat{r}} = |\mathbf{\hat{r}}| d\theta \boldsymbol{\hat{\theta}} =d\theta \boldsymbol{\hat{\theta}} \label{C.9}
+d\mathbf{\hat{r}} = \mathbf{\hat{r}}_2 − \mathbf{\hat{r}}_1 = d\mathbf{\hat{r}} = |\mathbf{\hat{r}}| d\theta \boldsymbol{\hat{\theta}} =d\theta \boldsymbol{\hat{\theta}} \tag{C.9} \label{eq-c-9}
 $$
 
 since the unit vector $\mathbf{\hat{r}}$ is a constant with $|\mathbf{\hat{r}}| = 1$. Note that the infinitessimal $d\mathbf{\hat{r}}$ is perpendicular to the unit vector $\mathbf{\hat{r}}$, that is, $d\mathbf{\hat{r}}$ points in the tangential direction $\boldsymbol{\hat{\theta}}$.
@@ -767,7 +794,7 @@ since the unit vector $\mathbf{\hat{r}}$ is a constant with $|\mathbf{\hat{r}}| 
 Similarly, the infinitessimal
 
 $$
-d\boldsymbol{\hat{\theta}} = \boldsymbol{\hat{\theta}}_2 − \boldsymbol{\hat{\theta}}_1 = d\boldsymbol{\hat{\theta}} = −d\theta \mathbf{\hat{r}} \label{C.10}
+d\boldsymbol{\hat{\theta}} = \boldsymbol{\hat{\theta}}_2 − \boldsymbol{\hat{\theta}}_1 = d\boldsymbol{\hat{\theta}} = −d\theta \mathbf{\hat{r}} \tag{C.10} \label{eq-c-10}
 $$
 
 which is perpendicular to the tangential $\boldsymbol{\hat{\theta}}$ unit vector and therefore points in the direction $−\mathbf{\hat{r}}$. The minus sign causes $−d\theta \mathbf{\hat{r}}$ to be directed in the opposite direction to $\mathbf{\hat{r}}$.
@@ -775,19 +802,19 @@ which is perpendicular to the tangential $\boldsymbol{\hat{\theta}}$ unit vector
 The net distance element $d\mathbf{s}$ is given by
 
 $$
-d\mathbf{s} =dr\mathbf{\hat{r}} + rd\mathbf{\hat{r}} =dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}} \label{C.11}
+d\mathbf{s} =dr\mathbf{\hat{r}} + rd\mathbf{\hat{r}} =dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}} \tag{C.11} \label{eq-c-11}
 $$
 
-This agrees with the prediction obtained using Table 19.1.
+This agrees with the prediction obtained using Table 19.4.1.
 
-The time derivatives of the unit vectors are given by equations \ref{C.9} and \ref{C.10} to be,
-
-$$
-\frac{d\mathbf{\hat{r}}}{ dt} = \frac{d\theta}{ dt} \boldsymbol{\hat{\theta}} \label{C.12}
-$$
+The time derivatives of the unit vectors are given by equations [C.9](#eq-c-9) and [C.10](#eq-c-10) to be,
 
 $$
-\frac{d\boldsymbol{\hat{\theta}}}{ dt} = −\frac{d\theta}{ dt} \mathbf{\hat{r}} \label{C.13}
+\frac{d\mathbf{\hat{r}}}{ dt} = \frac{d\theta}{ dt} \boldsymbol{\hat{\theta}} \tag{C.12} \label{eq-c-12}
+$$
+
+$$
+\frac{d\boldsymbol{\hat{\theta}}}{ dt} = −\frac{d\theta}{ dt} \mathbf{\hat{r}} \tag{C.13} \label{eq-c-13}
 $$
 
 Note that *the time derivatives of unit vectors are perpendicular to the corresponding unit vector, and the unit vectors are coupled.*
@@ -795,7 +822,7 @@ Note that *the time derivatives of unit vectors are perpendicular to the corresp
 Consider that the velocity $\mathbf{v}$ is expressed as
 
 $$
-\mathbf{v} = \frac{d\mathbf{r}}{ dt} = \frac{d}{ dt}(r\mathbf{\hat{r}}) = \frac{dr}{ dt}\mathbf{\hat{r}} + r \frac{d\mathbf{\hat{r}} }{dt} = \dot{r}\mathbf{\hat{r}} + r \dot{\theta} \boldsymbol{\hat{\theta}} \label{C.14}
+\mathbf{v} = \frac{d\mathbf{r}}{ dt} = \frac{d}{ dt}(r\mathbf{\hat{r}}) = \frac{dr}{ dt}\mathbf{\hat{r}} + r \frac{d\mathbf{\hat{r}} }{dt} = \dot{r}\mathbf{\hat{r}} + r \dot{\theta} \boldsymbol{\hat{\theta}} \tag{C.14} \label{eq-c-14}
 $$
 
 The velocity is resolved into a radial component $\dot{r}$ and an angular, transverse, component $r \dot{\theta}$.
@@ -803,158 +830,163 @@ The velocity is resolved into a radial component $\dot{r}$ and an angular, trans
 Similarly the acceleration is given by
 
 $$
-\mathbf{a} = \frac{d\mathbf{v}}{ dt} = \frac{d\dot{r} }{dt} \mathbf{\hat{r}}+\dot{r} \frac{d\mathbf{\hat{r}}}{ dt} + \frac{dr}{ dt} \dot{\theta} \boldsymbol{\hat{\theta}}+ r \frac{d\dot{\theta} }{dt} \boldsymbol{\hat{\theta}}+r \dot{\theta} \frac{d\boldsymbol{\hat{\theta}}}{ dt} \\ = \left( \ddot{r}− r \dot{\theta}^2\right) \mathbf{\hat{r}} + \left( \ddot{r}\theta + 2\dot{r} \dot{\theta} \right) \boldsymbol{\hat{\theta}} \label{C.15}
+\mathbf{a} = \frac{d\mathbf{v}}{ dt} = \frac{d\dot{r} }{dt} \mathbf{\hat{r}}+\dot{r} \frac{d\mathbf{\hat{r}}}{ dt} + \frac{dr}{ dt} \dot{\theta} \boldsymbol{\hat{\theta}}+ r \frac{d\dot{\theta} }{dt} \boldsymbol{\hat{\theta}}+r \dot{\theta} \frac{d\boldsymbol{\hat{\theta}}}{ dt} \\ = \left( \ddot{r}− r \dot{\theta}^2\right) \mathbf{\hat{r}} + \left( \ddot{r}\theta + 2\dot{r} \dot{\theta} \right) \boldsymbol{\hat{\theta}} \tag{C.15} \label{eq-c-15}
 $$
 
-where the $r \dot{\theta}^2 \mathbf{\hat{r}}$ term is the effective centripetal acceleration while the $2\dot{r} \dot{\theta} \boldsymbol{\hat{\theta}}$ term is called the Coriolis term. For the case when $\dot{r} = \ddot{r} = 0$, then the first bracket in \ref{C.15} is the centripetal acceleration while the second bracket is the tangential acceleration.
+where the $r \dot{\theta}^2 \mathbf{\hat{r}}$ term is the effective centripetal acceleration while the $2\dot{r} \dot{\theta} \boldsymbol{\hat{\theta}}$ term is called the Coriolis term. For the case when $\dot{r} = \ddot{r} = 0$, then the first bracket in [C.15](#eq-c-15) is the centripetal acceleration while the second bracket is the tangential acceleration.
 
 This discussion has shown that in contrast to the time independence of the cartesian unit basis vectors, *the unit basis vectors for curvilinear coordinates are time dependent which leads to components of the velocity and acceleration involving coupled coordinates.*
 
-| Coordinates | $r, \theta$ |
-| --- | --- |
-| Distance element | $d\mathbf{s} = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}}$ |
-| Area element | $da = r dr d\theta$ |
-| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \cos \theta + \hat{j} \sin \theta$
-$\boldsymbol{\hat{\theta}} = -\hat{i} \sin \theta + \hat{j} \cos \theta$ |
-| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \dot{\theta} \boldsymbol{\hat{\theta}}$
-$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\dot{\theta} \mathbf{\hat{r}}$ |
-| Velocity | $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}}$ |
-| Kinetic energy | $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2\right)$ |
-| Acceleration | $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2\right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta}\right) \boldsymbol{\hat{\theta}}$ |
+::::{list-table}
+* - Coordinates
+  - $r, \theta$
+* - Distance element
+  - $d\mathbf{s} = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}}$
+* - Area element
+  - $da = r dr d\theta$
+* - Unit vectors
+  - $\mathbf{\hat{r}} = \hat{i} \cos \theta + \hat{j} \sin \theta$ $\boldsymbol{\hat{\theta}} = -\hat{i} \sin \theta + \hat{j} \cos \theta$
+* - Time derivatives of unit vectors
+  - $\frac{d\mathbf{\hat{r}}}{dt} = \dot{\theta} \boldsymbol{\hat{\theta}}$ $\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\dot{\theta} \mathbf{\hat{r}}$
+* - Velocity
+  - $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}}$
+* - Kinetic energy
+  - $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2\right)$
+* - Acceleration
+  - $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2\right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta}\right) \boldsymbol{\hat{\theta}}$
+::::
 
 :::{figure} ../images/lt-23015-c1.png
-:alt: c1.PNG
+:label: fig-19-4-1
+:enumerator: 19.4.1
+:alt: Diagram for Table 19.4.2.
 
-$1$: Diagram for Table $2$.
+Diagram for Table 19.4.2.
 :::
 
 #### Cylindrical Coordinates $(\rho , \phi , z)$
 
-The three-dimensional cylindrical coordinates $(\rho , \phi , z)$ are obtained by adding the motion along the symmetry axis $\mathbf{\hat{z}}$ to the case for polar coordinates. The unit basis vectors are shown in Table 19.3 where the angular unit vector $\boldsymbol{\hat{\phi}}$ is taken to be tangential corresponding to the direction a point on the circumference would move. The distance and volume elements, the cartesian coordinate components of the cylindrical unit basis vectors, and the unit vector time derivatives are shown in Table 19.3. The time dependence of the unit vectors is used to derive the acceleration. As for the two-dimensional polar coordinates, the $\boldsymbol{\hat{\rho}}$ and $\boldsymbol{\hat{\theta}}$ direction components of the acceleration for cylindrical coordinates are coupled functions of $\rho$, $\dot{\rho}$, $\ddot{\rho}$, $\dot{\phi}$, and $\ddot{\phi}$.
+The three-dimensional cylindrical coordinates $(\rho , \phi , z)$ are obtained by adding the motion along the symmetry axis $\mathbf{\hat{z}}$ to the case for polar coordinates. The unit basis vectors are shown in Table 19.4.3 where the angular unit vector $\boldsymbol{\hat{\phi}}$ is taken to be tangential corresponding to the direction a point on the circumference would move. The distance and volume elements, the cartesian coordinate components of the cylindrical unit basis vectors, and the unit vector time derivatives are shown in Table 19.4.3. The time dependence of the unit vectors is used to derive the acceleration. As for the two-dimensional polar coordinates, the $\boldsymbol{\hat{\rho}}$ and $\boldsymbol{\hat{\theta}}$ direction components of the acceleration for cylindrical coordinates are coupled functions of $\rho$, $\dot{\rho}$, $\ddot{\rho}$, $\dot{\phi}$, and $\ddot{\phi}$.
 
-| Coordinates | $\rho, \phi, \theta$ |
-| --- | --- |
-| Distance element | $d\mathbf{s} = d \rho \boldsymbol{\hat{\rho}} + \rho d\phi \boldsymbol{\hat{\phi}} + dz\mathbf{\hat{z}}$ |
-| Volume element | $dv = \rho d\rho d\phi dz$ |
-| Unit vectors | $\boldsymbol{\hat{\rho}} = \hat{i} \cos \phi + \hat{j} \sin \phi$
-$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$
-$\mathbf{\hat{z}} = \mathbf{\hat{k}}$ |
-| Time derivatives of unit vectors | $\frac{d\boldsymbol{\hat{\rho}}}{dt} = \dot{\phi} \boldsymbol{\hat{\phi}}$
-$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\dot{\phi} \boldsymbol{\hat{\rho}}$
-$\frac{d\mathbf{\hat{z}}}{dt} = 0$ |
-| Velocity | $\mathbf{v} = \dot{\rho} \boldsymbol{\hat{\rho}} + \rho \dot{\phi} \boldsymbol{\hat{\phi}} + \dot{z} \mathbf{\hat{z}}$ |
-| Kinetic energy | $\frac{m}{2} \left(\dot{\rho}^2 + \rho^2 \dot{\phi}^2 + \dot{z}^2 \right)$ |
-| Acceleration | $\mathbf{a} = \left(\ddot{\rho} - \rho \dot{\phi}^2\right)\boldsymbol{\hat{\rho}} + \left(\rho\ddot{\phi} + 2\dot{\rho}\dot{\phi}\right) \boldsymbol{\hat{\phi}} + \ddot{z}\mathbf{\hat{z}}$ |
+::::{list-table}
+* - Coordinates
+  - $\rho, \phi, \theta$
+* - Distance element
+  - $d\mathbf{s} = d \rho \boldsymbol{\hat{\rho}} + \rho d\phi \boldsymbol{\hat{\phi}} + dz\mathbf{\hat{z}}$
+* - Volume element
+  - $dv = \rho d\rho d\phi dz$
+* - Unit vectors
+  - $\boldsymbol{\hat{\rho}} = \hat{i} \cos \phi + \hat{j} \sin \phi$ $\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$ $\mathbf{\hat{z}} = \mathbf{\hat{k}}$
+* - Time derivatives of unit vectors
+  - $\frac{d\boldsymbol{\hat{\rho}}}{dt} = \dot{\phi} \boldsymbol{\hat{\phi}}$ $\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\dot{\phi} \boldsymbol{\hat{\rho}}$ $\frac{d\mathbf{\hat{z}}}{dt} = 0$
+* - Velocity
+  - $\mathbf{v} = \dot{\rho} \boldsymbol{\hat{\rho}} + \rho \dot{\phi} \boldsymbol{\hat{\phi}} + \dot{z} \mathbf{\hat{z}}$
+* - Kinetic energy
+  - $\frac{m}{2} \left(\dot{\rho}^2 + \rho^2 \dot{\phi}^2 + \dot{z}^2 \right)$
+* - Acceleration
+  - $\mathbf{a} = \left(\ddot{\rho} - \rho \dot{\phi}^2\right)\boldsymbol{\hat{\rho}} + \left(\rho\ddot{\phi} + 2\dot{\rho}\dot{\phi}\right) \boldsymbol{\hat{\phi}} + \ddot{z}\mathbf{\hat{z}}$
+::::
 
 :::{figure} ../images/lt-23016-c2.png
-:alt: c2.PNG
+:label: fig-19-4-2
+:enumerator: 19.4.2
+:alt: Diagram for Table 19.4.3.
 
-$2$: Diagram for Table $3$.
+Diagram for Table 19.4.3.
 :::
 
 #### Spherical Coordinates $(r, \theta , \phi )$
 
-The three dimensional spherical coordinates, can be treated the same way as for cylindrical coordinates. The unit basis vectors are shown in Table 19.4 where the angular unit vectors $\boldsymbol{\hat{\theta}}$ and $\boldsymbol{\hat{\phi}}$ are taken to be tangential corresponding to the direction a point on the circumference moves for a positive rotation angle.
+The three dimensional spherical coordinates, can be treated the same way as for cylindrical coordinates. The unit basis vectors are shown in Table 19.4.4 where the angular unit vectors $\boldsymbol{\hat{\theta}}$ and $\boldsymbol{\hat{\phi}}$ are taken to be tangential corresponding to the direction a point on the circumference moves for a positive rotation angle.
 
-| Coordinates | $r, \theta, \phi$ |
-| --- | --- |
-| Distance element | $ds = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}} + r \sin \theta d \phi \boldsymbol{\hat{\phi}}$ |
-| Volume element | $dv = r^2 \sin \theta drd\theta d\phi$ |
-| Unit vectors | $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \cos \phi + \mathbf{\hat{k}} \cos \theta$
-$\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$
-$\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$ |
-| Time derivatives of unit vectors | $\frac{d\mathbf{\hat{r}}}{dt} = \boldsymbol{\hat{\theta}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \sin \theta$
-$\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\mathbf{\hat{r}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \cos \theta$
-$\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\mathbf{\hat{r}}\dot{\phi}\sin \theta - \boldsymbol{\hat{\theta}} \dot{\phi} \cos \theta$ |
-| Velocity | $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}} + r \dot{\phi} \sin \theta \boldsymbol{\hat{\phi}}$ |
-| Kinetic energy | $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2 + r^2\sin^2 \theta \dot{\phi}^2 \right)$ |
-| Acceleration | $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2 - r\dot{\phi}^2 \sin^2 \theta \right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta} - r\dot{\phi}^2 \sin \theta \cos \theta \right) \boldsymbol{\hat{\theta}} + \left(r \ddot{\phi} \sin \theta + 2\dot{r}\dot{\phi} \sin \theta + 2r\dot{\theta}\dot{\phi} \cos \theta \right) \boldsymbol{\hat{\phi}}$ |
+::::{list-table}
+* - Coordinates
+  - $r, \theta, \phi$
+* - Distance element
+  - $ds = dr\mathbf{\hat{r}} + rd\theta \boldsymbol{\hat{\theta}} + r \sin \theta d \phi \boldsymbol{\hat{\phi}}$
+* - Volume element
+  - $dv = r^2 \sin \theta drd\theta d\phi$
+* - Unit vectors
+  - $\mathbf{\hat{r}} = \hat{i} \sin \theta \cos \phi + \hat{j} \sin \theta \cos \phi + \mathbf{\hat{k}} \cos \theta$ $\boldsymbol{\hat{\theta}} = \hat{i} \cos \theta \cos \phi + \hat{j} \cos \theta \sin \phi - \mathbf{\hat{k}} \sin \theta$ $\boldsymbol{\hat{\phi}} = -\hat{i} \sin \phi + \hat{j} \cos \phi$
+* - Time derivatives of unit vectors
+  - $\frac{d\mathbf{\hat{r}}}{dt} = \boldsymbol{\hat{\theta}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \sin \theta$ $\frac{d\boldsymbol{\hat{\theta}}}{dt} = -\mathbf{\hat{r}} \dot{\theta} + \boldsymbol{\hat{\phi}} \dot{\phi} \cos \theta$ $\frac{d\boldsymbol{\hat{\phi}}}{dt} = -\mathbf{\hat{r}}\dot{\phi}\sin \theta - \boldsymbol{\hat{\theta}} \dot{\phi} \cos \theta$
+* - Velocity
+  - $\mathbf{v} = \dot{r}\mathbf{\hat{r}} + r\dot{\theta} \boldsymbol{\hat{\theta}} + r \dot{\phi} \sin \theta \boldsymbol{\hat{\phi}}$
+* - Kinetic energy
+  - $\frac{m}{2} \left(\dot{r}^2 + r^2 \dot{\theta}^2 + r^2\sin^2 \theta \dot{\phi}^2 \right)$
+* - Acceleration
+  - $\mathbf{a} = \left(\ddot{r} - r \dot{\theta}^2 - r\dot{\phi}^2 \sin^2 \theta \right)\mathbf{\hat{r}} + \left(r\ddot{\theta} + 2\dot{r}\dot{\theta} - r\dot{\phi}^2 \sin \theta \cos \theta \right) \boldsymbol{\hat{\theta}} + \left(r \ddot{\phi} \sin \theta + 2\dot{r}\dot{\phi} \sin \theta + 2r\dot{\theta}\dot{\phi} \cos \theta \right) \boldsymbol{\hat{\phi}}$
+::::
 
 :::{figure} ../images/lt-23017-c3.png
-:alt: c3.PNG
+:label: fig-19-4-3
+:enumerator: 19.4.3
+:alt: Diagram for Table 19.4.4.
 
-$3$: Diagram for Table $4$.
+Diagram for Table 19.4.4.
 :::
 
-The distance and volume elements, the cartesian coordinate components of the spherical unit basis vectors, and the unit vector time derivatives are shown in the table given in Figure 19.3. The time dependence of the unit vectors is used to derive the acceleration. As for the case of cylindrical coordinates, the $\mathbf{\hat{r}}$, $\boldsymbol{\hat{\theta}}$, and $\boldsymbol{\hat{\phi}}$ components of the acceleration involve coupling of the coordinates and their time derivatives.
+The distance and volume elements, the cartesian coordinate components of the spherical unit basis vectors, and the unit vector time derivatives are shown in the table given in [Figure 19.4.3](#fig-19-4-3). The time dependence of the unit vectors is used to derive the acceleration. As for the case of cylindrical coordinates, the $\mathbf{\hat{r}}$, $\boldsymbol{\hat{\theta}}$, and $\boldsymbol{\hat{\phi}}$ components of the acceleration involve coupling of the coordinates and their time derivatives.
 
 It is important to note that the angular unit vectors $\boldsymbol{\hat{\theta}}$ and $\boldsymbol{\hat{\phi}}$ are taken to be tangential to the circles of rotation. However, for discussion of angular velocity of angular momentum it is more convenient to use the axes of rotation defined by $\mathbf{\hat{r}} \times \boldsymbol{\hat{\theta}}$ and $\mathbf{\hat{r}} \times \boldsymbol{\hat{\phi}}$ for specifying the vector properties which is perpendicular to the unit vectors $\boldsymbol{\hat{\theta}}$ and $\boldsymbol{\hat{\phi}}$. Be careful not to confuse the unit vectors $\boldsymbol{\hat{\theta}}$ and $\boldsymbol{\hat{\phi}}$ with those used for the angular velocities $\dot{\theta}$ and $\dot{\phi}$.
 
 ### Frenet-Serret coordinates
 
-The cartesian, polar, cylindrical, or spherical curvilinear coordinate systems, all are orthogonal coordinate systems that are fixed in space. There are situations where it is more convenient to use the Frenet-Serret coordinates which comprise an orthogonal coordinate system that is fixed to the particle that is moving along a continuous, differentiable, trajectory in three-dimensional Euclidean space. Let $s(t)$ represent a monotonically increasing arc-length along the trajectory of the particle motion as a function of time $t$. The Frenet-Serret coordinates, shown in Figure 19.4, are the three instantaneous orthogonal unit vectors $\mathbf{\hat{t}}$, $\mathbf{\hat{n}}$, and $\mathbf{\hat{b}}$ where the tangent unit vector $\mathbf{\hat{t}}$ is the instantaneous tangent to the curve, the normal unit vector $\mathbf{\hat{n}}$ is in the plane of curvature of the trajectory pointing towards the center of the instantaneous radius of curvature and is perpendicular to the tangent unit vector $\mathbf{\hat{t}}$, while the binormal unit vector is $\mathbf{\hat{b}} =\mathbf{\hat{t}} \times \mathbf{\hat{n}}$ which is the perpendicular to the plane of curvature and is mutually perpendicular to the other two Frenet-Serrat unit vectors. The Frenet-Serret unit vectors are defined by the relations
+The cartesian, polar, cylindrical, or spherical curvilinear coordinate systems, all are orthogonal coordinate systems that are fixed in space. There are situations where it is more convenient to use the Frenet-Serret coordinates which comprise an orthogonal coordinate system that is fixed to the particle that is moving along a continuous, differentiable, trajectory in three-dimensional Euclidean space. Let $s(t)$ represent a monotonically increasing arc-length along the trajectory of the particle motion as a function of time $t$. The Frenet-Serret coordinates, shown in [Figure 19.4.4](#fig-19-4-4), are the three instantaneous orthogonal unit vectors $\mathbf{\hat{t}}$, $\mathbf{\hat{n}}$, and $\mathbf{\hat{b}}$ where the tangent unit vector $\mathbf{\hat{t}}$ is the instantaneous tangent to the curve, the normal unit vector $\mathbf{\hat{n}}$ is in the plane of curvature of the trajectory pointing towards the center of the instantaneous radius of curvature and is perpendicular to the tangent unit vector $\mathbf{\hat{t}}$, while the binormal unit vector is $\mathbf{\hat{b}} =\mathbf{\hat{t}} \times \mathbf{\hat{n}}$ which is the perpendicular to the plane of curvature and is mutually perpendicular to the other two Frenet-Serrat unit vectors. The Frenet-Serret unit vectors are defined by the relations
 
 $$
-\frac{d\mathbf{\hat{t}}}{ ds} = \kappa \mathbf{\hat{n}} \label{C.16}
-$$
-
-$$
-\frac{d\mathbf{\hat{b}}}{ ds} = − \tau \mathbf{\hat{n}} \label{C.17}
+\frac{d\mathbf{\hat{t}}}{ ds} = \kappa \mathbf{\hat{n}} \tag{C.16} \label{eq-c-16}
 $$
 
 $$
-\frac{d\mathbf{\hat{n}}}{ ds} = −\kappa \mathbf{\hat{t}}+ \tau \mathbf{\hat{b}} \label{C.18}
+\frac{d\mathbf{\hat{b}}}{ ds} = − \tau \mathbf{\hat{n}} \tag{C.17} \label{eq-c-17}
+$$
+
+$$
+\frac{d\mathbf{\hat{n}}}{ ds} = −\kappa \mathbf{\hat{t}}+ \tau \mathbf{\hat{b}} \tag{C.18} \label{eq-c-18}
 $$
 
 The curvature $\kappa = \frac{1}{ \rho}$ where $\rho$ is the radius of curvature and $\tau$ is the torsion that can be either positive or negative. For increasing $s$, a non-zero curvature $\kappa$ implies that the triad of unit vectors rotate in a right-handed sense about $\mathbf{\hat{b}}$. If the torsion $\tau$ is positive (negative) the triad of unit vectors rotates in right (left) handed sense about $\mathbf{\hat{t}}$.
 
-| Distance element | $d\mathbf{s}(t) = \mathbf{\hat{t}} \left\| \frac{d\mathbf{r}(t)}{dt} \right\| dt = \mathbf{\hat{t}} v(t) dt$ |
-| --- | --- |
-| Unit vectors | $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left\| v(t) \right\|}$
-$\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left\| \mathbf{d\hat{t}}/dt \right\|}$
-$\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$ |
-| Time derivatives of unit vectors | $\frac{d}{d t} \begin{pmatrix}
-
- \mathbf{\hat{t}} \\
-
- \mathbf{\hat{n}} \\
-
- \mathbf{\hat{b}}
-
- \end{pmatrix} =\|v\|\begin{pmatrix}
-
- 0 & \kappa & 0 \\
-
- -\kappa & 0 & \tau \\
-
- 0 & -\tau & 0
-
- \end{pmatrix} \begin{pmatrix}
-
- \mathbf{\hat{t}} \\
-
- \mathbf{\hat{n}} \\
-
- \mathbf{\hat{b}}
-
- \end{pmatrix}$ |
-| Velocity | $\mathbf{v} (t) = \frac{d\mathbf{r}(t)}{dt}$ |
-| Acceleration | $\mathbf{a}(t) = \frac{dv}{dt} \mathbf{\hat{t}} + \kappa v^2 \mathbf{\hat{n}}$ |
+::::{list-table}
+* - Distance element
+  - $d\mathbf{s}(t) = \mathbf{\hat{t}} \left| \frac{d\mathbf{r}(t)}{dt} \right| dt = \mathbf{\hat{t}} v(t) dt$
+* - Unit vectors
+  - $\mathbf{\hat{t}}(t) = \frac{\mathbf{v}(t)}{ \left| v(t) \right|}$ $\mathbf{\hat{n}}(t) = \frac{d\mathbf{\hat{t}}/dt}{\left| \mathbf{d\hat{t}}/dt \right|}$ $\mathbf{\hat{b}} (t) = \mathbf{\hat{t}} \times \mathbf{\hat{n}}$
+* - Time derivatives of unit vectors
+  - $\frac{d}{d t} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix} =|v|\begin{pmatrix} 0 & \kappa & 0 \\ -\kappa & 0 & \tau \\ 0 & -\tau & 0 \end{pmatrix} \begin{pmatrix} \mathbf{\hat{t}} \\ \mathbf{\hat{n}} \\ \mathbf{\hat{b}} \end{pmatrix}$
+* - Velocity
+  - $\mathbf{v} (t) = \frac{d\mathbf{r}(t)}{dt}$
+* - Acceleration
+  - $\mathbf{a}(t) = \frac{dv}{dt} \mathbf{\hat{t}} + \kappa v^2 \mathbf{\hat{n}}$
+::::
 
 :::{figure} ../images/lt-23014-c4.png
-:alt: c4.PNG
+:label: fig-19-4-4
+:enumerator: 19.4.4
+:alt: Diagram for Table 19.4.5.
 
-$4$: Diagram for Table $5$.
+Diagram for Table 19.4.5.
 :::
 
 The above equations also can be rewritten in the form using a new unit rotation vector $\boldsymbol{\omega}$ where
 
 $$
-\boldsymbol{\omega}= \tau \mathbf{\hat{t}}+\kappa \mathbf{\hat{b}} \label{C.19}
+\boldsymbol{\omega}= \tau \mathbf{\hat{t}}+\kappa \mathbf{\hat{b}} \tag{C.19} \label{eq-c-19}
 $$
 
-Then equations \ref{C.16}−\ref{C.18} are transformed to
+Then equations [C.16](#eq-c-16)−[C.18](#eq-c-18) are transformed to
 
 $$
-\frac{d\mathbf{\hat{t}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{t}} \label{C.20}
-$$
-
-$$
-\frac{d\mathbf{\hat{n}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{n}} \label{C.21}
+\frac{d\mathbf{\hat{t}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{t}} \tag{C.20} \label{eq-c-20}
 $$
 
 $$
-\frac{d\mathbf{\hat{b}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{b}} \label{C.22}
+\frac{d\mathbf{\hat{n}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{n}} \tag{C.21} \label{eq-c-21}
+$$
+
+$$
+\frac{d\mathbf{\hat{b}}}{ ds} = \boldsymbol{\omega} \times \mathbf{\hat{b}} \tag{C.22} \label{eq-c-22}
 $$
 
 In general the Frenet-Serret unit vectors are time dependent. If the curvature $\kappa = 0$ then the curve is a straight line and $\mathbf{\hat{n}}$ and $\mathbf{\hat{b}}$ are not well defined. If the torsion is zero then the trajectory lies in a plane. Note that a helix has constant curvature and constant torsion.
@@ -962,7 +994,7 @@ In general the Frenet-Serret unit vectors are time dependent. If the curvature $
 The rate of change of a general vector field $\mathbf{E}$ along the trajectory can be written as
 
 $$
-\frac{d\mathbf{E}}{ds} = \left( \frac{dE_t}{ ds} \mathbf{\hat{t}} + \frac{dE_n }{ds} \mathbf{\hat{n}}+ \frac{dE_b }{ds} \mathbf{\hat{b}} \right) + \boldsymbol{\omega} \times \mathbf{E} \label{C.23}
+\frac{d\mathbf{E}}{ds} = \left( \frac{dE_t}{ ds} \mathbf{\hat{t}} + \frac{dE_n }{ds} \mathbf{\hat{n}}+ \frac{dE_b }{ds} \mathbf{\hat{b}} \right) + \boldsymbol{\omega} \times \mathbf{E} \tag{C.23} \label{eq-c-23}
 $$
 
 The Frenet-Serret coordinates are used in the life sciences to describe the motion of a moving organism in a viscous medium. The Frenet-Serret coordinates also have applications to General Relativity.
@@ -980,7 +1012,7 @@ Coordinate systems can be translated, or rotated with respect to each other as w
 Translational transformations are involved frequently for transforming between the center of mass and laboratory frames for reaction kinematics as well as when performing vector addition of central forces for the cases where the centers are displaced. Both the classical Galilean transformation or the relativistic Lorentz transformation are handled the same way. Consider two parallel orthonormal coordinate frames where the origin of $F^{\prime} (x^{\prime}, y^{\prime}, z^{\prime} )$ is displaced by a time dependent vector $\mathbf{a}(t)$ from the origin of frame $F (x, y, z)$. Then the Galilean transformation for a vector $\mathbf{r}$ in frame $\mathbf{F}$ to $\mathbf{r}^{\prime}$ in frame $F^{\prime}$ is given by
 
 $$
-\mathbf{r} (x^{\prime}, y^{\prime}, z^{\prime} ) = \mathbf{r} (x, y, z) +\mathbf{a}(t) \label{D.1}
+\mathbf{r} (x^{\prime}, y^{\prime}, z^{\prime} ) = \mathbf{r} (x, y, z) +\mathbf{a}(t) \tag{D.1} \label{eq-d-1}
 $$
 
 The velocities for a moving frame are given by the vector difference of the velocity in a stationary frame, and the velocity of the origin of the moving frame. Linear accelerations can be handled similarly.
@@ -994,7 +1026,7 @@ Rotational transformations of the coordinate system are used extensively in phys
 Rotation of the coordinate frame does not change the value of any scalar observable such as mass, temperature etc. That is, transformation of a scalar quantity is invariant under coordinate rotation from $x, y, z \rightarrow x^{\prime}, y^{\prime}, z^{\prime}$.
 
 $$
-\phi (x^{\prime} y^{\prime} z^{\prime} ) = \phi (xyz) \label{D.2}
+\phi (x^{\prime} y^{\prime} z^{\prime} ) = \phi (xyz) \tag{D.2} \label{eq-d-2}
 $$
 
 By contrast, the components of a vector along the coordinate axes change under rotation of the coordinate axes. This difference in transformation properties under rotation between a scalar and a vector is important and defines both scalars and a vectors.
@@ -1004,47 +1036,47 @@ Matrix mechanics, described in appendix $19.1$, provides the most convenient way
 Assume a point $P$ has coordinates $(x_1, x_2, x_3)$ with respect to a certain coordinate system. Consider rotation to another coordinate frame for which the point $P$ has coordinates $(x^{\prime}_1, x^{\prime}_2, x^{\prime}_3)$ and assume that the origins of both frames coincide. Rotation of a frame does not change the vector, only the vector components of the unit basis states. Therefore
 
 $$
-\mathbf{x} = \mathbf{\hat{e}}^{\prime}_1 x^{\prime}_1 + \mathbf{\hat{e}}^{\prime}_2 x^{\prime}_2 + \mathbf{\hat{e}}^{\prime}_3x^{\prime}_3 = \mathbf{\hat{e}}_1x_1 + \mathbf{\hat{e}}_2x_2 + \mathbf{\hat{e}}_3x_3 \label{D.3}
+\mathbf{x} = \mathbf{\hat{e}}^{\prime}_1 x^{\prime}_1 + \mathbf{\hat{e}}^{\prime}_2 x^{\prime}_2 + \mathbf{\hat{e}}^{\prime}_3x^{\prime}_3 = \mathbf{\hat{e}}_1x_1 + \mathbf{\hat{e}}_2x_2 + \mathbf{\hat{e}}_3x_3 \tag{D.3} \label{eq-d-3}
 $$
 
-Note that if one designates that the unit vectors for the unprimed coordinate frame are $(\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \mathbf{\hat{e}}_3)$ and for the primed coordinate frame $(\mathbf{\hat{e}}^{\prime}_1, \mathbf{\hat{e}}^{\prime}_2, \mathbf{\hat{e}}^{\prime}_3)$, then taking the scalar product of Equation \ref{D.3} sequentially with each of the unit base vectors $(\mathbf{\hat{e}}^{\prime}_1, \mathbf{\hat{e}}^{\prime}_2, \mathbf{\hat{e}}^{\prime}_3)$ leads to the following three relations
+Note that if one designates that the unit vectors for the unprimed coordinate frame are $(\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \mathbf{\hat{e}}_3)$ and for the primed coordinate frame $(\mathbf{\hat{e}}^{\prime}_1, \mathbf{\hat{e}}^{\prime}_2, \mathbf{\hat{e}}^{\prime}_3)$, then taking the scalar product of Equation [D.3](#eq-d-3) sequentially with each of the unit base vectors $(\mathbf{\hat{e}}^{\prime}_1, \mathbf{\hat{e}}^{\prime}_2, \mathbf{\hat{e}}^{\prime}_3)$ leads to the following three relations
 
 $$
-x^{\prime}_1 = (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3)x_3 \label{D.4} \\ x^{\prime}_2 = (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3)x_3 \\ x^{\prime}_3 = (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3)x_3
+x^{\prime}_1 = (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3)x_3 \tag{D.4} \label{eq-d-4} \\ x^{\prime}_2 = (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3)x_3 \\ x^{\prime}_3 = (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1)x_1 + (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2)x_2 + (\mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3)x_3
 $$
 
 Note that the $(\mathbf{\hat{e}}^{\prime}_i \cdot \mathbf{\hat{e}}_j )$ are the direction cosines as defined by the scalar product of two unit vectors for axes $i, j$, that is, they are the cosine of the angle between the two unit vectors.
 
-Equation \ref{D.4} can be written in matrix form as
+Equation [D.4](#eq-d-4) can be written in matrix form as
 
 $$
-\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \label{D.5}
+\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \tag{D.5} \label{eq-d-5}
 $$
 
 where the “$\cdot$” means the *inner matrix product* of the rotation matrix $\boldsymbol{\lambda}$ and the vector $\mathbf{x}$ where
 
 $$
-\mathbf{x}^{\prime} \equiv \begin{pmatrix} x^{\prime}_1 \\ x^{\prime}_2 \\ x^{\prime}_3 \end{pmatrix} \quad \mathbf{x} \equiv \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} \quad \boldsymbol{\lambda} \equiv \begin{pmatrix} \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3 \end{pmatrix} \label{D.6}
+\mathbf{x}^{\prime} \equiv \begin{pmatrix} x^{\prime}_1 \\ x^{\prime}_2 \\ x^{\prime}_3 \end{pmatrix} \quad \mathbf{x} \equiv \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} \quad \boldsymbol{\lambda} \equiv \begin{pmatrix} \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3 \end{pmatrix} \tag{D.6} \label{eq-d-6}
 $$
 
-The inverse procedure is obtained by multiplying Equation \ref{D.3} successively by one of the unit basis vectors $(\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \mathbf{\hat{e}}_3)$ leading to three equations
+The inverse procedure is obtained by multiplying Equation [D.3](#eq-d-3) successively by one of the unit basis vectors $(\mathbf{\hat{e}}_1, \mathbf{\hat{e}}_2, \mathbf{\hat{e}}_3)$ leading to three equations
 
 $$
-x_1 = (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_1) x^{\prime}_1 + (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_2) x^{\prime}_2 + (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_3) x^{\prime}_3 \label{D.7} \\ x_2 = (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_1)x^{\prime}_1 + (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_2)x^{\prime}_2 + (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_3)x^{\prime}_3 \\ x_3 = (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_1)x^{\prime}_1 + (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_2)x^{\prime}_2 + (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_3)x^{\prime}_3
+x_1 = (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_1) x^{\prime}_1 + (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_2) x^{\prime}_2 + (\mathbf{\hat{e}}_1 \cdot \mathbf{\hat{e}}^{\prime}_3) x^{\prime}_3 \tag{D.7} \label{eq-d-7} \\ x_2 = (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_1)x^{\prime}_1 + (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_2)x^{\prime}_2 + (\mathbf{\hat{e}}_2 \cdot \mathbf{\hat{e}}^{\prime}_3)x^{\prime}_3 \\ x_3 = (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_1)x^{\prime}_1 + (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_2)x^{\prime}_2 + (\mathbf{\hat{e}}_3 \cdot \mathbf{\hat{e}}^{\prime}_3)x^{\prime}_3
 $$
 
-Equation \ref{D.7} can be written in matrix form as
+Equation [D.7](#eq-d-7) can be written in matrix form as
 
 $$
-\mathbf{x} = \boldsymbol{\lambda}^T \cdot \mathbf{x}^{\prime} \label{D.8}
+\mathbf{x} = \boldsymbol{\lambda}^T \cdot \mathbf{x}^{\prime} \tag{D.8} \label{eq-d-8}
 $$
 
 where $\boldsymbol{\lambda}^T$ is the transpose of $\boldsymbol{\lambda}$.
 
-Note that substituting Equation \ref{D.5} into Equation \ref{D.8} gives
+Note that substituting Equation [D.5](#eq-d-5) into Equation [D.8](#eq-d-8) gives
 
 $$
-\mathbf{x} = \boldsymbol{\lambda}^T \cdot (\boldsymbol{\lambda} \cdot \mathbf{x}) = \left( \boldsymbol{\lambda}^T \cdot \boldsymbol{\lambda} \right) \cdot \mathbf{x} \label{D.9}
+\mathbf{x} = \boldsymbol{\lambda}^T \cdot (\boldsymbol{\lambda} \cdot \mathbf{x}) = \left( \boldsymbol{\lambda}^T \cdot \boldsymbol{\lambda} \right) \cdot \mathbf{x} \tag{D.9} \label{eq-d-9}
 $$
 
 Thus
@@ -1058,7 +1090,7 @@ where $\mathbb{I}$ is the identity matrix. This implies that the rotation matrix
 It is convenient to rename the elements of the rotation matrix to be
 
 $$
-\lambda_{ij} \equiv (\mathbf{\hat{e}}^{\prime}_i \cdot \mathbf{\hat{e}}_j ) \label{D.10}
+\lambda_{ij} \equiv (\mathbf{\hat{e}}^{\prime}_i \cdot \mathbf{\hat{e}}_j ) \tag{D.10} \label{eq-d-10}
 $$
 
 so that the rotation matrix is written more compactly as
@@ -1067,33 +1099,34 @@ $$
 \boldsymbol{\lambda} \equiv \begin{pmatrix}\lambda_{11} & \lambda_{12} & \lambda_{13} \\ \lambda_{21} & \lambda_{22} & \lambda_{23} \\ \lambda_{31} & \lambda_{32} & \lambda_{33} \end{pmatrix} \nonumber
 $$
 
-and Equation \ref{D.4} becomes
+and Equation [D.4](#eq-d-4) becomes
 
 $$
-x^{\prime}_1 = \lambda_{11}x_1 + \lambda_{12}x_2 + \lambda_{13}x_3 \label{D.11} \\ x^{\prime}_2 = \lambda_{21}x_1 + \lambda_{22}x_2 + \lambda_{23}x_3 \\ x^{\prime}_3 = \lambda_{31}x_1 + \lambda_{32}x_2 + \lambda_{33}x_3
+x^{\prime}_1 = \lambda_{11}x_1 + \lambda_{12}x_2 + \lambda_{13}x_3 \tag{D.11} \label{eq-d-11} \\ x^{\prime}_2 = \lambda_{21}x_1 + \lambda_{22}x_2 + \lambda_{23}x_3 \\ x^{\prime}_3 = \lambda_{31}x_1 + \lambda_{32}x_2 + \lambda_{33}x_3
 $$
 
-Consider an arbitrary rotation through an angle $\theta$. Equations \ref{D.10} and \ref{D.11} can be used to relate six of the nine quantities $\lambda_{ij}$ in the rotation matrix, so only three of the quantities are independent. That is, because of Equation \ref{D.11} we have three equations which ensure that the transformation is unitary.
+Consider an arbitrary rotation through an angle $\theta$. Equations [D.10](#eq-d-10) and [D.11](#eq-d-11) can be used to relate six of the nine quantities $\lambda_{ij}$ in the rotation matrix, so only three of the quantities are independent. That is, because of Equation [D.11](#eq-d-11) we have three equations which ensure that the transformation is unitary.
 
 $$
-\lambda^2_{i1} + \lambda^2_{i2} + \lambda^2_{i3} = 1 \label{D.12}
+\lambda^2_{i1} + \lambda^2_{i2} + \lambda^2_{i3} = 1 \tag{D.12} \label{eq-d-12}
 $$
 
 Also requiring that the axes be orthogonal gives three equations
 
 $$
-\sum_j \lambda_{ij} \lambda_{kj} = 0, \quad i \neq k \label{D.13}
+\sum_j \lambda_{ij} \lambda_{kj} = 0, \quad i \neq k \tag{D.13} \label{eq-d-13}
 $$
 
 These six relations can be expressed as
 
 $$
-\sum_j \lambda_{ij} \lambda_{kj} = \delta_{ik} \label{D.14}
+\sum_j \lambda_{ij} \lambda_{kj} = \delta_{ik} \tag{D.14} \label{eq-d-14}
 $$
 
 The fact that the rotation matrix should have three independent quantities is due to the fact that all rotations can be expressed in terms of rotations about three orthogonal axes.
 
-Example 19.1
+::::{admonition} Example 19.5.1
+:class: example
 
 Consider a point $P(x_1, x_2, x_3) = P(3, 4, 5)$ in the unprimed coordinate system. Consider the same point $P(x^{\prime}_1, x^{\prime}_2, x^{\prime}_3)$ in the primed coordinate system which has been rotated by an angle $60^{\circ}$ about the $x_1$ axis as shown. The direction cosines $\lambda_{i^{\prime}j} = \cos ( \theta_{i^{\prime}j} )$ can be determined from the figure to be the following
 
@@ -1110,9 +1143,9 @@ Consider a point $P(x_1, x_2, x_3) = P(3, 4, 5)$ in the unprimed coordinate syst
 | 3 | 3 | 60 | 0.500 |
 
 :::{figure} ../images/lt-23021-d1.png
-:alt: d1.PNG
-
-$1$
+:label: fig-19-5-1
+:enumerator: 19.5.1
+:alt: Figure
 :::
 
 Thus the rotation matrix is
@@ -1128,8 +1161,10 @@ $$
 $$
 
 Note that the radial coordinate $r_P= r^{\prime}_P= \sqrt{50}$. That is, the rotational transformation is unitary and thus the magnitude of the vector is unchanged.
+::::
 
-Example 19.2: Proof that a rotation matrix is orthogonal
+::::{admonition} Example 19.5.2: Proof that a rotation matrix is orthogonal
+:class: example
 
 Consider the rotation matrix
 
@@ -1144,119 +1179,124 @@ $$
 $$
 
 which implies that $\lambda$ is orthogonal.
+::::
 
 #### Finite rotations
 
 :::{figure} ../images/lt-23019-d2.png
-:alt: d2.PNG
+:label: fig-19-5-2
+:enumerator: 19.5.2
+:alt: Order of two finite rotations for a parallelepiped.
 
-$2$: Order of two finite rotations for a parallelepiped.
+Order of two finite rotations for a parallelepiped.
 :::
 
-Consider two finite $90^{\circ}$ rotations $\lambda_{A}$ and $\lambda_{B}$ illustrated in Figure 19.2. The $\lambda_{A}$ rotation is $90^{\circ}$ around the $x_3$ axis in a right-handed direction as shown. In such a rotation the axes transform to $x^{\prime}_1 = x_2, x^{\prime}_2 = −x_1, x^{\prime}_3 = x_3$ and the rotation matrix is
+Consider two finite $90^{\circ}$ rotations $\lambda_{A}$ and $\lambda_{B}$ illustrated in [Figure 19.5.2](#fig-19-5-2). The $\lambda_{A}$ rotation is $90^{\circ}$ around the $x_3$ axis in a right-handed direction as shown. In such a rotation the axes transform to $x^{\prime}_1 = x_2, x^{\prime}_2 = −x_1, x^{\prime}_3 = x_3$ and the rotation matrix is
 
 $$
-\boldsymbol{\lambda}_A =\begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} \label{D.15}
+\boldsymbol{\lambda}_A =\begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} \tag{D.15} \label{eq-d-15}
 $$
 
 The second rotation $\boldsymbol{\lambda}_B$ is a right-handed rotation about the $x^{\prime}_1$ axis which formerly was the $x_2$ axis. Then $x^{"}_1 = x^{\prime}_2, x^{"}_2 = −x^{\prime}_1, x^{"}_3 = x^{\prime}_3$ and the rotation matrix is
 
 $$
-\boldsymbol{\lambda}_B =\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} \label{D.16}
+\boldsymbol{\lambda}_B =\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} \tag{D.16} \label{eq-d-16}
 $$
 
 Consider the product of these two finite rotations which corresponds to a single rotation matrix $\boldsymbol{\lambda}_{AB}$
 
 $$
-\boldsymbol{\lambda}_{AB} = \boldsymbol{\lambda}_B \boldsymbol{\lambda}_A \label{D.17}
+\boldsymbol{\lambda}_{AB} = \boldsymbol{\lambda}_B \boldsymbol{\lambda}_A \tag{D.17} \label{eq-d-17}
 $$
 
 That is:
 
 $$
-\boldsymbol{\lambda}_{AB} =\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} \begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix} \label{D.18}
+\boldsymbol{\lambda}_{AB} =\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} \begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix} \tag{D.18} \label{eq-d-18}
 $$
 
 Now consider that the order of these two rotations is reversed.
 
 $$
-\boldsymbol{\lambda}_{BA} = \boldsymbol{\lambda}_A \boldsymbol{\lambda}_B \label{D.19}
+\boldsymbol{\lambda}_{BA} = \boldsymbol{\lambda}_A \boldsymbol{\lambda}_B \tag{D.19} \label{eq-d-19}
 $$
 
 That is:
 
 $$
-\boldsymbol{\lambda}_{BA} = \begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 1 \\ −1 & 0 & 0 \\ 0 & −1 & 0 \end{pmatrix} \neq \boldsymbol{\lambda}_{AB} \label{D.20}
+\boldsymbol{\lambda}_{BA} = \begin{pmatrix} 0 & 1 & 0 \\ −1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & −1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 1 \\ −1 & 0 & 0 \\ 0 & −1 & 0 \end{pmatrix} \neq \boldsymbol{\lambda}_{AB} \tag{D.20} \label{eq-d-20}
 $$
 
-An entirely different orientation results as illustrated in Figure 19.2.
+An entirely different orientation results as illustrated in [Figure 19.5.2](#fig-19-5-2).
 
 This behavior of finite rotations is a consequence of the fact that *finite rotations do not commute*, that is, reversing the order does not give the same answer. Thus, if we associate the vectors $\mathbf{A}$ and $\mathbf{B}$ with these rotations, then it implies that the vector product $\mathbf{AB} \neq \mathbf{BA}$. That is, for finite rotation matrices, the product does not behave like for true vectors since they do not commute.
 
 #### Infinitessimal rotations
 
 :::{figure} ../images/lt-23020-d3.png
-:alt: d3.PNG
+:label: fig-19-5-3
+:enumerator: 19.5.3
+:alt: Infinitessimal rotation
 
-$3$: Infinitessimal rotation
+Infinitessimal rotation
 :::
 
 Infinitessimal rotations do not suffer from the noncommutation defect of finite rotations. If the position vector of a point changes from $\mathbf{r}$ to $\mathbf{r} + \delta \mathbf{r}$ then the geometrical situation is represented correctly by
 
 $$
-\delta \mathbf{r} = \delta \boldsymbol{\theta} \times \mathbf{r} \label{D.21}
+\delta \mathbf{r} = \delta \boldsymbol{\theta} \times \mathbf{r} \tag{D.21} \label{eq-d-21}
 $$
 
-where $\delta \boldsymbol{\theta}$ is a quantity whose magnitude is equal to the infinitessimal rotation angle and which has a direction along the instantaneous axis of rotation as illustrated in Figure 19.3.
+where $\delta \boldsymbol{\theta}$ is a quantity whose magnitude is equal to the infinitessimal rotation angle and which has a direction along the instantaneous axis of rotation as illustrated in [Figure 19.5.3](#fig-19-5-3).
 
 The infinitessimal angle $\delta \boldsymbol{\theta}$ is a vector which is shown by proving that two infinitessimal rotations $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ commute. The change in position vectors of the point are
 
 $$
-\delta \mathbf{r}_1 = \delta \boldsymbol{\theta}_1 \times \mathbf{r} \label{D.22}
+\delta \mathbf{r}_1 = \delta \boldsymbol{\theta}_1 \times \mathbf{r} \tag{D.22} \label{eq-d-22}
 $$
 
 and
 
 $$
-\delta \mathbf{r}_2 = \delta \boldsymbol{\theta}_2 \times (\mathbf{r} + \delta \mathbf{r}_1) \label{D.23}
+\delta \mathbf{r}_2 = \delta \boldsymbol{\theta}_2 \times (\mathbf{r} + \delta \mathbf{r}_1) \tag{D.23} \label{eq-d-23}
 $$
 
 Thus the final position vector for $\delta \boldsymbol{\theta}_1$ followed by $\delta \boldsymbol{\theta}_2$ is
 
 $$
-\mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} + \delta \boldsymbol{\theta}_2 \times ( \mathbf{r} + \delta \mathbf{r}_1) \label{D.24}
+\mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} + \delta \boldsymbol{\theta}_2 \times ( \mathbf{r} + \delta \mathbf{r}_1) \tag{D.24} \label{eq-d-24}
 $$
 
 Assuming that the second-order infinitessimals can be ignored gives
 
 $$
-\mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{}\mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} \label{D.25}
+\mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{}\mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} \tag{D.25} \label{eq-d-25}
 $$
 
 Consider now the inverse order of rotations.
 
 $$
-\mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times (\mathbf{r} + \delta \mathbf{r}_2) \label{D.26}
+\mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times (\mathbf{r} + \delta \mathbf{r}_2) \tag{D.26} \label{eq-d-26}
 $$
 
 Again, neglecting the second-order infinitessimals gives
 
 $$
-\mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} \label{D.27}
+\mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} \tag{D.27} \label{eq-d-27}
 $$
 
-Note that the products of these two infinitessimal rotations, \ref{D.25} and \ref{D.27} are identical. That is, assuming that second-order infinitessimals can be neglected, then the infinitessimal rotations commute, and thus $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ are correctly represented by vectors.
+Note that the products of these two infinitessimal rotations, [D.25](#eq-d-25) and [D.27](#eq-d-27) are identical. That is, assuming that second-order infinitessimals can be neglected, then the infinitessimal rotations commute, and thus $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ are correctly represented by vectors.
 
 The fact that $\delta \boldsymbol{\theta}$ is a vector allows angular velocity to be represented by a vector. That is, angular velocity is the ratio of an infinitessimal rotation to an infinitessimal time.
 
 $$
-\boldsymbol{\omega} = \frac{\delta \boldsymbol{\theta}}{ \delta t } \label{D.28}
+\boldsymbol{\omega} = \frac{\delta \boldsymbol{\theta}}{ \delta t } \tag{D.28} \label{eq-d-28}
 $$
 
 Note that this implies that the velocity of the point can be expressed as
 
 $$
-\mathbf{v} = \frac{\delta \mathbf{r}}{ \delta t} = \frac{\delta \boldsymbol{\theta}}{ \delta t} \times \mathbf{r} = \boldsymbol{\omega} \times \mathbf{r} \label{D.29}
+\mathbf{v} = \frac{\delta \mathbf{r}}{ \delta t} = \frac{\delta \boldsymbol{\theta}}{ \delta t} \times \mathbf{r} = \boldsymbol{\omega} \times \mathbf{r} \tag{D.29} \label{eq-d-29}
 $$
 
 #### Proper and improper rotations
@@ -1264,7 +1304,7 @@ $$
 The requirement that the coordinate axes be orthogonal, and that the transformation be unitary, leads to the relation between the components of the rotation matrix.
 
 $$
-\sum_j \lambda_{ij} \lambda_{kj} = \delta_{ik} \label{D.30}
+\sum_j \lambda_{ij} \lambda_{kj} = \delta_{ik} \tag{D.30} \label{eq-d-30}
 $$
 
 It was shown in equation $(19.1.12)$ that, for such an orthogonal matrix, the inverse matrix $\lambda^{−1}$ equals the transposed matrix $\lambda^T$
@@ -1276,25 +1316,25 @@ $$
 Inserting the orthogonality relation for the rotation matrix leads to the fact that the square of the determinant of the rotation matrix equals one,
 
 $$
-|\lambda |^2 = 1 \label{D.31}
+|\lambda |^2 = 1 \tag{D.31} \label{eq-d-31}
 $$
 
 that is
 
 $$
-|\lambda | = \pm 1 \label{D.32}
+|\lambda | = \pm 1 \tag{D.32} \label{eq-d-32}
 $$
 
 A **proper rotation** is the rotation of a normal vector and has
 
 $$
-|\lambda | = +1 \label{D.33}
+|\lambda | = +1 \tag{D.33} \label{eq-d-33}
 $$
 
 An **improper rotation** corresponds to
 
 $$
-|\lambda | = −1 \label{D.34}
+|\lambda | = −1 \tag{D.34} \label{eq-d-34}
 $$
 
 *An improper rotation implies a rotation plus a spatial reflection which cannot be achieved by any combination of only rotations.*
@@ -1302,7 +1342,7 @@ $$
 Consider the cross product of two vectors $\mathbf{c} = \mathbf{a} \times \mathbf{b}$. It can be shown that the cross product behaves under rotation as:
 
 $$
-c^{\prime}_i = |\lambda | \sum_j \lambda_{ij} c_j \label{D.35}
+c^{\prime}_i = |\lambda | \sum_j \lambda_{ij} c_j \tag{D.35} \label{eq-d-35}
 $$
 
 For all proper rotations the determinant of $\lambda = +1$ and thus the cross product also acts like a proper vector under rotation. This is not true for improper rotations where $|\lambda | = −1$.
@@ -1312,25 +1352,27 @@ For all proper rotations the determinant of $\lambda = +1$ and thus the cross pr
 Spatial inversion, that is, mirror reflection, corresponds to reflection of all coordinate vectors, $\widehat{\mathbf{i}} = − \widehat{\mathbf{i}}$, $\widehat{\mathbf{j}} = − \widehat{\mathbf{j}}$, and $\widehat{\mathbf{k}} = − \widehat{\mathbf{k}}$. Such a transformation corresponds to the transformation matrix
 
 $$
-\boldsymbol{\lambda} =\begin{pmatrix} −1 & 0 & 0 \\ 0 & −1 & 0 \\ 0 & 0 & −1 \end{pmatrix} = −\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} \label{D.36}
+\boldsymbol{\lambda} =\begin{pmatrix} −1 & 0 & 0 \\ 0 & −1 & 0 \\ 0 & 0 & −1 \end{pmatrix} = −\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} \tag{D.36} \label{eq-d-36}
 $$
 
 :::{figure} ../images/lt-23018-d4.png
-:alt: d4.PNG
+:label: fig-19-5-4
+:enumerator: 19.5.4
+:alt: Inversion of an object corresponds to reflection about the origin of all axes.
 
-$4$: Inversion of an object corresponds to reflection about the origin of all axes.
+Inversion of an object corresponds to reflection about the origin of all axes.
 :::
 
 Thus $|\lambda | = −1$, that is, it corresponds to an improper rotation. A spatial inversion for two vectors $\mathbf{A}(r)$ and $\mathbf{B}(r)$ correspond to
 
 $$
-\mathbf{A}(r) = −\mathbf{A}(-r) \label{D.37} \\ \mathbf{B}(r) = −\mathbf{B}(-r)
+\mathbf{A}(r) = −\mathbf{A}(-r) \tag{D.37} \label{eq-d-37} \\ \mathbf{B}(r) = −\mathbf{B}(-r)
 $$
 
 That is, normal polar vectors change sign under spatial reflection. However, the cross product $\mathbf{C} = \mathbf{A} \times \mathbf{B}$ does not change sign under spatial inversion since the product of the two minus signs is positive. That is,
 
 $$
-\mathbf{C}(r)=+\mathbf{C}(-r) \label{D.38}
+\mathbf{C}(r)=+\mathbf{C}(-r) \tag{D.38} \label{eq-d-38}
 $$
 
 Thus the cross product behaves differently from a polar vector. This improper behavior is characteristic of an **axial vector**, which also is called a **pseudovector**.
@@ -1338,13 +1380,13 @@ Thus the cross product behaves differently from a polar vector. This improper be
 Examples of pseudovectors are angular momentum, spin, magnetic field etc. These pseudovectors are defined using the right-hand rule and thus have handedness. For a right-handed system
 
 $$
-\mathbf{C}_R = \mathbf{A} \times \mathbf{B} \label{D.39}
+\mathbf{C}_R = \mathbf{A} \times \mathbf{B} \tag{D.39} \label{eq-d-39}
 $$
 
 Changing to a left-handed system leads to
 
 $$
-\mathbf{C}_L = \mathbf{B} \times \mathbf{A} = −\mathbf{A} \times \mathbf{B} \label{D.40}
+\mathbf{C}_L = \mathbf{B} \times \mathbf{A} = −\mathbf{A} \times \mathbf{B} \tag{D.40} \label{eq-d-40}
 $$
 
 That is, handedness corresponds to a definite ordering of the cross product. Proper orthogonal transformations are said to preserve chirality (Greek for handedness) of a coordinate system.
@@ -1352,39 +1394,39 @@ That is, handedness corresponds to a definite ordering of the cross product. Pro
 An example of the use of the right-handed system is the usual definition of cartesian unit vectors,
 
 $$
-\widehat{\mathbf{i}} \times \widehat{\mathbf{j}} = \widehat{\mathbf{k}} \label{D.41}
+\widehat{\mathbf{i}} \times \widehat{\mathbf{j}} = \widehat{\mathbf{k}} \tag{D.41} \label{eq-d-41}
 $$
 
 An obvious question to be asked, is the handedness of a coordinate system merely a mathematical curiosity or does it have some deep underlying significance? Consider the Lorentz force
 
 $$
-\mathbf{F} = q (\mathbf{E} + \mathbf{v} \times \mathbf{B}) \label{D.42}
+\mathbf{F} = q (\mathbf{E} + \mathbf{v} \times \mathbf{B}) \tag{D.42} \label{eq-d-42}
 $$
 
 Since force and velocity are proper vectors then the magnetic $\mathbf{B}$ field must be a pseudo vector. Note that calculation of the $\mathbf{B}$ field occurs only in cross products such as,
 
 $$
-\boldsymbol{\nabla} \times \mathbf{B} = \mu \mathbf{j} \label{D.43}
+\boldsymbol{\nabla} \times \mathbf{B} = \mu \mathbf{j} \tag{D.43} \label{eq-d-43}
 $$
 
 where the current density $\mathbf{j}$ is a proper vector. Another example is the Biot-Savart Law which expresses $\mathbf{B}$ as
 
 $$
-d\mathbf{B} = \frac{\mu_oI}{4\pi} \frac{ d\mathbf{l} \times \mathbf{r}}{r^2} \label{D.44}
+d\mathbf{B} = \frac{\mu_oI}{4\pi} \frac{ d\mathbf{l} \times \mathbf{r}}{r^2} \tag{D.44} \label{eq-d-44}
 $$
 
-Thus even though $\mathbf{B}$ is a pseudo vector, the force $\mathbf{F}$ remains a proper vector. Thus if a left-handed coordinate definition of $\mathbf{B}_L = \frac{\mu_oI}{4\pi} \frac{ \mathbf{r} \times d\mathbf{l}}{r^2}$ is used in \ref{D.44}, and $\mathbf{F} = q (\mathbf{E} + \mathbf{B}_L \times \mathbf{v})$ in \ref{D.42}, then the same final physical result would be obtained.
+Thus even though $\mathbf{B}$ is a pseudo vector, the force $\mathbf{F}$ remains a proper vector. Thus if a left-handed coordinate definition of $\mathbf{B}_L = \frac{\mu_oI}{4\pi} \frac{ \mathbf{r} \times d\mathbf{l}}{r^2}$ is used in [D.44](#eq-d-44), and $\mathbf{F} = q (\mathbf{E} + \mathbf{B}_L \times \mathbf{v})$ in [D.42](#eq-d-42), then the same final physical result would be obtained.
 
 It was long thought that the laws of physics were symmetric with respect to spatial inversion ( i.e. mirror reflection), meaning that the choice between a left-handed and right-handed representations (chirality) was arbitrary. This is true for gravitational, electromagnetic and the strong force, and is called the conservation of parity. The fourth fundamental force in nature, the weak force, violates parity and favours handedness. It turns out that right-handed ordinary matter is symmetrical with left-handed antimatter.
 
 In addition to the two flavours of vectors, one has scalars and pseudoscalars defined by:
 
 $$
-\phi (r)=+\phi (−r) \label{D.45}
+\phi (r)=+\phi (−r) \tag{D.45} \label{eq-d-45}
 $$
 
 $$
-\phi (r) = −\phi (−r) \label{D.46}
+\phi (r) = −\phi (−r) \tag{D.46} \label{eq-d-46}
 $$
 
 An example of a pseudoscalar is the scalar product $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C})$
@@ -1394,7 +1436,7 @@ An example of a pseudoscalar is the scalar product $\mathbf{A} \cdot (\mathbf{B}
 The basic laws of classical mechanics are invariant to the sense of the direction of time. Under time reversal the vector $\mathbf{r}$ is unchanged while both momentum $\mathbf{p}$ and time $t$ change sign under time reversal, thus the time derivative $\mathbf{F} = \frac{d\mathbf{p}}{ dt}$ is invariant to time reversal; that is, the force is unchanged and Newton’s Laws $\mathbf{F} = \frac{d\mathbf{p}}{ dt}$ are invariant under time reversal. Since the force can be expressed as the gradient of a scalar potential for a conservative field, then the potential also remains unchanged. That is
 
 $$
-\frac{d\mathbf{p}}{ dt} = −\boldsymbol{\nabla} U(r) = \mathbf{F} \label{D.47}
+\frac{d\mathbf{p}}{ dt} = −\boldsymbol{\nabla} U(r) = \mathbf{F} \tag{D.47} \label{eq-d-47}
 $$
 
 It is necessary to introduce tensor algebra, given in appendix $19.5$, prior to discussion of the transformation properties of observables which is the topic of appendix $19.5.5$.
@@ -1450,19 +1492,19 @@ Mathematically scalars and vectors are the first two members of a hierarchy of e
 A scalar is a rank 0 tensor with one component, that is invariant under change of the coordinate system.
 
 $$
-\phi (x^{\prime} y^{\prime} z^{\prime} ) = \phi (xyz) \label{E.1}
+\phi (x^{\prime} y^{\prime} z^{\prime} ) = \phi (xyz) \tag{E.1} \label{eq-e-1}
 $$
 
 A vector is a rank 1 tensor which has three components, that transform under rotation according to matrix relation
 
 $$
-\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \label{E.2}
+\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \tag{E.2} \label{eq-e-2}
 $$
 
-where $\boldsymbol{\lambda}$ is the rotation matrix. Equation \ref{E.2} can be written in the suffix form as
+where $\boldsymbol{\lambda}$ is the rotation matrix. Equation [E.2](#eq-e-2) can be written in the suffix form as
 
 $$
-x^{\prime}_i = \sum^3_{j=1} \lambda_{ij} x_j \label{E.3}
+x^{\prime}_i = \sum^3_{j=1} \lambda_{ij} x_j \tag{E.3} \label{eq-e-3}
 $$
 
 The above definitions of scalars and vectors can be subsumed into a class of entities called tensors of rank $n$ that have $3^n$ components. A scalar is a tensor of rank $r = 0$, with only $3^0 = 1$ component, whereas a vector has rank $r = 1$, that is, the vector $\mathbf{x}$ has one suffix $i$ and $3^1 = 3$ components.
@@ -1470,28 +1512,28 @@ The above definitions of scalars and vectors can be subsumed into a class of ent
 A second-order tensor $T_{ij}$ has rank $r = 2$ with two suffixes, that is, it has $3^2 = 9$ components that transform under rotation as
 
 $$
-T^{\prime}_{ij} = \sum^3_{k=1} \sum^3_{l=1} \lambda_{ik}\lambda_{jl}T_{kl} \label{E.4}
+T^{\prime}_{ij} = \sum^3_{k=1} \sum^3_{l=1} \lambda_{ik}\lambda_{jl}T_{kl} \tag{E.4} \label{eq-e-4}
 $$
 
-For second-order tensors, the transformation formula given by Equation \ref{E.4} can be written more compactly using matrices. Thus the second-order tensor can be written as a $3 \times 3$ matrix
+For second-order tensors, the transformation formula given by Equation [E.4](#eq-e-4) can be written more compactly using matrices. Thus the second-order tensor can be written as a $3 \times 3$ matrix
 
 $$
-\mathbf{T} \equiv \begin{pmatrix} T_{11} & T_{12} & T_{13} \\ T_{21} & T_{22} & T_{23} \\ T_{31} & T_{32} & T_{33} \end{pmatrix} \label{E.5}
+\mathbf{T} \equiv \begin{pmatrix} T_{11} & T_{12} & T_{13} \\ T_{21} & T_{22} & T_{23} \\ T_{31} & T_{32} & T_{33} \end{pmatrix} \tag{E.5} \label{eq-e-5}
 $$
 
-The rotational transformation given in Equation \ref{E.4} can be written in the form
+The rotational transformation given in Equation [E.4](#eq-e-4) can be written in the form
 
 $$
-T^{\prime}_{ij} = \sum^3_{l=1} \left( \sum^3_{k=1} \lambda_{ik}T_{kl}\right) \lambda_{jl} = \sum^3_{l=1} \left( \sum^3_{k=1} \lambda_{ik}T_{kl}\right) \lambda^T_{lj} \label{E.6}
+T^{\prime}_{ij} = \sum^3_{l=1} \left( \sum^3_{k=1} \lambda_{ik}T_{kl}\right) \lambda_{jl} = \sum^3_{l=1} \left( \sum^3_{k=1} \lambda_{ik}T_{kl}\right) \lambda^T_{lj} \tag{E.6} \label{eq-e-6}
 $$
 
-where $\lambda^T_{lj}$ are the matrix elements of the transposed matrix $\boldsymbol{\lambda}^T$. The summations in \ref{E.6} can be expressed in both the tensor and conventional matrix form as the matrix product
+where $\lambda^T_{lj}$ are the matrix elements of the transposed matrix $\boldsymbol{\lambda}^T$. The summations in [E.6](#eq-e-6) can be expressed in both the tensor and conventional matrix form as the matrix product
 
 $$
-\mathbf{T}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{T} \cdot \boldsymbol{\lambda}^T \label{E.7}
+\mathbf{T}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{T} \cdot \boldsymbol{\lambda}^T \tag{E.7} \label{eq-e-7}
 $$
 
-Equation \ref{E.7} defines the rotational properties of a spherical tensor.
+Equation [E.7](#eq-e-7) defines the rotational properties of a spherical tensor.
 
 ### Tensor products
 
@@ -1500,21 +1542,21 @@ Equation \ref{E.7} defines the rotational properties of a spherical tensor.
 Tensor products feature prominently when using tensors to represent transformations. A second-order tensor $\mathbf{T}$ can be formed by using the **tensor product**, also called **outer product**, of two vectors $\mathbf{a}$ and $\mathbf{b}$ which, written in suffix form, is
 
 $$
-\mathbf{T} \equiv \mathbf{a} \otimes \mathbf{b} = \begin{pmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\ a_2b_1 & a_2b_2 & a_2b_3 \\ a_3b_1 & a_3b_2 & a_3b_3 \end{pmatrix} \label{E.8}
+\mathbf{T} \equiv \mathbf{a} \otimes \mathbf{b} = \begin{pmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\ a_2b_1 & a_2b_2 & a_2b_3 \\ a_3b_1 & a_3b_2 & a_3b_3 \end{pmatrix} \tag{E.8} \label{eq-e-8}
 $$
 
 In component form the matrix elements of this matrix are given by
 
 $$
-T_{ij} = a_ib_j \label{E.9}
+T_{ij} = a_ib_j \tag{E.9} \label{eq-e-9}
 $$
 
-This second-order **tensor product** has a rank $r = 2$, that is, it equals the sum of the ranks of the two vectors. Equation \ref{E.8} is called a *dyad* since it was derived by taking the dyadic product of two vectors. In general, multiplication, or division, of two vectors leads to second-order tensors. Note that this second-order tensor product completes the triad of tensors possible taking the product of two vectors. That is, the scalar product $\mathbf{a} \cdot \mathbf{b}$, has rank $r = 0$, the vector product $\mathbf{a} \times \mathbf{b}$, rank $r = 1$ and the tensor product $\mathbf{a} \otimes \mathbf{b}$ has rank<sup>1</sup> $r = 2$.
+This second-order **tensor product** has a rank $r = 2$, that is, it equals the sum of the ranks of the two vectors. Equation [E.8](#eq-e-8) is called a *dyad* since it was derived by taking the dyadic product of two vectors. In general, multiplication, or division, of two vectors leads to second-order tensors. Note that this second-order tensor product completes the triad of tensors possible taking the product of two vectors. That is, the scalar product $\mathbf{a} \cdot \mathbf{b}$, has rank $r = 0$, the vector product $\mathbf{a} \times \mathbf{b}$, rank $r = 1$ and the tensor product $\mathbf{a} \otimes \mathbf{b}$ has rank[^19-6-1] $r = 2$.
 
 Higher-order tensors can be created by taking more complicated tensor products. For example, a rank-3 tensor can be created by taking the tensor outer product of the rank-2 tensor $T_{ij}$ and a vector $c_k$ which, for a dyadic tensor, can be written as the tensor product of three vectors. That is,
 
 $$
-T_{ijk} = T_{ij} c_k = a_ib_j c_k \label{E.10}
+T_{ijk} = T_{ij} c_k = a_ib_j c_k \tag{E.10} \label{eq-e-10}
 $$
 
 In summary, the rank of the tensor product equals the sum of the ranks of the tensors included in the tensor product.
@@ -1525,15 +1567,16 @@ The lowest rank tensor product, which is called the **inner product**, is obtain
 
 The simplest example is the inner product of two vectors which has rank $r =1+1 − 2=0$, that is, it is the scalar product that equals the trace of the inner product matrix, and this inner product is commutative.
 
-An especially important case is the inner product of a rank-2 dyad $\mathbf{a} \otimes \mathbf{b}$, given by Equation \ref{E.8}, with a vector $\mathbf{c}$, that is, the inner product $\mathbf{T} = \mathbf{a} \otimes \mathbf{b} \cdot \mathbf{c}$. Written in component form, the inner product is
+An especially important case is the inner product of a rank-2 dyad $\mathbf{a} \otimes \mathbf{b}$, given by Equation [E.8](#eq-e-8), with a vector $\mathbf{c}$, that is, the inner product $\mathbf{T} = \mathbf{a} \otimes \mathbf{b} \cdot \mathbf{c}$. Written in component form, the inner product is
 
 $$
-\sum^3_i a_ib_ic_j = \left( \sum^3_i a_ib_i \right) c_j = (\mathbf{a} \cdot \mathbf{b}) c_j \label{E.11}
+\sum^3_i a_ib_ic_j = \left( \sum^3_i a_ib_i \right) c_j = (\mathbf{a} \cdot \mathbf{b}) c_j \tag{E.11} \label{eq-e-11}
 $$
 
 The scalar product $\mathbf{a} \cdot \mathbf{b}$ is a scalar number, and thus the inner-product tensor is the vector $\mathbf{c}$ renormalized by the magnitude of the scalar product $\mathbf{a} \cdot \mathbf{b}$. That is, it has a rank $r = 2+1−2=1$. Thus the inner product of this rank-2 tensor with a vector gives a vector. The inner product of a rank-2 tensor with a rank-1 tensor is used in this book for handling the rotation matrix, the inertia tensor for rigid-body rotation, and for the stress and the strain tensors used to describe elasticity in solids.
 
-Example 19.1: Displacement gradient tensor
+::::{admonition} Example 19.6.1: Displacement gradient tensor
+:class: example
 
 The displacement gradient tensor provides an example of the use of the matrix representation to manipulate tensors. Let $\boldsymbol{\phi}(x_1, x_2, x_3)$ be a vector field expressed in a cartesian basis. The definition of the gradient $G = \boldsymbol{\nabla}\boldsymbol{\phi}$ gives that
 
@@ -1573,6 +1616,8 @@ $$
 d\boldsymbol{\phi} = \mathbf{G} \cdot d\mathbf{x} \nonumber
 $$
 
+::::
+
 ### Tensor Properties
 
 In principle one must distinguish between a $3\times 3$ square matrix, and the tensor component representations of a rank-2 tensor. However, as illustrated by the previous discussion, for orthogonal transformations, the tensor components of the second rank tensor transform identically with the matrix components. Thus functionally, the matrix formulation and tensor representations are identical. As a consequence, all the terminology and operations used in matrix mechanics are equally applicable to the tensor representation.
@@ -1580,21 +1625,21 @@ In principle one must distinguish between a $3\times 3$ square matrix, and the t
 The tensor representation of the rotation matrix provides the simplest example of the equivalence of the matrix and tensor representations of transformations. Appendix $19.4.2$ showed that the unitary rotation matrix $\boldsymbol{\lambda}$, acting on a vector $\mathbf{x}$ transforms it to the vector $\mathbf{x}^{\prime}$ that is rotated with respect to $\mathbf{x}$. That is, the transformation is
 
 $$
-\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \label{D5}
+\mathbf{x}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{x} \label{eq-19-d5}
 $$
 
 where
 
 $$
-\mathbf{x}^{\prime} \equiv \begin{pmatrix} x^{\prime}_1 \\ x^{\prime}_2 \\ x^{\prime}_3 \end{pmatrix} \quad \mathbf{x} \equiv \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} \quad \boldsymbol{\lambda} \equiv \begin{pmatrix} \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3 \end{pmatrix} \label{D6}
+\mathbf{x}^{\prime} \equiv \begin{pmatrix} x^{\prime}_1 \\ x^{\prime}_2 \\ x^{\prime}_3 \end{pmatrix} \quad \mathbf{x} \equiv \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} \quad \boldsymbol{\lambda} \equiv \begin{pmatrix} \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_1 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_2 \cdot \mathbf{\hat{e}}_3 \\ \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_1 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_2 & \mathbf{\hat{e}}^{\prime}_3 \cdot \mathbf{\hat{e}}_3 \end{pmatrix} \label{eq-19-d6}
 $$
 
-Appendix $19.4.2$ showed that the rotation matrix $\boldsymbol{\lambda}$ requires 9 components to fully specify the transformation from the initial 3-component vector $\mathbf{x}$ to the rotated vector $\mathbf{x}^{\prime}$. The rotation tensor is a dyad as well as being unitary and dimensionless. Note that Equation \ref{D5} is an example of the inner product of a rank−2 rotation tensor acting on a vector leading to a another vector that is rotated with respect to the first vector.
+Appendix $19.4.2$ showed that the rotation matrix $\boldsymbol{\lambda}$ requires 9 components to fully specify the transformation from the initial 3-component vector $\mathbf{x}$ to the rotated vector $\mathbf{x}^{\prime}$. The rotation tensor is a dyad as well as being unitary and dimensionless. Note that Equation [D5](#eq-19-d5) is an example of the inner product of a rank−2 rotation tensor acting on a vector leading to a another vector that is rotated with respect to the first vector.
 
 In general, rank-2 tensors have dimensions and are not unitary. For example, the angular velocity vector $\boldsymbol{\omega}$ and the angular momentum vector $\mathbf{L}$ are related by the inner product of the inertia tensor $\{\mathbf{I}\}$ and $\boldsymbol{\omega}$. That is
 
 $$
-\mathbf{L} =\{\mathbf{I}\} \cdot \boldsymbol{\omega} \label{11.6}
+\mathbf{L} =\{\mathbf{I}\} \cdot \boldsymbol{\omega} \tag{11.6} \label{eq-11-6}
 $$
 
 The inertia tensor has dimensions of $mass \times length^2$ and relates two very different vector observables. The stress tensor and the strain tensor, discussed in chapter $15$, provide another example of second-order tensors that are used to transform one vector observable to another vector observable analogous to the case of the rotation matrix or the inertia tensor.
@@ -1610,71 +1655,74 @@ In general the configuration space used to specify a dynamical system is not a E
 Tensors have transformation properties that can be either contravariant or covariant. Consider a set of generalized coordinates $q^{\prime}$ that are a function of the coordinates $q$. Then infinitessimal changes $dq^m$ will lead to infinitessimal changes $dq^{\prime n}$ where
 
 $$
-dq^{\prime n} = \sum_m \dfrac{\partial q^{\prime n}}{ \partial q^m } dq^m \label{E.12}
+dq^{\prime n} = \sum_m \dfrac{\partial q^{\prime n}}{ \partial q^m } dq^m \tag{E.12} \label{eq-e-12}
 $$
 
 **Contravariant** components of a tensor transform according to the relation
 
 $$
-\lambda^{\prime n} = \sum_m \dfrac{\partial q^{\prime n}}{ \partial q^m} \lambda^m \label{E.13}
+\lambda^{\prime n} = \sum_m \dfrac{\partial q^{\prime n}}{ \partial q^m} \lambda^m \tag{E.13} \label{eq-e-13}
 $$
 
-Equation \ref{E.13} relates the contravariant components in the unprimed and primed frames.
+Equation [E.13](#eq-e-13) relates the contravariant components in the unprimed and primed frames.
 
 Derivatives of a scalar function $\phi$, such as
 
 $$
-\lambda^{\prime}_n = \dfrac{\partial \phi}{ \partial q^n} = \sum_m \dfrac{\partial \phi}{ \partial q^m} \dfrac{ \partial q^m}{ \partial q^n} = \sum_m \dfrac{\partial q^m }{\partial q^n} \lambda^m \label{E.14}
+\lambda^{\prime}_n = \dfrac{\partial \phi}{ \partial q^n} = \sum_m \dfrac{\partial \phi}{ \partial q^m} \dfrac{ \partial q^m}{ \partial q^n} = \sum_m \dfrac{\partial q^m }{\partial q^n} \lambda^m \tag{E.14} \label{eq-e-14}
 $$
 
 That is, **covariant** components of the tensor transform according to the relation
 
 $$
-\lambda^{\prime}_n = \sum_m \dfrac{\partial q^m}{ \partial q^n} \lambda^m \label{E.15}
+\lambda^{\prime}_n = \sum_m \dfrac{\partial q^m}{ \partial q^n} \lambda^m \tag{E.15} \label{eq-e-15}
 $$
 
-It is important to differentiate between contravariant and covariant vectors. The superscript/subscript convention for distinguishing between these two flavours of tensors is given in table 19.1
+It is important to differentiate between contravariant and covariant vectors. The superscript/subscript convention for distinguishing between these two flavours of tensors is given in table 19.6.1
 
-| $x^{\mu}$ | denotes a contravariant vector |
-| --- | --- |
-| $x_{\nu}$ | denotes a covariant vector |
+::::{list-table}
+* - $x^{\mu}$
+  - denotes a contravariant vector
+* - $x_{\nu}$
+  - denotes a covariant vector
+::::
 
 In linear algebra one can map from one coordinate system to another as illustrated in appendix $19.4$. That is, the tensor $\mathbf{x}$ can be expressed as components with respect to either the unprimed or primed coordinate frames
 
 $$
-\mathbf{x} = \mathbf{\hat{e}}^{\prime}_1x^{\prime}_1 + \mathbf{\hat{e}}^{\prime}_2x^{\prime}_2 + \mathbf{\hat{e}}^{\prime}_3x^{\prime}_3 = \mathbf{\hat{e}}_1x_1 + \mathbf{\hat{e}}_2x_2 + \mathbf{\hat{e}}_3x_3 \label{E.16}
+\mathbf{x} = \mathbf{\hat{e}}^{\prime}_1x^{\prime}_1 + \mathbf{\hat{e}}^{\prime}_2x^{\prime}_2 + \mathbf{\hat{e}}^{\prime}_3x^{\prime}_3 = \mathbf{\hat{e}}_1x_1 + \mathbf{\hat{e}}_2x_2 + \mathbf{\hat{e}}_3x_3 \tag{E.16} \label{eq-e-16}
 $$
 
 For a $n$−dimensional manifold the unit basis column vectors $\mathbf{\hat{e}}$ transform according to the transformation matrix $\boldsymbol{\lambda}$
 
 $$
-\mathbf{\hat{e}}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{\hat{e}} \label{E.17}
+\mathbf{\hat{e}}^{\prime} = \boldsymbol{\lambda} \cdot \mathbf{\hat{e}} \tag{E.17} \label{eq-e-17}
 $$
 
 Since the tensor $\mathbf{x}$ is independent of the coordinate basis, the components of $\mathbf{x}$ must have the opposite transform
 
 $$
-\mathbf{x}^{\prime} = \left( \boldsymbol{\lambda}^{−1}\right)^T \cdot \mathbf{x} \label{E.18}
+\mathbf{x}^{\prime} = \left( \boldsymbol{\lambda}^{−1}\right)^T \cdot \mathbf{x} \tag{E.18} \label{eq-e-18}
 $$
 
 This normal vector $\mathbf{x}$ is called a “contravariant vector” because it transforms contrary to the basis column vector transformation.
 
-The inverse of Equation \ref{E.18} gives that the column vector element
+The inverse of Equation [E.18](#eq-e-18) gives that the column vector element
 
 $$
-x_{\mu} = \sum_{\nu} \boldsymbol{\lambda}_{\mu \nu} x^{\prime}_{\nu} \label{E.19}
+x_{\mu} = \sum_{\nu} \boldsymbol{\lambda}_{\mu \nu} x^{\prime}_{\nu} \tag{E.19} \label{eq-e-19}
 $$
 
 Consider the case of a gradient with respect to the coordinate $\mathbf{x}$ in both the unprimed and primed bases. Using the chain rule for the partial derivative then the component of the gradient in the primed frame can be expanded as
 
 $$
-(\nabla f)^{\prime}_{\mu} = \dfrac{\partial f}{\partial x^{\prime}_{\mu}} = \sum_{\nu} \dfrac{ \partial f}{ \partial x_{\nu}} \dfrac{ \partial x_{\nu}} { \partial x^{\prime}_{ \mu}} = \sum_{\nu} \dfrac{ \partial f}{ \partial x_{\nu}} \boldsymbol{\lambda}_{\nu \mu} \delta_{\mu \nu} = \lambda_{\mu \mu} \dfrac{ \partial f}{ \partial x_{\mu}} \label{E.20}
+(\nabla f)^{\prime}_{\mu} = \dfrac{\partial f}{\partial x^{\prime}_{\mu}} = \sum_{\nu} \dfrac{ \partial f}{ \partial x_{\nu}} \dfrac{ \partial x_{\nu}} { \partial x^{\prime}_{ \mu}} = \sum_{\nu} \dfrac{ \partial f}{ \partial x_{\nu}} \boldsymbol{\lambda}_{\nu \mu} \delta_{\mu \nu} = \lambda_{\mu \mu} \dfrac{ \partial f}{ \partial x_{\mu}} \tag{E.20} \label{eq-e-20}
 $$
 
 That is, the gradient transforms as
 
 $$
-\boldsymbol{\nabla}^{\prime} f = \boldsymbol{\lambda} \cdot \boldsymbol{\nabla}f \label{E.21}
+\boldsymbol{\nabla}^{\prime} f = \boldsymbol{\lambda} \cdot \boldsymbol{\nabla}f \tag{E.21} \label{eq-e-21}
 $$
 
 That is, *a gradient transforms as a covariant vector, like the unit vectors, whereas a vector*$x$*is contravariant under transformation.*
@@ -1684,7 +1732,7 @@ Normally the basis is orthonormal, $\left( \boldsymbol{\lambda}^{−1}\right)^T 
 The Einstein convention is extended to apply to matrices by writing the elements of the matrix $\mathbf{A}$ as $A^{\mu}_{\nu}$ while the elements of the transposed matrix $\mathbf{A}^{−1}$ are written as $A_{\mu}^{\nu}$. The matrix product for $\mathbf{A}$ with a contravariant vector $\mathbf{X}$ is written as
 
 $$
-X^{\prime \mu} = \sum_{\nu} A^{\mu}_{\nu} X^{\nu} \label{E.22}
+X^{\prime \mu} = \sum_{\nu} A^{\mu}_{\nu} X^{\nu} \tag{E.22} \label{eq-e-22}
 $$
 
 where the summation over $\nu$ effectively cancels the identical superscript and subscript $\nu$.
@@ -1692,13 +1740,13 @@ where the summation over $\nu$ effectively cancels the identical superscript and
 Similarly a covariant vector, such as a gradient, is written as,
 
 $$
-\left( \boldsymbol{\nabla}^{\prime} f \right)_{\mu} = \sum_{\nu} \left( A^{−1} \right)^{T \nu}_{ \mu} (\boldsymbol{\nabla}f)_{\nu} = \sum_{\nu} \left( A^{-1}\right)^{\nu}_{ \mu} (\boldsymbol{\nabla}f)_{\nu} \label{E.23}
+\left( \boldsymbol{\nabla}^{\prime} f \right)_{\mu} = \sum_{\nu} \left( A^{−1} \right)^{T \nu}_{ \mu} (\boldsymbol{\nabla}f)_{\nu} = \sum_{\nu} \left( A^{-1}\right)^{\nu}_{ \mu} (\boldsymbol{\nabla}f)_{\nu} \tag{E.23} \label{eq-e-23}
 $$
 
 Again the summation cancels the $\nu$ superscript and subscript. The Kronecker delta symbol is written as
 
 $$
-\sum_{\nu} \delta^{\mu}_{\nu} X^{\nu} = X^{\mu} \label{E.24}
+\sum_{\nu} \delta^{\mu}_{\nu} X^{\nu} = X^{\mu} \tag{E.24} \label{eq-e-24}
 $$
 
 ### Generalized inner product
@@ -1706,37 +1754,37 @@ $$
 The generalized definition of an *inner product* is
 
 $$
-S = \sum_{\mu \nu} g_{\mu \nu} X^{\mu} Y^{\nu} \label{E.25}
+S = \sum_{\mu \nu} g_{\mu \nu} X^{\mu} Y^{\nu} \tag{E.25} \label{eq-e-25}
 $$
 
 where $g_{\mu \nu}$ is a unitary matrix called a covariant metric. The covariant metric transforms a contravariant to a covariant tensor. For example the matrix element of a covariant tensor $X_{\nu}$ can be written as
 
 $$
-X_{\nu} = \sum_{\mu} g_{\mu \nu} X^{\mu} \label{E.26}
+X_{\nu} = \sum_{\mu} g_{\mu \nu} X^{\mu} \tag{E.26} \label{eq-e-26}
 $$
 
 By association of the *covariant metric* with either of the vectors in the inner product gives
 
 $$
-S = \sum_{\mu \nu} g_{\mu \nu} X^{\mu} Y^{\nu} = \sum_{\nu} X_{\nu} Y^{\nu} = \sum_{\mu} X^{\mu} Y_{\mu} \label{E.27}
+S = \sum_{\mu \nu} g_{\mu \nu} X^{\mu} Y^{\nu} = \sum_{\nu} X_{\nu} Y^{\nu} = \sum_{\mu} X^{\mu} Y_{\mu} \tag{E.27} \label{eq-e-27}
 $$
 
 Similarly it can be defined in terms of an *orthogonal contravariant metric* $g^{\mu \nu}$ where
 
 $$
-S = \sum_{\mu \nu} g^{\mu \nu} X_{\mu} Y_{\nu} \label{E.28}
+S = \sum_{\mu \nu} g^{\mu \nu} X_{\mu} Y_{\nu} \tag{E.28} \label{eq-e-28}
 $$
 
 Then
 
 $$
-X^{\nu} = \sum_{\mu} g^{\mu \nu} X_{\mu} \label{E.29}
+X^{\nu} = \sum_{\mu} g^{\mu \nu} X_{\mu} \tag{E.29} \label{eq-e-29}
 $$
 
 Association of the contravariant metric with one of the vectors in the inner product gives the inner product
 
 $$
-S = \sum_{\mu \nu} g^{\mu \nu} X_{\mu} Y_{\nu} = \sum_{\nu} X^{\nu} Y_{\nu} = \sum_{\mu} X_{\mu} Y^{\mu} \label{E.30}
+S = \sum_{\mu \nu} g^{\mu \nu} X_{\mu} Y_{\nu} = \sum_{\nu} X^{\nu} Y_{\nu} = \sum_{\mu} X_{\mu} Y^{\mu} \tag{E.30} \label{eq-e-30}
 $$
 
 For most situations in this book the metric $g_{\mu \nu}$ is diagonal and unitary.
@@ -1745,7 +1793,7 @@ For most situations in this book the metric $g_{\mu \nu}$ is diagonal and unitar
 
 In physics, observables can be represented by spherical tensors which specify the angular momentum and parity characteristics of the observable, and the tensor rank is independent of the time dependence. The transformation properties of these tensors, coupled with their time-reversal invariance, specify the fundamental characteristics of the observables.
 
-Table 19.2 summarizes the transformation properties under rotation, spatial inversion and time reversal for observables encountered in classical mechanics and electrodynamics. Note that observables can be scalar, vector, pseudovector, or second-order tensors, under rotation, and even or odd under either space inversion or time inversion. For example, in classical mechanics the inertia tensor $\mathbf{I}$ relates the angular velocity vector $\boldsymbol{\omega}$ to the angular momentum vector $\mathbf{L }$ by taking the inner product $\mathbf{L} = \mathbf{I} \cdot \boldsymbol{\omega}$. In general $\mathbf{I}$ is not diagonal and thus the angular momentum is not parallel to the angular velocity $\boldsymbol{\omega}$. A similar example in electrodynamics is the dielectric tensor $\mathbf{K}$ which relates the displacement field $\mathbf{D}$ to the electric field $\mathbf{E}$ by $\mathbf{D} = \mathbf{K} \cdot \mathbf{E}$. For anisotropic crystal media $\mathbf{K}$ is not diagonal leading to the electric field vectors $\mathbf{E}$ and $\mathbf{D}$ not being parallel.
+Table 19.6.2 summarizes the transformation properties under rotation, spatial inversion and time reversal for observables encountered in classical mechanics and electrodynamics. Note that observables can be scalar, vector, pseudovector, or second-order tensors, under rotation, and even or odd under either space inversion or time inversion. For example, in classical mechanics the inertia tensor $\mathbf{I}$ relates the angular velocity vector $\boldsymbol{\omega}$ to the angular momentum vector $\mathbf{L }$ by taking the inner product $\mathbf{L} = \mathbf{I} \cdot \boldsymbol{\omega}$. In general $\mathbf{I}$ is not diagonal and thus the angular momentum is not parallel to the angular velocity $\boldsymbol{\omega}$. A similar example in electrodynamics is the dielectric tensor $\mathbf{K}$ which relates the displacement field $\mathbf{D}$ to the electric field $\mathbf{E}$ by $\mathbf{D} = \mathbf{K} \cdot \mathbf{E}$. For anisotropic crystal media $\mathbf{K}$ is not diagonal leading to the electric field vectors $\mathbf{E}$ and $\mathbf{D}$ not being parallel.
 
 As discussed in chapter $7$, Noether’s Theorem states that symmetries of the transformation properties lead to important conservation laws. The behavior of classical systems under rotation relates to the conservation of angular momentum, the behavior under spatial inversion relates to parity conservation, and time-reversal invariance relates to conservation of energy. That is, conservative forces conserve energy and are time-reversal invariant.
 
@@ -1781,7 +1829,7 @@ As discussed in chapter $7$, Noether’s Theorem states that symmetries of the t
 | Dielectric tensor | $\mathbf{K}$ | 2 | Even | Even | Tensor |
 | Maxwell stress tensor | $\mathbf{T}_{ik}$ | 2 | Even | Even | Tensor |
 
-<sup>1</sup>The common convention is to denote the scalar product as $\mathbf{a} \cdot \mathbf{b}$, the vector product as $\mathbf{a} \times \mathbf{b}$, and tensor product as $\mathbf{a} \otimes \mathbf{b}$.
+[^19-6-1]: The common convention is to denote the scalar product as $\mathbf{a} \cdot \mathbf{b}$, the vector product as $\mathbf{a} \times \mathbf{b}$, and tensor product as $\mathbf{a} \otimes \mathbf{b}$.
 
 <sup>2</sup>Based on table 6.1 in *"Classical Electrodynamics"* $2^{nd}$ edition, by J.D. Jackson [Jac75]
 
@@ -1794,36 +1842,36 @@ Multivariate calculus provides the framework for handling systems having many va
 The extension of the derivative to multivariate calculus involves use of [partial derivatives](https://math.libretexts.org/Bookshelves/Calculus/Book%3A_Calculus_(OpenStax)/14%3A_Differentiation_of_Functions_of_Several_Variables/14.3%3A_Partial_Derivatives). The partial derivative with respect to the variable $x_i$ of a multivariate function $f(x_1, x_2,...., x_N )$ involves taking the normal one-variable derivative with respect to $x_i$ assuming that the other $N − 1$ variables are held constant. That is,
 
 $$
-\dfrac{\partial f\left(x_{1}, x_{2}, \ldots x_{N}\right)}{\partial x_{i}}=\lim _{h_{i} \rightarrow 0}\left[\dfrac{f\left(x_{1}, x_{2}, \ldots x_{i-1},\left(x_{i}+h_{i}\right), \ldots x_{N}\right)-f\left(x_{1}, x_{2}, \ldots, x_{N}\right)}{h_{i}}\right] \label{F.1}
+\dfrac{\partial f\left(x_{1}, x_{2}, \ldots x_{N}\right)}{\partial x_{i}}=\lim _{h_{i} \rightarrow 0}\left[\dfrac{f\left(x_{1}, x_{2}, \ldots x_{i-1},\left(x_{i}+h_{i}\right), \ldots x_{N}\right)-f\left(x_{1}, x_{2}, \ldots, x_{N}\right)}{h_{i}}\right] \tag{F.1} \label{eq-f-1}
 $$
 
 where it will be assumed that the function $f(x)$ is a continuously-differentiable function to $n^{th}$ order, then all partial derivatives of that order or less are independent of the order in which they are performed. That is,
 
 $$
-\dfrac{\partial^2 f(x)}{\partial x_i \partial x_j} = \dfrac{\partial^2 f(x)}{\partial x_j \partial x_i} \label{F.2}
+\dfrac{\partial^2 f(x)}{\partial x_i \partial x_j} = \dfrac{\partial^2 f(x)}{\partial x_j \partial x_i} \tag{F.2} \label{eq-f-2}
 $$
 
 The chain rule for partial differentiation gives that
 
 $$
-\dfrac{\partial f (y_1, y_2, ...., y_N )}{ \partial y_j} = \sum^N_{k=1} \dfrac{\partial f(x)}{ \partial x_k} \dfrac{\partial x_k (y)}{\partial y_j} \label{F.3}
+\dfrac{\partial f (y_1, y_2, ...., y_N )}{ \partial y_j} = \sum^N_{k=1} \dfrac{\partial f(x)}{ \partial x_k} \dfrac{\partial x_k (y)}{\partial y_j} \tag{F.3} \label{eq-f-3}
 $$
 
 The total differential of a multivariate function $f(x)$ is
 
 $$
-df = \sum^N_{k=1} \dfrac{\partial f(x)}{ \partial x_k} dx_k \label{F.4}
+df = \sum^N_{k=1} \dfrac{\partial f(x)}{ \partial x_k} dx_k \tag{F.4} \label{eq-f-4}
 $$
 
 This can be extended to higher-order derivatives using the operator formalism
 
 $$
-d^{n} f(x)=\left(d x_{1} \dfrac{\partial}{\partial x_{1}}+\ldots+d x_{N} \dfrac{\partial}{\partial x_{N}}\right)^{n} f(x)=\sum d x_{j_{1}} \ldots d x_{j_{n}} \dfrac{\partial^{n} f(x)}{\partial x_{j_{1}} \ldots \partial x_{j_{n}}} \label{F.5}
+d^{n} f(x)=\left(d x_{1} \dfrac{\partial}{\partial x_{1}}+\ldots+d x_{N} \dfrac{\partial}{\partial x_{N}}\right)^{n} f(x)=\sum d x_{j_{1}} \ldots d x_{j_{n}} \dfrac{\partial^{n} f(x)}{\partial x_{j_{1}} \ldots \partial x_{j_{n}}} \tag{F.5} \label{eq-f-5}
 $$
 
 ### Linear Operators
 
-The linear operator notation provides a powerful, elegant, and compact way to express, and apply, the equations of multivariate calculus; it is used extensively in mathematics and physics. The linear operators typically comprise partial derivatives that act on scalar, vector, or tensor fields. Table 19.1 lists a few elementary examples of the use of linear operators in this textbook. The first four linear operators involve the widely used del operator $\boldsymbol{\nabla}$ to generate the gradient, divergence and curl as described in appendices $19.7$ and $19.8$. The fifth and sixth linear operators act on the Lagrangian in Lagrangian mechanics applications. The final two linear operators act on the wavefunction for wave mechanics.
+The linear operator notation provides a powerful, elegant, and compact way to express, and apply, the equations of multivariate calculus; it is used extensively in mathematics and physics. The linear operators typically comprise partial derivatives that act on scalar, vector, or tensor fields. Table 19.7.1 lists a few elementary examples of the use of linear operators in this textbook. The first four linear operators involve the widely used del operator $\boldsymbol{\nabla}$ to generate the gradient, divergence and curl as described in appendices $19.7$ and $19.8$. The fifth and sixth linear operators act on the Lagrangian in Lagrangian mechanics applications. The final two linear operators act on the wavefunction for wave mechanics.
 
 | Name | Partial derivative | Field | Action |
 | --- | --- | --- | --- |
@@ -1839,19 +1887,19 @@ The linear operator notation provides a powerful, elegant, and compact way to ex
 There are three ways of expressing operations such as addition, multiplication, transposition or inversion of operations that are completely equivalent because they all are based on the same principles of linear algebra. For example, a transformation $\mathbf{O}$ acting on a vector $\mathbf{A}$ can produce the vector $\mathbf{B}$. The simplest way to express this transformation is in terms of components
 
 $$
-B_i = \sum^3_{j=1} O_{ij}A_j \label{F.6}
+B_i = \sum^3_{j=1} O_{ij}A_j \tag{F.6} \label{eq-f-6}
 $$
 
 Another way is to use matrix mechanics where the $3 \times 3$ matrix $(\mathbf{O})$ transforms the column vector $(\mathbf{A})$ to the column vector $(\mathbf{B})$, that is,
 
 $$
-(\mathbf{B})=(\mathbf{O}) (\mathbf{A}) \label{F.7}
+(\mathbf{B})=(\mathbf{O}) (\mathbf{A}) \tag{F.7} \label{eq-f-7}
 $$
 
 The third approach is to assume an operator $\mathbf{O}$ acts on the vector $\mathbf{A}$
 
 $$
-\mathbf{B} = \mathbf{OA} \label{F.8}
+\mathbf{B} = \mathbf{OA} \tag{F.8} \label{eq-f-8}
 $$
 
 In classical mechanics, and quantum mechanics, these three equivalent approaches are used and exploited extensively and interchangeably. In particular the rules of matrix manipulation, that are given in appendix $19.1$, are synonymous, and equivalent to, those that apply for operator manipulation. If the operator is complex then the operator properties are summarized as follows.
@@ -1859,19 +1907,19 @@ In classical mechanics, and quantum mechanics, these three equivalent approaches
 The generalization of the transpose for complex operators is the *Hermitian conjugate* $O^{\dagger}$
 
 $$
-O^{\dagger}_{ij} = O^*_{ji} \label{F.9}
+O^{\dagger}_{ij} = O^*_{ji} \tag{F.9} \label{eq-f-9}
 $$
 
 Note also that
 
 $$
-\mathbf{O}^{\dagger} = (O^*)^T = (O^T )^* \label{F.10}
+\mathbf{O}^{\dagger} = (O^*)^T = (O^T )^* \tag{F.10} \label{eq-f-10}
 $$
 
 The generalization of a symmetric matrix is *Hermitian*, that is, $O$ is equal to its Hermitian conjugate
 
 $$
-O^{\dagger}_{ij} = O^*_{ji} = O_{ij} \label{F.11}
+O^{\dagger}_{ij} = O^*_{ji} = O_{ij} \tag{F.11} \label{eq-f-11}
 $$
 
 For a real matrix the complex conjugation has no effect so the matrix is real and symmetric.
@@ -1879,13 +1927,13 @@ For a real matrix the complex conjugation has no effect so the matrix is real an
 The generalization of orthogonal is *unitary* for which the operator is unitary if it is non-singular and
 
 $$
-O^{−1} = O^{\dagger} \label{F.12}
+O^{−1} = O^{\dagger} \tag{F.12} \label{eq-f-12}
 $$
 
 which implies
 
 $$
-OO^{\dagger} = U = O^{\dagger}O \label{F.13}
+OO^{\dagger} = U = O^{\dagger}O \tag{F.13} \label{eq-f-13}
 $$
 
 ### Transformation Jacobian
@@ -1895,7 +1943,7 @@ The Jacobian determinant, which is usually called the [Jacobian](https://math.li
 $$
 J\left(y_{1} y_{2} \ldots y_{n}\right) \equiv \dfrac{\partial x_{1} \partial x_{2} \ldots \partial x_{n}}{\partial y_{1} \partial y_{2} \ldots \partial y_{n}}=\begin{vmatrix}
 
-\dfrac{\partial x_{1}}{\partial y_{1}} & \dfrac{\partial x_{1}}{\partial y_{2}} & \ldots & \dfrac{\partial x_{1}}{\partial y_{n}} \\ \dfrac{\partial x_{2}}{\partial y_{1}} & \dfrac{\partial x_{2}}{\partial y_{2}} & \cdots & \dfrac{\partial x_{2}}{\partial y_{n}} \\ \vdots & \vdots & \vdots & \vdots \\ \dfrac{\partial x_{n}}{\partial y_{1}} & \dfrac{\partial x_{n}}{\partial y_{2}} & \ldots & \dfrac{\partial x_{n}}{\partial y_{n}} \end{vmatrix} \label{F.14}
+\dfrac{\partial x_{1}}{\partial y_{1}} & \dfrac{\partial x_{1}}{\partial y_{2}} & \ldots & \dfrac{\partial x_{1}}{\partial y_{n}} \\ \dfrac{\partial x_{2}}{\partial y_{1}} & \dfrac{\partial x_{2}}{\partial y_{2}} & \cdots & \dfrac{\partial x_{2}}{\partial y_{n}} \\ \vdots & \vdots & \vdots & \vdots \\ \dfrac{\partial x_{n}}{\partial y_{1}} & \dfrac{\partial x_{n}}{\partial y_{2}} & \ldots & \dfrac{\partial x_{n}}{\partial y_{n}} \end{vmatrix} \tag{F.14} \label{eq-f-14}
 $$
 
 #### Transformation of integrals
@@ -1903,7 +1951,7 @@ $$
 Consider a coordinate transformation for the integral of the function $f(x_1, x_2, ..x_n)$ to the integral of a function $g(y_1, y_2, ...y_n)$ where $y_i = h (x_1, x_2, ...x_n)$. The coordinate transformation of the integral equation can be expressed in terms of the Jacobian $J(y_1y_2...y_n)$
 
 $$
-\begin{align} \label{F.15} \int f\left(x_{1}, x_{2}, \ldots x_{n}\right) d x_{1} d x_{2} \ldots d x_{n} &=\int g\left(y_{1}, y_{2}, \ldots y_{n}\right) d y_{1} d y_{2} \ldots d y_{n}=\\ \int f\left(x_{1}, x_{2}, \ldots x_{n}\right) \dfrac{\partial x_{1} \partial x_{2} \ldots \partial x_{n}}{\partial y_{1} \partial y_{2} \ldots \partial y_{n}} d y_{1} d y_{2} \ldots d y_{n} &=\int f\left(y_{1}, y_{2}, . . y_{n}\right) J\left(y_{1}, y_{2}, \ldots y_{n}\right) d y_{1} d y_{2} \ldots d y_{n} \nonumber \end{align}
+\begin{align} \tag{F.15} \label{eq-f-15} \int f\left(x_{1}, x_{2}, \ldots x_{n}\right) d x_{1} d x_{2} \ldots d x_{n} &=\int g\left(y_{1}, y_{2}, \ldots y_{n}\right) d y_{1} d y_{2} \ldots d y_{n}=\\ \int f\left(x_{1}, x_{2}, \ldots x_{n}\right) \dfrac{\partial x_{1} \partial x_{2} \ldots \partial x_{n}}{\partial y_{1} \partial y_{2} \ldots \partial y_{n}} d y_{1} d y_{2} \ldots d y_{n} &=\int f\left(y_{1}, y_{2}, . . y_{n}\right) J\left(y_{1}, y_{2}, \ldots y_{n}\right) d y_{1} d y_{2} \ldots d y_{n} \nonumber \end{align}
 $$
 
 #### Transformation of differential equations
@@ -1911,19 +1959,19 @@ $$
 The differential cross sections for scattering can be defined either by the number of a definite kind of particle/per event, going into the volume element in momentum space $dp_1dp_2dp_3$, or by the number going into the solid angle element having momentum between $p$ and $p + dp$. That is, the first definition can be written as a differential equation
 
 $$
-\dfrac{\partial^3S(p_1, p_2, p_3)}{ \partial p_1\partial p_2\partial p_3 } dp_1dp_2dp_3 = \dfrac{\partial^3 S (p_1(p\theta \phi ), p_2(p\theta \phi ), p_3(p\theta \phi )) }{\partial p_1\partial p_2\partial p_3 } \dfrac{\partial (p_1, p_2, p_3) }{\partial (p, \theta , \phi )} dpd\theta d\phi \label{F.16}
+\dfrac{\partial^3S(p_1, p_2, p_3)}{ \partial p_1\partial p_2\partial p_3 } dp_1dp_2dp_3 = \dfrac{\partial^3 S (p_1(p\theta \phi ), p_2(p\theta \phi ), p_3(p\theta \phi )) }{\partial p_1\partial p_2\partial p_3 } \dfrac{\partial (p_1, p_2, p_3) }{\partial (p, \theta , \phi )} dpd\theta d\phi \tag{F.16} \label{eq-f-16}
 $$
 
-As shown in table $19.3.4$, $dp_1dp_2dp_3 = p^2 \sin \theta dpd\theta d\phi$, that is, the Jacobian equals $p^2 \sin \theta$. Thus Equation \ref{F.16} can be written as
+As shown in table $19.3.4$, $dp_1dp_2dp_3 = p^2 \sin \theta dpd\theta d\phi$, that is, the Jacobian equals $p^2 \sin \theta$. Thus Equation [F.16](#eq-f-16) can be written as
 
 $$
-\dfrac{\partial^3S(p_1, p_2, p_3)}{ \partial p_1\partial p_2\partial p_3} dp_1dp_2dp_3 = \left[\dfrac{ \partial^3S }{\partial p_1\partial p_2\partial p_3} p^2 \right] (\sin \theta dpd\theta d\phi ) = \dfrac{\partial^2 \sigma (p, \theta , \phi )}{ \partial p\partial \Omega} dpd\Omega \label{F.17}
+\dfrac{\partial^3S(p_1, p_2, p_3)}{ \partial p_1\partial p_2\partial p_3} dp_1dp_2dp_3 = \left[\dfrac{ \partial^3S }{\partial p_1\partial p_2\partial p_3} p^2 \right] (\sin \theta dpd\theta d\phi ) = \dfrac{\partial^2 \sigma (p, \theta , \phi )}{ \partial p\partial \Omega} dpd\Omega \tag{F.17} \label{eq-f-17}
 $$
 
 The differential cross section is defined by
 
 $$
-\dfrac{\partial^2\sigma (p, \theta , \phi )}{ \partial p\partial \Omega} \equiv \dfrac{\partial^3S}{ \partial p_1\partial p_2\partial p_3} p^2 \label{F.18}
+\dfrac{\partial^2\sigma (p, \theta , \phi )}{ \partial p\partial \Omega} \equiv \dfrac{\partial^3S}{ \partial p_1\partial p_2\partial p_3} p^2 \tag{F.18} \label{eq-f-18}
 $$
 
 where the $p^2$ factor is absorbed into the cross section and the solid angle term is factored out
@@ -1932,7 +1980,8 @@ where the $p^2$ factor is absorbed into the cross section and the solid angle te
 
 In classical mechanics the Jacobian often is extended from 3 dimensions to $n$-dimensional transformations. The Jacobian is unity for unitary transformations such as rotations and linear translations which implies that the volume element is preserved. It will be shown that this also is true for a certain class of transformations in classical mechanics that are called canonical transformations. The Jacobian transforms the local density to be correct for any scale transformations such as transforming linear dimensions from centimeters to inches.
 
-Example 19.1: Jacobian for transform from cartesian to spherical coordinates
+::::{admonition} Example 19.7.1: Jacobian for transform from cartesian to spherical coordinates
+:class: example
 
 Consider the transform in the three-dimensional integral $\int (x_1, x_2, x_3)dx_1dx_2dx_3$ under transformation from cartesian coordinates $(x_1, x_2, x_3)$ to spherical coordinates $(r, \theta , \phi )$. The transformation is governed by the geometric relations $x_1 = r \sin \theta \cos \phi , x_2 = r \sin \theta \sin \phi , x_3 = r \cos \theta$. For this transformation the Jacobian determinant equals
 
@@ -1947,6 +1996,7 @@ $$
 $$
 
 which is the well-known volume integral in spherical coordinates.
+::::
 
 ### Legendre transformation
 
@@ -1955,19 +2005,19 @@ Hamiltonian mechanics can be derived directly from Lagrange mechanics by conside
 Consider transformations between two functions $F(\mathbf{u}, \mathbf{w})$ and $G(\mathbf{v}, \mathbf{w})$ where $\mathbf{u}$ and $\mathbf{v}$ are the active variables related by the functional form
 
 $$
-\mathbf{v} = \boldsymbol{\nabla}_{\mathbf{u}} F(\mathbf{u}, \mathbf{w}) \label{F.19}
+\mathbf{v} = \boldsymbol{\nabla}_{\mathbf{u}} F(\mathbf{u}, \mathbf{w}) \tag{F.19} \label{eq-f-19}
 $$
 
 and where $\mathbf{w}$ designates passive variables and $\boldsymbol{\nabla}_{\mathbf{u}}F(\mathbf{u}, \mathbf{w})$ is the first-order derivative of $F(\mathbf{u}, \mathbf{w})$, i.e. the gradient, with respect to the components of the vector $\mathbf{u}$. The Legendre transform states that the inverse formula can always be written in the form
 
 $$
-\mathbf{u} = \boldsymbol{\nabla}_{\mathbf{v}}G(\mathbf{v}, \mathbf{w}) \label{F.20}
+\mathbf{u} = \boldsymbol{\nabla}_{\mathbf{v}}G(\mathbf{v}, \mathbf{w}) \tag{F.20} \label{eq-f-20}
 $$
 
 where the function $G(\mathbf{v}, \mathbf{w})$ is related to $F(\mathbf{u}, \mathbf{w})$ by the symmetric relation
 
 $$
-G(\mathbf{v}, \mathbf{w}) + F(\mathbf{u}, \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} \label{F.21}
+G(\mathbf{v}, \mathbf{w}) + F(\mathbf{u}, \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} \tag{F.21} \label{eq-f-21}
 $$
 
 and where the scalar product $\mathbf{u} \cdot \mathbf{ v} = \sum^N_{i = 1} u_iv_i$.
@@ -1975,7 +2025,7 @@ and where the scalar product $\mathbf{u} \cdot \mathbf{ v} = \sum^N_{i = 1} u_iv
 Furthermore the derivatives with respect to all the passive variables $\{w_i\}$ are related by
 
 $$
-\boldsymbol{\nabla}_{\mathbf{w}}F(\mathbf{u}, \mathbf{w}) = −\boldsymbol{\nabla}_{\mathbf{w}} G(\mathbf{v}, \mathbf{w}) \label{F.22}
+\boldsymbol{\nabla}_{\mathbf{w}}F(\mathbf{u}, \mathbf{w}) = −\boldsymbol{\nabla}_{\mathbf{w}} G(\mathbf{v}, \mathbf{w}) \tag{F.22} \label{eq-f-22}
 $$
 
 The relationship between the functions $F(\mathbf{u}, \mathbf{w})$ and $G(\mathbf{v}, \mathbf{w})$ is symmetrical and each is said to be the Legendre transform of the other.
@@ -2003,7 +2053,7 @@ This appendix reviews vector differential calculus which is used extensively in 
 Differential operators like time $\left( \frac{d}{dt} \right)$ do not change the rotational properties of scalars or proper vectors. A scalar operator $\frac{d}{ds}$ acting on a scalar field $\phi (xyz)$, in a rotated coordinated frame $\phi^{\prime} (x^{\prime} y^{\prime} z^{\prime} )$ is unchanged.
 
 $$
-\frac{d\phi^{\prime}}{ds} = \frac{d\phi}{ds} \label{G.1}
+\frac{d\phi^{\prime}}{ds} = \frac{d\phi}{ds} \tag{G.1} \label{eq-g-1}
 $$
 
 #### Vector field
@@ -2011,7 +2061,7 @@ $$
 Similarly for a proper vector field
 
 $$
-\frac{dA^{\prime}_i}{ ds} = \sum_j \lambda_{ij} \frac{dA_j}{ds} \label{G.2}
+\frac{dA^{\prime}_i}{ ds} = \sum_j \lambda_{ij} \frac{dA_j}{ds} \tag{G.2} \label{eq-g-2}
 $$
 
 That is, differentiation of scalar or vector fields with respect to a scalar operator does not change the rotational behavior. In particular, the scalar differentials of vectors continue to obey the rules of ordinary proper vectors. The scalar operator $\frac{\partial}{ \partial t}$ is used for calculation of velocity or acceleration.
@@ -2025,31 +2075,31 @@ Vector differential operators, such as the gradient operator, are important in p
 Consider a continuous, single-valued scalar function $\phi (x_i, x_j, x_k)$. Since
 
 $$
-\phi^{\prime} = \phi \label{G.3}
+\phi^{\prime} = \phi \tag{G.3} \label{eq-g-3}
 $$
 
 then the partial differential with respect to one component $x_i$ of the vector $\mathbf{x}^{\prime}$ gives
 
 $$
-\frac{\partial \phi^{\prime}}{ \partial x^{\prime}_i} = \sum_j \frac{\partial \phi}{ \partial x_j} \frac{\partial x_j}{\partial x^{\prime}_i} \label{G.4}
+\frac{\partial \phi^{\prime}}{ \partial x^{\prime}_i} = \sum_j \frac{\partial \phi}{ \partial x_j} \frac{\partial x_j}{\partial x^{\prime}_i} \tag{G.4} \label{eq-g-4}
 $$
 
 The inverse rotation gives that
 
 $$
-x_j= \sum_k \lambda_{kj}x^{\prime}_k \label{G.5}
+x_j= \sum_k \lambda_{kj}x^{\prime}_k \tag{G.5} \label{eq-g-5}
 $$
 
 Therefore
 
 $$
-\frac{\partial x_j}{\partial x^{\prime}_i } = \sum_k \lambda_{kj} \frac{\partial x^{\prime}_k }{\partial x^{\prime}_i } = \sum_k \lambda_{kj} \delta_{ik} = \lambda_{ij} \label{G.6}
+\frac{\partial x_j}{\partial x^{\prime}_i } = \sum_k \lambda_{kj} \frac{\partial x^{\prime}_k }{\partial x^{\prime}_i } = \sum_k \lambda_{kj} \delta_{ik} = \lambda_{ij} \tag{G.6} \label{eq-g-6}
 $$
 
 Thus
 
 $$
-\frac{\partial \phi^{\prime}}{ \partial x^{\prime}_i} = \sum_j \lambda_{ij}\frac{ \partial \phi}{ \partial x_j} \label{G.7}
+\frac{\partial \phi^{\prime}}{ \partial x^{\prime}_i} = \sum_j \lambda_{ij}\frac{ \partial \phi}{ \partial x_j} \tag{G.7} \label{eq-g-7}
 $$
 
 That is the vector derivative acting of a scalar field transforms like a proper vector.
@@ -2057,19 +2107,19 @@ That is the vector derivative acting of a scalar field transforms like a proper 
 Define the gradient, or $\boldsymbol{\nabla}$ operator, as
 
 $$
-\boldsymbol{\nabla} \equiv \sum_i \widehat{\mathbf{e}_i} \frac{\partial}{ \partial x_i} \label{G.8}
+\boldsymbol{\nabla} \equiv \sum_i \widehat{\mathbf{e}_i} \frac{\partial}{ \partial x_i} \tag{G.8} \label{eq-g-8}
 $$
 
 where $\widehat{\mathbf{e}_i}$ is the unit vector along the $x_i$ axis. In cartesian coordinates, the del vector operator is,
 
 $$
-\boldsymbol{\nabla} \equiv \widehat{\mathbf{i}} \frac{\partial}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial }{ \partial z} \label{G.9}
+\boldsymbol{\nabla} \equiv \widehat{\mathbf{i}} \frac{\partial}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial }{ \partial z} \tag{G.9} \label{eq-g-9}
 $$
 
 The gradient was applied to the gravitational and electrostatic potential to derive the corresponding field. For example, for electrostatics it was shown that the gradient of the scalar electrostatic potential field $V$ can be written in cartesian coordinates as
 
 $$
-\mathbf{E} = −\boldsymbol{\nabla}V \label{G.10}
+\mathbf{E} = −\boldsymbol{\nabla}V \tag{G.10} \label{eq-g-10}
 $$
 
 Note that the gradient of a scalar field produces a vector field. You are familiar with this if you are a skier in that the gravitational force pulls you down the line of steepest descent for the ski slope.
@@ -2079,7 +2129,7 @@ Note that the gradient of a scalar field produces a vector field. You are famili
 Another possible operation for the del operator is the scalar product with a vector. Using the definition of a scalar product in cartesian coordinates gives
 
 $$
-\boldsymbol{\nabla} \cdot \mathbf{A}=\widehat{\mathbf{i}} \cdot \widehat{\mathbf{i}} \frac{\partial A_{x}}{\partial x}+\widehat{\mathbf{j}} \cdot \widehat{\mathbf{j}} \frac{\partial A_{y}}{\partial y}+\widehat{\mathbf{k}} \cdot \widehat{\mathbf{k}} \frac{\partial A_{z}}{\partial z}=\frac{\partial A_{x}}{\partial x}+\frac{\partial A_{y}}{\partial y}+\frac{\partial A_{z}}{\partial z} \label{G.11}
+\boldsymbol{\nabla} \cdot \mathbf{A}=\widehat{\mathbf{i}} \cdot \widehat{\mathbf{i}} \frac{\partial A_{x}}{\partial x}+\widehat{\mathbf{j}} \cdot \widehat{\mathbf{j}} \frac{\partial A_{y}}{\partial y}+\widehat{\mathbf{k}} \cdot \widehat{\mathbf{k}} \frac{\partial A_{z}}{\partial z}=\frac{\partial A_{x}}{\partial x}+\frac{\partial A_{y}}{\partial y}+\frac{\partial A_{z}}{\partial z} \tag{G.11} \label{eq-g-11}
 $$
 
 This scalar derivative of a vector field is called the divergence. Note that the scalar product produces a scalar field which is invariant to rotation of the coordinate axes.
@@ -2087,7 +2137,7 @@ This scalar derivative of a vector field is called the divergence. Note that the
 The vector product of the del operator with another vector, is called the curl which is used extensively in physics. It can be written in the determinant form
 
 $$
-\boldsymbol{\nabla} \times \mathbf{A} = \begin{vmatrix} \widehat{\mathbf{i}} & \widehat{\mathbf{j}} & \widehat{\mathbf{k}} \\ \frac{\partial}{ \partial x} & \frac{\partial}{ \partial y} & \frac{\partial}{ \partial z} \\ A_x & A_y & A_z \end{vmatrix} \label{G.12}
+\boldsymbol{\nabla} \times \mathbf{A} = \begin{vmatrix} \widehat{\mathbf{i}} & \widehat{\mathbf{j}} & \widehat{\mathbf{k}} \\ \frac{\partial}{ \partial x} & \frac{\partial}{ \partial y} & \frac{\partial}{ \partial z} \\ A_x & A_y & A_z \end{vmatrix} \tag{G.12} \label{eq-g-12}
 $$
 
 By contrast to the scalar product, both the gradient of a scalar field, and the vector product, are vector fields for which the components along the coordinate axes transform in a specific manner, such as to keep the length of the vector constant, as the coordinate frame is rotated. The gradient, scalar and vector products with the $\boldsymbol{\nabla}$ operator are the first order derivatives of fields that occur most frequently in physics.
@@ -2099,19 +2149,19 @@ Second derivatives of fields also are used. Let us consider some possible combin
 The scalar product of two del operators is a scalar under rotation. Evaluating the scalar product in cartesian coordinates gives
 
 $$
-\left( \widehat{\mathbf{i}} \frac{\partial}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial}{ \partial z} \right) \cdot \left( \widehat{\mathbf{i}} \frac{\partial V}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial V}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial V}{ \partial z} \right) = \frac{\partial^2 V}{ \partial x^2} + \frac{\partial^2V}{ \partial y^2} + \frac{\partial^2V}{ \partial z^2} \label{G.13}
+\left( \widehat{\mathbf{i}} \frac{\partial}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial}{ \partial z} \right) \cdot \left( \widehat{\mathbf{i}} \frac{\partial V}{ \partial x} + \widehat{\mathbf{j}} \frac{\partial V}{ \partial y} + \widehat{\mathbf{k}} \frac{\partial V}{ \partial z} \right) = \frac{\partial^2 V}{ \partial x^2} + \frac{\partial^2V}{ \partial y^2} + \frac{\partial^2V}{ \partial z^2} \tag{G.13} \label{eq-g-13}
 $$
 
 This also can be obtained without confusion by writing this product as;
 
 $$
-\boldsymbol{\nabla} \cdot (\boldsymbol{\nabla}V ) = \boldsymbol{\nabla} \cdot \boldsymbol{\nabla}V = (\boldsymbol{\nabla} \cdot \boldsymbol{\nabla}) V \label{G.14}
+\boldsymbol{\nabla} \cdot (\boldsymbol{\nabla}V ) = \boldsymbol{\nabla} \cdot \boldsymbol{\nabla}V = (\boldsymbol{\nabla} \cdot \boldsymbol{\nabla}) V \tag{G.14} \label{eq-g-14}
 $$
 
 where the scalar product of the del operator is a scalar, called the Laplacian $\nabla^2$, given by
 
 $$
-\boldsymbol{\nabla} \cdot \boldsymbol{\nabla} = \nabla^2 \equiv \frac{\partial^2}{ \partial x^2} + \frac{\partial^2}{ \partial y^2} + \frac{\partial^2}{ \partial z^2} \label{G.15}
+\boldsymbol{\nabla} \cdot \boldsymbol{\nabla} = \nabla^2 \equiv \frac{\partial^2}{ \partial x^2} + \frac{\partial^2}{ \partial y^2} + \frac{\partial^2}{ \partial z^2} \tag{G.15} \label{eq-g-15}
 $$
 
 The Laplacian operator is encountered frequently in physics.
@@ -2121,13 +2171,13 @@ The Laplacian operator is encountered frequently in physics.
 Note that the vector product of two identical vectors
 
 $$
-\mathbf{A} \times \mathbf{A} = 0 \label{G.16}
+\mathbf{A} \times \mathbf{A} = 0 \tag{G.16} \label{eq-g-16}
 $$
 
 Therefore
 
 $$
-\boldsymbol{\nabla}\times (\boldsymbol{\nabla}V )=0 \label{G.17}
+\boldsymbol{\nabla}\times (\boldsymbol{\nabla}V )=0 \tag{G.17} \label{eq-g-17}
 $$
 
 This can be confirmed by evaluating the separate components along each axis.
@@ -2141,13 +2191,13 @@ This is zero because the cross-product is perpendicular to $\boldsymbol{\nabla} 
 The identity
 
 $$
-\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = \mathbf{B} (\mathbf{A} \cdot \mathbf{C}) − (\mathbf{A} \cdot \mathbf{B}) \mathbf{C} \label{G.18}
+\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = \mathbf{B} (\mathbf{A} \cdot \mathbf{C}) − (\mathbf{A} \cdot \mathbf{B}) \mathbf{C} \tag{G.18} \label{eq-g-18}
 $$
 
 can be used to give
 
 $$
-\boldsymbol{\nabla}\times (\boldsymbol{\nabla} \times \mathbf{A}) = \boldsymbol{\nabla} \cdot (\boldsymbol{\nabla} \cdot \mathbf{A}) − \nabla^2\mathbf{A} \label{G.19}
+\boldsymbol{\nabla}\times (\boldsymbol{\nabla} \times \mathbf{A}) = \boldsymbol{\nabla} \cdot (\boldsymbol{\nabla} \cdot \mathbf{A}) − \nabla^2\mathbf{A} \tag{G.19} \label{eq-g-19}
 $$
 
 since $\boldsymbol{\nabla} \cdot \boldsymbol{\nabla} = \nabla^2$.
@@ -2163,19 +2213,19 @@ As discussed in Appendix $19.3$ there are many situations where the symmetries m
 The gradient in curvilinear coordinates is
 
 $$
-\boldsymbol{\nabla}f = \frac{1}{h_1} \frac{\partial f}{ \partial q_1} \mathbf{\hat{q}}_1 + \frac{1}{h_2} \frac{\partial f}{ \partial q_2} \mathbf{\hat{q}}_2 + \frac{1}{h_3} \frac{\partial f}{ \partial q_3} \mathbf{\hat{q}}_3 \label{G.20}
+\boldsymbol{\nabla}f = \frac{1}{h_1} \frac{\partial f}{ \partial q_1} \mathbf{\hat{q}}_1 + \frac{1}{h_2} \frac{\partial f}{ \partial q_2} \mathbf{\hat{q}}_2 + \frac{1}{h_3} \frac{\partial f}{ \partial q_3} \mathbf{\hat{q}}_3 \tag{G.20} \label{eq-g-20}
 $$
 
 where the coefficients $h_i$ are listed in table $19.3.1$. For cylindrical coordinates this becomes
 
 $$
-\boldsymbol{\nabla}f = \frac{\partial f}{ \partial \rho} \boldsymbol{\hat{\rho}} + \frac{1}{ \rho} \frac{\partial f}{ \partial \varphi } \boldsymbol{\hat{\varphi}} + \frac{\partial f}{ \partial z} \mathbf{\hat{z}} \label{G.21}
+\boldsymbol{\nabla}f = \frac{\partial f}{ \partial \rho} \boldsymbol{\hat{\rho}} + \frac{1}{ \rho} \frac{\partial f}{ \partial \varphi } \boldsymbol{\hat{\varphi}} + \frac{\partial f}{ \partial z} \mathbf{\hat{z}} \tag{G.21} \label{eq-g-21}
 $$
 
 In spherical coordinates
 
 $$
-\boldsymbol{\nabla}f = \frac{\partial f}{ \partial r} \mathbf{\hat{r}} + \frac{1}{ r} \frac{\partial f}{ \partial \theta} \boldsymbol{\hat{\theta}} + \frac{1}{ r \sin \theta} \frac{\partial f}{ \partial \varphi} \boldsymbol{\hat{\varphi}} \label{G.22}
+\boldsymbol{\nabla}f = \frac{\partial f}{ \partial r} \mathbf{\hat{r}} + \frac{1}{ r} \frac{\partial f}{ \partial \theta} \boldsymbol{\hat{\theta}} + \frac{1}{ r \sin \theta} \frac{\partial f}{ \partial \varphi} \boldsymbol{\hat{\varphi}} \tag{G.22} \label{eq-g-22}
 $$
 
 #### Divergence
@@ -2183,19 +2233,19 @@ $$
 The divergence can be expressed as
 
 $$
-\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{h_1h_2h_3} \left[ \frac{\partial}{ \partial q_1} (A_1h_2h_3) + \frac{\partial}{ \partial q_2 } (A_2h_3h_1) + \frac{\partial}{ \partial q_3} (A_3h_1h_2) \right] \label{G.23}
+\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{h_1h_2h_3} \left[ \frac{\partial}{ \partial q_1} (A_1h_2h_3) + \frac{\partial}{ \partial q_2 } (A_2h_3h_1) + \frac{\partial}{ \partial q_3} (A_3h_1h_2) \right] \tag{G.23} \label{eq-g-23}
 $$
 
 In cylindrical coordinates the divergence is
 
 $$
-\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{\rho} \frac{\partial}{ \partial \rho} (\rho A_{\rho}) + \frac{1}{\rho} \frac{\partial A_{\varphi}}{ \partial \varphi} + \frac{\partial A_z}{ \partial z} = \frac{A_{\rho}}{ \rho} + \frac{\partial A_{\rho}}{ \partial \rho} + \frac{1}{\rho} \frac{\partial A_{\varphi}}{ \partial \varphi} + \frac{\partial A_z}{ \partial z} \label{G.24}
+\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{\rho} \frac{\partial}{ \partial \rho} (\rho A_{\rho}) + \frac{1}{\rho} \frac{\partial A_{\varphi}}{ \partial \varphi} + \frac{\partial A_z}{ \partial z} = \frac{A_{\rho}}{ \rho} + \frac{\partial A_{\rho}}{ \partial \rho} + \frac{1}{\rho} \frac{\partial A_{\varphi}}{ \partial \varphi} + \frac{\partial A_z}{ \partial z} \tag{G.24} \label{eq-g-24}
 $$
 
 In spherical coordinates the divergence is
 
 $$
-\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{ r^2 \sin \theta} \left[ \frac{\partial}{ \partial r} \left( A_r r^2 \sin \theta \right) + \frac{\partial}{ \partial \theta} (A_{\theta} r \sin \theta ) + \frac{\partial}{ \partial \varphi} (A_{\varphi} r) \right] \label{G.25}
+\boldsymbol{\nabla} \cdot \mathbf{A} = \frac{1}{ r^2 \sin \theta} \left[ \frac{\partial}{ \partial r} \left( A_r r^2 \sin \theta \right) + \frac{\partial}{ \partial \theta} (A_{\theta} r \sin \theta ) + \frac{\partial}{ \partial \varphi} (A_{\varphi} r) \right] \tag{G.25} \label{eq-g-25}
 $$
 
 #### Curl
@@ -2203,7 +2253,7 @@ $$
 $$
 \boldsymbol{\nabla} \times \mathbf{A}= \frac{1}{h_{1} h_{2} h_{3}} \begin{vmatrix} h_{1} \mathbf{\hat{q}}_{1} & h_{2} \mathbf{\hat{q}}_{2} & h_{3} \mathbf{\hat{q}}_{3} \\
 
-\frac{\partial}{\partial q_{1}} & \frac{\partial}{\partial q_{2}} & \frac{\partial}{\partial q_{3}} \\ h_{1} A_{1} & h_{2} A_{2} & h_{3} A_{3} \end{vmatrix} \label{G.26}
+\frac{\partial}{\partial q_{1}} & \frac{\partial}{\partial q_{2}} & \frac{\partial}{\partial q_{3}} \\ h_{1} A_{1} & h_{2} A_{2} & h_{3} A_{3} \end{vmatrix} \tag{G.26} \label{eq-g-26}
 $$
 
 In cylindrical coordinates the curl is
@@ -2215,7 +2265,7 @@ $$
 
 \frac{\partial}{\partial \rho} & \frac{\partial}{\partial \varphi} & \frac{\partial}{\partial z} \\
 
-A_{\rho} & \rho A_{\varphi} & A_{z} \end{vmatrix} \label{G.27}
+A_{\rho} & \rho A_{\varphi} & A_{z} \end{vmatrix} \tag{G.27} \label{eq-g-27}
 $$
 
 In spherical coordinates the curl is
@@ -2227,7 +2277,7 @@ $$
 
 \frac{\partial}{\partial r} & \frac{\partial}{\partial \theta} & \frac{\partial}{\partial \varphi} \\
 
-A_{r} & r \rho A_{\theta} & r \sin \theta A_{\varphi} \end{vmatrix} \label{G.28}
+A_{r} & r \rho A_{\theta} & r \sin \theta A_{\varphi} \end{vmatrix} \tag{G.28} \label{eq-g-28}
 $$
 
 #### Laplacian
@@ -2235,19 +2285,19 @@ $$
 Taking the divergence of the gradient of a scalar gives
 
 $$
-\nabla^2f = \boldsymbol{\nabla} \cdot \boldsymbol{\nabla}f = \frac{1}{h_1h_2h_3} \left[ \frac{\partial}{ \partial q_1} \left(\frac{h_2h_3 }{h_1} \frac{\partial f}{ \partial q_1} \right) + \frac{\partial}{ \partial q_2} \left(\frac{h_3h_1}{h_2} \frac{\partial f}{ \partial q_2} \right) + \frac{\partial}{ \partial q_3} \left(\frac{h_1h_2 }{h_3} \frac{\partial f}{ \partial q_3} \right)\right] \label{G.29}
+\nabla^2f = \boldsymbol{\nabla} \cdot \boldsymbol{\nabla}f = \frac{1}{h_1h_2h_3} \left[ \frac{\partial}{ \partial q_1} \left(\frac{h_2h_3 }{h_1} \frac{\partial f}{ \partial q_1} \right) + \frac{\partial}{ \partial q_2} \left(\frac{h_3h_1}{h_2} \frac{\partial f}{ \partial q_2} \right) + \frac{\partial}{ \partial q_3} \left(\frac{h_1h_2 }{h_3} \frac{\partial f}{ \partial q_3} \right)\right] \tag{G.29} \label{eq-g-29}
 $$
 
 The Laplacian of a scalar function $f$ in cylindrical coordinates is
 
 $$
-\nabla^2f = \frac{1}{\rho} \frac{\partial}{ \partial \rho} \left( \rho \frac{\partial f}{ \partial \rho} \right) + \frac{1}{ \rho^2} \frac{\partial^2f}{ \partial \varphi^2} + \frac{\partial^2f}{ \partial z^2} \label{G.30}
+\nabla^2f = \frac{1}{\rho} \frac{\partial}{ \partial \rho} \left( \rho \frac{\partial f}{ \partial \rho} \right) + \frac{1}{ \rho^2} \frac{\partial^2f}{ \partial \varphi^2} + \frac{\partial^2f}{ \partial z^2} \tag{G.30} \label{eq-g-30}
 $$
 
 The Laplacian of a scalar function $f$ in spherical coordinates is
 
 $$
-\nabla^2f = \frac{1}{ r^2} \frac{\partial}{ \partial r} \left( r^2 \frac{\partial f}{ \partial r} \right) + \frac{1}{ r^2 \sin \theta} \frac{\partial}{ \partial \theta} \left( \sin \theta \frac{\partial f}{ \partial \theta} \right) + \frac{1}{ r^2 \sin \theta } \frac{ \partial^2f}{ \partial \varphi^2} \label{G.31}
+\nabla^2f = \frac{1}{ r^2} \frac{\partial}{ \partial r} \left( r^2 \frac{\partial f}{ \partial r} \right) + \frac{1}{ r^2 \sin \theta} \frac{\partial}{ \partial \theta} \left( \sin \theta \frac{\partial f}{ \partial \theta} \right) + \frac{1}{ r^2 \sin \theta } \frac{ \partial^2f}{ \partial \varphi^2} \tag{G.31} \label{eq-g-31}
 $$
 
 The gradient, divergence, curl and Laplacian are used extensively in curvilinear coordinate systems when dealing with vector fields in Newtonian mechanics, electromagnetism, and fluid flow.
@@ -2261,13 +2311,13 @@ Field equations, such as for electromagnetic and gravitational fields, require b
 The change $\Delta V$ in a scalar field for an infinitessimal step $d\mathbf{l}$ along a path can be written as
 
 $$
-\Delta V = (\boldsymbol{\nabla}V ) \cdot d\mathbf{l} \label{H.1}
+\Delta V = (\boldsymbol{\nabla}V ) \cdot d\mathbf{l} \tag{H.1} \label{eq-h-1}
 $$
 
 since the gradient of $V$, that is, $\boldsymbol{\nabla}V$, is the rate of change of $V$ with $d\mathbf{l}$. Discussions of gravitational and electrostatic potential show that the line integral between points $a$ and $b$ is given in terms of the del operator by
 
 $$
-V_b − V_a = \int^b_a (\boldsymbol{\nabla}V ) \cdot d\mathbf{l} \label{H.2}
+V_b − V_a = \int^b_a (\boldsymbol{\nabla}V ) \cdot d\mathbf{l} \tag{H.2} \label{eq-h-2}
 $$
 
 This relates the difference in values of a scalar field at two points to the line integral of the dot product of the gradient with the element of the line integral.
@@ -2277,21 +2327,23 @@ This relates the difference in values of a scalar field at two points to the lin
 #### Flux of a vector field for Gaussian surface
 
 :::{figure} ../images/lt-23023-h1.png
-:alt: h1.PNG
+:label: fig-19-9-1
+:enumerator: 19.9.1
+:alt: A volume V enclosed by a closed surface S is cut into two pieces at the surface S_{ab}. This gives V_1 enclosed by S_1 and V_1 enclosed by S_2.
 
-$1$: A volume V enclosed by a closed surface S is cut into two pieces at the surface $S_{ab}$. This gives V$_1$ enclosed by S$_1$ and V$_1$ enclosed by S$_2$.
+A volume V enclosed by a closed surface S is cut into two pieces at the surface $S_{ab}$. This gives V$_1$ enclosed by S$_1$ and V$_1$ enclosed by S$_2$.
 :::
 
-Consider the flux $\Phi$ of a vector field $\mathbf{F}$ for a closed surface, usually called a **Gaussian surface**, $S$ shown in Figure 19.1.
+Consider the flux $\Phi$ of a vector field $\mathbf{F}$ for a closed surface, usually called a **Gaussian surface**, $S$ shown in [Figure 19.9.1](#fig-19-9-1).
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} \label{H.3}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} \tag{H.3} \label{eq-h-3}
 $$
 
 If the enclosed volume is cut in to two pieces enclosed by surfaces $S_1 = S_a + S_{ab}$ and $S_2 = S_b + S_{ab}$. The flux through the surface $S_{ab}$ common to both $S_1$ and $S_2$ are equal and in the same direction. Then the net flux through the sum of $S_1$ and $S_2$ is given by
 
 $$
-\oint_{S_1} \mathbf{F} \cdot d\mathbf{S} + \oint_{S_2} \mathbf{F} \cdot d\mathbf{S} = \oint_S \mathbf{F} \cdot d\mathbf{S} \label{H.4}
+\oint_{S_1} \mathbf{F} \cdot d\mathbf{S} + \oint_{S_2} \mathbf{F} \cdot d\mathbf{S} = \oint_S \mathbf{F} \cdot d\mathbf{S} \tag{H.4} \label{eq-h-4}
 $$
 
 since the contributions of the common surface $S_{ab}$ cancel in that the flux out of $S_1$ is equal and opposite to the flux into $S_2$ over the surface $S_{ab}$. That is, independent of how many times the volume enclosed by $S$ is subdivided, the net flux for the sum of all the Gaussian surfaces enclosing these subdivisions of the volume, still equals $\oint_S \mathbf{F} \cdot d\mathbf{S}$.
@@ -2299,13 +2351,13 @@ since the contributions of the common surface $S_{ab}$ cancel in that the flux o
 Consider that the volume enclosed by $S$ is subdivided into $N$ subdivisions where $N \rightarrow \infty$, then even though $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$, the sum over surfaces of all the infinitessimal volumes remains unchanged
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \label{H.5}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \tag{H.5} \label{eq-h-5}
 $$
 
 Thus we can take the limit of a sum of an infinite number of infinitessimal volumes as is needed to obtain a differential form. The surface integral for each infinitessimal volume will equal zero which is not useful, that is $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$. However, the flux per unit volume has a finite value as $N \rightarrow \infty$. This ratio is called the *divergence* of the vector field;
 
 $$
-div \mathbf{F} = Lim_{\Delta \tau_i \rightarrow 0} \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \label{H.6}
+div \mathbf{F} = Lim_{\Delta \tau_i \rightarrow 0} \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \tag{H.6} \label{eq-h-6}
 $$
 
 where $\Delta \tau_i$ is the infinitessimal volume enclosed by surface $S_i$. The divergence of the vector field is a scalar quantity.
@@ -2313,13 +2365,13 @@ where $\Delta \tau_i$ is the infinitessimal volume enclosed by surface $S_i$. Th
 Thus the sum of flux over all infinitessimal subdivisions of the volume enclosed by a closed surface $S$ equals
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \Delta \tau_i = \sum^{N \rightarrow \infty}_i div \mathbf{F}\Delta \tau_i \label{H.7}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \Delta \tau_i = \sum^{N \rightarrow \infty}_i div \mathbf{F}\Delta \tau_i \tag{H.7} \label{eq-h-7}
 $$
 
 In the limit $N \rightarrow \infty$, $\Delta \tau_i \rightarrow 0$, this becomes the integral;
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int_{Enclosed \ volume} div \mathbf{F} d\tau \label{H.8}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int_{Enclosed \ volume} div \mathbf{F} d\tau \tag{H.8} \label{eq-h-8}
 $$
 
 This is called the [*Divergence Theorem*](https://math.libretexts.org/Bookshelves/Calculus/Book%3A_Calculus_(Guichard)/16%3A_Vector_Calculus/16.09%3A_The_Divergence_Theorem) or Gauss’s Theorem. To avoid confusion with Gauss’s law in electrostatics, it will be referred to as the Divergence theorem.
@@ -2327,45 +2379,47 @@ This is called the [*Divergence Theorem*](https://math.libretexts.org/Bookshelve
 #### Divergence in Cartesian Coordinates
 
 :::{figure} ../images/lt-23024-h2.png
-:alt: h2.PNG
+:label: fig-19-9-2
+:enumerator: 19.9.2
+:alt: Computation of flux out of an infinitessimal rectangular box, \Delta x, \Delta y, \Delta z.
 
-$2$: Computation of flux out of an infinitessimal rectangular box, $\Delta x$, $\Delta y$, $\Delta z$.
+Computation of flux out of an infinitessimal rectangular box, $\Delta x$, $\Delta y$, $\Delta z$.
 :::
 
-Consider the special case of an infinitessimal rectangular box, size $\Delta x, \Delta y, \Delta z$ shown in Figure 19.2. Consider the net flux for the $z$ component $F_z$ *entering* the surface $\Delta x\Delta y$ at location $(x, y, z)$.
+Consider the special case of an infinitessimal rectangular box, size $\Delta x, \Delta y, \Delta z$ shown in [Figure 19.9.2](#fig-19-9-2). Consider the net flux for the $z$ component $F_z$ *entering* the surface $\Delta x\Delta y$ at location $(x, y, z)$.
 
 $$
-\Delta \Phi ^{in}_z = \left( F_z + \frac{\Delta x}{ 2} \frac{\partial F_z}{ \partial x} + \frac{\Delta y}{ 2} \frac{\partial F_z }{\partial y} \right) \Delta x\Delta y \label{H.9}
+\Delta \Phi ^{in}_z = \left( F_z + \frac{\Delta x}{ 2} \frac{\partial F_z}{ \partial x} + \frac{\Delta y}{ 2} \frac{\partial F_z }{\partial y} \right) \Delta x\Delta y \tag{H.9} \label{eq-h-9}
 $$
 
 The net flux of the $z$ component *out* of the surface at $z + \Delta z$ is
 
 $$
-\Delta \Phi ^{out}_z = \left( F_z + \Delta z \frac{\partial F_z}{ \partial z} + \frac{\Delta x}{2} \frac{\partial F_z}{ \partial x} + \frac{\Delta y}{ 2} \frac{\partial F_z}{ \partial y} \right) \Delta x\Delta y \label{H.10}
+\Delta \Phi ^{out}_z = \left( F_z + \Delta z \frac{\partial F_z}{ \partial z} + \frac{\Delta x}{2} \frac{\partial F_z}{ \partial x} + \frac{\Delta y}{ 2} \frac{\partial F_z}{ \partial y} \right) \Delta x\Delta y \tag{H.10} \label{eq-h-10}
 $$
 
 Thus the net flux out of the box due to the z component of F is
 
 $$
-\Delta \Phi _z = \Delta \Phi ^{out}_z − \Delta \Phi ^{in}_z = \frac{\partial F_z}{ \partial z} \Delta x\Delta y\Delta z \label{H.11}
+\Delta \Phi _z = \Delta \Phi ^{out}_z − \Delta \Phi ^{in}_z = \frac{\partial F_z}{ \partial z} \Delta x\Delta y\Delta z \tag{H.11} \label{eq-h-11}
 $$
 
 Adding the similar $x$ and $y$ components for $\Delta \Phi$ gives
 
 $$
-\Delta \Phi = \left(\frac{\partial F_x}{ \partial x} + \frac{\partial F_y }{\partial y} + \frac{\partial F_z }{\partial z} \right) \Delta x\Delta y\Delta z \label{H.12}
+\Delta \Phi = \left(\frac{\partial F_x}{ \partial x} + \frac{\partial F_y }{\partial y} + \frac{\partial F_z }{\partial z} \right) \Delta x\Delta y\Delta z \tag{H.12} \label{eq-h-12}
 $$
 
 This gives that the divergence of the vector field $\mathbf{F}$ is
 
 $$
-div \mathbf{F} = Lim_{\Delta \tau_i \rightarrow 0} \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} = \left(\frac{\partial F_x }{\partial x} + \frac{\partial F_y}{ \partial y} + \frac{\partial F_z}{ \partial z} \right) \label{H.13}
+div \mathbf{F} = Lim_{\Delta \tau_i \rightarrow 0} \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} = \left(\frac{\partial F_x }{\partial x} + \frac{\partial F_y}{ \partial y} + \frac{\partial F_z}{ \partial z} \right) \tag{H.13} \label{eq-h-13}
 $$
 
 since $\Delta \tau = \Delta x\Delta y\Delta z$. But the right hand side of the equation equals the scalar product $\boldsymbol{\nabla} \cdot \mathbf{F}$, that is,
 
 $$
-div \mathbf{F} = \boldsymbol{\nabla} \cdot \mathbf{F} \label{H.14}
+div \mathbf{F} = \boldsymbol{\nabla} \cdot \mathbf{F} \tag{H.14} \label{eq-h-14}
 $$
 
 The divergence is a scalar quantity. The physical meaning of the divergence is that it gives the net flux per unit volume flowing out of an infinitessimal volume. A positive divergence corresponds to a net outflow of flux from the infinitessimal volume at any location while a negative divergence implies a net inflow of flux to this infinitessimal volume.
@@ -2373,24 +2427,25 @@ The divergence is a scalar quantity. The physical meaning of the divergence is t
 It was shown that for an infinitessimal rectangular box
 
 $$
-\Delta \Phi = \left(\frac{\partial F_x }{\partial x} + \frac{\partial F_y}{ \partial y} + \frac{\partial F_z}{ \partial z} \right) \Delta x\Delta y\Delta z = \boldsymbol{\nabla} \cdot \mathbf{F}\Delta \tau \label{H.15}
+\Delta \Phi = \left(\frac{\partial F_x }{\partial x} + \frac{\partial F_y}{ \partial y} + \frac{\partial F_z}{ \partial z} \right) \Delta x\Delta y\Delta z = \boldsymbol{\nabla} \cdot \mathbf{F}\Delta \tau \tag{H.15} \label{eq-h-15}
 $$
 
 Integrating over the finite volume enclosed by the surface $S$ gives
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int\limits_{Enclosed \\ volume} \boldsymbol{\nabla} \cdot \mathbf{F} d \tau \label{H.16}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int\limits_{Enclosed \\ volume} \boldsymbol{\nabla} \cdot \mathbf{F} d \tau \tag{H.16} \label{eq-h-16}
 $$
 
 This is another way of expressing the Divergence theorem
 
 $$
-\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int\limits_{Enclosed \\ volume} div \mathbf{F} d \tau \label{H.17}
+\Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \int\limits_{Enclosed \\ volume} div \mathbf{F} d \tau \tag{H.17} \label{eq-h-17}
 $$
 
 The divergence theorem, developed by Gauss, is of considerable importance, it relates the surface integral of a vector field, that is, the outgoing flux, to a volume integral of $\boldsymbol{\nabla} \cdot \mathbf{F}$ over the enclosed volume.
 
-Example 19.1: Maxwell's Flux Equations
+::::{admonition} Example 19.9.1: Maxwell's Flux Equations
+:class: example
 
 As an example of the usefulness of this relation, consider the Gauss’s law for the flux in Maxwell’s equations.
 
@@ -2439,8 +2494,10 @@ $$
 $$
 
 That is, the local value of the divergence of $\mathbf{B}$ is zero everywhere.
+::::
 
-Example 19.2: Buoyancy forces in fluids
+::::{admonition} Example 19.9.2: Buoyancy forces in fluids
+:class: example
 
 Buoyancy in fluids provides an example of the use of flux in physics. Consider a fluid of density $\rho (z)$ in a gravitational field $\bar{g}(z) = −g(z)\hat{z}$ where the $z$ axis points in the opposite direction to the gravitational force. Pressure equals force per unit area and is a scalar quantity. For a conservative fluid system, in static equilibrium, the net work done per unit area for an infinitessimal displacement $d r$ is zero. The net pressure force per unit area is the difference $P(r+ d r)−P(r) = \nabla P \cdot d r$ while the net change in gravitational potential energy is $\rho (z)\bar{g}(z) \cdot d r$. Thus energy conservation gives
 
@@ -2451,7 +2508,7 @@ $$
 which can be expanded as
 
 $$
-\frac{d P}{ d z} = −\rho (z)g(z) \label{19-A} \\ \frac{d P}{ d x} = \frac{d P}{ d y} = 0 \tag{A}
+\frac{d P}{ d z} = −\rho (z)g(z) \label{eq-19-a} \\ \frac{d P}{ d x} = \frac{d P}{ d y} = 0 \tag{A}
 $$
 
 Integrating the net forces normal to the surface over any closed surface enclosing an empty volume, inside the fluid, gives a net buoyancy force on this volume that simplifies using the Divergence theorem
@@ -2460,13 +2517,14 @@ $$
 \oint \mathbf{F} \cdot d\mathbf{S}= \oint P d\hat{\mathbf{S}} \cdot d\mathbf{S} = \oint P d S = \int_{Enclosed \ vol} \left( \frac{d P}{ d x} + \frac{d P}{ d y} + \frac{d P}{ d z} \right) d \tau \nonumber
 $$
 
-Using equations \ref{19-A} leads to the net buoyancy force
+Using equations [A](#eq-19-a) leads to the net buoyancy force
 
 $$
 \oint \mathbf{F} \cdot d\mathbf{S}= \int_{Enclosed \ vol} \frac{d P}{ d z} d \tau = − \int_{Enclosed \ vol} \rho (z)g(z) d \tau \nonumber
 $$
 
 The right hand side of this equation equals minus the weight of the displaced fluid. That is, the buoyancy force equals the weight of the fluid displaced by the empty volume. Note that this proof applies both to compressible fluids, where the density depends on pressure, as well as to incompressible fluids where the density is constant. It also applies to situations where local gravity $g$ is position dependent. If an object of mass $M$ is completely submerged then the net force on the object is $Mg − \int_{Enclosed \ vol} \rho (z)g(z) d \tau$. If the object floats on the surface of a fluid then the buoyancy force must be calculated separately for the volume under the fluid surface and the upper volume above the fluid surface. The buoyancy due to displaced air usually is negligible since the density of air is about $10^{−3}$ times that of fluids such as water.
+::::
 
 ### Stokes Theorem
 
@@ -2474,12 +2532,12 @@ The right hand side of this equation equals minus the weight of the displaced fl
 
 Maxwell’s laws relate the circulation of the field around a closed loop to the rate of change of flux through the surface bounded by the closed loop. It is possible to write these integral equations in a differential form as follows.
 
-Consider the line integral around a closed loop $C$ shown in Figure 19.3.
+Consider the line integral around a closed loop $C$ shown in [Figure 19.9.3](#fig-19-9-3).
 
 If this area is subdivided into two areas enclosed by loops $C_1$ and $C_2$, then the sum of the line integrals is the same
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = \oint_{C_1} \mathbf{F} \cdot d\mathbf{l} + \oint_{C_2} \mathbf{F} \cdot d\mathbf{l} \label{H.18}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = \oint_{C_1} \mathbf{F} \cdot d\mathbf{l} + \oint_{C_2} \mathbf{F} \cdot d\mathbf{l} \tag{H.18} \label{eq-h-18}
 $$
 
 because the contributions along the common boundary cancel since they are taken in opposite directions if $C_1$ and $C_2$ both are taken in the same direction. Note that the line integral, and corresponding enclosed area,
@@ -2487,98 +2545,103 @@ because the contributions along the common boundary cancel since they are taken 
 are vector quantities related by the right-hand rule and this must be taken into account when subdividing the area. Thus the area can be subdivided into an infinite number of pieces for which
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \oint_{C_i} \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} } \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \label{H.19}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \oint_{C_i} \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} } \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \tag{H.19} \label{eq-h-19}
 $$
 
 where $\Delta \mathbf{S}_i$ is the infinitessimal area bounded by the closed sub-loop $C_i$ and $\Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}$ is the normal component of this area pointing along the $\widehat{\mathbf{n}}$ direction which is the direction along which the line integral points.
 
 :::{figure} ../images/lt-23025-h3.png
-:alt: h3.PNG
+:label: fig-19-9-3
+:enumerator: 19.9.3
+:alt: The circulation around a path is equal to the sum of the circulations around subareas made by subdividing the area.
 
-$3$: The circulation around a path is equal to the sum of the circulations around subareas made by subdividing the area.
+The circulation around a path is equal to the sum of the circulations around subareas made by subdividing the area.
 :::
 
 The component of the curl of the vector function along the direction $\widehat{\mathbf{n}}$ is defined to be
 
 $$
-(curl \mathbf{F}) \cdot \widehat{\mathbf{n}} \equiv Lim_{\Delta S\rightarrow 0} \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} } \label{H.20}
+(curl \mathbf{F}) \cdot \widehat{\mathbf{n}} \equiv Lim_{\Delta S\rightarrow 0} \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} } \tag{H.20} \label{eq-h-20}
 $$
 
 Thus the line integral can be written as
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}} \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \label{H.21} \\ = \int [(curl \mathbf{F}) \cdot \widehat{\mathbf{n}}] d\mathbf{S}_i \cdot \widehat{\mathbf{n}}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}} \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \tag{H.21} \label{eq-h-21} \\ = \int [(curl \mathbf{F}) \cdot \widehat{\mathbf{n}}] d\mathbf{S}_i \cdot \widehat{\mathbf{n}}
 $$
 
 The product $\widehat{\mathbf{n}} \cdot \widehat{\mathbf{n}} = 1$, that is, this is true independent of the direction of the infinitessimal loop. Thus the above relation leads to *Stokes Theorem*
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} \label{H.22}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} \tag{H.22} \label{eq-h-22}
 $$
 
 This relates the line integral to a surface integral over a surface bounded by the loop.
 
 #### Curl in cartesian coordinates
 
-Consider the infinitessimal rectangle $\Delta x\Delta y$ pointing in the $\widehat{\mathbf{k}}$ direction shown in Figure 19.4.
+Consider the infinitessimal rectangle $\Delta x\Delta y$ pointing in the $\widehat{\mathbf{k}}$ direction shown in [Figure 19.9.4](#fig-19-9-4).
 
 :::{figure} ../images/lt-23022-h4.png
-:alt: h4.PNG
+:label: fig-19-9-4
+:enumerator: 19.9.4
+:alt: Circulation around an infinitessimal rectangle \Delta x\Delta y in the z direction.
 
-$4$: Circulation around an infinitessimal rectangle $\Delta x\Delta y$ in the z direction.
+Circulation around an infinitessimal rectangle $\Delta x\Delta y$ in the z direction.
 :::
 
 The line integral, taken in a right-handed way around $\widehat{\mathbf{k}}$ gives
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = F_x\Delta x + \left( F_y + \frac{\partial F_y}{ \partial x} \Delta x \right) − \left( F_x + \frac{\partial F_x}{ \partial y} \Delta y \right) − F_y\Delta y = \left( \frac{\partial F_y }{\partial x} − \frac{\partial F_x }{\partial y} \right) \Delta x\Delta y \label{H.23}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = F_x\Delta x + \left( F_y + \frac{\partial F_y}{ \partial x} \Delta x \right) − \left( F_x + \frac{\partial F_x}{ \partial y} \Delta y \right) − F_y\Delta y = \left( \frac{\partial F_y }{\partial x} − \frac{\partial F_x }{\partial y} \right) \Delta x\Delta y \tag{H.23} \label{eq-h-23}
 $$
 
 Thus since $\Delta x\Delta y = \Delta \mathbf{S}_z$ the $z$ component of the curl is given by
 
 $$
-(curl \mathbf{F}) \cdot \widehat{\mathbf{k}} = \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}} = \left(\frac{\partial F_y}{ \partial x} − \frac{\partial F_x}{ \partial y} \right) \label{H.24}
+(curl \mathbf{F}) \cdot \widehat{\mathbf{k}} = \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}} = \left(\frac{\partial F_y}{ \partial x} − \frac{\partial F_x}{ \partial y} \right) \tag{H.24} \label{eq-h-24}
 $$
 
 The same argument for the component of the curl in the $y$ direction is given by
 
 $$
-(curl \mathbf{F}) \cdot\widehat{\mathbf{j}}= \left(\frac{\partial F_x }{\partial z} − \frac{\partial F_z}{ \partial x} \right) \label{H.25}
+(curl \mathbf{F}) \cdot\widehat{\mathbf{j}}= \left(\frac{\partial F_x }{\partial z} − \frac{\partial F_z}{ \partial x} \right) \tag{H.25} \label{eq-h-25}
 $$
 
 Similarly the same argument for the component of the curl in the $x$ direction is given by
 
 $$
-(curl \mathbf{F}) \cdot\widehat{\mathbf{i}}= \left(\frac{\partial F_z }{\partial y} − \frac{\partial F_y }{\partial z} \right) \label{H.26}
+(curl \mathbf{F}) \cdot\widehat{\mathbf{i}}= \left(\frac{\partial F_z }{\partial y} − \frac{\partial F_y }{\partial z} \right) \tag{H.26} \label{eq-h-26}
 $$
 
 Thus combining the three components of the curl gives
 
 $$
-curl \mathbf{F} = \left(\frac{\partial F_z}{ \partial y} − \frac{\partial F_y }{\partial z} \right)\widehat{\mathbf{i}}+ \left(\frac{\partial F_x}{ \partial z} − \frac{\partial F_z}{ \partial x} \right) \widehat{\mathbf{j}} + \left(\frac{\partial F_y }{\partial x} − \frac{\partial F_x }{\partial y} \right) \widehat{\mathbf{k}} \label{H.27}
+curl \mathbf{F} = \left(\frac{\partial F_z}{ \partial y} − \frac{\partial F_y }{\partial z} \right)\widehat{\mathbf{i}}+ \left(\frac{\partial F_x}{ \partial z} − \frac{\partial F_z}{ \partial x} \right) \widehat{\mathbf{j}} + \left(\frac{\partial F_y }{\partial x} − \frac{\partial F_x }{\partial y} \right) \widehat{\mathbf{k}} \tag{H.27} \label{eq-h-27}
 $$
 
 Note that cross-product of the del operator with the vector $\mathbf{F}$ is
 
 $$
-\boldsymbol{\nabla} \times \mathbf{F} = \begin{vmatrix} \widehat{\mathbf{i}} & \widehat{\mathbf{j}} & \widehat{\mathbf{k}} \\ \frac{\partial}{ \partial x} & \frac{\partial}{ \partial y} & \frac{\partial}{ \partial z} \\ F_x & F_y & F_z \end{vmatrix} \label{H.28}
+\boldsymbol{\nabla} \times \mathbf{F} = \begin{vmatrix} \widehat{\mathbf{i}} & \widehat{\mathbf{j}} & \widehat{\mathbf{k}} \\ \frac{\partial}{ \partial x} & \frac{\partial}{ \partial y} & \frac{\partial}{ \partial z} \\ F_x & F_y & F_z \end{vmatrix} \tag{H.28} \label{eq-h-28}
 $$
 
 which is identical to the right hand side of the relation for the curl in cartesian coordinates. That is;
 
 $$
-\boldsymbol{\nabla} \times \mathbf{F} = curl \overrightarrow{\mathbf{F}} \label{H.29}
+\boldsymbol{\nabla} \times \mathbf{F} = curl \overrightarrow{\mathbf{F}} \tag{H.29} \label{eq-h-29}
 $$
 
 Therefore *Stokes Theorem* can be rewritten as
 
 $$
-\oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} = \int_{Area \ bounded \ by \ C} (\boldsymbol{\nabla} \times F) \cdot d\mathbf{S} \label{H.30}
+\oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} = \int_{Area \ bounded \ by \ C} (\boldsymbol{\nabla} \times F) \cdot d\mathbf{S} \tag{H.30} \label{eq-h-30}
 $$
 
 The physics meaning of the curl is that it is the circulation, or rotation, for an infinitessimal loop at any location. The word curl is German for rotation.
 
-Example 19.3: Maxwell's circulation equations
+::::{admonition} Example 19.9.3: Maxwell's circulation equations
+:class: example
 
 As an example of the use of the curl, consider Faraday’s Law
 
@@ -2617,6 +2680,7 @@ $$
 $$
 
 The differential forms of Maxwell’s circulation relations are easier to apply than the integral equations because the differential form relates the curl to the time derivatives at the same specific location.
+::::
 
 ### Potential formulations of curl-free and divergence-free fields
 
@@ -2627,19 +2691,19 @@ Interesting consequences result from the Divergence theorem and Stokes Theorem f
 For curl-free fields
 
 $$
-\boldsymbol{\nabla} \times \mathbf{F} = 0 \label{H.31}
+\boldsymbol{\nabla} \times \mathbf{F} = 0 \tag{H.31} \label{eq-h-31}
 $$
 
 everywhere. This is automatically obeyed if the vector field is expressed as the gradient of a scalar field
 
 $$
-\mathbf{F} = \boldsymbol{\nabla}\phi \label{H.32}
+\mathbf{F} = \boldsymbol{\nabla}\phi \tag{H.32} \label{eq-h-32}
 $$
 
 since
 
 $$
-\boldsymbol{\nabla}\times (\boldsymbol{\nabla}\phi)=0 \label{H.33}
+\boldsymbol{\nabla}\times (\boldsymbol{\nabla}\phi)=0 \tag{H.33} \label{eq-h-33}
 $$
 
 That is, any curl-free vector field can be expressed in terms of the gradient of a scalar field.
@@ -2647,7 +2711,7 @@ That is, any curl-free vector field can be expressed in terms of the gradient of
 The scalar field $\phi$ is not unique, that is, any constant $\alpha$ can be added to $\phi$ since $\boldsymbol{\nabla}\alpha = 0$, that is, the addition of the constant $\alpha$ does not change the gradient. This independence to addition of a number to the scalar potential is called a gauge invariance discussed in chapter $13.2$, for which
 
 $$
-\mathbf{F} = \boldsymbol{\nabla}\phi^{\prime} = \boldsymbol{\nabla} (\phi + \alpha ) = \boldsymbol{\nabla}\phi \label{H.34}
+\mathbf{F} = \boldsymbol{\nabla}\phi^{\prime} = \boldsymbol{\nabla} (\phi + \alpha ) = \boldsymbol{\nabla}\phi \tag{H.34} \label{eq-h-34}
 $$
 
 That is, this gauge-invariant transformation does not change the observable $\mathbf{F}$. The electrostatic field $\mathbf{E}$ and the gravitation field $\mathbf{g}$ are examples of irrotational fields that can be expressed as the gradient of scalar potentials.
@@ -2657,13 +2721,13 @@ That is, this gauge-invariant transformation does not change the observable $\ma
 For divergence-free fields
 
 $$
-\boldsymbol{\nabla} \cdot \mathbf{F} = 0 \label{H.35}
+\boldsymbol{\nabla} \cdot \mathbf{F} = 0 \tag{H.35} \label{eq-h-35}
 $$
 
 everywhere. This is automatically obeyed if the field $\mathbf{F}$ is expressed in terms of the curl of a vector field $\mathbf{G}$ such that
 
 $$
-\mathbf{F} = \boldsymbol{\nabla} \times \mathbf{G} \label{H.36}
+\mathbf{F} = \boldsymbol{\nabla} \times \mathbf{G} \tag{H.36} \label{eq-h-36}
 $$
 
 since $\boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \times \mathbf{G} = \mathbf{0}$. That is, any divergence-free vector field can be written as the curl of a related vector field.
@@ -2671,12 +2735,13 @@ since $\boldsymbol{\nabla} \cdot \boldsymbol{\nabla} \times \mathbf{G} = \mathbf
 As discussed in chapter $13.2$, the vector potential $\mathbf{G}$ is not unique in that a gauge transformation can be made by adding the gradient of any scalar field, that is, the gauge transformation $\mathbf{G^{\prime}} = \mathbf{G} + \boldsymbol{\nabla}\boldsymbol{\varphi}$ gives
 
 $$
-\mathbf{F} = \boldsymbol{\nabla} \times \mathbf{G^{\prime}} = \boldsymbol{\nabla}\times (\mathbf{G} + \boldsymbol{\nabla}\boldsymbol{\varphi}) = \boldsymbol{\nabla} \times \mathbf{G}. \label{H.37}
+\mathbf{F} = \boldsymbol{\nabla} \times \mathbf{G^{\prime}} = \boldsymbol{\nabla}\times (\mathbf{G} + \boldsymbol{\nabla}\boldsymbol{\varphi}) = \boldsymbol{\nabla} \times \mathbf{G}. \tag{H.37} \label{eq-h-37}
 $$
 
 This gauge invariance for transformation to the vector potential $\mathbf{G^{\prime}}$ does not change the observable vector field $\mathbf{F}$. The magnetic field $\mathbf{B}$ is an example of a solenoidal field that can be expressed in terms of the curl of a vector potential $\mathbf{A}$.
 
-Example 19.4: Electromagnetic fields
+::::{admonition} Example 19.9.4: Electromagnetic fields
+:class: example
 
 Electromagnetic interactions are encountered frequently in classical mechanics so it is useful to discuss the use of potential formulations of electrodynamics.
 
@@ -2725,7 +2790,7 @@ $$
 which can be rewritten as
 
 $$
-\boldsymbol{\nabla}\cdot \mathbf{E} = −\boldsymbol{\nabla}^2V − \frac{\partial (\boldsymbol{\nabla} \cdot \mathbf{A}) }{\partial t} = \frac{\rho}{ \varepsilon_0} \label{X} \tag{X}
+\boldsymbol{\nabla}\cdot \mathbf{E} = −\boldsymbol{\nabla}^2V − \frac{\partial (\boldsymbol{\nabla} \cdot \mathbf{A}) }{\partial t} = \frac{\rho}{ \varepsilon_0} \label{eq-19-x} \tag{X}
 $$
 
 Similarly insertion of the vector potential $\mathbf{A}$ in Ampère’s Law gives
@@ -2737,16 +2802,16 @@ $$
 Using the vector identity $\boldsymbol{\nabla} \times (\boldsymbol{\nabla} \times \mathbf{A}) = \boldsymbol{\nabla} (\boldsymbol{\nabla} \cdot \mathbf{A}) − \boldsymbol{\nabla}^2 A$ allows the above equation to be rewritten as
 
 $$
-\left(\nabla^2\mathbf{A}−\mu_0\varepsilon_0 \left(\frac{\partial^2\mathbf{A}}{ \partial t^2} \right)\right) − \boldsymbol{\nabla} \left( \boldsymbol{\nabla} \cdot \mathbf{A}+\mu_0\varepsilon_0 \left(\frac{\partial V }{\partial t} \right)\right) = −\mu_0 \mathbf{j} \tag{Y} \label{Y}
+\left(\nabla^2\mathbf{A}−\mu_0\varepsilon_0 \left(\frac{\partial^2\mathbf{A}}{ \partial t^2} \right)\right) − \boldsymbol{\nabla} \left( \boldsymbol{\nabla} \cdot \mathbf{A}+\mu_0\varepsilon_0 \left(\frac{\partial V }{\partial t} \right)\right) = −\mu_0 \mathbf{j} \tag{Y} \label{eq-19-y}
 $$
 
-The use of the scalar potential $V$ and vector potential $\mathbf{A}$ leads to two coupled equations \ref{X} and \ref{Y}. These coupled equations can be transformed into two uncoupled equations by exploiting the freedom to make a gauge transformation for the vector potential such that the middle brackets in both equations \ref{X} and \ref{Y} are zero. That is, choosing the Lorentz gauge
+The use of the scalar potential $V$ and vector potential $\mathbf{A}$ leads to two coupled equations [X](#eq-19-x) and [Y](#eq-19-y). These coupled equations can be transformed into two uncoupled equations by exploiting the freedom to make a gauge transformation for the vector potential such that the middle brackets in both equations [X](#eq-19-x) and [Y](#eq-19-y) are zero. That is, choosing the Lorentz gauge
 
 $$
 \boldsymbol{\nabla} \cdot \mathbf{A} = −\mu_0\varepsilon_0 \left(\frac{\partial V}{ \partial t} \right) \nonumber
 $$
 
-simplifies equations \ref{X} and \ref{Y} to be
+simplifies equations [X](#eq-19-x) and [Y](#eq-19-y) to be
 
 $$
 \boldsymbol{\nabla}^2V −\mu_0\varepsilon_0 \frac{\partial^2V}{ \partial t^2} = − \frac{\rho}{ \varepsilon_0} \nonumber
@@ -2757,6 +2822,7 @@ $$
 $$
 
 The virtue of using the Lorentz gauge, rather than the Coulomb gauge $\boldsymbol{\nabla} \cdot \mathbf{A} = 0$, is that it separates the equations for the scalar and vector potentials. Moreover, these two equations are the wave equations for these two potential fields corresponding to a velocity $c = \frac{1}{ \sqrt{\mu_0\varepsilon_0 }}$. This example illustrates the power of using the concept of potentials in describing vector fields.
+::::
 
 ## 19.10: Appendix - Waveform analysis
 
@@ -2765,13 +2831,13 @@ The virtue of using the Lorentz gauge, rather than the Coulomb gauge $\boldsymbo
 Any linear system that is subject to a time-dependent forcing function $F( t)$, can be expressed as a linear superposition of frequency-dependent solutions of the individual harmonic decomposition $a(\omega )$ of the forcing function. Similarly, any linear system subject to a spatially-dependent forcing function $F(x)$ can be expressed as a linear superposition of the wavenumber-dependent solutions of the individual harmonic decomposition $a(k_x)$ of the forcing function. Fourier analysis provides the mathematical procedure for the transformation between the periodic waveforms and the harmonic content, that is, $F( t) \Leftrightarrow a(\omega )$, or $F(x) \Leftrightarrow a(k_x)$. Fourier’s theorem states that any arbitrary forcing function $F( t)$ can be decomposed into a sum of harmonic terms. For example for a time-dependent periodic forcing function the decomposition can be a cosine series of the form
 
 $$
-F( t) = \sum^{\infty}_{n=1} \alpha_n \cos(n\omega_0 t + \phi_n) \label{I.1}
+F( t) = \sum^{\infty}_{n=1} \alpha_n \cos(n\omega_0 t + \phi_n) \tag{I.1} \label{eq-i-1}
 $$
 
 where $\omega_0$ is the lowest (fundamental) frequency solution. For an aperiodic function a cosine decomposition can be of the form
 
 $$
-F( t) = \int^{\infty}_0 \alpha (\omega ) \cos(\omega t + \phi (\omega ))d\omega \label{I.2}
+F( t) = \int^{\infty}_0 \alpha (\omega ) \cos(\omega t + \phi (\omega ))d\omega \tag{I.2} \label{eq-i-2}
 $$
 
 Either of the complementary functions $F( t) \Leftrightarrow a(\omega )$, or $F(x) \Leftrightarrow a(k_x)$ are equivalent representations of the harmonic content that can be used to describe signals and waves. The following two sections give an introduction to Fourier analysis.
@@ -2783,15 +2849,15 @@ Discrete solutions occur for systems when periodic boundary conditions exist. Th
 Fourier’s theorem states that for a general periodic system any arbitrary forcing function $F(\phi)$ can be decomposed into a sum of sinusoidal or cosinusoidal terms. The summation can be represented by three equivalent series expansions given below, where $\phi = \omega_0 t$ or $\phi = \mathbf{k}_0\cdot \mathbf{r}$, and where $\omega_0, \mathbf{k}_0$ are the fundamental angular frequency and fundamental wave number respectively.
 
 $$
-f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=1} [a_n \cos (n\phi) + b_n \sin (n\phi)] \label{I.3}
+f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=1} [a_n \cos (n\phi) + b_n \sin (n\phi)] \tag{I.3} \label{eq-i-3}
 $$
 
 $$
-f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=0} c_n \cos (n\phi + \varphi_n) \label{I.4}
+f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=0} c_n \cos (n\phi + \varphi_n) \tag{I.4} \label{eq-i-4}
 $$
 
 $$
-f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=0} d_n \sin (n\phi + \theta_n) \label{I.5}
+f (\phi) = \frac{a_0}{2} + \sum^{\infty}_{n=0} d_n \sin (n\phi + \theta_n) \tag{I.5} \label{eq-i-5}
 $$
 
 where $n$ is an integer, and $\varphi_n, \theta_n$ are phase shifts fit to the initial conditions.
@@ -2799,98 +2865,99 @@ where $n$ is an integer, and $\varphi_n, \theta_n$ are phase shifts fit to the i
 The normal modes of a discrete system form a complete set of solutions that satisfy the following orthogonality relation
 
 $$
-\int^{2\pi}_0 f_n (\phi) f_m (\phi) d\phi = c_n \delta_{mn} \label{I.6}
+\int^{2\pi}_0 f_n (\phi) f_m (\phi) d\phi = c_n \delta_{mn} \tag{I.6} \label{eq-i-6}
 $$
 
-where $\delta_{mn}$ is the Kronecker delta symbol defined in equation $(9.2.10)$. Orthogonality can be used to determine the coefficients for equations \ref{I.3} to be
+where $\delta_{mn}$ is the Kronecker delta symbol defined in equation $(9.2.10)$. Orthogonality can be used to determine the coefficients for equations [I.3](#eq-i-3) to be
 
 $$
-a_0 = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) d\phi \label{I.7}
-$$
-
-$$
-a_n = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) \cos (n\phi) d\phi \label{I.8}
+a_0 = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) d\phi \tag{I.7} \label{eq-i-7}
 $$
 
 $$
-b_n = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) \sin (n\phi) d\phi \label{I.9}
+a_n = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) \cos (n\phi) d\phi \tag{I.8} \label{eq-i-8}
 $$
 
-Similarly the coefficients for \ref{I.4} and \ref{I.5} are related to the above coefficients by
+$$
+b_n = \frac{1}{ \pi} \int^{+\pi}_{ −\pi} f (\phi) \sin (n\phi) d\phi \tag{I.9} \label{eq-i-9}
+$$
+
+Similarly the coefficients for [I.4](#eq-i-4) and [I.5](#eq-i-5) are related to the above coefficients by
 
 $$
 c^2_n = d^2_n = a^2_n + b^2_n \nonumber
 $$
 
-Instead of the simple trigonometric form used in equations (\ref{I.3} − \ref{I.5}) the cosine and sine functions can be expanded into the exponential form where
+Instead of the simple trigonometric form used in equations ([I.3](#eq-i-3) − [I.5](#eq-i-5)) the cosine and sine functions can be expanded into the exponential form where
 
 $$
-\cos \phi = \frac{1}{ 2} ( e^{i\phi} + e^{-i\phi}) \label{I.10} \\ \sin \phi = \frac{−i}{ 2} ( e^{i\phi} − e^{-i\phi})
+\cos \phi = \frac{1}{ 2} ( e^{i\phi} + e^{-i\phi}) \tag{I.10} \label{eq-i-10} \\ \sin \phi = \frac{−i}{ 2} ( e^{i\phi} − e^{-i\phi})
 $$
 
-then Equation \ref{I.3} becomes
+then Equation [I.3](#eq-i-3) becomes
 
 $$
-f (\phi) = \sum^{\infty}_{ n=−\infty} g_n e^{in\phi} \label{I.11}
+f (\phi) = \sum^{\infty}_{ n=−\infty} g_n e^{in\phi} \tag{I.11} \label{eq-i-11}
 $$
 
 where $n$ is any integer and, from the orthogonality, the Fourier coefficients are given by
 
 $$
-g_n = \frac{1}{ 2\pi} \int^{+\pi}_{ −\pi} f (\phi) e^{n\phi} d\phi \label{I.12}
+g_n = \frac{1}{ 2\pi} \int^{+\pi}_{ −\pi} f (\phi) e^{n\phi} d\phi \tag{I.12} \label{eq-i-12}
 $$
 
 These coefficients are related to the cosine plus sine series amplitudes by
 
 $$
-g_n = \frac{1}{ 2} (a_n − ib_n) \tag{when $n$ is positive}
+g_n = \frac{1}{ 2} (a_n − ib_n) \tag{when n is positive}
 $$
 
 $$
-g_n = \frac{1}{ 2} (a_n + ib_n) \tag{when $n$ is negative}
+g_n = \frac{1}{ 2} (a_n + ib_n) \tag{when n is negative}
 $$
 
 These results show that the coefficients of the exponential series are in general *complex*, and that they occur in conjugate pairs (that is, the imaginary part of a coefficient $a_n$ is equal but opposite in sign to that for the coefficient $a_{−n}$). Although the introduction of complex coefficients may appear unusual, it should be remembered that the real part of a pair of coefficients denotes the magnitude of the cosine wave of the relevant frequency, and that the imaginary part denotes the magnitude of the sine wave. If a particular pair of coefficients $a_n$ and $a_{−n}$ are real, then the component at the frequency $n\omega_0$ is simply a cosine; if $a_n$ and $a_{−n}$ are purely imaginary, the component is just a sine; and if, as is the general case, $a_n$ and $a_{−n}$ are complex, both cosine and a sine terms are present.
 
 The use of the exponential form of the Fourier series gives rise to the notion of ‘negative frequency’. Of course, $f ( t) = a_n \cos \omega_n t$ is a wave of a single frequency $\omega_n = n\omega_0$ radians/second, and may be represented by a single line of height $a_n$ in a normal spectral diagram. However, using the exponential form of the Fourier series results in both positive and negative $\omega$ components.
 
-The coexistence of both negative and positive angular frequencies $\pm \omega$ can be understood by consideration of the Argand diagram where the real component is plotted along the $x$-axis and the imaginary component along the $y$-axis. The function $g_ne^{+i\omega t}$ represents a vector of length $g_n$ that rotates with an angular velocity $\omega$ in a positive direction, that is counterclockwise, whereas, $g_ne^{−i\omega t}$ represents the vector rotating in a negative direction, that is clockwise. Thus the sum of the two rotating vectors, according to equations \ref{I.3}, leads to cancellation of the opposite components on the imaginary $y$ axis and addition of the two $g_n \cos \omega t$ real components on the $x$ axis. Subtraction leads to cancellation of the real $x$ components and addition of the imaginary $y$ axis components.
+The coexistence of both negative and positive angular frequencies $\pm \omega$ can be understood by consideration of the Argand diagram where the real component is plotted along the $x$-axis and the imaginary component along the $y$-axis. The function $g_ne^{+i\omega t}$ represents a vector of length $g_n$ that rotates with an angular velocity $\omega$ in a positive direction, that is counterclockwise, whereas, $g_ne^{−i\omega t}$ represents the vector rotating in a negative direction, that is clockwise. Thus the sum of the two rotating vectors, according to equations [I.3](#eq-i-3), leads to cancellation of the opposite components on the imaginary $y$ axis and addition of the two $g_n \cos \omega t$ real components on the $x$ axis. Subtraction leads to cancellation of the real $x$ components and addition of the imaginary $y$ axis components.
 
 #### Aperiodic systems and the Fourier Transform
 
 The Fourier transform (also called the Fourier integral) does for the non-repetitive signal waveform what the Fourier series does for the repetitive signal. It was shown that the line spectrum of a recurrent periodic pulse waveform is modified as the pulse duration decreases, assuming the period of the waveform (and hence its fundamental component) remains unchanged. Suppose now that the duration of the pulses remain fixed but the separation between them increases, giving rise to an increasing period. In the limit, only a single rectangular pulse remains, its neighbors having moved away on either side towards $\pm \infty$. In this case, the fundamental frequency $\omega_0$ tends towards zero and the harmonics become extremely closely spaced and of vanishingly small amplitudes, that is, the system approximates a continuous spectrum.
 
-Mathematically, this situation may be expressed by modifications to the exponential form of the Fourier series already derived. Let the phase factor $\phi = \omega_0 t$ in Equation \ref{I.11} then
+Mathematically, this situation may be expressed by modifications to the exponential form of the Fourier series already derived. Let the phase factor $\phi = \omega_0 t$ in Equation [I.11](#eq-i-11) then
 
 $$
-g_n = \frac{\omega_0 }{2\pi} \int^{+\pi}_{ −\pi} f ( t) e^{n\omega_0 t} d t = \frac{1}{ \tau} \int^{\frac{\tau }{2}}_{ − \frac{\tau}{ 2}} f ( t) e^{n\omega_0 t} d t \label{I.13}
+g_n = \frac{\omega_0 }{2\pi} \int^{+\pi}_{ −\pi} f ( t) e^{n\omega_0 t} d t = \frac{1}{ \tau} \int^{\frac{\tau }{2}}_{ − \frac{\tau}{ 2}} f ( t) e^{n\omega_0 t} d t \tag{I.13} \label{eq-i-13}
 $$
 
-where $\tau$ is the period of the periodic force. Let $G (\omega ) = \tau g_n$, $\omega = n\omega_0$, and take the limit for $\tau \rightarrow \infty$, then Equation \ref{I.12} can be written as
+where $\tau$ is the period of the periodic force. Let $G (\omega ) = \tau g_n$, $\omega = n\omega_0$, and take the limit for $\tau \rightarrow \infty$, then Equation [I.12](#eq-i-12) can be written as
 
 $$
-G (\omega ) = \int^{+\infty}_{ −\infty} f ( t) e^{\omega t}d t \label{I.14}
+G (\omega ) = \int^{+\infty}_{ −\infty} f ( t) e^{\omega t}d t \tag{I.14} \label{eq-i-14}
 $$
 
-Similarly making the same limit for $\tau \rightarrow \infty$ then $\omega_0 = \frac{2\pi}{ \tau} \rightarrow d\omega$ and Equation \ref{I.11} becomes
+Similarly making the same limit for $\tau \rightarrow \infty$ then $\omega_0 = \frac{2\pi}{ \tau} \rightarrow d\omega$ and Equation [I.11](#eq-i-11) becomes
 
 $$
-f ( t) = \sum^{\infty}_{ n=−\infty} \frac{G (\omega )}{ \tau} e^{in\omega_0 t} = \sum^{\infty}_{ n=−\infty} G (\omega ) \frac{\omega_0 }{2\pi} e^{i\omega t} = \frac{1}{ 2\pi} \int^{ +\infty}_{ −\infty} G (\omega ) e^{i\omega t} d\omega \label{I.15}
+f ( t) = \sum^{\infty}_{ n=−\infty} \frac{G (\omega )}{ \tau} e^{in\omega_0 t} = \sum^{\infty}_{ n=−\infty} G (\omega ) \frac{\omega_0 }{2\pi} e^{i\omega t} = \frac{1}{ 2\pi} \int^{ +\infty}_{ −\infty} G (\omega ) e^{i\omega t} d\omega \tag{I.15} \label{eq-i-15}
 $$
 
-Equation \ref{I.15} shows how a non-repetitive time-domain wave form is related to its continuous spectrum. These are known as Fourier integrals or Fourier transforms. They are of central importance for signal processing. For convenience the transforms often are written in the operator formalism using the $\mathcal{F}$ symbol in the form
+Equation [I.15](#eq-i-15) shows how a non-repetitive time-domain wave form is related to its continuous spectrum. These are known as Fourier integrals or Fourier transforms. They are of central importance for signal processing. For convenience the transforms often are written in the operator formalism using the $\mathcal{F}$ symbol in the form
 
 $$
-f ( t) = \frac{1}{ 2\pi } \int^{ +\infty}_{ −\infty} G (\omega ) e^{i\omega t} d\omega \equiv \mathcal{F}^{−1} \left[ \frac{1}{ 2\pi} G(\omega ) \right] \label{I.16}
+f ( t) = \frac{1}{ 2\pi } \int^{ +\infty}_{ −\infty} G (\omega ) e^{i\omega t} d\omega \equiv \mathcal{F}^{−1} \left[ \frac{1}{ 2\pi} G(\omega ) \right] \tag{I.16} \label{eq-i-16}
 $$
 
 $$
-G (\omega ) = \int^{ +\infty}_{ −\infty} f ( t) e^{−i\omega t} d t \equiv \mathcal{F}f( t) \label{I.17}
+G (\omega ) = \int^{ +\infty}_{ −\infty} f ( t) e^{−i\omega t} d t \equiv \mathcal{F}f( t) \tag{I.17} \label{eq-i-17}
 $$
 
-It is very important to grasp the significance of these two equations. The first tells us that the Fourier transform of the waveform $f( t)$ is continuously distributed in the frequency range between $\omega = \pm \infty$, whereas the second shows how, in effect, the waveform may be synthesized from an infinite set of exponential functions of the form $e^{\pm i\omega t}$, each weighted by the relevant value of $G(\omega )$. It is crucial to realize that this transformation can go either way equally, that is, from $G(\omega )$ to $f ( t)$ or vice versa.<sup>1</sup>
+It is very important to grasp the significance of these two equations. The first tells us that the Fourier transform of the waveform $f( t)$ is continuously distributed in the frequency range between $\omega = \pm \infty$, whereas the second shows how, in effect, the waveform may be synthesized from an infinite set of exponential functions of the form $e^{\pm i\omega t}$, each weighted by the relevant value of $G(\omega )$. It is crucial to realize that this transformation can go either way equally, that is, from $G(\omega )$ to $f ( t)$ or vice versa.[^19-10-1]
 
-Example 19.1: Fourier transform of a single isolated square pulse
+::::{admonition} Example 19.10.1: Fourier transform of a single isolated square pulse
+:class: example
 
 Consider a single isolated square pulse of width $\tau$ that is described by the rectangular function $\prod$ defined as
 
@@ -2905,8 +2972,10 @@ G (\omega ) = \int^{+\tau}_{ −\tau} 1.e^{−i\omega t} d t = \tau \left(\frac{
 $$
 
 which is an unnormalized $sinc(\omega \tau )$ function. Note that the width of the pulse $\Delta t = \pm \frac{\tau }{2}$ leads to a frequency envelope that has the first zeros at $\Delta\omega = \pm \frac{\pi}{ \tau}$. Thus the product of these widths $\Delta t \cdot \Delta\omega = \pm \pi$ which is independent of the width of the pulse, that is $\Delta\omega = \frac{\pi}{ \Delta t}$ which is an example of the uncertainty principle which is applicable to all forms of wave motion.
+::::
 
-Example 19.2: Fourier transform of the Dirac delta function
+::::{admonition} Example 19.10.2: Fourier transform of the Dirac delta function
+:class: example
 
 The Dirac delta function, $\delta ( t − t^{\prime} )$, is a pulse of extremely short duration and unit area at $t = t^{\prime}$ and is zero at all other times. That is,
 
@@ -2923,6 +2992,7 @@ G (\omega ) = \int^{ +\infty}_{ −\infty} \delta ( t − t^{\prime} ) e^{−i\o
 $$
 
 Since $e^{−i\omega t}$ essentially is constant over the infinitesimal time duration of the $\delta ( t − t^{\prime} )$ function, and the time integral of the $\delta$ function is unity, thus the term $e^{−i\omega t}$ has unit magnitude for any value of $\omega$ and has a phase shift of $−\omega ( t − t^{\prime} )$ radians. For $t^{\prime} = 0$ the phase shift is zero and thus the Fourier transform of a Dirac $\delta ( t)$ function is $G(\omega )=1$. That is, this is a uniform white spectrum for all values of $\omega$.
+::::
 
 ### Time-sampled waveform analysis
 
@@ -2931,9 +3001,11 @@ An alternative approach for unloosing periodic signals, that is complementary to
 The general principles are best explained by first considering the response of a linear system to a step function impulse, followed by a square impulse, and leading to the response of a $\delta$-function impulsive driving force.
 
 :::{figure} ../images/lt-23026-i1.png
-:alt: i1.PNG
+:label: fig-19-10-1
+:enumerator: 19.10.1
+:alt: Response of a underdamped linear oscillator with \omega = 10, and \Gamma = 2 to the following impulsive force. (a) Step function force F = 0 for t < 0 and F = m for t > 0. (b) Square-wave force where F = m for 0 < t<\tau for \tau = 3, and F = 0 at other times. (c) Delta-function impulse P = 1.
 
-$1$: Response of a underdamped linear oscillator with $\omega = 10$, and $\Gamma = 2$ to the following impulsive force. (a) Step function force $F = 0$ for $t < 0$ and $F = m$ for $t > 0$. (b) Square-wave force where $F = m$ for $0 < t<\tau$ for $\tau = 3$, and $F = 0$ at other times. (c) Delta-function impulse $P = 1$.
+Response of a underdamped linear oscillator with $\omega = 10$, and $\Gamma = 2$ to the following impulsive force. (a) Step function force $F = 0$ for $t < 0$ and $F = m$ for $t > 0$. (b) Square-wave force where $F = m$ for $0 < t<\tau$ for $\tau = 3$, and $F = 0$ at other times. (c) Delta-function impulse $P = 1$.
 :::
 
 #### Delta-function impulse response
@@ -2941,13 +3013,13 @@ $1$: Response of a underdamped linear oscillator with $\omega = 10$, and $\Gamma
 Consider the damped oscillator equation
 
 $$
-\ddot{x} + \Gamma \dot{x} + \omega^2_0x = \frac{F ( t)}{ m} \label{I.18}
+\ddot{x} + \Gamma \dot{x} + \omega^2_0x = \frac{F ( t)}{ m} \tag{I.18} \label{eq-i-18}
 $$
 
 and assume that a step function is applied at time $t = 0$. That is;
 
 $$
-\begin{align} \frac{F ( t)}{ m} = 0 && t < 0 && \frac{F ( t)}{ m } = a && t> 0 \label{I.19} \end{align}
+\begin{align} \frac{F ( t)}{ m} = 0 && t < 0 && \frac{F ( t)}{ m } = a && t> 0 \tag{I.19} \label{eq-i-19} \end{align}
 $$
 
 where $a$ is a constant. The initial conditions are that $x(0) = \dot{x}(0) = 0$.
@@ -2955,7 +3027,7 @@ where $a$ is a constant. The initial conditions are that $x(0) = \dot{x}(0) = 0$
 The transient or complementary solution is the solution of the linearly-damped harmonic oscillator
 
 $$
-\ddot{x} + \Gamma \dot{x} + \omega^2_0x = 0 \label{I.20}
+\ddot{x} + \Gamma \dot{x} + \omega^2_0x = 0 \tag{I.20} \label{eq-i-20}
 $$
 
 This is independent of the driving force and the solution is given in the chapter $3.5$ discussion of the linearly-damped harmonic oscillator.
@@ -2969,25 +3041,27 @@ $$
 Taking the sum of the transient and particular solutions, using the initial conditions, gives the final solution to be
 
 $$
-x( t) = \frac{a}{ \omega^2_0} \left[ 1 − e^{− \frac{\Gamma}{2} t} \cos \omega_1 t − \frac{\Gamma e^{− \frac{\Gamma}{2} t}}{ 2\omega_1} \sin \omega_1 t \right] \label{I.21}
+x( t) = \frac{a}{ \omega^2_0} \left[ 1 − e^{− \frac{\Gamma}{2} t} \cos \omega_1 t − \frac{\Gamma e^{− \frac{\Gamma}{2} t}}{ 2\omega_1} \sin \omega_1 t \right] \tag{I.21} \label{eq-i-21}
 $$
 
-where $\omega_1 \equiv \sqrt{ \omega^2_0 − ( \frac{\Gamma}{2} )^2}$. This functional form is shown in Figure 19.1a. Note that the amplitude of the transient response equals $−a$ at $t = 0$ to cancel the particular solution when it jumps to $+a$. The oscillatory behavior then is just that of the transient response.
+where $\omega_1 \equiv \sqrt{ \omega^2_0 − ( \frac{\Gamma}{2} )^2}$. This functional form is shown in [Figure 19.10.1a](#fig-19-10-1). Note that the amplitude of the transient response equals $−a$ at $t = 0$ to cancel the particular solution when it jumps to $+a$. The oscillatory behavior then is just that of the transient response.
 
-A square impulse can be generated by the superposition of two opposite-sign stepfunctions separated by a time $\tau$ as shown in Figure 19.1b.
+A square impulse can be generated by the superposition of two opposite-sign stepfunctions separated by a time $\tau$ as shown in [Figure 19.10.1b](#fig-19-10-1).
 
 The square impulse can be taken to the limit where the width $\tau$ is negligibly small relative to the response times of the system. It can be shown that letting $\tau \rightarrow 0$, but keeping the magnitude of the total impulse $P = a\tau$ finite for the impulse at time $t_0$, leads to the solution for the $\delta$-function impulse occurring at $t_0$
 
 $$
-x( t) = \frac{P}{ \omega_1} e^{− \frac{\Gamma}{2} ( t− t_0)} \sin \omega_1 ( t − t_0) \quad t> t_0 \label{I.22}
+x( t) = \frac{P}{ \omega_1} e^{− \frac{\Gamma}{2} ( t− t_0)} \sin \omega_1 ( t − t_0) \quad t> t_0 \tag{I.22} \label{eq-i-22}
 $$
 
-This response to a delta function impulse is shown in Figure 19.1c for the case where $t_0 = 0$. An example is the response when the hammer strikes a piano string at $t = 0$.
+This response to a delta function impulse is shown in [Figure 19.10.1c](#fig-19-10-1) for the case where $t_0 = 0$. An example is the response when the hammer strikes a piano string at $t = 0$.
 
 :::{figure} ../images/lt-23029-i2.png
-:alt: i2.PNG
+:label: fig-19-10-2
+:enumerator: 19.10.2
+:alt: Decomposition of the function x( t) = 2 \sin ( t)+ \sin (5 t)+ \frac{1}{ 3} \sin (15 t)+ \frac{1}{ 5} \sin (25 t) into a time-ordered sequence of \delta-function samples.
 
-$2$: Decomposition of the function $x( t) = 2 \sin ( t)+ \sin (5 t)+ \frac{1}{ 3} \sin (15 t)+ \frac{1}{ 5} \sin (25 t)$ into a time-ordered sequence of $\delta$-function samples.
+Decomposition of the function $x( t) = 2 \sin ( t)+ \sin (5 t)+ \frac{1}{ 3} \sin (15 t)+ \frac{1}{ 5} \sin (25 t)$ into a time-ordered sequence of $\delta$-function samples.
 :::
 
 #### Green’s function waveform decomposition
@@ -2995,30 +3069,30 @@ $2$: Decomposition of the function $x( t) = 2 \sin ( t)+ \sin (5 t)+ \frac{1}{ 3
 The response of the linearly-damped linear oscillator to an delta function impulse, that has been expressed above, can be used to exploit the powerful Green’s technique for decomposition of any general forcing function. That is, if the driven system is linear, then the principle of superposition is applicable and allowing expression of the inhomogeneous part of the differential equation as the sum of individual delta functions. That is;
 
 $$
-\ddot{x} + \Gamma \dot{x} + \omega^2_0 x = \sum^{\infty}_{ n=−\infty} \frac{F_n ( t)}{ m} = \sum^{\infty}_{ n=−\infty} I_n ( t) \label{I.23}
+\ddot{x} + \Gamma \dot{x} + \omega^2_0 x = \sum^{\infty}_{ n=−\infty} \frac{F_n ( t)}{ m} = \sum^{\infty}_{ n=−\infty} I_n ( t) \tag{I.23} \label{eq-i-23}
 $$
 
-As illustrated in Figure 19.2 discrete-time waveform analysis involves repeatedly sampling the instantaneous amplitude in a regular and repetitive sequence of $\delta$-function impulses. Since the superposition principle applies for this linear system then the waveform can be described by a sum of an ordered series of deltafunction impulses where $t^{\prime}$ is the time of an impulse. Integrating over all the $\delta$-function responses that have occurred at time $t^{\prime}$, that is prior to the time of interest $t$, leads to
+As illustrated in [Figure 19.10.2](#fig-19-10-2) discrete-time waveform analysis involves repeatedly sampling the instantaneous amplitude in a regular and repetitive sequence of $\delta$-function impulses. Since the superposition principle applies for this linear system then the waveform can be described by a sum of an ordered series of deltafunction impulses where $t^{\prime}$ is the time of an impulse. Integrating over all the $\delta$-function responses that have occurred at time $t^{\prime}$, that is prior to the time of interest $t$, leads to
 
 $$
-x ( t) = \int^t_{ −\infty} \frac{F ( t^{\prime} )}{ m\omega_1} e^{− \frac{\Gamma}{2} ( t− t^{\prime} )} \sin \omega_1 ( t − t^{\prime} ) d t^{\prime} \quad t \geq t^{\prime} \label{I.24}
+x ( t) = \int^t_{ −\infty} \frac{F ( t^{\prime} )}{ m\omega_1} e^{− \frac{\Gamma}{2} ( t− t^{\prime} )} \sin \omega_1 ( t − t^{\prime} ) d t^{\prime} \quad t \geq t^{\prime} \tag{I.24} \label{eq-i-24}
 $$
 
 The Green’s function $G ( t − t^{\prime} )$ is defined by
 
 $$
-G( t − t^{\prime} ) = \frac{1}{ m\omega_1} e^{− \frac{\Gamma}{2} ( t− t^{\prime} )} \sin \omega_1 ( t − t^{\prime} ) \quad t \geq t^{\prime} \label{I.25} \\ = 0 \quad t< t^{\prime}
+G( t − t^{\prime} ) = \frac{1}{ m\omega_1} e^{− \frac{\Gamma}{2} ( t− t^{\prime} )} \sin \omega_1 ( t − t^{\prime} ) \quad t \geq t^{\prime} \tag{I.25} \label{eq-i-25} \\ = 0 \quad t< t^{\prime}
 $$
 
 Superposition allows the summed response of the system to be written in an integral form
 
 $$
-x( t) = \int^t_{ −\infty} F( t^{\prime} )G( t − t^{\prime} )d t^{\prime} \label{I.26}
+x( t) = \int^t_{ −\infty} F( t^{\prime} )G( t − t^{\prime} )d t^{\prime} \tag{I.26} \label{eq-i-26}
 $$
 
 which gives the final time dependence of the forced system. This repetitive time-sampling approach avoids the need of using Fourier analysis. Note that the Green’s function $G ( t − t^{\prime} )$ includes implicitly the frequency of the free undamped linear oscillator $\omega_0$, the free damped linear oscillator $\omega_1 \equiv \sqrt{\omega^2_0 − ( \frac{\Gamma}{2} )^2}$, as well as the damping coefficient $\Gamma$. Access to the combination of fast microcomputers coupled to fast digital sampling techniques has made digital signal sampling the pre-eminent technique for signal recording of audio, video, and detector signal processing.
 
-<sup>1</sup>The only asymmetry in the Fourier transform relations comes from the $2\pi$ factor originating from the fact that by convention physicists use the angular frequency $\omega = 2\pi\nu$ rather than the frequency $\nu$. In order to restore symmetry many papers use the factor $\frac{1}{\sqrt{ 2\pi}}$ in both relations rather than using the $\frac{1}{ 2\pi}$ factor in Equation \ref{I.16} and unity in Equation \ref{I.17}.
+[^19-10-1]: The only asymmetry in the Fourier transform relations comes from the $2\pi$ factor originating from the fact that by convention physicists use the angular frequency $\omega = 2\pi\nu$ rather than the frequency $\nu$. In order to restore symmetry many papers use the factor $\frac{1}{\sqrt{ 2\pi}}$ in both relations rather than using the $\frac{1}{ 2\pi}$ factor in Equation [I.16](#eq-i-16) and unity in Equation [I.17](#eq-i-17).
 
 ## 19.11: Bibliography
 

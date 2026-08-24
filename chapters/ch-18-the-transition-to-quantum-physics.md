@@ -5,9 +5,9 @@ label: ch-18-the-transition-to-quantum-physics
 ---
 
 
-# 18. The Transition to Quantum Physics
-
 (ch-18)=
+
+# 18. The Transition to Quantum Physics
 
 ## 18.1: Introduction to Quantum Physics
 
@@ -15,12 +15,12 @@ Classical mechanics, including extensions to relativistic velocities, embrace an
 
 ## 18.2: Brief summary of the origins of quantum theory
 
-The last decade of the $19^{th}$ century saw the culmination of classical physics. By 1900 scientists thought that the basic laws of mechanics, electromagnetism, and statistical mechanics were understood and worried that future physics would be reduced to confirming theories to the fifth decimal place, with few major new discoveries to be made. However, technical developments such as photography, vacuum pumps, induction coil, etc., led to important discoveries that revolutionized physics and toppled classical mechanics from its throne at the beginning of the $20^{th}$ century. Table 18.1 summarizes some of the major milestones leading up to the development of quantum mechanics.
+The last decade of the $19^{th}$ century saw the culmination of classical physics. By 1900 scientists thought that the basic laws of mechanics, electromagnetism, and statistical mechanics were understood and worried that future physics would be reduced to confirming theories to the fifth decimal place, with few major new discoveries to be made. However, technical developments such as photography, vacuum pumps, induction coil, etc., led to important discoveries that revolutionized physics and toppled classical mechanics from its throne at the beginning of the $20^{th}$ century. Table 18.2.1 summarizes some of the major milestones leading up to the development of quantum mechanics.
 
 Max Planck searched for an explanation of the spectral shape of the black-body electromagnetic radiation. He found an interpolation between two conflicting theories, one that reproduced the short wavelength behavior, and the other the long wavelength behavior. Planck’s interpolation required assuming that electromagnetic radiation was not emitted with a continuous range of energies, but that electromagnetic radiation is emitted in discrete bundles of energy called quanta. In December 1900 he presented his theory which reproduced precisely the measured black body spectral distribution by assuming that the energy carried by a single quantum must be an integer multiple of $h\nu$:
 
 $$
-E = h\nu = \frac{hc}{ \lambda} 
+E = h\nu = \frac{hc}{ \lambda} \tag{18.1} \label{eq-18-1}
 $$
 
 where $\nu$ is the frequency of the electromagnetic radiation and Planck’s constant, $h = 6.62610^{−34}$ $J \cdot s$ was the best fit parameter of the interpolation. That is, Planck assumed that energy comes in discrete bundles of energy equal to $h\nu$ which are called quanta. By making this extreme assumption, in an act of desperation, Planck was able to reproduce the experimental black body radiation spectrum. The assumption that energy was exchanged in bundles hinted that the classical laws of physics were inadequate in the microscopic domain. The older generation physicists initially refused to believe Planck’s hypothesis which underlies quantum theory. It was the new generation physicists, like Einstein, Bohr, Heisenberg, Born, Schrödinger, and Dirac, who developed Planck’s hypothesis leading to the revolutionary quantum theory.
@@ -28,7 +28,7 @@ where $\nu$ is the frequency of the electromagnetic radiation and Planck’s con
 In 1905, Einstein predicted the existence of the photon, derived the theory of specific heat, as well as deriving the Theory of Special Relativity. It is remarkable to realize that he developed these three revolutionary theories in one year, when he was only 26 years old. Einstein uncovered an inconsistency in Planck’s derivation of the black body spectral distribution in that it assumed the statistical part of the energy is quantized, whereas the electromagnetic radiation assumed Maxwell’s equations with oscillator energies being continuous. Planck demanded that light of frequency $\nu$ be packaged in quanta whose energies were multiples of $h\nu$, but Planck never thought that light would have particle-like behavior. Newton believed that light involved corpuscles, and Hamilton developed the Hamilton-Jacobi theory seeking to describe light in terms of the corpuscle theory. However, Maxwell had convinced physicists that light was a wave phenomena; interference plus diffraction effects were convincing manifestations of the wave-like properties of light. In order to reproduce Planck’s prediction, Einstein had to treat black-body radiation as if it consisted of a gas of photons, each photon having energy $E = h\nu$. This was a revolutionary concept that returned to Newton’s corpuscle theory of light. Einstein realized that there were direct tests of his photon hypothesis, one of which is the photo-electric effect. According to Einstein, each photon has an energy $E = h\nu$, in contrast to the classical case where the energy of the photoelectron depends on the intensity of the light. Einstein predicted that the ejected electron will have a kinetic energy
 
 $$
-KE = h\nu − W 
+KE = h\nu − W \tag{18.2} \label{eq-18-2}
 $$
 
 where $W$ is the work function which is the energy needed to remove an electron from a solid.
@@ -69,9 +69,13 @@ Many older scientists, including Planck, accepted Einstein’s theory of relativ
 The Rutherford scattering experiment, performed at Manchester in 1911, discovered that the Au atom comprised a positively charge nucleus of radius $\approx 10^{−14}$ $m$ which is much smaller than the $1.35 \times 10^{−10}$ $m$ radius of the Au atom. Stimulated by this discovery, Niels Bohr joined Rutherford at Manchester in 1912 where he developed the Bohr model of the atom. This theory was remarkably successful in spite of having serious inconsistencies and deficiencies. Bohr’s model assumptions were:
 
 1. Electromagnetic radiation is quantized with $E = h\nu$.
+
 2. Electromagnetic radiation exhibits behavior characteristic of the emission of photons with energy $E = h\nu$ and momentum $p = \frac{h\nu}{c}$. That is, it exhibits both wave-like and particle-like behavior.
+
 3. Electrons are in stationary orbits that do not radiate, which contradicts the predictions of classical electromagnetism.
+
 4. The orbits are quantized such that the electron angular momentum is an integer multiple of $\frac{h}{ 2\pi} = \hbar$.
+
 5. Atomic electromagnetic radiation is emitted with photon energy equal to the difference in binding energy between the two atomic levels involved. $h\nu = E_1 − E_2$
 
 The first two assumptions are due to Planck and Einstein, while the last three were made by Niels Bohr.
@@ -87,13 +91,13 @@ By 1912 Planck, and others, had abandoned the concept that quantum theory was a 
 In 1912 Sommerfeld proposed that, in every elementary process, the atom gains or loses a definite amount of action between times $t_0$ and $t$ of
 
 $$
-S = \int^t_{t_0} L(t^{\prime} )dt^{\prime} 
+S = \int^t_{t_0} L(t^{\prime} )dt^{\prime} \tag{18.3} \label{eq-18-3}
 $$
 
 where $S$ is the quantal analogue of the classical action function. It has been shown that the classical principle of least action states that the action function is stationary for small variations of the trajectory. In 1915 Wilson and Sommerfeld recognized that the quantization of angular momentum could be expressed in terms of the action-angle integral, that is equation $(15.5.1)$. They postulated that, for every coordinate, the action-angle variable is quantized
 
 $$
-\oint p_k dq_k = nh 
+\oint p_k dq_k = nh \tag{18.4} \label{eq-18-4}
 $$
 
 where the action-angle variable integral is over one complete period of the motion. That is, they postulated that Hamilton’s phase space is quantized, but the microscopic granularity is such that the quantization is only manifest for atomic-sized domains. That is, $n$ is a small integer for atomic systems in contrast to $n \approx 10^{64}$ for the Earth-Sun two-body system.
@@ -101,7 +105,7 @@ where the action-angle variable integral is over one complete period of the moti
 Sommerfeld recognized that quantization of more than one degree of freedom is needed to obtain a more accurate description of the hydrogen atom. Sommerfeld reproduced the experimental data by assuming quantization of the three degrees of freedom,
 
 $$
-\oint p_r dr = n_1h \quad \oint p_{\theta} d\theta = n_2h \quad \oint p_{\phi} d\phi = n_3h 
+\oint p_r dr = n_1h \quad \oint p_{\theta} d\theta = n_2h \quad \oint p_{\phi} d\phi = n_3h \tag{18.5} \label{eq-18-5}
 $$
 
 and solving Hamilton-Jacobi theory by separation of variables. In 1916 the Bohr-Sommerfeld model solved the classical orbits for the hydrogen atom, including relativistic corrections as described in example $17.7.1$. This reproduced fine structure observed in the optical spectra of hydrogen. The use of the canonical transformation to action-angle variables proved to be the ideal approach for solving many such problems in quantum mechanics. In 1921, Stern and Gerlach demonstrated space quantization by observing the splitting of atomic beams deflected by non-uniform magnetic fields. This result was a major triumph for quantum theory. Sommerfeld declared that “With their bold experimental method, Stern and Gerlach demonstrated not only the existence of space quantization, they also proved the atomic nature of the magnetic moment, its quantum-theoretic origin, and its relation to the atomic structure of electricity.”
@@ -113,25 +117,25 @@ In 1925, Pauli’s Exclusion Principle proposed that no more than one electron c
 In his 1924 doctoral thesis, Prince Louis de Broglie proposed the hypothesis of wave-particle duality which was a pivotal development in quantum theory. de Broglie used the classical concept of a matter wavepacket, analogous to classical wave packets discussed in chapter $3.11$. He assumed that both the group and signal velocities of a matter wave packet must equal the velocity of the corresponding particle. By analogy with Einstein’s relation for the photon, and using the Theory of Special Relativity, de Broglie assumed that
 
 $$
-\hbar \omega = E = \frac{mc^2}{\sqrt{\left(1 - \frac{v^2}{c^2}\right)}} 
+\hbar \omega = E = \frac{mc^2}{\sqrt{\left(1 - \frac{v^2}{c^2}\right)}} \tag{18.6} \label{eq-18-6}
 $$
 
 The group velocity is required to equal the velocity of the mass
 
 $$
-v_{group} = \left(\frac{d\omega}{ dk} \right) = \left(\frac{d\omega}{ dv } \right) \left(\frac{dv }{dk} \right) = v 
+v_{group} = \left(\frac{d\omega}{ dk} \right) = \left(\frac{d\omega}{ dv } \right) \left(\frac{dv }{dk} \right) = v \tag{18.7} \label{eq-18-7}
 $$
 
 This gives
 
 $$
-\frac{dk }{dv} = \frac{1}{ v} \left(\frac{d\omega}{ dv} \right) = \left( \frac{m}{\hbar} \right) \left( 1 − \frac{v^2}{ c^2} \right)^{− \frac{3}{ 2}} 
+\frac{dk }{dv} = \frac{1}{ v} \left(\frac{d\omega}{ dv} \right) = \left( \frac{m}{\hbar} \right) \left( 1 − \frac{v^2}{ c^2} \right)^{− \frac{3}{ 2}} \tag{18.8} \label{eq-18-8}
 $$
 
 Integration of this equation assuming that $k = 0$ when $v = 0$, then gives
 
 $$
-\hbar \mathbf{k} = \frac{m\mathbf{v}}{\sqrt{\left(1-\frac{\mathbf{v}\cdot\mathbf{v}}{c^2}\right)}} = \mathbf{p} 
+\hbar \mathbf{k} = \frac{m\mathbf{v}}{\sqrt{\left(1-\frac{\mathbf{v}\cdot\mathbf{v}}{c^2}\right)}} = \mathbf{p} \tag{18.9} \label{eq-18-9}
 $$
 
 This relation, derived by de Broglie, is required to ensure that the particle travels at the group velocity of the wave packet characterizing the particle. Note that although the relations used to characterize the matter waves are purely classical, the physical content of such waves is beyond classical physics. In 1927 C. Davisson and G.P. Thomson independently observed electron diffraction confirming wave/particle duality for the electron. Ironically, J.J. Thomson discovered that the electron was a particle, whereas his son attributed it to an electron wave.
@@ -145,49 +149,49 @@ Heisenberg developed the modern matrix formulation of quantum theory in 1925; he
 The algebraic Heisenberg representation of quantum theory is analogous to the algebraic Hamiltonian representation of classical mechanics, and shows best how quantum theory evolved from, and is related to, classical mechanics. Heisenberg decided to ignore the prevailing conceptual theories, such as classical mechanics, and based his quantum theory on observables. This approach was influenced by the success of Bohr’s older quantum theory and Einstein’s theory of relativity. He abandoned the classical notions that the canonical variables $p_k, q_k$ can be measured directly and simultaneously. Secondly he wished to absorb the correspondence principle directly into the theory instead of it being an ad hoc procedure tailored to each application. Heisenberg considered the Fourier decomposition of transition amplitudes between discrete states and found that the product of the conjugate variables do not commute. Heisenberg derived, for the first time, the correct energy levels of the one-dimensional harmonic oscillator as $E_n = \hbar \omega (n + \frac{1}{2})$ which was a significant achievement. Born recognized that Heisenberg’s strange multiplication and commutation rules for two variables, corresponded to matrix algebra. Prior to 1925, matrix algebra was an obscure branch of pure mathematics not known or used by the physics community. Heisenberg, Born, and the young mathematician Jordan, developed the commutation rules of matrix mechanics. Heisenberg’s approach represents the classical position and momentum coordinates $q, p$ by matrices $\mathbf{q}$ and $\mathbf{p}$, with corresponding matrix elements $q_{mn}e^{i\omega_{mn}t}$ and $p_{mn}e^{i\omega_{mn}t}$. Born showed that the trace of the matrix
 
 $$
-H(\mathbf{pq}) = \mathbf{p}\mathbf{\dot{q}}−L \label{18.10}
+H(\mathbf{pq}) = \mathbf{p}\mathbf{\dot{q}}−L \tag{18.10} \label{eq-18-10}
 $$
 
 gives the Hamiltonian function $H(\mathbf{p}, \mathbf{q})$ of the matrices $\mathbf{q}$ and $\mathbf{p}$ which leads to Hamilton’s canonical equations
 
 $$
-\mathbf{\dot{q}}= \frac{\partial H }{\partial \mathbf{p}} \quad \mathbf{\dot{p}} =−\frac{\partial H }{\partial \mathbf{q}} \label{18.11}
+\mathbf{\dot{q}}= \frac{\partial H }{\partial \mathbf{p}} \quad \mathbf{\dot{p}} =−\frac{\partial H }{\partial \mathbf{q}} \tag{18.11} \label{eq-18-11}
 $$
 
 Heisenberg and Born also showed that the commutator of $\mathbf{q}, \mathbf{p}$ equals
 
 $$
-q_kp_l − p_lq_k = i\hbar \delta_{kl} \label{18.12} \\ q_kq_l − q_lq_k = 0 \\ p_kp_l − p_lp_k = 0
+q_kp_l − p_lq_k = i\hbar \delta_{kl} \tag{18.12} \label{eq-18-12} \\ q_kq_l − q_lq_k = 0 \\ p_kp_l − p_lp_k = 0
 $$
 
-Born realized that Equation \ref{18.12} is the only fundamental equation for introducing $\hbar$ into the theory in a logical and consistent way.
+Born realized that Equation [18.12](#eq-18-12) is the only fundamental equation for introducing $\hbar$ into the theory in a logical and consistent way.
 
 Chapter $15.2.4$ discussed the formal correspondence between the Poisson bracket, defined in chapter $15.3$, and the commutator in classical mechanics. It was shown that the commutator of two functions equals a constant multiplicative factor $\lambda$ times the corresponding Poisson Bracket. That is
 
 $$
-(F_jG_k − G_kF_j ) = \lambda \{F_j , G_k\} \label{18.13}
+(F_jG_k − G_kF_j ) = \lambda \{F_j , G_k\} \tag{18.13} \label{eq-18-13}
 $$
 
 where the multiplicative factor $\lambda$ is a number independent of $F_j , G_k$, and the commutator.
 
-In 1925, Paul Dirac, a 23-year old graduate student at Bristol, recognized the crucial importance of the above correspondence between the commutator and the Poisson Bracket of two functions, to relating classical mechanics and quantum mechanics. Dirac noted that if the constant $\lambda$ is assigned the value $\lambda = i\hbar$, then Equation \ref{18.13} directly relates Heisenberg’s commutation relations between the fundamental canonical variables $(q_j , p_k)$ to the corresponding classical Poisson Bracket $\{q_j , p_k\}$. That is,
+In 1925, Paul Dirac, a 23-year old graduate student at Bristol, recognized the crucial importance of the above correspondence between the commutator and the Poisson Bracket of two functions, to relating classical mechanics and quantum mechanics. Dirac noted that if the constant $\lambda$ is assigned the value $\lambda = i\hbar$, then Equation [18.13](#eq-18-13) directly relates Heisenberg’s commutation relations between the fundamental canonical variables $(q_j , p_k)$ to the corresponding classical Poisson Bracket $\{q_j , p_k\}$. That is,
 
 $$
-q_kp_l − p_lq_k = i\hbar \{q_k, p_l\} = i\hbar \delta_{kl} \label{18.14}
-$$
-
-$$
-q_kq_l − q_lq_k = i\hbar \{q_k, q_l\}=0 \label{18.15}
+q_kp_l − p_lq_k = i\hbar \{q_k, p_l\} = i\hbar \delta_{kl} \tag{18.14} \label{eq-18-14}
 $$
 
 $$
-p_kp_l − p_lp_k = i\hbar \{p_k, p_l\}=0 \label{18.16}
+q_kq_l − q_lq_k = i\hbar \{q_k, q_l\}=0 \tag{18.15} \label{eq-18-15}
 $$
 
-Dirac recognized that the correspondence between the classical Poisson bracket, and quantum commutator, given by Equation \ref{18.13}, provides a logical and consistent way that builds quantization directly into the theory, rather than using an ad-hoc, case-dependent, hypothesis as used by the older quantum theory of Bohr. The basis of Dirac’s quantization principle, involves replacing the classical Poisson Bracket, $\{F_j , G_k\}$ by the commutator, $\frac{1}{ i\hbar } (F_j, G_k − G_kF_j )$. That is,
+$$
+p_kp_l − p_lp_k = i\hbar \{p_k, p_l\}=0 \tag{18.16} \label{eq-18-16}
+$$
+
+Dirac recognized that the correspondence between the classical Poisson bracket, and quantum commutator, given by Equation [18.13](#eq-18-13), provides a logical and consistent way that builds quantization directly into the theory, rather than using an ad-hoc, case-dependent, hypothesis as used by the older quantum theory of Bohr. The basis of Dirac’s quantization principle, involves replacing the classical Poisson Bracket, $\{F_j , G_k\}$ by the commutator, $\frac{1}{ i\hbar } (F_j, G_k − G_kF_j )$. That is,
 
 $$
-\{F_j , G_k\} \Longrightarrow \frac{1}{i\hbar} (F_jG_k − G_kF_j ) \label{18.17}
+\{F_j , G_k\} \Longrightarrow \frac{1}{i\hbar} (F_jG_k − G_kF_j ) \tag{18.17} \label{eq-18-17}
 $$
 
 Hamilton’s canonical equations, as introduced in chapter $15$, are only applicable to classical mechanics since they assume that the exact position and conjugate momentum can be specified both exactly and simultaneously which contradicts the Heisenberg’s Uncertainty Principle. In contrast, the Poisson bracket generalization of Hamilton’s equations allows for non-commuting variables plus the corresponding uncertainty principle. That is, the transformation from classical mechanics to quantum mechanics can be accomplished simply by replacing the classical Poisson Bracket by the quantum commutator, as proposed by Dirac. The formal analogy between classical Hamiltonian mechanics, and the Heisenberg representation of quantum mechanics is strikingly apparent using the correspondence between the Poisson Bracket representation of Hamiltonian mechanics and Heisenberg’s matrix mechanics.
@@ -195,37 +199,37 @@ Hamilton’s canonical equations, as introduced in chapter $15$, are only applic
 The direct relation between the quantum commutator, and the corresponding classical Poisson Bracket, applies to many observables. For example, the quantum analogs of Hamilton’s equations of motion are given by use of Hamilton’s equations of motion, $(15.2.42)$, $(15.2.45)$, and replacing each Poisson Bracket by the corresponding commutator. That is
 
 $$
-\frac{dq_k}{ dt} = \frac{\partial H }{\partial p_k} = \{q_k, H\} = \frac{1}{i\hbar} (q_kH − Hq_k) \label{18.18}
+\frac{dq_k}{ dt} = \frac{\partial H }{\partial p_k} = \{q_k, H\} = \frac{1}{i\hbar} (q_kH − Hq_k) \tag{18.18} \label{eq-18-18}
 $$
 
 $$
-\frac{dp_k }{dt} = −\frac{\partial H }{\partial q_k } = \{p_k, H\} = \frac{1}{i\hbar} (p_kH − Hp_k) \label{18.19}
+\frac{dp_k }{dt} = −\frac{\partial H }{\partial q_k } = \{p_k, H\} = \frac{1}{i\hbar} (p_kH − Hp_k) \tag{18.19} \label{eq-18-19}
 $$
 
 Chapter $15.2.5$ discussed the time dependence of observables in Hamiltonian mechanics. Equation $(15.2.34)$ gave the total time derivative of any observable $G$ to be
 
 $$
-\frac{dG}{dt} = \frac{\partial G}{\partial t} + \{G, H\} \label{18.20}
+\frac{dG}{dt} = \frac{\partial G}{\partial t} + \{G, H\} \tag{18.20} \label{eq-18-20}
 $$
 
-Equation \ref{18.17} can be used to replace the Poisson Bracket by the quantum commutator, which gives the corresponding time dependence of observables in quantum physics.
+Equation [18.17](#eq-18-17) can be used to replace the Poisson Bracket by the quantum commutator, which gives the corresponding time dependence of observables in quantum physics.
 
 $$
-\frac{dG}{dt} = \frac{\partial G}{\partial t} + \frac{1}{i\hbar} (GH − HG) \label{18.21}
+\frac{dG}{dt} = \frac{\partial G}{\partial t} + \frac{1}{i\hbar} (GH − HG) \tag{18.21} \label{eq-18-21}
 $$
 
-In quantum mechanics, Equation \ref{18.21} is called the *Heisenberg equation*. Note that if the observable $G$ is chosen to be a fundamental canonical variable, then $\frac{\partial q_k}{ \partial t} =0= \frac{\partial p_k}{ \partial t}$ and equation $(15.2.9)$ reduces to Hamilton’s equations \ref{18.18} and \ref{18.19}.
+In quantum mechanics, Equation [18.21](#eq-18-21) is called the *Heisenberg equation*. Note that if the observable $G$ is chosen to be a fundamental canonical variable, then $\frac{\partial q_k}{ \partial t} =0= \frac{\partial p_k}{ \partial t}$ and equation $(15.2.9)$ reduces to Hamilton’s equations [18.18](#eq-18-18) and [18.19](#eq-18-19).
 
 The analogies between classical mechanics and quantum mechanics extend further. For example, if $G$ is a constant of motion, that is $\frac{dG}{dt} = 0$, then Heisenberg’s equation of motion gives
 
 $$
-\frac{\partial G}{\partial t} + \frac{1}{i\hbar} (GH − HG)=0 \label{18.22}
+\frac{\partial G}{\partial t} + \frac{1}{i\hbar} (GH − HG)=0 \tag{18.22} \label{eq-18-22}
 $$
 
 Moreover, if $G$ is not an explicit function of time, then
 
 $$
-0 = \frac{1}{i\hbar} (GH − HG) \label{18.23}
+0 = \frac{1}{i\hbar} (GH − HG) \tag{18.23} \label{eq-18-23}
 $$
 
 That is, the transition to quantum physics shows that, if $G$ is a constant of motion, and is not explicitly time dependent, then $G$ commutes with the Hamiltonian $H$.
@@ -236,87 +240,87 @@ The above discussion has illustrated the close and beautiful correspondence betw
 
 The wave mechanics formulation of quantum mechanics, by the Austrian theorist Schrödinger, was built on the wave-particle duality concept that was proposed in 1924 by Louis de Broglie. Schrödinger developed his wave mechanics representation of quantum physics a year after the development of matrix mechanics by Heisenberg and Born. The Schrödinger wave equation is based on the non-relativistic Hamilton-Jacobi representation of a wave equation, melded with the operator formalism of Born and Wiener. The 39-year old Schrödinger was an expert in classical mechanics and wave theory, which was invaluable when he developed the important Schrödinger equation. As mentioned in chapter $15.4.4$, the Hamilton-Jacobi theory is a formalism of classical mechanics that allows the motion of a particle to be represented by a wave. That is, the wavefronts are surfaces of constant action $S$, and the particle momenta are normal to these constant-action surfaces, that is, $\mathbf{p} = \boldsymbol{\nabla}S$. The wave-particle duality of Hamilton-Jacobi theory is a natural way to handle the wave-particle duality proposed by de Broglie.
 
-Consider the classical Hamilton-Jacobi equation for one body, given by \ref{18.20}.
+Consider the classical Hamilton-Jacobi equation for one body, given by [18.20](#eq-18-20).
 
 $$
-\frac{\partial S}{\partial t} + H(\mathbf{q},\boldsymbol{\nabla}S,t)=0 \label{18.24}
+\frac{\partial S}{\partial t} + H(\mathbf{q},\boldsymbol{\nabla}S,t)=0 \tag{18.24} \label{eq-18-24}
 $$
 
 If the Hamiltonian is time independent, then equation $(15.4.2)$ gives that
 
 $$
-\frac{\partial S}{\partial t} = −H(\mathbf{q}, \mathbf{p}, t) = −E (\boldsymbol{\alpha}) \label{18.25}
+\frac{\partial S}{\partial t} = −H(\mathbf{q}, \mathbf{p}, t) = −E (\boldsymbol{\alpha}) \tag{18.25} \label{eq-18-25}
 $$
 
 The integration of the time dependence is trivial, and thus the action integral for a time-independent Hamiltonian is
 
 $$
-S(\mathbf{q}, \boldsymbol{\alpha},t) = W (\mathbf{q}, \boldsymbol{\alpha}) − E (\boldsymbol{\alpha})t \label{18.26}
+S(\mathbf{q}, \boldsymbol{\alpha},t) = W (\mathbf{q}, \boldsymbol{\alpha}) − E (\boldsymbol{\alpha})t \tag{18.26} \label{eq-18-26}
 $$
 
 A formal transformation gives
 
 $$
-E = −\frac{\partial S}{\partial t} \qquad \mathbf{p} = \boldsymbol{\nabla}S \label{18.27}
+E = −\frac{\partial S}{\partial t} \qquad \mathbf{p} = \boldsymbol{\nabla}S \tag{18.27} \label{eq-18-27}
 $$
 
 Consider that the classical time-independent Hamiltonian, for motion of a single particle, is represented by the Hamilton-Jacobi equation.
 
 $$
-H = \frac{\mathbf{p}^2}{ 2\mu } + U(q) = −\frac{\partial S}{\partial t} \label{18.28}
+H = \frac{\mathbf{p}^2}{ 2\mu } + U(q) = −\frac{\partial S}{\partial t} \tag{18.28} \label{eq-18-28}
 $$
 
 Substitute for $\mathbf{p}$ leads to the classical Hamilton-Jacobi relation in terms of the action $S$
 
 $$
-\frac{1}{ 2\mu } (\boldsymbol{\nabla}S \cdot \boldsymbol{\nabla}S) + U(q) = −\frac{\partial S}{\partial t} \label{18.29}
+\frac{1}{ 2\mu } (\boldsymbol{\nabla}S \cdot \boldsymbol{\nabla}S) + U(q) = −\frac{\partial S}{\partial t} \tag{18.29} \label{eq-18-29}
 $$
 
 By analogy with the Hamilton-Jacobi equation, Schrödinger proposed the quantum operator equation
 
 $$
-i\hbar \frac{ \partial \psi}{ \partial t} = \hat{H}\psi \label{18.30}
+i\hbar \frac{ \partial \psi}{ \partial t} = \hat{H}\psi \tag{18.30} \label{eq-18-30}
 $$
 
 where $\hat{H}$ is an operator given by
 
 $$
-\hat{H} = − \frac{\hbar^2 }{2\mu} \nabla^2 + U(r) \label{18.31}
+\hat{H} = − \frac{\hbar^2 }{2\mu} \nabla^2 + U(r) \tag{18.31} \label{eq-18-31}
 $$
 
 In 1926, Max Born and Norbert Wiener introduced the operator formalism into matrix mechanics for prediction of observables and this has become an integral part of quantum theory. In the operator formalism, the observables are represented by operators that project the corresponding observable from the wavefunction. That is, the quantum operator formalism for the assumed momentum and energy operators, that operate on the wavefunction $\psi$, are
 
 $$
-p_j = \frac{\hbar}{ i} \frac{\partial}{ \partial q_j} \quad E = −\frac{\hbar}{ i} \frac{\partial}{ \partial t} \label{18.32}
+p_j = \frac{\hbar}{ i} \frac{\partial}{ \partial q_j} \quad E = −\frac{\hbar}{ i} \frac{\partial}{ \partial t} \tag{18.32} \label{eq-18-32}
 $$
 
-Formal transformations of $\mathbf{p}$ and $E$ in the Hamiltonian \ref{18.26} leads to the time-independent Schrödinger equation
+Formal transformations of $\mathbf{p}$ and $E$ in the Hamiltonian [18.26](#eq-18-26) leads to the time-independent Schrödinger equation
 
 $$
-− \frac{\hbar^2}{ 2\mu} \frac{ \partial^2\psi}{ \partial q^2} + U(q)\psi = E\psi \label{18.33}
+− \frac{\hbar^2}{ 2\mu} \frac{ \partial^2\psi}{ \partial q^2} + U(q)\psi = E\psi \tag{18.33} \label{eq-18-33}
 $$
 
 Assume that the wavefunction is of the form
 
 $$
-\psi = Ae^{\frac{ iS}{ \hbar}} \label{18.34}
+\psi = Ae^{\frac{ iS}{ \hbar}} \tag{18.34} \label{eq-18-34}
 $$
 
 where the action $S$ gives the phase of the wavefront, and $A$ the amplitude of the wave, as described in chapter $15.4.4$. The time dependence, that characterizes the motion of the wavefront, is contained in the time dependence of $S$. This form for the wavefunction has the advantage that the wavefunction frequently factors into a product of terms, e.g. $\psi = R(r)\Theta (\theta ) \Phi (\phi )$ which corresponds to a summation of the exponents $S = W_r + W_{\theta} + W_{\phi} − Et$. This summation form is exploited by separation of the variables, as discussed in chapter $15.4.3$.
 
-Insert $\psi$ defined by \ref{18.34} into Equation \ref{18.33}, plus using the fact that
+Insert $\psi$ defined by [18.34](#eq-18-34) into Equation [18.33](#eq-18-33), plus using the fact that
 
 $$
-\frac{\partial^2\psi}{ \partial q^2} = \frac{\partial}{ \partial q} \left( \frac{\partial \psi}{ \partial S} \frac{\partial S}{ \partial q} \right) = \frac{\partial}{ \partial q} \left( \frac{i}{ \hbar} \psi \frac{ \partial S }{\partial q} \right) = − \frac{1}{ \hbar^2} \psi \left( \frac{\partial S}{ \partial q } \right)^2 + \frac{i}{ \hbar} \psi \frac{ \partial^2S}{ \partial q^2} \label{18.35}
+\frac{\partial^2\psi}{ \partial q^2} = \frac{\partial}{ \partial q} \left( \frac{\partial \psi}{ \partial S} \frac{\partial S}{ \partial q} \right) = \frac{\partial}{ \partial q} \left( \frac{i}{ \hbar} \psi \frac{ \partial S }{\partial q} \right) = − \frac{1}{ \hbar^2} \psi \left( \frac{\partial S}{ \partial q } \right)^2 + \frac{i}{ \hbar} \psi \frac{ \partial^2S}{ \partial q^2} \tag{18.35} \label{eq-18-35}
 $$
 
 leads to
 
 $$
-−\frac{\partial S}{\partial t} = \frac{1}{ 2\mu} (\boldsymbol{\nabla}S \cdot \boldsymbol{\nabla}S) + U(q) − \frac{i\hbar}{ 2\mu} \nabla^2S = E \label{18.36}
+−\frac{\partial S}{\partial t} = \frac{1}{ 2\mu} (\boldsymbol{\nabla}S \cdot \boldsymbol{\nabla}S) + U(q) − \frac{i\hbar}{ 2\mu} \nabla^2S = E \tag{18.36} \label{eq-18-36}
 $$
 
-Note that if Planck’s constant $\hbar = 0$, then the imaginary term in Equation \ref{18.36} is zero, leading to \ref{18.36} being real, and identical to the Hamilton-Jacobi result, Equation \ref{18.29}. The fact that Equation \ref{18.35} equals the Hamilton-Jacobi equation in the limit $\hbar \rightarrow 0$, illustrates the close analogy between the waveparticle duality of the classical Hamilton-Jacobi theory, and de Broglie’s wave-particle duality in Schrödinger’s quantum wave-mechanics representation.
+Note that if Planck’s constant $\hbar = 0$, then the imaginary term in Equation [18.36](#eq-18-36) is zero, leading to [18.36](#eq-18-36) being real, and identical to the Hamilton-Jacobi result, Equation [18.29](#eq-18-29). The fact that Equation [18.35](#eq-18-35) equals the Hamilton-Jacobi equation in the limit $\hbar \rightarrow 0$, illustrates the close analogy between the waveparticle duality of the classical Hamilton-Jacobi theory, and de Broglie’s wave-particle duality in Schrödinger’s quantum wave-mechanics representation.
 
 The Schrödinger approach was accepted in 1925 and exploited extensively with tremendous success, since it is much easier to grasp conceptually than is the algebraic approach of Heisenberg. Initially there was much conflict between the proponents of these two contradictory approaches, but this was resolved by Schrödinger who showed in 1926 that there is a formal mathematical identity between wave mechanics and matrix mechanics. That is, these two quantal representations of Hamiltonian mechanics are equivalent, even though they are built on either the Poisson bracket representation, or the Hamilton-Jacobi representation. Wave mechanics is based intimately on the quantization rule of the action variable. Heisenberg’s Uncertainty Principle is automatically satisfied by Schrödinger’s wave mechanics since the uncertainty principle is a feature of all wave motion, as described in chapter $3$.
 
