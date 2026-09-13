@@ -61,4 +61,6 @@ site:
   actions:
     - title: Original textbook
       url: http://classicalmechanics.lib.rochester.edu/
-  nav: []
+  nav:
+    - title: Sources & Attribution
+      url: https://github.com/QuadriviumPress/variationalPrinciples/blob/main/SOURCES.md

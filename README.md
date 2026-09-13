@@ -27,7 +27,9 @@ Original: [classicalmechanics.lib.rochester.edu](http://classicalmechanics.lib.r
 ```bash
 npm install
 npm run start          # preview
+npm run verify         # structural and conversion checks
 npm run build          # static site in _build/html/
+npm run check          # verify and build
 ```
 
 ## Convert from LibreTexts
