@@ -12,16 +12,16 @@ label: glossary
 | Action-angle variables | A transformation to action-angle variables is convenient for systems involving periodic motion such as periodic oscillations or closed trajectories in phase space. The action-phase integral is especially useful for trajectories involving periodic motion such as celestial orbits. |  |  |  |  |
 | Adiabatic invariance | Finding constants for time-dependent Hamiltonians is difficult. However, for adiabatic motion the time dependence often can be sufficiently slow to be ignored. |  |  |  |  |
 | Apocenter | The furthest point for an orbiting body from the center of attraction |  |  |  |  |
-| Apsis | Denotes either of the extreme points in the orbit of a planetary body about it's primary body. The prefix for the shortest separation distance is peri and apo for the longest separation. |  |  |  |  |
+| Apsis | Denotes either of the extreme points in the orbit of a planetary body about its primary body. The prefix for the shortest separation distance is peri and apo for the longest separation. |  |  |  |  |
 | Asymmetric rotor | A quadrupole-deformed body for which the quadrupole deformation along the three orthogonal axes are different. That is, it is a triaxially-deformed quadrupole top. |  |  |  |  |
 | Attractor | After many closed cycles in phase space, non-linear oscillatory systems can converge to either a point attractor or a limit cycle attractor. |  |  |  |  |
-| Autonomous system | Independent, self-governing, system subject to it's own laws and schedule. |  |  |  |  |
+| Autonomous system | Independent, self-governing, system subject to its own laws and schedule. |  |  |  |  |
 | Barycenter | In astronomy the barycenter is the center of mass of two or more bodies that orbit one another. |  |  |  |  |
 | Bernoulli | Pioneered development of the calculus of variations including solving the theory of the catenary, the brachistochrone, and Fermat's Principle. |  |  |  |  |
 | Black hole | A region of space where the gravitational field is so intense that neither matter nor radiation can escape. |  |  |  |  |
 | Bertrand's theorem | Showed that the inverse square law and linear harmonic oscillator are the only radial dependences of the two-body problem that lead to stable closed orbits. |  |  |  |  |
 | Bifurcation diagram | Simplifies the presentation of the dynamical motion of a periodic system by sampling the location once per orbit period. |  |  |  |  |
-| Bohr | Neils Bohr was a Danish Nobel Prize winner in Physics who pioneered the old quantum theory, the correspondence principle, the early model of the atom, nuclear fission, and nuclear fusion |  |  |  |  |
+| Bohr | Niels Bohr was a Danish Nobel Prize winner in Physics who pioneered the old quantum theory, the correspondence principle, the early model of the atom, nuclear fission, and nuclear fusion |  |  |  |  |
 | Bohr-Sommerfeld atom | The first viable model of the hydrogen atom that was based on classical mechanics. |  |  |  |  |
 | Brachistochrone | The path between two points for which a body moves under gravity in the shortest possible time. The mathematics was solved by Bernoulli and Euler. |  |  |  |  |
 | Brahe | Tycho Brahe was a Danish nobleman known for his accurate and comprehensive astronomical observations. |  |  |  |  |
@@ -85,7 +85,7 @@ label: glossary
 | Einstein's special theory of relativity | Einstein's Special theory of Relativity, published in 1905, states that (1) the laws of physics are invariant in all inertial frames of reference, and (2) The speed of light in vacuum is the same a constant of nature. |  |  |  |  |
 | Einstein's general theory of relativity | Einstein's General theory of Relativity, published in 1915, is the geometric theory of gravitation. It correctly predicted the existence of black holes, gravitational waves. |  |  |  |  |
 | Elasticity | The degree of stretching or compression of materials subject to tension or compression. |  |  |  |  |
-| Euler | Leonhard Euler (1707 - 1783) was a brilliant mathematican who made many remarkable contributions to mathematics. He pioneered many aspects of analytical mechanics. |  |  |  |  |
+| Euler | Leonhard Euler (1707 - 1783) was a brilliant mathematician who made many remarkable contributions to mathematics. He pioneered many aspects of analytical mechanics. |  |  |  |  |
 | Euler angles | The three Euler angles ($\phi ,\theta ,\psi$) specify the rotation angle $\phi$ about the space-fixed axis, $\theta$ about the line of nodes, and $\psi$ about the body-fixed 3 axis. These three angles are required to rotate from the laboratory frame of reference to the body-fixed frame of reference. |  |  |  |  |
 | Euler's equations for rigid-body rotation | The Euler equations of motion for a rigid-body is the force field expressed in the body-fixed coordinate frame assuming applied external torques $N_{1},N_{2},$ and $N_{3}$ acting about the three axes. $\begin{aligned} I_{1}\dot{\omega}_{1}-\left( I_{2}-I_{3}\right) \omega _{2}\omega _{3} &=N_{1} \\ I_{2}\dot{\omega}_{2}-\left( I_{3}-I_{1}\right) \omega _{3}\omega _{1} &=N_{2} \\ I_{3}\dot{\omega}_{3}-\left( I_{1}-I_{2}\right) \omega _{1}\omega _{2} &=N_{3} \end{aligned}$ |  |  |  |  |
 | Euler's hydrodynamic equation | $\frac{\partial \mathbf{v}}{\partial t}+\left( \mathbf{v\cdot \nabla }\right) \mathbf{v=-}\frac{1}{\rho }\mathbf{\nabla }\left( P+\rho V\right)$ |  |  |  |  |
@@ -106,7 +106,7 @@ label: glossary
 | Hamilton's stationary-action principle | Hamilton's Stationary Action Principle states that the action functional is stationary with respect to change of the variables, i.e. $\delta S=\delta \int_{t_{i}}^{t_{f}}L (\mathbf{q, \dot{q}}, t) dt=0.$ |  |  |  |  |
 | Hamilton's Principle Function | The modern term "action functional" was called "Hamilton's Principle Function" in older text books. |  |  |  |  |
 | Hamiltonian mechanics | Hamiltonian mechanics describes the evolution of conservative physical systems in terms of the Hamiltonian function, which equals the total energy expressed in terms of position and momentum |  |  |  |  |
-| William Hamilton | Sir William Hamilton (1805-1865) was an Irish mathermatican who developed both the Lagrangian and Hamiltonian branches of algebraic classical mechanics. |  |  |  |  |
+| William Hamilton | Sir William Hamilton (1805-1865) was an Irish mathematician who developed both the Lagrangian and Hamiltonian branches of algebraic classical mechanics. |  |  |  |  |
 | Hodograph | A diagram that gives a pictorial representation of the movement of a body or fluid. It uses the locus of one end of a variable vector, with the other end fixed. This was developed by Hamilton. |  |  |  |  |
 | Holonomic constraints | Holonomic constrained motion involves constraint forces that restrict the motion according to algebraic relations that couple the generalized coordinates. |  |  |  |  |
 | Inertia tensor | The inertia tensor can be represented by 3x3 square matrix which defines the rotational properties of body. The individual components of the $I_{ij}$ matrix element are given by $I_{ij}\equiv \sum_{\alpha }^{N}m_{\alpha }\left[ \delta _{ij}\left( \sum_{k}^{3}x_{\alpha ,k}^{2}\right) -x_{\alpha ,i}x_{\alpha ,j}\right]$ |  |  |  |  |
@@ -116,7 +116,7 @@ label: glossary
 | Lagrange | Joseph Louis Lagrange (1736-1813) was an Italian mathematician who was a student of Leonhard Euler and his work paralleled that of Euler. In 1788 Lagrange published his monumental treatise on analytical mechanics entitled "Mécanique analytique" which describes his new, immensely powerful, analytical technique that can solve any mechanical problem without resorting to geometrical considerations. |  |  |  |  |
 | Levi-Civita permutation symbol | In three dimensions $\varepsilon _{ijk}=+1$ if $(i,j,k)$ is cyclic, $\varepsilon _{ijk}=-1$ if $(i,j,k)$ is anticyclic, and $\varepsilon _{ijk}=0$ if two indices are identical. |  |  |  |  |
 | Euler-Lagrange equation | A second-order partial differential equation whose solutions are the functions for which a given functional is stationary. |  |  |  |  |
-| Lagrangian mechanics | An algebraic method to derive the trajectory of a system by solution of the Euler- Lagrange equations.The Lagrangian is expressed in terms of position and velocity. |  |  |  |  |
+| Lagrangian mechanics | An algebraic method to derive the trajectory of a system by solution of the Euler- Lagrange equations. The Lagrangian is expressed in terms of position and velocity. |  |  |  |  |
 | Lagrange multipliers | The $n$ Lagrange equations, plus the $m$ equations of constraint, can be used to explicitly determine the $n$ generalized coordinates plus the $m$ constraint forces. That is, $n+m$ unknowns are determined. This Lagrange-multiplier approach is discussed in chapter $5.9$. |  |  |  |  |
 | Lame' moduli | Lame's two moduli of elasticity $(\lambda, \mu)$ are material dependent. |  |  |  |  |
 | Legendre transform | Converts functions of one quantity; such as position, into functions of the conjugate quantity such as momentum. Commonly used to relate the Hamiltonian formalism and the Lagrangian formalism. |  |  |  |  |
@@ -130,16 +130,16 @@ label: glossary
 | Matrix diagonalization | An $nxn$ matrix can be transformed to a diagonal form if it has $n$ distinct eigenvalues. |  |  |  |  |
 | Matrix Hermitian | A square matrix is Hermitian if, and only if, it is self-adjoint |  |  |  |  |
 | Matrix identity | An identity matrix, for an order $n$ square matrix, is a diagonal matrix with ones on the main diagonal. |  |  |  |  |
-| Maupertuis | The Principle of Least Action $(1744)$ usually is attributed to Pierre Louis Maupertuis who summized that nature is thrifty in all its action. He based it on the earlier Leibniz assumption that $\ \delta \int 2T(t)dt=0$. Euler ($1744$) made the more fundamental assumption that $\delta \int pdq=0$. |  |  |  |  |
+| Maupertuis | The Principle of Least Action $(1744)$ usually is attributed to Pierre Louis Maupertuis who surmised that nature is thrifty in all its action. He based it on the earlier Leibniz assumption that $\ \delta \int 2T(t)dt=0$. Euler ($1744$) made the more fundamental assumption that $\delta \int pdq=0$. |  |  |  |  |
 | Max Born | Max Born, a German physicist who played a pivotal role with Heisenberg in development of quantum matrix mechanics. |  |  |  |  |
 | Maxwell's equations | James Maxwell formulated the classical theory of electromagnetism in his $1865$ publication, "A dynamical theory of the Electromagnetic field" that unified, electricity, magnetism, and electromagnetic waves. |  |  |  |  |
 | Michelson Morley experiment | This work showed that the velocity of light was unchanged by the motion of the Earth leading to Einstein's Special Theory of Relativity. |  |  |  |  |
-| Minkowski metric | Minkowski space combines three-dimensional Eucliden space plus time into a four-dimensional manifold |  |  |  |  |
+| Minkowski metric | Minkowski space combines three-dimensional Euclidean space plus time into a four-dimensional manifold |  |  |  |  |
 | Navier-Stokes equation | The Navier-Stokes equations are a set of partial differential equations that describe the motion of viscous fluids. |  |  |  |  |
 | Noether's theorem. | Noether's theorem states that every differentiable symmetry of action of a physical system leads to a corresponding conservation law. |  |  |  |  |
 | Nonholonomic constraints | Nonholonomic generalized coordinates are not coupled by algebraic relations. |  |  |  |  |
 | Noninertial frames | is a frame of reference that undergoes acceleration with respect to an inertial frame. |  |  |  |  |
-| Norbert Weiner | He was an American mathematician who established cybernetics. |  |  |  |  |
+| Norbert Wiener | He was an American mathematician who established cybernetics. |  |  |  |  |
 | Normal modes | A normal mode of an oscillatory system is an independent pattern of motion for which all parts move sinusoidally with the same frequency and with a fixed relative phase. |  |  |  |  |
 | Orbit equation | The orbit equation defines the path of a body $m_{2}$ orbiting around a central body $m_{1}$ without specifying position as a function of time. |  |  |  |  |
 | Orbit stability | An orbit is stable if the orbit solution repeats each period. |  |  |  |  |
@@ -150,7 +150,7 @@ label: glossary
 | Phase space | In a dynamical system, phase space is a space for which all possible states can be represented with each possible state corresponding to a unique point is phase space. For mechanical systems the phase space normally lists the position and momentum variables as used by Hamiltonian mechanics. |  |  |  |  |
 | Phase velocity | The phase velocity is the velocity that a wave front propagates in a medium. It is the velocity of any one frequency component of the wave measured with respect to a fixed point of the crest of the wave. |  |  |  |  |
 | Plane pendulum | A pendulum bob of mass $m$ is attached to a rigid mass-less rod of length $l$ which swings in a plane in the gravitational field. |  |  |  |  |
-| Poincare-Bendixson theorem | This is a statement about the long-term behaviour for orbits of continuous dynamical systems on the plane, cylinder, or sphere. Given a differentiable real dynamical system defined on an open subset of the plane, every non-empty campact $\omega \lim it$ of an orbit, is either a fixed point, a periodic orbit, or a connected set. |  |  |  |  |
+| Poincare-Bendixson theorem | This is a statement about the long-term behaviour for orbits of continuous dynamical systems on the plane, cylinder, or sphere. Given a differentiable real dynamical system defined on an open subset of the plane, every non-empty compact $\omega$-limit set of an orbit, is either a fixed point, a periodic orbit, or a connected set. |  |  |  |  |
 | Poincare chaos | Poincare was the first to recognize the existence of chaos in the gravitational three-body problem. |  |  |  |  |
 | Poisson brackets | The Poisson bracket of any two continuous functions of generalized coordinates $F(p,q)$ and $G(p,q),$ is defined to be $\left[ F,G\right] _{qp}\equiv \sum_{i}\left( \frac{\partial F}{\partial q_{i}}\frac{\partial G}{\partial p_{i}}-\frac{ \partial F}{\partial p_{i}}\frac{\partial G}{\partial q_{i}}\right)$ |  |  |  |  |
 | Poisson's ratio | is the negative ratio of the transverse to axial strain. |  |  |  |  |
@@ -169,14 +169,14 @@ label: glossary
 | Rotation matrix | A transformation matrix is a square matrix that is used to perform a rotation in Euclidean space. |  |  |  |  |
 | Rotational invariant | An observable of a physical system that remains unchanged under a rotational transformation. |  |  |  |  |
 | Rotational transformation | A transformation matrix is a square matrix used to perform a rotation in Euclidean space. |  |  |  |  |
-| Routhian reduction | This is a hybrid formulation of Lagrangian mechanics plus Hamiltonian mechanics that was developed by Edward John Routh (1831-1907). Some generalized coordinates are chosen to be generalized velocities, while others are chosen to be generalized momenta. The Routhian equations are exactly the Hamiltonian equations for those coordinates respresented by generalized momenta, while the Lagrangian equations apply for the coordinates represented by velocities. This is used extensively for rotating systems in engineering. |  |  |  |  |
+| Routhian reduction | This is a hybrid formulation of Lagrangian mechanics plus Hamiltonian mechanics that was developed by Edward John Routh (1831-1907). Some generalized coordinates are chosen to be generalized velocities, while others are chosen to be generalized momenta. The Routhian equations are exactly the Hamiltonian equations for those coordinates represented by generalized momenta, while the Lagrangian equations apply for the coordinates represented by velocities. This is used extensively for rotating systems in engineering. |  |  |  |  |
 | Cyclic Routhian | The cyclic routhian behaves like a Hamiltonian for the ignorable cyclic coordinates $\mathbf{\omega }$ and $\mathbf{J}$, while it behaves like a negative Lagrangian for all other coordinates. |  |  |  |  |
 | Non-cyclic Routhian | The non-cyclic Routhian complements the cyclic Routhian by behaving like a Hamiltonian for the non-cyclic variables, and behaves like a negative Lagrangian for the cyclic variable $\ \mathbf{\omega }$ and $\mathbf{J}$. It is used extensively in science and engineering to describe rotational motion of rigid bodies. |  |  |  |  |
 | Rutherford scattering | Lord Rutherford used scattering of $\alpha$ particles by a thin gold foil to determine the size of the nucleus which led to development of the Bohr model of the atom. |  |  |  |  |
 | Schrödinger equation | A linear partial differential equation that defines the wave function in quantum mechanics. Dirac incorporated the wave mechanics of Schrödinger and matrix mechanics of Heisenberg into a single formulation of quantum mechanics. |  |  |  |  |
 | Scleronomic constraints | Equations of constraint that do not contain time as an explicit variable. |  |  |  |  |
 | Shear modulus of elasticity | describes the shear elasticity of a material. |  |  |  |  |
-| Signal processing | The analysis, modification, and synthesis for signal communication. It applies to analog signals, continuous time, descrete time, digital, nonlinear, and statistical, signal processing. This is an important subject in information theory and technology. |  |  |  |  |
+| Signal processing | The analysis, modification, and synthesis for signal communication. It applies to analog signals, continuous time, discrete time, digital, nonlinear, and statistical, signal processing. This is an important subject in information theory and technology. |  |  |  |  |
 | Signal velocity | The speed at which a wave carries information. The signal velocity usually equals the group velocity. However, there are situations where the group velocity exceeds $c$, but the signal velocity is less than $c$ as predicted by Special Relativity. |  |  |  |  |
 | Simultaneity | The time relation between two events happening at the same time in a given reference frame. |  |  |  |  |
 | Slow light | Propagation of an optical pulse at a very slow group velocity due to interaction with the medium in which the light propagates. |  |  |  |  |
@@ -192,7 +192,7 @@ label: glossary
 | Strain | The strain tensor is a geometric measure of the physical deformation induced by stress imposed on a continuous medium. |  |  |  |  |
 | Stress | The elastic stress tensor is a measure of the internal forces due to deformation of a continuous medium. |  |  |  |  |
 | Strong equivalence principle | implies that the gravitational constant applies everywhere in the universe. |  |  |  |  |
-| Symmetry tensor | The symmetry of the isotropic, harmonic, two-body, central force leads to definition of the symmetry tensor $\mathbf{A\prime}$, which is an invariant of motion. It defines the orientation, but not direction, of the major principle axis of the elliptical orbit. |  |  |  |  |
+| Symmetry tensor | The symmetry of the isotropic, harmonic, two-body, central force leads to definition of the symmetry tensor $\mathbf{A\prime}$, which is an invariant of motion. It defines the orientation, but not direction, of the major principal axis of the elliptical orbit. |  |  |  |  |
 | Symmetric top | The symmetric top is a body that has an axis of symmetry plus two identical moments of inertia. |  |  |  |  |
 | Teleology | Any philosophy that holds that final causes exist in nature. That is, analogous to purposes found in human actions, nature inherently tends toward definite ends. |  |  |  |  |
 | Translational invariance | Translational invariance implies that the properties do not change following a translation. Noether's theorem implies that spatial translational symmetry is equivalent to the momentum conservation law. |  |  |  |  |

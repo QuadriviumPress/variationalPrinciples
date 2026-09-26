@@ -23,7 +23,7 @@ $$
 \tag{2.1} \label{eq-2-1} \mathbf{p} = m\dot{\mathbf{r}}
 $$
 
-Since the mass $m$ is a scalar quantity, then the velocity vector $\dot{r}$ and the linear momentum vector $\mathbf{p}$ are colinear.
+Since the mass $m$ is a scalar quantity, then the velocity vector $\dot{r}$ and the linear momentum vector $\mathbf{p}$ are collinear.
 
 Newton’s laws, expressed in terms of linear momentum, are:
 
@@ -64,7 +64,7 @@ $$
 \tag{2.6} \label{eq-2-6} \mathbf{F}=\frac{d\mathbf{p}}{dt}=m\frac{d^2\mathbf{r}}{dt^2}=m\mathbf{\ddot{r}}
 $$
 
-Note that the force on a body $\mathbf{F}$, and the resultant acceleration ${\bf a = \ddot{r}}$ are colinear. Appendix $19.3.2$ gives explicit expressions for the acceleration ${\bf a}$ in cartesian and curvilinear coordinate systems. The definition of force depends on the definition of the mass $m$. Newton’s laws of motion are obeyed to a high precision for velocities much less than the velocity of light. For example, recent experiments have shown they are obeyed with an error in the acceleration of $\Delta a \leq 5 \times 10^{-14}\mathit{m/s^2}$.
+Note that the force on a body $\mathbf{F}$, and the resultant acceleration ${\bf a = \ddot{r}}$ are collinear. Appendix $19.3.2$ gives explicit expressions for the acceleration ${\bf a}$ in cartesian and curvilinear coordinate systems. The definition of force depends on the definition of the mass $m$. Newton’s laws of motion are obeyed to a high precision for velocities much less than the velocity of light. For example, recent experiments have shown they are obeyed with an error in the acceleration of $\Delta a \leq 5 \times 10^{-14}\mathit{m/s^2}$.
 
 ## 2.3: Inertial Frames of reference
 
@@ -1436,7 +1436,7 @@ $$
 :::{figure} ../images/lt-21305-3.12.4.png
 :label: fig-2-12-6
 :enumerator: 2.12.6
-:alt: A rigid rotating body comprising a single mass m attached by a massless rod at a fixed angle \alpha shown at the instant when m happens to lie in the yz plane. As the body rotates about the z− axis the mass m has a velocity and momentum into the page (the negative x direction). Therefore the angu…
+:alt: A rigid rotating body comprising a single mass m attached by a massless rod at a fixed angle \alpha shown at the instant when m happens to lie in the yz plane. As the body rotates about the z− axis the mass m has a velocity and momentum into the page (the negative x direction). Therefore the angular momentum {\bf L = r \times p} is in the direction shown which is not parallel to the angular velocity \omega.
 
 A rigid rotating body comprising a single mass $m$ attached by a massless rod at a fixed angle $\alpha$ shown at the instant when $m$ happens to lie in the $yz$ plane. As the body rotates about the $z$− axis the mass $m$ has a velocity and momentum into the page (the negative $x$ direction). Therefore the angular momentum ${\bf L = r \times p}$ is in the direction shown which is not parallel to the angular velocity $\omega$.
 :::
@@ -1765,9 +1765,9 @@ where $dv^\prime$ is the volume element at the point $\mathbf{r^\prime }$ as ill
 :::{figure} ../images/lt-21103-2.14.1.png
 :label: fig-2-14-1
 :enumerator: 2.14.1
-:alt: Gravitational force on mass m due to an infinitessimal volume element of the mass density distribution.
+:alt: Gravitational force on mass m due to an infinitesimal volume element of the mass density distribution.
 
-Gravitational force on mass m due to an infinitessimal volume element of the mass density distribution.
+Gravitational force on mass m due to an infinitesimal volume element of the mass density distribution.
 :::
 
 ### Gravitational and inertial mass
@@ -1916,7 +1916,7 @@ $$
 \tag{2.163} \label{eq-2-163} \Delta \phi_{a \rightarrow b } = -\int_{r_a}^{r_b} \mathbf{g} \cdot d \mathbf{l}
 $$
 
-for an arbitrary infinitessimal element distance $d\mathbf{l}$ the change in electric potential $d \phi$ is
+for an arbitrary infinitesimal element distance $d\mathbf{l}$ the change in electric potential $d \phi$ is
 
 $$
 \tag{2.164} \label{eq-2-164} d \phi= - \mathbf{g} \cdot d \mathbf{l}
@@ -2063,9 +2063,9 @@ $$
 :::{figure} ../images/lt-21104-2.14.4.png
 :label: fig-2-14-4
 :enumerator: 2.14.4
-:alt: Flux of the gravitational field through an infinitessimal surface element dS.
+:alt: Flux of the gravitational field through an infinitesimal surface element dS.
 
-Flux of the gravitational field through an infinitessimal surface element dS.
+Flux of the gravitational field through an infinitesimal surface element dS.
 :::
 
 Consider a *closed surface where the direction of the surface vector*$d \mathbf{S}$ *is defined as outwards*. The net flux out of this closed surface is given by
@@ -2309,7 +2309,7 @@ $$
 
 2. Determine the total mechanical energy of the particle in potential $V$.
 
-3. Assume the force is conservative. Show that $F = −\nabla V$. Show that it agrees with Stoke’s theorem.
+3. Assume the force is conservative. Show that $F = −\nabla V$. Show that it agrees with Stokes’ theorem.
 
 4. Show that the angular momentum $L = r \times p$ of the particle is conserved. Hint: $\frac{d}{dt} (A \times B) = A \times \frac{d{\bf B}}{dt} + \frac{d{\bf A}}{dt} \times B$.
 

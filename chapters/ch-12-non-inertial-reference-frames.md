@@ -74,18 +74,18 @@ For simplicity assume that $\mathbf{R}_{fix} = \mathbf{V}_{fix} = 0$, that is, t
 :::{figure} ../images/lt-21206-10.3.1.png
 :label: fig-12-3-1
 :enumerator: 12.3.1
-:alt: Infinitessimal displacement in the non rotating primed frame and in the rotating double-primed reference frame.
+:alt: Infinitesimal displacement in the non rotating primed frame and in the rotating double-primed reference frame.
 
-Infinitessimal displacement in the non rotating primed frame and in the rotating double-primed reference frame.
+Infinitesimal displacement in the non rotating primed frame and in the rotating double-primed reference frame.
 :::
 
-Appendix $19.4.2C$ shows that an infinitessimal rotation $d\theta$ about an instantaneous axis of rotation leads to an infinitessimal displacement $d\mathbf{r}^{R}$ where
+Appendix $19.4.2C$ shows that an infinitesimal rotation $d\theta$ about an instantaneous axis of rotation leads to an infinitesimal displacement $d\mathbf{r}^{R}$ where
 
 $$
 d\mathbf{r}^{R} = d \theta \times \mathbf{r}^{\prime}_{mov} \tag{12.7} \label{eq-12-7}
 $$
 
-Consider that during a time $dt$, the position vector in the fixed primed reference frame moves by an arbitrary infinitessimal distance $d\mathbf{r}^{\prime}_{mov}$. As illustrated in [Figure 12.3.1](#fig-12-3-1), this infinitessimal distance in the primed non-rotating frame can be split into two parts:
+Consider that during a time $dt$, the position vector in the fixed primed reference frame moves by an arbitrary infinitesimal distance $d\mathbf{r}^{\prime}_{mov}$. As illustrated in [Figure 12.3.1](#fig-12-3-1), this infinitesimal distance in the primed non-rotating frame can be split into two parts:
 
 1. $d\mathbf{r}^{R} = d\theta \times \mathbf{r}^{\prime}_{mov}$ which is due to rotation of the rotating frame with respect to the translating primed frame.
 
@@ -360,9 +360,9 @@ The centrifugal acceleration $+\omega^2\mathbf{r}^{\prime}_{mov}$ is radially ou
 :::{figure} ../images/lt-21208-10.8.1.png
 :label: fig-12-8-1
 :enumerator: 12.8.1
-:alt: Free-force motion of a hockey puck sliding on a rotating frictionless table of radius R that is rotating with constant angular frequency \omega out of the page.
+:alt: Force-free motion of a hockey puck sliding on a rotating frictionless table of radius R that is rotating with constant angular frequency \omega out of the page.
 
-Free-force motion of a hockey puck sliding on a rotating frictionless table of radius $R$ that is rotating with constant angular frequency $\omega$ out of the page.
+Force-free motion of a hockey puck sliding on a rotating frictionless table of radius $R$ that is rotating with constant angular frequency $\omega$ out of the page.
 :::
 
 [Figure 12.8.1](#fig-12-8-1) illustrates trajectories of the hockey puck in the rotating reference frame when no external forces are acting, that is, in the inertial frame the puck moves in a straight line with constant velocity $\mathbf{v}_0$. In the rotating reference frame the Coriolis force accelerates the puck to the right leading to trajectories that exhibit spiral motion. The apparent complicated trajectories are a result of the observer being in the rotating frame for which that the straight inertial-frame trajectories of the moving puck exhibit a spiralling trajectory in the rotating-frame.
@@ -466,7 +466,7 @@ $$
 \begin{aligned} \tilde{p}_r & = & \frac{\partial L_{fulcrum}}{\partial \dot{r}} = m\dot{r} \\ \tilde{p}_{\theta} & = & \frac{\partial L_{fulcrumr}}{\partial \dot{\theta}} = mr^2 \dot{\theta} \end{aligned}
 $$
 
-which comprise only a part of the momenta derived in the inertial frame. These partial fulcrum momenta lead to a Hamiltonian for the fulcum-frame of
+which comprise only a part of the momenta derived in the inertial frame. These partial fulcrum momenta lead to a Hamiltonian for the fulcrum-frame of
 
 $$
 H_{fulcrum}=\tilde{p}_{r} \dot{r}+\tilde{p}_{\theta} \dot{\theta}-L_{fulcrum}=\frac{\tilde{p}_{r}^{2}}{2 m}+\frac{\tilde{p}_{\theta}}{2 m r^{2}}+\frac{1}{2} k\left(r-r_{0}\right)^{2}-m(g+a) r \cos \theta \nonumber
@@ -552,7 +552,7 @@ $$
 \mathbf{\dot{p}}_{\theta ''} = 2mr^{\prime\prime} \dot{r}^{\prime\prime} \omega - 2mr^{\prime\prime} \dot{r}^{\prime\prime} \omega = 0 \nonumber
 $$
 
-That is, the two terms cancel. Thus the angular momentum is conserved for this case where the velocity is radial. Note that, since ${p_{\theta}}^{''}$ is assumed to be colinear with $\omega$, then it is the same in both the stationary and rotating frames of reference and thus angular momentum is conserved in both frames. In addition, in the fixed frame, the angular momentum is conserved if no external torques are acting as assumed above.
+That is, the two terms cancel. Thus the angular momentum is conserved for this case where the velocity is radial. Note that, since ${p_{\theta}}^{''}$ is assumed to be collinear with $\omega$, then it is the same in both the stationary and rotating frames of reference and thus angular momentum is conserved in both frames. In addition, in the fixed frame, the angular momentum is conserved if no external torques are acting as assumed above.
 
 Note that the rotational energy is
 
@@ -695,9 +695,9 @@ Consider the rotation of axially-symmetric, prolate-deformed nucleus. Many nucle
 :::{figure} ../images/lt-21212-10.9.3.png
 :label: fig-12-9-3
 :enumerator: 12.9.3
-:alt: Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of I on the symmetry axis is K, and the projection of j is \Omega. For axial symmetry Noether’s theroem gives that the projection of the angular momentum K on the symmetry axis is a conserved quantity.
+:alt: Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of I on the symmetry axis is K, and the projection of j is \Omega. For axial symmetry Noether’s theorem gives that the projection of the angular momentum K on the symmetry axis is a conserved quantity.
 
-Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of $I$ on the symmetry axis is $K$, and the projection of $j$ is $\Omega$. For axial symmetry Noether’s theroem gives that the projection of the angular momentum $K$ on the symmetry axis is a conserved quantity.
+Schematic diagram for the strong coupling of a nucleon to the deformation axis. The projection of $I$ on the symmetry axis is $K$, and the projection of $j$ is $\Omega$. For axial symmetry Noether’s theorem gives that the projection of the angular momentum $K$ on the symmetry axis is a conserved quantity.
 :::
 
 The Lagrangian and Hamiltonian are scalars and can be evaluated in any coordinate frame of reference. It is most useful to calculate the Hamiltonian for a deformed body in the non-inertial rotating body-fixed frame of reference. The bodyfixed Hamiltonian corresponds to the Routhian $R_{noncyclic}$

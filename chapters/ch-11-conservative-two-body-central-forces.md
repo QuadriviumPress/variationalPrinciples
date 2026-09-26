@@ -45,9 +45,9 @@ The motion of two bodies, $1$ and $2$, interacting via two-body central forces, 
 :::{figure} ../images/lt-21184-9.2.1.png
 :label: fig-11-2-1
 :enumerator: 11.2.1
-:alt: Center of mass cordinates for the two-body system.
+:alt: Center of mass coordinates for the two-body system.
 
-Center of mass cordinates for the two-body system.
+Center of mass coordinates for the two-body system.
 :::
 
 Consider two bodies acted upon by a conservative two-body central force, where the position vectors $\mathbf{r} _{1}$ and $\mathbf{r}_{2}$ specify the location of each particle as illustrated in [Figure 11.2.1](#fig-11-2-1). An alternate set of six variables would be the three components of the center of mass position vector $\mathbf{R}$ and the three components specifying the difference vector $\mathbf{r}$ defined by [Figure 11.2.1](#fig-11-2-1). Define the vectors $\mathbf{r}_{1}^{\prime }$ and $\mathbf{r} _{2}^{\prime }$ as the position vectors of the masses $m_{1}$ and $m_{2}$ with respect to the center of mass. Then
@@ -502,7 +502,7 @@ $$
 
 4. **Closed orbits**: Two bodies interacting via the conservative, inverse-square, two-body, central force follow closed (degenerate) orbits as stated by Bertrand’s Theorem. The first consequence of this symmetry is that Kepler’s laws of planetary motion have stable, single-valued orbits. The second consequence of this symmetry is the conservation of the eccentricity vector defined in Equation \text{(11.86)}.
 
-Observables that depend on Gauss’s Law, or on closed planetary orbits, are extremely sensitive to addition of even a miniscule incremental exponent $\xi$ to the radial dependence $r^{-\left( 2\pm \xi \right) }$ of the force. The statement that the inverse-square, two-body, central force leads to closed orbits can be proven by inserting Equation \text{(11.52)} into the orbit differential equation,
+Observables that depend on Gauss’s Law, or on closed planetary orbits, are extremely sensitive to addition of even a minuscule incremental exponent $\xi$ to the radial dependence $r^{-\left( 2\pm \xi \right) }$ of the force. The statement that the inverse-square, two-body, central force leads to closed orbits can be proven by inserting Equation \text{(11.52)} into the orbit differential equation,
 
 $$
 \frac{d^{2}u}{d\psi ^{2}}+u=-\frac{\mu }{l^{2}}\frac{1}{u^{2}}ku^{2}=-\frac{ \mu k}{l^{2}}
@@ -832,7 +832,7 @@ The inverse-square, central, two-body, force is unusual in that it leads to stab
 
 [^11-8-1]: The greek term apsis refers to the points of greatest or least distance of approach for an orbiting body from one of the foci of the elliptical orbit. The term periapsis or pericenter both are used to designate the closest distance of approach, while apoapsis or apocenter are used to designate the farthest distance of approach. Attaching the terms "perí-" and "apo-" to the general term "-apsis" is preferred over having different names for each object in the solar system. For example, frequently used terms are "-helion" for orbits of the sun, "-gee" for orbits around the earth, and "-cynthion" for orbits around the moon.
 
-[^11-8-2]: The symmetry underlying the eccentricity vector is less intuitive than the energy or angular momentum invariants leading to it being discovered independently several times during the past three centuries. Jakob Hermann was the first to indentify this invariant for the special case of the inverse-square central force. Bernoulli generalized his proof in 1710. Laplace derived the invariant at the end of the 18th century using analytical mechanics. Hamilton derived the connection between the invariant and the orbit eccentricity. Gibbs derived the invariant using vector analysis. Runge published the Gibb’s derivation in his textbook which was referenced by Lenz in a 1924 paper on the quantal model of the hydrogen atom. Goldstein named this invariant the "Laplace-Runge-Lenz vector", while others have named it the "Runge-Lenz vector" or the "Lenz vector". This book uses Hamilton’s more intuitive name of "eccentricity vector".
+[^11-8-2]: The symmetry underlying the eccentricity vector is less intuitive than the energy or angular momentum invariants leading to it being discovered independently several times during the past three centuries. Jakob Hermann was the first to identify this invariant for the special case of the inverse-square central force. Bernoulli generalized his proof in 1710. Laplace derived the invariant at the end of the 18th century using analytical mechanics. Hamilton derived the connection between the invariant and the orbit eccentricity. Gibbs derived the invariant using vector analysis. Runge published the Gibbs’s derivation in his textbook which was referenced by Lenz in a 1924 paper on the quantal model of the hydrogen atom. Goldstein named this invariant the "Laplace-Runge-Lenz vector", while others have named it the "Runge-Lenz vector" or the "Lenz vector". This book uses Hamilton’s more intuitive name of "eccentricity vector".
 
 ## 11.9: Isotropic, linear, two-body, central force
 
@@ -1574,7 +1574,7 @@ $$
 
 The cross section, scattering angle and $E_{cm}$ of Equation \text{(11.159)} are evaluated in the center-of-mass coordinate system, whereas usually two-body elastic scattering data involve scattering of the projectiles by a stationary target as discussed in chapter $11.13.$
 
-Gieger and Marsden performed scattering of $7.7$ MeV $\alpha$ particles from a thin gold foil and proved that the differential scattering cross section obeyed the Rutherford formula back to angles corresponding to a distance of closest approach of $10^{-14}m$ which is much smaller that the $10^{-10}m$ size of the atom. This validated the Rutherford model of the atom and immediately led to the Bohr model of the atom which played such a crucial role in the development of quantum mechanics. Bohr showed that the agreement with the Rutherford formula implies the Coulomb field obeys the inverse square law to small distances. This work was performed at Manchester University, England between $1908$ and $1913$. It is fortunate that the classical result is identical to the quantal cross section for scattering, otherwise the development of modern physics could have been delayed for many years.
+Geiger and Marsden performed scattering of $7.7$ MeV $\alpha$ particles from a thin gold foil and proved that the differential scattering cross section obeyed the Rutherford formula back to angles corresponding to a distance of closest approach of $10^{-14}m$ which is much smaller that the $10^{-10}m$ size of the atom. This validated the Rutherford model of the atom and immediately led to the Bohr model of the atom which played such a crucial role in the development of quantum mechanics. Bohr showed that the agreement with the Rutherford formula implies the Coulomb field obeys the inverse square law to small distances. This work was performed at Manchester University, England between $1908$ and $1913$. It is fortunate that the classical result is identical to the quantal cross section for scattering, otherwise the development of modern physics could have been delayed for many years.
 
 Scattering of very heavy ions, such as $^{208}$Pb, can electromagnetically excite target nuclei. For the Coulomb force the impact parameter $b$ and the distance of closest approach, $r_{\min }$ are directly related to the scattering angle $\theta$ by Equation \text{(11.155)}. Thus observing the angle of the scattered projectile unambiguously determines the hyperbolic trajectory and thus the electromagnetic impulse given to the colliding nuclei. This process, called Coulomb excitation, uses the measured angular distribution of the scattered ions for inelastic excitation of the nuclei to precisely and unambiguously determine the Coulomb excitation cross section as a function of impact parameter. This unambiguously determines the shape of the nuclear charge distribution.
 
@@ -1660,7 +1660,7 @@ where the $Q$ value is the energy contributed to the final total kinetic energy 
 
 For two-body kinematics, the following are three advantages to working in the center-of-momentum frame of reference.
 
-1. The two incident colliding bodies are colinear as are the two final bodies.
+1. The two incident colliding bodies are collinear as are the two final bodies.
 
 2. The linear momenta for the two colliding bodies are identical in both the incident channel and the outgoing channel.
 
@@ -1992,7 +1992,7 @@ $$
 $$
  where $k$ must be negative.
 
-14. When performing the Rutherford experiment, Gieger and Marsden scattered $7.7$ $MeV$ $^4$He particles (alpha particles) from $^{238}$U at a scattering angle in the laboratory frame of $\theta = 90^{\circ}$. Derive the following observables as measured in the laboratory frame.
+14. When performing the Rutherford experiment, Geiger and Marsden scattered $7.7$ $MeV$ $^4$He particles (alpha particles) from $^{238}$U at a scattering angle in the laboratory frame of $\theta = 90^{\circ}$. Derive the following observables as measured in the laboratory frame.
 
     1. The recoil scattering angle of the $^{238}$U in the laboratory frame.
 

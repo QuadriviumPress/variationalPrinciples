@@ -35,7 +35,7 @@ $$
 Stability for a one-dimensional potential U(x).
 :::
 
-[Figure 3.2.1](#fig-3-2-1) illustrates a conservative system that has three locations at which the restoring force is zero, that is, where the gradient of the potential is zero. Stable oscillations occur only around locations 1 and 3 whereas the system is unstable at the zero gradient location 2. Point 2 is called a separatrix in that an infinitessimal displacement of the particle from this separatrix will cause the particle to diverge towards either minimum 1 or 3 depending on which side of the separatrix the particle is displaced.
+[Figure 3.2.1](#fig-3-2-1) illustrates a conservative system that has three locations at which the restoring force is zero, that is, where the gradient of the potential is zero. Stable oscillations occur only around locations 1 and 3 whereas the system is unstable at the zero gradient location 2. Point 2 is called a separatrix in that an infinitesimal displacement of the particle from this separatrix will cause the particle to diverge towards either minimum 1 or 3 depending on which side of the separatrix the particle is displaced.
 
 The requirements for stable oscillations about any point $x_0$ are that the potential energy must have the following properties.
 
@@ -1140,7 +1140,7 @@ $$
 v_{group} = v_{phase} + k\frac{\partial v_{phase}}{\partial k} \tag{3.127} \label{eq-3-127}
 $$
 
-For non-dispersive systems the phase velocity is independent of the wave number $k$ or angular frequency $\omega$ and thus $v_{group} = v_{phase}$. The case discussed earlier, equation (3.9.3), for beating of two waves gives the same relation in the limit that $\Delta \omega$ and $\Delta k$ are infinitessimal.
+For non-dispersive systems the phase velocity is independent of the wave number $k$ or angular frequency $\omega$ and thus $v_{group} = v_{phase}$. The case discussed earlier, equation (3.9.3), for beating of two waves gives the same relation in the limit that $\Delta \omega$ and $\Delta k$ are infinitesimal.
 
 The group velocity of a wave packet is of physical significance for dispersive media where $v_{group} = (\frac{d\omega}{dk})_{k_0} \neq \frac{\omega}{k} = v_{phase}$. Every wave train has a finite extent and thus we usually observe the motion of a group of waves rather than the wavelets moving within the wave packet. In general, for non-linear dispersive systems the derivative $\frac{\partial v_{phase}}{\partial k}$ can be either positive or negative and thus in principle the group velocity can either be greater than, or less than, the phase velocity. Moreover, if the group velocity is frequency dependent, that is, when group velocity dispersion occurs, then the overall shape of the wave packet is time dependent and thus the speed of a specific relative location defined by the shape of the envelope of the wave packet does not represent the signal velocity of the wave packet. Brillouin showed that the distribution of the energy, and corresponding information content, in any wave packet travels at the signal velocity which can be different from the group velocity if the shape of the envelope of the wave packet is time dependent. For electromagnetic waves one has the possibility that the group velocity $v_{group} > v_{phase} = c$. In 1914 Brillouin[Bri14][Bri60] showed that the signal velocity of electromagnetic waves, defined by the leading edge of the time-dependent envelope of the wave packet, never exceeds $c$ even though the group velocity corresponding to the velocity of the instantaneous shape of the wave packet may exceed $c$. Thus, there is no violation of Einstein’s fundamental principle of relativity that the velocity of an electromagnetic wave cannot exceed $c$.
 
@@ -1203,7 +1203,7 @@ $$
 v_{group} = \left( \frac{d\omega}{dk}\right) = \frac{3}{2} v_{phase} \nonumber
 $$
 
-Here the group velocity exceeds the phase velocity and wavelets are building at the front of the wave packet and dissipate at the back. Note that for this linear system the Brillion signal velocity equals the group velocity for both gravity and surface tension waves for deep water.
+Here the group velocity exceeds the phase velocity and wavelets are building at the front of the wave packet and dissipate at the back. Note that for this linear system the Brillouin signal velocity equals the group velocity for both gravity and surface tension waves for deep water.
 ::::
 
 ::::{admonition} Example 3.11.3: Electromagnetic waves in ionosphere

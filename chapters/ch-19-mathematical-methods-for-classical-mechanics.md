@@ -789,9 +789,9 @@ $$
 d\mathbf{\hat{r}} = \mathbf{\hat{r}}_2 − \mathbf{\hat{r}}_1 = d\mathbf{\hat{r}} = |\mathbf{\hat{r}}| d\theta \boldsymbol{\hat{\theta}} =d\theta \boldsymbol{\hat{\theta}} \tag{C.9} \label{eq-c-9}
 $$
 
-since the unit vector $\mathbf{\hat{r}}$ is a constant with $|\mathbf{\hat{r}}| = 1$. Note that the infinitessimal $d\mathbf{\hat{r}}$ is perpendicular to the unit vector $\mathbf{\hat{r}}$, that is, $d\mathbf{\hat{r}}$ points in the tangential direction $\boldsymbol{\hat{\theta}}$.
+since the unit vector $\mathbf{\hat{r}}$ is a constant with $|\mathbf{\hat{r}}| = 1$. Note that the infinitesimal $d\mathbf{\hat{r}}$ is perpendicular to the unit vector $\mathbf{\hat{r}}$, that is, $d\mathbf{\hat{r}}$ points in the tangential direction $\boldsymbol{\hat{\theta}}$.
 
-Similarly, the infinitessimal
+Similarly, the infinitesimal
 
 $$
 d\boldsymbol{\hat{\theta}} = \boldsymbol{\hat{\theta}}_2 − \boldsymbol{\hat{\theta}}_1 = d\boldsymbol{\hat{\theta}} = −d\theta \mathbf{\hat{r}} \tag{C.10} \label{eq-c-10}
@@ -1231,25 +1231,25 @@ An entirely different orientation results as illustrated in [Figure 19.5.2](#fig
 
 This behavior of finite rotations is a consequence of the fact that *finite rotations do not commute*, that is, reversing the order does not give the same answer. Thus, if we associate the vectors $\mathbf{A}$ and $\mathbf{B}$ with these rotations, then it implies that the vector product $\mathbf{AB} \neq \mathbf{BA}$. That is, for finite rotation matrices, the product does not behave like for true vectors since they do not commute.
 
-#### Infinitessimal rotations
+#### Infinitesimal rotations
 
 :::{figure} ../images/lt-23020-d3.png
 :label: fig-19-5-3
 :enumerator: 19.5.3
-:alt: Infinitessimal rotation
+:alt: Infinitesimal rotation
 
-Infinitessimal rotation
+Infinitesimal rotation
 :::
 
-Infinitessimal rotations do not suffer from the noncommutation defect of finite rotations. If the position vector of a point changes from $\mathbf{r}$ to $\mathbf{r} + \delta \mathbf{r}$ then the geometrical situation is represented correctly by
+Infinitesimal rotations do not suffer from the noncommutation defect of finite rotations. If the position vector of a point changes from $\mathbf{r}$ to $\mathbf{r} + \delta \mathbf{r}$ then the geometrical situation is represented correctly by
 
 $$
 \delta \mathbf{r} = \delta \boldsymbol{\theta} \times \mathbf{r} \tag{D.21} \label{eq-d-21}
 $$
 
-where $\delta \boldsymbol{\theta}$ is a quantity whose magnitude is equal to the infinitessimal rotation angle and which has a direction along the instantaneous axis of rotation as illustrated in [Figure 19.5.3](#fig-19-5-3).
+where $\delta \boldsymbol{\theta}$ is a quantity whose magnitude is equal to the infinitesimal rotation angle and which has a direction along the instantaneous axis of rotation as illustrated in [Figure 19.5.3](#fig-19-5-3).
 
-The infinitessimal angle $\delta \boldsymbol{\theta}$ is a vector which is shown by proving that two infinitessimal rotations $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ commute. The change in position vectors of the point are
+The infinitesimal angle $\delta \boldsymbol{\theta}$ is a vector which is shown by proving that two infinitesimal rotations $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ commute. The change in position vectors of the point are
 
 $$
 \delta \mathbf{r}_1 = \delta \boldsymbol{\theta}_1 \times \mathbf{r} \tag{D.22} \label{eq-d-22}
@@ -1267,7 +1267,7 @@ $$
 \mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} + \delta \boldsymbol{\theta}_2 \times ( \mathbf{r} + \delta \mathbf{r}_1) \tag{D.24} \label{eq-d-24}
 $$
 
-Assuming that the second-order infinitessimals can be ignored gives
+Assuming that the second-order infinitesimals can be ignored gives
 
 $$
 \mathbf{r} + \delta \mathbf{r}_1 + \delta \mathbf{r}_2 = \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{}\mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} \tag{D.25} \label{eq-d-25}
@@ -1279,15 +1279,15 @@ $$
 \mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times (\mathbf{r} + \delta \mathbf{r}_2) \tag{D.26} \label{eq-d-26}
 $$
 
-Again, neglecting the second-order infinitessimals gives
+Again, neglecting the second-order infinitesimals gives
 
 $$
 \mathbf{r} + \delta \mathbf{r}_2 + \delta \mathbf{r}_1 = \mathbf{r} + \delta \boldsymbol{\theta}_2 \times \mathbf{r} + \delta \boldsymbol{\theta}_1 \times \mathbf{r} \tag{D.27} \label{eq-d-27}
 $$
 
-Note that the products of these two infinitessimal rotations, [D.25](#eq-d-25) and [D.27](#eq-d-27) are identical. That is, assuming that second-order infinitessimals can be neglected, then the infinitessimal rotations commute, and thus $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ are correctly represented by vectors.
+Note that the products of these two infinitesimal rotations, [D.25](#eq-d-25) and [D.27](#eq-d-27) are identical. That is, assuming that second-order infinitesimals can be neglected, then the infinitesimal rotations commute, and thus $\delta \boldsymbol{\theta}_1$ and $\delta \boldsymbol{\theta}_2$ are correctly represented by vectors.
 
-The fact that $\delta \boldsymbol{\theta}$ is a vector allows angular velocity to be represented by a vector. That is, angular velocity is the ratio of an infinitessimal rotation to an infinitessimal time.
+The fact that $\delta \boldsymbol{\theta}$ is a vector allows angular velocity to be represented by a vector. That is, angular velocity is the ratio of an infinitesimal rotation to an infinitesimal time.
 
 $$
 \boldsymbol{\omega} = \frac{\delta \boldsymbol{\theta}}{ \delta t } \tag{D.28} \label{eq-d-28}
@@ -1652,7 +1652,7 @@ The tensor notation is used extensively in physics since it provides a powerful,
 
 In general the configuration space used to specify a dynamical system is not a Euclidean space in that there may not be a system of coordinates for which the distance between any two neighboring points can be represented by the sum of the squares of the coordinate differentials. For example, a set of cartesian coordinate does not exist for the two-dimension motion of a single particle constrained to the curved surface of a fixed sphere. Such curved spaces need to be represented in terms of Riemannian geometry rather than Euclidean geometry. Curved configuration spaces occur in some branches of physics such as Einstein’s General Theory of Relativity.
 
-Tensors have transformation properties that can be either contravariant or covariant. Consider a set of generalized coordinates $q^{\prime}$ that are a function of the coordinates $q$. Then infinitessimal changes $dq^m$ will lead to infinitessimal changes $dq^{\prime n}$ where
+Tensors have transformation properties that can be either contravariant or covariant. Consider a set of generalized coordinates $q^{\prime}$ that are a function of the coordinates $q$. Then infinitesimal changes $dq^m$ will lead to infinitesimal changes $dq^{\prime n}$ where
 
 $$
 dq^{\prime n} = \sum_m \dfrac{\partial q^{\prime n}}{ \partial q^m } dq^m \tag{E.12} \label{eq-e-12}
@@ -2308,7 +2308,7 @@ Field equations, such as for electromagnetic and gravitational fields, require b
 
 ### Line integral of the gradient of a scalar field
 
-The change $\Delta V$ in a scalar field for an infinitessimal step $d\mathbf{l}$ along a path can be written as
+The change $\Delta V$ in a scalar field for an infinitesimal step $d\mathbf{l}$ along a path can be written as
 
 $$
 \Delta V = (\boldsymbol{\nabla}V ) \cdot d\mathbf{l} \tag{H.1} \label{eq-h-1}
@@ -2348,21 +2348,21 @@ $$
 
 since the contributions of the common surface $S_{ab}$ cancel in that the flux out of $S_1$ is equal and opposite to the flux into $S_2$ over the surface $S_{ab}$. That is, independent of how many times the volume enclosed by $S$ is subdivided, the net flux for the sum of all the Gaussian surfaces enclosing these subdivisions of the volume, still equals $\oint_S \mathbf{F} \cdot d\mathbf{S}$.
 
-Consider that the volume enclosed by $S$ is subdivided into $N$ subdivisions where $N \rightarrow \infty$, then even though $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$, the sum over surfaces of all the infinitessimal volumes remains unchanged
+Consider that the volume enclosed by $S$ is subdivided into $N$ subdivisions where $N \rightarrow \infty$, then even though $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$, the sum over surfaces of all the infinitesimal volumes remains unchanged
 
 $$
 \Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \tag{H.5} \label{eq-h-5}
 $$
 
-Thus we can take the limit of a sum of an infinite number of infinitessimal volumes as is needed to obtain a differential form. The surface integral for each infinitessimal volume will equal zero which is not useful, that is $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$. However, the flux per unit volume has a finite value as $N \rightarrow \infty$. This ratio is called the *divergence* of the vector field;
+Thus we can take the limit of a sum of an infinite number of infinitesimal volumes as is needed to obtain a differential form. The surface integral for each infinitesimal volume will equal zero which is not useful, that is $\oint_{S_i} \mathbf{F} \cdot d\mathbf{S} \rightarrow 0$ as $N \rightarrow \infty$. However, the flux per unit volume has a finite value as $N \rightarrow \infty$. This ratio is called the *divergence* of the vector field;
 
 $$
 div \mathbf{F} = Lim_{\Delta \tau_i \rightarrow 0} \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \tag{H.6} \label{eq-h-6}
 $$
 
-where $\Delta \tau_i$ is the infinitessimal volume enclosed by surface $S_i$. The divergence of the vector field is a scalar quantity.
+where $\Delta \tau_i$ is the infinitesimal volume enclosed by surface $S_i$. The divergence of the vector field is a scalar quantity.
 
-Thus the sum of flux over all infinitessimal subdivisions of the volume enclosed by a closed surface $S$ equals
+Thus the sum of flux over all infinitesimal subdivisions of the volume enclosed by a closed surface $S$ equals
 
 $$
 \Phi = \oint_S \mathbf{F} \cdot d\mathbf{S} = \sum^{N \rightarrow \infty}_i \frac{\oint_{S_i} \mathbf{F} \cdot d\mathbf{S}}{ \Delta \tau_i} \Delta \tau_i = \sum^{N \rightarrow \infty}_i div \mathbf{F}\Delta \tau_i \tag{H.7} \label{eq-h-7}
@@ -2381,12 +2381,12 @@ This is called the [*Divergence Theorem*](https://math.libretexts.org/Bookshelve
 :::{figure} ../images/lt-23024-h2.png
 :label: fig-19-9-2
 :enumerator: 19.9.2
-:alt: Computation of flux out of an infinitessimal rectangular box, \Delta x, \Delta y, \Delta z.
+:alt: Computation of flux out of an infinitesimal rectangular box, \Delta x, \Delta y, \Delta z.
 
-Computation of flux out of an infinitessimal rectangular box, $\Delta x$, $\Delta y$, $\Delta z$.
+Computation of flux out of an infinitesimal rectangular box, $\Delta x$, $\Delta y$, $\Delta z$.
 :::
 
-Consider the special case of an infinitessimal rectangular box, size $\Delta x, \Delta y, \Delta z$ shown in [Figure 19.9.2](#fig-19-9-2). Consider the net flux for the $z$ component $F_z$ *entering* the surface $\Delta x\Delta y$ at location $(x, y, z)$.
+Consider the special case of an infinitesimal rectangular box, size $\Delta x, \Delta y, \Delta z$ shown in [Figure 19.9.2](#fig-19-9-2). Consider the net flux for the $z$ component $F_z$ *entering* the surface $\Delta x\Delta y$ at location $(x, y, z)$.
 
 $$
 \Delta \Phi ^{in}_z = \left( F_z + \frac{\Delta x}{ 2} \frac{\partial F_z}{ \partial x} + \frac{\Delta y}{ 2} \frac{\partial F_z }{\partial y} \right) \Delta x\Delta y \tag{H.9} \label{eq-h-9}
@@ -2422,9 +2422,9 @@ $$
 div \mathbf{F} = \boldsymbol{\nabla} \cdot \mathbf{F} \tag{H.14} \label{eq-h-14}
 $$
 
-The divergence is a scalar quantity. The physical meaning of the divergence is that it gives the net flux per unit volume flowing out of an infinitessimal volume. A positive divergence corresponds to a net outflow of flux from the infinitessimal volume at any location while a negative divergence implies a net inflow of flux to this infinitessimal volume.
+The divergence is a scalar quantity. The physical meaning of the divergence is that it gives the net flux per unit volume flowing out of an infinitesimal volume. A positive divergence corresponds to a net outflow of flux from the infinitesimal volume at any location while a negative divergence implies a net inflow of flux to this infinitesimal volume.
 
-It was shown that for an infinitessimal rectangular box
+It was shown that for an infinitesimal rectangular box
 
 $$
 \Delta \Phi = \left(\frac{\partial F_x }{\partial x} + \frac{\partial F_y}{ \partial y} + \frac{\partial F_z}{ \partial z} \right) \Delta x\Delta y\Delta z = \boldsymbol{\nabla} \cdot \mathbf{F}\Delta \tau \tag{H.15} \label{eq-h-15}
@@ -2499,7 +2499,7 @@ That is, the local value of the divergence of $\mathbf{B}$ is zero everywhere.
 ::::{admonition} Example 19.9.2: Buoyancy forces in fluids
 :class: example
 
-Buoyancy in fluids provides an example of the use of flux in physics. Consider a fluid of density $\rho (z)$ in a gravitational field $\bar{g}(z) = −g(z)\hat{z}$ where the $z$ axis points in the opposite direction to the gravitational force. Pressure equals force per unit area and is a scalar quantity. For a conservative fluid system, in static equilibrium, the net work done per unit area for an infinitessimal displacement $d r$ is zero. The net pressure force per unit area is the difference $P(r+ d r)−P(r) = \nabla P \cdot d r$ while the net change in gravitational potential energy is $\rho (z)\bar{g}(z) \cdot d r$. Thus energy conservation gives
+Buoyancy in fluids provides an example of the use of flux in physics. Consider a fluid of density $\rho (z)$ in a gravitational field $\bar{g}(z) = −g(z)\hat{z}$ where the $z$ axis points in the opposite direction to the gravitational force. Pressure equals force per unit area and is a scalar quantity. For a conservative fluid system, in static equilibrium, the net work done per unit area for an infinitesimal displacement $d r$ is zero. The net pressure force per unit area is the difference $P(r+ d r)−P(r) = \nabla P \cdot d r$ while the net change in gravitational potential energy is $\rho (z)\bar{g}(z) \cdot d r$. Thus energy conservation gives
 
 $$
 [\boldsymbol{\nabla}P + \rho (z)\bar{\mathbf{g}}(\mathbf{z})] \cdot d \mathbf{r} =0 \nonumber
@@ -2548,7 +2548,7 @@ $$
 \oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \oint_{C_i} \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} } \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \tag{H.19} \label{eq-h-19}
 $$
 
-where $\Delta \mathbf{S}_i$ is the infinitessimal area bounded by the closed sub-loop $C_i$ and $\Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}$ is the normal component of this area pointing along the $\widehat{\mathbf{n}}$ direction which is the direction along which the line integral points.
+where $\Delta \mathbf{S}_i$ is the infinitesimal area bounded by the closed sub-loop $C_i$ and $\Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}$ is the normal component of this area pointing along the $\widehat{\mathbf{n}}$ direction which is the direction along which the line integral points.
 
 :::{figure} ../images/lt-23025-h3.png
 :label: fig-19-9-3
@@ -2570,7 +2570,7 @@ $$
 \oint_C \mathbf{F} \cdot d\mathbf{l} = \sum^{N \rightarrow \infty}_i \frac{\oint_{C_i} \mathbf{F} \cdot d\mathbf{l}}{ \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}}} \Delta \mathbf{S}_i \cdot \widehat{\mathbf{n}} \tag{H.21} \label{eq-h-21} \\ = \int [(curl \mathbf{F}) \cdot \widehat{\mathbf{n}}] d\mathbf{S}_i \cdot \widehat{\mathbf{n}}
 $$
 
-The product $\widehat{\mathbf{n}} \cdot \widehat{\mathbf{n}} = 1$, that is, this is true independent of the direction of the infinitessimal loop. Thus the above relation leads to *Stokes Theorem*
+The product $\widehat{\mathbf{n}} \cdot \widehat{\mathbf{n}} = 1$, that is, this is true independent of the direction of the infinitesimal loop. Thus the above relation leads to *Stokes Theorem*
 
 $$
 \oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} \tag{H.22} \label{eq-h-22}
@@ -2580,14 +2580,14 @@ This relates the line integral to a surface integral over a surface bounded by t
 
 #### Curl in cartesian coordinates
 
-Consider the infinitessimal rectangle $\Delta x\Delta y$ pointing in the $\widehat{\mathbf{k}}$ direction shown in [Figure 19.9.4](#fig-19-9-4).
+Consider the infinitesimal rectangle $\Delta x\Delta y$ pointing in the $\widehat{\mathbf{k}}$ direction shown in [Figure 19.9.4](#fig-19-9-4).
 
 :::{figure} ../images/lt-23022-h4.png
 :label: fig-19-9-4
 :enumerator: 19.9.4
-:alt: Circulation around an infinitessimal rectangle \Delta x\Delta y in the z direction.
+:alt: Circulation around an infinitesimal rectangle \Delta x\Delta y in the z direction.
 
-Circulation around an infinitessimal rectangle $\Delta x\Delta y$ in the z direction.
+Circulation around an infinitesimal rectangle $\Delta x\Delta y$ in the z direction.
 :::
 
 The line integral, taken in a right-handed way around $\widehat{\mathbf{k}}$ gives
@@ -2638,7 +2638,7 @@ $$
 \oint_C \mathbf{F} \cdot d\mathbf{l} = \int_{Area \ bounded \ by \ C} (curl \mathbf{F}) \cdot d\mathbf{S} = \int_{Area \ bounded \ by \ C} (\boldsymbol{\nabla} \times F) \cdot d\mathbf{S} \tag{H.30} \label{eq-h-30}
 $$
 
-The physics meaning of the curl is that it is the circulation, or rotation, for an infinitessimal loop at any location. The word curl is German for rotation.
+The physics meaning of the curl is that it is the circulation, or rotation, for an infinitesimal loop at any location. The word curl is German for rotation.
 
 ::::{admonition} Example 19.9.3: Maxwell's circulation equations
 :class: example
@@ -3158,7 +3158,7 @@ This modern graduate-level textbook emphasizes relativistic mechanics making it 
 
 Provides a clear presentation of Lagrangian and Hamiltonian mechanics, including canonical transformations, Hamilton-Jacobi theory, and action-angle variables.
 
-[Sy60] J.L. Synge, *“Principles of Classical Mechanics and Field Theory”*, Volume III/I of *“Handbuck der Physik”* Springer-Verlag, Berlin (1960).
+[Sy60] J.L. Synge, *“Principles of Classical Mechanics and Field Theory”*, Volume III/I of *“Handbuch der Physik”* Springer-Verlag, Berlin (1960).
 
 A classic graduate-level presentation of analytical mechanics.
 

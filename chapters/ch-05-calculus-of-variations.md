@@ -139,7 +139,7 @@ Consider the path lies in the $\mathit{x-y}$ plane.
 Shortest distance between two points in a plane.
 :::
 
-The infinitessimal length of arc is
+The infinitesimal length of arc is
 
 $$
 ds = \sqrt{dx^{2}+dy^{2}} = \left[ \sqrt{1+\left( \frac{dy}{dx}\right) ^{2}}\right] dx\nonumber
@@ -205,9 +205,9 @@ The Brachistochrone problem involves finding the path having the minimum transit
 :::{figure} ../images/lt-21140-5.3.2.png
 :label: fig-5-3-2
 :enumerator: 5.3.2
-:alt: The Bachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
+:alt: The Brachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
 
-The Bachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
+The Brachistochrone problem involves finding the path for the minimum transit time for constrained frictionless motion in a uniform gravitational field.
 :::
 
 Consider that the particle of mass $m$ starts at the origin $x_{1} = 0,y_{1} = 0$ with zero velocity. Since the problem conserves energy and assuming that initially $E = KE+PE = 0$ then
@@ -373,7 +373,7 @@ Consider a cylindrically-symmetric soap-bubble surface formed by blowing a soap 
 Cylindrically-symmetric surface formed by rotation about the $z$ axis of a soap bubble suspended between two identical hoops centred on the $z$ axis.
 :::
 
-The differential arc-length element of the circular annulus at constant $\theta$ between $z$ and $z+dz$ is given by $ds=\sqrt{dz^{2}+d\rho ^{2}}$. Therefore the area of the infinitessimal circular annulus is $dS=2\pi \rho ds$ which can be integrated to give the area of the surface $S$ of the soap bubble bounded by the two circular hoops as 
+The differential arc-length element of the circular annulus at constant $\theta$ between $z$ and $z+dz$ is given by $ds=\sqrt{dz^{2}+d\rho ^{2}}$. Therefore the area of the infinitesimal circular annulus is $dS=2\pi \rho ds$ which can be integrated to give the area of the surface $S$ of the soap bubble bounded by the two circular hoops as 
 $$
 S=2\pi \int_{1}^{2}\rho \sqrt{dz^{2}+d\rho ^{2}}\nonumber
 $$
@@ -620,7 +620,7 @@ where $j=1,2,3,\dots n$. There can be $m$ such equations of constraint where $0\
 
 ### Kinematic (differential) equations of constraint
 
-The $m$ constraint equations also can be expressed in terms of the infinitessimal displacements of the form
+The $m$ constraint equations also can be expressed in terms of the infinitesimal displacements of the form
 
 $$
 \sum_{j=1}^{n}\frac{\partial g_{k}}{\partial q_{j}}dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0 \tag{5.27} \label{eq-5-27}
@@ -681,7 +681,7 @@ This non-holonomic constrained system has a one-sided constraint. Systems usuall
 
 #### Partial Holonomic constraints
 
-Partial-holonomic constraints are holonomic for a restricted range of the constraint surface in coordinate space, and this range can be case specific. This can occur if the constraint force is one-sided and perpendicular to the path. An example is the pendulum with the mass attached to the fulcrum by a flexible string that provides tension but not compression. Then the pendulum length is constant only if the tension in the string is positive. Thus the pendulum will be holonomic if the gravitational plus centrifugal forces are such that the tension in the string is positive, but the system becomes non-hononomic if the tension is negative as can happen when the pendulum rotates to an upright angle where the centrifugal force outwards is insufficient to compensate for the vertical downward component of the gravitational force. There are many other examples where the motion of an object is holonomic when the object is pressed against the constraint surface, such as the surface of the Earth, but is unconstrained if the object leaves the surface.
+Partial-holonomic constraints are holonomic for a restricted range of the constraint surface in coordinate space, and this range can be case specific. This can occur if the constraint force is one-sided and perpendicular to the path. An example is the pendulum with the mass attached to the fulcrum by a flexible string that provides tension but not compression. Then the pendulum length is constant only if the tension in the string is positive. Thus the pendulum will be holonomic if the gravitational plus centrifugal forces are such that the tension in the string is positive, but the system becomes non-holonomic if the tension is negative as can happen when the pendulum rotates to an upright angle where the centrifugal force outwards is insufficient to compensate for the vertical downward component of the gravitational force. There are many other examples where the motion of an object is holonomic when the object is pressed against the constraint surface, such as the surface of the Earth, but is unconstrained if the object leaves the surface.
 
 #### Time dependence
 
@@ -691,7 +691,7 @@ A constraint is called *scleronomic* if the constraint is not explicitly time de
 
 The solution depends on whether the constraint is conservative or dissipative, that is, if friction or drag are acting. The system will be conservative if there are no drag forces, and the constraint forces are perpendicular to the trajectory of the path such as the motion of a charged particle in a magnetic field. Forces of constraint can result from sliding of two solid surfaces, rolling of solid objects, fluid flow in a liquid or gas, or result from electromagnetic forces. Energy dissipation can result from friction, drag in a fluid or gas, or finite resistance of electric conductors leading to dissipation of induced electric currents in a conductor, e.g. eddy currents.
 
-A rolling constraint is unusual in that friction between the rolling bodies is necessary to maintain rolling. A disk on a frictionless inclined plane will conserve it’s angular momentum since there is no torque acting if the rolling contact is frictionless, that is, the disk will just slide. If the friction is sufficient to stop sliding, then the bodies will roll and not slide. A perfect rolling body does not dissipate energy since no work is done at the instantaneous point of contact where both bodies are in zero relative motion and the force is perpendicular to the motion. In real life, a rolling wheel can involve a very small energy dissipation due to deformation at the point of contact coupled with non-elastic properties of the material used to make the wheel and the plane surface. For example, a pneumatic tire can heat up and expand due to flexing of the tire.
+A rolling constraint is unusual in that friction between the rolling bodies is necessary to maintain rolling. A disk on a frictionless inclined plane will conserve its angular momentum since there is no torque acting if the rolling contact is frictionless, that is, the disk will just slide. If the friction is sufficient to stop sliding, then the bodies will roll and not slide. A perfect rolling body does not dissipate energy since no work is done at the instantaneous point of contact where both bodies are in zero relative motion and the force is perpendicular to the motion. In real life, a rolling wheel can involve a very small energy dissipation due to deformation at the point of contact coupled with non-elastic properties of the material used to make the wheel and the plane surface. For example, a pneumatic tire can heat up and expand due to flexing of the tire.
 
 ### Treatment of constraint forces in variational calculus
 
@@ -721,7 +721,7 @@ The above three approaches exploit generalized coordinates to handle constraint 
 
 ### Algebraic equations of constraint
 
-The Lagrange multiplier technique provides a powerful, and elegant, way to handle holonomic constraints using Euler’s equations[^5-9-1]. The general method of Lagrange multipliers for $n$ variables, with $m$ constraints, is best introduced using Bernoulli’s ingenious exploitation of virtual infinitessimal displacements, which Lagrange signified by the symbol $\delta$. The term "virtual" refers to an intentional variation of the generalized coordinates $\delta q_{i}$ in order to elucidate the local sensitivity of a function $F(q_{i},x)$ to variation of the variable. Contrary to the usual infinitessimal interval in differential calculus, where an actual displacement $dq_{i}$ occurs during a time $dt$, a virtual displacement is imagined to be an instantaneous, infinitessimal, displacement of a coordinate, not an actual displacement, in order to elucidate the local dependence of $F$ on the coordinate. The local dependence of any functional $F,$ to virtual displacements of all $n$ coordinates, is given by taking the partial differentials of $F$.
+The Lagrange multiplier technique provides a powerful, and elegant, way to handle holonomic constraints using Euler’s equations[^5-9-1]. The general method of Lagrange multipliers for $n$ variables, with $m$ constraints, is best introduced using Bernoulli’s ingenious exploitation of virtual infinitesimal displacements, which Lagrange signified by the symbol $\delta$. The term "virtual" refers to an intentional variation of the generalized coordinates $\delta q_{i}$ in order to elucidate the local sensitivity of a function $F(q_{i},x)$ to variation of the variable. Contrary to the usual infinitesimal interval in differential calculus, where an actual displacement $dq_{i}$ occurs during a time $dt$, a virtual displacement is imagined to be an instantaneous, infinitesimal, displacement of a coordinate, not an actual displacement, in order to elucidate the local dependence of $F$ on the coordinate. The local dependence of any functional $F,$ to virtual displacements of all $n$ coordinates, is given by taking the partial differentials of $F$.
 
 $$
 \delta F=\sum_{i}^{n}\frac{\partial F}{\partial q_{i}}\delta q_{i} \tag{5.35} \label{eq-5-35}

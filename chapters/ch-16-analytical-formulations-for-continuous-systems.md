@@ -83,7 +83,7 @@ $$
 
 Following the same approach used in chapter $5.2$, it is assumed that the stationary path for the action integral is described by the function $q(x, t)$. Define a neighboring function using a parametric representation $q(x, t; \epsilon )$ such that when $\epsilon = 0$, the extremum function $q = q(x, t)$ yields the stationary action integral $S$.
 
-Assume that an infinitessimal fraction $\epsilon$ of a neighboring function $\eta (x, t)$ is added to the extremum path $q(x, t)$. That is, assume
+Assume that an infinitesimal fraction $\epsilon$ of a neighboring function $\eta (x, t)$ is added to the extremum path $q(x, t)$. That is, assume
 
 $$
 q(x, t; \epsilon ) = q(x, t) + \epsilon \eta (x, t) \tag{16.9} \label{eq-16-9}
@@ -245,23 +245,23 @@ Forces in matter can be divided into two classes;
 
 1. body forces, such as gravity, which act on each volume element, and
 
-2. surface forces which are the forces that act on both sides of any infinitessimal surface element inside the solid.
+2. surface forces which are the forces that act on both sides of any infinitesimal surface element inside the solid.
 
-Surface forces can have components along the normal to the infinitessimal surface, as well as shear components in the plane of the surface element. Typically solids are elastic to both normal and shear components of the surface forces whereas shear forces in liquids and gases lead to fluid flow plus viscous forces due to energy dissipation. As described below, the forces acting on an infinitessimal surface element are best expressed in terms of the stress tensor, while the relative distortion of the shape, or volume, of the body are best expressed in terms of the strain tensor. The moduli of elasticity relate the ratio of the corresponding stress and strain tensors. The moduli of elasticity are constant in linear elastic solids and thus the stress is proportional to the strain providing that the strains do not exceed the elastic limit.
+Surface forces can have components along the normal to the infinitesimal surface, as well as shear components in the plane of the surface element. Typically solids are elastic to both normal and shear components of the surface forces whereas shear forces in liquids and gases lead to fluid flow plus viscous forces due to energy dissipation. As described below, the forces acting on an infinitesimal surface element are best expressed in terms of the stress tensor, while the relative distortion of the shape, or volume, of the body are best expressed in terms of the strain tensor. The moduli of elasticity relate the ratio of the corresponding stress and strain tensors. The moduli of elasticity are constant in linear elastic solids and thus the stress is proportional to the strain providing that the strains do not exceed the elastic limit.
 
 ### Stress tensor
 
-Consider an infinitessimal surface area $d\mathbf{A}$ of an arbitrary closed volume element $dV$ inside the medium. The surface area element is defined as a vector $d\mathbf{A} = \mathbf{\hat{n}} dA$ where $\mathbf{\hat{n}}$ is the outward normal to the closed surface that encloses the volume element. Assume that $d\mathbf{F}$ is the force element exerted by the outside on the material inside the volume element. The stress tensor $\mathbf{T}$ is defined as the ratio of $d\mathbf{F}$ and $d\mathbf{A}$ where the force vector $d\mathbf{F}$ is given by the inner product of the stress tensor $\mathbf{T}$ and the surface element vector $d\mathbf{A}$. That is,
+Consider an infinitesimal surface area $d\mathbf{A}$ of an arbitrary closed volume element $dV$ inside the medium. The surface area element is defined as a vector $d\mathbf{A} = \mathbf{\hat{n}} dA$ where $\mathbf{\hat{n}}$ is the outward normal to the closed surface that encloses the volume element. Assume that $d\mathbf{F}$ is the force element exerted by the outside on the material inside the volume element. The stress tensor $\mathbf{T}$ is defined as the ratio of $d\mathbf{F}$ and $d\mathbf{A}$ where the force vector $d\mathbf{F}$ is given by the inner product of the stress tensor $\mathbf{T}$ and the surface element vector $d\mathbf{A}$. That is,
 
 $$
 d\mathbf{F} = \mathbf{T}\cdot d\mathbf{A} \tag{16.33} \label{eq-16-33}
 $$
 
-Since both $d\mathbf{F}$ and $d\mathbf{A}$ are vectors, then Equation [16.33](#eq-16-33) implies that the stress tensor must be a second-rank tensor as described in appendix $19.5$, that is, the stress tensor is analogous to the rotation matrix or the inertia tensor. Note that if $d\mathbf{F}$ and $\mathbf{\hat{n}}d\mathbf{A}$ are colinear, then the stress tensor $\mathbf{T}$ reduces to the conventional pressure $P$. The general stress tensor equals the momentum flux density and has the dimensions of pressure.
+Since both $d\mathbf{F}$ and $d\mathbf{A}$ are vectors, then Equation [16.33](#eq-16-33) implies that the stress tensor must be a second-rank tensor as described in appendix $19.5$, that is, the stress tensor is analogous to the rotation matrix or the inertia tensor. Note that if $d\mathbf{F}$ and $\mathbf{\hat{n}}d\mathbf{A}$ are collinear, then the stress tensor $\mathbf{T}$ reduces to the conventional pressure $P$. The general stress tensor equals the momentum flux density and has the dimensions of pressure.
 
 ### Strain tensor
 
-Forces applied to a solid body can lead to translational, or rotational acceleration, in addition to changing the shape or volume of the body. Elastic forces do not act when an overall displacement $\boldsymbol{\xi}$ of an infinitessimal volume occurs, such as is involved in translational or rotational motion. Elastic forces act to oppose position-dependent differences in the displacement vector $\boldsymbol{\xi}$, that is, the strain depends on the tensor product $\boldsymbol{\nabla} \otimes \boldsymbol{\xi}$. For an elastic medium, the strain depends only on the applied stress and not on the prior loading history.
+Forces applied to a solid body can lead to translational, or rotational acceleration, in addition to changing the shape or volume of the body. Elastic forces do not act when an overall displacement $\boldsymbol{\xi}$ of an infinitesimal volume occurs, such as is involved in translational or rotational motion. Elastic forces act to oppose position-dependent differences in the displacement vector $\boldsymbol{\xi}$, that is, the strain depends on the tensor product $\boldsymbol{\nabla} \otimes \boldsymbol{\xi}$. For an elastic medium, the strain depends only on the applied stress and not on the prior loading history.
 
 Consider that the matter at the location $\mathbf{r}$ is subject to an elastic displacement $\boldsymbol{\xi}$, and similarly at a displaced location $\mathbf{r}^{\prime} = \mathbf{r}+ \sum_i \frac{\partial \boldsymbol{\xi}}{\partial x_i} dx_i$ where $x_i$ are cartesian coordinates. The net relative displacement between $\mathbf{r}$ and $\mathbf{r}^{\prime}$ is given by
 
@@ -287,7 +287,7 @@ $$
 d\xi_i = \sum_k \sigma_{ik} dx_i dx_k \tag{16.37} \label{eq-16-37}
 $$
 
-Thus the strain tensor $\boldsymbol{\sigma}$ is a rank-2 tensor defined as the ratio of the strain vector $\boldsymbol{\xi}$ and the infinitessimal area vector $d\mathbf{A}$.
+Thus the strain tensor $\boldsymbol{\sigma}$ is a rank-2 tensor defined as the ratio of the strain vector $\boldsymbol{\xi}$ and the infinitesimal area vector $d\mathbf{A}$.
 
 $$
 d\boldsymbol{\xi} = \boldsymbol{\sigma}\cdot d\mathbf{A} \tag{16.38} \label{eq-16-38}
@@ -525,7 +525,7 @@ $$
 \begin{align} \mathbf{F} = \int \left( \boldsymbol{\nabla} \cdot \mathbf{T}−\epsilon_0\mu_0 \frac{\partial \mathbf{S}}{ \partial t} \right) d\tau \tag{16.74} \label{eq-16-74} \\ = \oint \mathbf{T}\cdot d\mathbf{a}−\epsilon_0\mu_0 \frac{d}{dt} \int \mathbf{Sd}\boldsymbol{\tau} \tag{16.75}\end{align}
 $$
 
-Note that, if the Poynting vector is time independent, then the second term in Equation [16.75](#eq-16-74) is zero and the Maxwell stress tensor $\mathbf{T}$ is the force per unit area, (stress) acting on the surface. The fact that $\mathbf{T}$ is a rank-2 tensor is apparent since the stress represents the ratio of the force-density vector $d\mathbf{f}$ and the infinitessimal area vector $d\mathbf{a}$, which do not necessarily point in the same directions.
+Note that, if the Poynting vector is time independent, then the second term in Equation [16.75](#eq-16-74) is zero and the Maxwell stress tensor $\mathbf{T}$ is the force per unit area, (stress) acting on the surface. The fact that $\mathbf{T}$ is a rank-2 tensor is apparent since the stress represents the ratio of the force-density vector $d\mathbf{f}$ and the infinitesimal area vector $d\mathbf{a}$, which do not necessarily point in the same directions.
 
 ### Momentum in the electromagnetic field
 
@@ -686,7 +686,7 @@ Fluid dynamics applied to gases is a straightforward extension of fluid dynamics
 ::::{admonition} Example 16.7.1: Acoustic Waves in a Gas
 :class: example
 
-Propagation of acoustic waves in a gas provides an example of using the three-dimensional Lagrangian density. Only longitudinal waves occur in a gas and the velocity is given by thermodynamics of the gas. Let the displacement of each gas molecule be designated by the general coordinate $\mathbf{q}$ with corresponding velocity $\mathbf{\dot{q}}$. Let the gas density be $\rho$, then the kinetic energy density $(KED)$ of an infinitessimal volume of gas $\Delta \tau$ is given by
+Propagation of acoustic waves in a gas provides an example of using the three-dimensional Lagrangian density. Only longitudinal waves occur in a gas and the velocity is given by thermodynamics of the gas. Let the displacement of each gas molecule be designated by the general coordinate $\mathbf{q}$ with corresponding velocity $\mathbf{\dot{q}}$. Let the gas density be $\rho$, then the kinetic energy density $(KED)$ of an infinitesimal volume of gas $\Delta \tau$ is given by
 
 $$
 \Delta (KED) = \frac{1}{ 2} \rho_0 \mathbf{\dot{q}}^2 \nonumber
@@ -768,7 +768,7 @@ $$
 
 ## 16.8: Viscous Fluid Dynamics
 
-Viscous fluid dynamics is a branch of classical mechanics that plays a pivotal role in a wide range of aspects of life, such as blood flow in human anatomy, weather, hydraulic engineering, and transportation by land, sea, and air. Viscous fluid flow provides natures most common manifestation of nonlinearity and turbulence in classical mechanics, and provides an excellent illustration of possible solutions of non-linear equations of motion introduced in chapter $4$. A detailed description of turbulence remains a challenging problem and this subject has the reputation of being the last great unsolved problem in classical mechanics. There is an apocryphal story that Werner Heisenberg was asked, if given the opportunity, what would he like to ask God. His reply was “When I meet God, I am going to ask him two questions: Why relativity? and why turbulence?, I really believe he will only have an answer to the first”.
+Viscous fluid dynamics is a branch of classical mechanics that plays a pivotal role in a wide range of aspects of life, such as blood flow in human anatomy, weather, hydraulic engineering, and transportation by land, sea, and air. Viscous fluid flow provides nature's most common manifestation of nonlinearity and turbulence in classical mechanics, and provides an excellent illustration of possible solutions of non-linear equations of motion introduced in chapter $4$. A detailed description of turbulence remains a challenging problem and this subject has the reputation of being the last great unsolved problem in classical mechanics. There is an apocryphal story that Werner Heisenberg was asked, if given the opportunity, what would he like to ask God. His reply was “When I meet God, I am going to ask him two questions: Why relativity? and why turbulence?, I really believe he will only have an answer to the first”.
 
 In contrast to solids, fluids do not have elastic restoring forces to support shear stress because the fluid flows. Shear stresses in fluids are balance by viscous forces which are velocity dependent. There are two mechanisms that lead to shear stress acting between adjacent fluid layers in relative motion. The first mechanism involves laminar flow where the viscous forces produce shear stress between adjacent layers of the fluid which are moving parallel along adjacent streamlines at differing velocities. Viscous forces typically dominate laminar flow. High viscosity fluids like honey exhibit laminar flow and are more difficult to stir or pour compared with low-viscosity fluids like water. The second mechanism involves turbulent flow where shear stress is due to momentum transfer between adjacent layers when the flow breaks up into large-scale coherent vortex structures which carry most of the kinetic energy. These eddies lead to transverse motion that transfers momentum plus heat between adjacent layers and leads to higher drag. The wing-tip vortex produced by the wing tip of an aircraft is an example of a dynamically-distinct, large-scale, coherent vortex structure which has considerable angular momentum and decays by fragmentation into a cascade of smaller scale structures.
 
@@ -896,7 +896,7 @@ $$
 d\mathbf{F} = \mathbf{T}\cdot d\mathbf{A} \tag{16.33}
 $$
 
-The **strain tensor** $\boldsymbol{\sigma}$ also is a rank 2 tensor defined as the ratio of the strain vector $\boldsymbol{\xi}$ and infinitessimal area $d\mathbf{A}$.
+The **strain tensor** $\boldsymbol{\sigma}$ also is a rank 2 tensor defined as the ratio of the strain vector $\boldsymbol{\xi}$ and infinitesimal area $d\mathbf{A}$.
 
 $$
 d\boldsymbol{\xi} = \boldsymbol{\sigma}\cdot d\mathbf{A} \tag{16.38}

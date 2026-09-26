@@ -45,7 +45,7 @@ where $i=1,2,3,\dots n$. The Lagrange multiplier approach has the advantage that
 
 3) The **generalized force** approach incorporates the forces of constraint explicitly as will be shown in chapter $6.5.4$. Incorporating the constraint forces explicitly allows use of holonomic, non-holonomic, and non-conservative constraint forces.
 
-Understanding the Lagrange formulation of classical mechanics is facilitated by use of a simple non-rigorous plausibility approach that is based on Newton’s laws of motion. This introductory plausibility approach will be followed by two more rigorous derivations of the Lagrangian formulation developed using either d’Alembert Principle or Hamiltons Principle. These better elucidate the physics underlying the Lagrange and Hamiltonian analytic representations of classical mechanics. In $1788$ Lagrange derived his equations of motion using the differential *d’Alembert Principle,* that extends to dynamical systems the Bernoulli Principle of infinitessimal virtual displacements and virtual work. The other approach, developed in $1834$, uses the integral *Hamilton’s Principle* to derive the Lagrange equations. Hamilton’s Principle is discussed in more detail in chapter $9.$ Euler’s variational calculus underlies d’Alembert’s Principle and Hamilton’s Principle since both are based on the philosophical belief that the laws of nature prefer economy of motion. Chapters $6.2-6.5$ show that both d’Alembert’s Principle and Hamilton’s Principle lead to the Euler-Lagrange equations. This will be followed by a series of examples that illustrate the use of Lagrangian mechanics in classical mechanics.
+Understanding the Lagrange formulation of classical mechanics is facilitated by use of a simple non-rigorous plausibility approach that is based on Newton’s laws of motion. This introductory plausibility approach will be followed by two more rigorous derivations of the Lagrangian formulation developed using either d’Alembert Principle or Hamiltons Principle. These better elucidate the physics underlying the Lagrange and Hamiltonian analytic representations of classical mechanics. In $1788$ Lagrange derived his equations of motion using the differential *d’Alembert Principle,* that extends to dynamical systems the Bernoulli Principle of infinitesimal virtual displacements and virtual work. The other approach, developed in $1834$, uses the integral *Hamilton’s Principle* to derive the Lagrange equations. Hamilton’s Principle is discussed in more detail in chapter $9.$ Euler’s variational calculus underlies d’Alembert’s Principle and Hamilton’s Principle since both are based on the philosophical belief that the laws of nature prefer economy of motion. Chapters $6.2-6.5$ show that both d’Alembert’s Principle and Hamilton’s Principle lead to the Euler-Lagrange equations. This will be followed by a series of examples that illustrate the use of Lagrangian mechanics in classical mechanics.
 
 ## 6.2: Newtonian plausibility argument for Lagrangian mechanics
 
@@ -143,7 +143,7 @@ The above plausibility argument, which is based on Newtonian mechanics, illustra
 
 ### d’Alembert’s Principle of virtual work
 
-The Principle of Virtual Work provides a basis for a rigorous derivation of Lagrangian mechanics. Bernoulli introduced the concept of virtual infinitessimal displacement of a system mentioned in chapter $5.9.1$. This refers to a change in the configuration of the system as a result of any arbitrary infinitessimal instantaneous change of the coordinates $\delta \mathbf{r}_{i},$ that is consistent with the forces and constraints imposed on the system at the instant $t$. Lagrange’s symbol $\delta$ is used to designate a virtual displacement which is called "virtual" to imply that there is no change in time $t$, i.e. $\delta t=0$. This distinguishes it from an actual displacement $d\mathbf{r} _{i}$ of body $i$ during a time interval $dt$ when the forces and constraints may change.
+The Principle of Virtual Work provides a basis for a rigorous derivation of Lagrangian mechanics. Bernoulli introduced the concept of virtual infinitesimal displacement of a system mentioned in chapter $5.9.1$. This refers to a change in the configuration of the system as a result of any arbitrary infinitesimal instantaneous change of the coordinates $\delta \mathbf{r}_{i},$ that is consistent with the forces and constraints imposed on the system at the instant $t$. Lagrange’s symbol $\delta$ is used to designate a virtual displacement which is called "virtual" to imply that there is no change in time $t$, i.e. $\delta t=0$. This distinguishes it from an actual displacement $d\mathbf{r} _{i}$ of body $i$ during a time interval $dt$ when the forces and constraints may change.
 
 Suppose that the system of $n$ particles is in equilibrium, that is, the total force on each particle $i$ is zero. The virtual work done by the force $\mathbf{F}_{i}$ moving a distance $\delta \mathbf{r}_{i}$ is given by the dot product $\mathbf{F}_{i}\cdot \delta \mathbf{r}_{i}$. For equilibrium, the sum of all these products for the $N$ bodies also must be zero
 
@@ -231,7 +231,7 @@ $$
 \tag{6.30} \label{eq-6-30}Q_{j}\equiv \sum_{i}^{n}\mathbf{F}_{i}^{A}\cdot \frac{\partial \mathbf{r}_{i}}{\partial q_{j}}
 $$
 
-Note that just as the generalized coordinates $q_{j}$ need not have the dimensions of length, so the $Q_{j}$ do not necessarily have the dimensions of force, but the product $Q_{j}\delta q_{j}$ must have the dimensions of work. For example, $Q_{j}$ could be torque and $\delta q_{j}$ could be the corresponding infinitessimal rotation angle.
+Note that just as the generalized coordinates $q_{j}$ need not have the dimensions of length, so the $Q_{j}$ do not necessarily have the dimensions of force, but the product $Q_{j}\delta q_{j}$ must have the dimensions of work. For example, $Q_{j}$ could be torque and $\delta q_{j}$ could be the corresponding infinitesimal rotation angle.
 
 The second term in d’Alembert’s Principle [6.25](#eq-6-25) can be transformed using Equation [6.28](#eq-6-28)
 
@@ -342,7 +342,7 @@ $$
 S=\int_{t_{1}}^{t_{2}}L(\mathbf{q, \dot{q},}t)dt
 $$
 
-has a minimum value for the correct path of motion. **Hamilton’s Action Principle** can be written in terms of a virtual infinitessimal displacement $\delta ,$ as
+has a minimum value for the correct path of motion. **Hamilton’s Action Principle** can be written in terms of a virtual infinitesimal displacement $\delta ,$ as
 
 $$
 \delta S=\delta \int_{t_{1}}^{t_{2}}Ldt=0
@@ -395,7 +395,7 @@ $$
 \tag{6.52} \label{eq-6-52} g_{k}(q_{1},q_{2},..q_{n},t)=0
 $$
 
-where $k=1,2,3,\dots m.$ Kinematic constraints can be expressed in terms of the infinitessimal displacements of the form
+where $k=1,2,3,\dots m.$ Kinematic constraints can be expressed in terms of the infinitesimal displacements of the form
 
 $$
 \tag{6.53} \label{eq-6-53} \sum_{j=1}^{n} \frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t)dq_{j}+\frac{\partial g_{k}}{\partial t}dt=0
@@ -423,7 +423,7 @@ $$
 \tag{6.56} \label{eq-6-56} \sum_{j}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
 $$
 
-where $Q_{j}^{EXC}$ is the remaining part of the generalized force $Q_{j}$ after subtracting both the part of the force absorbed in the potential energy $U$, which is buried in the Lagrangian $L$, as well as the holonomic constraint forces which are included in the Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)$. The $m$ Lagrange multipliers $\lambda _{k}$ can be chosen arbitrarily in [6.56](#eq-6-56). Utilizing the free choice of the $m$ Lagrange multipliers $\lambda _{k}$ allows them to be determined in such a way that the coefficients of the first $m$ infinitessimals, i.e. the square brackets vanish. Therefore the expression in the square bracket must vanish for each value of $\ 1\leq j\leq m$. Thus it follows that
+where $Q_{j}^{EXC}$ is the remaining part of the generalized force $Q_{j}$ after subtracting both the part of the force absorbed in the potential energy $U$, which is buried in the Lagrangian $L$, as well as the holonomic constraint forces which are included in the Lagrange multiplier terms $\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)$. The $m$ Lagrange multipliers $\lambda _{k}$ can be chosen arbitrarily in [6.56](#eq-6-56). Utilizing the free choice of the $m$ Lagrange multipliers $\lambda _{k}$ allows them to be determined in such a way that the coefficients of the first $m$ infinitesimals, i.e. the square brackets vanish. Therefore the expression in the square bracket must vanish for each value of $\ 1\leq j\leq m$. Thus it follows that
 
 $$
 \tag{6.57} \label{eq-6-57} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
@@ -435,7 +435,7 @@ $$
 \tag{6.58} \label{eq-6-58} \sum_{j=m+1}^{n}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q} ,t)-Q_{j}^{EXC}\right] \delta q_{j}=0
 $$
 
-In Equation [6.58](#eq-6-58) the $s=n-m$ infinitessimals $\delta q_{j}$ can be chosen freely since the $s=n-m$ degrees of freedom are *independent*. Therefore the expression in the square bracket must vanish for each value of $m+1\leq j\leq n$. Thus it follows that
+In Equation [6.58](#eq-6-58) the $s=n-m$ infinitesimals $\delta q_{j}$ can be chosen freely since the $s=n-m$ degrees of freedom are *independent*. Therefore the expression in the square bracket must vanish for each value of $m+1\leq j\leq n$. Thus it follows that
 
 $$
 \tag{6.59} \label{eq-6-59} \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} -\sum_{k=1}^{m}\lambda _{k}\frac{ \partial g_{k}}{\partial q_{j}}(\mathbf{q},t)-Q_{j}^{EXC}=0
@@ -1424,7 +1424,7 @@ $$
 \lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) dt=\lim_{\tau \rightarrow 0}\left. \frac{ \partial L}{\partial \dot{q}_{j}}\right\vert _{t}^{t+\tau }=\Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }\left( \left( \frac{ \partial L}{\partial q_{j}}\right) +Q_{j}^{EXC}\right) d\tau \tag{6.77} \label{eq-6-77}
 $$
 
-Note that in the limit that $\tau \rightarrow 0$ then the integral of the generalized momentum $p_{j}=\frac{\partial L}{\partial \dot{q}_{j}}$ simplifies to give the change in generalized momentum $\Delta p_{j}$. In addition, assuming that the non-impulsive forces $\left( \frac{\partial L}{ \partial q_{j}}\right)$ are finite and independent of the instantaneous impulsive force during the infinitessimal duration $\tau$, then the contribution of the non-impulsive forces $\int_{t}^{t+\tau }\left( \frac{ \partial L}{\partial q_{j}}\right) d\tau$ during the impulse can be neglected relative to the large impulsive force term; $\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau$. Thus it can be assumed that
+Note that in the limit that $\tau \rightarrow 0$ then the integral of the generalized momentum $p_{j}=\frac{\partial L}{\partial \dot{q}_{j}}$ simplifies to give the change in generalized momentum $\Delta p_{j}$. In addition, assuming that the non-impulsive forces $\left( \frac{\partial L}{ \partial q_{j}}\right)$ are finite and independent of the instantaneous impulsive force during the infinitesimal duration $\tau$, then the contribution of the non-impulsive forces $\int_{t}^{t+\tau }\left( \frac{ \partial L}{\partial q_{j}}\right) d\tau$ during the impulse can be neglected relative to the large impulsive force term; $\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau$. Thus it can be assumed that
 
 $$
 \Delta p_{j}=\lim_{\tau \rightarrow 0}\int_{t}^{t+\tau }Q_{j}^{EXC}d\tau = \tilde{Q}_{j} \tag{6.78} \label{eq-6-78}
@@ -1661,7 +1661,7 @@ $$
 
     2. Use the Lagrangian to derive the equations of motion
 
-    3. A horizontal impulsive force $F_{x}$ in the $x$ direction strikes the bottom end of the rod for an infinitessimal time $\tau$. Derive the initial conditions for the system immediately after the impulse has occurred.
+    3. A horizontal impulsive force $F_{x}$ in the $x$ direction strikes the bottom end of the rod for an infinitesimal time $\tau$. Derive the initial conditions for the system immediately after the impulse has occurred.
 
     4. Draw a diagram showing the geometry of the pendulum shortly after the impulse when the displacement angles are significant.
 
@@ -1757,7 +1757,7 @@ $$
 \sum_{j}^{N}\left[ \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) -\frac{\partial L}{\partial q_{j}}\right\} -Q_{j}^{EXC}-\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}( \mathbf{q},t)\right] \delta q_{j}=0 \tag{6.56}
 $$
 
-Use of the Lagrange multipliers to handle the $m$ constraint forces ensures that all $n$ infinitessimals $\delta q_{j}$ are independent implying that the expression in the square bracket must be zero for each of the $n$ values of $j$. This leads to $n$ Lagrange equations plus $m$ constraint relations
+Use of the Lagrange multipliers to handle the $m$ constraint forces ensures that all $n$ infinitesimals $\delta q_{j}$ are independent implying that the expression in the square bracket must be zero for each of the $n$ values of $j$. This leads to $n$ Lagrange equations plus $m$ constraint relations
 
 $$
 \left\{ \frac{d}{dt}\left( \frac{\partial L}{\partial \dot{q}_{j}}\right) - \frac{\partial L}{\partial q_{j}}\right\} =Q_{j}^{EXC}+\sum_{k=1}^{m}\lambda _{k}\frac{\partial g_{k}}{\partial q_{j}}(\mathbf{q},t) \tag{6.60}

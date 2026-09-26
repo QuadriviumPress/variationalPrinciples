@@ -78,7 +78,7 @@ $$
 \mathbf{L}_{final}^{MECH}=\mathbf{T=}\int_{t}\mathbf{N}(t)dt=qR\mathbf{\Phi }\nonumber
 $$
 
-The initial angular momentum in the electromagnetic field can be derived using Equation [7.6](#eq-7-6), plus Stoke’s theorem (Appendix $19.8.3$) . Equation $2.12.56$ gives that the final angular momentum equals the angular impulse
+The initial angular momentum in the electromagnetic field can be derived using Equation [7.6](#eq-7-6), plus Stokes’ theorem (Appendix $19.8.3$) . Equation $2.12.56$ gives that the final angular momentum equals the angular impulse
 
 $$
 \mathbf{L}_{initial}^{EM}=R\int_{t}\oint r\dot{p}_{\phi }dldt=R\oint rp_{\phi }dl=qR\oint A_{\phi }dl=qR\int \mathbf{B\cdot dS=}qR\mathbf{\Phi }\nonumber
@@ -215,12 +215,12 @@ Noether’s Theorem illustrates this general result which can be stated as, *if 
 :::{figure} ../images/lt-21167-7.4.1.png
 :label: fig-7-4-1
 :enumerator: 7.4.1
-:alt: Infinitessimal rotation
+:alt: Infinitesimal rotation
 
-Infinitessimal rotation
+Infinitesimal rotation
 :::
 
-The Noether theorem result for rotational-invariance about an axis also can be derived using cartesian coordinates as shown below. As discussed in appendix $19.4$, it is necessary to limit discussion of rotation to infinitessimal rotation angles in order to represent the rotation by a vector. Consider an infinitessimal rotation $\delta \theta$ about some axis, which is a vector. As illustrated in the adjacent figure, this can be expressed as
+The Noether theorem result for rotational-invariance about an axis also can be derived using cartesian coordinates as shown below. As discussed in appendix $19.4$, it is necessary to limit discussion of rotation to infinitesimal rotation angles in order to represent the rotation by a vector. Consider an infinitesimal rotation $\delta \theta$ about some axis, which is a vector. As illustrated in the adjacent figure, this can be expressed as
 
 $$
 \delta \mathbf{r}=\delta \mathbf{\theta }\times \mathbf{r} \nonumber
@@ -276,7 +276,7 @@ $$
 \mathbf{\dot{p}}\cdot \delta \mathbf{r}+\mathbf{p}\cdot \delta \mathbf{\dot{r }}=0\nonumber
 $$
 
-For an infinitessimal rotation $\delta \theta ,$then $\delta r=\delta \theta \times r\,$ and $\delta \dot{r}=\delta \theta \times \dot{r}$. Therefore
+For an infinitesimal rotation $\delta \theta ,$then $\delta r=\delta \theta \times r\,$ and $\delta \dot{r}=\delta \theta \times \dot{r}$. Therefore
 
 $$
 \mathbf{\dot{p}}\cdot \left( \delta \mathbf{\theta }\times \mathbf{r}\right) +\mathbf{p}\cdot \left( \delta \mathbf{\theta }\times \mathbf{\dot{r}} \right) =0\nonumber
@@ -288,7 +288,7 @@ $$
 \begin{aligned} \delta \mathbf{\theta }\cdot \left( \mathbf{r}\times \mathbf{\dot{p}}\right) +\delta \mathbf{\theta }\cdot \left( \mathbf{\dot{r}}\times \mathbf{p} \right) &=&0 \\ \delta \mathbf{\theta }\cdot \left[ \left( \mathbf{r}\times \mathbf{\dot{p}} \right) +\left( \mathbf{\dot{r}}\times \mathbf{p}\right) \right] &=&0 \\ \delta \mathbf{\theta }\cdot \frac{d}{dt}\left( \mathbf{r}\times \mathbf{p} \right) &=&0\end{aligned}
 $$
 
-Because the infinitessimal angle $\delta \theta$ is arbitrary, then the time derivative
+Because the infinitesimal angle $\delta \theta$ is arbitrary, then the time derivative
 
 $$
 \frac{d}{dt}\left( \mathbf{r}\times \mathbf{p}\right) =0\nonumber
@@ -300,7 +300,7 @@ $$
 \text{Angular momentum = }\left( \mathbf{r}\times \mathbf{p}\right) =\text{ constant}\nonumber
 $$
 
-This proves the Noether’ theorem that the angular momentum about any axis is conserved if the Lagrangian is rotationally invariant about that axis
+This proves the Noether’s theorem that the angular momentum about any axis is conserved if the Lagrangian is rotationally invariant about that axis
 ::::
 
 ::::{admonition} Example 7.4.1: Diatomic molecules and axially-symmetric nuclei
@@ -966,7 +966,7 @@ $$
 
    $M$
 
-   rests on a horizontal plane and an identical cylinder rests on it touching along the top of the first cylinder with the axes of both cylinders parallel. The upper cylinder is given an infinitessimal displacement so that both cylinders roll without slipping in the directions shown by the arrows.
+   rests on a horizontal plane and an identical cylinder rests on it touching along the top of the first cylinder with the axes of both cylinders parallel. The upper cylinder is given an infinitesimal displacement so that both cylinders roll without slipping in the directions shown by the arrows.
 
    1. Find Lagrangian for this system
 

@@ -62,9 +62,9 @@ There are two especially convenient choices for the fixed point $O$. If no point
 :::{figure} ../images/lt-21220-11.3.1.png
 :label: fig-13-3-1
 :enumerator: 13.3.1
-:alt: Infinitessimal displacement dr^{\prime} in the primed frame, broken into a part dr^R due to rotation of the primed frame plus a part dr^{\prime\prime} due to displacement with respect to this rotating frame.
+:alt: Infinitesimal displacement dr^{\prime} in the primed frame, broken into a part dr^R due to rotation of the primed frame plus a part dr^{\prime\prime} due to displacement with respect to this rotating frame.
 
-Infinitessimal displacement $dr^{\prime}$ in the primed frame, broken into a part $dr^R$ due to rotation of the primed frame plus a part $dr^{\prime\prime}$ due to displacement with respect to this rotating frame.
+Infinitesimal displacement $dr^{\prime}$ in the primed frame, broken into a part $dr^R$ due to rotation of the primed frame plus a part $dr^{\prime\prime}$ due to displacement with respect to this rotating frame.
 :::
 
 Consider a rigid body composed of $N$ particles of mass $m_{\alpha}$ where $\alpha = 1, 2, 3, \dots N$. As discussed in chapter $12.4$, if the body rotates with an instantaneous angular velocity $\boldsymbol{\omega}$ about some fixed point, with respect to the body-fixed coordinate system, and this point has an instantaneous translational velocity $\mathbf{V}$ with respect to the fixed (inertial) coordinate system, see [Figure 13.3.1](#fig-13-3-1), then the instantaneous velocity $\mathbf{v}_{\alpha}$ of the $\alpha^{th}$ particle in the fixed frame of reference is given by
@@ -293,7 +293,7 @@ $$
 \begin{align}(I_{11} − I_1) \omega_{11} + I_{12}\omega_{21} + I_{13}\omega_{31} = 0 \\ I_{21}\omega_{11} + (I_{22} − I_1) \omega_{21} + I_{23}\omega_{31} = 0 \notag \\ I_{31}\omega_{11} + I_{32}\omega_{21} + (I_{33} − I_1) \omega_{31} = 0 \notag \end{align}
 $$
 
-These equations are solved for the ratios $\omega_{11} : \omega_{21} : \omega_{31}$ which are the direction numbers of the principle axis system corresponding to solution $I_1$. This principal axis system is defined relative to the original coordinate system. This procedure is repeated to find the orientation of the other two mutually perpendicular principal axes.
+These equations are solved for the ratios $\omega_{11} : \omega_{21} : \omega_{31}$ which are the direction numbers of the principal axis system corresponding to solution $I_1$. This principal axis system is defined relative to the original coordinate system. This procedure is repeated to find the orientation of the other two mutually perpendicular principal axes.
 
 ## 13.8: Parallel-Axis Theorem
 
@@ -522,7 +522,7 @@ $$
 \boldsymbol{\hat{\omega}} \cdot \mathbf{\hat{e}}_1 = 0 \notag
 $$
 
-that is, any direction of $\hat{e}_2$ that is perpendicular to $\hat{e}_1$ is acceptable. In other words; any two orthogonal unit vectors $\hat{e}_2$ and $\hat{e}_3$ that are perpendicular to $\hat{e}_1$ are acceptable. This ambiguity exists whenever two eigenvalues are equal; the three principal axes are only uniquely defined if all three eigenvalues are different. The same ambiguity exist when all three eigenvalues are identical as occurs for the principal moments of inertia about the center-of-mass of a uniform solid cube. This explains why the principal moment of inertia for the diagonal of the cube, that passes through the center of mass, has the same moment as when the principal axes pass through the center of the faces of the cube.
+that is, any direction of $\hat{e}_2$ that is perpendicular to $\hat{e}_1$ is acceptable. In other words; any two orthogonal unit vectors $\hat{e}_2$ and $\hat{e}_3$ that are perpendicular to $\hat{e}_1$ are acceptable. This ambiguity exists whenever two eigenvalues are equal; the three principal axes are only uniquely defined if all three eigenvalues are different. The same ambiguity exists when all three eigenvalues are identical as occurs for the principal moments of inertia about the center-of-mass of a uniform solid cube. This explains why the principal moment of inertia for the diagonal of the cube, that passes through the center of mass, has the same moment as when the principal axes pass through the center of the faces of the cube.
 ::::
 
 ## 13.9: Perpendicular-axis Theorem for Plane Laminae
@@ -663,7 +663,7 @@ where $\boldsymbol{\omega}$ is the angular velocity, $\{\mathbf{I}\}$ the inerti
 
 Two important consequences of Equation [13.55](#eq-13-55) are that:
 
-- The angular momentum $\mathbf{L}$ and angular velocity $\boldsymbol{\omega}$ are not necessarily colinear.
+- The angular momentum $\mathbf{L}$ and angular velocity $\boldsymbol{\omega}$ are not necessarily collinear.
 
 - In general the Principal axis system of the rotating rigid body is not aligned with either the angular momentum or angular velocity vectors.
 
@@ -678,7 +678,7 @@ $$
 \begin{align*} \mathbf{L} &= \{\mathbf{I}\} \cdot \boldsymbol{\omega} \\[4pt] &= \frac{1}{6} Mb^2\omega\begin{pmatrix} 1&0&0\\ 0&1&0\\ 0&0&1 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 0\\ 0\end{pmatrix} \\[4pt] & = \frac{1}{6} Mb^2\omega \begin{pmatrix} 1 \\ 0\\ 0\end{pmatrix}\end{align*}
 $$
 
-This shows that $\mathbf{L}$ and $\boldsymbol{\omega}$ are colinear and thus the $x$ axis is a principal axis. By symmetry, the $y$ and $z$ body fixed axis also must be principal axes.
+This shows that $\mathbf{L}$ and $\boldsymbol{\omega}$ are collinear and thus the $x$ axis is a principal axis. By symmetry, the $y$ and $z$ body fixed axis also must be principal axes.
 
 Consider that the body is rotated about a diagonal of the cube for which the center of mass will be on the rotation axis. Then the angular velocity vector is written as $\boldsymbol{\omega} = \omega \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$ where the components of $\omega_x = \omega_y = \omega_z = \omega \frac{1}{\sqrt{3}}$ with the angular velocity magnitude $\sqrt{ \omega^2_x + \omega^2_y + \omega^2_z} = \omega$.
 
@@ -686,7 +686,7 @@ $$
 \begin{align*} \mathbf{L} &= \{\mathbf{I}\} \cdot \boldsymbol{\omega} \\[4pt] &= \frac{1}{6} Mb^2\omega \frac{1}{\sqrt{3}} \begin{pmatrix} 1&0&0\\ 0&1&0\\ 0&0&1 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 1\\ 1 \end{pmatrix} \\[4pt] &= \frac{1}{6} Mb^2\omega \frac{1}{\sqrt{3}} \begin{pmatrix} 1 \\ 1\\ 1\end{pmatrix} \\[4pt] &= \frac{1}{6}Mb^2 \boldsymbol{\omega} \end{align*}
 $$
 
-Note that $\mathbf{L}$ and $\boldsymbol{\omega}$ again are colinear showing it also is a principal axis. Moreover, the magnitude of $\mathbf{L}$ is identical for orientations of the rotation axes $\omega$ passing through the center of mass when centered on either one face, or the diagonal, of the cube implying that the principal moments of inertia about these axes are identical. This illustrates the important property that, when the three principal moments of inertia are identical, then any orientation of the coordinate system is an equally good principal axis system. That is, this corresponds to the spherical top where all orientations are principal axes, not just along the obvious symmetry axes.
+Note that $\mathbf{L}$ and $\boldsymbol{\omega}$ again are collinear showing it also is a principal axis. Moreover, the magnitude of $\mathbf{L}$ is identical for orientations of the rotation axes $\omega$ passing through the center of mass when centered on either one face, or the diagonal, of the cube implying that the principal moments of inertia about these axes are identical. This illustrates the important property that, when the three principal moments of inertia are identical, then any orientation of the coordinate system is an equally good principal axis system. That is, this corresponds to the spherical top where all orientations are principal axes, not just along the obvious symmetry axes.
 ::::
 
 ::::{admonition} Example 13.11.2: Rotation about the corner of the cube
@@ -706,13 +706,13 @@ $$
 \begin{align*} \mathbf{L} &= \{\mathbf{I}\} \cdot \boldsymbol{\omega} \\[4pt] &= \frac{1}{12} Mb^2\omega \frac{1}{\sqrt{3}} \begin{pmatrix} +8 & -3 & -3 \\ -3 & +8 & -3 \\ -3 & -3 & +8 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} \\[4pt] &= \frac{1}{12} Mb^2 \omega \frac{1}{\sqrt{3}} \begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix} \\[4pt] &= \frac{1}{6}Mb^2\boldsymbol{\omega}\end{align*} \nonumber
 $$
 
-This is a principal axis since $\mathbf{L}$ and $\omega$ again are colinear and the angular momentum is the same as for any axis through the center of mass of a uniform solid cube due to the high symmetry of the cube. If the angular velocity is perpendicular to the diagonal of the cube, then, for either of these perpendicular axes, the relation between $L$ and $\omega$ is given by
+This is a principal axis since $\mathbf{L}$ and $\omega$ again are collinear and the angular momentum is the same as for any axis through the center of mass of a uniform solid cube due to the high symmetry of the cube. If the angular velocity is perpendicular to the diagonal of the cube, then, for either of these perpendicular axes, the relation between $L$ and $\omega$ is given by
 
 $$
 \begin{align*} \mathbf{L} &= \frac{1}{12} Mb^2\omega \frac{1}{\sqrt{2}} \begin{pmatrix} +8 & -3 & -3 \\ -3 & +8 & -3 \\ -3 & -3 & +8 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ +1 \\ 0 \end{pmatrix} \\[4pt] &= \frac{1}{12} Mb^2 \omega \frac{1}{\sqrt{2}} \begin{pmatrix} -11 \\ +11 \\ 0 \end{pmatrix} \\[4pt] &= \frac{11}{12}Mb^2 \omega \begin{pmatrix} -1 \\ +1 \\ 0 \end{pmatrix} \end{align*}
 $$
 
-Note that this must be a principal axis for rotation about a corner of the cube since $\mathbf{L}$ and $\boldsymbol{\omega}$ are colinear. The angular momentum is the same for both possible orientations of $\omega$ that are perpendicular to the diagonal through the center of mass. Diagonalizing the inertia tensor in example $(13.8.2)$ also gave the above result with the symmetry axis along the diagonal of the cube.
+Note that this must be a principal axis for rotation about a corner of the cube since $\mathbf{L}$ and $\boldsymbol{\omega}$ are collinear. The angular momentum is the same for both possible orientations of $\omega$ that are perpendicular to the diagonal through the center of mass. Diagonalizing the inertia tensor in example $(13.8.2)$ also gave the above result with the symmetry axis along the diagonal of the cube.
 
 This example illustrates that it is not necessary to diagonalize the inertia tensor matrix to obtain the principal axes. The corner of the cube has three mutually perpendicular principal axes independent of the choice of a body-fixed coordinate frame. The advantage of the principal axis coordinate frame is that the inertia tensor is diagonal making evaluation of the angular momentum trivial. That is, there is no physics associated with the orientation chosen for the body-fixed coordinate frame, this frame only determines the ratio of the components of the inertia tensor along the chosen coordinates. Note that, if a body has an obvious symmetry, then intuition is a powerful way to identify the principal axis frame.
 ::::
@@ -865,7 +865,7 @@ $$
 \{\boldsymbol{\lambda}_{\phi} \} = \begin{pmatrix} \cos \phi & \sin \phi & 0 \\ − \sin \phi & \cos \phi & 0 \\ 0 & 0 & 1 \end{pmatrix}
 $$
 
-This leads to the intermediate coordinate system $(\mathbf{n}, \mathbf{y}^{\prime} , \mathbf{z})$ where the rotated $\mathbf{x}$ axis now is colinear with the $\mathbf{n}$ axis of the intermediate frame, that is, the *line of nodes*.
+This leads to the intermediate coordinate system $(\mathbf{n}, \mathbf{y}^{\prime} , \mathbf{z})$ where the rotated $\mathbf{x}$ axis now is collinear with the $\mathbf{n}$ axis of the intermediate frame, that is, the *line of nodes*.
 
 $$
 (\mathbf{n}, \mathbf{y}^{\prime} , \mathbf{z}) = \{\boldsymbol{\lambda}_{\phi} \} \cdot (\mathbf{x}, \mathbf{y}, \mathbf{z})
@@ -881,7 +881,7 @@ $$
 (\mathbf{n}, \mathbf{y}^{\prime} , \mathbf{z}) \cdot \lambda_{\theta} \rightarrow (\mathbf{n}, \mathbf{y}^{\prime\prime}, \mathbf{3})
 $$
 
-is in a right-handed direction through the angle $\theta$ about the $\mathbf{\hat{n}}$ axis (line of nodes) so that the “$z$” axis becomes colinear with the body-fixed $\mathbf{\hat{3}}$ axis. Because the rotation now is in the $\mathbf{\hat{z}}−\mathbf{\hat{3}}$ plane, the transformation matrix is
+is in a right-handed direction through the angle $\theta$ about the $\mathbf{\hat{n}}$ axis (line of nodes) so that the “$z$” axis becomes collinear with the body-fixed $\mathbf{\hat{3}}$ axis. Because the rotation now is in the $\mathbf{\hat{z}}−\mathbf{\hat{3}}$ plane, the transformation matrix is
 
 $$
 \{\boldsymbol{\lambda}_{\theta} \} = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos \theta & \sin \theta \\ 0 & − \sin \theta & \ cos \theta \end{pmatrix}
@@ -974,7 +974,7 @@ $$
 
 ### Angular velocity $\omega$
 
-It is useful to relate the rigid-body equations of motion in the space-fixed $(\mathbf{\hat{x}}, \mathbf{\hat{y}},\mathbf{\hat{z}})$ coordinate system to those in the body-fixed $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$ coordinate system where the principal axis inertia tensor is defined. It was shown in appendix $19.4$ that an infinitessimal rotation can be represented by a vector. Thus the time derivatives of these rotation angles can be associated with the components of the angular velocity $\boldsymbol{\omega}$, where the *precession* $\omega_{\phi} = \dot{\phi}$, the *nutation* $\omega_{\theta} = \dot{\theta}$, and the *spin* $\omega_{\psi} = \dot{\psi}$. Unfortunately the coordinates $(\phi , \theta , \psi)$ are with respect to mixed coordinate frames and thus are not orthogonal axes. That is, the Euler angular velocities are expressed in different coordinate frames, where the *precession* $\dot{\phi}$ is around the space-fixed $\mathbf{\hat{z}}$ axis measured relative to the $\mathbf{\hat{x}}$-axis, the *spin* $\dot{\psi}$ is around the body-fixed $\mathbf{\hat{e}}_3$ axis relative to the rotating line-of-nodes, and the *nutation* $\dot{\theta}$ is the angular velocity between the $\mathbf{\hat{z}}$ and $\mathbf{\hat{e}}_3$ axes and points along the instantaneous line-of-nodes in the $\mathbf{\hat{e}}_3 \times \mathbf{\hat{z}}$ direction. By reference to Figure $13.13.1$ it can be seen that the components along the body-fixed axes are as given in Table 13.14.1.
+It is useful to relate the rigid-body equations of motion in the space-fixed $(\mathbf{\hat{x}}, \mathbf{\hat{y}},\mathbf{\hat{z}})$ coordinate system to those in the body-fixed $(\mathbf{\hat{e}}_1,\mathbf{\hat{e}}_2,\mathbf{\hat{e}}_3)$ coordinate system where the principal axis inertia tensor is defined. It was shown in appendix $19.4$ that an infinitesimal rotation can be represented by a vector. Thus the time derivatives of these rotation angles can be associated with the components of the angular velocity $\boldsymbol{\omega}$, where the *precession* $\omega_{\phi} = \dot{\phi}$, the *nutation* $\omega_{\theta} = \dot{\theta}$, and the *spin* $\omega_{\psi} = \dot{\psi}$. Unfortunately the coordinates $(\phi , \theta , \psi)$ are with respect to mixed coordinate frames and thus are not orthogonal axes. That is, the Euler angular velocities are expressed in different coordinate frames, where the *precession* $\dot{\phi}$ is around the space-fixed $\mathbf{\hat{z}}$ axis measured relative to the $\mathbf{\hat{x}}$-axis, the *spin* $\dot{\psi}$ is around the body-fixed $\mathbf{\hat{e}}_3$ axis relative to the rotating line-of-nodes, and the *nutation* $\dot{\theta}$ is the angular velocity between the $\mathbf{\hat{z}}$ and $\mathbf{\hat{e}}_3$ axes and points along the instantaneous line-of-nodes in the $\mathbf{\hat{e}}_3 \times \mathbf{\hat{z}}$ direction. By reference to Figure $13.13.1$ it can be seen that the components along the body-fixed axes are as given in Table 13.14.1.
 
 | Precession $\dot{\phi}$ | Nutation $\dot{\theta}$ | Spin $\dot{\psi}$ |
 | --- | --- | --- |
@@ -1177,7 +1177,7 @@ $$
 \frac{d}{dt} I_3\omega_3 − I_1\omega_1\omega_2 + I_2\omega_2 (−\omega_1) = N_3
 $$
 
-since the $\psi$ and $\widehat{\mathbf{e}_3}$ axes are colinear. This can be rewritten as
+since the $\psi$ and $\widehat{\mathbf{e}_3}$ axes are collinear. This can be rewritten as
 
 $$
 I_3\dot{\omega}_3 − (I_1 − I_2) \omega_1\omega_2 = N_3
@@ -1251,7 +1251,7 @@ The Hamiltonian equations of motion are expressed in terms of the Euler angles p
 
 ### Euler's equations of motion
 
-There are many situations where one has rigid-body motion free of external torques, that is, $\mathbf{N} = 0$. The tumbling motion of a jugglers baton, a diver, a rotating galaxy, or a frisbee, are examples of rigid-body rotation. For torque-free rotation, the body will rotate about the center of mass, and thus the inertia tensor with respect to the center of mass is required. An inertially-symmetric rigid body has two identical principal moments of inertia with $I_1 = I_2 \neq I_3$, and provides a simple example that illustrates the underlying motion. The force-free Euler equations for the symmetric body in the body-fixed principal axis system are given by
+There are many situations where one has rigid-body motion free of external torques, that is, $\mathbf{N} = 0$. The tumbling motion of a juggler's baton, a diver, a rotating galaxy, or a frisbee, are examples of rigid-body rotation. For torque-free rotation, the body will rotate about the center of mass, and thus the inertia tensor with respect to the center of mass is required. An inertially-symmetric rigid body has two identical principal moments of inertia with $I_1 = I_2 \neq I_3$, and provides a simple example that illustrates the underlying motion. The force-free Euler equations for the symmetric body in the body-fixed principal axis system are given by
 
 $$
 \begin{align} (I_2 − I_3) \omega_2\omega_3 − I_1\dot{\omega}_1 &= 0 \tag{13.111} \label{eq-13-111} \\[4pt] (I_3 − I_1) \omega_3\omega_1 − I_2\dot{\omega}_2 &= 0 \tag{13.112} \\[4pt] I_3\dot{\omega}_3 &= 0 \tag{13.113} \end{align}
@@ -1345,7 +1345,7 @@ $$
 
 since $I_1 = I_2$ for the symmetric rotor. Because $\mathbf{L} \cdot \boldsymbol{\omega} \times \widehat{\mathbf{e}_3} = 0$ for a symmetric top then $\mathbf{L}$, $\boldsymbol{\omega}$ and $\widehat{\mathbf{e}_3}$ are coplanar.
 
-[Figure 13.20.2](#fig-13-20-2) shows the geometry of the motion for both oblate and prolate axially-deformed bodies. To an observer in the space-fixed inertial frame, the angular velocity $\boldsymbol{\omega}$ traces out a cone that precesses with angular velocity $\Omega$ around the space fixed $\mathbf{L}$ axis called the space cone. For convenience, [Figure 13.20.2](#fig-13-20-2) assumes that $\mathbf{L}$ and the space-fixed inertial frame $\hat{\mathbf{z}}$ axis are colinear. The angular velocity $\boldsymbol{\omega}$ also traces out the body cone as it precesses about the body-fixed $\hat{\mathbf{e}}_3$ axis. Since $\mathbf{L}$, $\boldsymbol{\omega}$ and $\widehat{\mathbf{e}_3}$ are coplanar, then the $\boldsymbol{\omega}$ vector is at the intersection of the space and body cones as the body cone rolls around the space cone. That is, the space and body cones have one generatrix in common which coincides with $\boldsymbol{\omega}$. As shown in [Figure 13.20.2b](#fig-13-20-2), for a needle the body cone appears to roll without slipping on the outside of the space cone at the precessional velocity of $\Omega = −\omega$. By contrast, as shown in [Figure 13.20.2a](#fig-13-20-2) for an oblate (disc-shaped) symmetric top the space cone rolls inside the body cone and the precession $\Omega$ is faster than $\omega$.
+[Figure 13.20.2](#fig-13-20-2) shows the geometry of the motion for both oblate and prolate axially-deformed bodies. To an observer in the space-fixed inertial frame, the angular velocity $\boldsymbol{\omega}$ traces out a cone that precesses with angular velocity $\Omega$ around the space fixed $\mathbf{L}$ axis called the space cone. For convenience, [Figure 13.20.2](#fig-13-20-2) assumes that $\mathbf{L}$ and the space-fixed inertial frame $\hat{\mathbf{z}}$ axis are collinear. The angular velocity $\boldsymbol{\omega}$ also traces out the body cone as it precesses about the body-fixed $\hat{\mathbf{e}}_3$ axis. Since $\mathbf{L}$, $\boldsymbol{\omega}$ and $\widehat{\mathbf{e}_3}$ are coplanar, then the $\boldsymbol{\omega}$ vector is at the intersection of the space and body cones as the body cone rolls around the space cone. That is, the space and body cones have one generatrix in common which coincides with $\boldsymbol{\omega}$. As shown in [Figure 13.20.2b](#fig-13-20-2), for a needle the body cone appears to roll without slipping on the outside of the space cone at the precessional velocity of $\Omega = −\omega$. By contrast, as shown in [Figure 13.20.2a](#fig-13-20-2) for an oblate (disc-shaped) symmetric top the space cone rolls inside the body cone and the precession $\Omega$ is faster than $\omega$.
 
 Since no external torques are acting for torque-free motion, then the magnitude and direction of the total angular momentum are conserved. The description of the motion is simplified if $\mathbf{L}$ is taken to be along the space-fixed $\hat{\mathbf{z}}$ axis, then the Euler angle $\theta$ is the angle between the body-fixed basis vector $\hat{\mathbf{e}}_3$ and space-fixed basis vector $\hat{\mathbf{z}}$. If at some instant in the body frame, it is assumed that $\widehat{\mathbf{e}_2}$ is aligned in the plane of $\mathbf{L}$, $\boldsymbol{\omega}$ and $\widehat{\mathbf{e}_3}$, then
 
@@ -1411,7 +1411,7 @@ $$
 
 Thus the angular momentum for a torque-free symmetric rigid rotor comprises two components, one being the perpendicular component that precesses around $\hat{\mathbf{e}}_3$, and the other is $L_3$.
 
-In the space-fixed frame assume that the $\hat{\mathbf{z}}$ axis is colinear with $\mathbf{L}$. Then taking the scalar product of $\hat{\mathbf{e}}_3$ and $\mathbf{L}$, using Equation [13.126](#eq-13-126) gives
+In the space-fixed frame assume that the $\hat{\mathbf{z}}$ axis is collinear with $\mathbf{L}$. Then taking the scalar product of $\hat{\mathbf{e}}_3$ and $\mathbf{L}$, using Equation [13.126](#eq-13-126) gives
 
 $$
 \begin{align} L_3 &= \hat{\mathbf{e}}_3 \cdot \mathbf{L} \\[4pt] &=I_1\hat{\mathbf{e}}_3 \cdot \hat{\mathbf{e}}_3 \times \left(\frac{d\hat{\mathbf{e}}_3}{dt}\right)_{space} + I_3\omega_3\hat{\mathbf{e}}_3 \cdot \hat{\mathbf{e}}_3 \tag{13.133} \label{eq-13-133}\end{align}
@@ -1722,7 +1722,7 @@ Stability of rigid-body rotation has broad applications to rotation of satellite
 Principal rotation axes for the center of mass of a tennis racket. The 1 and 2 -axes are in the plane of the racket head and the 3 axis is perpendicular to the plane of the racket head.
 :::
 
-A tennis racquet is an asymmetric body that exhibits the above rotational behavior. Assume that the head of a tennis racquet is a uniform thin circular disk of radius $R$ and mass $M$ which is attached to a cylindrical handle of diameter $r = \frac{R}{10}$, length $2R$, and mass $M$ as shown in the figure. The principle moments of inertia about the three axes through the center-of-mass can be calculated by addition of the moments for the circular disk and the cylindrical handle and using both the parallel-axis and the perpendicular-axis theorems.
+A tennis racquet is an asymmetric body that exhibits the above rotational behavior. Assume that the head of a tennis racquet is a uniform thin circular disk of radius $R$ and mass $M$ which is attached to a cylindrical handle of diameter $r = \frac{R}{10}$, length $2R$, and mass $M$ as shown in the figure. The principal moments of inertia about the three axes through the center-of-mass can be calculated by addition of the moments for the circular disk and the cylindrical handle and using both the parallel-axis and the perpendicular-axis theorems.
 
 | Axis | Head | Handle | Racquet |
 | --- | --- | --- | --- |
@@ -1730,7 +1730,7 @@ A tennis racquet is an asymmetric body that exhibits the above rotational behavi
 | 2 | $\frac{1}{4} MR^2+0= \frac{1}{4} MR^2$ | $\frac{1}{200} MR^2$ | $\frac{51}{200} MR^2$ |
 | 3 | $\frac{1}{2} MR^2+MR^2= \frac{3}{2} MR^2$ | $\frac{4}{3} MR^2$ | $\frac{17}{6} MR^2$ |
 
-Note that $I_{11} : I_{22} : I_{33} = 2.5833 : 0.2550 : 2.8333$. Inserting these principle moments of inertia into equations [13.171](#eq-13-171)-[13.173](#eq-13-173) gives the following precession frequencies
+Note that $I_{11} : I_{22} : I_{33} = 2.5833 : 0.2550 : 2.8333$. Inserting these principal moments of inertia into equations [13.171](#eq-13-171)-[13.173](#eq-13-173) gives the following precession frequencies
 
 $$
 \Omega_1= i0 .8976\omega_1 \quad \Omega_2= 0 .9056\omega_2 \quad \Omega_3= 0 .9892\omega_3 \notag
@@ -1744,7 +1744,7 @@ The imaginary precession frequency $\Omega_1$ about the 1 axis implies unstable 
 
 Some nuclei and molecules have average shapes that have significant asymmetric deformation leading to interesting quantal analogs of the rotational properties of an asymmetrically-deformed rigid body. The major difference between a quantal and a classical rotor is that the energies, and angular momentum are quantized, rather than being continuously variable quantities. Otherwise, the quantal rotors exhibit general features similar to the classical analog. Studies [Cli86] of the rotational behavior of asymmetrically-deformed nuclei exploit three aspects of classical mechanics, namely classical Coulomb trajectories, rotational invariants, and the properties of ellipsoidal rigid-bodies.
 
-Ellipsoidal deformation can be specified by the dimensions along each of the three principle axes. Bohr and Mottelson parameterized the ellipsoidal deformation in terms of three parameters, $R_0$ which is the radius of the equivalent sphere, $\beta$ which is a measure of the magnitude of the ellipsoidal deformation from the sphere, and $\gamma$ which specifies the deviation of the shape from axial symmetry. The ellipsoidal intrinsic shape can be expressed in terms of the deviation from the equivalent sphere by the equation
+Ellipsoidal deformation can be specified by the dimensions along each of the three principal axes. Bohr and Mottelson parameterized the ellipsoidal deformation in terms of three parameters, $R_0$ which is the radius of the equivalent sphere, $\beta$ which is a measure of the magnitude of the ellipsoidal deformation from the sphere, and $\gamma$ which specifies the deviation of the shape from axial symmetry. The ellipsoidal intrinsic shape can be expressed in terms of the deviation from the equivalent sphere by the equation
 
 $$
 \delta R(\theta , \phi ) = R(\theta , \phi ) − R_0 = R_0 \sum^{\mu +2}_{ \mu =−2} \alpha^*_{2 \mu} Y_{2 \mu} (\theta , \phi ) \label{eq-13-alpha} \tag{a}
@@ -2029,7 +2029,7 @@ $$
 
 where $\Omega$ designates the angular velocity of the rotating disk, while $\boldsymbol{\omega}$ designates the rotation of the moving frame $(\mathbf{1},\mathbf{2},\mathbf{3})$.
 
-The principle moments of inertia of a thin circular disk are related by the perpendicular axis theorem (chapter $13.9$)
+The principal moments of inertia of a thin circular disk are related by the perpendicular axis theorem (chapter $13.9$)
 
 $$
 I_1 + I_2 = I_3 \notag

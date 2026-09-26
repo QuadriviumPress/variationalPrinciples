@@ -19,7 +19,7 @@ $$
 S=\int_{t_{i}}^{t_{f}}L(\mathbf{q,\dot{q},}t\mathbf{)}dt
 $$
 
-The scalar action $S,$ is a functional of the Lagrangian $L(\mathbf{q,\dot{q} ,}t\mathbf{)}$, integrated between an initial time $t_{i}$ and final time $t_{f}$. In principle, higher order time derivatives of the generalized coordinates could be included, but most systems in classical mechanics are described adequately by including only the generalized coordinates, plus their velocities. The definition of the action functional allows for more general Lagrangians than the standard Lagrangian $L(\mathbf{q,\dot{q},}t)=T( \mathbf{\dot{q},}t)-U(\mathbf{q},t)$ that has been used throughout chapters $5-8$. Hamilton stated that the actual trajectory of a mechanical system is that given by requiring that the action functional is stationary with respect to change of the variables. The action functional is stationary when the variational principle can be written in terms of a virtual infinitessimal displacement, $\delta ,$ to be
+The scalar action $S,$ is a functional of the Lagrangian $L(\mathbf{q,\dot{q} ,}t\mathbf{)}$, integrated between an initial time $t_{i}$ and final time $t_{f}$. In principle, higher order time derivatives of the generalized coordinates could be included, but most systems in classical mechanics are described adequately by including only the generalized coordinates, plus their velocities. The definition of the action functional allows for more general Lagrangians than the standard Lagrangian $L(\mathbf{q,\dot{q},}t)=T( \mathbf{\dot{q},}t)-U(\mathbf{q},t)$ that has been used throughout chapters $5-8$. Hamilton stated that the actual trajectory of a mechanical system is that given by requiring that the action functional is stationary with respect to change of the variables. The action functional is stationary when the variational principle can be written in terms of a virtual infinitesimal displacement, $\delta ,$ to be
 
 $$
 \delta S=\delta \int_{t_{i}}^{t_{f}}L(\mathbf{q,\dot{q},}t\mathbf{)}dt=0
@@ -49,7 +49,7 @@ $$
 S_{A}=\int_{t_{i}}^{t_{f}}L(\mathbf{q}(t)\mathbf{, \dot{q}}(t)\mathbf{,}t)dt \tag{9.3} \label{eq-9-3}
 $$
 
-As used in chapter $5.2,$ a family of neighboring paths is defined by adding an infinitessimal fraction $\epsilon$ of a continuous, well-behaved neighboring function $\eta _{j}$ where $\epsilon =0$ for the extremum path. That is,
+As used in chapter $5.2,$ a family of neighboring paths is defined by adding an infinitesimal fraction $\epsilon$ of a continuous, well-behaved neighboring function $\eta _{j}$ where $\epsilon =0$ for the extremum path. That is,
 
 $$
 q_{j}(t,\epsilon )=q_{j}(t,0)+\epsilon \eta _{j}(t)\tag{9.4} \label{eq-9-4}

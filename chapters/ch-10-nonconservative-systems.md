@@ -70,7 +70,7 @@ $$
 \sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}m_{ij}\ddot{q}_{j}\dot{q} _{i}dt+\sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}b_{ij}\dot{q}_{j}\dot{q} _{i}dt+\sum_{i=1}^{n}\sum_{j=1}^{n}\int_{0}^{t}c_{ij}q_{j}\dot{q} _{i}dt=\sum_{i}^{n}\int_{0}^{t}Q_{i}(t)\dot{q}_{i}dt
 $$
 
-The right-hand term is the total energy supplied to the system by the external generalized forces $Q_{i}(t)$ at the time $t$. The first time-integral term on the left-hand side is the total kinetic energy, while the third time-integral term equals the potential energy. The second integral term on the left is defined to equal $2\mathcal{R}(\mathbf{\dot{q}} )$ where Rayeigh’s dissipation function $\mathcal{R}(\mathbf{\dot{q}})$ is defined as
+The right-hand term is the total energy supplied to the system by the external generalized forces $Q_{i}(t)$ at the time $t$. The first time-integral term on the left-hand side is the total kinetic energy, while the third time-integral term equals the potential energy. The second integral term on the left is defined to equal $2\mathcal{R}(\mathbf{\dot{q}} )$ where Rayleigh’s dissipation function $\mathcal{R}(\mathbf{\dot{q}})$ is defined as
 
 $$
 \mathcal{R}(\mathbf{ \dot{q}})\mathcal{\equiv }\frac{1}{2}\sum_{i=1}^{n}\sum_{j=1}^{n}b_{ij}\dot{q }_{i}\dot{q}_{j}
