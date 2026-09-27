@@ -768,9 +768,9 @@ Thus the eccentricity vector $\mathbf{A}$ and angular momentum $\mathbf{L}$ are 
 :::{figure} ../images/lt-21191-9.8.3.png
 :label: fig-11-8-3
 :enumerator: 11.8.3
-:alt: The elliptical trajectory and eccentricity vector \mathbf{A} for two bodies interacting via the inversesquare, central force for eccentricity \epsilon = 0.75. The left plot shows the elliptical spatial trajectory where the semi-major axis is assumed to be on the x-axis and the angular momentum \m…
+:alt: The elliptical trajectory and eccentricity vector \mathbf{A} for two bodies interacting via the inverse-square, central force for eccentricity \epsilon = 0.75. The left plot shows the elliptical spatial trajectory where the semi-major axis is assumed to be on the x-axis and the angular momentum \m…
 
-The elliptical trajectory and eccentricity vector $\mathbf{A}$ for two bodies interacting via the inversesquare, central force for eccentricity $\epsilon = 0.75$. The left plot shows the elliptical spatial trajectory where the semi-major axis is assumed to be on the $x$-axis and the angular momentum $\mathbf{L} =l \hat{\mathbf{z}}$, is out of the page. The force centre is at one foci of the ellipse. The vector coupling relation $\mathbf{A} \equiv (\mathbf{p} \times \mathbf{L}) + (\mu k \hat{\mathbf{r}})$ is illustrated at four points on the spatial trajectory. The right plot is a hodograph of the linear momentum $\mathbf{p}$ for this trajectory. The periapsis is denoted by the number $\mathbf{1}$ and the apoapsis is marked as $\mathbf{3}$ on both plots. Note that the eccentricity vector $\mathbf{A}$ is a constant that points parallel to the major axis towards the perapsis.
+The elliptical trajectory and eccentricity vector $\mathbf{A}$ for two bodies interacting via the inverse-square, central force for eccentricity $\epsilon = 0.75$. The left plot shows the elliptical spatial trajectory where the semi-major axis is assumed to be on the $x$-axis and the angular momentum $\mathbf{L} =l \hat{\mathbf{z}}$, is out of the page. The force center is at one focus of the ellipse. The vector coupling relation $\mathbf{A} \equiv (\mathbf{p} \times \mathbf{L}) + (\mu k \hat{\mathbf{r}})$ is illustrated at four points on the spatial trajectory. The right plot is a hodograph of the linear momentum $\mathbf{p}$ for this trajectory. The periapsis is denoted by the number $\mathbf{1}$ and the apoapsis is marked as $\mathbf{3}$ on both plots. Note that the eccentricity vector $\mathbf{A}$ is a constant that points parallel to the major axis towards the perapsis.
 :::
 
 Hamilton noted the direct connection between the eccentricity vector $\mathbf{A}$ and the eccentricity $\epsilon$ of the conic section orbit. This can be shown by considering the scalar product
@@ -836,7 +836,7 @@ The inverse-square, central, two-body, force is unusual in that it leads to stab
 
 ## 11.9: Isotropic, linear, two-body, central force
 
-Closed orbits occur for the two-dimensional linear oscillator when $\frac{\omega _{x}}{\omega _{y}}$ is a rational fraction as discussed in chapter $3.3$. **Bertrand’s Theorem****states that*the linear oscillator, and the inverse-square law (Kepler problem), are the only two-body central forces that have single-valued, stable, closed orbits of the coupled radial and angular motion.* The invariance of the eccentricity vector was the underlying symmetry leading to single-valued, stable, closed orbits for the Kepler problem. It is interesting to explore the symmetry that leads to stable closed orbits for the harmonic oscillator. For simplicity, this discussion will restrict discussion to the isotropic, harmonic, two-body, central force where $\omega _{x}=\omega _{y}=\omega$, for which the two-body, central force is linear
+Closed orbits occur for the two-dimensional linear oscillator when $\frac{\omega _{x}}{\omega _{y}}$ is a rational fraction as discussed in chapter $3.3$. **Bertrand’s Theorem** *states that the linear oscillator, and the inverse-square law (Kepler problem), are the only two-body central forces that have single-valued, stable, closed orbits of the coupled radial and angular motion.* The invariance of the eccentricity vector was the underlying symmetry leading to single-valued, stable, closed orbits for the Kepler problem. It is interesting to explore the symmetry that leads to stable closed orbits for the harmonic oscillator. For simplicity, this discussion will restrict discussion to the isotropic, harmonic, two-body, central force where $\omega _{x}=\omega _{y}=\omega$, for which the two-body, central force is linear
 
 $$
 \mathbf{F}(r)=k\mathbf{r}\tag{11.98} \label{eq-11-98}
@@ -1406,9 +1406,9 @@ N. B., the above proof assumed that the target size is larger than the cross sec
 :::{figure} ../images/lt-21199-9.12.2.png
 :label: fig-11-12-2
 :enumerator: 11.12.2
-:alt: The equivalent one-body problem for scattering of a reduced mass \mu by a force centre in the centre of mass system.
+:alt: The equivalent one-body problem for scattering of a reduced mass \mu by a force center in the center of mass system.
 
-The equivalent one-body problem for scattering of a reduced mass $\mu$ by a force centre in the centre of mass system.
+The equivalent one-body problem for scattering of a reduced mass $\mu$ by a force center in the center of mass system.
 :::
 
 The differential two-body scattering cross section gives much more detailed information of the scattering force than does the total cross section because of the correlation between the impact parameter and the scattering angle. That is, a measurement of the number of beam particles scattered into a given solid angle as a function of scattering angles $\theta ,\phi$ probes the radial form of the scattering force.

@@ -663,7 +663,7 @@ Solitons were first observed in $1834$ by John Scott Russell ($1808-1882$). Russ
 
 - The waves can travel over long distances at uniform speed.
 
-- The speed of propagation of the wave depends on the size of the wave, with larger waves traveling faster than smaller waves.
+- The speed of propagation of the wave depends on the size of the wave, with larger waves travelling faster than smaller waves.
 
 - The waves maintained their shape when they collided - seemingly passing right through each other.
 

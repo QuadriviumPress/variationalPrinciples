@@ -291,7 +291,7 @@ $$
 \frac{(F_1G_1 − G_1F_1)}{ \{F_1, G_1\}} = \frac{(F_2G_2 − G_2F_2)}{ \{F_2, G_2\} } = \lambda
 $$
 
-Since the left-hand ratio holds for $F_1, G_1$ independent of $F_2, G_2$, and vise versa, then they must equal a constant $\lambda$ that does not depend on $F_1, G_1$, does not depend on $F_2, G_2$, and $\lambda$ must commute with $(F_1G_1 − G_1F_1)$. That is, $\lambda$ must be a constant number independent of these variables.
+Since the left-hand ratio holds for $F_1, G_1$ independent of $F_2, G_2$, and vice versa, then they must equal a constant $\lambda$ that does not depend on $F_1, G_1$, does not depend on $F_2, G_2$, and $\lambda$ must commute with $(F_1G_1 − G_1F_1)$. That is, $\lambda$ must be a constant number independent of these variables.
 
 $$
 (F_1G_1 − G_1F_1) = \lambda \{F_1, G_1\} \equiv \lambda \sum_i \left(\frac{\partial F_1}{ \partial q_i} \frac{\partial G_1 }{\partial p_i} − \frac{\partial F_1 }{\partial p_i }\frac{\partial G_1}{ \partial q_i} \right) \tag{15.38} \label{eq-15-38}
@@ -581,7 +581,7 @@ $$
 ::::{admonition} Example 15.2.4: Wavemotion
 :class: example
 
-Assume that one is dealing with traveling waves of the form $\Psi = Ae^{i( \frac{1}{ m} xp_x−\omega t)}$ for a one-dimensional conservative system of many identical coupled linear oscillators. Then evaluating the following Poisson brackets gives
+Assume that one is dealing with travelling waves of the form $\Psi = Ae^{i( \frac{1}{ m} xp_x−\omega t)}$ for a one-dimensional conservative system of many identical coupled linear oscillators. Then evaluating the following Poisson brackets gives
 
 $$
 \{p_x, H\} = 0 \nonumber

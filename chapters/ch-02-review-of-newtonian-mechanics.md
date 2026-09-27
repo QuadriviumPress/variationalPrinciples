@@ -829,7 +829,7 @@ You may be familiar with this fact for simple harmonic motion where the average 
 **Inverse-square law:** The other interesting case is for the inverse square law $n = −2$ where
 
 $$
-\label{eq-2-inversesquarelaw}\nonumber \tag{n = -2} \langle T \rangle = - \frac{1}{2} \langle U \rangle
+\label{eq-2-inverse-squarelaw}\nonumber \tag{n = -2} \langle T \rangle = - \frac{1}{2} \langle U \rangle
 $$
 
 The Virial theorem is useful for solving problems in that knowing the exponent $n$ of the field makes it possible to write down directly the average total energy in the field. For example, for
@@ -1494,9 +1494,9 @@ Consider a billiard ball of mass $M$ and radius $R$ is pushed by a cue in a dire
 :::{figure} ../images/lt-21098-2.12.7.png
 :label: fig-2-12-7
 :enumerator: 2.12.7
-:alt: Cue pushing a billiard ball horizontally at the height of the centre of rotation of the ball.
+:alt: Cue pushing a billiard ball horizontally at the height of the center of rotation of the ball.
 
-Cue pushing a billiard ball horizontally at the height of the centre of rotation of the ball.
+Cue pushing a billiard ball horizontally at the height of the center of rotation of the ball.
 :::
 
 Since the direction of the cue force passes through the center of mass of the ball, it contributes zero torque to the ball. Thus the initial angular momentum is zero at $t = 0$. The friction force $f$ points opposite to the direction of motion and causes a torque $N_s$ about the center of mass in the direction $\hat{s}$
@@ -2408,12 +2408,12 @@ $$
 \tag{2.4.12} \mathbf{F}_i = \frac{dT_i}{d\mathbf{r}_i} \hspace{4 cm} \int_1^2 \mathbf{F}_i \cdot d\mathbf{r}_i = ( T_2 - T_1) _i
 $$
 
-The conditions that lead to conservation of linear and angular momentum and total mechanical energy were discussed for many-body systems. The important class of conservative forces was shown to apply if the position-dependent force do not depend on time or velocity, and if the work done by a force $\int_1^2 \mathbf{F}_i \cdot d \mathbf{r}_i$ is independent of the path taken between the initial and final locations. The total mechanical energy is a constant of motion when the forces are conservative.
+The conditions that lead to conservation of linear and angular momentum and total mechanical energy were discussed for many-body systems. The important class of conservative forces was shown to apply if the position-dependent forces do not depend on time or velocity, and if the work done by a force $\int_1^2 \mathbf{F}_i \cdot d \mathbf{r}_i$ is independent of the path taken between the initial and final locations. The total mechanical energy is a constant of motion when the forces are conservative.
 
 It was shown that the concept of center of mass of a many-body or finite sized body separates naturally for all three first-order integrals. The center of mass is that point about which
 
 $$
-\tag{Centre of mass definition} \sum_i^n m_i \mathbf{r}_i^\prime = \int \mathbf{r}^\prime \rho dV = 0
+\tag{Center of mass definition} \sum_i^n m_i \mathbf{r}_i^\prime = \int \mathbf{r}^\prime \rho dV = 0
 $$
 
 where $\mathbf{r}_i^\prime$ is the vector defining the location of mass $m_i$ with respect to the center of mass. The concept of center of mass greatly simplifies the description of the motion of finite-sized bodies and many-body systems by separating out the important internal interactions and corresponding underlying physics, from the trivial overall translational motion of a many-body system..
