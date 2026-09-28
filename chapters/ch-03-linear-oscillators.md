@@ -816,11 +816,11 @@ Because of the phases involved in this RLC circuit, at resonance the maximum vol
 
 ## 3.7: Wave equation
 
-Wave motion is a ubiquitous feature in nature. Mechanical wave motion is manifest by transverse waves on fluid surfaces, longitudinal and transverse seismic waves travelling through the Earth, and vibrations of mechanical structures such as suspended cables. Acoustical wave motion occurs on the stretched strings of the violin, as well as the cavities of wind instruments. Electromagnetic wave motion includes wavelengths ranging from $10^5 \ m$ radiowaves, to $10^{-13} \ m \ \gamma$-rays. Matter waves are a prominent feature of quantum physics. All these manifestations of waves exhibit the same general features of wave motion.
+Wave motion is a ubiquitous feature in nature. Mechanical wave motion is manifest by transverse waves on fluid surfaces, longitudinal and transverse seismic waves traveling through the Earth, and vibrations of mechanical structures such as suspended cables. Acoustical wave motion occurs on the stretched strings of the violin, as well as the cavities of wind instruments. Electromagnetic wave motion includes wavelengths ranging from $10^5 \ m$ radiowaves, to $10^{-13} \ m \ \gamma$-rays. Matter waves are a prominent feature of quantum physics. All these manifestations of waves exhibit the same general features of wave motion.
 
 Wave motion occurs for deformable bodies where elastic forces acting between the nearest-neighbor atoms of the body exert time-dependent forces on one another. Chapter $14$ will introduce the collective modes of motion, called the normal modes, of coupled, many-body, linear oscillators which act as independent modes of motion. However, it is useful to introduce wavemotion at this juncture because the equations of wave motion are simple, and wave motion features prominently in several chapters of this book.
 
-Consider a travelling wave in one dimension for a linear system. If the wave is moving, then the wave function $\Psi$ $(x,t)$ describing the shape of the wave, is a function of both $x$ and $t$. The instantaneous amplitude of the wave $\Psi$ $(x,t)$ could correspond to the transverse displacement of a wave on a string, the longitudinal amplitude of a wave on a spring, the pressure of a longitudinal sound wave, the transverse electric or magnetic fields in an electromagnetic wave, a matter wave, etc. If the wave train maintains its shape as it moves, then one can describe the wave train by the function $f(\phi)$ where the coordinate $\phi$ is measured relative to the shape of the wave, that is, it could correspond to the phase of a crest of the wave. Consider that $f(\phi = 0)$ corresponds to a constant phase, e.g. the peak of the travelling pulse, then assuming that the wave travels at a phase velocity $v$ in the $x$ direction and the peak is at $x = 0$ for $t = 0$, then it is at $x = vt$ at time $t$. That is, a point with phase $\phi$ fixed with respect to the waveform shape of the wave profile $f(\phi)$ moves in the $+x$ direction for $\phi = x -vt$ and in $−x$ direction for $\phi = x +vt$.
+Consider a traveling wave in one dimension for a linear system. If the wave is moving, then the wave function $\Psi$ $(x,t)$ describing the shape of the wave, is a function of both $x$ and $t$. The instantaneous amplitude of the wave $\Psi$ $(x,t)$ could correspond to the transverse displacement of a wave on a string, the longitudinal amplitude of a wave on a spring, the pressure of a longitudinal sound wave, the transverse electric or magnetic fields in an electromagnetic wave, a matter wave, etc. If the wave train maintains its shape as it moves, then one can describe the wave train by the function $f(\phi)$ where the coordinate $\phi$ is measured relative to the shape of the wave, that is, it could correspond to the phase of a crest of the wave. Consider that $f(\phi = 0)$ corresponds to a constant phase, e.g. the peak of the traveling pulse, then assuming that the wave travels at a phase velocity $v$ in the $x$ direction and the peak is at $x = 0$ for $t = 0$, then it is at $x = vt$ at time $t$. That is, a point with phase $\phi$ fixed with respect to the waveform shape of the wave profile $f(\phi)$ moves in the $+x$ direction for $\phi = x -vt$ and in $−x$ direction for $\phi = x +vt$.
 
 General wave motion can be described by solutions of a wave equation. The wave equation can be written in terms of the spatial and temporal derivatives of the wave function $\Psi$$(xt)$. Consider the first partial derivatives of $\Psi$$(xt)$ = $f(x \mp vt) = f(\phi)$.
 
@@ -860,7 +860,7 @@ $$
 \tag{3.95} \label{eq-3-95} \frac{\partial^2 \Psi}{\partial x^2} = \frac{1}{v^2} \frac{\partial^2 \Psi}{\partial t^2}
 $$
 
-This *wave equation in one dimension for a linear system* is independent of the sign of the velocity. There are an infinite number of possible shapes of waves both travelling and standing in one dimension, all of these must satisfy this one-dimensional wave equation. The converse is that any function that satisfies this one dimensional wave equation must be a wave in this one dimension.
+This *wave equation in one dimension for a linear system* is independent of the sign of the velocity. There are an infinite number of possible shapes of waves both traveling and standing in one dimension, all of these must satisfy this one-dimensional wave equation. The converse is that any function that satisfies this one dimensional wave equation must be a wave in this one dimension.
 
 The *Wave Equation in three dimensions* is
 
@@ -870,23 +870,23 @@ $$
 
 There are an infinite number of possible solutions $\Psi$ to this wave equation, any one of which corresponds to a wave motion with velocity $v$.
 
-The Wave Equation is applicable to all manifestations of wave motion, both transverse and longitudinal, for linear systems. That is, it applies to waves on a string, water waves, seismic waves, sound waves, electromagnetic waves, matter waves, etc. If it can be shown that a wave equation can be derived for any system, discrete or continuous, then this is equivalent to proving the existence of waves of any waveform, frequency, or wavelength travelling with the phase velocity given by the wave equation.[Cra65]
+The Wave Equation is applicable to all manifestations of wave motion, both transverse and longitudinal, for linear systems. That is, it applies to waves on a string, water waves, seismic waves, sound waves, electromagnetic waves, matter waves, etc. If it can be shown that a wave equation can be derived for any system, discrete or continuous, then this is equivalent to proving the existence of waves of any waveform, frequency, or wavelength traveling with the phase velocity given by the wave equation.[Cra65]
 
-## 3.8: Travelling and standing wave solutions of the wave equation
+## 3.8: Traveling and standing wave solutions of the wave equation
 
-The wave equation can have both travelling and standing-wave solutions. Consider a one-dimensional travelling wave with velocity $v$ having a specific wavenumber $k \equiv \frac{2\pi}{\lambda}$. Then the travelling wave is best written in terms of the phase of the wave as
+The wave equation can have both traveling and standing-wave solutions. Consider a one-dimensional traveling wave with velocity $v$ having a specific wavenumber $k \equiv \frac{2\pi}{\lambda}$. Then the traveling wave is best written in terms of the phase of the wave as
 
 $$
 \tag{3.97} \label{eq-3-97} \Psi(x,t) = A(k)e^{i\frac{2\pi}{\lambda}(x \mp vt)} = A(k)e^{i(kx \mp \omega t)}
 $$
 
-where the wave number $k \equiv \frac{2\pi}{\lambda}$, with $\lambda$ being the wave length, and angular frequency $\omega \equiv kv$. This particular solution satisfies the wave equation and corresponds to a travelling wave with phase velocity $v = \frac{\omega_n}{k_n}$ in the positive or negative direction $x$ depending on whether the sign is negative or positive. Assuming that the superposition principle applies, then the superposition of these two particular solutions of the wave equation can be written as
+where the wave number $k \equiv \frac{2\pi}{\lambda}$, with $\lambda$ being the wave length, and angular frequency $\omega \equiv kv$. This particular solution satisfies the wave equation and corresponds to a traveling wave with phase velocity $v = \frac{\omega_n}{k_n}$ in the positive or negative direction $x$ depending on whether the sign is negative or positive. Assuming that the superposition principle applies, then the superposition of these two particular solutions of the wave equation can be written as
 
 $$
 \tag{3.98} \label{eq-3-98} \Psi(x,t) = A(k)(e^{i (kx - \omega t)} + e^{i(kx + \omega t)}) = A(k)e^{ikx}(e^{- i \omega t} + e^{i \omega t}) = 2A(k)e^{ikx} \cos \omega t
 $$
 
-Thus the superposition of two identical single wavelength travelling waves propagating in opposite directions can correspond to a standing wave solution. Note that a standing wave is identical to a stationary normal mode of the system discussed in chapter $14$. This transformation between standing and travelling waves can be reversed, that is, the superposition of two standing waves, i.e. normal modes, can lead to a travelling wave solution of the wave equation. Discussion of waveforms is simplified when using either of the following two limits.
+Thus the superposition of two identical single wavelength traveling waves propagating in opposite directions can correspond to a standing wave solution. Note that a standing wave is identical to a stationary normal mode of the system discussed in chapter $14$. This transformation between standing and traveling waves can be reversed, that is, the superposition of two standing waves, i.e. normal modes, can lead to a traveling wave solution of the wave equation. Discussion of waveforms is simplified when using either of the following two limits.
 
 1) The time dependence of the waveform at a given location $x = x_0$ which can be expressed using a Fourier decomposition, appendix $19.9.2$, of the time dependence as a function of angular frequency $\omega = n\omega_0$.
 
@@ -900,7 +900,7 @@ $$
 \tag{3.100} \label{eq-3-100}\Psi(x,t_0) = \sum_{n= - \infty}^\infty A_n e^{in(k_0x-\omega_1t_0)} = \sum_{n= - \infty}^\infty C_n (t_0)e^{ink_0x}
 $$
 
-The above is applicable both to discrete, or continuous linear oscillator systems, e.g. waves on a string. In summary, stationary normal modes of a system are obtained by a superposition of travelling waves travelling in opposite directions, or equivalently, travelling waves can result from a superposition of stationary normal modes.
+The above is applicable both to discrete, or continuous linear oscillator systems, e.g. waves on a string. In summary, stationary normal modes of a system are obtained by a superposition of traveling waves traveling in opposite directions, or equivalently, traveling waves can result from a superposition of stationary normal modes.
 
 ## 3.9: Waveform Analysis
 
@@ -1068,7 +1068,7 @@ $$
 
 The velocity we have used so far is just the phase velocity of the individual wavelets at the carrier frequency. If $k$ or $\omega$ are complex then one must take the real parts to ensure that the velocity is real.
 
-If the phase velocity of a wave is dependent on the wavelength, that is, $v_{phase} (k)$, then the system is said to be dispersive in that the wave is dispersed according the wavelength. The simplest illustration of dispersion is the refraction of light in glass prism which leads to dispersion of the light into the spectrum of wavelengths. Dispersion leads to development of wave packets that travel at group and signal velocities that usually differ from the phase velocity. To illustrate this consider two equal amplitude travelling waves having slightly different wave number $k$ and angular frequency $\omega$. Superposition of these waves gives
+If the phase velocity of a wave is dependent on the wavelength, that is, $v_{phase} (k)$, then the system is said to be dispersive in that the wave is dispersed according the wavelength. The simplest illustration of dispersion is the refraction of light in glass prism which leads to dispersion of the light into the spectrum of wavelengths. Dispersion leads to development of wave packets that travel at group and signal velocities that usually differ from the phase velocity. To illustrate this consider two equal amplitude traveling waves having slightly different wave number $k$ and angular frequency $\omega$. Superposition of these waves gives
 
 $$
 \begin{align} q(x, t) & = A ( e^{i[k x-\omega t]} + e^{i[(k+\Delta k) x-(\omega+\Delta \omega) t]} ) \nonumber \\ & = A e^{i [ ( k+\frac{\Delta k}{2} ) x- ( \omega+\frac{\Delta w}{2} ) t ]} \cdot \{e^{-i [\frac{\Delta k}{2} x-\frac{\Delta \omega}{2} t ]} + e^{i [\frac{\Delta k}{2} x-\frac{\Delta \omega}{2} t ]} \} \nonumber \\ & = 2 A e^{i [ ( k+\frac{\Delta k}{2} ) x- ( \omega+\frac{\Delta \omega}{2} ) t ]} \cos [\frac{\Delta k}{2} x-\frac{\Delta \omega}{2} t ] \end{align} \tag{3.117} \label{eq-3-117}
@@ -1265,7 +1265,7 @@ $$
 
 The first exponential term is an exponential damping term while the second exponential term is the oscillating term.
 
-Consider that the plasma involves the motion of a bound damped electron, of charge $q$ of mass $m$, bound in a one dimensional atom or lattice subject to an oscillatory electric field of frequency $\omega$. Assume that the electromagnetic wave is travelling in the $\hat{z}$ direction with the transverse electric field in the $\hat{x}$ direction. The equation of motion of an electron can be written as
+Consider that the plasma involves the motion of a bound damped electron, of charge $q$ of mass $m$, bound in a one dimensional atom or lattice subject to an oscillatory electric field of frequency $\omega$. Assume that the electromagnetic wave is traveling in the $\hat{z}$ direction with the transverse electric field in the $\hat{x}$ direction. The equation of motion of an electron can be written as
 
 $$
 \mathbf{\ddot{x}} + \Gamma \mathbf{\dot{x}} + \omega^2_0 x = \mathbf{\hat{x}} q E_0 e^{i(\omega t − kz)} \nonumber
@@ -1723,7 +1723,7 @@ This power curve has the classic Lorentzian shape.
 
 ### Wave propagation
 
-The wave equation was introduced and both travelling and standing wave solutions of the wave equation were discussed. Harmonic wave-form analysis, and the complementary time-sampled wave form analysis techniques, were introduced in this chapter and in appendix $19.9$. The relative merits of Fourier analysis and the digital Green’s function waveform analysis were illustrated for signal processing.
+The wave equation was introduced and both traveling and standing wave solutions of the wave equation were discussed. Harmonic wave-form analysis, and the complementary time-sampled wave form analysis techniques, were introduced in this chapter and in appendix $19.9$. The relative merits of Fourier analysis and the digital Green’s function waveform analysis were illustrated for signal processing.
 
 The concepts of phase velocity, group velocity, and signal velocity were introduced. The phase velocity is given by
 

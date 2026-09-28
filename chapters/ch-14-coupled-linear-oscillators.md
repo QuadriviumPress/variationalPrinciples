@@ -43,7 +43,7 @@ $$
 \begin{align} −m\omega^2 B_1 e^{i\omega t} + (\kappa + \kappa^{\prime} ) B_1e^{i\omega t} − \kappa^{\prime} B_2e^{i\omega t} = 0 \tag{14.3} \label{eq-14-3}\\ −m\omega^2B_2 e^{i\omega t} + (\kappa + \kappa^{\prime} ) B_2e^{i\omega t} − \kappa^{\prime} B_1 e^{i\omega t} = 0 \notag\end{align}
 $$
 
-Collecting terms, and cancelling the common exponential factor, gives
+Collecting terms, and canceling the common exponential factor, gives
 
 $$
 \begin{align} (\kappa + \kappa^{\prime} − m\omega^2) B_1 − \kappa^{\prime} B_2 = 0 \tag{14.4} \label{eq-14-4} \\ ( \kappa + \kappa^{\prime} − m\omega^2 ) B_2 − \kappa^{\prime} B_1 = 0 \notag\end{align}
@@ -1248,9 +1248,9 @@ These two degenerate normal modes correspond to two pendula oscillating out of p
 :::{figure} ../images/lt-21234-12.8.2.png
 :label: fig-14-8-2
 :enumerator: 14.8.2
-:alt: Three plane pendula with nearest-neighbour coupling.
+:alt: Three plane pendula with nearest-neighbor coupling.
 
-Three plane pendula with nearest-neighbour coupling.
+Three plane pendula with nearest-neighbor coupling.
 :::
 
 There is a large and important class of coupled oscillators where the coupling is only between nearest neighbors; a crystalline lattice is a classic example. A toy model for such a system is the case of three identical pendula coupled by two identical springs, where only the nearest neighbors are coupled as shown in the adjacent figure. Assume the identical pendula are of length $b$ and mass $m$. As in the last example, the kinetic energy evaluated at the equilibrium location is
@@ -1314,9 +1314,9 @@ which results in the three non-degenerate eigenfrequencies for the normal modes.
 :::{figure} ../images/lt-21236-12.8.3.png
 :label: fig-14-8-3
 :enumerator: 14.8.3
-:alt: Normal modes of three plane pendula with nearest-neighbour coupling.
+:alt: Normal modes of three plane pendula with nearest-neighbor coupling.
 
-Normal modes of three plane pendula with nearest-neighbour coupling.
+Normal modes of three plane pendula with nearest-neighbor coupling.
 :::
 
 The normal modes are similar to the prior case of complete linear coupling, as shown in the adjacent figure.
@@ -1621,7 +1621,7 @@ This classical analog of the benzene molecule is interesting because it simultan
 
 ## 14.10: Discrete Lattice Chain
 
-Crystalline lattices and linear molecules are important classes of coupled oscillator systems where nearest neighbor interactions dominate. A crystalline lattice comprises thousands of coupled oscillators in a three dimensional matrix with atomic spacing of a few $10^{−10}m$. Even though a full description of the dynamics of crystalline lattices demands a quantal treatment, a classical treatment is of interest since classical mechanics underlies many features of the motion of atoms in a crystalline lattice. The linear discrete lattice chain is the simplest example of many-body coupled oscillator systems that can illuminate the physics underlying a range of interesting phenomena in solid-state physics. As illustrated in example $2.12.1$, the linear approximation usually is applicable for small-amplitude displacements of nearest-neighbor interacting systems which greatly simplifies treatment of the lattice chain. The linear discrete lattice chain involves three independent polarization modes, one longitudinal mode, plus two perpendicular transverse modes. The $3n$ degrees of freedom for the $n$ atoms, on a discrete linear lattice chain, are partitioned with $n$ degrees of freedom for each of the three polarization modes. These three polarization modes each have $n$ normal modes, or $n$ travelling waves, and exhibit quantization, dispersion, and can have a complex wave number.
+Crystalline lattices and linear molecules are important classes of coupled oscillator systems where nearest neighbor interactions dominate. A crystalline lattice comprises thousands of coupled oscillators in a three dimensional matrix with atomic spacing of a few $10^{−10}m$. Even though a full description of the dynamics of crystalline lattices demands a quantal treatment, a classical treatment is of interest since classical mechanics underlies many features of the motion of atoms in a crystalline lattice. The linear discrete lattice chain is the simplest example of many-body coupled oscillator systems that can illuminate the physics underlying a range of interesting phenomena in solid-state physics. As illustrated in example $2.12.1$, the linear approximation usually is applicable for small-amplitude displacements of nearest-neighbor interacting systems which greatly simplifies treatment of the lattice chain. The linear discrete lattice chain involves three independent polarization modes, one longitudinal mode, plus two perpendicular transverse modes. The $3n$ degrees of freedom for the $n$ atoms, on a discrete linear lattice chain, are partitioned with $n$ degrees of freedom for each of the three polarization modes. These three polarization modes each have $n$ normal modes, or $n$ traveling waves, and exhibit quantization, dispersion, and can have a complex wave number.
 
 ### Longitudinal Motion
 
@@ -1845,15 +1845,15 @@ $$
 q_j (t) = \sum^n_{ r=1 } \eta_r \sin \left[ \frac{r\pi j}{ (n+1)} \right]
 $$
 
-### Travelling waves
+### Traveling waves
 
-Travelling waves are equally good solutions of the equations of motion [14.77](#eq-14-77), [14.84](#eq-14-84) as are the normal modes. Travelling waves on the one-dimensional lattice chain will be of the form
+Traveling waves are equally good solutions of the equations of motion [14.77](#eq-14-77), [14.84](#eq-14-84) as are the normal modes. Traveling waves on the one-dimensional lattice chain will be of the form
 
 $$
 q (x, t) = Ce^{i(\omega t \pm kx)} \tag{14.102} \label{eq-14-102}
 $$
 
-where the distance along the chain $x = \nu d$, that is, it is quantized in units of the cell spacing $d$, with $\nu$ being an integer. The positive sign in the exponent corresponds to a wave travelling in the $−x$ direction while the negative sign corresponds to a wave travelling in the $+x$ direction. The velocity of a fixed phase of the travelling wave must satisfy that $\omega t \pm kx$ is a constant. This will occur if the *phase velocity* of the wave is given by
+where the distance along the chain $x = \nu d$, that is, it is quantized in units of the cell spacing $d$, with $\nu$ being an integer. The positive sign in the exponent corresponds to a wave traveling in the $−x$ direction while the negative sign corresponds to a wave traveling in the $+x$ direction. The velocity of a fixed phase of the traveling wave must satisfy that $\omega t \pm kx$ is a constant. This will occur if the *phase velocity* of the wave is given by
 
 $$
 v^{phase} = \frac{dx}{dt} = \frac{\omega}{k}
@@ -1861,7 +1861,7 @@ $$
 
 The wave has a frequency $f = \frac{\omega}{ 2\pi}$ and wavelength $\lambda = \frac{2\pi}{k}$, thus the phase velocity $v_{phase} = \frac{\omega}{k} = \lambda f$.
 
-Inserting the travelling wave [14.102](#eq-14-102) into the transverse equation of motion [14.84](#eq-14-84) for the discrete lattice chain gives
+Inserting the traveling wave [14.102](#eq-14-102) into the transverse equation of motion [14.84](#eq-14-84) for the discrete lattice chain gives
 
 $$
 −\omega^2q_r = \omega^2_0(e^{−\phi_r} − 2 + e^{\phi_r} )q_r
@@ -1903,7 +1903,7 @@ $$
 \omega_r = \pm 2\omega_0 \sin \frac{k_r d}{2} \tag{14.109} \label{eq-14-109}
 $$
 
-Equation [14.109](#eq-14-109) is a dispersion relation that is identical to Equation [14.97](#eq-14-97) derived during the discussion of the normal modes of the lattice chain. This confirms that the travelling waves on the lattice chain are equally good solutions as the normal standing-wave modes. Clearly, superposition of the standing-wave normal modes can lead to travelling waves and vice versa.
+Equation [14.109](#eq-14-109) is a dispersion relation that is identical to Equation [14.97](#eq-14-97) derived during the discussion of the normal modes of the lattice chain. This confirms that the traveling waves on the lattice chain are equally good solutions as the normal standing-wave modes. Clearly, superposition of the standing-wave normal modes can lead to traveling waves and vice versa.
 
 ### Dispersion
 
@@ -1979,9 +1979,9 @@ $$
 
 and damping factor $\Gamma_r$.
 
-There are many examples in physics where the wavenumber is complex as exhibited by the discrete lattice chain for $\frac{\lambda}{2} \leq d$. Other examples are electromagnetic waves in conductors or plasma (example $3.11.3$), matter waves tunnelling through a potential barrier, or standing waves on musical instruments which have a complex wavenumber $k$ due to damping.
+There are many examples in physics where the wavenumber is complex as exhibited by the discrete lattice chain for $\frac{\lambda}{2} \leq d$. Other examples are electromagnetic waves in conductors or plasma (example $3.11.3$), matter waves tunneling through a potential barrier, or standing waves on musical instruments which have a complex wavenumber $k$ due to damping.
 
-This simple toy model of the discrete linear lattice chain has illustrated that classical mechanics explains many features of the many-body nearest-neighbor coupled linear oscillator system, including normal modes, standing and travelling waves, cut-off frequency dispersion, and complex wavenumber. These phenomena feature prominently in applications of the quantal discrete coupled-oscillator system to solid-state physics.
+This simple toy model of the discrete linear lattice chain has illustrated that classical mechanics explains many features of the many-body nearest-neighbor coupled linear oscillator system, including normal modes, standing and traveling waves, cut-off frequency dispersion, and complex wavenumber. These phenomena feature prominently in applications of the quantal discrete coupled-oscillator system to solid-state physics.
 
 ## 14.11: Damped Coupled Linear Oscillators
 
@@ -2160,7 +2160,7 @@ $$
 
 1. List the wave numbers of the allowed undamped longitudinal standing waves.
 
-2. Calculate the phase velocity and group velocity for longitudinal travelling waves on the ring.
+2. Calculate the phase velocity and group velocity for longitudinal traveling waves on the ring.
 
 3. Determine the time dependence of a longitudinal standing wave for a angular frequency $\omega = 2\omega_{cutoff}$, that is, twice the cut-off frequency.
 
@@ -2215,7 +2215,7 @@ $$
 
 ## 14.S: Coupled linear oscillators (Summary)
 
-This chapter has focussed on many—body coupled linear oscillator systems which are a ubiquitous feature in nature. A summary of the main conclusions are the following.
+This chapter has focused on many—body coupled linear oscillator systems which are a ubiquitous feature in nature. A summary of the main conclusions are the following.
 
 ### Normal modes
 
@@ -2279,7 +2279,7 @@ The general analytic theory was used to determine the solutions for parallel and
 
 ### Discrete lattice chain
 
-Transverse and longitudinal modes of motion on the discrete lattice chain were discussed because of the important role it plays in nature, such as in crystalline lattice structures. Both normal modes and travelling waves were discussed including the phenomena of dispersion and cut-off frequencies. Molecules and the crystalline lattice chains are examples where nearest neighbor coupling is manifest. It was shown that, for the $n$−oscillator discrete lattice chain, there are only $n$ independent longitudinal modes plus $n$ modes for the two transverse polarizations, and that the angular frequency $\omega_r \leq 2\omega_0$ that is, a cut-off frequency exists.
+Transverse and longitudinal modes of motion on the discrete lattice chain were discussed because of the important role it plays in nature, such as in crystalline lattice structures. Both normal modes and traveling waves were discussed including the phenomena of dispersion and cut-off frequencies. Molecules and the crystalline lattice chains are examples where nearest neighbor coupling is manifest. It was shown that, for the $n$−oscillator discrete lattice chain, there are only $n$ independent longitudinal modes plus $n$ modes for the two transverse polarizations, and that the angular frequency $\omega_r \leq 2\omega_0$ that is, a cut-off frequency exists.
 
 ### Damped coupled linear oscillators
 

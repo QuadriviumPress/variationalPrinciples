@@ -2327,7 +2327,7 @@ $$
 
 8. Consider a solid hemisphere of radius $a$. Compute the coordinates of the center of mass relative to the center of the spherical surface used to define the hemisphere.
 
-9. A 2000 kg Ford was travelling south on Mt. Hope Avenue when it collided with your 1000 kg sports car travelling west on Elmwood Avenue. The two badly-damaged cars became entangled in the collision and leave a skid mark that is 20 meters long in a direction 14$^{\circ}$ to the west of the original direction of travel of the Excursion. The wealthy Excursion driver hires a high-powered lawyer who accuses you of speeding through the intersection. Use your P235 knowledge, plus the police officer’s report of the recoil direction, the skid length, and knowledge that the coefficient of sliding friction between the tires and road is $\mu = 0.6$, to deduce the original velocities of both cars. Were either of the cars exceeding the 30 mph speed limit?
+9. A 2000 kg Ford was traveling south on Mt. Hope Avenue when it collided with your 1000 kg sports car traveling west on Elmwood Avenue. The two badly-damaged cars became entangled in the collision and leave a skid mark that is 20 meters long in a direction 14$^{\circ}$ to the west of the original direction of travel of the Excursion. The wealthy Excursion driver hires a high-powered lawyer who accuses you of speeding through the intersection. Use your P235 knowledge, plus the police officer’s report of the recoil direction, the skid length, and knowledge that the coefficient of sliding friction between the tires and road is $\mu = 0.6$, to deduce the original velocities of both cars. Were either of the cars exceeding the 30 mph speed limit?
 
 10. A particle of mass $m$ moving in one dimension has potential energy $U(x) = U_0[2(\frac{x}{a})^2 − (\frac{x}{a})^4]$, where $U_0$ and $a$ are positive constants.
 
@@ -2343,7 +2343,7 @@ $$
 
 11.
 
-1. Consider a single-stage rocket travelling in a straight line subject to an external force $F^{ext}$ acting along the same line where $v_{ex}$ is the exhaust velocity of the ejected fuel relative to the rocket. Show that the equation of motion is 
+1. Consider a single-stage rocket traveling in a straight line subject to an external force $F^{ext}$ acting along the same line where $v_{ex}$ is the exhaust velocity of the ejected fuel relative to the rocket. Show that the equation of motion is 
 $$
 m\dot{v} = -\dot{m}v_{ex} + F^{ext} \nonumber
 $$

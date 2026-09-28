@@ -94,7 +94,7 @@ $$
 S = \int^t_{t_0} L(t^{\prime} )dt^{\prime} \tag{18.3} \label{eq-18-3}
 $$
 
-where $S$ is the quantal analogue of the classical action function. It has been shown that the classical principle of least action states that the action function is stationary for small variations of the trajectory. In 1915 Wilson and Sommerfeld recognized that the quantization of angular momentum could be expressed in terms of the action-angle integral, that is equation $(15.5.1)$. They postulated that, for every coordinate, the action-angle variable is quantized
+where $S$ is the quantal analog of the classical action function. It has been shown that the classical principle of least action states that the action function is stationary for small variations of the trajectory. In 1915 Wilson and Sommerfeld recognized that the quantization of angular momentum could be expressed in terms of the action-angle integral, that is equation $(15.5.1)$. They postulated that, for every coordinate, the action-angle variable is quantized
 
 $$
 \oint p_k dq_k = nh \tag{18.4} \label{eq-18-4}

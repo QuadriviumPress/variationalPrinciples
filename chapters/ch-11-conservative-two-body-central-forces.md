@@ -11,7 +11,7 @@ label: ch-11-conservative-two-body-central-forces
 
 ## 11.1: Introduction to Conservative two-body Central Forces
 
-Conservative two-body central forces are important in physics because of the pivotal role that the Coulomb and the gravitational forces play in nature. The Coulomb force plays a role in electrodynamics, molecular, atomic, and nuclear physics, while the gravitational force plays an analogous role in celestial mechanics. Therefore this chapter focusses on the physics of systems involving conservative two-body central forces because of the importance and ubiquity of these conservative two-body central forces in nature.
+Conservative two-body central forces are important in physics because of the pivotal role that the Coulomb and the gravitational forces play in nature. The Coulomb force plays a role in electrodynamics, molecular, atomic, and nuclear physics, while the gravitational force plays an analogous role in celestial mechanics. Therefore this chapter focuses on the physics of systems involving conservative two-body central forces because of the importance and ubiquity of these conservative two-body central forces in nature.
 
 A conservative two-body central force has the following three important attributes.
 
@@ -1855,7 +1855,7 @@ $$
 
 where $\vartheta _{cm}^{P}$ and $\vartheta _{cm}^{T}$ are the center-of-mass scattering angles respectively for the scattered projectile and target nuclei.
 
-For the chosen incident energies the normal and inverse reactions give the same center-of-momentum energy of $298$ $MeV$ which is the energy available to the interaction between the colliding nuclei. However, the kinetic energy of the center-of-momentum is $447-298=149$ $MeV$ for normal kinematics and $894-298=596$ $MeV$ for inverse kinematics. This trivial center-of-momentum kinetic energy does not contribute to the reaction. Note that inverse kinematics focusses all the scattered nuclei into the forward hemisphere which reduces the required solid angle for recoil-particle detection.
+For the chosen incident energies the normal and inverse reactions give the same center-of-momentum energy of $298$ $MeV$ which is the energy available to the interaction between the colliding nuclei. However, the kinetic energy of the center-of-momentum is $447-298=149$ $MeV$ for normal kinematics and $894-298=596$ $MeV$ for inverse kinematics. This trivial center-of-momentum kinetic energy does not contribute to the reaction. Note that inverse kinematics focuses all the scattered nuclei into the forward hemisphere which reduces the required solid angle for recoil-particle detection.
 
 ### Solid angles
 
@@ -1868,7 +1868,7 @@ $$
 \frac{d\omega _{T}}{d\Omega _{T}}=\left( \frac{\sin \theta _{lab}^{T}}{\sin \vartheta _{cm}^{T}}\right) ^{2}\left\vert \cos (\vartheta _{cm}^{T}-\theta _{lab}^{T})\right\vert
 $$
 
-These can be used to transform the calculated center-of-momentum differential cross sections to the laboratory frame for comparison with measured values. Note that relative to the center-of-momentum frame, the forward focussing increases the observed differential cross sections in the forward laboratory frame and decreases them in the backward hemisphere.
+These can be used to transform the calculated center-of-momentum differential cross sections to the laboratory frame for comparison with measured values. Note that relative to the center-of-momentum frame, the forward focusing increases the observed differential cross sections in the forward laboratory frame and decreases them in the backward hemisphere.
 
 ### Exploitation of two-body kinematics
 
@@ -2006,7 +2006,7 @@ $$
 
 ## 11.S: Conservative two-body Central Forces (Summary)
 
-This chapter has focussed on the classical mechanics of bodies interacting via conservative, two-body, central interactions. The following are the main topics presented in this chapter.
+This chapter has focused on the classical mechanics of bodies interacting via conservative, two-body, central interactions. The following are the main topics presented in this chapter.
 
 ### Equivalent one-body representation for two bodies interacting via a central interaction
 
@@ -2108,4 +2108,4 @@ $$
 
 ### Two-body kinematics
 
-The transformation from the center-of-momentum frame to laboratory frames of reference was introduced. Such transformations are used extensively in many fields of physics for theoretical modelling of scattering, and for analysis of experiment data.
+The transformation from the center-of-momentum frame to laboratory frames of reference was introduced. Such transformations are used extensively in many fields of physics for theoretical modeling of scattering, and for analysis of experiment data.

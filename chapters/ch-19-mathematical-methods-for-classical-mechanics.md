@@ -1417,9 +1417,9 @@ $$
 
 Thus even though $\mathbf{B}$ is a pseudo vector, the force $\mathbf{F}$ remains a proper vector. Thus if a left-handed coordinate definition of $\mathbf{B}_L = \frac{\mu_oI}{4\pi} \frac{ \mathbf{r} \times d\mathbf{l}}{r^2}$ is used in [D.44](#eq-d-44), and $\mathbf{F} = q (\mathbf{E} + \mathbf{B}_L \times \mathbf{v})$ in [D.42](#eq-d-42), then the same final physical result would be obtained.
 
-It was long thought that the laws of physics were symmetric with respect to spatial inversion ( i.e. mirror reflection), meaning that the choice between a left-handed and right-handed representations (chirality) was arbitrary. This is true for gravitational, electromagnetic and the strong force, and is called the conservation of parity. The fourth fundamental force in nature, the weak force, violates parity and favours handedness. It turns out that right-handed ordinary matter is symmetrical with left-handed antimatter.
+It was long thought that the laws of physics were symmetric with respect to spatial inversion ( i.e. mirror reflection), meaning that the choice between a left-handed and right-handed representations (chirality) was arbitrary. This is true for gravitational, electromagnetic and the strong force, and is called the conservation of parity. The fourth fundamental force in nature, the weak force, violates parity and favors handedness. It turns out that right-handed ordinary matter is symmetrical with left-handed antimatter.
 
-In addition to the two flavours of vectors, one has scalars and pseudoscalars defined by:
+In addition to the two flavors of vectors, one has scalars and pseudoscalars defined by:
 
 $$
 \phi (r)=+\phi (−r) \tag{D.45} \label{eq-d-45}
@@ -1678,7 +1678,7 @@ $$
 \lambda^{\prime}_n = \sum_m \dfrac{\partial q^m}{ \partial q^n} \lambda^m \tag{E.15} \label{eq-e-15}
 $$
 
-It is important to differentiate between contravariant and covariant vectors. The superscript/subscript convention for distinguishing between these two flavours of tensors is given in table 19.6.1
+It is important to differentiate between contravariant and covariant vectors. The superscript/subscript convention for distinguishing between these two flavors of tensors is given in table 19.6.1
 
 ::::{list-table}
 * - $x^{\mu}$

@@ -367,7 +367,7 @@ Force-free motion of a hockey puck sliding on a rotating frictionless table of r
 
 [Figure 12.8.1](#fig-12-8-1) illustrates trajectories of the hockey puck in the rotating reference frame when no external forces are acting, that is, in the inertial frame the puck moves in a straight line with constant velocity $\mathbf{v}_0$. In the rotating reference frame the Coriolis force accelerates the puck to the right leading to trajectories that exhibit spiral motion. The apparent complicated trajectories are a result of the observer being in the rotating frame for which that the straight inertial-frame trajectories of the moving puck exhibit a spiralling trajectory in the rotating-frame.
 
-The Coriolis force is the reason that winds circulate in an anticlockwise direction about low-pressure regions in the Earth’s northern hemisphere. It also has important consequences in many activities on earth such as ballet dancing, ice skating, acrobatics, nuclear and molecular rotation, and the motion of missiles.
+The Coriolis force is the reason that winds circulate in an counterclockwise direction about low-pressure regions in the Earth’s northern hemisphere. It also has important consequences in many activities on earth such as ballet dancing, ice skating, acrobatics, nuclear and molecular rotation, and the motion of missiles.
 
 ::::{admonition} Example 12.8.1: Accelerating spring plane pendulum
 :class: example
@@ -983,7 +983,7 @@ For large dimensional pressure systems in the atmosphere, e.g. $L \simeq 1000$ $
 
 ### Low-pressure systems:
 
-It is interesting to analyze the motion of air circulating around a low pressure region at large radii where the motion is tangential. As shown in [Figure 12.12.1](#fig-12-12-1), a parcel of air circulating anticlockwise around the low with velocity $v$ involves a pressure difference $\Delta P$ acting on the surface area $S$, plus the centrifugal and Coriolis forces. Assuming that these forces are balanced such that $\mathbf{a}" \simeq 0$, then Equation [12.68](#eq-12-68) simplifies to
+It is interesting to analyze the motion of air circulating around a low pressure region at large radii where the motion is tangential. As shown in [Figure 12.12.1](#fig-12-12-1), a parcel of air circulating counterclockwise around the low with velocity $v$ involves a pressure difference $\Delta P$ acting on the surface area $S$, plus the centrifugal and Coriolis forces. Assuming that these forces are balanced such that $\mathbf{a}" \simeq 0$, then Equation [12.68](#eq-12-68) simplifies to
 
 $$
 \frac{v^2}{r} = \frac{1}{\rho} \nabla P - 2 v \omega \sin \lambda
@@ -1027,7 +1027,7 @@ which occurs at the wall of the eye of the circulating low-pressure system.
 Hurricane Katrina over the Gulf of Mexico on 28 August 2005. [Published by the NOAA]
 :::
 
-Low pressure regions are produced by heating of air causing it to rise and resulting in an inflow of air to replace the rising air. Hurricanes form over warm water when the temperature exceeds 26$^{\circ}$$C$ and the moisture levels are above average. They are created at latitudes between 10$^{\circ}$ −15$^{\circ}$ where the sea is warmest, but not closer to the equator where the Coriolis force drops to zero. About 90% of the heating of the air comes from the latent heat of vaporization due to the rising warm moist air condensing into water droplets in the cloud similar to what occurs in thunderstorms. For hurricanes in the northern hemisphere, the air circulates anticlockwise inwards. Near the wall of the eye of the hurricane, the air rises rapidly to high altitudes at which it then flows clockwise and outwards and subsequently back down in the outer reaches of the hurricane. Both the wind velocity and pressure are low inside the eye which can be cloud free. The strongest winds are in vortex surrounding the eye of the hurricane, while weak winds exist in the counter-rotating vortex of sinking air that occurs far outside the hurricane.
+Low pressure regions are produced by heating of air causing it to rise and resulting in an inflow of air to replace the rising air. Hurricanes form over warm water when the temperature exceeds 26$^{\circ}$$C$ and the moisture levels are above average. They are created at latitudes between 10$^{\circ}$ −15$^{\circ}$ where the sea is warmest, but not closer to the equator where the Coriolis force drops to zero. About 90% of the heating of the air comes from the latent heat of vaporization due to the rising warm moist air condensing into water droplets in the cloud similar to what occurs in thunderstorms. For hurricanes in the northern hemisphere, the air circulates counterclockwise inwards. Near the wall of the eye of the hurricane, the air rises rapidly to high altitudes at which it then flows clockwise and outwards and subsequently back down in the outer reaches of the hurricane. Both the wind velocity and pressure are low inside the eye which can be cloud free. The strongest winds are in vortex surrounding the eye of the hurricane, while weak winds exist in the counter-rotating vortex of sinking air that occurs far outside the hurricane.
 
 [Figure 12.12.2](#fig-12-12-2) shows the satellite picture of the hurricane Katrina, recorded on 28 August 2005. The eye of the hurricane is readily apparent in this picture. The central pressure was 90200 $N/m^2$ (902 $mb$) compared with the standard atmospheric pressure of 101300 $N/m^2$ (1013 $mb$). This 111 $mb$ pressure difference produced steady winds in Katrina of 280 $km/hr$ ( 175 $mph$) with gusts up to 344 $km/hr$ which resulted in 1833 fatalities.
 
@@ -1055,7 +1055,7 @@ $$
 
 As a consequence, high pressure regions tend to have weak pressure gradients and light winds in contrast to the large pressure gradients plus concomitant damaging winds possible for low pressure systems.
 
-The circulation behavior, exhibited by weather patterns, also applies to ocean currents and other liquid flow on earth. However, the residual angular momentum of the liquid often can overcome the Coriolis terms. Thus often it will be found experimentally that water exiting the bathtub does not circulate anticlockwise in the northern hemisphere as predicted by the Coriolis force. This is because it was not stationary originally, but rotating slowly.
+The circulation behavior, exhibited by weather patterns, also applies to ocean currents and other liquid flow on earth. However, the residual angular momentum of the liquid often can overcome the Coriolis terms. Thus often it will be found experimentally that water exiting the bathtub does not circulate counterclockwise in the northern hemisphere as predicted by the Coriolis force. This is because it was not stationary originally, but rotating slowly.
 
 Reliable prediction of weather is an extremely difficult, complicated and challenging task, which is of considerable importance in modern life. As discussed in chapter $16.8$, fluid flow can be much more complicated than assumed in this discussion of air flow and weather. Both turbulent and laminar flow are possible. As a consequence, computer simulations of weather phenomena are difficult because the air flow can be turbulent and the transition from order to chaotic flow is very sensitive to the initial conditions. Typically the air flow can involve both macroscopic ordered coherent structures over a wide dynamic range of dimensions, coexisting with chaotic regions. Computer simulations of fluid flow often are performed based on Lagrangian mechanics to exploit the scalar properties of the Lagrangian. Ordered coherent structures, ranging from microscopic bubbles to hurricanes, can be recognized by exploiting Lyapunov exponents to identify the ordered motion buried in the underlying chaos. Thus the techniques discussed in classical mechanics are of considerable importance outside of physics.
 
@@ -1249,7 +1249,7 @@ $$
 
 ## 12.S: Non-inertial reference frames (Summary)
 
-This chapter has focussed on describing motion in non-inertial frames of reference. It has been shown that the force and acceleration in non-inertial frames can be related using either Newtonian or Lagrangian mechanics by introducing additional inertial forces in the non-inertial reference frame.
+This chapter has focused on describing motion in non-inertial frames of reference. It has been shown that the force and acceleration in non-inertial frames can be related using either Newtonian or Lagrangian mechanics by introducing additional inertial forces in the non-inertial reference frame.
 
 ### Translational acceleration of a reference frame
 

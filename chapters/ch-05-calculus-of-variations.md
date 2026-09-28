@@ -329,7 +329,7 @@ $$
 -\kappa -2\kappa z^{\prime 2}-\kappa z^{\prime 4}-z^{\prime \prime }-z^{\prime \prime }z^{\prime 2}+\kappa z^{\prime 2}+\kappa z^{\prime 4}+z^{\prime \prime }z^{\prime 2} = 0\nonumber
 $$
 
-Cancelling terms gives
+Canceling terms gives
 
 $$
 z^{\prime \prime }+\kappa \left( 1+z^{\prime 2}\right) = 0\nonumber
@@ -368,9 +368,9 @@ Consider a cylindrically-symmetric soap-bubble surface formed by blowing a soap 
 :::{figure} ../images/lt-21139-5.4.1.png
 :label: fig-5-4-1
 :enumerator: 5.4.1
-:alt: Cylindrically-symmetric surface formed by rotation about the z axis of a soap bubble suspended between two identical hoops centred on the z axis.
+:alt: Cylindrically-symmetric surface formed by rotation about the z axis of a soap bubble suspended between two identical hoops centered on the z axis.
 
-Cylindrically-symmetric surface formed by rotation about the $z$ axis of a soap bubble suspended between two identical hoops centred on the $z$ axis.
+Cylindrically-symmetric surface formed by rotation about the $z$ axis of a soap bubble suspended between two identical hoops centered on the $z$ axis.
 :::
 
 The differential arc-length element of the circular annulus at constant $\theta$ between $z$ and $z+dz$ is given by $ds=\sqrt{dz^{2}+d\rho ^{2}}$. Therefore the area of the infinitesimal circular annulus is $dS=2\pi \rho ds$ which can be integrated to give the area of the surface $S$ of the soap bubble bounded by the two circular hoops as 
@@ -399,7 +399,7 @@ which is the equation of a catenary. The catenary is the shape of a uniform flex
 
 ### Functions with several independent variables $y_{i}(x)$
 
-The discussion has focussed on systems having only a single function $y(x)$ such that the functional is an extremum. It is more common to have a functional that is dependent upon several independent variables $f\left[ y_{1}(x),y_{1}^{\prime }(x),y_{2}(x),y_{2}^{\prime }(x),....;x\right]$ which can be written as
+The discussion has focused on systems having only a single function $y(x)$ such that the functional is an extremum. It is more common to have a functional that is dependent upon several independent variables $f\left[ y_{1}(x),y_{1}^{\prime }(x),y_{2}(x),y_{2}^{\prime }(x),....;x\right]$ which can be written as
 
 $$
 F=\int_{x_{1}}^{x_{2}}\sum_{i=1}^{N}f\left[ y_{i}(x),y_{i}^{\prime }(x);x \right] dx
@@ -441,7 +441,7 @@ Consider the geometry shown in the figure, where the light travels from the poin
 Light incident upon a plane glass interface in the $(x, y)$ plane at $y = 0$.
 :::
 
-The French mathematician Fermat discovered that the required path travelled by light is the path for which the travel time $t$ is a minimum. That is, the transit time from the initial point $P_{1}$ to the final point $P_{2}$ is given by
+The French mathematician Fermat discovered that the required path traveled by light is the path for which the travel time $t$ is a minimum. That is, the transit time from the initial point $P_{1}$ to the final point $P_{2}$ is given by
 
 $$
 t=\int_{1}^{2}dt=\int_{1}^{2} \frac{ds}{v}=\frac{1}{c}\int_{1}^{2}nds=\frac{1}{c}\int_{1}^{2}n(x,y,z)\sqrt{ 1+\left( x^{\prime }\right) ^{2}+\left( z^{\prime }\right) ^{2}}dy\nonumber
@@ -1145,7 +1145,7 @@ $$
 
 3. Explain qualitatively how this surprising result can possibly be true.
 
-9. Consider a medium for which the refractive index $n = \frac{a}{r^2}$ where $a$ is a constant and $r$ is the distance from the origin. Use Fermat’s Principle to find the path of a ray of light travelling in a plane containing the origin. Hint, use two-dimensional polar coordinates with $\phi = \phi (r)$. Show that the resulting path is a circle through the origin.
+9. Consider a medium for which the refractive index $n = \frac{a}{r^2}$ where $a$ is a constant and $r$ is the distance from the origin. Use Fermat’s Principle to find the path of a ray of light traveling in a plane containing the origin. Hint, use two-dimensional polar coordinates with $\phi = \phi (r)$. Show that the resulting path is a circle through the origin.
 
 10. Find the shortest path between the $(x, y, z)$ points $(0, −1, 0)$ and $(0, 1, 0)$ on a conical surface 
 $$
